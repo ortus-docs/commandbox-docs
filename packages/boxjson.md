@@ -4,7 +4,7 @@ The `box.json` file must be in your root of your project and it is a JSON file t
 
 >**Note** : Please note that you can add as many settings or alter the `box.json` structure to meet your needs when developing commands. This makes our descriptor incredibly flexible.
 
-```json
+```js
 {
     "name" : "Package Name",
     // ForgeBox unique slug
