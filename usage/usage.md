@@ -28,7 +28,7 @@ if you're using an ANSI-compatible shell to run CommandBox from.
 
 If you have launched the CommandBox executable from your OS's GUI, it
 will run inside of a native shell window. When finished running
-commands, you can simply close the window, or type "[exit][]" an the
+commands, you can simply close the window, or type `exit` an the
 window will close for you. If you have a series of commands to run, this
 is the recommended approach.
 
