@@ -28,8 +28,7 @@ To update to the bleeding edge version of the shell and commands, use the **late
 box upgrade --latest
 ```
 
-This command will connect to our server to determine the latest build.
-If there is an update, it will be downloaded and installed for you.
+This command will connect to our server to determine the latest build.  If there is an update, it will be downloaded and installed for you.
 
 Use The Force
 -------------
