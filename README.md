@@ -33,8 +33,7 @@ The CommandBox help and discussion group can be found here: https://groups.googl
 
 # Reporting a Bug
 We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/ortus-solutions/commandbox
-* By Email: [bugs@coldbox.org](mailto:bugs@coldbox.org)
-* By Jira: https://ortussolutions.atlassian.net/browse/COLDBOX
+* By Jira: https://ortussolutions.atlassian.net/browse/COMMANDBOX
 
 # Professional Open Source
 ![Ortus Solutions, Corp](images/ortussolutions_button.png)
