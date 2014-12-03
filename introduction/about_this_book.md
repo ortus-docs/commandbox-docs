@@ -6,7 +6,7 @@ The source code for this book is hosted in GitHub: https://github.com/ortus-solu
 
 
 ## Contributing
-We highly encourage contribution to this book and our open source software.  The source code for this book can be found in our [GitHub repository](https://github.com/ColdBox/coldbox-docs) where you can submit pull requests.
+We highly encourage contribution to this book and our open source software.  The source code for this book can be found in our [GitHub repository](https://github.com/ortus-solutions/commandbox-docs) where you can submit pull requests.
 
 ## Author
 
