@@ -31,6 +31,16 @@ You can also negate a flag by putting an exclamation point before the name in th
 coldbox create app myApp --!init
 ```
 
+## Escaping Special Characters
+If a value is a single word with no special characters, you don't need to escape anything. Certain characters are reserved as special characters though for parameters since they demarcate the beginning and end of the actual parameter and you'll need to escape them properly. These rules apply the same to named and positional parameters.
+
+## Spaces
+If a parameter has any white space in it, you'll need to wrap the value in single or double quotes. It doesn't matter which kind you use and it can vary from one parameter to another as long as they match properly.
+
+```bash
+echo 'Hello World'
+echo "Good Morning Vietnam"
+```
 
 
 
