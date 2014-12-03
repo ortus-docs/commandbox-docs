@@ -21,5 +21,5 @@
    * Artifacts
    * Creating Packages
    * Box.json
-* Developing Commands
+* [Developing Commands](developing_commands/developing_commands.md)
 
