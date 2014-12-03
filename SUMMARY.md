@@ -14,7 +14,7 @@
    * [Parameters](usage/parameters.md)
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
-* Package Management
+* [Package Management](packages/package_management.md)
    * Code Endpoints
    * Installing Packages
    * Dependencies
