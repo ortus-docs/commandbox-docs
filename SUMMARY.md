@@ -9,4 +9,5 @@
    * [Installation](setup/installation.md)
    * [Upgrading](setup/upgrading.md)
 * [Usage](usage/usage.md)
+   * Shell
 
