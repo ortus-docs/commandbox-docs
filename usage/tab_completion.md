@@ -50,6 +50,12 @@ If you are using named parameters, and you have typed the name of a parameter fo
 
 Here, **true** and **false** are offered as possible values for the **force** parameter.
 
+```
+CommandBox> delete path=myDir force=
+true false
+CommandBox> delete path=myDir force=
+```
+
 
 
 
