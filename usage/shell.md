@@ -14,7 +14,7 @@ is the fastest method since CommandBox only loads once. This is also the
 only way to make use of features like [tab complete](usage/tab_completion.md) and [command
 history](usage/command_history.md).
 
-This example show running the box.exe executable from a Windows DOS
+This example show running the `box.exe` executable from a Windows DOS
 prompt, executing the [version][], [pwd][], and [echo][] commands, and
 then exiting back to DOS.
 
