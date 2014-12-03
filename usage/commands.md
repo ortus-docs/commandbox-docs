@@ -25,4 +25,4 @@ coldbox create handler
 ```
 
 # Aliases
-Commands can be aliased so you can call them more than one way. Check the Command API docs or the CLI help command to see if a command has aliases. For instance, the quit command is aliases as q for quick typing. Another example would be the package init command that is aliased to just init.
+Commands can be aliased so you can call them more than one way, ever wanted to run an `ls` command in Windows or a `dir` command in `Unix`? . Check the Command API docs or the CLI help command to see if a command has aliases. For instance, the quit command is aliases as q for quick typing. Another example would be the package init command that is aliased to just init.
