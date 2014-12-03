@@ -13,4 +13,5 @@
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
    * [Tab Completion](usage/tab_completion.md)
+   * History
 
