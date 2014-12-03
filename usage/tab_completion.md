@@ -83,7 +83,7 @@ CommandBox> delete myDir --
 ### Custom
 Commands have the ability to give hints in the form of a static list or a runtime function with dynamic output.
 
-Here the forgebox show command dynamically provides completion for its type attribute based on the current types returned by the ForgeBox REST API.
+Here the [forgebox show](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/forgebox/show.html) command dynamically provides completion for its type attribute based on the current types returned by the [ForgeBox REST API](http://wiki.coldbox.org/wiki/ForgeBox:API-Documentation.cfm).
 
 ```
 CommandBox> forgebox show type=
