@@ -19,5 +19,6 @@
    * Installing Packages
    * Dependencies
    * Artifacts
+   * Creating Packages
 * Developing Commands
 
