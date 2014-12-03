@@ -1,6 +1,6 @@
 # Package Management
 
-CommandBox functions as a package manager which means you can use it to locate and install code packages for you. This gives you a consistent and scriptable method to install the libraries you need in a simple manner.
+CommandBox functions as a **package manager** which means you can use it to locate and install code packages for you. This gives you a consistent and scriptable method to install the libraries you need in a simple manner.
 
 ```
 install myPackage
