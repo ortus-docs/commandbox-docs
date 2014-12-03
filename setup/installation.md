@@ -52,14 +52,15 @@ rpm –ivh commandbox-rpm-1.0.0.rpm
 
 Run the `box` binary to begin the one-time unpacking process.
 
-Linux (Debian)
---------------
+## Linux (Debian)
 
-After you have downloaded the .deb file, install it using the “dpkg”
+After you have downloaded the `commandbox.deb` file, install it using the `dpkg`
 command.
 
-    sudo dpkg -i commandbox-debian-1.0.0.deb
+```bash
+sudo dpkg -i commandbox-debian-1.0.0.deb
+```
 
-Run the <kbd>box</kbd> binary to begin the one-time unpack process.
+Run the `box` binary to begin the one-time unpacking process.
 
   [1]: http://www.computerhope.com/issues/ch000549.htm
