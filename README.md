@@ -54,7 +54,7 @@ CommandBox is a professional open source software backed by [Ortus Solutions, Co
 * Bug Tracker: https://ortussolutions.atlassian.net/browse/COMMANDBOX
 * Twitter: [@ortussolutions](http://www.twitter.com/ortussolutions)
 * Facebook: https://www.facebook.com/ortussolutions
-* Google+: https://www.google.com/+ColdboxOrg
+* Google+: https://google.com/+OrtusSolutions
 * Vimeo Channel: http://vimeo.com/channels/commandbox
 
 
