@@ -11,5 +11,5 @@
 * [Usage](usage/usage.md)
    * [Execution](usage/execution.md)
    * [Commands](usage/commands.md)
-   * Parameters
+   * [Parameters](usage/parameters.md)
 
