@@ -12,5 +12,5 @@
    * [Execution](usage/execution.md)
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
-   * Tab Completion
+   * [Tab Completion](usage/tab_completion.md)
 
