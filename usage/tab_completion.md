@@ -80,6 +80,17 @@ CommandBox> delete myDir --
 ```
 
 
+### Custom
+Commands have the ability to give hints in the form of a static list or a runtime function with dynamic output.
 
+Here the forgebox show command dynamically provides completion for its type attribute based on the current types returned by the ForgeBox REST API.
 
+```
+CommandBox> forgebox show type=
+caching cfbuilder-extensions cms commandbox-commands commandbox-recipes contentbox-layouts
+contentbox-modules contentbox-widgets di interceptors logging models
+modules mvc plugins projects testing wirebox-aspects
+wirebox-listeners
+CommandBox> forgebox show type=
+```
 
