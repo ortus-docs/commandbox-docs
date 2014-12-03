@@ -1,7 +1,7 @@
 # Execution
 
 There are two ways to run commands via CommandBox: inside the CommandBox interactive
-shell, or one-at-a-time from your native shell.
+shell, or one-at-a-time commands from your native shell.
 
 ## Multiple Commands
 
