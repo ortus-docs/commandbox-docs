@@ -15,8 +15,19 @@ To create a two-part command called `testbox run` create CFCs that are nested in
 ## WireBox DI
 All CFC's are wired via WireBox, so dependency injection and AOP are available to them.
 
-Tab Completion & Help
-Tab completion and help are powered by metadata on these CFCs. If you would like to use a friendlier name for your command, add the attribute aliases to the component which is a comma-delimited list of names.
+## Tab Completion & Help
+Tab completion and help are powered by metadata on these CFCs. If you would like to use a friendlier name for your command, add the attribute `aliases` to the component which is a comma-delimited list of names the command will be also known as.
+
+```javascript
+component extends="commandbox.system.BaseCommand" aliases="luis"{
+
+    /**
+    * Help metadata
+    */
+    function run(){}
+    
+}
+```
 
 Example
 Here is the dir command briefly explained:
