@@ -1,5 +1,7 @@
 # Overview
 
+<img src="/images/CommandBoxLogo.png" width="300" alt="CommandBox" />
+
 CommandBox is a standalone, native Command Line Interface (**CLI**),
 **Package Manager**, and Read Eval Print Loop (**REPL**) aimed to help
 ColdFusion (CFML) developers become more productive through automation,
