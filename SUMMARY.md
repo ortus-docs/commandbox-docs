@@ -15,7 +15,7 @@
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
 * [Package Management](packages/package_management.md)
-   * Code Endpoints
+   * [Code Endpoints](packages/code_endpoints.md)
    * Installing Packages
    * Dependencies
    * Artifacts
