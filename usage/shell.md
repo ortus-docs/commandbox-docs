@@ -43,25 +43,15 @@ C:\>
 
 ## One-Off Commands
 
-You can also spin up CommandBox from your native shell to execute a
-single command inline. You can do this if you only have one command to
-run, or you want to automate a command from a Unix shell script or
-Windows batch file. This mode will not show the ASCII splash screen, but
-keep in mind it still loads CommandBox up and unloads it in the
-background. Any output from the command will be left on your screen, and
-you will be returned to your native OS prompt.
+You can also spin up CommandBox from your native shell to execute a single command inline. You can do this if you only have one command to run, or you want to automate a command from a Unix shell script or Windows batch file. This mode will not show the ASCII splash screen, but keep in mind it still loads CommandBox up and unloads it in the background. Any output from the command will be left on your screen, and you will be returned to your native OS prompt.
 
-Here is an example of running the version command from a Windows DOS
-screen. Note, you'll need to either do this from the directory that
-holds the box executable, or add the executable to your default command
-path so it is found.
+Here is an example of running the version command from a Windows DOS screen. Note, you'll need to either do this from the directory that holds the box executable, or add the executable to your default command path so it is found.
 
-``` {.javascript}
+```bash
 C:\>box version
 CommandBox 1.0.0.00093
 
 C:\>
 ```
 
-The **box** text is calling the CommandBox binary, and the
-**[version][]** bit is passed along to the CommandBox she
+The `box` text is calling the CommandBox binary, and the `version` bit is passed along to the CommandBox shell to execute once it loads.
