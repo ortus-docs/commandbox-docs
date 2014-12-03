@@ -9,8 +9,7 @@ installed, use the `version` command.
 box version
 ```
 
-Stable
-------
+## Stable
 
 To update to the last stable version of the shell and commands, use the
 <kbd>upgrade</kbd> command.
