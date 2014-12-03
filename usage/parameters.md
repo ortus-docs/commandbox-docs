@@ -8,3 +8,11 @@ Named parameters can be specified in any order and follow the format `name=value
 ```bash
 coldbox create app name=myApp skeleton=AdvancedScript directory=myDir init=true
 ```
+
+## Positional Parameters
+Positional parameters omit the `name=` part and only use the value. They must be supplied in the order shown in the Command API docs or help command. We try to place the most common parameters at the beginning so you can use named parameters easily.
+
+Here is the equivalent of the named command above:
+
+coldbox create app myApp AdvancedScript myDir true
+Of course, only the required parameters must be specified. I'm only including all of them here for the completeness of the example.
