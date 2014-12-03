@@ -35,17 +35,12 @@ This command will connect to our server to determine the latest build.  If there
 If you already have the latest version installed, but you still want to
 force an update, use the **force** parameter.
 
-    upgrade --force
+```bash
+upgrade --force
+upgrade --latest --force
+```
 
-    upgrade --latest --force
+## Brute Force
 
-Brute Force
------------
-
-Note, if you delete your `{user}/.CommandBox` folder and re-run the
-executable, the version of CommandBox in the executable will be unpacked
-regardless of any updates you may have installed in the mean time. On
-that note, another way to force an upgrade is to simply download the new
-executable, wipe the `.CommandBox` folder in your user directory and
-re-run. This will also erase any saved command history, embedded
+Note, if you delete your `{user}/.CommandBox` folder and re-run the executable, the version of CommandBox in the executable will be unpacked regardless of any updates you may have installed in the mean time. On that note, another way to force an upgrade is to simply download the new executable, wipe the `.CommandBox` folder in your user directory and re-run. This will also erase any saved command history, embedded
 servers, or installed user commands.
