@@ -10,7 +10,7 @@ type.
 
 ![commandbox](../images/welcome.png)
 
-## Native Shell Integration
+## Interactive Shell
 
 As such, operating system commands won't execute (unless we've
 implemented a similar one in CommandBox). However, we also have a command
@@ -34,9 +34,14 @@ is the recommended approach.
 
 If you manually open your native shell and execute the box executable,
 it will take over the screen and the prompt will now become a CommandBox
-prompt. When you type "[exit][]" the CommandBox program will drop you
+prompt. When you type `exit` the CommandBox program will drop you
 back at your native OS shell.
 
-  []: commandbox/welcome.png "commandbox/welcome.png"
-  [run]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/run.html
-  [exit]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/quit.html
+## One-Off Commands
+You can also leverage CommandBox as another operating system binary if you want to execute one-off commands without having the need to go into the interactive shell.  This is useful if you are integrating CommandBox with other system binaries, task runners, ANT,
+
+
+
+
+
+
