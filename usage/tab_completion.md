@@ -46,7 +46,9 @@ CommandBox> delete path=myDir force=true
 CommandBox> delete path=myDir force=true
 ```
 
+If you are using named parameters, and you have typed the name of a parameter followed by an equals sign and no space, CommandBox will attempt to prompt valid values. This includes but is not limited to booleans and file system paths.
 
+Here, **true** and **false** are offered as possible values for the force parameter.
 
 
 
