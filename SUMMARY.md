@@ -16,7 +16,7 @@
    * [History](usage/history.md)
 * [Package Management](packages/package_management.md)
    * [Code Endpoints](packages/code_endpoints.md)
-   * Installing Packages
+   * [Installing Packages](packages/installing_packages.md)
    * Dependencies
    * Artifacts
    * Creating Packages
