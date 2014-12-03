@@ -15,4 +15,5 @@
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
 * Package Management
+* Developing Commands
 
