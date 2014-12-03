@@ -10,5 +10,5 @@
    * [Upgrading](setup/upgrading.md)
 * [Usage](usage/usage.md)
    * [Execution](usage/execution.md)
-   * Commands
+   * [Commands](usage/commands.md)
 
