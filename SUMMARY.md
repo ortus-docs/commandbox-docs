@@ -18,5 +18,6 @@
    * Code Endpoints
    * Installing Packages
    * Dependencies
+   * Artifacts
 * Developing Commands
 
