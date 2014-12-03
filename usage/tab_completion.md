@@ -36,3 +36,21 @@ Here is CommandBox giving every option possible for the [delete](http://apidocs.
 CommandBox> delete
 path= force= --force recurse= --recurse
 ```
+
+### Named
+If you have started typing named parameters, CommandBox will only suggest unused named parameters and flags.
+
+```
+CommandBox> delete path=myDir force=true
+ recurse= --recurse
+CommandBox> delete path=myDir force=true
+```
+
+
+
+
+
+
+
+
+
