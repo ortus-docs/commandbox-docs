@@ -16,5 +16,6 @@
    * [History](usage/history.md)
 * Package Management
    * Code Endpoints
+   * Installing Packages
 * Developing Commands
 
