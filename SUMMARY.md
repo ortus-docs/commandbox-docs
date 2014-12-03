@@ -20,5 +20,6 @@
    * Dependencies
    * Artifacts
    * Creating Packages
+   * Box.json
 * Developing Commands
 
