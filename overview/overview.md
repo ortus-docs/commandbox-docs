@@ -1,6 +1,6 @@
 # Overview
 
-<img src="../images/CommandBoxLogo.png" width="300" alt="CommandBox" />
+<img src="../images/terminal.png" alt="CommandBox" />
 
 CommandBox is a standalone, native Command Line Interface (**CLI**),
 Package Manager, Embedded CFML Server and Read Eval Print Loop (**REPL**) aimed to help
