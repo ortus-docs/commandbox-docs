@@ -25,3 +25,14 @@ war test-watch notes create reinit module compile help
 stats test-directory interceptor test report integrate
 CommandBox> coldbox
 ```
+
+
+Parameters
+If the parser finds a complete command, it will move on to parameter completion which is slightly more complicated since at first, there is no way to tell if you are going to named parameters, positional parameters, and/or flag. Based on what parameters you've typed so far, if any, CommandBox will do it's best to give you only relevant options. If it is unsure, it will provide you with every possibility it can think of. Don't be afraid to try pressing tab while typing parameters, you may be surprised how often we can guess where you're going!
+
+Here is CommandBox giving every option possible for the delete command. Note, force and recurse are booleans, so they can be specified as flags.
+
+```
+CommandBox> delete
+path= force= --force recurse= --recurse
+```
