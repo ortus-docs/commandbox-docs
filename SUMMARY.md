@@ -17,7 +17,7 @@
 * [Package Management](packages/package_management.md)
    * [Code Endpoints](packages/code_endpoints.md)
    * [Installing Packages](packages/installing_packages.md)
-   * Dependencies
+   * [Dependencies](packages/dependencies.md)
    * Artifacts
    * Creating Packages
    * Box.json
