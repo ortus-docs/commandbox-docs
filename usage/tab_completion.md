@@ -56,6 +56,8 @@ true false
 CommandBox> delete path=myDir force=
 ```
 
+Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the delete command.
+
 
 
 
