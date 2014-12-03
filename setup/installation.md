@@ -32,11 +32,11 @@ window.
 ### Homebrew (Mac)
 
 [Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep
-your CommandBox installation up to date, just run the following:
+your CommandBox installation up to date (even binary releases), just run the following:
 
-    <nowiki>
-    brew install https://github.com/Ortus-Solutions/commandbox/raw/master/build/commandbox.rb
-    </nowiki>
+```bash
+brew install https://github.com/Ortus-Solutions/commandbox/raw/master/build/commandbox.rb
+```
 
 <div class="alert alert-info">
 Once we reach stable version, we will be submitting CommandBox to the
