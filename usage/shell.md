@@ -15,7 +15,7 @@ only way to make use of features like [tab complete](usage/tab_completion.md) an
 history](usage/command_history.md).
 
 This example show running the `box.exe` executable from a Windows DOS
-prompt, executing the [version](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/version.html), [pwd](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/pwd.html), and [echo][] commands, and
+prompt, executing the [version](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/version.html), [pwd](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/pwd.html), and [echo](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/echo.html) commands, and
 then exiting back to DOS.
 
 ``` {.javascript}
