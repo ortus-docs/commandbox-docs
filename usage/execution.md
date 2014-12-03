@@ -93,12 +93,12 @@ cat myLogFile.txt | grep "variable .* undefined"
 
 ### Pagination
 
-Pipe output into the **[more][]** command to output it line-by-line or
+Pipe output into the **[more](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/more.html)** command to output it line-by-line or
 page-by-page. Press the spacebar to advance one line at a time. Press
 the Enter key to advance one page at a time. Press ESC or “q” to abort
 output.
 
-``` {.javascript}
+```bash
 forgebox show | more
 ```
 
