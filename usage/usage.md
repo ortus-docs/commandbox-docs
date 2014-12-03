@@ -21,11 +21,10 @@ commands/parameters will be formatted as documented here.
 
 Selecting and copy/paste may differ based on your operating system and
 how it treats command windows. CommandBox uses some color and formatting
-in its output. This uses ANSI escape codes and will only work correctly
+in its output. This uses [ANSI](http://en.wikipedia.org/wiki/ANSI_escape_code) escape codes and will only work correctly
 if you're using an ANSI-compatible shell to run CommandBox from.
 
-Starting and Stopping
----------------------
+## Starting and Stopping
 
 If you have launched the CommandBox executable from your OS's GUI, it
 will run inside of a native shell window. When finished running
