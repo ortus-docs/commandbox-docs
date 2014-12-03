@@ -37,6 +37,13 @@ it will take over the screen and the prompt will now become a CommandBox
 prompt. When you type `exit` the CommandBox program will drop you
 back at your native OS shell.
 
+## Debug Mode
+You can also start CommandBox in **debug** mode by passing the `--` flag in the command line.  This will give you much more verbose information about the running CommandBox environment
+
+```bash
+box --debug
+```
+
 ## One-Off Commands
 You can also leverage CommandBox as another operating system binary if you want to execute one-off commands without having the need to go into the interactive shell.  This is useful if you are integrating CommandBox with other system binaries, task runners, ANT, or you just want to execute a CFML template or CommandBox recipe.
 
