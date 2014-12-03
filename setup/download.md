@@ -11,22 +11,20 @@ your Operating System.
 >**Hint** If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
 
 </div>
-Stable Release
---------------
+
+## Stable Release
 
 Stable versions of CommandBox can be downloaded from the downloads
 section of our product page.
+http://www.ortussolutions.com/products/commandbox#download
 
-[1][]
 
-Bleeding Edge
--------------
+## Bleeding Edge
 
 We use a Jenkins integration server to automate our builds. You can
 download a bleeding-edge version of CommandBox directly from our
 integration server here:
-
-[2][]
+http://integration.staging.ortussolutions.com/artifacts/ortussolutions/commandbox/
 
 Keep in mind, bleeding edge builds may contain experimental features
 that are likely to change or bugs.
