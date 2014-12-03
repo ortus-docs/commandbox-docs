@@ -26,11 +26,10 @@ download a bleeding-edge version of CommandBox directly from our
 integration server here:
 http://integration.staging.ortussolutions.com/artifacts/ortussolutions/commandbox/
 
-Keep in mind, bleeding edge builds may contain experimental features
+>**Info** Keep in mind, bleeding edge builds may contain experimental features
 that are likely to change or bugs.
 
-Auto Updates
-------------
+## Auto Updates
 
 Another way to get the bleeding edge version of CommandBox is to install
 the stable version and run our <kbd>upgrade</kbd> command using the
