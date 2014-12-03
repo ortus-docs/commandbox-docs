@@ -30,8 +30,7 @@ box upgrade --latest
 
 This command will connect to our server to determine the latest build.  If there is an update, it will be downloaded and installed for you.
 
-Use The Force
--------------
+## Use The Force
 
 If you already have the latest version installed, but you still want to
 force an update, use the **force** parameter.
