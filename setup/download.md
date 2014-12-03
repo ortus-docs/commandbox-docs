@@ -7,7 +7,10 @@ your Operating System. If you don't have a JRE installed or aren't sure, we woul
 
 >**Info** The non-JRE versions are all around 33MB in size, while the embedded JRE versions will go up to 80MB in size.
 
+<br>
+Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
 
+<img src="../images/versions.png"/>
 
 </div>
 
