@@ -19,9 +19,18 @@ coldbox create app myApp AdvancedScript myDir true
 Of course, only the required parameters must be specified. I'm only including all of them here for the completeness of the example.
 
 ## Flags
-Any parameter that is a boolean type can be specified as a flag in the format --name. Flags can be mixed with named or positional parameters and can appear anywhere in the list. Putting the flag in the parameter list sets that parameter to true. This can be very handy if you want to use positional parameters on a command with a large amount of optional parameters, but you don't want to specify all the in-between ones.
+Any parameter that is a boolean type can be specified as a flag in the format `--name`. Flags can be mixed with named or positional parameters and can appear anywhere in the list. Putting the flag in the parameter list sets that parameter to true. This can be very handy if you want to use positional parameters on a command with a large amount of optional parameters, but you don't want to specify all the in-between ones.
 
+```bash
 coldbox create app myApp --init --installColdBox
-You can also negate a flag by putting an exclamation point before the name in the format --!name. This sets the parameter to false which can be handy to turn off features that default to true.
+```
 
+You can also negate a flag by putting an exclamation point before the name in the format `--!name`. This sets the parameter to false which can be handy to turn off features that default to true.
+
+```bash
 coldbox create app myApp --!init
+```
+
+
+
+
