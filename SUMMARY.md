@@ -20,6 +20,6 @@
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
-   * Box.json
+   * [Box.json](packages/boxjson.md)
 * [Developing Commands](developing_commands/developing_commands.md)
 
