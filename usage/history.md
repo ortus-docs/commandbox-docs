@@ -1,6 +1,6 @@
 #Command History
 
-Another trick the shell has up its sleeve is tracking the history of commands you type in. To access recent commands, use the **up** and **down** arrow at the prompt.
+Another trick the shell has up its sleeve is tracking the history of commands you type in via the `history` command. To access recent commands, use the **up** and **down** arrow at the prompt.
 
 # REPL History
 The REPL command has its own history for CFML statements you run. There is a separate history for script REPL and tag REPL.
