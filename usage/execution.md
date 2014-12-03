@@ -110,12 +110,12 @@ Redirect output into a file, overwriting if it exits like so:
 dir > fileList.txt
 ```
 
-[API Docs for fileWrite.][]
+[API Docs for fileWrite.](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/fileWrite.html)
 
 Use the double arrows to append to an existing file.
 
-``` {.javascript}
+```bash
 echo "Step 3 complete" >> log.txt
 ```
 
-[API Docs for fileAppend.](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/fileWrite.html)
+[API Docs for fileAppend.](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/fileAppend.html)
