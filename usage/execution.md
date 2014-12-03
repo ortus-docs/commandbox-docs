@@ -84,10 +84,10 @@ to the file system.
 
 ### Search
 
-Pipe output into the **[grep][]** command to apply a regex upon it.
-**[grep][]** will only emit lines matching the regex.
+Pipe output into the **[grep](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/grep.html)** command to apply a regex upon it.
+**[grep](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/grep.html)** will only emit lines matching the regex.
 
-``` {.javascript}
+```bash
 cat myLogFile.txt | grep "variable .* undefined"
 ```
 
