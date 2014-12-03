@@ -17,6 +17,8 @@ history | grep snake | more
 history --clear
 ```
 
-Read more about the history command in the Command API docs or the built-in help.
+Read more about the [history command](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/history.html) in the Command API docs or the built-in help.
 
+```
 history help
+```
