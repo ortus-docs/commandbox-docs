@@ -70,6 +70,14 @@ CommandBox> delete path=
 Tab completion for positional parameters works the same as the "value" portion of named parameters. Parameter names will also show up when you hit tab even when using positional parameters. This is on purpose to remind you of what options you have, but you obviously won't type them.
 
 
+### Flags
+Tab completion will always work for flags if your command has any boolean parameters. Here we type -- in the delete command and we are prompted with --force and --recurse.
+
+```
+CommandBox> delete myDir --
+--force --recurse
+CommandBox> delete myDir --
+```
 
 
 
