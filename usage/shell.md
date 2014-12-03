@@ -56,7 +56,7 @@ C:\>
 
 The `box` text is calling the CommandBox binary, and the `version` bit is passed along to the CommandBox shell to execute once it loads.
 
-
+### Recipes
 If you want to automate several commands from your native shell, it will
 be faster to use our **[recipe](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html)** command that allows you to run
 several CommandBox commands at once. This will allow you to only load
