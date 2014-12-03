@@ -5,4 +5,5 @@
 * [Overview](overview/overview.md)
 * [Setup](setup/setup.md)
    * [Requirements](setup/requirements.md)
+   * Download
 
