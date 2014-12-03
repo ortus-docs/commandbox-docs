@@ -13,3 +13,13 @@ artifacts remove
 ```
 
 >**Hint** : the text `artifacts` itself is not a command and you will receive an error if you hit enter after just typing that text. Context-specific help is available for all namespaces by typing `help` or `-help` after the namespace.
+
+```bash
+artifacts help
+```
+
+Namespaces can be more than one level. Another example would be [coldbox create](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/coldbox/create/package-summary.htmll) which contains commands such as [app](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/coldbox/create/app.html), [view](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/coldbox/create/view.html), and [handler](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/coldbox/create/controller.html).
+
+coldbox create handler
+Aliases
+Commands can be aliased so you can call them more than one way. Check the Command API docs or the CLI help command to see if a command has aliases. For instance, the quit command is aliases as q for quick typing. Another example would be the package init command that is aliased to just init.
