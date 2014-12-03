@@ -20,11 +20,10 @@ And constructed with the following guidelines:
 
 
 # License
-The ColdBox Platform is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.  If you use ColdBox, 
-please try to make mention of it in your code or web site or add a Powered By Coldbox icon.
+CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
 
 * Copyright by Ortus Solutions, Corp
-* ColdBox is a registered trademark by Ortus Solutions, Corp
+* CommandBox is a registered trademark by Ortus Solutions, Corp
 
 
 >**Info**: The ColdBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
