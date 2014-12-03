@@ -1,4 +1,5 @@
-# ContentBox Manual - Version 1.0.0
+# CommandBox Manual - Version 1.0.0
+
 <img src="images/CommandBoxLogo.png" width="300" alt="CommandBox" />
 
 CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art. It seamlessly integrate to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) *Box products but it is also open for extensibility for any ColdFusion (CFML) project as it is also written in ColdFusion (CFML) using our concepts of CommandBox Commands.
@@ -39,7 +40,7 @@ We all make mistakes from time to time :) So why not let us know about it and he
 # Professional Open Source
 ![Ortus Solutions, Corp](images/ortussolutions_button.png)
 
-ColdBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
+CommandBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 * Custom Development
 * Professional Support & Mentoring
 * Training
@@ -49,14 +50,13 @@ ColdBox is a professional open source software backed by [Ortus Solutions, Corp]
 * [Much More](http://www.ortussolutions.com/services)
 
 # Resources
-* Official Site: http://www.coldbox.org
-* Source Code: https://github.com/coldbox/coldbox-platform
-* Bug Tracker: https://ortussolutions.atlassian.net/browse/COLDBOX
-* Twitter: [@coldbox](http://www.twitter.com/coldbox)
-* Facebook: https://www.facebook.com/coldboxplatform
-* Google+: https://www.google.com/+ColdboxOrg
-* Vimeo Channel: http://vimeo.com/channels/coldbox
-* ColdBox Wiki: http://wiki.coldbox.org
+* Official Site: http://www.ortussolutions.com/products/commandbox
+* Source Code: https://github.com/ortus-solutions/commandbox
+* Bug Tracker: https://ortussolutions.atlassian.net/browse/COMMANDBOX
+* Twitter: [@ortussolutions](http://www.twitter.com/ortussolutions)
+* Facebook: https://www.facebook.com/ortussolutions
+* Google+: https://google.com/+OrtusSolutions
+* Vimeo Channel: http://vimeo.com/channels/commandbox
 
 
 ---
