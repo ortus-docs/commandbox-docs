@@ -58,7 +58,13 @@ CommandBox> delete path=myDir force=
 
 Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the [delete](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/delete.html) command.
 
-
+```
+CommandBox> delete path=
+.project Application.cfc box.json coldbox/ config/ favicon.ico handlers/ includes/
+index.cfm interceptors/ layouts/ lib/ model/ modules/ remote/ robots.txt
+tests/ views/
+CommandBox> delete path=
+```
 
 
 
