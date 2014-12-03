@@ -56,7 +56,9 @@ true false
 CommandBox> delete path=myDir force=
 ```
 
-Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the delete command.
+Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the [delete](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/delete.html) command.
+
+
 
 
 
