@@ -18,7 +18,7 @@ This example show running the `box.exe` executable from a Windows DOS
 prompt, executing the [version](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/version.html), [pwd](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/pwd.html), and [echo](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/echo.html) commands, and
 then exiting back to DOS.
 
-``` {.javascript}
+```bash
 C:\>box.exe
 
    _____                                          _ ____            
