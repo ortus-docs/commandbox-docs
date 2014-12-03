@@ -42,5 +42,24 @@ echo 'Hello World'
 echo "Good Morning Vietnam"
 ```
 
+### Quotes
+Quotes are actually allowed unescaped in a value like so:
+
+```bash
+echo O'reilly
+```
+
+However, if the parameter contains whitespace and is surrounded by quotes, you'll need to escape them with a backslash.
+
+```bash
+echo 'O\'reilly Auto Parts'
+echo "Luis \"The Dev\" Majano"
+```
+
+>**Info** : Only like quotes need to be escaped. Single quotes can exist inside of double and vice versa without issue. These examples before are perfectly valid.
+
+echo "O'reilly Auto Parts"
+echo 'Luis "The Dev" Majano'
+
 
 
