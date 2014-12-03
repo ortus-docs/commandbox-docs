@@ -6,8 +6,9 @@ your Operating System.
 
 >**Info** The non-JRE versions are all around 33MB in size, while the embedded JRE versions will go up to 80MB in size.
 
+<br>
 
->>**Hint** If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
+>**Hint** If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
 
 </div>
 Stable Release
