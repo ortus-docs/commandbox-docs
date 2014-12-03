@@ -26,7 +26,7 @@ CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LI
 * CommandBox is a registered trademark by Ortus Solutions, Corp
 
 
->**Info**: The ColdBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
+>**Info**: The CommandBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
 
 # Discussion & Help
 The ColdBox help and discussion group can be found here: https://groups.google.com/forum/#!forum/coldbox
