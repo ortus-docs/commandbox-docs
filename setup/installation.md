@@ -41,15 +41,16 @@ brew install https://github.com/Ortus-Solutions/commandbox/raw/master/build/comm
 >**Info**: Once we reach stable version, we will be submitting CommandBox to the
 Homebrew Binary Tap, for even easier installation.
 
-Linux (Redhat)
---------------
+## Linux (Redhat)
 
-After you have downloaded the .rpm file, install it using the “rpm”
+After you have downloaded the `commandbox.rpm` file, install it using the `rpm`
 command.
 
-    rpm –ivh commandbox-rpm-1.0.0.rpm
+```bash
+rpm –ivh commandbox-rpm-1.0.0.rpm
+```
 
-Run the <kbd>box</kbd> binary to begin the one-time unpack process.
+Run the `box` binary to begin the one-time unpacking process.
 
 Linux (Debian)
 --------------
