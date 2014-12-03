@@ -41,8 +41,7 @@ CommandBox> exit
 C:\>
 ```
 
-One-Off Commands
-----------------
+## One-Off Commands
 
 You can also spin up CommandBox from your native shell to execute a
 single command inline. You can do this if you only have one command to
