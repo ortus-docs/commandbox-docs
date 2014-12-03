@@ -4,7 +4,25 @@
 
 CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art. It seamlessly integrate to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) *Box products but it is also open for extensibility for any ColdFusion (CFML) project as it is also written in ColdFusion (CFML) using our concepts of CommandBox Commands.
 
+> **Info** Info
 
+> **Note** Note
+
+> **Tag** Tag
+
+> **Comment** Comment
+
+> **Hint** Hint
+
+> **Success** Success
+
+> **Warning** Warning
+
+> **Caution** Caution
+
+> **Danger** Danger
+
+> **Quote** Quote
 
 # Versioning
 CommandBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
