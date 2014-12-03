@@ -38,10 +38,10 @@ prompt. When you type `exit` the CommandBox program will drop you
 back at your native OS shell.
 
 ## Debug Mode
-You can also start CommandBox in **debug** mode by passing the `--` flag in the command line.  This will give you much more verbose information about the running CommandBox environment
+You can also start CommandBox in **debug** mode by passing the `-debug` flag in the command line.  This will give you much more verbose information about the running CommandBox environment
 
 ```bash
-box --debug
+box -debug
 ```
 
 ## One-Off Commands
