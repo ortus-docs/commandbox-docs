@@ -11,3 +11,5 @@ forgebox show recent modules
 forgebox show coldbox
 forgebox search REST
 ```
+
+For companies who want to host internal code endpoints for private packages, we will soon support an Enterprise version of ForgeBox that can be installed behind your company's firewall. Please contact us if this feature interests you.
