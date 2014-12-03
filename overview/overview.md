@@ -7,8 +7,7 @@ CommandBox is a standalone, native Command Line Interface (**CLI**),
 ColdFusion (CFML) developers become more productive through automation,
 dependency management, command line-based tools, and ASCII snake games.
 
-Features at a Glance
---------------------
+## Features at a Glance
 
 CommandBox is an amalgamation of many different tools and borrows
 concepts from NPM, Grunt/Gulp, Maven, Bower, and Node. Features include:
