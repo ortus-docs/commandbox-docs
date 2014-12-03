@@ -17,5 +17,6 @@
 * Package Management
    * Code Endpoints
    * Installing Packages
+   * Dependencies
 * Developing Commands
 
