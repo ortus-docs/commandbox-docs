@@ -9,7 +9,7 @@ Here are the requirements for installing and using CommandBox on your system. No
 * Linux
 
 ## Hardware
-* 1GB+ RAM
+* 256MB+ RAM
 * 250MB+ free hard drive space
 * Multi-core CPU recommended
 
