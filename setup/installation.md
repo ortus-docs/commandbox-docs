@@ -31,7 +31,7 @@ window.
 
 ### Homebrew (Mac)
 
-Homebrew is a great Mac package manager, it can easily install and keep
+[Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep
 your CommandBox installation up to date, just run the following:
 
     <nowiki>
