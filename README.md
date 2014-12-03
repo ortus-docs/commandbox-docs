@@ -5,7 +5,7 @@
 
 
 # Versioning
-ColdBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
+CommandBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
 
 ```
 <major>.<minor>.<patch>
