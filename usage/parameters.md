@@ -63,6 +63,18 @@ echo "O'reilly Auto Parts"
 echo 'Luis "The Dev" Majano'
 ```
 
+### Equals Signs
+If you have an equals sign in your value, you'll need to escape it with a backlash.
 
+```bash
+echo 2+2\=4
+```
+
+### Line Breaks
+A new line can be specified with the text `\n`. Keep in mind, some parameters might not expect new lines to exist and could error.
+
+```bash
+package set description="first line\nSecond Line\nThird Line"
+```
 
 
