@@ -38,11 +38,9 @@ your CommandBox installation up to date (even binary releases), just run the fol
 brew install https://github.com/Ortus-Solutions/commandbox/raw/master/build/commandbox.rb
 ```
 
-<div class="alert alert-info">
-Once we reach stable version, we will be submitting CommandBox to the
+>**Info**: Once we reach stable version, we will be submitting CommandBox to the
 Homebrew Binary Tap, for even easier installation.
 
-</div>
 Linux (Redhat)
 --------------
 
