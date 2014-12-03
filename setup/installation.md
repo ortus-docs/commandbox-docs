@@ -6,12 +6,11 @@ directory and CommandBox will be extracted into that location. If you
 delete this directory, it will be replaced the next time the CommandBox
 executable is run.
 
-Windows
--------
+## Windows
 
 Unzip the executable **box.exe** and just double click on it to open the
 shell. When you are finished running commands, you can just close the
-window, or type <kbd>exit</kbd>.
+window, or type `exit`.
 
 <div class="alert alert-success">
 **Tip**: You can make the <kbd>box</kbd> available in any Windows
@@ -19,8 +18,8 @@ terminal by adding its location to the **PATH** system environment
 variable. See [1][]
 
 </div>
-Mac/\*Unix
-----------
+
+## Mac/\*Unix
 
 ### Manual Installation
 
