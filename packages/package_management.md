@@ -8,4 +8,4 @@ install myPackage
 
 By default, the list of available packages is on ForgeBox, our CFML code share site. Additional endpoints such as Git, or HTTP will soon be available. When a package is installed, all of its dependencies are automatically installed for you for quick, easy experience.
 
-You can easily create your own packages and register them on ForgeBox so the whole community can start using them. To read more, please select from a sub-page on the right.
+You can easily create your own packages and register them on ForgeBox so the whole community can start using them. 
