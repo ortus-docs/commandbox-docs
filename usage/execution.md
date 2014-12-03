@@ -106,7 +106,7 @@ forgebox show | more
 
 Redirect output into a file, overwriting if it exits like so:
 
-``` {.javascript}
+```bash
 dir > fileList.txt
 ```
 
@@ -118,12 +118,4 @@ Use the double arrows to append to an existing file.
 echo "Step 3 complete" >> log.txt
 ```
 
-[API Docs for fileAppend.][]
-
-  [recipe]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html
-    "wikilink"
-  [1]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html
-  [grep]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/grep.html
-  [more]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/more.html
-  [API Docs for fileWrite.]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/fileWrite.html
-  [API Docs for fileAppend.]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/fileAppend.html
+[API Docs for fileAppend.](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/fileWrite.html)
