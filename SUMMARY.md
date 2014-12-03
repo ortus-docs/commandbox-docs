@@ -3,5 +3,5 @@
 * [Introduction](README.md)
    * [About This Book](introduction/about_this_book.md)
 * [Overview](overview/overview.md)
-* Setup
+* [Setup](setup/setup.md)
 
