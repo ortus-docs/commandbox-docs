@@ -12,9 +12,11 @@ box version
 ## Stable
 
 To update to the last stable version of the shell and commands, use the
-<kbd>upgrade</kbd> command.
+`upgrade` command.
 
-    upgrade
+```bash
+box upgrade
+```
 
 This command will connect to our server to determine the last stable
 build. If there is an update, it will be downloaded and installed for
