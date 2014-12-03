@@ -6,5 +6,5 @@
 * [Setup](setup/setup.md)
    * [Requirements](setup/requirements.md)
    * [Download](setup/download.md)
-   * Installation
+   * [Installation](setup/installation.md)
 
