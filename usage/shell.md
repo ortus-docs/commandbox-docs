@@ -5,7 +5,7 @@ shell, or one-at-a-time from your native shell.
 
 ## Multiple Commands
 
-If you open the shell, you will see the CommandBox splash screen (ASCII
+If you open the interactive shell, you will see the CommandBox splash screen (ASCII
 art) an d then you'll be presented with the '''commandbox\> ''' prompt.
 You can enter as many commands as you wish in order and after each
 command is finished executing, you will be returned to the CommandBox
