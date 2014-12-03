@@ -11,24 +11,22 @@ box version
 
 ## Stable
 
-To update to the last stable version of the shell and commands, use the
-`upgrade` command.
+To update to the last stable version of the shell and commands, use the `upgrade` command.
 
 ```bash
 box upgrade
 ```
 
-This command will connect to our server to determine the last stable
-build. If there is an update, it will be downloaded and installed for
-you.
+This command will connect to our server to determine the last stable build. If there is an update, it will be downloaded and installed for you.
 
-Bleeding Edge
--------------
 
-To update to the bleeding edge version of the shell and commands, use
-the **latest** flag.
+## Bleeding Edge
 
-    upgrade --latest
+To update to the bleeding edge version of the shell and commands, use the **latest** flag.
+
+```bash
+box upgrade --latest
+```
 
 This command will connect to our server to determine the latest build.
 If there is an update, it will be downloaded and installed for you.
