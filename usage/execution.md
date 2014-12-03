@@ -64,6 +64,14 @@ the CommandBox engine once for all those commands, but still be dumped
 back at your native prompt when done. Read more about the
 **recipe** command in our [Command API docs](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html).
 
+## Debug Mode
+You can also activate CommandBox in **debug** mode by passing the `-debug` flag in the command line.  This will give you much more verbose information about the running CommandBox environment.  This affects both the interactive shell or one-off commands
+
+```bash
+box version -debug
+box server start -debug
+```
+
 Output
 ------
 
