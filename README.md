@@ -1,6 +1,7 @@
 # ContentBox Manual - Version 1.0.0
 <img src="images/CommandBoxLogo.png" width="300" alt="CommandBox" />
 
+CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art. It seamlessly integrate to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) *Box products but it is also open for extensibility for any ColdFusion (CFML) project as it is also written in ColdFusion (CFML) using our concepts of CommandBox Commands.
 
 
 
@@ -19,22 +20,22 @@ And constructed with the following guidelines:
 
 
 # License
-The ColdBox Platform is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.  If you use ColdBox, 
-please try to make mention of it in your code or web site or add a Powered By Coldbox icon.
+CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
 
 * Copyright by Ortus Solutions, Corp
-* ColdBox is a registered trademark by Ortus Solutions, Corp
+* CommandBox is a registered trademark by Ortus Solutions, Corp
 
 
->**Info**: The ColdBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
+>**Info** The CommandBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
 
 # Discussion & Help
-The ColdBox help and discussion group can be found here: https://groups.google.com/forum/#!forum/coldbox
+The CommandBox help and discussion group can be found here: https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox
 
 # Reporting a Bug
-We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/coldbox/coldbox-platform
-* By Email: [bugs@coldbox.org](mailto:bugs@coldbox.org)
-* By Jira: https://ortussolutions.atlassian.net/browse/COLDBOX
+We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/ortus-solutions/commandbox
+* By Jira: https://ortussolutions.atlassian.net/browse/COMMANDBOX
+
+<a href="##" class="btn btn-info btn-lg">Test</a>
 
 # Professional Open Source
 ![Ortus Solutions, Corp](images/ortussolutions_button.png)
