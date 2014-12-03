@@ -29,5 +29,32 @@ component extends="commandbox.system.BaseCommand" aliases="luis"{
 }
 ```
 
-Example
-Here is the dir command briefly explained:
+## Example
+
+Here is the `dir` command briefly explained:
+
+```javascript
+/**
+* Lists the files and folders in a given directory. Defaults to current working directory
+*
+* {code:bash}
+* dir samples
+* {code} 
+* 
+**/
+component extends="commandbox.system.BaseCommand" aliases="ls,ll,directory" excludeFromHelp=false {
+ 
+    /**
+    * @directory.hint The directory to list the contents of
+    * @recurse.hint recursively list
+    **/
+    function run( String directory="", Boolean recurse=false ) {
+    // command code goes here
+    }
+}
+```
+
+## ForgeBox Commands
+If you package your custom commands and upload them to ForgeBox, make sure to tag them as `commandbox-commands` type.  This will tell CommandBox automatically to install them in the custom commands folder for you when installing from ForgeBox.
+
+
