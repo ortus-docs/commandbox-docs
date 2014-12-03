@@ -7,5 +7,5 @@
    * [Requirements](setup/requirements.md)
    * [Download](setup/download.md)
    * [Installation](setup/installation.md)
-   * Upgrading
+   * [Upgrading](setup/upgrading.md)
 
