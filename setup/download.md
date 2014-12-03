@@ -32,11 +32,11 @@ that are likely to change or bugs.
 ## Auto Updates
 
 Another way to get the bleeding edge version of CommandBox is to install
-the stable version and run our <kbd>upgrade</kbd> command using the
-**latest** flag. [Upgrade API docs][].
+the stable version and run our `upgrade` command using the
+**latest** flag. [Upgrade API docs](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/upgrade.html).
 
-    upgrade --latest
+```bash
+upgrade --latest
+```
 
-  [1]: http://www.ortussolutions.com/products/commandbox#download
-  [2]: http://integration.staging.ortussolutions.com/artifacts/ortussolutions/commandbox/
-  [Upgrade API docs]: http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/upgrade.html
+>**Info** : Please note that the upgrade command will not update the main CommandBox binary. If there are major updates or you get a message about updating the binary, you will need to download the latest binary and re-install it.
