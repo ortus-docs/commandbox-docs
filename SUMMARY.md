@@ -19,7 +19,7 @@
    * [Installing Packages](packages/installing_packages.md)
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
-   * Creating Packages
+   * [Creating Packages](packages/creating_packages.md)
    * Box.json
 * [Developing Commands](developing_commands/developing_commands.md)
 
