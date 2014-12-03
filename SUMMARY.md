@@ -14,4 +14,5 @@
    * [Parameters](usage/parameters.md)
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
+* Package Management
 
