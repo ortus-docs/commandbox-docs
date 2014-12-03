@@ -29,10 +29,10 @@ CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LI
 >**Info** The CommandBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
 
 # Discussion & Help
-The ColdBox help and discussion group can be found here: https://groups.google.com/forum/#!forum/coldbox
+The CommandBox help and discussion group can be found here: https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox
 
 # Reporting a Bug
-We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/coldbox/coldbox-platform
+We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/ortus-solutions/commandbox
 * By Email: [bugs@coldbox.org](mailto:bugs@coldbox.org)
 * By Jira: https://ortussolutions.atlassian.net/browse/COLDBOX
 
