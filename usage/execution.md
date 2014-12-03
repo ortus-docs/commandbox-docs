@@ -72,15 +72,14 @@ box version -debug
 box server start -debug
 ```
 
-Output
-------
+## Output
 
 Output from commands will be ANSI-formatted text which, by default,
 streams directly to the console. You can capture the output of commands
-and manipulate it, search it, or write it to a file. Use a pipe (**|**)
+and manipulate it, search it, or write it to a file. Use a pipe (`|`)
 to pass the output of one command into another command as its first
 input. Output can be piped between more than one command. Use a right
-bracket (**\>**) and double right bracket (**\>\>**) to redirect output
+bracket (`>`) and double right bracket (`>>`) to redirect output
 to the file system.
 
 ### Search
