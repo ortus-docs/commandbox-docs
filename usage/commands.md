@@ -4,7 +4,7 @@ CommandBox uses its own command parser that should be similar to what you're use
 
 # Namespaces
 
-To help organize our commands, we introduced the concept of **namespaces**. this means that commands can contain spaces and be comprised of more than one word. This is to keep things readable. Several commands that are all related will start with the same word, or namespace. An example of this is the `artifacts` namespace. It contains several commands inside of it including `list, clean, and remove`. Calling each of them would look like this:
+To help organize our commands, we introduced the concept of **namespaces**. this means that commands can contain spaces and be comprised of more than one word. This is to keep things readable. Several commands that are all related will start with the same word, or namespace. An example of this is the [artifacts](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/artifacts/package-summary.html) namespace. It contains several commands inside of it including [list](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/artifacts/list.html), [clean](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/artifacts/clean.html), and [remove](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/artifacts/remove.html). Calling each of them would look like this:
 
 ```bash
 artifacts list
