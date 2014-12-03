@@ -11,7 +11,7 @@ You can enter as many commands as you wish in order and after each
 command is finished executing, you will be returned to the CommandBox
 prompt. If you have multiple commands you want to execute manually, this
 is the fastest method since CommandBox only loads once. This is also the
-only way to make use of features like [tab complete][] and [command
+only way to make use of features like [tab complete](usage/tab-completion.md) and [command
 history][].
 
 This example show running the box.exe executable from a Windows DOS
