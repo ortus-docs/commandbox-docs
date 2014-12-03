@@ -2,13 +2,12 @@
 
 If you already have a Java JRE installed level 1.7 or higher (and set in
 your environment variables) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for
-your Operating System. 
+your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.  Below you will find the way to get the latest stable and bleeding edge releases.  Please also note that in our 
+
 
 >**Info** The non-JRE versions are all around 33MB in size, while the embedded JRE versions will go up to 80MB in size.
 
-<br>
 
->**Hint** If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
 
 </div>
 
