@@ -3,7 +3,7 @@
 
 Since CommandBox is a command line tool, it requires no GUI. If you are
 using an OS with a GUI (like Windows) and you run the `box` executable,
-the shell will open in a new window. CommandBox looks and behaves like a
+the CommandBox interactive shell will open in a new window. CommandBox looks and behaves like a
 Bash or DOS window, but the command prompt is not your native OS-- it's
 CommandBox running *INSIDE* your native shell and interpreting what you
 type.
