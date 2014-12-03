@@ -16,7 +16,6 @@ window, or type `exit`.
 terminal by adding its location to the **PATH** system environment
 variable. See http://www.computerhope.com/issues/ch000549.htm
 
-</div>
 
 ## Mac/\*Unix
 
@@ -24,14 +23,12 @@ variable. See http://www.computerhope.com/issues/ch000549.htm
 
 Unzip the binary **box** and just double click on it to open the shell terminal.
 When you are finished running commands, you can just close the window,
-or type <kbd>exit</kbd>.
+or type `exit`.
 
-<div class="alert alert-success">
-**Tip**: You can place the binary in your `/usr/bin` directory so it can
-be available system-wide via the <kbd>box</kbd> command in any terminal
+>**Hint**: You can place the binary in your `/usr/bin` directory so it can
+be available system-wide via the `box` command in any terminal
 window.
 
-</div>
 ### Homebrew (Mac)
 
 Homebrew is a great Mac package manager, it can easily install and keep
