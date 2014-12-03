@@ -22,7 +22,7 @@ variable. See http://www.computerhope.com/issues/ch000549.htm
 
 ### Manual Installation
 
-Unzip the binary **box** and just double click on it to open the shell.
+Unzip the binary **box** and just double click on it to open the shell terminal.
 When you are finished running commands, you can just close the window,
 or type <kbd>exit</kbd>.
 
