@@ -49,14 +49,13 @@ CommandBox is a professional open source software backed by [Ortus Solutions, Co
 * [Much More](http://www.ortussolutions.com/services)
 
 # Resources
-* Official Site: http://www.coldbox.org
-* Source Code: https://github.com/coldbox/coldbox-platform
-* Bug Tracker: https://ortussolutions.atlassian.net/browse/COLDBOX
-* Twitter: [@coldbox](http://www.twitter.com/coldbox)
-* Facebook: https://www.facebook.com/coldboxplatform
+* Official Site: http://www.ortussolutions.com/products/commandbox
+* Source Code: https://github.com/ortus-solutions/commandbox
+* Bug Tracker: https://ortussolutions.atlassian.net/browse/COMMANDBOX
+* Twitter: [@ortussolutions](http://www.twitter.com/ortussolutions)
+* Facebook: https://www.facebook.com/ortussolutions
 * Google+: https://www.google.com/+ColdboxOrg
-* Vimeo Channel: http://vimeo.com/channels/coldbox
-* ColdBox Wiki: http://wiki.coldbox.org
+* Vimeo Channel: http://vimeo.com/channels/commandbox
 
 
 ---
