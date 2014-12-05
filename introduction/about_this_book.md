@@ -4,6 +4,11 @@ The source code for this book is hosted in GitHub: https://github.com/ortus-solu
 
 * The majority of code examples in this book are done in `cfscript`.
 
+## External Trademarks & Copyrights
+Flash, Flex, ColdFusion, and Adobe are registered trademarks and copyrights of Adobe Systems, Inc. Railo is a trademark and copyright of Railo Technologies, GmbH.
+
+## Notice of Liability
+The information in this book is distributed “as is”, without warranty.  The author and Ortus Solutions, Corp shall not have any liability to any person or entity with respect to loss or damage caused or alleged to be caused directly or indirectly by the content of this training book, software and resources described in it.
 
 ## Contributing
 We highly encourage contribution to this book and our open source software.  The source code for this book can be found in our [GitHub repository](https://github.com/ortus-solutions/commandbox-docs) where you can submit pull requests.
