@@ -8,13 +8,13 @@ When "tab" is pressed, the text you've entered so far is run through the Command
 If your text matches only command, namespace, or alias, it will be auto-filled in for you. For instance, if you type the following and press tab...
 
 ```
-cold
+CommandBox> cold
 ```
 
 the [coldbox](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/coldbox/package-summary.html) namespace will be filled in and followed by a space so you are ready to continue typing.
 
 ```
-coldbox 
+CommandBox> coldbox 
 ```
 
 If you then press tab again, you will be presented with a list of second-level namespaces inside of [coldbox](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/coldbox/package-summary.html) and the same prompt will be output again below it so you can continue typing.
