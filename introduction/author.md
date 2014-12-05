@@ -19,8 +19,7 @@ Keep Jesus number one in your life and in your heart.  I did and it changed my l
 
 > “Trust in the LORD with all your heart, and do not lean on your own understanding.” – Proverbs 3:5
 
+# Brad Wood
 
 ## Contributors
-
-* Brad Wood - ColdBox Evangelist
 * Jorge Reyes - ColdBox Aficionado
