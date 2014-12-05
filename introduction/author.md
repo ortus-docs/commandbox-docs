@@ -21,7 +21,9 @@ Random Author Facts:
 
 ## Brad Wood
 
+Brad grew up in southern Missouri where he systematically disassembled every toy he ever owned which occasionally led to unintentional shock therapy (TVs hold charge long after they've been unplugged, you know)  After high school he majored in Computer Science with a music minor at [MidAmerica Nazarene University](http://www.mnu.edu) (Olathe, KS).   Today he lives in Kansas City with his wife and three girls where he still disassembles most of his belongings (including automobiles) just with a slightly higher success rate of putting them back together again.)  Brad enjoys church, all sorts of international food, and the great outdoors.
 
+Brad has been programming CFML for 12+ years and has used every version of CF since 4.5.  He first fell in love with ColdFusion as a way to easily connect a database to his website for dynamic pages.  Brad blogs at (http://www.codersrevolution.com) and likes to work on solder-at-home digitial and analog circuits with his daughter as well as building projects with Arduino-based microcontrollers.
 
 ## Contributors
 * Jorge Reyes - ColdBox Aficionado
