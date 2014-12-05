@@ -6,7 +6,7 @@ directory and CommandBox will be extracted into that location. If you
 delete this directory, it will be replaced the next time the CommandBox
 executable is run.
 
-## Windows
+## <i class="fa fa-windows"></i> Windows
 
 Unzip the executable **box.exe** and just double click on it to open the
 shell. When you are finished running commands, you can just close the
@@ -17,7 +17,7 @@ terminal by adding its location to the **PATH** system environment
 variable. See http://www.computerhope.com/issues/ch000549.htm
 
 
-## Mac/\*Unix
+## <i class="fa fa-apple"></i><i class="fa fa-linux"></i> Mac/\*Unix
 
 ### Manual Installation
 
