@@ -1,26 +1,6 @@
 {
     "plugins": [
-        "autocover",
         "richquotes"
     ],
-    "pluginsConfig": {
-        "autocover": {
-            "autocover": {
-                "font": {
-                    "color": "#FFF",
-                    "family": "Impact",
-                    "size": 14
-                },
-                "author": "Luis F. Majano",
-                "size": {
-                    "h": 2360,
-                    "w": 1800
-                },
-                "background": {
-                    "color": "#09F"
-                },
-                "title": "CommandBox Manual"
-            }
-        }
-    }
+    "pluginsConfig": {}
 }
