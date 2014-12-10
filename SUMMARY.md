@@ -32,4 +32,5 @@
    * Interactivity
    * Error handling
    * [ForgeBox Distribution](forgebox_distribution.md)
+   * Aliases
 
