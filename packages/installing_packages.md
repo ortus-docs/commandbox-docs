@@ -8,7 +8,7 @@ install coldbox
 
 ## Install Process
 
-When you install a package, here are the steps that are taken.  Most all of this should be evident by the output streamed to the console during the install process.  To get even more juicy details, use the --verbose flag while installing.
+When you install a package, here are the steps that are taken.  Most all of this should be evident by the output streamed to the console during the install process.  To get even more juicy details, use the `--verbose` flag while installing.
 
 1. CommandBox checks Forgebox to verify the slug
 2. The local artifact cache is checked for the package
