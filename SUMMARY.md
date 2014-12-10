@@ -30,7 +30,7 @@
    * [Using Parameters](using_parameters.md)
    * [Command Output](command_output.md)
    * [Tab Completion & Help](tab_completion_&_help.md)
-   * Interactivity
+   * [Interactivity](interactivity.md)
    * Error handling
    * [ForgeBox Distribution](forgebox_distribution.md)
 
