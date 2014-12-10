@@ -26,4 +26,5 @@
    * [Creating Packages](packages/creating_packages.md)
    * [Box.json](packages/boxjson.md)
 * [Developing Commands](developing_commands/developing_commands.md)
+   * Command Output
 
