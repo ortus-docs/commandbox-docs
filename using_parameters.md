@@ -26,3 +26,32 @@ So if yor run that command and pass a full file path such as `C:\sandbox\testSit
 However, if you changed the interactive shell to the `C:\sandbox` directory and then ran the command with `testsite` as the input, the relative path would now still resolve to `C:\sandbox\testSite`.
 
 Now if from the same direcotory, you passed `testsite/foo/bar/../../` you would still get `C:\sandbox\testSite` as the path.
+
+## Dynanmic Parameters
+
+Users can pass named or positional parameters that aren't declared and they will come through the `arguments` scope.  Named parameters will be accessable as `arguments.name`, and positional parameters as `arguments[ 1 ]`, `arguments.[ 2 ]`, etc.  
+
+This can allow for powerful commands like `package set` that allows users to set any box.json property they want.
+
+```bash
+package set foo=bar
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
