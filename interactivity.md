@@ -1,2 +1,4 @@
 # Interactivity
 
+ask()
+confirm()
