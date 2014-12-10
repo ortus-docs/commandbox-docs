@@ -27,7 +27,7 @@
    * [Box.json](packages/boxjson.md)
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](aliases.md)
-   * Using Parameters
+   * [Using Parameters](using_parameters.md)
    * Command Output
    * [Tab Completion & Help](tab_completion_&_help.md)
    * Interactivity
