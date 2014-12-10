@@ -19,8 +19,8 @@
    * [Code Endpoints](packages/code_endpoints.md)
    * [Installing Packages](packages/installing_packages.md)
        * [Installation Path](installation_path.md)
-       * [Installation Options](installation_options.md)
        * Advanced Installation
+       * [Installation Options](installation_options.md)
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
