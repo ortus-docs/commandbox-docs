@@ -33,7 +33,7 @@ Once the installation directory is determined, a folder is created that matches 
 
 ## Saving dependencies
 
-You can install a package as a **dependency** or a **development dependency**.  Regular dependencies are ones required for operation of the main package.  Development dependencies are optional and only necessary if you plan on making changes to the package you're installing.  Dev dependencies would include testing frameworks or build tools.
+
 
 Packages you 
 
