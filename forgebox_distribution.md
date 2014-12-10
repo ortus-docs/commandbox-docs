@@ -7,3 +7,4 @@ Commands can be installed using the `install` command.  They will not be saved a
 ```bash
 install commandbox-chuck-norris
 ```
+
