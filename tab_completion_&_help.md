@@ -12,3 +12,29 @@ component extends="commandbox.system.BaseCommand" aliases="luis"{
     
 }
 ```
+
+
+## Example
+
+Here is the `dir` command briefly explained:
+
+```javascript
+/**
+* Lists the files and folders in a given directory. Defaults to current working directory
+*
+* {code:bash}
+* dir samples
+* {code} 
+* 
+**/
+component extends="commandbox.system.BaseCommand" aliases="ls,ll,directory" excludeFromHelp=false {
+ 
+    /**
+    * @directory.hint The directory to list the contents of
+    * @recurse.hint recursively list
+    **/
+    function run( String directory="", Boolean recurse=false ) {
+    // command code goes here
+    }
+}
+```
