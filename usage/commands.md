@@ -12,7 +12,7 @@ artifacts clean
 artifacts remove
 ```
 
->**Hint** : the text `artifacts` itself is not a command and you will receive an error if you hit enter after just typing that text. Context-specific help is available for all namespaces by typing `help` or `-help` after the namespace.
+>**Hint** : the text `artifacts` itself is not a command and you will receive an error if you hit enter after just typing that text. Context-specific help is available for all namespaces by typing `help` after the namespace.
 
 ```bash
 artifacts help
