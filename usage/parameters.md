@@ -1,6 +1,6 @@
 # Parameters
 
-Many commands accept parameters to control how they function. Parameters are entered on the same line as the command and separated by a space and can be provided as named OR positional, similar to how CFML functions can be called. You cannot mix named and positional parameters in the same command or an error will be thrown. There is also a concept of "flag" for boolean parameters that can be combined with named or positional parameters for brevity and readability.
+Many commands accept parameters to control how they function. Parameters are entered on the same line as the command and separated by a space and can be provided as named OR positional, similar to how CFML functions can be called. You cannot mix named and positional parameters in the same command though or an error will be thrown. There is also a concept of "flag" for boolean parameters that can be combined with named or positional parameters for brevity and readability.
 
 ## Named Parameters
 Named parameters can be specified in any order and follow the format `name=value`. Multiple named parameters are separated by a space.
@@ -68,7 +68,7 @@ echo 'O\'reilly Auto Parts'
 echo "Luis \"The Dev\" Majano"
 ```
 
->**Hint** : Only like quotes need to be escaped. Single quotes can exist inside of double and vice versa without issue. These examples before are perfectly valid.
+>**Hint** : Only like quotes need to be escaped. Single quotes can exist inside of double and vice versa without issue. These examples below are perfectly valid.
 
 ```bash
 echo "O'reilly Auto Parts"
