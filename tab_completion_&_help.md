@@ -75,5 +75,13 @@ array function completeTypes() {
 
 An example of this in action is the install command.  It will auto-complete the ForgeBox slug for you.  Try typing `install cold` and hitting tab to see what happens.
 
+## Namespace help
+
+If you have a namespace (folder) of commands, you can control what the user sees when they type `namespace help` by creating a command CFC called `help.cfc` in the root of that folder.  The help command should print out whatever information you want.  CommandBox will automatically call it when the users needs help for that namespace.
+
+
+
+
+
 
 
