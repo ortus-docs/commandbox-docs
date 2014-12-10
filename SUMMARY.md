@@ -28,4 +28,5 @@
 * [Developing Commands](developing_commands/developing_commands.md)
    * Command Output
    * Tab Completion Hints
+   * Interactivity
 
