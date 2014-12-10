@@ -18,7 +18,7 @@
 * [Package Management](packages/package_management.md)
    * [Code Endpoints](packages/code_endpoints.md)
    * [Installing Packages](packages/installing_packages.md)
-       * Installation Path
+       * [Installation Path](installation_path.md)
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
