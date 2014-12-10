@@ -19,11 +19,3 @@ When you install a package, here are the steps that are taken.  Most all of this
 7. The package is saved as a dependency in the root box.json
 8. The package's dependencies are installed
 
-## Saving dependencies
-
-
-
-Packages you 
-
-
-
