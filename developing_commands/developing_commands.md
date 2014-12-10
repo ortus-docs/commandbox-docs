@@ -12,11 +12,6 @@ component extends="commandbox.system.BaseCommand"{
 
 To create a two-part command called `testbox run` create CFCs that are nested in subfolders, for example: `user/.CommandBox/commands/testbox/run.cfc` Everything after the command is considered parameters.
 
-## WireBox DI
-All CFC's are wired via WireBox, so dependency injection and AOP are available to them.
-
-
-
 ## Example
 
 Here is the `dir` command briefly explained:
@@ -41,6 +36,11 @@ component extends="commandbox.system.BaseCommand" aliases="ls,ll,directory" excl
     }
 }
 ```
+
+## WireBox DI
+All CFC's are wired via WireBox, so dependency injection and AOP are available to them.
+
+
 
 
 
