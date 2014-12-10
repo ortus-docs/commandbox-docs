@@ -28,7 +28,7 @@
 * [Developing Commands](developing_commands/developing_commands.md)
    * Using Parameters
    * Command Output
-   * Tab Completion & Help
+   * [Tab Completion & Help](tab_completion_&_help.md)
    * Interactivity
    * Error handling
 
