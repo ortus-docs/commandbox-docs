@@ -30,4 +30,5 @@
    * Command Output
    * Tab Completion & Help
    * Interactivity
+   * Error handling
 
