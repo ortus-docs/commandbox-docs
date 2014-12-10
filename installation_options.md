@@ -29,7 +29,17 @@ install cbvalidation --production
 If you're a glutton for information, or perhaps you just want to debug what's going on, set the `--verbose` flag to get extra debugging information out of the install command including a list of every file that's installed.
 
 ```bash
-install cbvalidation --production
+install cbi18n --verbose
 ```
+
+## Forced Installation
+
+If CommandBox sees the directory that it was going to install into already exists, it will decline to install again since it would be overwriting what's already there.  If you want to install anyway, use the `--force` flag.
+
+```bash
+install cbsoap --force
+```
+
+
 
 
