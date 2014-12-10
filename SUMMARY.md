@@ -31,4 +31,5 @@
    * [Tab Completion & Help](tab_completion_&_help.md)
    * Interactivity
    * Error handling
+   * ForgeBox Distribution
 
