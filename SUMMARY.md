@@ -28,7 +28,7 @@
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](aliases.md)
    * [Using Parameters](using_parameters.md)
-   * Command Output
+   * [Command Output](command_output.md)
    * [Tab Completion & Help](tab_completion_&_help.md)
    * Interactivity
    * Error handling
