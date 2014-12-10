@@ -9,11 +9,13 @@ The REPL command has its own history for CFML statements you run as well. There 
 The history is stored in a text file in the root of your `user/.CommandBox/` folder. To manage it programatically, use the [history](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/history.html) command. Here is an example of viewing and clearing your command history.
 
 ```
-#View all history
+# View all history
 history
 
-## View all the times you played snake, paginated (because there is so many)
+# View all the times you played snake, paginated (because there are so many)
 history | grep snake | more
+
+# Hide the evidence!
 history --clear
 ```
 
