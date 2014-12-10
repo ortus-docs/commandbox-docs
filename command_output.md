@@ -77,16 +77,11 @@ print.underscoredLine( "Have I made my point?" );
 
 ### Mix It Up
 
-Any combination of the above is possible.  Get creative, but just don't overdo it.  No one wants their console to look like a rainbow puked on it.
+Any combination of the above is possible.  Filler words like "text" will simply be ignored so you can make your method nice and readable.  Get creative, but just don't overdo it.  No one wants their console to look like a rainbow puked on it.
 
 ```javascript
-print.Line()
-print.text( 'Hello World' );
-print.boldText( 'Hello World' );
-print.line( 'Hello World' );
-print.redLine( 'Hello World' );
 print.redOnWhiteLine( 'Hello World' );
-print.redOnWhiteBold( 'Hello World' );
+print.boldRedOnBlueText( 'Hello World' );
 print.boldBlinkingUnderscoredBlueTextOnRedBackground( 'Test' );
 ```
 
