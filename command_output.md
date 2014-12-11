@@ -80,9 +80,9 @@ print.underscoredLine( "Have I made my point?" );
 Any combination of the above is possible.  Filler words like "text" will simply be ignored so you can make your method nice and readable.  Get creative, but just don't overdo it.  No one wants their console to look like a rainbow puked on it.
 
 ```javascript
-print.redOnWhiteLine( 'Hello World' );
-print.boldRedOnBlueText( 'Hello World' );
-print.boldBlinkingUnderscoredBlueTextOnRedBackground( 'Test' );
+print.redOnWhiteLine( 'Ready the cannons!' );
+print.boldRedOnBlueText( "Test dirt, don't wash." );
+print.boldBlinkingUnderscoredBlueTextOnRedBackground( "That's just cruel" );
 ```
 
 ### Flush
