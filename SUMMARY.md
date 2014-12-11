@@ -25,6 +25,7 @@
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
    * [Box.json](packages/boxjson.md)
+* Embedded Server
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](aliases.md)
    * [Using Parameters](using_parameters.md)
@@ -34,5 +35,4 @@
    * [Shell integration](shell_integration.md)
    * [Error handling](error_handling.md)
    * [ForgeBox Distribution](forgebox_distribution.md)
-* Embedded Server
 
