@@ -6,7 +6,7 @@ shell, or one-at-a-time commands from your native shell.
 ## Multiple Commands
 
 If you open the interactive shell, you will see the CommandBox splash screen (ASCII
-art) an d then you'll be presented with the `commandbox\>` prompt.
+art) and then you'll be presented with the `CommandBox>` prompt.
 You can enter as many commands as you wish in order and after each
 command is finished executing, you will be returned to the CommandBox
 prompt. If you have multiple commands you want to execute manually, this
@@ -64,6 +64,10 @@ the CommandBox engine once for all those commands, but still be dumped
 back at your native prompt when done. Read more about the
 **recipe** command in our [Command API docs](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html).
 
+```bash
+C:\>box recipe myRecipe.boxr
+```
+
 ## Debug Mode
 You can also activate CommandBox in **debug** mode by passing the `-debug` flag in the command line.  This will give you much more verbose information about the running CommandBox environment.  This affects both the interactive shell or one-off commands
 
@@ -75,7 +79,7 @@ box server start -debug
 ## Output
 
 Output from commands will be ANSI-formatted text which, by default,
-streams directly to the console. You can capture the output of commands
+streams directly to the console.  When in the interactive shell, you can capture the output of commands
 and manipulate it, search it, or write it to a file. Use a pipe (`|`)
 to pass the output of one command into another command as its first
 input. Output can be piped between more than one command. Use a right

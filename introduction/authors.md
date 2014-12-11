@@ -25,5 +25,7 @@ Brad grew up in southern Missouri where he systematically disassembled every toy
 
 Brad has been programming CFML for 12+ years and has used every version of CF since 4.5.  He first fell in love with ColdFusion as a way to easily connect a database to his website for dynamic pages.  Brad blogs at (http://www.codersrevolution.com) and likes to work on solder-at-home digitial and analog circuits with his daughter as well as building projects with Arduino-based microcontrollers.
 
+Brad's CommandBox Snake high score is 141.
+
 ## Contributors
 * Jorge Reyes - ColdBox Aficionado
