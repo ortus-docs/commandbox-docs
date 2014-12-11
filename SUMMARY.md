@@ -33,4 +33,5 @@
    * [Interactivity](interactivity.md)
    * [Error handling](error_handling.md)
    * [ForgeBox Distribution](forgebox_distribution.md)
+   * Shell integration
 
