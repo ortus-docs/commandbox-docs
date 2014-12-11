@@ -14,10 +14,14 @@ component extends="commandbox.system.BaseCommand" {
 
 To create a two-part command called `testbox run` create CFCs that are nested in subfolders, for example: `user/.CommandBox/commands/testbox/run.cfc` Everything after `testbox run` will be considered parameters.
 
+## Making Changes
+
+Commands are created and stored once for the duration that CommandBox is running.  If testing changes to a command in the interactive shell, use the `reload` command (aliased as `r`) to reload the shell.  Your changes will immediately be available.  Using the up arrow to access the shell's history can also be useful here.
+
 
 ## WireBox DI
 
-All CFC's are wired via WireBox, so dependency injection and AOP are available to them.  This can be handy for commands to wrap services provided by models, or to access utilities and services inside CommandBox.
+All CFCs including commands are created and wired via WireBox, so dependency injection and AOP are available to them.  This can be handy for commands to wrap services provided by models, or to access utilities and services inside CommandBox.
 
 This command would inject CommandBox's ArtifactService to list out all the packages being stored.
 
