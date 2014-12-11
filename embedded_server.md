@@ -7,15 +7,19 @@ CommandBox> cd C:\sites\test
 CommandBox> start
 ```
 
-CommandBox's embedded server does not require any prior installations of any CFML engine to work.  It does not use Apache, IIS, or NGinX.  A very lightweight Java web server called [Undertow](http://undertow.io/) is used and a context is programmatically deployed via a WAR file.
-
-You have full control of your server. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers.
-
 To stop the embedded server, run the `stop` command from the same directory.
 
 ```bash
 CommandBox> stop
 ```
+
+## Full  Control
+
+You have full control of your server. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers.
+
+CommandBox's embedded server does not require any prior installations of any CFML engine to work.  It does not use Apache, IIS, or NGinX.  A very lightweight Java web server called [Undertow](http://undertow.io/) is used and a context is programmatically deployed via a WAR file.
+
+
 
 ## OS Integration
 
