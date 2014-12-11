@@ -16,7 +16,7 @@ If your passing through a value that may or may not need escaping, there is a me
 runCommand( 'echo "#getInstance( 'parser' ).escapeArg( untrustedVariable )#"' );
 ```
 
-By default, cammands run via `runCommand()` will send their output to the console.  It is possible to capture that output for your own purposes.
+By default, commands run via `runCommand()` will send their output to the console.  It is possible to capture that output for your own purposes.
 
 ```javascript
 // Run echo and capture its output
@@ -24,6 +24,8 @@ var result =  runCommand( command='echo hello', returnOutput=true );
 // Force it to echo in green text
 print.green( result ).toConsole();
 ```
+
+> **Note** You won't be able to capture any output that's already flushed directly to the console.
 
 ## getCWD()
 
