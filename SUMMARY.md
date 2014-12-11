@@ -31,7 +31,7 @@
    * [Command Output](command_output.md)
    * [Tab Completion & Help](tab_completion_&_help.md)
    * [Interactivity](interactivity.md)
+   * Shell integration
    * [Error handling](error_handling.md)
    * [ForgeBox Distribution](forgebox_distribution.md)
-   * Shell integration
 
