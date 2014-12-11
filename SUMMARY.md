@@ -26,7 +26,7 @@
    * [Creating Packages](packages/creating_packages.md)
    * [Box.json](packages/boxjson.md)
 * [Embedded Server](embedded_server.md)
-   * Customize Servers
+   * [Customize Servers](customize_servers.md)
    * Manage Servers
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](aliases.md)
