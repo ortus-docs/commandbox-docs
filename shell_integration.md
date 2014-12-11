@@ -1,2 +1,4 @@
 # Shell integration
 
+runCommand()
+getCWD()
