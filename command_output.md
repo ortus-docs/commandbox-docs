@@ -94,6 +94,22 @@ If you have a command that takes a while to complete and you want to update the 
 print.Line( 'Step 1 complete' ).toConsole();
 print.Line( 'Step 2 complete' ).toConsole();
 print.Line( 'Step 3 complete' ).toConsole();
+```
+
+## Chaining
+
+All the methods in the `print` object can be chained together to clean up your code.
+
+```javascript
+	print.whiteOnRedLine( 'ERROR' )
+		.line()
+		.redLine( message )
+		.line();
 
 ```
+
+
+
+
+
 
