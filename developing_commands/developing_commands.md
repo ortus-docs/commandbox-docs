@@ -40,7 +40,7 @@ component extends="commandbox.system.BaseCommand" {
 }
 ```
 
-Commands also have a `variables.wirebox` variable as well as their own getInstance() method which proxies to WireBox to get objects.
+Commands also have a `variables.wirebox` variable as well as their own `getInstance()` method which proxies to WireBox to get objects.
 
 ```javascript
 var results = getInstance( 'artifactService' ).listArtifacts();
