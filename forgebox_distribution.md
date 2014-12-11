@@ -8,3 +8,9 @@ Commands can be installed using the `install` command.  They will not be saved a
 install commandbox-chuck-norris
 ```
 
+The CommandBox shell will be reloaded after a command is installed so it should be ready to use right away.
+
+Here are some example CommandBox Commands:
+
+* [Chuck Norris](http://www.coldbox.org/forgebox/view/CommandBox-Chuck-Norris) ([code](https://github.com/bdw429s/CommandBox-Chuck-Norris))
+* [Image To ASCII](http://www.coldbox.org/forgebox/view/CommandBox-ImageToASCII) ([code](https://github.com/bdw429s/CommandBox-Image-To-ASCII))
