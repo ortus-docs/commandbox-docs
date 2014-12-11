@@ -26,17 +26,37 @@ If you just need a single character collected from a user, or perhaps any keystr
 var ASCIICode = waitForKey( 'Press any key, any key.' );
 print.line().line( 'My magic tells me you pressed: #Chr( ASCIICode )#' );
 ```
+
+>**Note** It is a known behavior that multi-byte characters such as the up arrow will only return the first byte which kind of makes them useless.  We have [logged a bug](https://github.com/jline/jline2/issues/152) in the Java project that handles the low-level shell.
+
+
 ## confirm()
 
+If you want to ask the user a yes or no question, use the `confirm()` method.  Any boolean that evaluates to true or a `y` will return true.  Everything else will return false.  This allows your users to respond with what's natural to them like `yes`, `y`, `no`, `n`, `true`, or `false`.  You must pass a question into the method and you will receive a boolean back.
 
 ```javascript
-var favoriteColor = ask( 'WHAT, is your favorite color??' );
-
-if( favoriteColor == 'red' ) {
-    print.boldRedLine( 'AAAAHHHHHH!!!!' );
-} else if ( favoriteColor == 'I mean blue' ) {
-    print.line( 'Obscure Monty Python reference' );
+if( confirm( 'Do you like Pizza? [y/n]' ) ) {
+    print.greenLine( 'Good for you.' );
+} else {
+    print.boldRedLine( 'Heretic!!' );
 }
 ```
 
-force
+## Force
+
+Remember that while interactivity is cool, people might want to automate your commands as part of a script that runs headlessly.  Therefore you should always provide a way to skip prompts if possible.  An example is the `rm` command.  It usually confirms the deletion but can be told to stand down.
+
+```javascript
+function run( required path, Boolean force=false )  {
+	if( arguments.force || confirm( "Are you sure? [y/n]" ) ) {
+	    fileDelete( arguments.path );
+	    print.redLine( "It's gone, baby." );
+	    return;
+	}
+	print.redLine( "Chickened out!" );
+```
+
+
+
+
+
