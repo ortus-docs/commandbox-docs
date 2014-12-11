@@ -27,6 +27,7 @@
    * [Box.json](packages/boxjson.md)
 * [Embedded Server](embedded_server.md)
    * Customize Servers
+   * Manage Servers
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](aliases.md)
    * [Using Parameters](using_parameters.md)
