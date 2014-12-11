@@ -34,7 +34,7 @@ Dependency Hierarchy myApp (1.0.0)
 
 What this opens the door for is more than one module to depend on different versions of the same second module.  Both can be installed and nested under the respective parent.  In the near future, WireBox will be smart enough to present these nested modules only to their parents so they are fully encapsulated.  
 
-The idea is that a module can "see" and use another module installed at the same level or higher in the hierarchy, but not lower.  That makes dependencies a bit of a black box to their parents.  This also allows us to bypass some redundancy.  For instance, when installing a module, if a satisfying version of that module already exists at a higher level, we skip the installation.  Consider this exmaple:
+The idea is that a module can "see" and use another module installed at the same level or higher in the hierarchy, but not lower.  That makes dependencies a bit of a black box to their parents.  This also allows us to bypass some redundancy.  For instance, when installing a module, if a satisfying version of that module already exists at a higher level, we skip the installation.  Consider this example:
 
 
 ```bash
