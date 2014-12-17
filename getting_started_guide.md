@@ -1,2 +1,2 @@
-# Getting Started Guide
+# CommandBox Getting Started Guide
 
