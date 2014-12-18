@@ -29,7 +29,7 @@ You're well on your way now.   While you wait for arrival you might want to secu
 ## 2. Unzip & First Run
 <img src="images/getting_started/open_package.png" alt="Setup">
 
-Your CommandBox is sent to you via a zip archive.  Decompress the archive to a location of your choice.  The **No JRE Included** download will only have one file in it named `box`.  For Windows users, this will be an `exe` file.  For unix-based users, it will be an executable binary.The **With JRE Included** version will have a `jre` folder.  Keep that folder in the same location as the executable so it can be found.
+Your CommandBox is sent to you via a zip archive.  Decompress the archive to a location of your choice.  The **No JRE Included** download will only have one file in it named `box`.  For Windows users, this will be an `exe` file.  For unix-based users, it will be an executable binary.  The **With JRE Included** version will have a `jre` folder.  Keep that folder in the same location as the executable so it can be found.
 
 <img src="images/getting_started/box_icon.png" alt="CommandBox Icon">
 
