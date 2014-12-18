@@ -52,7 +52,7 @@ C:\ > _
 
 The rest of this guide, however, will assume you're sitting at the interactive shell, where you can enjoy cross-platform command consistency, custom history, and tab completion.
 
-The first command you'll want to try out is `help`.  Type it after a command, or even a partial command to help context-specific assistance.Check out the help for the `version` command and then run it to see what you get.
+The first command you'll want to try out is `help`.  Type it after a command, or even a partial command to help context-specific assistance.  Check out the help for the `version` command and then run it to see what you get.
 
 ```bash
 CommandBox> version help
@@ -90,7 +90,7 @@ When you're done, just type `quit` to exit the REPL.  How does it feel to master
 ### Package Manager
 <img src="images/getting_started/package_manager.png" alt="Embedded Server">
 
-It's about time we did something useful.  CommandBox allows you to *install* stuff and it makes it really easy.  You now have ForgeBox on speed dial.   Let's create a little playground to experiment in.  Adjust this accordingly for Unix-based OS's.
+It's about time we did something useful.  CommandBox allows you to *install* stuff and it makes it really easy.  You now have ForgeBox on speed dial.   Let's create a little playground to experiment in.  Adjust these paths accordingly for Unix-based OS's.
 
 ```bash
 CommandBox> mkdir C:\playground
