@@ -104,7 +104,7 @@ CommandBox> forgebox search Luis
 
 ```
 
-Wow, that Luis guy is busy!  Let's install the the ColdBox MVC Platform.  Don't worry, this won't hurt a bit!
+Wow, that Luis guy is busy!  Let's install the the ColdBox MVC Platform.  Don't worry, this won't hurt a bit.
 
 ```bash
 CommandBox> install coldbox
