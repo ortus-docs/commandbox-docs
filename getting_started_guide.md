@@ -20,7 +20,14 @@ fdgdg
 
 
 ## 2. Setup
-<img src="images/getting_started/open_package.png" alt="Open the package">
+<img src="images/getting_started/open_package.png" alt="Setup">
 
 ## 3. Start Using
-<img src="images/getting_started/run.png" alt="Open the package">
+<img src="images/getting_started/run.png" alt="Start Using">
+
+
+
+<img src="images/getting_started/embedded_server.png" alt="Embedded Server">
+
+
+<img src="images/getting_started/extensbility.png" alt="Extensbility">
