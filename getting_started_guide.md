@@ -136,6 +136,8 @@ When you're done playing, just shutdown your server with the `stop` command.  It
 
 ```bash
 CommandBox> stop
+CommandBox> cd ../
+CommandBox> rm playground --recurse --force
 ```
 
 ### Next Steps
