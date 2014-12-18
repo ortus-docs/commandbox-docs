@@ -147,7 +147,7 @@ Your well on your way to becoming a more productive you.  Experiment with Comman
 
 If you run in issues or just have questions, please jump on our [CommandBox Google Group](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox) and ask away.
 
-CommandBox is [Professional Open Source](https://github.com/Ortus-Solutions/commandbox) under the LGPL license.  We'd love to have your help with the product.  Commands are actually implemented in CFML which means you can write your own and share them on ForgeBox.   See if you can figure out how to find and install the "Church Norris" command.  Also, the `snake` game is a good way to cure boredom.  These should give you some ideas of how you can contribute.
+CommandBox is [Professional Open Source](https://github.com/Ortus-Solutions/commandbox) under the LGPL license.  We'd love to have your help with the product.  Commands are actually implemented in CFML which means you can write your own and share them on ForgeBox.   See if you can figure out how to find and install the "Chuck Norris" or "Image To ASCII" commands.  Also, the `snake` game is a good way to cure boredom.  These should give you some ideas of how you can contribute.
 
 
 
