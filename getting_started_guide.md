@@ -33,7 +33,7 @@ Your CommandBox is sent to you via a zip archive.  Decompress the archive to a l
 
 <img src="images/getting_started/box_icon.png" alt="CommandBox Icon">
 
-Now just double click the file from your GUI, or execute it via a console window.  This will start a short, quick, one-time process of unpacking CommandBox into your user's home directory.  Congratulations, CommandBox is now installed!  You'll still run the same eecutable binary everytime you want to use the CLI, but the extraction process won't need to happen again.
+Now just double click the file from your GUI, or execute it via a console window.  This will start a short, quick, one-time process of unpacking CommandBox into your user's home directory.  Congratulations, CommandBox is now installed!  You'll still run the same executable binary every time you want to use the CLI, but the extraction process won't need to happen again.
 
 <img src="images/getting_started/first_run.png" alt="First Run">
 
