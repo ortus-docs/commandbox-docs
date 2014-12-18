@@ -5,29 +5,33 @@ Congratulations on your choice of CommandBox, the next generation of CFML produc
 <center>
     <img src="images/getting_started/in_the_package.png" alt="In The Package">
 </center>
+<br>
 
-Your CommandBox package was shipped from our integration server with the following items.  You'll 
+Your CommandBox download was quality checked and  shipped from our integration server with the following items.  You'll want to check the contents of the package to ensure you received everthing.
 * CLI
 * Package Manager
 * Embedded CFML Server
 * REPL
 * Built-in Help
+* ASCII Art
 
-## 1. Open Package 
+## 1. Download
 <img src="images/getting_started/the_package.png" alt="Open the package">
 
-fdgdg
+If you don't already have CommandBox in hand, download it from the product page on the Ortus Solutions site:
+* [http://www.ortussolutions.com/products/commandbox](http://www.ortussolutions.com/products/commandbox#download)
 
 
-## 2. Setup
+## 2. Unzip
 <img src="images/getting_started/open_package.png" alt="Setup">
 
-## 3. Start Using
+## 3. Setup
 <img src="images/getting_started/run.png" alt="Start Using">
 
 
-
+### Embedded Server
 <img src="images/getting_started/embedded_server.png" alt="Embedded Server">
 
 
+### Extensibility
 <img src="images/getting_started/extensbility.png" alt="Extensbility">
