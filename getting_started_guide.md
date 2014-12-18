@@ -31,7 +31,7 @@ You're well on your way now.   While you wait for arrival you might want to secu
 
 Your CommandBox is sent to you via a zip archive.  Decompress the archive to a location of your choice.  The **No JRE Included** download will only have one file in  it.  For Windows users, this will be an `exe` file.  For unix-based users, it will be an executable binary.The **With JRE Included** version will have a `jre` folder.  Keep that folder in the same location as the executable so it can be found.
 
-Now just double click the file from your GUI, or execute it via a console window.  This will 
+Now just double click the file from your GUI, or execute it via a console window.  This will start a short, quick, one-time process of unpacking CommandBox into your user's home directory.  
 
 ## 3. Setup & Usage
 <img src="images/getting_started/run.png" alt="Start Using">
