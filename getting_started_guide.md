@@ -90,13 +90,58 @@ When you're done, just type `quit` to exit the REPL.  How does it feel to master
 ### Package Manager
 <img src="images/getting_started/package_manager.png" alt="Embedded Server">
 
+It's about time we did something useful.  CommandBox allows you to *install* stuff and it makes it really easy.  You now have ForgeBox on speed dial.   Let's create a little playground to experiment in.  Adjust this accordingly for Unix-based OS's.
+
+```bash
+CommandBox> mkdir C:\playground
+CommandBox> cd C:\playground
+```
+
+I wonder how many projects Luis Majano has posted on ForgeBox.  We can look with the `forgebox search` command:  Hint, try pressing `tab` while typing a command for auto-completion.
+
+```bash
+CommandBox> forgebox search Luis
+
+```
+
+Wow, that Luis guy is busy!  Let's install the the ColdBox MVC Platform.  Don't worry, this won't hurt a bit!
+
+```bash
+CommandBox> install coldbox
+```
+
+We can create a skeleton ColdBox app really easy with the ColdBox generator commands.  Let's give them a try:
+
+```bash
+CommandBox> coldbox create app MyApp
+```
+
 ### Embedded Server
 <img src="images/getting_started/embedded_server.png" alt="Embedded Server">
 
+Now that we have a nifty little test app, let's give it a spin.  Wait, you don't need to install a CF server, CommandBox has one built in!  You can start up an ad-hoc server in *any* folder on your hard drive simply by typing `start`.  It really couldn't be any simpler.
+
+```bash
+CommandBox> start
+```
+
+In a few seconds, a browser window will appear with your running application.  This is a full server with access to the web administrator where you can add data sources, mappings, or adjust the server settings.  Notice the handy icon added to your system tray as well.  You can even edit the files in your new site from the command line:
 
 
-### Extensibility
-<img src="images/getting_started/extensbility.png" alt="Extensbility">
+```bash
+CommandBox> edit views/main/index.cfm
+```
+
+When you're done playing, just shutdown your server with the `stop` command.  It will save all of its settings for the next time you start it.  Feel free to delete the playground directory at any time.  It won't break a thing.
+
+```bash
+CommandBox> stop
+```
+
+### Next Steps
+<img src="images/getting_started/extensbility.png" alt="Next Steps">
+
+Your well on your way to becoming a more productive you.  Experiment with CommandBox to see what else you can do with it.  This rest of this documentation book is a good place to start.  Also, we have full documentation of every command in our [Command API Docs.](http://apidocs.ortussolutions.com/commandbox/current)
 
 
 
