@@ -64,6 +64,29 @@ Now, let's see if your installation is up to date with the `upgrade` command:
 CommandBox> upgrade
 ```
 
+Looking good.  Let's try a bit of CFML code from the REPL, shall we?  Type the `repl` command to be dropped into the REPL prompt.
+
+```bash
+CommandBox> repl
+Enter any valid CFML code in the following prompt in order to evaluate it and print out any results (if any)
+Type 'quit' or 'q' to exit!
+CFSCRIPT-REPL: _
+```
+
+Type these lines one at a time and press enter to see what you get.
+```
+fruits = [ 'apples', 'oranges' ]
+fruits.append( 'bananas' )
+
+( fruits.len() ? 'Start eating!' : 'Time to run to the store' )
+
+for( fruit in fruits ) {
+  echo( fruit & chr(10) )
+}
+```
+
+When you're done, just type `quit` to exit the REPL.  How does it feel to master CFML from the command line?
+
 ### Package Manager
 <img src="images/getting_started/package_manager.png" alt="Embedded Server">
 
