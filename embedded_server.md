@@ -13,18 +13,19 @@ To stop the embedded server, run the `stop` command from the same directory.
 CommandBox> stop
 ```
 
+## OS Integration
+
+You can start as many embedded server instances as you want.  Each running server will add a little green "Ortus" icon in your system tray.  Right click on it for options:
+
+* Stop Server
+* Open Browser
+* Open Admin
+
 ## Full  Control
 
 You have full control of your server. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers.
 
 CommandBox's embedded server does not require any prior installations of any CFML engine to work.  It does not use Apache, IIS, or NGinX.  A very lightweight Java web server called [Undertow](http://undertow.io/) is used and a context is programmatically deployed via a WAR file.
 
+The CommandBox server is very lightweight and minimal but should still give you the options you need to set up most local development servers quickly.  To see a list of all the parameters you can pass to the `server start` command, refer to the [CommandBox API Docs](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/commands/server/start.html) or run `server start help` command directly from the CLI.
 
-
-## OS Integration
-
-You can start as many embedded server isntances as you want.  Each running server will add a little green "Ortus" icon in your system tray.  Right click on it for options:
-
-* Stop Server
-* Open Browser
-* Open Admin
