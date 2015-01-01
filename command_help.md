@@ -6,48 +6,19 @@ Help is integrated at every level in CommandBox.  You can help global help, name
 
 To get an overall list of all the commands you have available to run, simply type `help` at the shell.
 
-```bash
-CommandBox > help
-**************************************************
-* CommandBox Help
-**************************************************
-
-Here is a list of commands in this namespace:
- cat
- cd
- dir
- echo
- ...
-
-Here is a list of nested namespaces:
- coldbox
- forgebox
- package
- server
- ...
+<img src="images/usage/global_help.png" alt="Global Help">
 
 To get further help on any of the items above, type "help command name".
 ```
 ## Namespace Help
 Next, drill down and get help on a specific namespace like `server`.
 
-```bash
-CommandBox >  server help
-**************************************************
-* CommandBox Help for server
-**************************************************
+<img src="images/usage/namespace_help.png" alt="Namespace Help">
 
-Here is a list of commands in this namespace:
-server forget
-server log
-server open
-server restart
-server start
-server status
-server stop
+## Command Help
+And finally, and get help on a single command such as `server stop`.  We can see the command is also aliased as just `stop` as well as all the possible parameters and their types along with a few sample ways to call the command.
 
-To get further help on any of the items above, type "help command name".
-```
+<img src="images/usage/command_help.png" alt="Command Help">
 
 
 
