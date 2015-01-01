@@ -14,9 +14,9 @@
    * [Execution](usage/execution.md)
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
+   * Command Help
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
-   * Command Help
 * [Package Management](packages/package_management.md)
    * [Code Endpoints](packages/code_endpoints.md)
    * [Installing Packages](packages/installing_packages.md)
