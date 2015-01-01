@@ -16,3 +16,22 @@ name: myApp
   ID: 83B74C2
 ```
 
+>**Note** : If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
+
+You can take a quick look at the what's been happening with the `server log` command.  
+
+## Forgetting Servers
+If you want to wipe all configuration, logs, and WEB-INF files for a server, use the `server forget` command.  This will also remove any administrator settings you may have saved including data sources, mail servers, and server mappings.
+
+```bash
+server forget
+```
+
+You can forget all your servers at once too if you want to start with a clean slate. 
+
+```bash
+server forget --all
+```
+
+
+
