@@ -29,7 +29,7 @@
 * [Embedded Server](embedded_server.md)
    * [Server Processes](server_processes.md)
    * [Server Port and Host](server_port_and_host.md)
-   * Manage Servers
+   * [Manage Servers](manage_servers.md)
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](aliases.md)
    * [Using Parameters](using_parameters.md)
