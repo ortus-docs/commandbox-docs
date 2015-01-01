@@ -18,10 +18,10 @@ The print object has an unlimited number of methods you can call on it since it 
 
 If the method has the word "line" in it, a new line will be added to the end of the string.  If the string is empty, you'll just output a blank line.
 
-'''javascript
+```javascript
 print.line( 'I like Spam.' );
 print.line( '' );
-'''
+```
 
 ### Text Color
 
