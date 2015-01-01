@@ -27,7 +27,7 @@
    * [Creating Packages](packages/creating_packages.md)
    * [Box.json](packages/boxjson.md)
 * [Embedded Server](embedded_server.md)
-   * Server Processes
+   * [Server Processes](server_processes.md)
    * [Customize Servers](customize_servers.md)
    * Manage Servers
    * Server Port and Host
