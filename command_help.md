@@ -1,0 +1,25 @@
+# Command Help
+
+Help is integrated at every level in CommandBox.  You can help global help, namespace help, or command help at any time. 
+
+## Global Help
+
+To get an overall list of all the commands you have available to run, simply type `help` at the shell.
+
+<img src="images/usage/global_help.png" alt="Global Help">
+
+## Namespace Help
+Next, drill down and get help on a specific namespace like `server`.
+
+<img src="images/usage/namespace_help.png" alt="Namespace Help">
+
+## Command Help
+And finally, get help on a single command such as `server stop`.  We can see the command is also aliased as just `stop` as well as all the possible parameters and their types along with a few sample ways to call the command.
+
+<img src="images/usage/command_help.png" alt="Command Help">
+
+## HTML Command API Docs
+
+For a full list of all the commands that ship with CommandBox as well as all their paramaters and samples, please visit our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current) which are auto-generated each build.  This is the same information available to you via the `help` command, but in a searchable format you can browse outside of the CLI.
+
+* http://apidocs.ortussolutions.com/commandbox/current
