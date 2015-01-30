@@ -4,7 +4,14 @@ Regardless of where you place the **box** binary, the first time you execute
 it, a `.CommandBox` folder will be created in your user's home
 directory and CommandBox will be extracted into that location. If you
 delete this directory, it will be replaced the next time the CommandBox
-executable is run.
+executable is run. You can specify a different install location by adding "-commandbox_home=E:\CommandBox".
+To avoid specifying the commandbox_home variable every time you can create a file 
+called "commandbox.properties" (case sensitive) in the same directory as 
+the EXE, and fill it with this line: 
+
+```bash
+commandbox_home=E:\\CommandBox 
+```
 
 ## <i class="fa fa-windows"></i> Windows
 
