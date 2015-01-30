@@ -69,10 +69,21 @@ If any of the following words appear in the method, their decoration will be add
 * blinking
 * reversed
 * concealed
+* indented
 
 ```javascript
 print.boldText( "Don't make me turn this car around!" );
 print.underscoredLine( "Have I made my point?" );
+```
+
+`indented` isn't part of the ANSI standard but rather a nice way to indent each line of output with two spaces to help clean up nested lines of output.  If the string being passed in has carriage returns, each of them will be preceded by two spaces.
+
+
+```javascript
+print.boldText( "Header" )
+    .indentedLine( "Detail 1" )
+    .indentedLine( "Detail 2" )
+    .indentedLine( "Detail 3" );
 ```
 
 ### Mix It Up
