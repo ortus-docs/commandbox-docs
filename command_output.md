@@ -16,11 +16,11 @@ The print object has an unlimited number of methods you can call on it since it 
 
 ### Line Break
 
-If the method has the word "line" in it, a new line will be added to the end of the string.  If the string is empty, you'll just output a blank line.
+If the method has the word "line" in it, a new line will be added to the end of the string.  If the string is empty or not provided, you'll just output a blank line.
 
 ```javascript
 print.line( 'I like Spam.' );
-print.line( '' );
+print.line();
 ```
 
 ### Text Color
@@ -69,10 +69,21 @@ If any of the following words appear in the method, their decoration will be add
 * blinking
 * reversed
 * concealed
+* indented
 
 ```javascript
 print.boldText( "Don't make me turn this car around!" );
 print.underscoredLine( "Have I made my point?" );
+```
+
+`indented` isn't part of the ANSI standard but rather a nice way to indent each line of output with two spaces to help clean up nested lines of output.  If the string being passed in has carriage returns, each of them will be preceded by two spaces.
+
+
+```javascript
+print.boldText( "Header" )
+    .indentedLine( "Detail 1" )
+    .indentedLine( "Detail 2" )
+    .indentedLine( "Detail 3" );
 ```
 
 ### Mix It Up
@@ -83,6 +94,21 @@ Any combination of the above is possible.  Filler words like "text" will simply 
 print.redOnWhiteLine( 'Ready the cannons!' );
 print.boldRedOnBlueText( "Test dirt, don't wash." );
 print.boldBlinkingUnderscoredBlueTextOnRedBackground( "That's just cruel" );
+```
+
+### Dynamic Formatting
+
+Some times you want to apply formatting at run time.  For instance, show a status green if it's good and red if it's bad.  You can pass a second string to the print helper with additional formatting that will be appended to the method name.
+
+```javascript
+print.text( status, ( status == 'running' ? 'green' : 'red' ) );
+```
+
+Depending on the value of the `status` variable, that line would be the same as one of the following two lines:
+
+```javascript
+print.greenText( status );
+print.redText( status );
 ```
 
 ### Flush
@@ -96,7 +122,7 @@ print.Line( 'Step 2 complete' ).toConsole();
 print.Line( 'Step 3 complete' ).toConsole();
 ```
 
-## Chaining
+### Chaining
 
 All the methods in the `print` object can be chained together to clean up your code.
 
