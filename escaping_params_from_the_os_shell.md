@@ -1,2 +1,2 @@
-# Escaping Params from the OS SHell
+# Escaping Params from the OS Shell
 
