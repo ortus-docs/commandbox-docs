@@ -14,7 +14,7 @@
    * [Execution](usage/execution.md)
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
-       * [Escaping Params from the OS SHell](escaping_params_from_the_os_shell.md)
+       * [Escaping Params from the OS Shell](escaping_params_from_the_os_shell.md)
    * [Command Help](command_help.md)
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
