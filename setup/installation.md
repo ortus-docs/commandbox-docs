@@ -97,7 +97,7 @@ deb http://downloads.ortussolutions.com/debs ./
 
 Then run:
 
-```
+```bash
 sudo apt-get update; sudo apt-get install commandbox
 ```
 
