@@ -87,7 +87,19 @@ sudo yum update; sudo yum install commandbox
 
 Then run the `box` binary to begin the one-time unpacking process.
 
+## Linux APT
 
+Add the following to: `/etc/apt/sources.list.d/box.list`
+
+```bash
+deb http://downloads.ortussolutions.com/debs ./
+```
+
+Then run:
+
+```
+sudo apt-get update; sudo apt-get install commandbox
+```
 
 ## Linux (Debian)
 
