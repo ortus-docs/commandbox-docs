@@ -42,14 +42,18 @@ window.
 ### Homebrew (Mac)
 
 [Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep
-your CommandBox installation up to date (even binary releases), just run the following:
+your CommandBox installation up to date (even binary releases), just run the following for stable releases:
 
 ```bash
-brew install https://github.com/Ortus-Solutions/commandbox/raw/master/build/commandbox.rb
+brew install http://downloads.ortussolutions.com/ortussolutions/commandbox/commandbox.rb
 ```
 
->**Info**: Once we reach stable version, we will be submitting CommandBox to the
-Homebrew Binary Tap, for even easier installation.
+And the following for bleeding edge releases:
+
+```bash
+brew install http://integration.stg.ortussolutions.com/artifacts/ortussolutions/commandbox/commandbox-be.rb
+```
+
 
 ## Linux (Redhat)
 
@@ -60,7 +64,44 @@ command.
 rpm –ivh commandbox-rpm-1.0.0.rpm
 ```
 
-Run the `box` binary to begin the one-time unpacking process.
+Then run the `box` binary to begin the one-time unpacking process.
+
+## Linux Yum
+Add the following to: `/etc/yum.repos.d/commandbox.repo`
+
+```
+[CommandBox]
+name=CommandBox $releasever - $basearch
+failovermethod=priority
+baseurl=http://downloads.ortussolutions.com/RPMS/noarch
+enabled=1
+metadata_expire=7d
+gpgcheck=0
+```
+
+Then run:
+
+```bash
+sudo yum update; sudo yum install commandbox
+```
+
+Then run the `box` binary to begin the one-time unpacking process.
+
+## Linux APT
+
+Add the following to: `/etc/apt/sources.list.d/box.list`
+
+```bash
+deb http://downloads.ortussolutions.com/debs ./
+```
+
+Then run:
+
+```bash
+sudo apt-get update; sudo apt-get install commandbox
+```
+
+Then run the `box` binary to begin the one-time unpacking process.
 
 ## Linux (Debian)
 
