@@ -26,7 +26,7 @@ http://www.ortussolutions.com/products/commandbox#download
 We use a Jenkins integration server to automate our builds. You can
 download a bleeding-edge version of CommandBox directly from our
 integration server here:
-http://integration.staging.ortussolutions.com/artifacts/ortussolutions/commandbox/
+http://integration.stg.ortussolutions.com/artifacts/ortussolutions/commandbox/
 
 >**Info** Keep in mind, bleeding edge builds may contain experimental features
 that are likely to change or bugs.
