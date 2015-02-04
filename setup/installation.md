@@ -66,6 +66,10 @@ rpm –ivh commandbox-rpm-1.0.0.rpm
 
 Run the `box` binary to begin the one-time unpacking process.
 
+## Linux Yum
+Add the following to: `/etc/yum.repos.d/commandbox.repo`
+
+
 ## Linux (Debian)
 
 After you have downloaded the `commandbox.deb` file, install it using the `dpkg`
