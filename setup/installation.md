@@ -54,8 +54,6 @@ And the following for bleeding edge releases:
 brew install http://integration.stg.ortussolutions.com/artifacts/ortussolutions/commandbox/commandbox-be.rb
 ```
 
->**Info**: Once we reach stable version, we will be submitting CommandBox to the
-Homebrew Binary Tap, for even easier installation.
 
 ## Linux (Redhat)
 
