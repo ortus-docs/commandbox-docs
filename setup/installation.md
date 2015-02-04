@@ -101,6 +101,8 @@ Then run:
 sudo apt-get update; sudo apt-get install commandbox
 ```
 
+Then run the `box` binary to begin the one-time unpacking process.
+
 ## Linux (Debian)
 
 After you have downloaded the `commandbox.deb` file, install it using the `dpkg`
