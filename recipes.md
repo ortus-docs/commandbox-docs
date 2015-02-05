@@ -111,7 +111,7 @@ In this recipe `$arg1` is replaced with the exact value so we wrap it in quotes 
 
 ### Missing Args
 
-If an argument is not bound, no error will be thrown, and the name of the argument will be left in the command. 
+If an argument is not bound, no error will be thrown, and the name of the argument will be left in the command.  There is currently no way to default the value of an arg.  Stay tuned for task runners which will give you much more control over custom scripts.
 
 ## Is there an echo in here?
 
