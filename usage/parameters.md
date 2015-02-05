@@ -68,7 +68,7 @@ echo 'O\'reilly Auto Parts'
 echo "Luis \"The Dev\" Majano"
 ```
 
->**Hint** : Only like quotes need to be escaped. Single quotes can exist inside of double and vice versa without issue. These examples below are perfectly valid.
+>**Hint** Only like quotes need to be escaped. Single quotes can exist inside of double and vice versa without issue. These examples below are perfectly valid.
 
 ```bash
 echo "O'reilly Auto Parts"
