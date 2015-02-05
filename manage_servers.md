@@ -18,9 +18,16 @@ site3 (stopped)
   C:\site3
 ```
 
+You can take a quick look at the what's been happening with the `server log` command or use the `server status` command to see more detailed information including the arguments used previously to start/stop the server. 
+
 >**Note** If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
 
-You can take a quick look at the what's been happening with the `server log` command or use the `server status` command to see more detailed information including the arguments used previously to start/stop the server. 
+## Multiple Servers
+Servers are uniquely identified by their full path, but they also have a short name which defaults to the immediate folder containing their web root.  The `stop`, `start`, etc commands can be run in the web root for a server, or in any working directory as long as you reference the server's short name.
+
+```bash
+
+```
 
 ## Forgetting Servers
 If you want to wipe all configuration, logs, and WEB-INF files for a server, use the `server forget` command.  This will also remove any administrator settings you may have saved including data sources, mail servers, and server mappings.
