@@ -26,8 +26,25 @@ You can take a quick look at the what's been happening with the `server log` com
 Servers are uniquely identified by their full path, but they also have a short name which defaults to the immediate folder containing their web root.  The `stop`, `start`, etc commands can be run in the web root for a server, or in any working directory as long as you reference the server's short name.
 
 ```bash
-
+start site1
+start site2
+start site3
+stop site2
+stop --all
 ```
+
+Another handy shortcut is the `server cd` command that will change the current working directory of the interactive shell to the web root of a named server.
+
+```bash
+server cd site1
+start
+server cd site2
+install myPackage
+restart
+```
+
+>**Info** Server name is the first parameter to all server commands and tab completion works too, making it as easy as possible for you.
+
 
 ## Forgetting Servers
 If you want to wipe all configuration, logs, and WEB-INF files for a server, use the `server forget` command.  This will also remove any administrator settings you may have saved including data sources, mail servers, and server mappings.
@@ -36,10 +53,10 @@ If you want to wipe all configuration, logs, and WEB-INF files for a server, use
 server forget
 ```
 
-You can forget all your servers at once too if you want to start with a clean slate. 
+You can forget all your servers at once too if you want to start with a clean slate.  This command will stop and forget all servers.
 
 ```bash
-server forget --all
+server stop --all --forget
 ```
 
 
