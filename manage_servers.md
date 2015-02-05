@@ -16,7 +16,7 @@ name: myApp
   ID: 83B74C2
 ```
 
->**Note** : If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
+>**Note** If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
 
 You can take a quick look at the what's been happening with the `server log` command.  
 
