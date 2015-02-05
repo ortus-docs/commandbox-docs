@@ -28,7 +28,7 @@ Servers are uniquely identified by their full path, but they also have a short n
 ```bash
 start site1
 start site2
-start site3
+restart site3
 stop site2
 stop --all
 ```
