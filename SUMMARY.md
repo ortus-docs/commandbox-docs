@@ -12,7 +12,7 @@
    * [Upgrading](setup/upgrading.md)
 * [Usage](usage/usage.md)
    * [Execution](usage/execution.md)
-       * Recipes
+       * [Recipes](recipes.md)
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
        * [Escaping Params from the OS Shell](escaping_params_from_the_os_shell.md)
