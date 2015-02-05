@@ -41,7 +41,7 @@ start
 
 ```
 
-#Get Cooking
+##Get Cooking
 
 Execute your recipe with the `recipe` command, giving it the path to the recipe file.
 
@@ -49,8 +49,41 @@ Execute your recipe with the `recipe` command, giving it the path to the recipe 
 CommandBox>recipe BuildSite.boxr
 ```
 
-If any commands in the recipe stop and ask for input, the recipe will pause until you supply that input.  All commands that have confirmations, etc should have a `--force` flag for this purpose so you can run them headlessly without requireing your input.  See the `rm` command above for an example.
+If any commands in the recipe stop and ask for input, the recipe will pause until you supply that input.  All commands that have confirmations, etc should have a `--force` flag for this purpose so you can run them headlessly without requiring your input.  See the `rm` command above for an example.
 
+## Spice It Up
+
+You can also bind the recipe with arguments that will be replaced inside of your recipe at run time. 
+Pass any arguments as additional parameters to the `recipe` command and they will be passed along to the commands in your recipe.
+
+## Named arguments
+If you use named arguments to the recipe command, they will be accessible inside the recipe as $arg1Name, $arg2Name, etc. 
+
+
+Recipe will receive $name and $action
+recipe recipeFile=buildSite.boxr name=luis action=create
+
+
+Recipe will receive $1 and $2
+recipe buildSite.boxr luis create
+
+
+When using args inside a recipe, you will need to wrap the arg in quotes if it may contain a space 
+
+Positional args will be available as $1, $2, etc. 
+
+$arg1 may contain spaces
+rm "$arg1"
+If an argument is not bound, no error will be thrown, and the name of the argument will be left in the command. 
+
+You can use "echo on" and "echo off" in recipes to control whether the commands output to the console as they are executed. 
+This can be useful for debugging or confirming the success of commands with no output. Echo is on by default. 
+Note, "echo off" doesn't suppress the output of the commands, just the printing of the command and its arguments prior to execution. 
+This does not use the actual "echo" command and is a feature that only applies during the execution of recipes.
+echo on
+# Now you see me
+echo off
+# Now you don't
 
 
 
