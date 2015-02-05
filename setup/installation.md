@@ -23,7 +23,7 @@ shell. When you are finished running commands, you can just close the
 window, or type `exit`.
 
 >**Hint** You can make the `box.exe` available in any Windows
-terminal by adding its location to the **PATH** system environment
+terminal by adding its location to the `PATH` system environment
 variable. See http://www.computerhope.com/issues/ch000549.htm
 
 
