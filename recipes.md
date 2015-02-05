@@ -15,7 +15,7 @@ Think of a recipe as a simple batch file for Windows or a shell script for Unix.
 
 Technically a recipe can have any file extension, but the default recommendation is `.boxr` which stands for "box recipe".  Lines that start with a # will be ignored as comments.
 
-**BuildSite.boxr**
+**buildSite.boxr**
 ```bash
 # Start with an empty folder
 rm mySite --recurse --force
@@ -46,7 +46,7 @@ start
 Execute your recipe with the `recipe` command, giving it the path to the recipe file.
 
 ```bash
-CommandBox>recipe BuildSite.boxr
+recipe buildSite.boxr
 ```
 
 If any commands in the recipe stop and ask for input, the recipe will pause until you supply that input.  All commands that have confirmations, etc should have a `--force` flag for this purpose so you can run them headlessly without requiring your input.  See the `rm` command above for an example.
@@ -59,14 +59,45 @@ Pass any arguments as additional parameters to the `recipe` command and they wil
 ## Named arguments
 If you use named arguments to the recipe command, they will be accessible inside the recipe as $arg1Name, $arg2Name, etc. 
 
+Consider the following recipe:
 
-Recipe will receive $name and $action
-recipe recipeFile=buildSite.boxr name=luis action=create
+**notifyWinner.boxr**
+```bash
+echo "Hello there, $name\n You've won a $prize!"
+```
+
+You would call it like so:
+```bash
+recipe recipeFile=notifyWinner.boxr name=Luis action="NEW CAR"
+```
+
+Output:
+```bash
+Hello there, Luis
+You've won a NEW CAR!
+```
+
+Note, all parameters to the `recipe` command needed to be named, including the `recipeFile`.
 
 
-Recipe will receive $1 and $2
-recipe buildSite.boxr luis create
+## Positional Parameters
 
+Now let's look at the same recipe set up to receive positional parameters.
+
+```bash
+echo "Hello there, $1\n You've won a $1!"
+```
+
+You would call it like so:
+```bash
+recipe notifyWinner.boxr Luis "NEW CAR"
+```
+
+Output:
+```bash
+Hello there, Luis
+You've won a NEW CAR!
+```
 
 When using args inside a recipe, you will need to wrap the arg in quotes if it may contain a space 
 
