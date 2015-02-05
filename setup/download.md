@@ -41,4 +41,4 @@ the stable version and run our `upgrade` command using the
 upgrade --latest
 ```
 
->**Info** : Please note that the upgrade command will not update the main CommandBox binary. If there are major updates or you get a message about updating the binary, you will need to download the latest binary and re-install it.
+>**Info** Please note that the upgrade command will not update the main CommandBox binary. If there are major updates or you get a message about updating the binary, you will need to download the latest binary and re-install it.
