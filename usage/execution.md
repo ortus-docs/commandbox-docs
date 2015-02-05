@@ -56,18 +56,6 @@ C:\>
 
 The `box` text is calling the CommandBox binary, and the `version` bit is passed along to the CommandBox shell to execute once it loads.
 
-### Recipes
-If you want to automate several commands from your native shell, it will
-be faster to use our **[recipe](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html)** command that allows you to run
-several CommandBox commands at once. This will allow you to only load
-the CommandBox engine once for all those commands, but still be dumped
-back at your native prompt when done. Read more about the
-**recipe** command in our [Command API docs](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/recipe.html).
-
-```bash
-C:\>box recipe myRecipe.boxr
-```
-
 ## Debug Mode
 You can also activate CommandBox in **debug** mode by passing the `-debug` flag in the command line.  This will give you much more verbose information about the running CommandBox environment.  This affects both the interactive shell or one-off commands
 
