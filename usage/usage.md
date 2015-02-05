@@ -48,7 +48,7 @@ $box install coldbox-be
 $box upgrade
 ```
 
->**Info** : Executing one-off commands might have a delay when executing as the CommandBox environment needs to load first.
+>**Info** Executing one-off commands might have a delay when executing as the CommandBox environment needs to load first.
 
 So let's go a little deeper into [CommandBox execution.](execution.md)
 

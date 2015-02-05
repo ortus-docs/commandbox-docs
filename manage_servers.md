@@ -1,24 +1,50 @@
 # Managing CommandBox Servers
 
-CommandBox stores information about each of the servers you've ever started inside `~/.CommandBox/servers.json` so it can remember settings from one run to the next.  You can see a snapshot of this information with the `server status` command.  
+CommandBox stores information about each of the servers you've ever started inside `~/.CommandBox/servers.json` so it can remember settings from one run to the next.  You can see an overview of your servers and what state they're in with the `server list` command.  
 
 ```bash
-CommandBox> server status
+server list
 
-name: myApp
-  status: stopped
-  webroot: C:\sandbox\myApp
-  logdir: C:\Users\Brad\.CommandBox\server\myApp\log
-  port: 80
-  host: 127.0.0.1
-  stopsocket: 12966
-  debug: false
-  ID: 83B74C2
+site1 (starting)
+  https://127.0.0.1:8081
+  C:\site1
+
+site1 (running)
+  https://127.0.0.1:8082
+  C:\site2
+
+site3 (stopped)
+  https://127.0.0.1:8083
+  C:\site3
 ```
 
->**Note** : If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
+You can take a quick look at the what's been happening with the `server log` command or use the `server status` command to see more detailed information including the arguments used previously to start/stop the server. 
 
-You can take a quick look at the what's been happening with the `server log` command.  
+>**Note** If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
+
+## Multiple Servers
+Servers are uniquely identified by their full path, but they also have a short name which defaults to the immediate folder containing their web root.  The `stop`, `start`, etc commands can be run in the web root for a server, or in any working directory as long as you reference the server's short name.
+
+```bash
+start site1
+start site2
+restart site3
+stop site2
+stop --all
+```
+
+Another handy shortcut is the `server cd` command that will change the current working directory of the interactive shell to the web root of a named server.
+
+```bash
+server cd site1
+start
+server cd site2
+install myPackage
+restart
+```
+
+>**Info** Server name is the first parameter to all server commands and tab completion works too, making it as easy as possible for you.
+
 
 ## Forgetting Servers
 If you want to wipe all configuration, logs, and WEB-INF files for a server, use the `server forget` command.  This will also remove any administrator settings you may have saved including data sources, mail servers, and server mappings.
@@ -27,10 +53,10 @@ If you want to wipe all configuration, logs, and WEB-INF files for a server, use
 server forget
 ```
 
-You can forget all your servers at once too if you want to start with a clean slate. 
+You can forget all your servers at once too if you want to start with a clean slate.  This command will stop and forget all servers.
 
 ```bash
-server forget --all
+server stop --all --forget
 ```
 
 
