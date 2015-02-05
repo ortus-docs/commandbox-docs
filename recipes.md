@@ -56,7 +56,7 @@ If any commands in the recipe stop and ask for input, the recipe will pause unti
 You can also bind the recipe with arguments that will be replaced inside of your recipe at run time. 
 Pass any arguments as additional parameters to the `recipe` command and they will be passed along to the commands in your recipe.
 
-## Named arguments
+### Named arguments
 If you use named arguments to the recipe command, they will be accessible inside the recipe as $arg1Name, $arg2Name, etc. 
 
 Consider the following recipe:
@@ -80,7 +80,7 @@ You've won a NEW CAR!
 Note, all parameters to the `recipe` command needed to be named, including the `recipeFile`.
 
 
-## Positional Parameters
+### Positional Parameters
 
 Now let's look at the same recipe set up to receive positional parameters.
 
@@ -99,22 +99,49 @@ Hello there, Luis
 You've won a NEW CAR!
 ```
 
-When using args inside a recipe, you will need to wrap the arg in quotes if it may contain a space 
+### Escaping Parameters
 
-Positional args will be available as $1, $2, etc. 
+When using an arg as a parameter to a command in a recipe, make sure you wrap the variable in quotes if it might contain spaces.  Otherwise you will get syntax erors.
 
-$arg1 may contain spaces
+```bash
 rm "$arg1"
+```
+
+In this recipe `$arg1` is replaced with the exact value so we wrap it in quotes in case it contain spaces
+
+### Missing Args
+
 If an argument is not bound, no error will be thrown, and the name of the argument will be left in the command. 
 
-You can use "echo on" and "echo off" in recipes to control whether the commands output to the console as they are executed. 
-This can be useful for debugging or confirming the success of commands with no output. Echo is on by default. 
-Note, "echo off" doesn't suppress the output of the commands, just the printing of the command and its arguments prior to execution. 
-This does not use the actual "echo" command and is a feature that only applies during the execution of recipes.
-echo on
+## Is there an echo in here?
+
+You can use `echo on` and `echo off` in recipes to control whether the commands output to the console as they are executed.  This can be useful for debugging or confirming the success of commands with no output.  `Echo` is on by default.
+
+Note, `echo off` doesn't suppress the output of the commands, just the printing of the command and its arguments prior to execution.  This does not use the actual `echo` command and is a feature that only applies during the execution of recipes.
+
+```bash
 # Now you see me
-echo off
+echo on
+version
+
 # Now you don't
+echo off
+version
+```
+
+Output: 
+
+```bash
+version
+CommandBox 1.0.0+50
+echo off
+CommandBox 1.0.0+50
+```
+
+
+
+
+
 
 
 
