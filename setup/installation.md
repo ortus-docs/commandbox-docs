@@ -91,9 +91,14 @@ Then run the `box` binary to begin the one-time unpacking process.
 
 Add the following to: `/etc/apt/sources.list.d/box.list`
 
-*Stable*
+**Stable**
 ```bash
 deb http://downloads.ortussolutions.com/debs/noarch ./
+```
+
+**Bleeding Edge**
+```bash
+deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch ./
 ```
 
 Then run:
