@@ -82,7 +82,7 @@ gpgcheck=0
 Then run:
 
 ```bash
-sudo yum update; sudo yum install commandbox
+sudo yum update && install commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
@@ -91,14 +91,20 @@ Then run the `box` binary to begin the one-time unpacking process.
 
 Add the following to: `/etc/apt/sources.list.d/box.list`
 
+**Stable**
 ```bash
-deb http://downloads.ortussolutions.com/debs ./
+deb http://downloads.ortussolutions.com/debs/noarch ./
+```
+
+**Bleeding Edge**
+```bash
+deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch ./
 ```
 
 Then run:
 
 ```bash
-sudo apt-get update; sudo apt-get install commandbox
+sudo apt-get update && apt-get install commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
