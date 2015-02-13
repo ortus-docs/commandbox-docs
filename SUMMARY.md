@@ -19,6 +19,7 @@
    * [Command Help](command_help.md)
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
+   * REPL
 * [Package Management](packages/package_management.md)
    * [Code Endpoints](packages/code_endpoints.md)
    * [Installing Packages](packages/installing_packages.md)
