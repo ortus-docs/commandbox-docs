@@ -1,10 +1,33 @@
 # Box.json
 
-The `box.json` file must be in your root of your project and it is a JSON file that describes your project, dependencies, development dependencies, installation data, and CommandBox command data. Below you will see all the possible options that we currently support in CommandBox. If you have suggestions or updates to our pacakage descriptor, please do not hesitate to [Contact Us](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)!
+The `box.json` file must be in your root of your project and it is a JSON file that describes your project, dependencies, development dependencies, installation data, and CommandBox command data. 
 
 >**Note** : Please note that you can add as many settings or alter the `box.json` structure to meet your needs when developing commands. This makes our descriptor incredibly flexible.
 
-```js
+## Initialize a package
+To initialize any folder as a package, run the `init` command.  
+
+```bash
+init
+```
+
+You can pass as many properties to the `init` command as you want using named parameters.
+
+```bash
+init name="My Package" slug=my-package version=1.0.0
+```
+
+You can also do a question/answer style wizard by adding the `--wizard` flag.
+
+```bash
+init --wizard
+```
+
+## Sample box.json
+
+Below you will see all the possible options that we currently support in CommandBox. Note, not all have been implemented yet.  If you have suggestions or updates to our package descriptor, please do not hesitate to [Contact Us](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)!
+
+```javascript
 {
     "name" : "Package Name",
     // ForgeBox unique slug
