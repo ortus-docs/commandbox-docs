@@ -64,11 +64,11 @@ Install paths can be a directory relative to the web root (no leading slash) or 
     "coldbox" : "coldbox" // relative to package root (no leading slash)
     "feeds" : "modules/feeds", // relative to package root (no leading slash)
     "Name" : "C:\foo\bar" // Outside root, so full path
-    }
+}
 ```
 
 ```bash
-package set installPaths=""
+package set installPaths="{ foo : "lib/foo" }" --append
 package show installPaths
 ```
 
