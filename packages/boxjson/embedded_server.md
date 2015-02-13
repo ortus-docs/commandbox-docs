@@ -29,7 +29,7 @@ This represents a list of CF engines your project supports and their version wit
 ```
 
 ```bash
-package set engines="[ { type : 'lucee', version : '>=4.5.x' } ]"
+package set engines="[ { type : 'lucee', version : '>=4.5.x' } ]" --append
 package show engines
 ```
 
