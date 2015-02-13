@@ -33,7 +33,7 @@
    * [Box.json](packages/boxjson.md)
        * [Basic Package Data](basic_package_data.md)
        * [Extended Package Data](extended_package_data.md)
-       * Package URLs
+       * [Package URLs](package_urls.md)
        * Installation
        * Embedded Server
        * Dependecies
