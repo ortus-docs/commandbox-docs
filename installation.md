@@ -9,8 +9,8 @@ These properties affect how and where the package is installed.
 The directory, relative to the web root, that the package will be installed to.  This will override the convention directory based on the `type` property.  See package installation for more details on where packages install to.
 
 ```bash
-package set 
-package show 
+package set directory=lib
+package show directory
 ```
 
 ## type
@@ -20,8 +20,8 @@ package show
 The ForgeBox type of the package. See list of available types with the `forgebox types` command.  This can determine the directory the package is installed to.  For instance, a type of `modules` goes in the site's `/modules` directory.
 
 ```bash
-package set 
-package show 
+package set type=modules
+package show type
 ```
 
 ## ignore
@@ -46,8 +46,8 @@ Use a double `**` to match zero or more characters including slashes. This allow
 * `a/**/z` will match `a/z` and `a/b/z` and `a/b/c/z`
 
 ```bash
-package set 
-package show 
+package set ignore="['**/.*','test','tests']" --append
+package show ignore
 ```
 
 
