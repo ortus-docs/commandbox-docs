@@ -73,10 +73,11 @@ Below you will see all the possible options that we currently support in Command
     // cfml engines it supports, type and version
     "engines" : [
         { "type" : "railo", "version" : ">=4.1.x" },
+        { "type" : "lucee", "version" : ">=4.5.x" },
         { "type" : "adobe", "version" : ">=10.0.0" }
     ],
     // default engine to use using our run embedded server command
-    // Available engines are railo, cf9, cf10, cf11
+    // Available engines are lucee, railo, cf9, cf10, cf11
     "defaultEngine" : "cf9, railo, cf11",
     // default engine port using our run embedded server command
     "defaultPort" : 8080,
