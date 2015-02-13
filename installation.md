@@ -8,11 +8,21 @@ These properties affect how and where the package is installed.
 
 The directory, relative to the web root, that the package will be installed to.  This will override the convention directory based on the `type` property.  See package installation for more details on where packages install to.
 
+```bash
+package set 
+package show 
+```
+
 ## type
 
 **string**
 
 The ForgeBox type of the package. See list of available types with the `forgebox types` command.  This can determine the directory the package is installed to.  For instance, a type of `modules` goes in the site's `/modules` directory.
+
+```bash
+package set 
+package show 
+```
 
 ## ignore
 
@@ -35,6 +45,11 @@ Use a single `*` to match zero or more characters INSIDE a file or folder name (
 Use a double `**` to match zero or more characters including slashes. This allows a pattern to span directories.
 * `a/**/z` will match `a/z` and `a/b/z` and `a/b/c/z`
 
+```bash
+package set 
+package show 
+```
+
 
 ## installPaths
 
@@ -44,21 +59,35 @@ This is an object of string values where each key is the slug of an installed pa
 
 Install paths can be a directory relative to the web root (no leading slash) or a full path starting with a drive root.
 
+```bash
+package set 
+package show 
+```
+
 ## createPackageDirectory
 
 **boolean**
 
 By default when a package is installed, a directory is created in the install path that is named after the package slug.  Setting `createPackageDirectory` to `false` will skip the creation of that folder and dump the contents of the package right into the install path.  
 
+An example of this would be a full application that *is* the entire web root.  Another example would be an interceptor that gets put directly in the `interceptors` folder.
+
 Note, when this is set to `false`, no path will be added to the `installpaths` directory and the package cannot be removed by the `uninstall` command.
+
+```bash
+package set 
+package show 
+```
 
 ## packageDirectory
 
 **string**
 
+By default when a package is installed, a directory is created in the install path that is named after the package slug.  If a `packageDirectory` property is set, the folder is named after it instead of the slug. 
 
+An example would be the `coldbox-be` slug that still needs to install into a folder called `coldbox`.  You shouldn't need to use this setting.
 
-
-
-
-
+```bash
+package set 
+package show 
+```
