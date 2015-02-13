@@ -41,9 +41,10 @@ package show documentation
 
 This describes the repository used for source control with this package.  Object needs a `type` and `URL` key.  Examples of `type` would be Git, SVN, Mercurial, etc.  
 
-```bash
+```javascript
 "repository" : { 
-    "type" : "Git", "URL" : "https://github.com/ColdBox/coldbox-platform.git"
+    "type" : "Git",
+    "URL" : "https://github.com/ColdBox/coldbox-platform.git"
 }
 ```
 
