@@ -35,6 +35,7 @@
        * Package URLs
        * Installation
        * Embedded Server
+       * Dependecies
 * [Embedded Server](embedded_server.md)
    * [Server Processes](server_processes.md)
    * [Server Port and Host](server_port_and_host.md)
