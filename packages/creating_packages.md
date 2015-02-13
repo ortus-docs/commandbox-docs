@@ -10,7 +10,7 @@ Your `box.json` file describes your package, dependencies, and how to install it
 init name="My Package" version="1.0.0"
 ```
 
-That's it.  You can now commit this package to [ForgeBox](http://www.coldbox.org/forgebox) and can be available world-wide.
+That's it.  You can now commit this package to [ForgeBox](http://forgebox.io) and can be available world-wide.
 
 ## Distribution
 
