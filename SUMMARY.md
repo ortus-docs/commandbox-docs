@@ -34,7 +34,7 @@
        * [Basic Package Data](basic_package_data.md)
        * [Extended Package Data](extended_package_data.md)
        * [Package URLs](package_urls.md)
-       * Installation
+       * [Installation](installation.md)
        * Embedded Server
        * Dependecies
        * TestBox
