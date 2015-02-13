@@ -92,4 +92,11 @@ package set dependencies="{'cbcommons':'1.0.0'}"  --append****
 
 ## package clear
 
+If you need to remove a property entirely from your box.json, use the `package clear` command.  It also works on nested properties using "dot" or array notation.
+
+Remove the package description entirely.
+
+```bash
+package clear description
+```
 
