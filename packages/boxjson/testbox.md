@@ -42,7 +42,9 @@ testbox run default
 
 ## More...
 
-Our box.json template shows other placeholder properties inside the `testbox` object, but only `runner` is implemented for now.
+Our box.json template shows other placeholder properties inside the `testbox` object, but only `runner` is implemented for now.  
+
+*In the future, the `testbox` object may be moved into a separate JSON file for organizational purposes.*
 
 
 
