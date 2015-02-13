@@ -29,7 +29,7 @@
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
-       * Editing Package Properties
+       * [Editing Package Properties](editing_package_properties.md)
    * [Box.json](packages/boxjson.md)
        * [Basic Package Data](basic_package_data.md)
        * Extended Package Data
