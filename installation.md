@@ -68,7 +68,7 @@ Install paths can be a directory relative to the web root (no leading slash) or 
 ```
 
 ```bash
-package set installPaths="{ foo : "lib/foo" }" --append
+package set installPaths="{ foo : 'lib/foo' }" --append
 package show installPaths
 ```
 
@@ -83,8 +83,8 @@ An example of this would be a full application that *is* the entire web root.  A
 Note, when this is set to `false`, no path will be added to the `installpaths` directory and the package cannot be removed by the `uninstall` command.
 
 ```bash
-package set 
-package show 
+package set createPackageDirectory=true
+package show createPackageDirectory
 ```
 
 ## packageDirectory
@@ -96,6 +96,6 @@ By default when a package is installed, a directory is created in the install pa
 An example would be the `coldbox-be` slug that still needs to install into a folder called `coldbox`.  You shouldn't need to use this setting.
 
 ```bash
-package set 
-package show 
+package set packageDirectory=coldbox
+package show packageDirectory
 ```
