@@ -1,2 +1,4 @@
 # Dependencies
 
+dependencies
+devDependencies
