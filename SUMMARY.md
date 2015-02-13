@@ -30,6 +30,7 @@
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
    * [Box.json](packages/boxjson.md)
+       * Basic Package Data
 * [Embedded Server](embedded_server.md)
    * [Server Processes](server_processes.md)
    * [Server Port and Host](server_port_and_host.md)
