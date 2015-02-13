@@ -72,7 +72,19 @@ package show license
 
 **array**
 
+Give a shout-out here to everyone who helped with your package.  This is an array, and you can put strings it containing names and/or E-mail addresses, or you a objects to the array containing keys such as `name` and `email`.
+
+
+```javascript
+"contributors" : [
+        "Mickey Mouse",
+        "Minny Mouse <minny@disney.com>",
+        { "name" : "Daffy Duck", "email" : "daffy@disney.com" }
+        
+    ]
+```
+
 ```bash
-package set 
+package set contributors="[ 'Goofy' ]" --append
 package show 
 ```
