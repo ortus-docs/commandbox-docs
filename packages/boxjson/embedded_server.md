@@ -23,7 +23,7 @@ This represents a list of CF engines your project supports and their version wit
 
 ```javascript
 "engines" : [
-    { "type" : "lucee", "version" : ">=4.5.x" },
+    { "type" : "railo", "version" : ">=4.2.1" },
     { "type" : "adobe", "version" : ">=10.0.0" }
 ]
 ```
