@@ -63,10 +63,14 @@ Multi-line statements are not currently supported in the tag REPL.
 
 ## History
 
-The script and tag REPL have their only history.  Use the `up` and `down` arrows to access previous things you typed.  Your REPL history can be viewed and managed by the `history` command.
+The script and tag REPL have their only history.  Use the `up` and `down` arrows to access previous things you typed.  Your REPL history can be viewed and managed by the `history` command (once you exit the REPL).
 
+```bash
+history type=scriptrepl
+history type=tagrepl --clear
+```
 
-
+Tab completion is currently not supported in either of the REPLs.
 
 
 
