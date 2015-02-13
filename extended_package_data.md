@@ -86,5 +86,5 @@ Give a shout-out here to everyone who helped with your package.  This is an arra
 
 ```bash
 package set contributors="[ 'Goofy' ]" --append
-package show 
+package show contributors
 ```
