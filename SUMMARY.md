@@ -32,7 +32,7 @@
        * [Editing Package Properties](editing_package_properties.md)
    * [Box.json](packages/boxjson.md)
        * [Basic Package Data](basic_package_data.md)
-       * Extended Package Data
+       * [Extended Package Data](extended_package_data.md)
        * Package URLs
        * Installation
        * Embedded Server
