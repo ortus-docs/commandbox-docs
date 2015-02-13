@@ -29,7 +29,15 @@
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
+       * [Editing Package Properties](editing_package_properties.md)
    * [Box.json](packages/boxjson.md)
+       * [Basic Package Data](basic_package_data.md)
+       * [Extended Package Data](extended_package_data.md)
+       * [Package URLs](package_urls.md)
+       * [Installation](installation.md)
+       * Embedded Server
+       * Dependecies
+       * TestBox
 * [Embedded Server](embedded_server.md)
    * [Server Processes](server_processes.md)
    * [Server Port and Host](server_port_and_host.md)

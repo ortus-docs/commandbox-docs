@@ -2,7 +2,7 @@
 
 The `box.json` file must be in your root of your project and it is a JSON file that describes your project, dependencies, development dependencies, installation data, and CommandBox command data. 
 
->**Note** : Please note that you can add as many settings or alter the `box.json` structure to meet your needs when developing commands. This makes our descriptor incredibly flexible.
+>**Note** Please note that you can add as many settings or alter the `box.json` structure to meet your needs when developing commands. This makes our descriptor incredibly flexible.
 
 ## Initialize a package
 To initialize any folder as a package, run the `init` command.  
