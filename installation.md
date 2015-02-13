@@ -50,7 +50,7 @@ Install paths can be a directory relative to the web root (no leading slash) or 
 
 By default when a package is installed, a directory is created in the install path that is named after the package slug.  Setting `createPackageDirectory` to `false` will skip the creation of that folder and dump the contents of the package right into the install path.  
 
-Note, when this is set to `false`, no path will be added to the `installpaths` directory and the package cannot be removed by the `unisntall` command.
+Note, when this is set to `false`, no path will be added to the `installpaths` directory and the package cannot be removed by the `uninstall` command.
 
 ## packageDirectory
 
