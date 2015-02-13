@@ -40,6 +40,12 @@ package show testbox.runner
 testbox run default
 ```
 
+## More...
+
+Our box.json template shows other placeholder properties inside the `testbox` object, but only `runner` is implemented for now.
+
+
+
 
 
 
