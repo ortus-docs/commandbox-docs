@@ -17,6 +17,7 @@
    * [Parameters](usage/parameters.md)
        * [Escaping Params from the OS Shell](escaping_params_from_the_os_shell.md)
    * [Command Help](command_help.md)
+   * [REPL](repl.md)
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
 * [Package Management](packages/package_management.md)
