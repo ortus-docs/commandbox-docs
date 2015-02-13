@@ -41,7 +41,22 @@ orange juice
 If you would like to abort a multi-line statement, simply type `exit` at the prompt.  
 
 ## Tag REPL
-You can also enter tags at the REPL.  Switch to this mode 
+You can also enter tags at the REPL.  Switch to this mode by setting the `script` flag to false.
+
+```bash
+REPL --!script
+```
+
+Any output from the tags will be returned to the console.
+```bash
+CFML-REPL: plain text
+=> plain text
+CFML-REPL: <cfset name = "Brad Wood">
+=>
+CFML-REPL: <cfoutput>#reverse( name )#</cfoutput>
+=> dooW darB
+```
+
 
 
 
