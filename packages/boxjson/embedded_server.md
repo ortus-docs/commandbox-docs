@@ -33,12 +33,20 @@ package set engines="[ { type : 'lucee', version : '>=4.5.x' } ]" --append
 package show engines
 ```
 
+*This data is informational only and not yet used by the embedded server*
+
 ## defaultEngine
 
 **string**
 
+The default CF engine for the `start` command to use.
 
 ```bash
-package set 
-package show 
+package set defaultEngine=lucee
+package show defaultEngine
 ```
+
+*This data is informational only and not yet used by the embedded server*
+
+
+
