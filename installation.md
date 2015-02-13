@@ -59,9 +59,17 @@ This is an object of string values where each key is the slug of an installed pa
 
 Install paths can be a directory relative to the web root (no leading slash) or a full path starting with a drive root.
 
+```javascript
+"installPaths" : {
+    "coldbox" : "coldbox" // relative to package root (no leading slash)
+    "feeds" : "modules/feeds", // relative to package root (no leading slash)
+    "Name" : "C:\foo\bar" // Outside root, so full path
+    }
+```
+
 ```bash
-package set 
-package show 
+package set installPaths=""
+package show installPaths
 ```
 
 ## createPackageDirectory
