@@ -2,14 +2,58 @@
 
 For CommandBox to be able to install packages for you it needs to connect to code repository where packages are stored so it can download them for installation. CommandBox integrates seamlessly with ForgeBox, our community of ColdFusion (CFML) projects. CommandBox will soon be able to integrate with git, svn, http, ftp and custom code endpoints.
 
-Signing up for a ForgeBox account is quick, easy, and free. You will need your own account to post code, but anyone can browse and install packages. The web UI for ForgeBox is currently located at http://www.coldbox.org/forgebox.
+Signing up for a ForgeBox account is quick, easy, and free. You will need your own account to post code, but anyone can browse and install packages. The web UI for ForgeBox is currently located at [http://forgebox.io](http://forgebox.io).
 
 Inside CommandBox, use the **forgebox** namespace to **search** for packages or **show** packages of your choosing.
 
-```
-forgebox show recent modules
-forgebox show coldbox
-forgebox search REST
+## forgebox search
+The first command to try out is "forgebox search".  It takes a single parameter which is a string to perform a case-insensitive search for.  Any entry whose title, summary or author name contains that text will be displayed:
+
+```bash
+forgebox search awesome
 ```
 
+## forgebox show
+The "forgebox show" command takes several parameters and is pretty flexible.  The first way to use it is to just view the details of a single entry using the slug.
+
+```bash
+forgebox show coldbox
+```
+
+You can get lists of items filtered by package type (modules, interceptors, caching, etc) and ordered by popular, new, or recent.  Here's some examples:
+
+```bash
+forgebox show plugins
+forgebox show new modules
+forgebox show recent commandbox-commands
+```
+
+Too many results on one page?  Use the built-in pagination options:
+
+```bash
+forgebox show orderby=new maxRows=10 startRow=11
+```
+
+Or just pipe the output into the built-in "more" or "grep" command.
+
+```bash
+forgebox show new | more
+forgebox show modules | grep brad
+```
+
+## forgebox show help
+If you have troubles remembering the valid types or order by's, remember you can always hit "tab" for autocomplete within the interactive shell.  Adding "help" to the end of any command will also show you the specific help for that command.  
+```bash
+forgebox help
+forgebox search help
+forgebox show help
+```
+## forgebox types
+The list of types in ForgeBox is dynamic so we don't list them out in the help.  Instead, we made a handy "forgebox types" command to pull the latest list of types for you.
+
+```bash
+forgebox types
+```
+
+##ForgeBox Pro
 For companies who want to host internal code endpoints for private packages, we will soon support an Enterprise version of ForgeBox that can be installed behind your company's firewall. Please contact us if this feature interests you.
