@@ -36,7 +36,7 @@
        * [Package URLs](packages/boxjson/package_urls.md)
        * [Installation](packages/boxjson/installation.md)
        * [Embedded Server](packages/boxjson/embedded_server.md)
-       * [Dependecies](packages/boxjson/dependecies.md)
+       * [Dependencies](packages/boxjson/dependencies.md)
        * [TestBox](packages/boxjson/testbox.md)
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Server Processes](embedded_server/server_processes.md)
