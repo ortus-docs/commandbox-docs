@@ -30,7 +30,7 @@
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages.md)
    * [Box.json](packages/boxjson.md)
-       * Basic Package Data
+       * [Basic Package Data](basic_package_data.md)
        * Extended Package Data
        * Package URLs
        * Installation
