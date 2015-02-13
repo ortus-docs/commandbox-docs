@@ -8,7 +8,7 @@ CFSCRIPT-REPL: 5+5
 ```
 
 ## Script REPL
-The default mode of the `REPL` command is to accept script.  You can enter most any CF Script into the prompt for execution.  If the script is an expression that returns a value, or sets a variable, that value/variable will be output.
+The default mode of the `REPL` command is to accept script.  You can enter most any CF Script into the prompt for execution.  If the script is an expression that returns a value, or sets a variable, that value/variable will be output.  Variables that you set will be available to you until you exit the `REPL` command.
 
 ```bash
 CFSCRIPT-REPL: breakfast = ['bacon','eggs']
@@ -28,7 +28,20 @@ CFSCRIPT-REPL: breakfast.append( 'orange juice' )
 
 ### Multi-line
 
-Multi-line statements are also allowed.  If you have typed a starting `{` without an ending `}`, the REPL will keep accepting lines until it has determined the statement to be finished.  
+Multi-line statements are also allowed.  If you have typed a starting `{` without an ending `}`, the REPL will keep accepting lines until it has determined the statement to be finished.  The prompt changes to `...` until the statement is finished.
 
 ```bash
+CFSCRIPT-REPL: for( item in breakfast ) {
+...echo( item & chr(10) )
+...}
+=> bacon
+eggs
+orange juice
 ```
+If you would like to abort a multi-line statement, simply type `exit` at the prompt.  
+
+## Tag REPL
+You can also enter tags at the REPL.  Switch to this mode 
+
+
+
