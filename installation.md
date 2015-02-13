@@ -39,9 +39,26 @@ Use a double `**` to match zero or more characters including slashes. This allow
 ## installPaths
 
 **object**
+
+This is an object of string values where each key is the slug of an installed package and the value is the path the package is installed to.  In most cases, this will be managed automatically by the `install` and `uninstall` command.  If you want to override the `directory` property on one of your dependencies, you can configured an install path prior to installing the package and it will be used.
+
+Install paths can be a directory relative to the web root (no leading slash) or a full path starting with a drive root.
+
 ## createPackageDirectory
 
 **boolean**
+
+By default when a package is installed, a directory is created in the install path that is named after the package slug.  Setting `createPackageDirectory` to `false` will skip the creation of that folder and dump the contents of the package right into the install path.  
+
+Note, when this is set to `false`, no path will be added to the `installpaths` directory and the package cannot be removed by the `unisntall` command.
+
 ## packageDirectory
 
 **string**
+
+
+
+
+
+
+
