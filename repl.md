@@ -55,7 +55,17 @@ CFML-REPL: <cfset name = "Brad Wood">
 =>
 CFML-REPL: <cfoutput>#reverse( name )#</cfoutput>
 => dooW darB
+CFML-REPL: <cfif 1 eq 2>yes<cfelse>no</cfif>
+=> no
 ```
+
+Multi-line statements are not currently supported in the tag REPL.
+
+## History
+
+The script and tag REPL have their only history.  Use the `up` and `down` arrows to access previous things you typed.  Your REPL history can be viewed and managed by the `history` command.
+
+
 
 
 
