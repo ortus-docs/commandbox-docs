@@ -13,7 +13,6 @@
 * [Usage](usage/usage.md)
    * [Execution](usage/execution/execution.md)
        * [Recipes](usage/execution/recipes.md)
-       * [CFML from the command line](cfml_from_the_command_line.md)
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
        * [Escaping Params from the OS Shell](usage/escaping_params_from_the_os_shell.md)
