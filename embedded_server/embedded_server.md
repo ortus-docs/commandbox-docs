@@ -21,7 +21,7 @@ You can start as many embedded server instances as you want.  Each running serve
 * Open Browser
 * Open Admin
 
- <img src="images/embedded_server/system_tray_server_icons.png" alt="System Tray Server Icons">
+ <img src="../images/embedded_server/system_tray_server_icons.png" alt="System Tray Server Icons">
 
 ## Full  Control
 
