@@ -26,14 +26,22 @@ The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlre
 ## Custom Rules 
 
 If you want to customize your rewrite rules, just create your own XML file and specify it when starting the server with the `rewritesConfig` parameter.  Here we can a simple rewirterule that redirects  `/foo` to `/index.cfm`
+
+
+**customRewrites.xml**
+```xml
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN" "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
 <urlrewrite>
 	<rule>
 		<from>^/foo$</from>
 		<to type="redirect">/index.cfm</to>
 	</rule>
 </urlrewrite>
-```xml
-
 ```
+
+Then, fire up your server with its custom rewrite rules:
+```bash
+start --rewritesEnable rewritesConfig=customRewrites.xml
+```
+ 
+> **info** For more information on custom rewrite rules, consult the [Tuckey docs](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams).
