@@ -21,7 +21,7 @@ can now simply be
 http://localhost/main
 ```
 
-The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
+> **info** The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
 
 ## Custom Rules 
 
@@ -44,4 +44,4 @@ Then, fire up your server with its custom rewrite rules:
 start --rewritesEnable rewritesConfig=customRewrites.xml
 ```
  
-> **info** For more information on custom rewrite rules, consult the [Tuckey docs](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams).
+>**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams).
