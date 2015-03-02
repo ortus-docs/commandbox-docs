@@ -1,6 +1,6 @@
 # URL Rewrites
 
-Once you start  using the embedded server for your development projects, you may wish you enable URL rewriting.  Rewrites are used by most popular frameworks to do things like add the `index.cfm` back into your URLs.  
+Once you start  using the embedded server for your development projects, you may wish you enable URL rewriting.  Rewrites are used by most popular frameworks to do things like add the `index.cfm` back into SES URLs.  
 
 You may be used to configuring URL rewrites in Apache or IIS, but rewrites are also possible in CommandBox's embedded server via a [Tuckey servlet filter](http://tuckey.org/urlrewrite/).
 
