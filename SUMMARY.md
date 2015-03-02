@@ -42,8 +42,8 @@
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Server Processes](embedded_server/server_processes.md)
    * [Server Port and Host](embedded_server/server_port_and_host.md)
-   * [Manage Servers](embedded_server/manage_servers.md)
    * URL Rewrites
+   * [Manage Servers](embedded_server/manage_servers.md)
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](developing_commands/aliases.md)
    * [Using Parameters](developing_commands/using_parameters.md)
