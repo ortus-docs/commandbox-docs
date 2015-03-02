@@ -21,8 +21,19 @@ can now simply be
 http://localhost/main
 ```
 
-The default rewrite file can be found in 
+The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
 
 ## Custom Rules 
 
-If you want to customize 
+If you want to customize your rewrite rules, just create your own XML file and specify it when starting the server with the `rewritesConfig` parameter.  Here we can a simple rewirterule that redirects  `/foo` to `/index.cfm`
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN" "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+	<rule>
+		<from>^/foo$</from>
+		<to type="redirect">/index.cfm</to>
+	</rule>
+</urlrewrite>
+```xml
+
+```
