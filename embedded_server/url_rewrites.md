@@ -25,7 +25,7 @@ http://localhost/main
 
 ## Custom Rules 
 
-If you want to customize your rewrite rules, just create your own XML file and specify it when starting the server with the `rewritesConfig` parameter.  Here we can a simple rewirterule that redirects  `/foo` to `/index.cfm`
+If you want to customize your rewrite rules, just create your own XML file and specify it when starting the server with the `rewritesConfig` parameter.  Here we have a simple rewrite rule that redirects  `/foo` to `/index.cfm`
 
 
 **customRewrites.xml**
