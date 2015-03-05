@@ -17,7 +17,7 @@ Dependencies and development dependencies are stored in an object with the slug 
 },
 ```
 
-When you install a dependency , it will be automatically added to your box.json.  Use the `--saveDev` flag to save a development dependency.  Uninstalling a dependecy will remove it from your box.json unless you set the `save` parameter to false.
+When you install a dependency , it will be automatically added to your box.json.  Use the `--saveDev` flag to save a development dependency.  Uninstalling a dependency will remove it from your box.json unless you set the `save` parameter to false.
 
 When you distribute a package for others to use, you should omit it dependencies.  This will reduce the size of your repository and will prevent you from having to mess with the 3rd party code.  As long as they are saved in your box.json, you're good.
 
