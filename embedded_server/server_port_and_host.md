@@ -7,7 +7,7 @@ The `start` command will scan your system and find a random port that is not cur
 You may want to set a specific port to use-- even port 80 if nothing else is using it.  Pass the HTTP port parameter to the start command like so:
 
  ```bash
- start 8080
+ start port=8080
  ```
 
 It is also possible to save the default port in your `box.json`.  Add a `defaultPort` property, or issue the following command:
