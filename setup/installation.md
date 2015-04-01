@@ -93,12 +93,12 @@ Add the following to: `/etc/apt/sources.list.d/box.list`
 
 **Stable**
 ```bash
-deb http://downloads.ortussolutions.com/debs/noarch ./
+deb http://downloads.ortussolutions.com/debs/noarch /
 ```
 
 **Bleeding Edge**
 ```bash
-deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch ./
+deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch /
 ```
 
 Then run:
