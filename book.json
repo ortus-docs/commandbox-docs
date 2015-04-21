@@ -3,6 +3,7 @@
     "plugins" : [
         "richquotes"
     ],
+    "isbn" : "978-1511837026",
     "pluginsConfig" : {},
     "pdf" : {
     	"margin": {
