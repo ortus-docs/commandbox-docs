@@ -33,7 +33,7 @@
        * [HTTP(S)](packages/endpoints/https.md)
        * [File](packages/endpoints/file.md)
        * [Folder](packages/endpoints/folder.md)
-       * Git
+       * [Git](packages/endpoints/git.md)
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
