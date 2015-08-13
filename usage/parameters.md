@@ -28,7 +28,7 @@ Created C:\myDir
 CommandBox>
 ```
 
->**Info** It is not necessary to escape special characters in parameter values that are collected in this manner since the shell doesn't need to parse them. The exact value you enter is used.
+> **Info** It is not necessary to escape special characters in parameter values that are collected in this manner since the shell doesn't need to parse them. The exact value you enter is used.
 
 ## Flags
 Any parameter that is a boolean type can be specified as a flag in the format `--name`. Flags can be mixed with named or positional parameters and can appear anywhere in the list. Putting the flag in the parameter list sets that parameter to true. This can be very handy if you want to use positional parameters on a command with a large amount of optional parameters, but you don't want to specify all the in-between ones.
