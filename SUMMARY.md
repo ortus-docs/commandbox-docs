@@ -31,7 +31,7 @@
    * [Code Endpoints](packages/endpoints/endpoints.md)
        * [ForgeBox](packages/endpoints/forgebox.md)
        * [HTTP(S)](packages/endpoints/https.md)
-       * File
+       * [File](packages/endpoints/file.md)
        * Folder
        * Git
    * [Dependencies](packages/dependencies.md)
