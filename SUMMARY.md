@@ -16,7 +16,7 @@
        * [CFML from the command line](usage/execution/cfml_from_the_command_line.md)
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters.md)
-       * Escaping Special Characters
+       * [Escaping Special Characters](escaping_special_characters.md)
    * [Command Help](usage/command_help.md)
    * [REPL](usage/repl.md)
    * [Tab Completion](usage/tab_completion.md)
