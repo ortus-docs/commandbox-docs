@@ -30,7 +30,7 @@
        * [Advanced Installation](packages/installing_packages/advanced_installation.md)
    * [Code Endpoints](packages/endpoints/endpoints.md)
        * [ForgeBox](packages/endpoints/forgebox.md)
-       * HTTP(S)
+       * [HTTP(S)](packages/endpoints/https.md)
        * File
        * Folder
        * Git
