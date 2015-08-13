@@ -29,7 +29,7 @@
        * [Installation Options](packages/installing_packages/installation_options.md)
        * [Advanced Installation](packages/installing_packages/advanced_installation.md)
    * [Code Endpoints](packages/endpoints/endpoints.md)
-       * ForgeBox
+       * [ForgeBox](packages/endpoints/forgebox.md)
        * HTTP(S)
        * File
        * Folder
