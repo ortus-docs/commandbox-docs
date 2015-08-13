@@ -29,6 +29,7 @@
        * [Installation Options](packages/installing_packages/installation_options.md)
        * [Advanced Installation](packages/installing_packages/advanced_installation.md)
    * [Code Endpoints](packages/endpoints/endpoints.md)
+       * ForgeBox
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
