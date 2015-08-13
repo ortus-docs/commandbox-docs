@@ -32,6 +32,7 @@
        * ForgeBox
        * HTTP(S)
        * File
+       * Folder
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
