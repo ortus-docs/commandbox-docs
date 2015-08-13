@@ -46,6 +46,7 @@
    * [Server Port and Host](embedded_server/server_port_and_host.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Manage Servers](embedded_server/manage_servers.md)
+   * JVM Args
 * [Developing Commands](developing_commands/developing_commands.md)
    * [Aliases](developing_commands/aliases.md)
    * [Using Parameters](developing_commands/using_parameters.md)
