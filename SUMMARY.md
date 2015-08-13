@@ -31,6 +31,7 @@
    * [Code Endpoints](packages/endpoints/endpoints.md)
        * ForgeBox
        * HTTP(S)
+       * File
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
