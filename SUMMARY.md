@@ -33,6 +33,7 @@
        * HTTP(S)
        * File
        * Folder
+       * Git
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
