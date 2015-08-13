@@ -30,6 +30,7 @@
        * [Advanced Installation](packages/installing_packages/advanced_installation.md)
    * [Code Endpoints](packages/endpoints/endpoints.md)
        * ForgeBox
+       * HTTP(S)
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
