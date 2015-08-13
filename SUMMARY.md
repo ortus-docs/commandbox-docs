@@ -32,7 +32,7 @@
        * [ForgeBox](packages/endpoints/forgebox.md)
        * [HTTP(S)](packages/endpoints/https.md)
        * [File](packages/endpoints/file.md)
-       * Folder
+       * [Folder](packages/endpoints/folder.md)
        * Git
    * [Dependencies](packages/dependencies.md)
    * [Artifacts](packages/artifacts.md)
