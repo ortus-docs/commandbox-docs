@@ -9,7 +9,13 @@ Make sure your package zip file has a `box.json` inside of it so CommandBox can 
 To install a package from a local file, use the path like so:
 
 ```bash
-install http://www.site.com/myPackage.zip
+install /var/libs/myPackage.zip
+```
+
+Note if using Windows, you need to escape backslashes in the command parameter.
+
+```bash
+install C:\\websites\libs\\myPackage.zip
 ```
 
 ## In box.json
