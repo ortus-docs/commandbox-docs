@@ -18,6 +18,13 @@ Note if using Windows, you need to escape backslashes in the command parameter.
 install C:\\websites\libs\\myPackage.zip
 ```
 
+Relative paths will start in the directory where the command is being run from.
+
+```bash
+install libs/myPackage.zip
+install ../../libs/myPackage2.zip
+```
+
 ## In box.json
 
 You can specify packages from file endpoitns as dependencies in your `box.json` in this format.  Remember, JSON requires that backslashes be escaped.
