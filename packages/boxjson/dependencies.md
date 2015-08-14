@@ -4,7 +4,7 @@
 
 **object**
 
-This object tracks the other packages that are required to run the project.  Packages are added here automatically by the `install slug` command, but you can also manually add them and just type `install` to install them.
+This object tracks the other packages that are required to run the project.  Packages are added here automatically by the `install ID` command, but you can also manually add them and just type `install` to install them.
 
 The key is the unique slug of the package and the value is the a semvar range, local directory, URL to a zip, or a source control URL.
 
