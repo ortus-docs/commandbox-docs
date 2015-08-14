@@ -12,6 +12,14 @@ To install a package from a Git repo, use the URL like so:
 install git://github.com/username/repoName.git
 ```
 
+You can target a specific `branch`, `tag`, or `commit` by adding a "commit-ish" to the end of the URL.
+
+```bash
+install git://site.com/user/repo.git#development
+install git://site.com/user/repo.git#v2.1.0
+install git://site.com/user/repo.git#09d302b4fffa0b988d1edd8ea747dc0c0f2883ea
+```
+
 ## GitHub shortcut
 
 If the repo you wish to install is located on Github.com, you can use this shortcut to specifying the package.
