@@ -10,7 +10,7 @@ Make sure your package zip file has a `box.json` inside of it so CommandBox can 
 
 ## Installation
 
-To install a package, use the full URL like so:
+To install a package from a website, use the full URL like so:
 
 ```bash
 install http://www.site.com/myPackage.zip
