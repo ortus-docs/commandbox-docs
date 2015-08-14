@@ -12,9 +12,10 @@ The key is the unique slug of the package and the value is the a semvar range, l
 "dependencies" : {
     "coldbox" : "x" // latest version from ForgeBox
     "cborm" : "1.0.1", // a specific version from ForgeBox
-    "private-package" : "C:\libs\foo", // local filepath
+    "private-package" : "C:\\libs\\foo", // local folder
+    "private-package2" : "C:\\libs\\foo.zip", // local file
     "baz" : "http://site.com/baz.zip", // URL to zip file
-    "cbcsrf" : "https://github.com/ColdBox/cbox-csrf.git"  // Git/svn endpoint
+    "cbcsrf" : "git://github.com/ColdBox/cbox-csrf.git"  // Git endpoint
 }
 ```
 
@@ -22,8 +23,6 @@ The key is the unique slug of the package and the value is the a semvar range, l
 package set dependencies="{ coldbox : '4.0.0' }" --append
 package show dependencies
 ```
-
-*Currently, the slug is the only data used in the `dependencies` object.  Versions and other code endpoints will be implemented soon in future version.*
 
 ## devDependencies
 
