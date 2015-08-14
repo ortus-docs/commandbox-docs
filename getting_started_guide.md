@@ -46,7 +46,7 @@ To open up the interactive shell at any time, just double click on the `box` exe
 
 ```bash
 C:\ > box version
-CommandBox 1.0.0+00215
+CommandBox 2.1.0.00000
 C:\ > _ 
 ```
 

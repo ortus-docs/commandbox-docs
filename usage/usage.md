@@ -14,7 +14,7 @@ type.
 
 As such, operating system commands won't execute (unless we've
 implemented a similar one in CommandBox). However, we also have a command
-called `run` ([See API Docs](http://apidocs.ortussolutions.com/commandbox/1.0.0/index.html?commandbox/system/commands/run.html)) which can be used to run native commands from within
+called `run` ([See API Docs](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/run.html)) which can be used to run native commands from within
 CommandBox. Command input parameters and flags won't necessarily match
 your OS's native shell. CommandBox uses its own parser and
 commands/parameters will be formatted as documented here.
