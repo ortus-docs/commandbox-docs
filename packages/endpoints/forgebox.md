@@ -2,6 +2,15 @@
 
 Signing up for a ForgeBox account is quick, easy, and free. You will need your own account to post code, but anyone can browse and install packages. The web UI for ForgeBox is currently located at [http://forgebox.io](http://forgebox.io).
 
+Every package on ForgeBox has a unique slug.  To install a package, use the slug like so:
+
+```bash
+install cborm
+```
+
+
+## ForgeBox namespace
+
 Inside CommandBox, use the **forgebox** namespace to **search** for packages or **show** packages of your choosing.
 
 ## forgebox search
