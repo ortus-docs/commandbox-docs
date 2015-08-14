@@ -18,7 +18,7 @@ install http://www.site.com/myPackage.zip
 
 ## In box.json
 
-You can specify packages from ForgeBox as dependencies in your `box.json` in this format:
+You can specify packages from HTTP(S) endpoints as dependencies in your `box.json` in this format:
 
 ```javascript
 {
