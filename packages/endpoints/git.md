@@ -9,12 +9,6 @@ Make sure the root of your Git repo has a `box.json` inside of it so CommandBox 
 To install a package from a Git repo, use the URL like so:
 
 ```bash
-install 
-```
-
-Note if using Windows, you need to escape backslashes in the command parameter.
-
-```bash
 install git://github.com/username/repoName.git
 ```
 
