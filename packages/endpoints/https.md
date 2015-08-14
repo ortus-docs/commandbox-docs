@@ -1,23 +1,20 @@
 # HTTP(S) Endpoint
 
-Packages that are either stored locally on your machine or are accessable via a network drive can be install 
+Packages hosted on a website as a zip file can be installed by using the direct URL to the package.  Both HTTP and HTTPS URLs are supported.  If the URL returns a `301` or `302` redirect, it will be followed until the package is reached.
+
+Make sure your package zip file has a `box.json` inside of it so CommandBox can tell the version and name of the package.  If there is no `box.json`, the following rules will be decided to determine the name of the package:
+
+1. If the URL has the zip file name in it, the name without ".zip" is used.
+2. If the URL contains `github.com`, the repo name will be used.
+3. Otherwise, the entire URL will have non alpha-numeric characters removed and used.
 
 ## Installation
 
-Every package on ForgeBox has a unique slug.  To install a package, use the slug like so:
+To install a package, use the full URL like so:
 
 ```bash
-install cborm
+install http://www.site.com/myPackage.zip
 ```
-You can also specify the version of a package you want to install from Forgebox. Note, this only 
-currently works if the specified version of the package is in your local artifacts folder.  
-
-```bash
-install coldbox@3.8.1
-```
-
-Given the install command above, if the file `~/.CommandBox/artifacts/coldbox/3.8.1/coldbox.zip` exists on your hard drive, the installation will not connect to Forgebox at all.  It will be a completely offline installation.
-
 
 ## In box.json
 
@@ -26,7 +23,7 @@ You can specify packages from ForgeBox as dependencies in your `box.json` in thi
 ```javascript
 {
     "dependencies" : {
-        "coldbox" : "4.1.0"
+        "myPackage" : "http://www.site.com/myPackage.zip"
     }
 }
 
