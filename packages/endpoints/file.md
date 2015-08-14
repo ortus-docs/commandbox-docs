@@ -27,7 +27,7 @@ install ../../libs/myPackage2.zip
 
 ## In box.json
 
-You can specify packages from file endpoitns as dependencies in your `box.json` in this format.  Remember, JSON requires that backslashes be escaped.
+You can specify packages from file endpoints as dependencies in your `box.json` in this format.  Remember, JSON requires that backslashes be escaped.
 
 ```javascript
 {
