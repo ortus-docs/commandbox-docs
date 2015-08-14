@@ -1,16 +1,12 @@
-# HTTP(S) Endpoint
+# File Endpoint
 
-Packages hosted on a website as a zip file can be installed by using the direct URL to the package.  Both HTTP and HTTPS URLs are supported.  If the URL returns a `301` or `302` redirect, it will be followed until the package is reached.
+Packages that are either stored locally on your machine or are accessible via a network drive as a zip file can be installed by using their file system path.  The path can be absolute or relative.
 
-Make sure your package zip file has a `box.json` inside of it so CommandBox can tell the version and name of the package.  If there is no `box.json`, the following rules will be decided to determine the name of the package:
-
-1. If the URL has the zip file name in it, the name without ".zip" is used.
-2. If the URL contains `github.com`, the repo name will be used.
-3. Otherwise, the entire URL will have non alpha-numeric characters removed and used.
+Make sure your package zip file has a `box.json` inside of it so CommandBox can tell the version and name of the package.  If there is no `box.json`, the name of the file without the extension will be used as the package name.
 
 ## Installation
 
-To install a package, use the full URL like so:
+To install a package from a local file, use the path like so:
 
 ```bash
 install http://www.site.com/myPackage.zip
