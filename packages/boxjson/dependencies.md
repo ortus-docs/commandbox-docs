@@ -24,8 +24,6 @@ package set dependencies="{ coldbox : '4.0.0' }" --append
 package show dependencies
 ```
 
-*Currently, the slug is the only data used in the `dependencies` object.  Versions and other code endpoints will be implemented soon in future version.*
-
 ## devDependencies
 
 **object**
