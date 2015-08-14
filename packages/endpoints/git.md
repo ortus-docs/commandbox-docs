@@ -18,6 +18,15 @@ Note if using Windows, you need to escape backslashes in the command parameter.
 install git://github.com/username/repoName.git
 ```
 
+## GitHub shortcut
+
+If the repo you wish to install is located on Github.com, you can use this shortcut to specifying the package.
+
+
+```bash
+install username/repoName
+```
+
 ## In box.json
 
 You can specify packages from folder endpoints as dependencies in your `box.json` in this format.  Remember, JSON requires that backslashes be escaped.
@@ -30,3 +39,7 @@ You can specify packages from folder endpoints as dependencies in your `box.json
 }
 
 ```
+
+## Authentication
+
+Git repos that require authentication are not currently supported.  You will need to use a repo that allows anonymous pulls.
