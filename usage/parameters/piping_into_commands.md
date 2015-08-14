@@ -10,7 +10,7 @@ Since CommandBox commands don't have a "standard input", the output of the previ
 
 ## Examples
 
-There is nothing special about a parameter that can received piped input.  In fact, any command can receive piped into for its first parameter.  The following commands all accomplish the same thing.
+There is nothing special about a parameter that can received piped input.  In fact, any command can receive piped input for its first parameter.  The following commands all accomplish the same thing.
 
 ```bash
 coldbox create app "My App"
