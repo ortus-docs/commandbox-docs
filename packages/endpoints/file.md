@@ -20,12 +20,13 @@ install C:\\websites\libs\\myPackage.zip
 
 ## In box.json
 
-You can specify packages from ForgeBox as dependencies in your `box.json` in this format:
+You can specify packages from file endpoitns as dependencies in your `box.json` in this format.  Remember, JSON requires that backslashes be escaped.
 
 ```javascript
 {
     "dependencies" : {
-        "myPackage" : "http://www.site.com/myPackage.zip"
+        "myPackage" : "/var/libs/myPackage.zip"
+        "myPackage2" : "C:\\websites\libs\\myPackage2.zip"
     }
 }
 
