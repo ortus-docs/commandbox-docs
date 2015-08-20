@@ -61,7 +61,7 @@ After you have downloaded the `commandbox.rpm` file, install it using the `rpm`
 command.
 
 ```bash
-rpm –ivh commandbox-rpm-2.1.0.rpm
+rpm –ivh commandbox-rpm-1.2.3.rpm
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
@@ -115,7 +115,7 @@ After you have downloaded the `commandbox.deb` file, install it using the `dpkg`
 command.
 
 ```bash
-sudo dpkg -i commandbox-debian-2.1.0.deb
+sudo dpkg -i commandbox-debian-1.2.3.deb
 ```
 
 Run the `box` binary to begin the one-time unpacking process.

@@ -16,7 +16,7 @@ You can target a specific `branch`, `tag`, or `commit` by adding a "commit-ish" 
 
 ```bash
 install git://site.com/user/repo.git#development
-install git://site.com/user/repo.git#v2.1.0
+install git://site.com/user/repo.git#v1.2.3
 install git://site.com/user/repo.git#09d302b4fffa0b988d1edd8ea747dc0c0f2883ea
 ```
 
