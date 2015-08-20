@@ -5,7 +5,7 @@ your environment variables) you can [download](http://www.ortussolutions.com/pro
 your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.  Below you will find the way to get the latest stable and bleeding edge releases.  Please also note that in our [installation](installation.md) page you will find much more detail information on how to install CommandBox with modern Operating System package managers as well.
 
 
->**Info** The non-JRE versions are all around 33MB in size, while the embedded JRE versions will go up to 80MB in size.
+>**Info** The non-JRE versions are all around 35MB in size, while the embedded JRE versions will go up to 90MB in size.
 
 <br>
 Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
