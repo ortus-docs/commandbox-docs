@@ -15,7 +15,7 @@ only way to make use of features like [tab complete](usage/tab_completion.md) an
 history](usage/command_history.md).
 
 This example show running the `box.exe` executable from a Windows DOS
-prompt, executing the [version](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/version.html), [pwd](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/pwd.html), and [echo](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/echo.html) commands, and
+prompt, executing the [version](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/version.html), [pwd](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/pwd.html), and [echo](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/echo.html) commands, and
 then exiting back to DOS.
 
 ```bash
@@ -26,12 +26,12 @@ C:\>box.exe
  | |     ___  _ __ ___  _ __ ___   __ _ _ __   __| | |_) | _____  __
  | |    / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` |  _ < / _ \ \/ /
  | |___| (_) | | | | | | | | | | | (_| | | | | (_| | |_) | (_) >  < 
-  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|____/ \___/_/\_\  v2.1.0.00000
+  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|____/ \___/_/\_\  v1.2.3.00000
 
 Welcome to CommandBox!
 Type "help" for help, or "help [command]" to be more specific.
 CommandBox> version
-CommandBox 2.1.0.00000
+CommandBox 1.2.3.00000
 CommandBox> pwd
 C:\
 CommandBox> echo "Hello World!"
@@ -49,7 +49,7 @@ Here is an example of running the version command from a Windows DOS screen. Not
 
 ```bash
 C:\>box version
-CommandBox 2.1.0.00000
+CommandBox 1.2.3.00000
 
 C:\>
 ```
@@ -76,8 +76,8 @@ to the file system.
 
 ### Search
 
-Pipe output into the **[grep](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/grep.html)** command to apply a regex upon it.
-**[grep](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/grep.html)** will only emit lines matching the regex.
+Pipe output into the **[grep](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/grep.html)** command to apply a regex upon it.
+**[grep](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/grep.html)** will only emit lines matching the regex.
 
 ```bash
 cat myLogFile.txt | grep "variable .* undefined"
@@ -85,7 +85,7 @@ cat myLogFile.txt | grep "variable .* undefined"
 
 ### Pagination
 
-Pipe output into the **[more](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/more.html)** command to output it line-by-line or
+Pipe output into the **[more](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/more.html)** command to output it line-by-line or
 page-by-page. Press the spacebar to advance one line at a time. Press
 the Enter key to advance one page at a time. Press ESC or “q” to abort
 output.
@@ -102,7 +102,7 @@ Redirect output into a file, overwriting if it exits like so:
 dir > fileList.txt
 ```
 
-[API Docs for fileWrite.](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/fileWrite.html)
+[API Docs for fileWrite.](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/fileWrite.html)
 
 Use the double arrows to append to an existing file.
 
@@ -110,4 +110,4 @@ Use the double arrows to append to an existing file.
 echo "Step 3 complete" >> log.txt
 ```
 
-[API Docs for fileAppend.](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/fileAppend.html)
+[API Docs for fileAppend.](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/fileAppend.html)

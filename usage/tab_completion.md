@@ -11,13 +11,13 @@ If your text matches only command, namespace, or alias, it will be auto-filled i
 CommandBox> cold
 ```
 
-the [coldbox](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/commands/coldbox/package-summary.html) namespace will be filled in and followed by a space so you are ready to continue typing.
+the [coldbox](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/commands/coldbox/package-summary.html) namespace will be filled in and followed by a space so you are ready to continue typing.
 
 ```
 CommandBox> coldbox 
 ```
 
-If you then press tab again, you will be presented with a list of second-level namespaces inside of [coldbox](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/commands/coldbox/package-summary.html) and the same prompt will be output again below it so you can continue typing.
+If you then press tab again, you will be presented with a list of second-level namespaces inside of [coldbox](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/commands/coldbox/package-summary.html) and the same prompt will be output again below it so you can continue typing.
 
 ```
 CommandBox> coldbox
@@ -30,7 +30,7 @@ CommandBox> coldbox
 ## Parameters
 If the parser finds a complete command, it will move on to parameter completion which is slightly more complicated since at first, there is no way to tell if you are going to named parameters, positional parameters, and/or flag. Based on what parameters you've typed so far, if any, CommandBox will do it's best to give you only relevant options. If it is unsure, it will provide you with every possibility it can think of. Don't be afraid to try pressing tab while typing parameters, you may be surprised how often we can guess where you're going!
 
-Here is CommandBox giving every option possible for the [delete](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/delete.html) command. Note, force and recurse are booleans, so they can be specified as flags.
+Here is CommandBox giving every option possible for the [delete](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/delete.html) command. Note, force and recurse are booleans, so they can be specified as flags.
 
 ```
 CommandBox> delete
@@ -56,7 +56,7 @@ true false
 CommandBox> delete path=myDir force=
 ```
 
-Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the [delete](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/system/commands/delete.html) command.
+Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the [delete](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/delete.html) command.
 
 ```
 CommandBox> delete path=
@@ -83,7 +83,7 @@ CommandBox> delete myDir --
 ### Custom
 Commands have the ability to give hints in the form of a static list or a runtime function with dynamic output.
 
-Here the [forgebox show](http://apidocs.ortussolutions.com/commandbox/2.1.0/index.html?commandbox/commands/forgebox/show.html) command dynamically provides completion for its `type` attribute based on the current types returned by the [ForgeBox REST API](http://wiki.coldbox.org/wiki/ForgeBox:API-Documentation.cfm).
+Here the [forgebox show](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/commands/forgebox/show.html) command dynamically provides completion for its `type` attribute based on the current types returned by the [ForgeBox REST API](http://wiki.coldbox.org/wiki/ForgeBox:API-Documentation.cfm).
 
 ```
 CommandBox> forgebox show type=
