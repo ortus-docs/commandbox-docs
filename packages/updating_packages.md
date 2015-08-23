@@ -13,3 +13,12 @@ Dependency Hierarchy myApp (1.0.0)
 To check and see if any of your installed packages can be updated to a newer version, run the `update` command.
 
 ```bash
+CommandBox> update
+Resolving Dependencies, please wait...
+Found (1) Outdated Dependency
+* cbvalidation (1.0.0) ─> new version: 1.0.3
+Would you like to update the dependency? (yes/no) :
+```
+
+Entering "yes" will install the newest version of the package.  It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
+
