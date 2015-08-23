@@ -10,3 +10,6 @@ Dependency Hierarchy myApp (1.0.0)
   └── cbi18n (1.0.0)
 ```
 
+To check and see if any of your installed packages can be updated to a newer version, run the `update` command.
+
+```bash
