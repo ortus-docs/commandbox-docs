@@ -30,5 +30,18 @@ If you want to integrate your package updates with an external process, you can 
 
 
 ```bash
-outdated --JSON
+CommandBox> outdated --JSON
+Resolving Dependencies, please wait...
+[
+    {
+        "SHORTDESCRIPTION":"This module provides server side validation to ColdBox applications",
+        "VERSION":"1.0.0",
+        "SLUG":"cbvalidation",
+        "NAME":"ColdBox Validation",
+        "DEV":false,
+        "NEWVERSION":"1.0.3",
+        "PACKAGEVERSION":"1.0.0"
+    }
+]
 ```
+
