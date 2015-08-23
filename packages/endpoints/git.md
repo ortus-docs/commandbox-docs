@@ -50,6 +50,8 @@ Git repos that allow anonymous pulls do not require any additional configuration
 install git+ssh://site.com:user/repo.git#v1.2.3
 ```
 
+> **Info** Note the git+ssh URL is a little different than a HTTP(S) URL. There is a colon (`:`) after the host instead of a forward slash (`/`).
+
 The `git+ssh` endpoint will look for a private SSH key in your `~/.ssh` directory named `id_rsa`, `id_dsa`, or `identity`.  If you are using a multi-key setup with a `~/ssh/config` file, it will be read, and the appropriate key will be used for the host.  The matching public key needs to be registered in the Git server. 
 
 Password authentication is not supported yet for HTTP, HTTPS, or SSH Git protocols.  
