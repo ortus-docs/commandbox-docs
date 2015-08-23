@@ -44,4 +44,12 @@ You can specify packages from folder endpoints as dependencies in your `box.json
 
 ## Authentication
 
-Git repos that require authentication are not currently supported.  You will need to use a repo that allows anonymous pulls.
+Git repos that allow anonymous pulls do not require any additional configuration for authentication.  CommandBox's Git endpoint supports SSH authentication via public/private keys by using the `git+ssh://` protocol. 
+
+```bash
+install git+ssh://site.com:user/repo.git#v1.2.3
+```
+
+The `git+ssh` endpoint will look for a private SSH key in your `~/.ssh` directory named `id_rsa`, `id_dsa`, or `identity`.  If you are using a multi-key setup with a `~/ssh/config` file, it will be read, and the appropriate key will be used for the host.  The matching public key needs to be registered in the Git server. 
+
+Password authentication is not supported yet for HTTP, HTTPS, or SSH Git protocols.  
