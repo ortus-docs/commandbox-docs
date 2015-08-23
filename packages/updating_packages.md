@@ -22,3 +22,13 @@ Would you like to update the dependency? (yes/no) :
 
 Entering "yes" will install the newest version of the package.  It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
 
+```bash
+outdated
+```
+
+If you want to integrate your package updates with an external process, you can get this data back as JSON so it can be parsed and used by another sytem.
+
+
+```bash
+outdated --JSON
+```
