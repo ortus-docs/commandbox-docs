@@ -1,6 +1,6 @@
 # Artifacts
 
-CommandBox automatically keeps a local copy of every package it downloads called an artifact. These are stored in the `<user home>/.CommandBox/artifacts/` folder. The next time you install the same package, the file in your local artifacts cache will be used to prevent another download.
+CommandBox automatically keeps a local copy of every package it downloads called an artifact. These are stored in the `~/.CommandBox/artifacts/` folder. The next time you install the same package, the file in your local artifacts cache will be used to prevent another download.
 
 When installing a package, CommandBox will check its local artifacts first and use the zip file found there first.  If nothing is found, the package will be downloaded from the ForgeBox download URL and then cached in the artifacts directory for next time.  
 
