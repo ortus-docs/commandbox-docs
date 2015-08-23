@@ -8,6 +8,8 @@ install coldbox
 
 Packages should always have a `box.json` descriptor file inside them.  This is especially true of packages installed from endpoints other than Forgebox since they don't have any other metadata available.  CommandBox will install any zip file even if it doesn't have a `box.json`, but this isn't ideal since the name, version, and type of the package must be guessed in that instance.
 
+If you find a package on the internet that doesn't have a `box.json`, please contact the maintainer and request that they add one or submit a pull request!
+
 ## Install Process
 
 When you install a package, here are the steps that are taken.  Most all of this should be evident by the output streamed to the console during the install process.  To get even more juicy details, use the `--verbose` flag while installing.
