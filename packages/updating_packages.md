@@ -10,6 +10,8 @@ Dependency Hierarchy myApp (1.0.0)
   └── cbi18n (1.0.0)
 ```
 
+## Getting the Latest
+
 To check and see if any of your installed packages can be updated to a newer version, run the `update` command.
 
 ```bash
@@ -25,6 +27,15 @@ Entering "yes" will install the newest version of the package.  It is also possi
 ```bash
 outdated
 ```
+
+## Determining Freshness
+
+The way CommandBox determines whether there is a new version of a package differs based on the endpoint that installed the package.
+
+* ForgeBox - 
+
+## External JSON Integration
+
 
 If you want to integrate your package updates with an external process, you can get this data back as JSON so it can be parsed and used by another sytem.
 
