@@ -6,7 +6,7 @@ The install command is used to tell CommandBox what you want. Here we ask for th
 install coldbox
 ```
 
-Packages should always have a `box.json` descriptor file inside them.  This is especially true of packages installed from endpoints other than Forgebox since they don't have any other metadata available.  CommandBox will install any zip file even if it doesn't have a `box.json`, but this isn't ideal since the name, version, and type of the package must be guessed.
+Packages should always have a `box.json` descriptor file inside them.  This is especially true of packages installed from endpoints other than Forgebox since they don't have any other metadata available.  CommandBox will install any zip file even if it doesn't have a `box.json`, but this isn't ideal since the name, version, and type of the package must be guessed in that instance.
 
 ## Install Process
 
