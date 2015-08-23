@@ -8,7 +8,7 @@ are confined to the CFML code managed by [WireBox](http://wiki.coldbox.org/wiki/
 box version
 ```
 
-The auto-upgrade commands shown below will **not** update the main CommandBox Java Binary.  If there are any major updates to this binary, you will see a message that you will need to download the new Java binary and replace your current one.
+The auto-upgrade commands shown below will **not** upgrade the main CommandBox Java Binary.  If there are any major upgrades to this binary, you will see a message that you will need to download the new Java binary and replace your current one.
 
 ## Stable
 
