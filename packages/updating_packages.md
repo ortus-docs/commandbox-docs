@@ -41,7 +41,7 @@ The way CommandBox determines whether there is a new version of a package differ
 ## External JSON Integration
 
 
-If you want to integrate your package updates with an external process, you can get this data back as JSON so it can be parsed and used by another sytem.
+If you want to integrate your package updates with an external process, you can get this data back as JSON so it can be parsed and used by another system.
 
 
 ```bash
