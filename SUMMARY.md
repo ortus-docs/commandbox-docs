@@ -35,6 +35,7 @@
        * [Folder](packages/endpoints/folder.md)
        * [Git](packages/endpoints/git.md)
    * [Dependencies](packages/dependencies.md)
+   * [Updating Packages](packages/updating_packages.md)
    * [Artifacts](packages/artifacts.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
        * [Editing Package Properties](packages/creating_packages/editing_package_properties.md)
