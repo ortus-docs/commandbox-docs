@@ -30,7 +30,7 @@ outdated
 
 ## Determining Freshness
 
-The way CommandBox determines whether there is a new version of a package differs based on the endpoint that installed the package.
+The way CommandBox determines whether there is a new version of a package differs based on the endpoint that installed the package.  Versions are always treated as a semantic version (Major.Minor.Patch).
 
 * **ForgeBox** - The ForgeBox REST API is used to get the latest package version
 * **HTTP(S)** - Package is always considered outdated, and re-downloaded.
