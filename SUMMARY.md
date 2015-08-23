@@ -28,6 +28,7 @@
        * [Installation Path](packages/installing_packages/installation_path.md)
        * [Installation Options](packages/installing_packages/installation_options.md)
        * [Advanced Installation](packages/installing_packages/advanced_installation.md)
+   * Updating Packages
    * [Code Endpoints](packages/endpoints/endpoints.md)
        * [ForgeBox](packages/endpoints/forgebox.md)
        * [HTTP(S)](packages/endpoints/https.md)
@@ -46,7 +47,6 @@
        * [Embedded Server](packages/boxjson/embedded_server.md)
        * [Dependencies](packages/boxjson/dependencies.md)
        * [TestBox](packages/boxjson/testbox.md)
-   * Updating Packages
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Server Processes](embedded_server/server_processes.md)
    * [Server Port and Host](embedded_server/server_port_and_host.md)
