@@ -32,7 +32,7 @@ outdated
 
 The way CommandBox determines whether there is a new version of a package differs based on the endpoint that installed the package.  Versions are always treated as a semantic version (Major.Minor.Patch).
 
-* **ForgeBox** - The ForgeBox REST API is used to get the latest package version
+* **ForgeBox** - The ForgeBox REST API is used to get the latest package version.
 * **HTTP(S)** - Package is always considered outdated, and re-downloaded.
 * **File**  - The box.json's version is used from the zip. If box.json doesn't exist, the package is always considered outdated.
 * **Folder** - The box.json's version is used from the folder. If box.json doesn't exist, the package is always considered outdated.
