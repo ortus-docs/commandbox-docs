@@ -25,7 +25,7 @@ You'll be able to see a nice representation of this when you use the `list` comm
 ```bash
 CommandBox> list
 Dependency Hierarchy myApp (1.0.0)
-├── coldbox-be (4.0.0)
+├── coldbox (4.2.0)
 └─┬ cbvalidation (1.0.0)
   └── cbi18n (1.0.0)
 ```
