@@ -22,3 +22,5 @@ cbfeeds - 1 version(s)
 ```
 
 You can clear individual artifacts by slug and version with the `artifacts remove` command.  Or just wipe all of them with `artifacts clean`.
+
+> **info** The artifact cache is only used by the ForgeBox endpoint.  It is the only remote endpoint capable of telling CommandBox what the latest version of a package is without downloading it again.
