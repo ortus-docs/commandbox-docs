@@ -7,6 +7,15 @@ CFSCRIPT-REPL: 5+5
 => 10
 ```
 
+## Directory
+The default directory of the `REPL` command is the current working directory.  This allows you to easily instantiate components in your current project.  You can override this directory by passing in a `directory` option.
+
+```bash
+repl # uses current directory ( getCWD() )
+# OR
+repl directory="/Users/default/Code/project"
+```
+
 ## Script REPL
 The default mode of the `REPL` command is to accept script.  You can enter most any CF Script into the prompt for execution.  If the script is an expression that returns a value, or sets a variable, that value/variable will be output.  Variables that you set will be available to you until you exit the `REPL` command.
 
