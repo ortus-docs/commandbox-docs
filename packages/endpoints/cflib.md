@@ -2,6 +2,8 @@
 
 CommandBox can install UDFs from the popular site CFLib.org.  Each project on CFLib is a single CFML function.  You can find UDFs via the web site and copy the URL slug for a given UDF to use in your installation.  
 
+For example, if the URL to a given UDF is `http://www.cflib.org/udf/CalculateWindChill`, the slug you'll want to use would be `CalculateWindChill.`
+
 ## Standard Installation
 
 To install a package from CFLib, use the slug from the website's URL like so:
