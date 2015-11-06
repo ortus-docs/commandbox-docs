@@ -17,6 +17,12 @@ This will  create a folder in your installation directory named after the projec
 
 > **Info** Note this endpoint will only work for RIAForge projects who's download URL points to a zip file.
 
+## Package Metadata
+
+Packages installed from the RIAForge endpoint don't have any way to get new version information.   They will always show as outdated using the `package outdated` or `update` commands and their downloads will not get stored in the artifact cache.
+
+If the package has a `box.json`, its version information will be used, and any dependencies will be installed as well.
+
 ## In box.json
 
 You can specify packages from the CFLib endpoint as dependencies in your `box.json` in this format.  
