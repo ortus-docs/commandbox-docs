@@ -43,7 +43,7 @@ var area = getInstance( `AreaParallelogram@cflib` ).AreaParallelogram( base, hei
 Or inject the wrapped UDF to use in your handlers or models. 
 
 ```js
-componenet {
+component {
     // Inject the UDF wrapped in a CFC
     property name='areaHelper' inject='AreaParallelogram@cflib';
     
@@ -52,6 +52,11 @@ componenet {
     }
 }
 ```
+
+
+## Package Metadata
+
+Packages installed from the CFLib endpoint don't have any way to get new version information.   They will always show as outdated using the `outdated` or `update` commands and their downloads will not get stored in the artifact cache.
 
 ## In box.json
 
