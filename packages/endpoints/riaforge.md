@@ -5,26 +5,17 @@ CommandBox can install projects from the popular site RIAForge.org. You can find
 For example, if the URL to a given project is `http://javaloader.riaforge.org/`, the slug you'll want to use would be `javaloader`.
 
 
-## Standard Installation
+## Installation
 
-To install a package from CFLib, use the slug from the website's URL like so:
+To install a project from RIAForge, use the slug from the website's URL like so:
 
 ```bash
-install cflib:AreaParallelogram
+install riaforge:iwantmylastfm
 ```
 
-This will  create a folder in your installation directory named after the UDF containing a `.cfm` file of the same name.  The above command would create the following folder:
+This will  create a folder in your installation directory named after the project containing all the files in the zip.  Note this endpoint will only work for RIAForge projects who's download URL points to a zip file.
 
-```
-AreaParallelogram/AreaParallelogram.cfm
-```
 
-That file contains a single function that you can call.  It is up to you to include that file where ever you want to use the UDF.
-
-```js
-include '/AreaParallelogram/AreaParallelogram.cfm';
-var area = AreaParallelogram( base, height );
-```
 
 ## ColdBox Installation
 
