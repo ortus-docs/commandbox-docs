@@ -35,6 +35,7 @@
        * [Folder](packages/endpoints/folder.md)
        * [Git](packages/endpoints/git.md)
        * [CFLib](packages/endpoints/cflib.md)
+       * RIAForge
    * [Dependencies](packages/dependencies.md)
    * [Updating Packages](packages/updating_packages.md)
    * [Artifacts](packages/artifacts.md)
