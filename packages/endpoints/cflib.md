@@ -53,7 +53,6 @@ component {
 }
 ```
 
-
 ## Package Metadata
 
 Packages installed from the CFLib endpoint don't have any way to get new version information.   They will always show as outdated using the `outdated` or `update` commands and their downloads will not get stored in the artifact cache.
