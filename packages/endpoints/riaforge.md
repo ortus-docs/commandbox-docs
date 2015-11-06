@@ -13,37 +13,9 @@ To install a project from RIAForge, use the slug from the website's URL like so:
 install riaforge:iwantmylastfm
 ```
 
-This will  create a folder in your installation directory named after the project containing all the files in the zip.  Note this endpoint will only work for RIAForge projects who's download URL points to a zip file.
+This will  create a folder in your installation directory named after the project containing all the files in the zip.  
 
-
-
-## ColdBox Installation
-
-If you're using ColBox, you can use a slightly different version of the CFLib endpoint called `CFLib-ColdBox` which will wrap up the UDF inside a CFC and place it in an ad-hoc module which automatically registers the model with WireBox.
-
-
-```bash
-install cflib-coldbox:AreaParallelogram
-```
-
-This frees you up from needing to manually include the file.  Once you install the module, you can immediately ask WireBox for the UDF using the convention `UDFName@cflib`.  WireBox will register this mapping by convention so there is no additional setup required to use the UDF.
-
-```js
-var area = getInstance( `AreaParallelogram@cflib` ).AreaParallelogram( base, height );
-```
-
-Or inject the wrapped UDF to use in your handlers or models. 
-
-```js
-componenet {
-    // Inject the UDF wrapped in a CFC
-    property name='areaHelper' inject='AreaParallelogram@cflib';
-    
-    function onDIComplete() {
-        var area = areaHelper.AreaParallelogram( base, height );
-    }
-}
-```
+> **Info** Note this endpoint will only work for RIAForge projects who's download URL points to a zip file.
 
 ## In box.json
 
@@ -52,8 +24,8 @@ You can specify packages from the CFLib endpoint as dependencies in your `box.js
 ```javascript
 {
     "dependencies" : {
-        "AreaParallelogram" : "cflib:AreaParallelogram"
-        "FahrenheitToCelsius" : "cflib-coldbox:FahrenheitToCelsius"
+        "iwantmylastfm" : "riaforge:iwantmylastfm"
+        "javaloader" : "riaforge:javaloader"
     }
 }
 
