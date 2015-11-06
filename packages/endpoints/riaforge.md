@@ -19,7 +19,7 @@ This will  create a folder in your installation directory named after the projec
 
 ## Package Metadata
 
-Packages installed from the RIAForge endpoint don't have any way to get new version information.   They will always show as outdated using the `package outdated` or `update` commands and their downloads will not get stored in the artifact cache.
+Packages installed from the RIAForge endpoint don't have any way to get new version information.   They will always show as outdated using the `outdated` or `update` commands and their downloads will not get stored in the artifact cache.
 
 If the package has a `box.json`, its version information will be used, and any dependencies will be installed as well.
 
