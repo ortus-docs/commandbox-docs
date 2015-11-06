@@ -11,6 +11,8 @@ Here is a list of the package endpoints currently supported by CommandBox.
 * **File**  - A local file containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/file.html)
 * **Folder** - A local folder containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/folder.html)
 * **Git** - Any Git repo containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/git.html)
+* **CFLib** - UDFs posted on CFLib.org [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/cflib.html)
+* **RIAForge** - Projects posted to RIAForge.org  [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/riaforge.html)
 
 ## Examples
 
