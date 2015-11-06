@@ -2,7 +2,8 @@
 
 CommandBox can install projects from the popular site RIAForge.org. You can find projects via the web site and copy the URL slug for a given project to use in your installation.  
 
-For example, 
+For example, if the URL to a given project is `http://javaloader.riaforge.org/`, the slug you'll want to use would be `javaloader`.
+
 
 ## Standard Installation
 
