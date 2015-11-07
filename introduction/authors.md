@@ -1,7 +1,7 @@
 # Authors
 
 ## Luis Fernando Majano Lainez
-Luis Majano is a Computer Engineer with over 15 years of software development and systems architecture experience. He was born in [San Salvador, El Salvador](http://en.wikipedia.org/wiki/El_Salvador) in the late 70’s, during a period of economical instability and civil war.  He lived in El Salvador until 1995 and then moved to Miami, Florida where he completed his Bachelors of Science in Computer Engineering at [Florida International University](http://fiu.edu).  Luis resides in Rancho Cucamonga, California with his beautiful wife Veronica, baby girl Alexia and baby boy Lucas!
+Luis Majano is a Computer Engineer with over 15 years of software development and systems architecture experience. He was born in [San Salvador, El Salvador](http://en.wikipedia.org/wiki/El_Salvador) in the late 70’s, during a period of economical instability and civil war.  He lived in El Salvador until 1995 and then moved to Miami, Florida where he completed his Bachelors of Science in Computer Engineering at [Florida International University](http://fiu.edu).  Luis resides in Houston, Texas with his beautiful wife Veronica, baby girl Alexia and baby boy Lucas!
 
 He is the CEO of [Ortus Solutions](http://www.ortussolutions.com), a consulting firm specializing in web development, ColdFusion (CFML), Java development and all open source professional services under the ColdBox and ContentBox stack. 
 He is the creator of ColdBox, ContentBox, WireBox, MockBox, LogBox and anything “BOX”, and contributes to many open source ColdFusion projects.  He is also the Adobe ColdFusion user group manager for the [Inland Empire](http://www.iecfug.org). You can read his blog at [www.luismajano.com](http://www.luismajano.com)
