@@ -6,7 +6,7 @@ For CommandBox to be able to install packages for you it needs to connect to pac
 
 Here is a list of the package endpoints currently supported by CommandBox.
 
-* **ForgeBox** - Cloud-based packages [(*Read more*)](http://ortus.gitb ooks.io/commandbox-documentation/content/packages/endpoints/forgebox.html)
+* **ForgeBox** - Cloud-based packages [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/forgebox.html)
 * **HTTP(S)** - Point to a hosted zip file containing a package  [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/https.html)
 * **File**  - A local file containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/file.html)
 * **Folder** - A local folder containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/folder.html)
