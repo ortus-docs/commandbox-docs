@@ -52,7 +52,7 @@ C:\ > _
 
 The rest of this guide, however, will assume you're sitting at the interactive shell, where you can enjoy cross-platform command consistency, custom history, and tab completion.
 
-The first command you'll want to try out is `help`.  Type it after a command, or even a partial command to help context-specific assistance.  Check out the help for the `version` command and then run it to see what you get.
+The first command you'll want to try out is `help`.  Type it after a command, or even a partial command to get context-specific assistance.  Check out the help for the `version` command and then run it to see what you get.
 
 ```bash
 CommandBox> version help
@@ -143,9 +143,9 @@ CommandBox> rm playground --recurse --force
 ### Next Steps
 <img src="images/getting_started/extensbility.png" alt="Next Steps">
 
-Your well on your way to becoming a more productive you.  Experiment with CommandBox to see what else you can do with it.  This rest of this documentation book is a good place to start.  Also, we have full documentation of every command in our [Command API Docs.](http://apidocs.ortussolutions.com/commandbox/current).  
+You're well on your way to becoming a more productive you.  Experiment with CommandBox to see what else you can do with it.  This rest of this documentation book is a good place to start.  Also, we have full documentation of every command in our [Command API Docs](http://apidocs.ortussolutions.com/commandbox/current).  
 
-If you run in issues or just have questions, please jump on our [CommandBox Google Group](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox) and ask away.
+If you run into issues or just have questions, please jump on our [CommandBox Google Group](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox) and ask away.
 
 CommandBox is [Professional Open Source](https://github.com/Ortus-Solutions/commandbox) under the LGPL license.  We'd love to have your help with the product.  Commands are actually implemented in CFML which means you can write your own and share them on ForgeBox.   See if you can figure out how to find and install the "Chuck Norris" or "Image To ASCII" commands.  Also, the `snake` game is a good way to cure boredom.  These should give you some ideas of how you can contribute.
 
