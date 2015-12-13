@@ -32,10 +32,17 @@ If you want to customize your rewrite rules, just create your own XML file and s
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <urlrewrite>
+	<!-- this will redirect the user from /foo to /index.cfm -->
 	<rule>
 		<from>^/foo$</from>
 		<to type="redirect">/index.cfm</to>
 	</rule>
+	<!-- internally redirect the requested URL from /gallery to /index.cfm?page=gallery with query string appended -->
+	<rule>
+		<from>^/gallery</from>
+		<to type="passthrough" qsappend="true">/index.cfm?page=gallery</to>
+	</rule>
+
 </urlrewrite>
 ```
 
