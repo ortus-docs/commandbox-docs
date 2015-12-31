@@ -98,5 +98,28 @@ command( "echo" )
     .run();
 ```
 
-You can have more than one `pipe()` method.
+You can have more than one `pipe()` method.  Each piped command will be called in order, receiving the output from the previous one.
 
+## run()
+
+Your DSL should always end with a `run` method. This executes the command.  By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
+
+```javascript
+var output = command( "echo" )
+      .params( "My name is Brad" )
+      .run( returnOutput=true );
+```
+
+If you want to help debug the exact command that is being passed along to the shell for executing, set the `echo` parameter to `true` and the command will be echoed out prior to execution.  The echoed text is not part of what gets returned or piped.
+
+```javascript
+command( "version" )
+    .run( echo=true );
+```
+
+You may want to manually pipe data into the command (which is the same as passing it as the first parameter.  Do so with the `piped` parameter to the `run` method.
+
+```javascript
+command( "touch" )
+    .run( piped='myFile' );
+```
