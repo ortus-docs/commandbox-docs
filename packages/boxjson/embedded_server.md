@@ -1,6 +1,6 @@
 # Embedded Server
 
-These properties affect how the embedded server starts.  Note, a future release of CommandBox will most likely separate these out into another JSON file for organization.
+These properties affect how the embedded server starts.  These settings are now deprecated in favor of the new server.json file.
 
 ## defaultPort
 
@@ -13,7 +13,7 @@ package set defaultPort=8080
 package show defaultPort
 ```
 
-There is currently no way to specify a default SSL port for the embedded server.
+This setting is deprecated in favor of the `port` property of `server.json`.  CommandBox will use this setting still if there is no port in server.json and a port argument is not specified with the `start` command.
 
 ## engines
 
