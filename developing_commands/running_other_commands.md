@@ -117,6 +117,12 @@ command( "cat" )
     .run();
 ```
 
+The above is the equivalent of
+
+```bash
+cat myFile.txt | grep searchString | sed s/find/replace/g | more
+```
+
 ## run()
 
 Your DSL should always end with a `run` method. This executes the command.  By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
