@@ -56,7 +56,7 @@ command( 'cp' )
     .run();
 ```
 
-# flags()
+## flags()
 
 Just like when running a command manually, flags are an optional shortcut for specifying boolean parameters.  Pass in each flag as a separate argument.  It is not necessary to include the `--` prior to the value, but it will still work.  
 
@@ -67,4 +67,19 @@ command( "install" )
     .run();
 ```
 
+## append() and overwrite()
 
+You may redirect the output of a command to a file (normally accomplished by `>` and `>>`) by chaining the `append()` or `overwrite()` methods.  These are mutually exclusive.
+
+
+```javascript
+command( "cat" )
+    .params( "myFile.txt" )
+    .append( "myOtherFile.txt" )
+    .run();
+    
+command( "echo" )
+    .params( "Your new file contents" )
+    .overwrite( "myFile.txt" )
+    .run();
+```
