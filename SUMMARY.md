@@ -62,7 +62,7 @@
    * [Tab Completion & Help](developing_commands/tab_completion_&_help.md)
    * [Interactivity](developing_commands/interactivity.md)
    * [Shell integration](developing_commands/shell_integration.md)
-   * Running Other Commands
+   * [Running Other Commands](developing_commands/running_other_commands.md)
    * [Error handling](developing_commands/error_handling.md)
    * [ForgeBox Distribution](developing_commands/forgebox_distribution.md)
 
