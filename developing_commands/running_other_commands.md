@@ -83,3 +83,20 @@ command( "echo" )
     .overwrite( "myFile.txt" )
     .run();
 ```
+
+## pipe()
+
+Piping is a very powerful way to combine multiple commands and is accomplished via the `pipe` method.  This method expects to receive another `CommandDSL` instance.  You do not need to call `run()` on the nested command.  This example is the equivalent to `echo "hello\nworld" | grep lo`.
+
+```javascript
+command( "echo" )
+    .params( "hello#chr( 10) #world" )
+    .pipe( 
+        command( "grep" )
+        .params( "lo" )
+    )
+    .run();
+```
+
+You can have more than one `pipe()` method.
+
