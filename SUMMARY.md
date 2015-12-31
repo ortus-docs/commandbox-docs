@@ -64,4 +64,5 @@
    * [Shell integration](developing_commands/shell_integration.md)
    * [Error handling](developing_commands/error_handling.md)
    * [ForgeBox Distribution](developing_commands/forgebox_distribution.md)
+   * Running Other Commands
 
