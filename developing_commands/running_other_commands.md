@@ -56,3 +56,15 @@ command( 'cp' )
     .run();
 ```
 
+# flags()
+
+Just like when running a command manually, flags are an optional shortcut for specifying boolean parameters.  Pass in each flag as a separate argument.  It is not necessary to include the `--` prior to the value, but it will still work.  
+
+```javascript
+command( "install" )
+    .params( 'coldbox' )
+    .flags( 'force', '!save' )
+    .run();
+```
+
+
