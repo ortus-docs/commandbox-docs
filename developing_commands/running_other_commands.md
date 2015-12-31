@@ -100,6 +100,23 @@ command( "echo" )
 
 You can have more than one `pipe()` method.  Each piped command will be called in order, receiving the output from the previous one.
 
+```javascript
+command( "cat" )
+    .params( "myFile.txt" )
+    .pipe( 
+        command( "grep" )
+        .params( "searchString" )
+    )
+    .pipe( 
+        command( "sed" )
+        .params( "s/find/replace/g" )
+    )
+    .pipe( 
+        command( "more" )
+    )
+    .run();
+```
+
 ## run()
 
 Your DSL should always end with a `run` method. This executes the command.  By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
