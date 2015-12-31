@@ -4,6 +4,8 @@ Your command might need to get information about its environment or perhaps prox
 
 ## runCommand()
 
+> **Note** runCommand() is now deprecated.  Please use the [Command() DSL](/Developing_Commands/Running_Other_Commands.html) instead.
+
 `runCommand()` will run another command from the shell inline and wait for it to complete.  Any output from the command you run will be sent to the console.  You must pass the command and any parameters in **exactly** as you would enter in the interactive shell which includes escaping any special characters.
 
 ```javascript
