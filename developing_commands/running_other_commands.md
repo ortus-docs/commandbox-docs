@@ -27,16 +27,32 @@ command( ... )
 
 ## command()
 
-This is required to be the first method you call.  It creates an instance of the `CommandDSL` class and returns it.  It accepts a single parameter called `name` which is the name of the command you wish to run. 
+This is required to be the first method you call.  It creates an instance of the `CommandDSL` class and returns it.  It accepts a single parameter called `name` which is the name of the command you wish to run.  Type the name exactly as you would in the shell including the namespace, if applicable.  
 
 ```javascript
 command( 'info' )
     .run();
-```
 
-Type the name exactly as you would in the shell including the namespace, if applicable.  
-
-```javascript
 command( 'server start' )
     .run();
 ```
+
+## params()
+ 
+This method is used to pass parameters to your command.  You can pass named or positional parameters to this method, and they will be pass along to the command in the same fashion.  There is no need to escape parameter values like you would when running a command manually from the shell.
+ 
+### Named parameters
+
+```javascript
+command( 'cp' )
+    .params( path='/my/path', newPath='/my/new/path' )
+    .run();
+```
+### Positional parameters
+
+```javascript
+command( 'cp' )
+    .params( '/my/path', '/my/new/path' )
+    .run();
+```
+
