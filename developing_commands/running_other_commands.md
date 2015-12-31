@@ -1,47 +1,42 @@
 # Running Other Commands
 
-Your command might need to get information about its environment or perhaps proxy to other commands.  Here is a handful of useful methods available to all commands.
+Many times when developing a command, you find the need to run another, existing command.   To do this, we have provided you with a DSL you can use to call any command, pass parameters, and even pipe commands together.  
 
-## runCommand()
+## The DSL
 
-`runCommand()` will run another command from the shell inline and wait for it to complete.  Any output from the command you run will be sent to the console.  You must pass the command and any parameters in **exactly** as you would enter in the interactive shell which includes escaping any special characters.
-
-```javascript
-runCommand( 'echo "Greetings planet"' );
-```
-
-If your passing through a value that may or may not need escaping, there is a method in the parser that will help you.
+The DSL is a sequence of chained methods that will always start with `command()` and end with `.run()`.  The `run` method tells the DSL that you are finished chaining methods and that the command should be executed. Here is the simplest possible example:
 
 ```javascript
-runCommand( 'echo "#getInstance( 'parser' ).escapeArg( untrustedVariable )#"' );
+command( 'version' )
+    .run();
 ```
 
-By default, commands run via `runCommand()` will send their output to the console.  It is possible to capture that output for your own purposes.
+This runs the `version` command and the output will be flushed to the console.
+
+
+Here are all the possible DSL methods that we'll unpack below:
 
 ```javascript
-// Run echo and capture its output
-var result =  runCommand( command='echo hello', returnOutput=true );
-// Force it to echo in green text
-print.green( result ).toConsole();
+command( ... )
+    .params( ... )
+    .flags( ... )
+    .append( ... )
+    .overwrite( ... )
+    .run( ... );
 ```
 
-> **Note** You won't be able to capture any output that's already flushed directly to the console.
+## command()
 
-## getCWD()
+This is required to be the first method you call.  It creates an instance of the `CommandDSL` class and returns it.  It accepts a single parameter called `name` which is the name of the command you wish to run. 
 
-This method will return the Current Working Directory that the user has changed to via the `cd` command.  The path will be expanded and fully qualified.  
+```javascript
+command( 'info' )
+    .run();
+```
 
-## shell.clearScreen()
+Type the name exactly as you would in the shell including the namespace, if applicable.  
 
-This method on the shell object will clear all text off the screen and redraw the CommandBox prompt. 
-
-
-## shell.getTermWidth()
-
-This shell method returns the number of characters wide that the terminal is.  Can be useful for outputting long lines and making sure they won't wrap.  
-
-
-## shell.getTermHeight()
-
-This shell method returns the number of characters tall the terminal is.  Can be useful for [outputting ASCII art](https://github.com/bdw429s/CommandBox-Image-To-ASCII).
-
+```javascript
+command( 'server start' )
+    .run();
+```
