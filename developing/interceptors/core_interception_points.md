@@ -3,44 +3,6 @@
 Here is a list of all the core interception points in CommandBox that you can listen to.  Some have `interceptData` that comes along with them, while others don't.  Remember, the `interceptData` struct is passed by reference.  This means modifying any values directly in that struct will affect how processing continues afterwards inside of CommandBox where those values are used.  
 
 
-
-## Module lifecycle
-
-#### preModuleLoad
-
-Announced before each module that is loaded.
-
-**interceptData**
-
-* `moduleLocation` - Path to the module
-* `moduleName` - Name of the module
-
-#### postModuleLoad
-
-Announced after each module that is loaded.
-
-**interceptData**
-
-* `moduleLocation` - Path to the module
-* `moduleName` - Name of the module
-* `moduleConfig` - Struct representing the configuration data for the module.  
-
-#### preModuleUnLoad
-
-Announced before each module that is unloaded.
-
-**interceptData**
-
-* `moduleName` - Name of the module
-
-#### postModuleUnload
-
-Announced after each module that is unloaded.
-
-**interceptData**
-
-* `moduleName` - Name of the module
-
 ## Server lifecycle
 
 #### onServerStart
