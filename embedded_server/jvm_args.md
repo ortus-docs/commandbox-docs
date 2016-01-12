@@ -20,8 +20,8 @@ start JVMArgs="-myRandomArg=123"
 
 ## Ad Hoc Runwar Options
 
-You can specify ad-hoc options for the underlying Runwar library using the `RunwaArgs` parameter.
+You can specify ad-hoc options for the underlying Runwar library using the `RunwarArgs` parameter.
 
 ```bash
-start JVMArgs="--myRandomArg=123"
+start RunwarArgs="--myRandomArg=123"
 ```
