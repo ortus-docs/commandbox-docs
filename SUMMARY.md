@@ -68,5 +68,5 @@
    * [Error handling](developing_commands/error_handling.md)
    * [ForgeBox Distribution](developing_commands/forgebox_distribution.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
-   * Developing Modules
+   * Modules
 
