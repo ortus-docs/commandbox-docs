@@ -78,4 +78,5 @@
        * [Core Interception Points](developing/interceptors/core_interception_points.md)
            * CLI Lifecycle
            * Command Execution Lifecycle
+           * Module Lifecycle
 
