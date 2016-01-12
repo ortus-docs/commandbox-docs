@@ -24,6 +24,8 @@ Announced right before the shell exits and control is returned back to the OS.  
 
 #### preCommand
 
+Announced before the execution of a command.  If piping the output of one command into another in a command chain, this will fire twice-- once for each command in the chain.
+
 #### postCommand
 
 ## Module lifecycle
