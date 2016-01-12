@@ -76,6 +76,10 @@ Announced after each module that is loaded.
 
 Announced before each module that is unloaded.
 
+**interceptData**
+
+* `moduleName` - Name of the module
+
 #### postModuleUnload
 
 ## Server lifecycle
