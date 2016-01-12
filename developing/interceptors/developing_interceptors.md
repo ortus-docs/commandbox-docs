@@ -1,2 +1,2 @@
-# Developing Intereceptors
+# Developing Interceptors
 
