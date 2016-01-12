@@ -20,6 +20,7 @@ Click a category for more information.
   * onServerStop
 * [**Error Handling**](/developing/interceptors/core/error_handling.md)
   * onException
+* [**Package Lifecycle**](/developing/interceptors/core/package_lifecycle.md)
   * preInstall
   * postInstall
   * preUninstall
