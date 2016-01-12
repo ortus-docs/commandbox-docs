@@ -81,4 +81,5 @@
            * Module Lifecycle
            * Server Lifecycle
            * Error Handling
+           * Package Lifecycle
 
