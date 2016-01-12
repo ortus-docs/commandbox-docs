@@ -38,10 +38,11 @@ component {
 			checkForUpdates=true
 		};
     }
-    
 
     function onCLIStart( interceptData ) {
-        if( interceptData.shellType == 'interactive' ) {
+        if( interceptData.shellType == 'interactive' && settings.checkForUpdates ) {
             shell.callCommand( 'upgrade' );
         }
-}
+    }
+}```
+
