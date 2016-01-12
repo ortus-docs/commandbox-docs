@@ -45,9 +45,21 @@ component{
     };
     
     interceptors = [
+		{
+		    class='#moduleMapping#.interceptors.TestInterceptor'
+		}, 
+		{
+		    class='#moduleMapping#.interceptors.DoCoolThings',
+		    properties={
+		        coolnessFactor='max',
+		        crankItToEleven=true
+		        
+		    }
+		}
     ];
     
     interceptorSettings = {
+        customInterceptionPoints = 'launchInitiated,velocityAcheived,singularityAcquired'
     };
     
     // Manually map some models
