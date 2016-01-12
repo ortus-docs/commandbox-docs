@@ -80,6 +80,6 @@
            * [Command Execution Lifecycle](developing/interceptors/core/command_execution_lifecycle.md)
            * [Module Lifecycle](developing/interceptors/core/module_lifecycle.md)
            * [Server Lifecycle](developing/interceptors/core/server_lifecycle.md)
-           * Error Handling
+           * [Error Handling](developing/interceptors/core/error_handling.md)
            * Package Lifecycle
 
