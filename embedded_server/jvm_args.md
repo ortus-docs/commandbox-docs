@@ -15,7 +15,7 @@ start heapSize=1024
 You can specify ad-hoc JVM args for the server with the `JVMArgs` parameter.
 
 ```bash
-start JVMArgs="-myRandomArg=123"
+start JVMArgs="-XX:MaxGCPauseMillis=200"
 ```
 
 ## Ad Hoc Runwar Options
@@ -23,5 +23,5 @@ start JVMArgs="-myRandomArg=123"
 You can specify ad-hoc options for the underlying Runwar library using the `RunwarArgs` parameter.
 
 ```bash
-start RunwarArgs="--myRandomArg=123"
+start RunwarArgs="--sendfile-enable false"
 ```
