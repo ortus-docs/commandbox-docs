@@ -14,7 +14,7 @@ The following variables will be created for you in the variables scope of the `M
 * `wirebox` - Your friendly neighborhood DI engine
 * `binder` - The WireBox binder, handy for mapping models manually
 
-# Data Structures
+## Data Structures
 
 The `configure()` method does not accept or return any data.  Instead, the config CFC itself represents the data for configuring the module with data structures in the variables scope.  It's the job of the configure method to ensure that these data structures are created and populated.  
 
@@ -31,7 +31,7 @@ component{
   function configure(){
   
     settings = {
-        mySetting = 'value',
+        mySetting = 'isCool',
         settingsCanBe = [
             'complex',
             'values'
