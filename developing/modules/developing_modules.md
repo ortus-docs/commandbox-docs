@@ -33,7 +33,11 @@ One final improvement.  Create a module setting called `checkForUpdates` which d
 
 ```javascript
 component {
-    function configure(){}
+    function configure(){
+		settings = {
+			checkForUpdates=true
+		};
+    }
     
 
     function onCLIStart( interceptData ) {
