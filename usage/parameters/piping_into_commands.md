@@ -32,7 +32,7 @@ package set name="hello world"
 package show name | sed s/hello/goodbye/ | package set name=''
 ```
 
-This takes a package name, replaces some text, and sets it back in all in one line.  One benefit is that Windows users don't have a native `sed` command in their OS, but those commands inside a CommandBox Recipe will execute consitently on any machine.  
+This takes a package name, replaces some text, and sets it back in all in one line.  One benefit is that Windows users don't have a native `sed` command in their OS, but those commands inside a CommandBox Recipe will execute consistently on any machine.  
 
 ## Piping From The OS
 
