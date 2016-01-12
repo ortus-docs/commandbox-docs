@@ -28,3 +28,16 @@ function onCLIStart( interceptData ) {
   }
 }
 ```
+
+One final improvement.  Create a module setting called `checkForUpdates` which defaults to `true`.  Users can set it to `false` to disable the update check.  Here is the final version of the `ModuleConfig.cfc`:
+
+```javascript
+component {
+    function configure(){}
+    
+
+    function onCLIStart( interceptData ) {
+        if( interceptData.shellType == 'interactive' ) {
+            shell.callCommand( 'upgrade' );
+        }
+}
