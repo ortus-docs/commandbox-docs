@@ -36,9 +36,17 @@ This takes a package name, replaces some text, and sets it back in all in one li
 
 ## Piping From The OS
 
-What if you aren't using the interactive shell and you want to pipe into CommandBox from your OS's native shell?  This is also supported, and the piped input will become the first parameter as before.
+What if you aren't using the interactive shell and you want to pipe into CommandBox from your OS's native shell?  This is also supported, and as long as there is a command specified, the piped input will become the first parameter as before.
 
 ```bash
 C:\> echo coldbox | box install
 C:\> echo reverse('this is a test') | box repl
 ```
+
+If you pipe text directly into the box executable with no command specified in the parameters, each line of your piped text will be read from the standard input as a command.
+
+```bash
+C:\> echo version | box
+C:\> box < commands.txt
+```
+
