@@ -14,4 +14,4 @@ The first is for system modules so you shouldn't need to touch it.  All the buil
 
 ## Installation
 
-The first way to create a module is to manually create a folder in the `~/.CommandBox/cfml/modules` directory and place your `ModuleConfig.cfc` inside of it.  This is the process described in the guide on [creating your first module](developing/modules/developing_modules.md).
+The first way to create a module is to manually create a folder in the `~/.CommandBox/cfml/modules` directory and place your `ModuleConfig.cfc` inside of it.  This is the process described in the guide on [creating your first module](/developing/modules/developing_modules.md).
