@@ -27,7 +27,7 @@ The `ModuleConfig.cfc` object itself is an interceptor so you can declare all of
 
 ```javascript
 function preCommand( interceptData ){
-  // I just intercepted ALL Commands in the CLI
-  log.info('The command executed is #interceptData.CommandInfo.commandString#');
+    // I just intercepted ALL Commands in the CLI
+    log.info('The command executed is #interceptData.CommandInfo.commandString#');
 }
 ```
