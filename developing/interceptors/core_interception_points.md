@@ -145,6 +145,13 @@ Announced any time an unhandled exception is thrown.
 
 #### preInstall
 
+Announced prior to installing a package. If a package has additional dependencies to install, each of them will fire this interception point.
+
+**interceptData**
+
+* `installArgs` - Struct containing the following keys used in installation of the package.
+
+
 #### postInstall
 
 #### preUninstall
