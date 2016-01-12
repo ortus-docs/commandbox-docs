@@ -24,7 +24,18 @@ Announced right before the shell exits and control is returned back to the OS.  
 
 #### preCommand
 
-Announced before the execution of a command.  If piping the output of one command into another in a command chain, this will fire twice-- once for each command in the chain.
+Announced before the execution of a command.  This fires after all command parameters have been evaluated, including expressions.  If piping the output of one command into another in a command chain, this will fire twice-- once for each command in the chain.
+
+
+**interceptData**
+
+* `commandInfo` - A struct containing the following keys about the command to execute
+  * `commandString` - A string representing the command name
+  * `commandReference` - The instantiated Command CFC
+  * `parameters` - An array of parameters declared in the Command CFC.
+  * `closestHelpCommand` - 
+* `parameterInfo` - A struct containing the parameters for the command
+
 
 #### postCommand
 
