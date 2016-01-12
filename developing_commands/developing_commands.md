@@ -2,7 +2,7 @@
 
 CommandBox is extensible via CFML by creating modules that contain command CFCs. You can create a module by placing a folder in `~/.CommandBox/cfml/modules/` that contains a `ModuleConfig.cfc` file.  The minimum contents of your module config is:
 
-**ModuleConfig.cfc**
+**modules/myModule/ModuleConfig.cfc**
 ```javascript
 component {
     function configure(){}
