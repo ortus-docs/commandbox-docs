@@ -10,5 +10,9 @@ A module is a folder that minimally contains a `ModuleConfig.cfc` file inside it
 ```javascript
 component {
     function configure(){}
+    
+    function onCLIStart() {
+      shell.callCommand( 'upgrade' );
+    }
 }
 ```
