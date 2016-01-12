@@ -150,7 +150,15 @@ Announced prior to installing a package. If a package has additional dependencie
 **interceptData**
 
 * `installArgs` - Struct containing the following keys used in installation of the package.
-
+  * `ID` - The ID of the package to install
+  * `directory` - Directory to install to.  May be null, if none supplied.
+  * `save` - Flag to save box.json dependency
+  * `saveDev` - Flag to save box.json dev dependency
+  * `production` - Flag to perform a production install
+  * `currentWorkingDirectory` - Current working directory that requested installation
+  * `verbose` - 
+  * `force` - 
+  * `packagePathRequestingInstallation` - 
 
 #### postInstall
 
