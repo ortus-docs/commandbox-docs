@@ -1,16 +1,31 @@
 # Developing Commands
 
-CommandBox is extensible via CFML by creating command CFCs. Any CFC in the `user/.CommandBox/commands/` directory will be registered as a command as long as it extends `commandbox.system.BaseCommand` and has a `run()` method.
+CommandBox is extensible via CFML by creating modules that contain command CFCs. You can create a module by placing a folder in `~/.CommandBox/cfml/modules/` that contains a `ModuleConfig.cfc` file.  The minimum contents of your module config is:
 
+**ModuleConfig.cfc**
 ```javascript
-component extends="commandbox.system.BaseCommand" {
+component {
+    function configure(){}
+}
+```
+Now, create a `commands` folder inside your module for your command to live in.  Each CFC in this folder will be registered as a command.  The only requirement for a command CFC is that is has a `run()` method.
 
+**MyCommand.cfc**
+```javascript
+component {
     function run(){
         return 'Hello World!'; 
     }
-    
 }
 ```
+
+That's it!  After creating your module, run the `reload` command from the shell, and then the name of the new command is the same as the name of the CFC.  In this case, you would run the command above like so:
+
+```bash
+mycommand
+```
+
+It would output `Hello World!` to the console.
 
 To create a two-part command called `testbox run` create CFCs that are nested in subfolders, for example: `user/.CommandBox/commands/testbox/run.cfc` Everything after `testbox run` will be considered parameters.
 
