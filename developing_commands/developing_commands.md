@@ -1,6 +1,11 @@
 # Developing Commands
 
-CommandBox is extensible via CFML by creating modules that contain command CFCs. You can create a module by placing a folder in `~/.CommandBox/cfml/modules/` that contains a `ModuleConfig.cfc` file.  The minimum contents of your module config is:
+CommandBox is extensible via CFML by creating modules that contain command CFCs. This is a very easy and powerful way to create custom, reusable CFML scripts that interact with the user, automate hard tasks, and can be shared with other developers.  Let's create a "Hello World" command.
+
+
+## Your First Command
+
+To create our first command, we'll need a new module.  A module can contain as many commands as you like.  You can create a module by placing a folder in `~/.CommandBox/cfml/modules/` that contains a `ModuleConfig.cfc` file.  The minimum contents of your module config is:
 
 **modules/test/ModuleConfig.cfc**
 ```javascript
@@ -10,7 +15,7 @@ component {
 ```
 Now, create a `commands` folder inside your module for your command to live in.  Each CFC in this folder will be registered as a command.  The only requirement for a command CFC is that is has a `run()` method.
 
-**modules/test/commands/MyCommand.cfc**
+**modules/test/commands/Hello.cfc**
 ```javascript
 component {
     function run(){
@@ -22,12 +27,19 @@ component {
 That's it!  After creating your module, run the `reload` command from the shell, and then the name of the new command is the same as the name of the CFC.  In this case, you would run the command above like so:
 
 ```bash
-mycommand
+hello
 ```
 
-It would output `Hello World!` to the console.
+It would output `Hello World!` to the console.  Anything after `hello` will be passed to your `run()` function as parameters.  
 
-To create a two-part command called `testbox run` create CFCs that are nested in subfolders, for example: `user/.CommandBox/commands/testbox/run.cfc` Everything after `testbox run` will be considered parameters.
+## Create Namespaces
+
+To create a two-part command like `say hello` create CFCs that are nested in subfolders, for example: `~/.CommandBox/cfml/modules/test/commands/say/Hello.cfc` The contents of the `Hello.cfc` would not change, but the namespace will match the folder name by convention.  The namespaced command would be called like so:  
+```bash
+say hello
+```
+
+There is not a limit to how deeply you can nest your namespace folders.  CommandBox's built in help and tab-completion will always work via conventions.
 
 ## Making Changes
 
