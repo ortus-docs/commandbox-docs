@@ -174,7 +174,19 @@ Announced before the uninstallation of a package.
 
 **interceptData**
 
-* `installArgs` - Struct containing the following keys used in removal of the package
+* `uninstallArgs` - Struct containing the following keys used in removal of the package
+  * `ID` - ID of the package to uninstall
+  * `directory` - The directory to be uninstalled from (used to find box.json)
+  * `save` - Whether to update box.json
+  * `currentWorkingDirectory` - Path to package requesting removal .  This climbs the folders structure for nested dependencies.
 
 #### postUninstall
+
+Announced after the uninstallation of a package.
+
+**interceptData**
+
+* `uninstallArgs` - Same as `preUninstall` above
+ 
+
 
