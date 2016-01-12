@@ -79,7 +79,7 @@
            * [CLI Lifecycle](developing/interceptors/core/cli_lifecycle.md)
            * [Command Execution Lifecycle](developing/interceptors/core/command_execution_lifecycle.md)
            * [Module Lifecycle](developing/interceptors/core/module_lifecycle.md)
-           * Server Lifecycle
+           * [Server Lifecycle](developing/interceptors/core/server_lifecycle.md)
            * Error Handling
            * Package Lifecycle
 
