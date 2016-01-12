@@ -59,7 +59,7 @@
    * [Manage Servers](embedded_server/manage_servers.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
    * Modules
-   * [Developing Commands](developing_commands/developing_commands.md)
+   * [Commands](developing_commands/developing_commands.md)
        * [Aliases](developing_commands/aliases.md)
        * [Using Parameters](developing_commands/using_parameters.md)
        * [Command Output](developing_commands/command_output.md)
