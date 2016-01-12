@@ -78,7 +78,7 @@
        * [Core Interception Points](developing/interceptors/core_interception_points.md)
            * [CLI Lifecycle](developing/interceptors/core/cli_lifecycle.md)
            * [Command Execution Lifecycle](developing/interceptors/core/command_execution_lifecycle.md)
-           * Module Lifecycle
+           * [Module Lifecycle](developing/interceptors/core/module_lifecycle.md)
            * Server Lifecycle
            * Error Handling
            * Package Lifecycle
