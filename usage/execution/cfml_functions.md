@@ -47,7 +47,10 @@ The first example averages an array. The second outputs an array of dependency n
 package list --JSON | #structFind dependencies | #structKeyArray
 ```
 
-You must use positional paramaters if you are piping data to a CFML function, but you do have the option to use 
-named parameters otherwise. Those names will be passed along directly to the CFML function, so use the CF docs to make sure 
-you're using the correct parameter name.
+## Named Parameters
+
+You must use positional parameters if you are piping data to a CFML function, but you do have the option to use named parameters otherwise. Those names will be passed along directly to the CFML function, so use the CF docs to make sure you're using the correct parameter name.
+
+```bash
 #directoryList path=D:\\ listInfo=name
+```
