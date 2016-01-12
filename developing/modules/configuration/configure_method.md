@@ -28,8 +28,10 @@ Here is an example `configure()` method.  Note these data structures are placed 
 
 ```javascript
 component{
+
   function configure(){
   
+    // Settings for my module
     settings = {
         mySetting = 'isCool',
         settingsCanBe = [
@@ -44,6 +46,7 @@ component{
         }
     };
     
+    // Declare some interceptors to listen
     interceptors = [
 		{
 		    class='#moduleMapping#.interceptors.TestInterceptor'
@@ -58,6 +61,7 @@ component{
 		}
     ];
     
+    // Ad-hoc interception events I will announce myself
     interceptorSettings = {
         customInterceptionPoints = 'launchInitiated,velocityAcheived,singularityAcquired'
     };
