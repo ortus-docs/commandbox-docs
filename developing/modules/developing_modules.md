@@ -46,3 +46,8 @@ component {
     }
 }```
 
+Now run the following command to override our module's default setting and turn off the update check.
+```bash
+config set modules.mytest.checkforupdates=false
+```
+Reload the shell and you'll see the update check is gone.  
