@@ -46,5 +46,10 @@ component{
         log.info('Module unloaded successfully.' );
     }
     
+    function preCommand( interceptData ){
+        // I just intercepted ALL Commands in the CLI
+        log.info('The command executed is #interceptData.CommandInfo.commandString#');
+    }    
+    
 }```
 
