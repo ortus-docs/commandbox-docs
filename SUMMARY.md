@@ -75,5 +75,5 @@
        * [Error handling](developing/commands/error_handling.md)
        * [ForgeBox Distribution](developing/commands/forgebox_distribution.md)
    * [Interceptors](developing/interceptors/developing_interceptors.md)
-       * Core Interception Points
+       * [Core Interception Points](developing/interceptors/core_interception_points.md)
 
