@@ -26,8 +26,8 @@ function onUnLoad(){
 The `ModuleConfig.cfc` object itself is an interceptor so you can declare all of the CLI's interception points in the configuration object and they will be registered as interceptors.
 
 ```javascript
-function onCLIStart( interceptData ){
-  // I just intercepted ALL incoming requests to the application
-  log.info('The event executed is #arguments.event.getCurrentEvent()');
+function preCommand( interceptData ){
+  // I just intercepted ALL Commands in the CLI
+  log.info('The command executed is #arguments.event.getCurrentEvent()');
 }
 ```
