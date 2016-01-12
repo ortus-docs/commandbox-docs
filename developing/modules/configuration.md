@@ -10,9 +10,8 @@ component{
     this.cfmapping = "test";
     this.dependencies = [ "otherModule", "coolModule" ];
 
-  function configure(){}
+  function configure(){
+  
+  }
 }```
 
-
-
-## OnLoad() and OnUnload() Methods
