@@ -82,4 +82,5 @@
            * [Server Lifecycle](developing/interceptors/core/server_lifecycle.md)
            * [Error Handling](developing/interceptors/core/error_handling.md)
            * [Package Lifecycle](developing/interceptors/core/package_lifecycle.md)
+       * Custom Interception Points
 
