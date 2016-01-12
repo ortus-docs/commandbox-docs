@@ -10,46 +10,41 @@ component{
     this.cfmapping = "test";
     this.dependencies = [ "otherModule", "coolModule" ];
 
-  function configure(){
-  
-    // Settings for my module
-    settings = {
-        mySetting = 'isCool',
-        settingsCanBe = [
-            'complex',
-            'values'
-        ],
-        andEven = {
-            nested = {
-                any = 'way'
-            },
-            you = 'like'
-        }
-    };
+    function configure(){
+        
+        // Settings for my module
+        settings = {
+            mySetting = 'isCool',
+            settingsCanBe = [
+                'complex',
+                'values'
+            ]
+        };
+        
+        // Declare some interceptors to listen
+        interceptors = [
+        	{
+        	    class='#moduleMapping#.interceptors.TestInterceptor'
+        	}
+        ];
+        
+        // Ad-hoc interception events I will announce myself
+        interceptorSettings = {
+            customInterceptionPoints = ''
+        };
+        
+        // Manually map some models
+        binder.map( 'foo' ).to( '#moduleMapping#.com.foo.bar' );
+
+    }
+      
+    function onLoad(){
+        log.info('Module loaded successfully.' );
+    }
     
-    // Declare some interceptors to listen
-    interceptors = [
-		{
-		    class='#moduleMapping#.interceptors.TestInterceptor'
-		}, 
-		{
-		    class='#moduleMapping#.interceptors.DoCoolThings',
-		    properties={
-		        coolnessFactor='max',
-		        crankItToEleven=true
-		        
-		    }
-		}
-    ];
+    function onUnLoad(){
+        log.info('Module unloaded successfully.' );
+    }
     
-    // Ad-hoc interception events I will announce myself
-    interceptorSettings = {
-        customInterceptionPoints = 'launchInitiated,velocityAcheived,singularityAcquired'
-    };
-    
-    // Manually map some models
-    binder.map( 'foo' ).to( '#moduleMapping#.com.foo.bar' );
-  
-  }
 }```
 
