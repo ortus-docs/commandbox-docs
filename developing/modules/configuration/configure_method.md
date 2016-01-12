@@ -24,5 +24,34 @@ There is no required data, but here is the list of optional data you can set:
 * `interceptors` - An array of declared interceptor structures that should be loaded in the entire application. Each interceptor structure contains `class`, and optional `properties`.
 * `interceptorSettings` - A structure of settings for interceptor interactivity which includes the sub-key `customInterceptionPoints`, a list of custom interception points to add to the application wide interceptor service
 
-Here is an example `configure()` method.
+Here is an example `configure()` method.  Note these data structures are placed in the variables scope.
 
+```javascript
+component{
+  function configure(){
+  
+    settings = {
+        mySetting = 'value',
+        settingsCanBe = [
+            'complex',
+            'values'
+        ],
+        andEven = {
+            nested = {
+                any = 'way'
+            },
+            you = 'like'
+        }
+    };
+    
+    interceptors = [
+    ];
+    
+    interceptorSettings = {
+    };
+    
+    // Manually map some models
+    binder.map( 'foo' ).to( '#moduleMapping#.com.foo.bar' );
+  
+  }
+}```
