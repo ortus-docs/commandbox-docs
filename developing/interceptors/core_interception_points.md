@@ -32,13 +32,24 @@ Announced before the execution of a command.  This fires after all command param
 * `commandInfo` - A struct containing the following keys about the command to execute
   * `commandString` - A string representing the command name
   * `commandReference` - The instantiated Command CFC
-  * `parameters` - An array of parameters declared in the Command CFC.
-  * `closestHelpCommand` - 
-* `parameterInfo` - A struct containing the parameters for the command
+  * `parameters` - An array of un-parsed parameter tokens typed in the CLI
+  * `closestHelpCommand` - The CFC path to the most-applicable help command. Used to generate namespace help.
+* `parameterInfo` - A struct containing the following keys about the processed parameters for the command execution
+  * `positionalParameters` - An array of parameter values
+  * `namedParameters` - A struct of name/value pairs.  The named parameters are always what is passed to the command's `run()` method.
+  * `flags` - A struct of flags that were passed in.
 
 
 #### postCommand
 
+Announced immediately after command execution is complete.  If more than one command is piped together in a command chain, this is announced after each command in the chain.
+
+
+**interceptData**
+
+* `commandInfo` - Same as `preCommand`
+* `parameterInfo` - Same as `preCommand`
+*
 ## Module lifecycle
 
 #### preModuleLoad
