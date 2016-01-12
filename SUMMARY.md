@@ -76,4 +76,5 @@
        * [ForgeBox Distribution](developing/commands/forgebox_distribution.md)
    * [Interceptors](developing/interceptors/developing_interceptors.md)
        * [Core Interception Points](developing/interceptors/core_interception_points.md)
+           * CLI Lifecycle
 
