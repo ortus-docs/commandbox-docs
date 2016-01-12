@@ -79,4 +79,5 @@
            * CLI Lifecycle
            * Command Execution Lifecycle
            * Module Lifecycle
+           * Server Lifecycle
 
