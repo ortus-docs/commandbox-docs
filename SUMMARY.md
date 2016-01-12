@@ -61,6 +61,7 @@
    * [Modules](developing/modules/developing_modules.md)
        * [Installation and Locations](developing/modules/installation_and_locations.md)
        * [Configuration](developing/modules/configuration.md)
+           * Public Properties
    * [Commands](developing/commands/developing_commands.md)
        * [Aliases](developing/commands/aliases.md)
        * [Using Parameters](developing/commands/using_parameters.md)
