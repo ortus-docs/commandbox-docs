@@ -31,5 +31,6 @@ A shortcut for running OS binaries is to prefix the binary with `!`. In this mod
 
 ```bash
 !myApp.exe
+!git pull
 !cmd "/c dir"
 ```
