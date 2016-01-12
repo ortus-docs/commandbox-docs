@@ -47,7 +47,7 @@ The first example averages an array. The second outputs an array of dependency n
 package list --JSON | #structFind dependencies | #structKeyArray
 ```
 
-The sky is the limit with the mashups you can create.  This example runs a native OS binary, 
+The sky is the limit with the mashups you can create.  This example runs your native `java` binary, uses CFML functions to strip out the first line, and then grabs a portion of that string via regex in the `sed` command.
 
 ```bash
 !java -version | #listToArray \n | #arrayFirst | sed 's/java version "(.*)"/\1/'
