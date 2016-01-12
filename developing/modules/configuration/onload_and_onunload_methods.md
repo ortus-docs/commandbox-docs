@@ -1,2 +1,0 @@
-# OnLoad() and OnUnload() Methods
-
