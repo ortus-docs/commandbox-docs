@@ -1,6 +1,6 @@
 # ForgeBox Distribution
 
-If you package your custom commands and upload them to [ForgeBox](http://www.coldbox.org/forgebox), make sure to tag them as `commandbox-commands` type.  This will tell CommandBox automatically to install them in the custom commands folder for you when installing from ForgeBox.
+If you package your custom commands and upload them to [ForgeBox](http://www.coldbox.org/forgebox), make sure to tag them as `commandbox-modules` type.  This will tell CommandBox automatically to install them in the custom modules folder so the commands will be automatically registered.
 
 Commands can be installed using the `install` command.  They will not be saved as dependencies.
 
