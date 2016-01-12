@@ -9,7 +9,9 @@ CommandBox has two default `modules` directories.
 * `~/.CommandBox/cfml/system/modules`
 * `~/.CommandBox/cfml/modules`
 
+The first is for system modules so you shouldn't need to touch it.  All the built-in commands are in those modules, so feel free to check out how they work.  All user-installed modules are in the second folder.  The `cfml` folder is the "root" of the CommandBox installation, so there will also be a `box.json` created in that folder once you start installing modules via the `install` command.
 
 
 ## Installation
 
+The first way to create a module is to manually create a folder in the `~/.CommandBox/cfml/modules` directory and place your `ModuleConfig.cfc` inside of it.  This is the process described in the guide on [creating your first module](developing/modules/developing_modules.md).
