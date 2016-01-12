@@ -61,7 +61,7 @@
    * [Modules](developing/modules/developing_modules.md)
        * [Installation and Locations](developing/modules/installation_and_locations.md)
        * [Configuration](developing/modules/configuration.md)
-           * Public Properties
+           * [Public Properties](developing/modules/configuration/public_properties.md)
            * Configure() Method
            * OnLoad() and OnUnload() Methods
    * [Commands](developing/commands/developing_commands.md)
