@@ -69,5 +69,5 @@
        * [Running Other Commands](developing/commands/running_other_commands.md)
        * [Error handling](developing/commands/error_handling.md)
        * [ForgeBox Distribution](developing/commands/forgebox_distribution.md)
-   * [Intereceptors](developing/interceptors/developing_intereceptors.md)
+   * [Interceptors](developing/interceptors/developing_interceptors.md)
 
