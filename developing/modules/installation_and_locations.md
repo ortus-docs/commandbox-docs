@@ -15,3 +15,5 @@ The first is for system modules so you shouldn't need to touch it.  All the buil
 ## Installation
 
 The first way to create a module is to manually create a folder in the `~/.CommandBox/cfml/modules` directory and place your `ModuleConfig.cfc` inside of it.  This is the process described in the guide on [creating your first module](/developing/modules/developing_modules.md).
+
+If you have a package of type `commandbox-modules` locally, in a Git repo, or in Forgebox, you can install from any working directory.  When CommandBox sees the package type, it will change the installation directory to be the user modules folder.
