@@ -39,7 +39,7 @@ To create a two-part command like `say hello` create CFCs that are nested in sub
 say hello
 ```
 
-There is not a limit to how deeply you can nest your namespace folders.  CommandBox's built in help and tab-completion will always work via conventions.
+There is no limit to how deeply you can nest your namespace folders.  CommandBox's built in help and tab-completion will always work via conventions.
 
 ## Making Changes
 
@@ -53,7 +53,7 @@ All CFCs including commands are created and wired via WireBox, so dependency inj
 This command would inject CommandBox's ArtifactService to list out all the packages being stored.
 
 ```javascript
-component extends="commandbox.system.BaseCommand" {
+component {
 
 	property name='artifactService' inject='artifactService'; 
 	
