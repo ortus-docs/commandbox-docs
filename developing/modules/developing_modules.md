@@ -16,3 +16,15 @@ component {
     }
 }
 ```
+
+This module runs the `upgrade` command every time the CLI starts up to check and see if you have the latest version.  Pretty cool, huh?  
+
+Let's take it a step further.  Since this upgrade check could get annoying, let's only run it if we're starting the shell in interactive mode (with the blinking cursor awaiting input).   That way, one-off commands from the OS shell that exit right away won't trigger the update check.  Our `onCLIStart()` method gets an argument called `intercept` data that has a flag for this.  
+
+```javascript
+function onCLIStart( interceptData ) {
+  if( interceptData.shellType == 'interactive' ) {
+    shell.callCommand( 'upgrade' );
+  }
+}
+```
