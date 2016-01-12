@@ -63,7 +63,7 @@
        * [Configuration](developing/modules/configuration.md)
            * [Public Properties](developing/modules/configuration/public_properties.md)
            * [Configure() Method](developing/modules/configuration/configure_method.md)
-           * OnLoad() and OnUnload() Methods
+           * [OnLoad() and OnUnload() Methods](developing/modules/configuration/onload_and_onunload_methods.md)
    * [Commands](developing/commands/developing_commands.md)
        * [Aliases](developing/commands/aliases.md)
        * [Using Parameters](developing/commands/using_parameters.md)
