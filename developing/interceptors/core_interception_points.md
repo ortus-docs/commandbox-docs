@@ -135,6 +135,12 @@ Announced before a server stop.
 
 #### onException
 
+Announced any time an unhandled exception is thrown.  
+
+**interceptData**
+
+* `exception` - Error struct  
+
 ## Package lifecycle
 
 #### preInstall
