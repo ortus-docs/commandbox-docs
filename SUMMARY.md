@@ -15,6 +15,7 @@
        * [Recipes](usage/execution/recipes.md)
        * [CFML Files](usage/execution/cfml_files.md)
        * [OS Binaries](usage/execution/os_binaries.md)
+       * CFML Functions
    * [Commands](usage/commands.md)
    * [Parameters](usage/parameters/parameters.md)
        * [Escaping Special Characters](usage/parameters/escaping_special_characters.md)
