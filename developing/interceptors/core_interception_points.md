@@ -7,20 +7,19 @@ Click a category for more information.
 * [**CLI Lifecycle**](/developing/interceptors/core/cli_lifecycle.md)
   * onCLIStart
   * onCLIExit
-* **Command Execution Lifecycle**
+* [**Command Execution Lifecycle**](/developing/interceptors/core/command_execution_lifecycle.md)
   * preCommand
   * postCommand
-* **Module Lifecycle**
+* [**Module Lifecycle**](/developing/interceptors/core/module_lifecycle.md)
   * preModuleLoad
   * postModuleLoad
   * preModuleUnLoad
   * postModuleUnload
-* **Server Lifecycle**
+* [**Server Lifecycle**](/developing/interceptors/core/server_lifecycle.md)
   * onServerStart
   * onServerStop
-* **Error Handling**
+* [**Error Handling**](/developing/interceptors/core/error_handling.md)
   * onException
-* **Package Lifecycle**
   * preInstall
   * postInstall
   * preUninstall
