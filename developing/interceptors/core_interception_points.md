@@ -4,7 +4,7 @@ Here is a list of all the core interception points in CommandBox that you can li
 
 Click a category for more information.
 
-* **CLI Lifecycle**
+* [**CLI Lifecycle**](/developing/interceptors/core/cli_lifecycle.md)
   * onCLIStart
   * onCLIExit
 * **Command Execution Lifecycle**
