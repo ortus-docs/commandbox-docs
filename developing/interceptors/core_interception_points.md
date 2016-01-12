@@ -82,6 +82,8 @@ Announced before each module that is unloaded.
 
 #### postModuleUnload
 
+Announced after each module that is loaded.
+
 ## Server lifecycle
 
 #### onServerStart
