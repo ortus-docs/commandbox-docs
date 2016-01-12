@@ -80,4 +80,5 @@
            * Command Execution Lifecycle
            * Module Lifecycle
            * Server Lifecycle
+           * Error Handling
 
