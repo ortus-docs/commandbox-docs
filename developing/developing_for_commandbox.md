@@ -6,8 +6,14 @@
 
 The unit of re-use in CommandBox is the module.  A module is nothing more than a folder containing some settings and code that follows a convention.  Modules mean that you can develop your own additions and customizations to the tool without needing to modify the core code.
 
-[Read about *Developing Modules* here.](/developing/modules/developing_modules.md)
+[Read about **Developing Modules** here.](/developing/modules/developing_modules.md)
 
 ## Custom Commands
 
+
+
+[Read about **Developing Commands** here.](/developing/commands/developing_commands.md)
+
 ## Event Model
+
+[Read about **Developing Interceptors** here.](/developing/interceptors/developing_interceptors.md)
