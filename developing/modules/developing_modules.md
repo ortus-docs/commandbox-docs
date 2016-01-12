@@ -4,3 +4,11 @@ The unit of re-use in CommandBox is the module.  A module is a folder containing
 
 ## Build Your First Module
 
+A module is a folder that minimally contains a `ModuleConfig.cfc` file inside it.  User modules are stored in the `~/.CommandBox/cfml/modules/` directory on your hard drive.  Let's navigate to that folder and create a  new sub directory called `test`. Now inside of our new folder, create a new file called `ModuleConfig.cfc` and place the following in it.
+
+**~/.CommandBox/cfml/modules/test/ModuleConfig.cfc**
+```javascript
+component {
+    function configure(){}
+}
+```
