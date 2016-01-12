@@ -47,6 +47,12 @@ The first example averages an array. The second outputs an array of dependency n
 package list --JSON | #structFind dependencies | #structKeyArray
 ```
 
+The sky is the limit with the mashups you can create.  This example runs a native OS binary, 
+
+```bash
+!java -version | #listToArray \n | #arrayFirst | sed 's/java version "(.*)"/\1/'
+```
+
 ## Named Parameters
 
 You must use positional parameters if you are piping data to a CFML function, but you do have the option to use named parameters otherwise. Those names will be passed along directly to the CFML function, so use the CF docs to make sure you're using the correct parameter name.
