@@ -37,15 +37,18 @@ component{
         binder.map( 'foo' ).to( '#moduleMapping#.com.foo.bar' );
 
     }
-      
+    
+    // Runs when module is loaded
     function onLoad(){
         log.info('Module loaded successfully.' );
     }
     
+    // Runs when module is unloaded
     function onUnLoad(){
         log.info('Module unloaded successfully.' );
     }
     
+    // An interceptor that listens for every command that's run.
     function preCommand( interceptData ){
         // I just intercepted ALL Commands in the CLI
         log.info('The command executed is #interceptData.CommandInfo.commandString#');
