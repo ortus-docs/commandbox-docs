@@ -47,12 +47,15 @@ Announced immediately after command execution is complete.  If more than one com
 
 **interceptData**
 
-* `commandInfo` - Same as `preCommand`
-* `parameterInfo` - Same as `preCommand`
-*
+* `commandInfo` - Same as `preCommand` above
+* `parameterInfo` - Same as `preCommand` above
+* `results` - A string that represents any output from the command that hasn't already been flushed to the console.
+
 ## Module lifecycle
 
 #### preModuleLoad
+
+Announced before each module that is loaded.
 
 #### postModuleLoad
 
