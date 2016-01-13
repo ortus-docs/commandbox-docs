@@ -4,6 +4,7 @@
    * [About This Book](introduction/about_this_book.md)
    * [Authors](introduction/authors.md)
 * [Overview](overview/overview.md)
+* Config Settings
 * [Getting Started Guide](getting_started_guide.md)
    * Config Settings
 * [Setup](setup/setup.md)
