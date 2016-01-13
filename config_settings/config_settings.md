@@ -1,2 +1,2 @@
-# Config Settings
+# CommandBox Config Settings
 
