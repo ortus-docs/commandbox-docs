@@ -62,3 +62,5 @@ Now, you really got busy over the weekend and made a major overhaul to your proj
 bump --major
 ```
 
+> **Info** Each part of the version doesn't have to be one digit.  For instance, 1.0.9 patch-bumps to 1.0.10 and doesn't ever "roll over".
+
