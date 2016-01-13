@@ -59,13 +59,13 @@
    * [Manage Servers](embedded_server/manage_servers.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
    * [Modules](developing/modules/developing_modules.md)
-       * User Configuration
        * [Installation and Locations](developing/modules/installation_and_locations.md)
        * [Configuration](developing/modules/configuration.md)
            * [Public Properties](developing/modules/configuration/public_properties.md)
            * [Configure() Method](developing/modules/configuration/configure_method.md)
            * [Lifecycle Methods](developing/modules/configuration/lifecycle_methods.md)
        * [Conventions](developing/modules/conventions.md)
+   * User Configuration
    * [Commands](developing/commands/developing_commands.md)
        * [Aliases](developing/commands/aliases.md)
        * [Using Parameters](developing/commands/using_parameters.md)
