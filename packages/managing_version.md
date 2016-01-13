@@ -1,2 +1,2 @@
-# Managing Version
+# Managing Package Version
 
