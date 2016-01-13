@@ -22,7 +22,7 @@
        * [Escaping Special Characters](usage/parameters/escaping_special_characters.md)
        * [File Paths](usage/parameters/file_paths.md)
        * [Piping into Commands](usage/parameters/piping_into_commands.md)
-       * Expressions
+       * [Expressions](usage/parameters/expressions.md)
    * [Command Help](usage/command_help.md)
    * [REPL](usage/repl.md)
    * [Tab Completion](usage/tab_completion.md)
