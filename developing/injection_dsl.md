@@ -4,7 +4,16 @@ Everything inside CommandBox is built via Wirebox. This means your models, comma
 
 ## Core Models
 
+There are a number of automatically-mapped objects inside WireBox.  Here are some examples:
 
+```javascript
+property name='shell' inject='commandbox';
+property name='tempDir' inject='tempDir@constants';
+property name='formatterUtil' inject='formatter';
+property name='ModuleService' inject='ModuleService';
+property name='ConfigService' inject='ConfigService';
+
+```
 
 ## Custom Models
 
