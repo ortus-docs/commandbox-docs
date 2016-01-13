@@ -34,6 +34,10 @@ echo 'Luis "The Dev" Majano'
 
 Backticks are used in parameter values to demarcate an expression to be parsed.  Escape them with a backslash.
 
+```bash
+echo "Nothing to \`see\` here"
+```
+
 ## Equals Signs
 If you have an equals sign in your value, you'll need to escape it with a backlash.
 
