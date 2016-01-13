@@ -34,6 +34,12 @@ One of the primary purposes of modules is to serve as a delivery mechanism for c
 
 Any interceptor CFCs packaged inside a module should go in an `interceptors` folder.  Interceptors are not loaded automatically though.  You'll need to reference the component path in your `ModuleConfig.cfc`.  The path that points to the interceptors folder can be resolved in your config file as `#moduleMapping#.interceptors.MyInterceptorName`.    [Read more about interceptor configuration here](/developing/interceptors/developing_interceptors.md)
 
-
-
 # Modules
+
+```
+/modules/ModuleName/modules/
+```
+
+Wait, what-- modules can have their own modules??  Yep, we call that "module inception" and it's one of the most powerful features of modular development.  If your module depends on another CommandBox module, then specify that dependency in your module's `box.json` and it will automatically be installed for you inside your `modules` folder.  
+
+
