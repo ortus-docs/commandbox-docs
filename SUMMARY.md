@@ -64,7 +64,7 @@
            * [Public Properties](developing/modules/configuration/public_properties.md)
            * [Configure() Method](developing/modules/configuration/configure_method.md)
            * [Lifecycle Methods](developing/modules/configuration/lifecycle_methods.md)
-       * Conventions
+       * [Conventions](developing/modules/conventions.md)
    * [Commands](developing/commands/developing_commands.md)
        * [Aliases](developing/commands/aliases.md)
        * [Using Parameters](developing/commands/using_parameters.md)
