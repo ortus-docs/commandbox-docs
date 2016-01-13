@@ -1,2 +1,2 @@
-# Injection DSL
+# Wirebox Injection DSL
 
