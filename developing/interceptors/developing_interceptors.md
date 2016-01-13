@@ -6,12 +6,21 @@ Interceptors are a powerful event-driven model inside CommandBox that allows you
 
 An interceptor is a CFC that has one or more methods whose names match the name of an interception point that is broadcast.  Interceptors are packaged within CommandBox modules.  When the module is loaded, the InterceptorService will register your interceptor and take care of calling it when necessary.
 
-Here is an example of an interceptor.  It listens to the `postCommand` event and upper cases all output from the command before it is returned to the console.
+Here is an example of an interceptor.  It listens to the `postCommand` event and upper cases all output from the command before it is returned to the console.  It also listens to `onException` to perform some additional error processing.
 
+**MyInterceptor.cfc**
 ```javascript
 component {
+
+    // This runs after every command execution
     function postCommand( interceptData ) {
         interceptData.results = ucase( interceptData.results );
     }
+
+    // This runs after every error
+    function onException( interceptData ) {
+        interceptData.exception
+    }
+    
 }
 ```
