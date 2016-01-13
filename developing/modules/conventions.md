@@ -16,7 +16,7 @@ The settings for a module is stored in the `ModuleConfig.cfc` file in the root o
 /modules/ModuleName/models/
 ```
 
-CommandBox ships with WireBox, which is the glue that holds everything together.  Your custom modules can contain as many models as they like.  Place your CFCs (beans, services, etc) in the `models` folder and WireBox will automatically map them as `modelName@moduleName` so they can easily be injected into any other model, interceptor, or command CFC.
+CommandBox ships with WireBox, which is the glue that holds everything together.  Your custom modules can contain as many models as they like.  Place your CFCs (beans, services, etc) in the `models` folder and WireBox will automatically map them as `modelName@moduleName` so they can easily be injected into any other model, interceptor, or command CFC.  [Read more about command configuration here](/developing/commands/developing_commands.md)
 
 # Commands
 
