@@ -75,7 +75,7 @@ Perform CFML opertaions on local files:
 Commandbox> #hash `cat pass.txt`
 ```
 
-Execute environment-aware install scripts based on local files:
+Execute environment-aware install scripts based on local files.  (`isProduction.txt` would containt the text `true` or `false`.
 ```bash
 install id=coldbox production=`cat /home/user/isProduction.txt`
 ```
