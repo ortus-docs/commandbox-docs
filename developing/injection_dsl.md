@@ -17,10 +17,10 @@ property name='ConfigService' inject='ConfigService';
 
 ## Custom Models
 
-Any CFCs in the `models` folder of any module will automatically be mapped in WireBox with the pattern `modelname@modulename`.  Therefore, if you create a module called "SuperDuper" that has a CFC called `models/SuperService.cfc`, you could inject it in your module's custom command like so:
+Any CFCs in the `models` folder of any module will automatically be mapped in WireBox with the pattern `modelname@modulename`.  Therefore, if you create a module called "SuperDuper" that has a CFC called `models/AmazingService.cfc`, you could inject it in your module's custom command like so:
 
 ```javascript
-property name='SuperService' inject='SuperService@SuperDuper';
+property name='AmazingService' inject='AmazingService@SuperDuper';
 ```
 
 ## Module Config and Settings
