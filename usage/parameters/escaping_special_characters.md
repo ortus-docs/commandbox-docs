@@ -30,6 +30,10 @@ echo "O'reilly Auto Parts"
 echo 'Luis "The Dev" Majano'
 ```
 
+## Backticks
+
+Backticks are used in parameter values to demarcate an expression to be parsed.  Escape them with a backslash.
+
 ## Equals Signs
 If you have an equals sign in your value, you'll need to escape it with a backlash.
 
