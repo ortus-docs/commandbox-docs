@@ -32,7 +32,7 @@ echo 'Luis "The Dev" Majano'
 
 ## Backticks
 
-Backticks are used in parameter values to demarcate an expression to be parsed.  Escape them with a backslash.
+Backticks are used in parameter values to demarcate an expression to be parsed.  Escape them with a backslash.  All backticks need escaped regardless of whether they are encased on single or double quotes.
 
 ```bash
 echo "Nothing to \`see\` here"
