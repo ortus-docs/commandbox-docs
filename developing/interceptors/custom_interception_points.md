@@ -4,6 +4,20 @@ You have the ability to create your own interception points on top of the core o
 
 ## Register 
 
-To register your custom interception point with InterceptorService, place the following config in your module's `ModuleConfig.cfc`:
+To register your custom interception point with InterceptorService, place the following config in your module's `ModuleConfig.cfc`.  This module is registering a custom interception point called `onCustomEvent`.
 
-## Accounce
+```javascript
+component{
+
+  function configure(){
+  
+    interceptorSettings = {
+        customInterceptionPoints = 'onCustomEvent'
+    };
+    
+  }
+}```
+
+## Announce
+
+It's up to you to decide when to announce this event and what intercept data you want to provide to it.  To announce, use the `announceInterception` method in the InterceptorService.
