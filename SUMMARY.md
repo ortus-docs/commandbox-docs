@@ -66,7 +66,6 @@
            * [Lifecycle Methods](developing/modules/configuration/lifecycle_methods.md)
        * [Conventions](developing/modules/conventions.md)
        * [User Settings](developing/modules/user_settings.md)
-       * Injection DSL
    * [Commands](developing/commands/developing_commands.md)
        * [Aliases](developing/commands/aliases.md)
        * [Using Parameters](developing/commands/using_parameters.md)
