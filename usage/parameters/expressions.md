@@ -4,7 +4,7 @@ Parameter values passed into a CommandBox command don't have to be static.  Any 
 
 an be used as an expression, including calls to native OS binaries or CFML functions, or REPL one-liners.  Note that any text that a command immediately flushes to the console during its execution (like a download progress bar) will not be returned by the expression, though it will display on the console.
 
-## Express Yourself
+## Entire Parameter
 
 Take for instance, this simple command that prints out the contents of a file:
 
@@ -24,6 +24,8 @@ In the example above, the contents of the defaultServer.txt file will be passed 
 ```bash
 server start name=myServer
 ```
+
+## Inside Parameters
 
 There can be more than one expression in a single parameter value.  Expressions can also be combined with static text and they will all be evaluated in the order they appear:
 
@@ -47,3 +49,7 @@ Which outputs
 ```
 Nothing to `see` here
 ```
+
+## Express Yourself
+
+This unlocks a new world of CLI potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.
