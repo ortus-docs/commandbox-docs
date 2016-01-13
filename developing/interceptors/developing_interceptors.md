@@ -26,3 +26,21 @@ component {
     
 }
 ```
+
+## Registering An Interceptor
+
+Now that we have our interceptor above, how do we register it?  Let's place the interceptor into a module inside CommandBox's user module's location.
+
+```
+~/.CommandBox/cfm/modules
++-- myModule/
+    |-- ModuleConfig.cfc
+    +-- interceptors/
+        +-- MyInterceptor.cfc
+```
+
+The contents of our `ModuleConfig.cfc looks like this:
+
+```javascript
+
+```
