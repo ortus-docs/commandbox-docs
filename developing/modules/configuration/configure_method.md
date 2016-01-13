@@ -70,4 +70,5 @@ component{
     binder.map( 'foo' ).to( '#moduleMapping#.com.foo.bar' );
   
   }
-}```
+}
+```
