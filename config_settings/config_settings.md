@@ -42,3 +42,18 @@ config set myArraySetting="[ 'another value' ]" --append
 
 ## Show Config Settings
 
+Output a setting:
+
+```bash
+config show settingName
+```
+
+Nested attributes may be accessed by specifying dot-delimited names or using array notation.  If the accessed property is a complex value, the JSON representation will be displayed
+
+```bash
+config show modules.myModule.settingName
+config show mySettingArray[1]
+```
+
+## Clear Config Setting
+
