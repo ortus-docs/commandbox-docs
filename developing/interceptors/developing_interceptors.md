@@ -14,12 +14,14 @@ component {
 
     // This runs after every command execution
     function postCommand( interceptData ) {
+        // Overwrite the results with an upper case version of itself
         interceptData.results = ucase( interceptData.results );
     }
 
     // This runs after every error
     function onException( interceptData ) {
-        interceptData.exception
+        // Write the last exception to a file
+        fileWrite( '/commandbox-home/logs/lastError.txt', serializeJSON( interceptData.exception ) );
     }
     
 }
