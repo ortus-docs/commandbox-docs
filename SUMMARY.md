@@ -52,7 +52,7 @@
        * [Embedded Server](packages/boxjson/embedded_server.md)
        * [Dependencies](packages/boxjson/dependencies.md)
        * [TestBox](packages/boxjson/testbox.md)
-   * Managing Version
+   * [Managing Version](packages/managing_version.md)
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Server Processes](embedded_server/server_processes.md)
    * [server.json](embedded_server/serverjson.md)
