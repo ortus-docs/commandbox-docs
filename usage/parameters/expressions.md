@@ -52,4 +52,30 @@ Nothing to `see` here
 
 ## Express Yourself
 
-This unlocks a new world of scripting potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.
+This unlocks a new world of scripting potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.  Here's some examples:
+
+
+Set a package property in `box.json` equal to the current date passed through a CFML date mask
+```bash
+package set createdDate=`#now | #dateformat mm/dd/yyyy`
+Set createdDate = 12/18/2015
+```
+
+Set properties based on manipulations of previous values:
+```bash
+package set name=brad
+Set name = brad
+package set name="`package show name` wood"
+Set name = brad wood
+package show name
+brad wood
+
+Perform CFML opertaions on local files:
+```bash
+Commandbox> #hash `cat pass.txt`
+```
+
+Execute environment-aware install scripts based on local files:
+```bash
+install id=coldbox production=`cat /home/user/isProduction.txt`
+```
