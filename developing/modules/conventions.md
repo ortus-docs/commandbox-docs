@@ -16,7 +16,7 @@ The settings for a module is stored in the `ModuleConfig.cfc` file in the root o
 /modules/ModuleName/models/
 ```
 
-CommandBox ships with WireBox, which is the glue that holds everything together.  Your custom modules can contain as many models as they like.  Place your CFCs (beans, services, etc) in the `models` folder and WireBox will automatically map them as `modelName@moduleName` so they can easily be injected into any other model, interceptor, or command CFC.  [Read more about command configuration here](/developing/commands/developing_commands.md)
+CommandBox ships with WireBox, which is the glue that holds everything together.  Your custom modules can contain as many models as they like.  Place your CFCs (beans, services, etc) in the `models` folder and WireBox will automatically map them as `modelName@moduleName` so they can easily be injected into any other model, interceptor, or command CFC.  
 
 # Commands
 
@@ -24,7 +24,7 @@ CommandBox ships with WireBox, which is the glue that holds everything together.
 /modules/ModuleName/commands/
 ```
 
-One of the primary purposes of modules is to serve as a delivery mechanism for custom commands.  All command CFCs should be placed in the `commands` folder inside your module.  Any CFCs there will automatically be registered when the module is loaded, and will be available in the `help` command, as well as tab-completion, etc.  To create namespace commands, create extra sub folders inside the `commands` folder that match the name of the namespace.
+One of the primary purposes of modules is to serve as a delivery mechanism for custom commands.  All command CFCs should be placed in the `commands` folder inside your module.  Any CFCs there will automatically be registered when the module is loaded, and will be available in the `help` command, as well as tab-completion, etc.  To create namespace commands, create extra sub folders inside the `commands` folder that match the name of the namespace.  [Read more about command configuration here](/developing/commands/developing_commands.md)
 
 # Interceptors
 
