@@ -20,4 +20,22 @@ component{
 
 ## Announce
 
-It's up to you to decide when to announce this event and what intercept data you want to provide to it.  To announce, use the `announceInterception` method in the InterceptorService.
+It's up to you to decide when to announce this event and what intercept data you want to provide to it.  To announce, use the `announceInterception` method in the InterceptorService.  Here's a model that shows how:
+
+
+```javascript
+component{
+    property name="InterceptorService"	inject="InterceptorService";
+
+    function doSomethingAmazing(){
+    
+        interceptorService.announceInterception(
+            state='onCustomEvent',
+            interceptData={
+                data='foo',
+                moreData='bar'
+            }
+        );
+        
+    }
+}```
