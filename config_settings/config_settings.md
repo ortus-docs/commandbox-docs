@@ -7,7 +7,7 @@ Set a config setting
 config set mySetting=value
 ```
 
-View the port:
+View the setting:
 
 ```bash
 config show mySetting
