@@ -9,3 +9,20 @@ Settings are loaded in this order:
 3. Internal defaults from the `ServerService`
 
 Interacting with the `server.json` file uses the commands `server set`, `server show`, and `server clear`, which work the same as the `package set/show/clear` commands.
+
+Set the port for your server:
+```bash
+server set port=8080
+```
+
+View the port:
+
+```bash
+server show port
+```
+
+Remove the saved setting:
+
+```bash
+server clear port
+```
