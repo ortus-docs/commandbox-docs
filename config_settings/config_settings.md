@@ -57,3 +57,8 @@ config show mySettingArray[1]
 
 ## Clear Config Setting
 
+To Remove a setting out of the `CommandBox.json` use the `config clear` command.  Nested attributes may be set by specifying dot-delimited names or using array notation.
+
+```bash
+config clear description
+```
