@@ -8,6 +8,8 @@ Settings are loaded in this order:
 2. Read from `server.json`
 3. Internal defaults from the `ServerService`
 
+This allows you to package up an app that requires special start settings such as rewrites, JVM args, or heap size, and anyone can run it with the same settings you do by simply typing `server start`.
+
 Interacting with the `server.json` file uses the commands `server set`, `server show`, and `server clear`, which work the same as the `package set/show/clear` commands.
 
 Set the port for your server:
