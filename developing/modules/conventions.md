@@ -32,6 +32,8 @@ One of the primary purposes of modules is to serve as a delivery mechanism for c
 /modules/ModuleName/interceptors/
 ```
 
-Any interceptor CFCs packaged inside a module should go in an `interceptors` folder.  Interceptors are not loaded automatically though.  You'll need to reference the component path in your `ModuleConfig.cfc`.  The path that points to the interceptors folder can be resolved in your config file as `#moduleMapping#.interceptors.MyInterceptorName`.
+Any interceptor CFCs packaged inside a module should go in an `interceptors` folder.  Interceptors are not loaded automatically though.  You'll need to reference the component path in your `ModuleConfig.cfc`.  The path that points to the interceptors folder can be resolved in your config file as `#moduleMapping#.interceptors.MyInterceptorName`.    [Read more about interceptor configuration here](/developing/interceptors/developing_interceptors.md)
+
+
 
 # Modules
