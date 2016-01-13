@@ -5,4 +5,12 @@ The defaults for a module is stored in a `settings` struct in the `ModuleConfig.
 Consider the following module settings:
 
 **`ModuleConfig.cfc`**
-
+```javascript
+component{
+    function configure(){
+        settings = {
+            mySetting = 'isCool',
+            somethingEnabled = true
+        };
+    }
+}```
