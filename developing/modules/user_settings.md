@@ -4,7 +4,7 @@ The defaults for a module is stored in a `settings` struct in the `ModuleConfig.
 
 Consider the following module settings:
 
-**`ModuleConfig.cfc`**
+**`/modules/TestModule/ModuleConfig.cfc`**
 ```javascript
 component{
     function configure(){
@@ -14,3 +14,8 @@ component{
         };
     }
 }```
+
+The following `config set` commands will create config settings that override those.  The pattern is `modules.moduleName.settingName`.
+
+```bash
+config set modules.
