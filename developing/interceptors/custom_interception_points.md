@@ -25,7 +25,7 @@ It's up to you to decide when to announce this event and what intercept data you
 
 ```javascript
 component{
-    property name="InterceptorService"	inject="InterceptorService";
+    property name="InterceptorService" inject="InterceptorService";
 
     function doSomethingAmazing(){
     
