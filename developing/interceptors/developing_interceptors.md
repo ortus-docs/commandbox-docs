@@ -45,7 +45,7 @@ The contents of our `ModuleConfig.cfc looks like this:
 component{
     function configure(){
         
-        // Declare some interceptors to listen
+        // Declare our interceptors to listen
         interceptors = [
         	{ class='#moduleMapping#.interceptors.MyInterceptor' }
         ];
