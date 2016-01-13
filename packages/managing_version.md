@@ -49,16 +49,16 @@ bump --patch
 ```
 
 ### Minor Bump
-Let's say you've added a few nice features or enhancements to your project but it's still backwards compatible with previous versions.  Run this to bump the minor version.  Note this will reset your patch version to `0`.  For example, this would change `2.3.8` to be `2.4.0`.
+Let's say you've added a few nice features or enhancements to your project but it's still backwards compatible with previous versions.  Run this to bump the minor version.  Note this will reset your patch version to `0`.  For example, this would change `2.3.7` to be `2.4.0`.
 
 ```bash
 bump --minor
 ```
 
 ### Major Bump
-Now, you really got busy over the weekend and made a major overhaul to your project-- specifically introducing some changes that introduce backwards compatibilty.  Let's say you've added a few nice features or enhancements to your project but it's still backwards compatible with previous versions.  Run this to bump the minor version.  Note this will reset your patch version to `0`.  For example, this would change `2.3.8` to be `2.4.0`.
+Now, you really got busy over the weekend and made a major overhaul to your project-- specifically introducing some changes that introduce backwards compatibility.  Now it's time to bump the major version. Note this will reset your minor *and* patch version to `0`.  For example, this would change `2.3.7` to be `3.0.0`.
 
 ```bash
-bump --minor
+bump --major
 ```
 
