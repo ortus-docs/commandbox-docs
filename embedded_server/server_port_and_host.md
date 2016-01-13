@@ -39,6 +39,7 @@ Now every time you `start` your server, the same port will be used.
  start host=192.168.10.15 port=80
  ```
 
+Or save in `server.json`
 
 ```bash
 server set host=mycoolsite.local
