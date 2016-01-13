@@ -52,4 +52,4 @@ Nothing to `see` here
 
 ## Express Yourself
 
-This unlocks a new world of CLI potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.
+This unlocks a new world of scripting potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.
