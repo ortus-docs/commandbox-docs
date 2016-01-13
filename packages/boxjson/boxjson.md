@@ -79,11 +79,7 @@ Below you will see all the possible options that we currently support in Command
     // default engine to use using our run embedded server command
     // Available engines are lucee, railo, cf9, cf10, cf11
     "defaultEngine" : "cf9, railo, cf11",
-    // default engine port using our run embedded server command
-    "defaultPort" : 8080,
-    // Generation CFC preference by CommandBox scaffolders
-    "CFCType" : "script or tag"
-    // default project URL if not using our start server commands
+     // default project URL if not using our start server commands
     "ProjectURL" : "http://railopresso.local/myApp",
     // license array of licenses it can have
     "License" : [
@@ -107,7 +103,7 @@ Below you will see all the possible options that we currently support in Command
     "installPaths" : {
         "coldbox" : "coldbox" // relative to package root (no leading slash)
         "feeds" : "modules/feeds", // relative to package root (no leading slash)
-        "Name" : "C:\foo\bar" // Outside root, so full path
+        "Name" : "C:\\foo\\bar" // Outside root, so full path
     },
     // array of strings of files to ignore when installing the package similar to .gitignore pattern spec 
     "ignore" : [ "logs/*", "readme.md" ]
