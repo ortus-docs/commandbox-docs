@@ -42,5 +42,14 @@ Now that we have our interceptor above, how do we register it?  Let's place the 
 The contents of our `ModuleConfig.cfc looks like this:
 
 ```javascript
-
+component{
+    function configure(){
+        
+        // Declare some interceptors to listen
+        interceptors = [
+        	{ class='#moduleMapping#.interceptors.MyInterceptor' }
+        ];
+ 
+    }
+}
 ```
