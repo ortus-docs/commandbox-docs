@@ -21,6 +21,13 @@ can now simply be
 http://localhost/main
 ```
 
+In `server.json`
+
+```bash
+server set rewritesEnable=true
+server show rewritesEnable
+```
+
 > **info** The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
 
 ## Custom Rules 
@@ -49,6 +56,17 @@ If you want to customize your rewrite rules, just create your own XML file and s
 Then, fire up your server with its custom rewrite rules:
 ```bash
 start --rewritesEnable rewritesConfig=customRewrites.xml
+```
+ 
+In `server.json`
+
+```bash
+server set rewritesEnable=true
+server set rewritesConfig=customRewrites.xml
+
+
+server show rewritesEnable
+server show rewritesConfig
 ```
  
 >**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams).
