@@ -1,2 +1,2 @@
-# Conventions
+# Module Conventions
 
