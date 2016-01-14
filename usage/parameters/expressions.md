@@ -58,7 +58,7 @@ This unlocks a new world of scripting potential when combined with other abiliti
 Set a package property in `box.json` equal to the current date passed through a CFML date mask
 ```bash
 package set createdDate=`#now | #dateformat mm/dd/yyyy`
-Set createdDate = 12/18/2015
+Set createdDate = 1/1/2016
 ```
 
 Set properties based on manipulations of previous values:
@@ -67,15 +67,14 @@ package set name=brad
 Set name = brad
 package set name="`package show name` wood"
 Set name = brad wood
-package show name
-brad wood
+```
 
 Perform CFML opertaions on local files:
 ```bash
 Commandbox> #hash `cat pass.txt`
 ```
 
-Execute environment-aware install scripts based on local files.  (`isProduction.txt` would containt the text `true` or `false`.
+Execute environment-aware install scripts based on local files.  (`isProduction.txt` would contain the text `true` or `false` in this ex.)
 
 ```bash
 install id=coldbox production=`cat /home/user/isProduction.txt`
