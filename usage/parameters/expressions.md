@@ -1,6 +1,6 @@
 # Expressions
 
-Parameter values passed into a CommandBox command don't have to be static.  Any part of the paramter which is enclosed in backticks (`) will be evaluated as a CommandBox expression. That means that the enclosed text will be first executed as thought it were a separate command and its output will be substituted in its place.
+Parameter values passed into a CommandBox command don't have to be static.  Any part of the parameter which is enclosed in backticks (`) will be evaluated as a CommandBox expression. That means that the enclosed text will be first executed as though it were a separate command and the output will be substituted in its place.
 
 an be used as an expression, including calls to native OS binaries or CFML functions, or REPL one-liners.  Note that any text that a command immediately flushes to the console during its execution (like a download progress bar) will not be returned by the expression, though it will display on the console.
 
