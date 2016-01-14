@@ -6,13 +6,13 @@ For CommandBox to be able to install packages for you it needs to connect to pac
 
 Here is a list of the package endpoints currently supported by CommandBox.
 
-* **ForgeBox** - Cloud-based packages [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/forgebox.html)
-* **HTTP(S)** - Point to a hosted zip file containing a package  [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/https.html)
-* **File**  - A local file containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/file.html)
-* **Folder** - A local folder containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/folder.html)
-* **Git** - Any Git repo containing a package [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/git.html)
-* **CFLib** - UDFs posted on CFLib.org [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/cflib.html)
-* **RIAForge** - Projects posted to RIAForge.org  [(*Read more*)](http://ortus.gitbooks.io/commandbox-documentation/content/packages/endpoints/riaforge.html)
+* **ForgeBox** - Cloud-based packages [(*Read more*)](forgebox.md)
+* **HTTP(S)** - Point to a hosted zip file containing a package  [(*Read more*)](https.md)
+* **File**  - A local file containing a package [(*Read more*)](file.md)
+* **Folder** - A local folder containing a package [(*Read more*)](folder.md)
+* **Git** - Any Git repo containing a package [(*Read more*)](git.md)
+* **CFLib** - UDFs posted on CFLib.org [(*Read more*)](cflib.md)
+* **RIAForge** - Projects posted to RIAForge.org  [(*Read more*)](riaforge.md)
 
 ## Examples
 
