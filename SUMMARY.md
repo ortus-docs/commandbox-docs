@@ -92,5 +92,5 @@
            * [Package Lifecycle](developing/interceptors/core/package_lifecycle.md)
        * [Custom Interception Points](developing/interceptors/custom_interception_points.md)
    * [Injection DSL](developing/injection_dsl.md)
-   * Example Project
+   * [Example Project](developing/example_project.md)
 
