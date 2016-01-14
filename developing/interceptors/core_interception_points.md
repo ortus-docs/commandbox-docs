@@ -4,23 +4,23 @@ Here is a list of all the core interception points in CommandBox that you can li
 
 Click a category for more information.
 
-* [**CLI Lifecycle**](/developing/interceptors/core/cli_lifecycle.md)
+* [**CLI Lifecycle**](core/cli_lifecycle.md)
   * onCLIStart
   * onCLIExit
-* [**Command Execution Lifecycle**](/developing/interceptors/core/command_execution_lifecycle.md)
+* [**Command Execution Lifecycle**](core/command_execution_lifecycle.md)
   * preCommand
   * postCommand
-* [**Module Lifecycle**](/developing/interceptors/core/module_lifecycle.md)
+* [**Module Lifecycle**](core/module_lifecycle.md)
   * preModuleLoad
   * postModuleLoad
   * preModuleUnLoad
   * postModuleUnload
-* [**Server Lifecycle**](/developing/interceptors/core/server_lifecycle.md)
+* [**Server Lifecycle**](core/server_lifecycle.md)
   * onServerStart
   * onServerStop
-* [**Error Handling**](/developing/interceptors/core/error_handling.md)
+* [**Error Handling**](core/error_handling.md)
   * onException
-* [**Package Lifecycle**](/developing/interceptors/core/package_lifecycle.md)
+* [**Package Lifecycle**](core/package_lifecycle.md)
   * preInstall
   * postInstall
   * preUninstall
