@@ -22,7 +22,7 @@ This shell method returns the number of characters tall the terminal is.  Can be
 
 ## runCommand()
 
-> **Warning** runCommand() is now deprecated.  Please use the [Command() DSL](/developing_commands/running_other_commands.md) instead.
+> **Warning** runCommand() is now deprecated.  Please use the [Command() DSL](running_other_commands.md) instead.
 
 `runCommand()` will run another command from the shell inline and wait for it to complete.  Any output from the command you run will be sent to the console.  You must pass the command and any parameters in **exactly** as you would enter in the interactive shell which includes escaping any special characters.
 
