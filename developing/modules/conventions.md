@@ -24,7 +24,7 @@ CommandBox ships with WireBox, which is the glue that holds everything together.
 /modules/ModuleName/commands/
 ```
 
-One of the primary purposes of modules is to serve as a delivery mechanism for custom commands.  All command CFCs should be placed in the `commands` folder inside your module.  Any CFCs there will automatically be registered when the module is loaded, and will be available in the `help` command, as well as tab-completion, etc.  To create namespace commands, create extra sub folders inside the `commands` folder that match the name of the namespace.  [Read more about command configuration here](/developing/commands/developing_commands.md)
+One of the primary purposes of modules is to serve as a delivery mechanism for custom commands.  All command CFCs should be placed in the `commands` folder inside your module.  Any CFCs there will automatically be registered when the module is loaded, and will be available in the `help` command, as well as tab-completion, etc.  To create namespace commands, create extra sub folders inside the `commands` folder that match the name of the namespace.  [Read more about command configuration here](../commands/developing_commands.md)
 
 # Interceptors
 
@@ -32,7 +32,7 @@ One of the primary purposes of modules is to serve as a delivery mechanism for c
 /modules/ModuleName/interceptors/
 ```
 
-Any interceptor CFCs packaged inside a module should go in an `interceptors` folder.  Interceptors are not loaded automatically though.  You'll need to reference the component path in your `ModuleConfig.cfc`.  The path that points to the interceptors folder can be resolved in your config file as `#moduleMapping#.interceptors.MyInterceptorName`.    [Read more about interceptor configuration here](/developing/interceptors/developing_interceptors.md)
+Any interceptor CFCs packaged inside a module should go in an `interceptors` folder.  Interceptors are not loaded automatically though.  You'll need to reference the component path in your `ModuleConfig.cfc`.  The path that points to the interceptors folder can be resolved in your config file as `#moduleMapping#.interceptors.MyInterceptorName`.    [Read more about interceptor configuration here](../interceptors/developing_interceptors.md)
 
 # Modules
 
