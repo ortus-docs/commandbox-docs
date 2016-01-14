@@ -2,7 +2,7 @@
 
 Parameter values passed into a CommandBox command don't have to be static.  Any part of the parameter which is enclosed in backticks (`) will be evaluated as a CommandBox expression. That means that the enclosed text will be first executed as though it were a separate command and the output will be substituted in its place.
 
-Any valid command can be used as an expression, including calls to native OS binaries or CFML functions, or REPL one-liners.  Note that any text that a command immediately flushes to the console during its execution (like a download progress bar) will not be returned by the expression, though it will display on the console.
+Any valid command can be used as an expression, including calls to native OS binaries, CFML functions, or REPL one-liners.  Note that any text that a command immediately flushes to the console during its execution (like a download progress bar) will not be returned by the expression, though it will display on the console.
 
 ## Entire Parameter
 
@@ -19,7 +19,7 @@ server start name=`cat defaultServer.txt`
 ```
 
 
-In the example above, the contents of the defaultServer.txt file will be passed in as the value of the "name" parameter to the "server start" command.  If the contents of the file was the text `myServer`, the equivalent final command would be:
+In the example above, the contents of the `defaultServer.txt` file will be passed in as the value of the "name" parameter to the "server start" command.  If the contents of the file was the text `myServer`, the equivalent final command would be:
 
 ```bash
 server start name=myServer
@@ -52,7 +52,7 @@ Nothing to `see` here
 
 ## Express Yourself
 
-This unlocks a new world of scripting potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.  Here's some examples:
+This unlocks a new world of scripting potential when combined with other abilities like native OS binary execution and CFML functions from the CLI.  Here's some examples to get your gears turning:
 
 
 Set a package property in `box.json` equal to the current date passed through a CFML date mask
