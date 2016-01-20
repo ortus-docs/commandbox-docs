@@ -35,7 +35,7 @@ echo "Your CommandBox version is `ver` and this app is called '`package show nam
 
 That would output something similar to:
 ```
-Your CommandBox version is 2.5.0 and this app is called 'Brad's cool app'!
+Your CommandBox version is 3.0.0 and this app is called 'Brad's cool app'!
 ```
 
 If you need to use an actual backtick in a parameter value, escape it with a backslash.
