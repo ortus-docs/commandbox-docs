@@ -22,21 +22,36 @@ run /path/to/myApp
 
 A shortcut for running OS binaries is to prefix the binary with `!`.  In this mode, any other params need to be positional.  There is no CommandBox parsing applied to the command's arguments.  They are passed straight to the native shell.
 
+```bash
 !myApp.exe
 !/path/to/myApp
 !dir
-!npm ll 10
+!netstat -pan
+!npm ll
 !ipconfig
 !ping google.com -c 4
+```
 
 Executing Java would look like this
 
+```bash
 !java -version
 !java -jar myLib.jar
+```
 
 You can even call other CLIs
 
+```bash
 !git init
 touch index.cfm
 !git add .
 !git commit -m "Initial Commit"
+```
+
+## Building On
+
+The output of native calls can be used in expressions or piped into other commands.  Here's a Unix example that uses CFML functions from the command line to parse the parent folder from the current working directory:
+
+```bash
+!pwd | #ListLast /
+```
