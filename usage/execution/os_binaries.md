@@ -50,7 +50,7 @@ touch index.cfm
 
 ## Building On
 
-The output of native calls can be used in expressions or piped into other commands.  Here's a Unix example that uses CFML functions from the command line to parse the parent folder from the current working directory:
+The output of native calls can be used in [expressions](/usage/parameters/expressions.md) or piped into other commands.  Here's a Unix example that uses CFML functions from the command line to parse the parent folder from the current working directory:
 
 ```bash
 !pwd | #ListLast /
