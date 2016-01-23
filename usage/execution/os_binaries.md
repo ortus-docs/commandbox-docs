@@ -39,7 +39,9 @@ Executing Java would look like this
 !java -jar myLib.jar
 ```
 
-You can even call other CLIs
+## CWD-Aware
+
+OS Commands you run are executed in the same working directory as CommandBox.  This means you can seamlessly invoke other CLIs without ever leaving the CommandBox interactive shell.
 
 ```bash
 !git init
