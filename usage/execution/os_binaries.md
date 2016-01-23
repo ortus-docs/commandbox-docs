@@ -34,9 +34,9 @@ A shortcut for running OS binaries is to prefix the binary with `!`.  In this mo
 ```
 
 
-## CWD-Aware
+## Current Working Directory Aware
 
-OS Commands you run are executed in the same working directory as CommandBox.  This means you can seamlessly invoke other CLIs without ever leaving the CommandBox interactive shell.
+OS Commands you run are executed in the same working directory as CommandBox.  This means you can seamlessly invoke other CLIs without ever leaving the interactive shell.
 
 ```bash
 !git init
