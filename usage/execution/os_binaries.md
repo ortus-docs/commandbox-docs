@@ -30,14 +30,9 @@ A shortcut for running OS binaries is to prefix the binary with `!`.  In this mo
 !npm ll
 !ipconfig
 !ping google.com -c 4
-```
-
-Executing Java would look like this
-
-```bash
-!java -version
 !java -jar myLib.jar
 ```
+
 
 ## CWD-Aware
 
