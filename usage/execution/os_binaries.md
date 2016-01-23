@@ -6,31 +6,37 @@ http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/syste
 
 > **Hint** This behavior is dependent on your operating system.
 
-## run
+## run binary
 
-Execute an operation system level command. By default, "run" will wait 60 seconds for the command to complete.
+Execute an operation system level command using the native shell. For Windows users, `cmd.exe` is used.  For Unix, `/bin/bash` is used.  Command will wait for the OS command to finish.
+
+
+The binary must be in the PATH, or you can specify the full path to it.  This cannot be used for any commands that require interactivity or don't exit automatically or the call will hang indefinitely.
 
 ```bash
 run myApp.exe
-```
-
-Executing Java would look like this (Assuming java is installed and in your OS's system path).
-```bash
-run java "-jar myLib.jar"
-```
-
-On Windows, most things you could run via a Command Prompt need to be executed through the `cmd` binary with the `/c` switch so it exits after completing.  
-
-```bash
-run cmd "/c dir"
+run /path/to/myApp
 ```
 
 ## !binary
 
-A shortcut for running OS binaries is to prefix the binary with `!`. In this mode, any other params need to be positional.
+A shortcut for running OS binaries is to prefix the binary with `!`.  In this mode, any other params need to be positional.  There is no CommandBox parsing applied to the command's arguments.  They are passed straight to the native shell.
 
-```bash
 !myApp.exe
-!git pull
-!cmd "/c dir"
-```
+!/path/to/myApp
+!dir
+!npm ll 10
+!ipconfig
+!ping google.com -c 4
+
+Executing Java would look like this
+
+!java -version
+!java -jar myLib.jar
+
+You can even call other CLIs
+
+!git init
+touch index.cfm
+!git add .
+!git commit -m "Initial Commit"
