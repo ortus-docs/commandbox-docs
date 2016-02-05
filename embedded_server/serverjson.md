@@ -1,14 +1,48 @@
 # server.json
 
-Every time you start a server, the settings used to start it are saved in a `server.json` file in the web root.  Any parameters that aren't supplied to the `start` command are read from this file (if it exists) and used as defaults.  A sample `server.json` file could look like this:
+Every time you start a server, the settings used to start it are saved in a `server.json` file in the web root.  Any parameters that aren't supplied to the `start` command are read from this file (if it exists) and used as defaults.  Here are the possible properties for a `server.json` file:
 
 **`/server.json`**
 ```javascript
 {
-    "heapSize":"1024",
-    "host":"localhost",
-    "rewritesEnable":true,
-    "port":"8081"
+	name : '',
+	openBrowser : true,
+	stopsocket : 0,
+	debug : false,
+	trayicon : '/path/to/trayicon.png',
+	jvm : {
+		heapSize : 512,
+		args : ''
+	},
+	web : {
+		host : '127.0.0.1',				
+		directoryBrowsing : true,
+		http : {
+			port : 8080,
+			enable : true
+		},
+		ssl : {
+			enable : false,
+			port : 443,
+			cert : '',
+			key : '',
+			keyPass : ''
+		},
+		rewrites : {
+			enable : true,
+			config : '/path/to/config.xml'
+		}
+	},
+	app : {
+		logDir : '',
+		libDirs : '',
+		webConfigDir : '',
+		serverConfigDir :'',
+		webXML : ''
+	},
+	runwar : {
+		args : ''
+	}
 }
 ```
 
@@ -30,17 +64,17 @@ Interacting with the `server.json` file uses the commands `server set`, `server 
 
 Set the port for your server:
 ```bash
-server set port=8080
+server set web.http.port=8080
 ```
 
 View the port:
 
 ```bash
-server show port
+server show web.http.port
 ```
 
 Remove the saved setting:
 
 ```bash
-server clear port
+server clear web.http.port
 ```
