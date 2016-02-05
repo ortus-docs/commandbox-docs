@@ -13,8 +13,8 @@ start heapSize=1024
 In `server.json`
 
 ```bash
-server set heapSize=1024
-server show heapSize
+server set JVM.heapSize=1024
+server show JVM.heapSize
 ```
 
 ## Ad Hoc JVM Args
