@@ -27,8 +27,8 @@ start JVMArgs="-XX:MaxGCPauseMillis\=200"
 In `server.json`
 
 ```bash
-server set JVMArgs="-XX:MaxGCPauseMillis\=200"
-server show JVMArgs
+server set JVM.args="-XX:MaxGCPauseMillis\=200"
+server show JVM.args
 ```
 
 ## Ad Hoc Runwar Options
@@ -43,6 +43,6 @@ In `server.json`
 
 
 ```bash
-server set runwarArgs="--sendfile-enable false"
-server show runwarArgs
+server set runwar.args="--sendfile-enable false"
+server show runwar.args
 ```
