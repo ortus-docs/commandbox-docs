@@ -27,7 +27,7 @@ terminal by adding its location to the `PATH` system environment
 variable. See http://www.computerhope.com/issues/ch000549.htm
 
 
-## <i class="fa fa-apple"></i><i class="fa fa-linux"></i> Mac/\*Unix
+## <i class="fa fa-apple" /> Mac/ <i class="fa fa-linux" /> \*Unix
 
 ### Homebrew (Mac)
 
