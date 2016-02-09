@@ -5,7 +5,6 @@
    * [Authors](introduction/authors.md)
 * [Overview](overview/overview.md)
 * [Getting Started Guide](getting_started_guide.md)
-   * Config Settings
 * [Setup](setup/setup.md)
    * [Requirements](setup/requirements.md)
    * [Download](setup/download.md)
