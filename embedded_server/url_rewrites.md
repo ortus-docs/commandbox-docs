@@ -21,6 +21,13 @@ can now simply be
 http://localhost/main
 ```
 
+In `server.json`
+
+```bash
+server set rewrites.enable=true
+server show rewrites.enable
+```
+
 > **info** The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
 
 ## Custom Rules 
@@ -32,16 +39,34 @@ If you want to customize your rewrite rules, just create your own XML file and s
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <urlrewrite>
+	<!-- this will redirect the user from /foo to /index.cfm -->
 	<rule>
 		<from>^/foo$</from>
 		<to type="redirect">/index.cfm</to>
 	</rule>
+	<!-- internally redirect the requested URL from /gallery to /index.cfm?page=gallery with query string appended -->
+	<rule>
+		<from>^/gallery</from>
+		<to type="passthrough" qsappend="true">/index.cfm?page=gallery</to>
+	</rule>
+
 </urlrewrite>
 ```
 
 Then, fire up your server with its custom rewrite rules:
 ```bash
 start --rewritesEnable rewritesConfig=customRewrites.xml
+```
+ 
+In `server.json`
+
+```bash
+server set rewrites.enable=true
+server set rewrites.config=customRewrites.xml
+
+
+server show rewrites.enable
+server show rewrites.config
 ```
  
 >**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams).

@@ -10,11 +10,13 @@ You may want to set a specific port to use-- even port 80 if nothing else is usi
  start port=8080
  ```
 
-It is also possible to save the default port in your `box.json`.  Add a `defaultPort` property, or issue the following command:
+It is also possible to save the default port in your `server.json`.  Add a `web.http.port` property, or issue the following command:
 
 ```bash
-package set defaultPort=8080
+server set web.http.port=8080
+server show web.http.port
 ```
+
 Now every time you `start` your server, the same port will be used.
  
  If the server won't start or is unreachable, make sure it's port is free with your operating system's `netstat` command.  On Unix-based OS's:
@@ -36,13 +38,10 @@ Now every time you `start` your server, the same port will be used.
  ```bash
  start host=192.168.10.15 port=80
  ```
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+Or save in `server.json`
+
+```bash
+server set web.host=mycoolsite.local
+server show web.host
+```

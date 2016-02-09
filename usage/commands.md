@@ -2,7 +2,7 @@
 
 CommandBox uses its own command parser that should be similar to what you're used to in other shells. Commands are not case-sensitive and don't contain any special characters except an occasional dash (`-`). Each command and its parameters will be entered on a single line. Press enter when you are done typing to execute that command. If you ever need to include a line break in a parameter value, quote the value and use the `\n` escape sequence.
 
-For a full list of all the commands that ship with CommandBox as well as all their paramaters and samples, please visit our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current) which are auto-generated each build.
+For a full list of all the commands that ship with CommandBox as well as all their parameters and samples, please visit our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current) which are auto-generated each build.
 
 # Namespaces
 

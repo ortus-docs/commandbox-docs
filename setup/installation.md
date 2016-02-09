@@ -29,16 +29,6 @@ variable. See http://www.computerhope.com/issues/ch000549.htm
 
 ## <i class="fa fa-apple"></i><i class="fa fa-linux"></i> Mac/\*Unix
 
-### Manual Installation
-
-Unzip the binary **box** and just double click on it to open the shell terminal.
-When you are finished running commands, you can just close the window,
-or type `exit`.
-
->**Hint** You can place the binary in your `/usr/bin` directory so it can
-be available system-wide via the `box` command in any terminal
-window.
-
 ### Homebrew (Mac)
 
 [Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep
@@ -54,19 +44,43 @@ And the following for bleeding edge releases:
 brew install http://integration.stg.ortussolutions.com/artifacts/ortussolutions/commandbox/commandbox-be.rb
 ```
 
+Then run the `box` binary to begin the one-time unpacking process.
 
-## Linux (Redhat)
+### Manual Installation
 
-After you have downloaded the `commandbox.rpm` file, install it using the `rpm`
-command.
+Unzip the binary **box** and just double click on it to open the shell terminal.
+When you are finished running commands, you can just close the window,
+or type `exit`.
 
+>**Hint** You can place the binary in your `/usr/bin` directory so it can
+be available system-wide via the `box` command in any terminal
+window.
+
+
+
+## Linux apt-get
+
+Run the following series of commands to add the Ortus signing key, register our Debian repo, and install CommandBox.
+
+### Stable
 ```bash
-rpm –ivh commandbox-rpm-1.2.3.rpm
+gpg --keyserver keys.gnupg.net --recv-key 6DA70622
+gpg -a --export 6DA70622 | sudo apt-key add -
+echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+sudo apt-get update && sudo apt-get install commandbox
+```
+
+### Bleeding Edge
+```bash
+gpg --keyserver keys.gnupg.net --recv-key 6DA70622
+gpg -a --export 6DA70622 | sudo apt-key add -
+echo "deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+sudo apt-get update && sudo apt-get install commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
 
-## Linux Yum
+## Linux yum
 Add the following to: `/etc/yum.repos.d/commandbox.repo`
 
 ```
@@ -85,31 +99,7 @@ Then run:
 sudo yum update && install commandbox
 ```
 
-Then run the `box` binary to begin the one-time unpacking process.
-
-## Linux APT
-
-Add the following to: `/etc/apt/sources.list.d/box.list`
-
-**Stable**
-```bash
-deb http://downloads.ortussolutions.com/debs/noarch /
-```
-
-**Bleeding Edge**
-```bash
-deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch /
-```
-
-Then run:
-
-```bash
-sudo apt-get update && apt-get install commandbox
-```
-
-Then run the `box` binary to begin the one-time unpacking process.
-
-## Linux (Debian)
+## Debian Linux manual install
 
 After you have downloaded the `commandbox.deb` file, install it using the `dpkg`
 command.
@@ -119,5 +109,15 @@ sudo dpkg -i commandbox-debian-1.2.3.deb
 ```
 
 Run the `box` binary to begin the one-time unpacking process.
+
+## Redhat Linux manual isntall
+
+After you have downloaded the `commandbox.rpm` file, install it using the `rpm`
+command.
+
+```bash
+rpm –ivh commandbox-rpm-1.2.3.rpm
+```
+
 
   [1]: http://www.computerhope.com/issues/ch000549.htm
