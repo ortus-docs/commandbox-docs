@@ -35,16 +35,19 @@ variable. See http://www.computerhope.com/issues/ch000549.htm
 your CommandBox installation up to date (even binary releases), just run the following for stable releases:
 
 ```bash
-brew install http://downloads.ortussolutions.com/ortussolutions/commandbox/commandbox.rb
+brew install commandbox
 ```
 
-And the following for bleeding edge releases:
+To stay with current bleeding edge releases use the following:
 
 ```bash
-brew install http://integration.stg.ortussolutions.com/artifacts/ortussolutions/commandbox/commandbox-be.rb
+brew tap Ortus-Solutions/commandbox
+brew install --devel Ortus-Solutions/commandbox/commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
+
+Versions will be installed in `/usr/local/Cellar/commandbox`.  To switch between versions, simply use `brew switch commandbox [version number]`
 
 ### Manual Installation
 
