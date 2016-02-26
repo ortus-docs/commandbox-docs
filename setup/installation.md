@@ -41,13 +41,15 @@ brew install commandbox
 To stay with current bleeding edge releases use the following:
 
 ```bash
-brew tap Ortus-Solutions/commandbox
-brew install --devel Ortus-Solutions/commandbox/commandbox
+brew tap ortus-solutions/boxtap
+brew tap-pin ortus-solutions/boxtap
+brew install --devel commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
 
 Versions will be installed in `/usr/local/Cellar/commandbox`.  To switch between versions, simply use `brew switch commandbox [version number]`
+
 
 ### Manual Installation
 
