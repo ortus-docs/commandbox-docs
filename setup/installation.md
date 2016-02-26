@@ -50,6 +50,7 @@ Then run the `box` binary to begin the one-time unpacking process.
 
 Versions will be installed in `/usr/local/Cellar/commandbox`.  To switch between versions, simply use `brew switch commandbox [version number]`
 
+
 ### Manual Installation
 
 Unzip the binary **box** and just double click on it to open the shell terminal.
