@@ -41,8 +41,8 @@ brew install commandbox
 To stay with current bleeding edge releases use the following:
 
 ```bash
-brew tap Ortus-Solutions/commandbox
-brew install --devel Ortus-Solutions/commandbox/commandbox
+brew tap Ortus-Solutions/boxtap
+brew install --devel Ortus-Solutions/boxtap/commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
