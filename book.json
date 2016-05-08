@@ -16,11 +16,11 @@
     ],
     "pluginsConfig": {
     	"edit-link": {
-            "base": "https://github.com/Ortus-Solutions/testbox-docs/tree/development",
+            "base": "https://github.com/Ortus-Solutions/commandbox-docs/tree/development",
             "label": "Edit This Page"
         },
         "github": {
-            "url": "https://github.com/ortus-solutions/testbox"
+            "url": "https://github.com/ortus-solutions/commandbox"
         }
     },
     "links": {
