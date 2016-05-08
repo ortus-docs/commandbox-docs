@@ -1,16 +1,32 @@
 {
-	"gitbook" : ">=2.0.1",
-    "plugins" : [
-        "richquotes"
-    ],
-    "isbn" : "978-1511837026",
-    "pluginsConfig" : {},
-    "pdf" : {
-    	"margin": {
-            "right": 25,
+	"isbn" : "978-1511837026",
+    "pdf": {
+        "margin": {
+            "bottom": 56,
             "left": 25,
-            "top": 56,
-            "bottom": 56
+            "right": 25,
+            "top": 56
         }
-    }
+    },
+    "plugins": [
+        "richquotes",
+        "edit-link",
+        "github",
+        "advanced-emoji"
+    ],
+    "pluginsConfig": {
+    	"edit-link": {
+            "base": "https://github.com/Ortus-Solutions/testbox-docs/tree/development",
+            "label": "Edit This Page"
+        },
+        "github": {
+            "url": "https://github.com/ortus-solutions/testbox"
+        }
+    },
+    "links": {
+        "sharing": {
+            "facebook": false,
+            "twitter": false
+        }
+    },
 }
