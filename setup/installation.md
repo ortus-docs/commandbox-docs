@@ -86,6 +86,9 @@ sudo apt-get update && sudo apt-get install commandbox
 Then run the `box` binary to begin the one-time unpacking process.
 
 ## Linux yum
+
+### Stable
+
 Add the following to: `/etc/yum.repos.d/commandbox.repo`
 
 ```
@@ -98,10 +101,22 @@ metadata_expire=7d
 gpgcheck=0
 ```
 
+### Bleeding Edge
+
+```
+[CommandBox]
+name=CommandBox $releasever - $basearch
+failovermethod=priority
+baseurl=http://integration.stg.ortussolutions.com/artifacts/RPMS/noarch
+enabled=1
+metadata_expire=7d
+gpgcheck=0
+```
+
 Then run:
 
 ```bash
-sudo yum update && install commandbox
+sudo yum update && yum install commandbox
 ```
 
 ## Debian Linux manual install
