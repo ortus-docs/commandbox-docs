@@ -52,3 +52,7 @@ The output of native calls can be used in [expressions](../parameters/expression
 ```bash
 !pwd | #ListLast /
 ```
+
+## Setting the Native Shell
+
+You can override the default native shell from `/bin/bash` to any shell of your choosing, like zsh.  This will let you use shell specific aliases.  You can set your native shell property using the `config set` command (i.e., `config set nativeShell=/bin/zsh`)
