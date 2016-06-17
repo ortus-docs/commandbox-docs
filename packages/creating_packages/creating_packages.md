@@ -12,6 +12,40 @@ init name="My Package" version="1.0.0"
 
 That's it.  You can now commit this package to [ForgeBox](http://forgebox.io) and can be available world-wide.
 
+## Publishing to ForgeBox
+
+### Creating a User from CommandBox
+
+To create a new ForgeBox user right from the CLI run the "forgebox register" command.
+
+### Authenticating from CommandBox
+
+Once you have a confirmed user, you can run "forgebox login" to authenticate your account.  This will store your API key in a CommandBox config setting.  You can see it with:
+
+```bash
+CommandBox> config show endpoints.forgebox
+```
+
+### Publish Packages
+
+The "forgebox publish" command (aliased as "publish") will add a new package to ForgeBox or update an existing one (that belongs to you). If the local version number is different, a new version will be created in ForgeBox.
+
+ForgeBox does not store your actual package files like npm.  We just point to your download location.  We've been optimizing this as much as possible to work seamlessly with a Git repo. When you publish a package, this data is sent to the server:
+ 
+* Your box.json.  Specifically
+	* name
+	* slug
+	* version
+	* type
+	* location (this is where to download your package from and can be an HTTP URL or ANY VALID package ID such as `repoUser/repoName#v1.2.3`)
+	* etc
+* The contents of your readme[.txt|.md] file, if one of those exists
+* The contents of your changelog[.txt|.md] file, if one of those exists
+* The contents of your instructions[.txt|.md] file, if one of those exists
+* Your API key config setting to authenticate
+
+That's it.  Once you run this command, you can run `forgebox show my-package` to confirm it's there. Any updates to your readme, title, etc. will overwrite the old data. If you change the slug, a new package will be created. If you change the version, a new version will be added to the existing package.
+
 ## Distribution
 
 When making a package available on ForgeBox, the download URL should point to a zip file, that when extracted, contains a folder with a box.json in it.  The box.json designates the root of the package.  
