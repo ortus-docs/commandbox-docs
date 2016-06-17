@@ -12,6 +12,17 @@ init name="My Package" version="1.0.0"
 
 That's it.  You can now commit this package to [ForgeBox](http://forgebox.io) and can be available world-wide.
 
+## Distribution
+
+When making a package available on ForgeBox, the download URL should point to a zip file, that when extracted, contains a folder with a box.json in it.  The box.json designates the root of the package.  
+
+If your project is stored in GitHub, an easy approach is simply to treat the root of the repository as the root of the package.  That is where your box.json will live.  This also means you can use GitHub's automatic zip download URL as your ForgeBox URL since it returns a zip file containing your repo contents in a folder.
+
+Ex:
+`https://github.com/bdw429s/Weather-Lookup-By-IP/archive/master.zip`
+
+If you choose  to structure your repo differently, no problem.  Just use a build process that generates a zip file in that format and make that zip publicly available for ForgeBox's download URL.
+
 ## Publishing to ForgeBox
 
 ### Creating a User from CommandBox
@@ -46,13 +57,27 @@ ForgeBox does not store your actual package files like npm.  We just point to yo
 
 That's it.  Once you run this command, you can run `forgebox show my-package` to confirm it's there. Any updates to your readme, title, etc. will overwrite the old data. If you change the slug, a new package will be created. If you change the version, a new version will be added to the existing package.
 
-## Distribution
+### Publishing to ForgeBox from start to finish
 
-When making a package available on ForgeBox, the download URL should point to a zip file, that when extracted, contains a folder with a box.json in it.  The box.json designates the root of the package.  
+Below is an example of the commands that would take you from scratch to a published package:
 
-If your project is stored in GitHub, an easy approach is simply to treat the root of the repository as the root of the package.  That is where your box.json will live.  This also means you can use GitHub's automatic zip download URL as your ForgeBox URL since it returns a zip file containing your repo contents in a folder.
+```bash
+# Create user (first time only)
+CommandBox> forgebox register username password your@email.com firstName lastName
+CommandBox> forgebox login username password
 
-Ex:
-`https://github.com/bdw429s/Weather-Lookup-By-IP/archive/master.zip`
+# Create package/git repo
+CommandBox> mkdir mypackage --cd
+CommandBox> !git init
+CommandBox> package init slug=my-package type=modules location=gitUser/my-package
+CommandBox> bump --minor message="Initial Commit"
 
-If you choose  to structure your repo differently, no problem.  Just use a build process that generates a zip file in that format and make that zip publicly available for ForgeBox's download URL. 
+# Publish it
+CommandBox> !git remote add origin <git url>
+CommandBox> !git push
+CommandBox> publish
+
+# Viewable and installable by the world!
+CommandBox> forgebox show my-package
+CommandBox> install my-package
+```
