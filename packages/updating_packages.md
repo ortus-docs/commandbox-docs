@@ -28,6 +28,10 @@ Entering "yes" will install the newest version of the package.  It is also possi
 outdated
 ```
 
+## ForgeBox Semantic Versioning Support
+
+If you are using a ForgeBox package, the `update` command will comply with the semantic versioning range you specify.  For example, if you have a dependency installed with a version saved of `^2.0.0` it will update you all the way to `2.9.9` but it will never install `3.0.0` until you ask it to. This is because breaking changes come in major versions, but minor releases are _supposed_ to be compatible.
+
 ## Determining Freshness
 
 The way CommandBox determines whether there is a new version of a package differs based on the endpoint that installed the package.  Versions are always treated as a semantic version (Major.Minor.Patch).
