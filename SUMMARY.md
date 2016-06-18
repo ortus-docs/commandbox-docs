@@ -27,6 +27,7 @@
    * [Tab Completion](usage/tab_completion.md)
    * [History](usage/history.md)
 * [Package Management](packages/package_management.md)
+   * Package Scripts
    * [Installing Packages](packages/installing_packages/installing_packages.md)
        * [Installation Path](packages/installing_packages/installation_path.md)
        * [Installation Options](packages/installing_packages/installation_options.md)
