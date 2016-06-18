@@ -64,3 +64,32 @@ bump --major
 
 > **Info** Each part of the version doesn't have to be one digit.  For instance, 1.0.9 patch-bumps to 1.0.10 and doesn't ever "roll over".
 
+
+### Automatic Git Tagging
+In CommandBox, when you use the `package version` command (aliased as `bump`), if you are running the command in a Git repository and the working directory is clean, CommandBox will create a tag for you that's named after the version and commit it.  You can supply a custom message if you like each time or set a global setting with your desired tag message.
+
+```bash
+# With a version of 1.0.0
+CommandBox> bump --patch
+Set version = 1.0.1
+Package is a Git repo.  Tagging...
+Tag [v1.0.1] created.
+
+# The message of the tag commit will be the message provided
+CommandBox> bump --minor message="Upgrading to ${Setting: version not found}"
+Set version = 1.1.0
+Package is a Git repo.  Tagging...
+Tag [v1.1.0] created.
+
+# You can set a default tagVersionMessage in your config settings
+CommandBox> config set tagVersionMessage="My default tag message"
+```
+
+If you do not want this feature, you can turn it off with a config setting flag.
+
+```bash
+CommandBox> config set tagVersion=false
+```
+
+
+

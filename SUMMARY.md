@@ -39,6 +39,7 @@
        * [Git](packages/endpoints/git.md)
        * [CFLib](packages/endpoints/cflib.md)
        * [RIAForge](packages/endpoints/riaforge.md)
+   * [Package Scripts](developing/interceptors/interceptor_based_cli_scripts.md)
    * [Dependencies](packages/dependencies.md)
    * [Updating Packages](packages/updating_packages.md)
    * [Artifacts](packages/artifacts.md)
