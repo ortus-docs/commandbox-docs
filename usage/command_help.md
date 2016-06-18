@@ -23,3 +23,13 @@ And finally, get help on a single command such as `server stop`.  We can see the
 For a full list of all the commands that ship with CommandBox as well as all their paramaters and samples, please visit our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current) which are auto-generated each build.  This is the same information available to you via the `help` command, but in a searchable format you can browse outside of the CLI.
 
 * http://apidocs.ortussolutions.com/commandbox/current
+
+## System Logs
+
+Sometimes, you need to view the CommandBox log file.  Maybe it is to debug a command you are writing or to [submit a crash report](https://ortussolutions.atlassian.net/secure/RapidBoard.jspa?rapidView=24&projectKey=COMMANDBOX).  The `system-log` command outputs the path to the CommandBox log file.  You can use it creatively by piping its output in to other commands:
+
+```bash
+CommandBox> system-log | open
+CommandBox> system-log | cat
+CommandBox> system-log | tail
+```
