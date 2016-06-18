@@ -31,6 +31,7 @@
        * [Installation Path](packages/installing_packages/installation_path.md)
        * [Installation Options](packages/installing_packages/installation_options.md)
        * [Advanced Installation](packages/installing_packages/advanced_installation.md)
+       * Package Scripts
    * [Code Endpoints](packages/endpoints/endpoints.md)
        * [ForgeBox](packages/endpoints/forgebox.md)
        * [HTTP(S)](packages/endpoints/https.md)
