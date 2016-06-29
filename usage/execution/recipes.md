@@ -68,7 +68,7 @@ echo "Hello there, $name\n You've won a $prize!"
 
 You would call it like so:
 ```bash
-recipe recipeFile=notifyWinner.boxr name=Luis action="NEW CAR"
+recipe recipeFile=notifyWinner.boxr name=Luis prize="NEW CAR"
 ```
 
 Output:
@@ -101,7 +101,7 @@ You've won a NEW CAR!
 
 ### Escaping Parameters
 
-When using an arg as a parameter to a command in a recipe, make sure you wrap the variable in quotes if it might contain spaces.  Otherwise you will get syntax erors.
+When using an arg as a parameter to a command in a recipe, make sure you wrap the variable in quotes if it might contain spaces.  Otherwise you will get syntax errors.
 
 ```bash
 rm "$arg1"
