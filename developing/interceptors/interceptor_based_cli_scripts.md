@@ -8,7 +8,7 @@ You can define a struct in your `box.json` called `scripts` that correspond to t
   "slug" : "my-package",
   "version" : "1.0.0",
   "scripts" : {
-   "postVersion" : "package set location='gitUser/gitRepo#`package version`'"
+   "preVersion" : "package set location='gitUser/gitRepo#`package version`'",
    "postPublish" : "!git push"
   }
 }
