@@ -130,7 +130,7 @@ sudo dpkg -i commandbox-debian-1.2.3.deb
 
 Run the `box` binary to begin the one-time unpacking process.
 
-## Redhat Linux manual isntall
+## Redhat Linux manual install
 
 After you have downloaded the `commandbox.rpm` file, install it using the `rpm`
 command.

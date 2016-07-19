@@ -12,7 +12,6 @@ Below you can see an image of the available downloads from the Ortus Solutions [
 
 <img src="../images/versions.png"/>
 
-</div>
 
 ## Stable Release
 
