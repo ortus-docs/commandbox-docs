@@ -57,4 +57,28 @@ server clear server-lucee5.json jvm
 ```
 >**Info** The property name and server config file path are interchangeable for the `server show` and `server clear` commands for your convenience.
 
+## Use server JSON files to control servers
+Now that you have 3 JSON files-- one for each server, you can use the path to the JSON file (absolute or relative to your CWD) to control each server.
 
+```bash
+start serverConfigFile=server-lucee4.json
+```
+
+For your convenience, if you pass in a path to an existing JSON for the server name, we'll use it as the  `serverConfigFile` parameter.  
+
+```bash
+start server-lucee4.json
+stop server-lucee4.json
+start server-adobe2016.json
+```
+
+This trick works on any `server` commands
+```
+# Open your Lucee 5 site in the browser
+server open server-lucee5.json
+# cd into the web root for your Adobe 2016 web
+server cd /path/to/server-adobe2016.json
+```
+
+## Use server names to control servers
+You 
