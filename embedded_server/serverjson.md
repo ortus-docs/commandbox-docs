@@ -52,6 +52,7 @@ Settings are loaded in this order:
 
 1. Typed by the user into the `start` command parameters
 2. Read from `server.json`
+3. Global defaults in the `server.defaults` config setting
 3. Internal defaults from the `ServerService`
 
 ## Packaging Your Server
