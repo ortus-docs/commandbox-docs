@@ -15,3 +15,7 @@ When you start the server, you can run the `start` command from the same directo
 ```bash
 start /path/to/server.json
 ```
+
+## Determining the web root
+
+If there is no web root in your `server.json`, CommandBox will use the folder that the JSON file is stored in.  If there is no JSON file at all, the current working directory is used.  
