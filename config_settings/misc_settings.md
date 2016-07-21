@@ -10,3 +10,11 @@ This setting affects how CommandBox invokes the shell for the `run` command or w
 config set nativeShell=/bin/zsh
 config show nativeShell
 ```
+## tagVersion
+**boolean**
+
+Running the `bump` command from a Git repo will attempt to tag the repo unless you provide the `tagVersion` parameter.  This setting provides a global default to prevent CommandBox from trying to tag Git repos.
+```bash
+config set tagVersion=false
+config show tagVersion
+```
