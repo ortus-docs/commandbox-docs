@@ -63,6 +63,7 @@
    * [Manage Servers](embedded_server/manage_servers.md)
 * [Config Settings](config_settings/config_settings.md)
    * [Module Settings](config_settings/override_module_settings.md)
+   * Shell Settings
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
    * [Modules](developing/modules/developing_modules.md)
        * [Installation and Locations](developing/modules/installation_and_locations.md)
