@@ -52,9 +52,9 @@ Announced before the new version is set in the package.
 **interceptData**
 
 * `versionArgs` - A struct containing the following keys:
-  * `version` - 
-  * `tagVersion` - 
-  * `message` - 
-  * `version` - 
-  * `version` - 
+  * `version` - The new version about to be set
+  * `tagVersion` - Boolean that determines whether to tag a Git repo
+  * `message` - Commit message to use when tagging Git repo
+  * `directory` - The working directory of the package
+  * `force` - If true, tag a Git reo even if it isn't clean.
  
