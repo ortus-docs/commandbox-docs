@@ -66,6 +66,7 @@
    * [Shell Settings](config_settings/shell_settings.md)
    * [Proxy Settings](config_settings/proxy_settings.md)
    * [Endpoint Settings](config_settings/endpoint_settings.md)
+   * Server Settings
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
    * [Modules](developing/modules/developing_modules.md)
        * [Installation and Locations](developing/modules/installation_and_locations.md)
