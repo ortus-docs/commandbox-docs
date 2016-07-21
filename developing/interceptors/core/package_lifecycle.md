@@ -44,4 +44,66 @@ Announced after the uninstallation of a package.
 **interceptData**
 
 * `uninstallArgs` - Same as `preUninstall` above
+
+## preVersion
+
+Announced before the new version is set in the package.
+
+**interceptData**
+
+* `versionArgs` - A struct containing the following keys:
+  * `version` - The new version about to be set
+  * `tagVersion` - Boolean that determines whether to tag a Git repo
+  * `message` - Commit message to use when tagging Git repo
+  * `directory` - The working directory of the package
+  * `force` - If true, tag a Git repo even if it isn't clean
  
+## postVersion
+
+Announced after the new version is set in the package.
+
+**interceptData**
+
+* `versionArgs` - Same as `preVersion` above.
+ 
+## prePublish
+
+Announced prior to publishing a package to an endpoint
+
+**interceptData**
+
+* `publishArgs` - A struct containing the following keys:
+  * `endpointName` - The name of the endpoint being published to
+  * `directory` - The directory that the package lives in
+* `boxJSON` - A struct containing the defaulted `box.json` properties for the package
+
+## postPublish
+
+Announced after publishing a package to an endpoint
+
+**interceptData**
+
+* `publishArgs` - Same as `prePublish` above.
+* `boxJSON` - Same as `prePublish` above.
+* 
+## preUnpublish
+
+Announced prior to unpublishing a package from an endpoint
+
+**interceptData**
+
+* `unpublishArgs` - A struct containing the following keys:
+  * `endpointName` - The name of the endpoint being published to
+  * `directory` - The directory that the package lives in
+  * `version` - The version being unpublished
+  * `force` - Boolean to skip the interactive prompt
+* `boxJSON` - A struct containing the defaulted `box.json` properties for the package
+
+## postUnpublish
+
+Announced after unpublishing a package from an endpoint
+
+**interceptData**
+
+* `unpublishArgs` - Same as `preUnpublish` above.
+* `boxJSON` - Same as `preUnpublish` above.

@@ -33,6 +33,19 @@ Announced before a server start.  Use this to modify the settings for the server
   * `runwarArgs` - Additional Runwar options to use when starting the server
   * `logdir` - Path to directory for server logs
  
+## onServerInstall
+
+Announced when a server is starting and the `cfengine` is being installed.  This gives you a chance to influence how the server is installed or to modify default settings before the server process actually starts.  This is not announced for servers using a `WARPath` setting.  It is announced every time a server is started, but you can use the `isntallDetails.initialInstall` flag to determine if this is the first time the engine is being installed for one-time tasks.
+
+**interceptData**
+
+* `serverInfo` - Same as `onServerStart` above
+* `installDetails` A struct with the following keys:
+  * `internal` - True if using the embedded jars from the CLI
+  * `version` - The version of the cfengine that was installed
+  * `installDir` - The folder where the server is installed to
+  * `intialInstall` - True if this is the first time the engine was installed
+
 ## onServerStop
 
 Announced before a server stop.
