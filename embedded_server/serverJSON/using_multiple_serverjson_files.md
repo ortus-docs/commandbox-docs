@@ -51,8 +51,10 @@ If you run the `server show` command, you'll see it returns `{}`.  This is becau
 
 ``` bash
 server show server-lucee5.json name
+
 # named args are required to set properties
 server set serverConfigFile=server-lucee5.json jvm.heapSize=1024 
+
 server clear server-lucee5.json jvm
 ```
 >**Info** The property name and server config file path are interchangeable for the `server show` and `server clear` commands for your convenience.
