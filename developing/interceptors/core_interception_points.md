@@ -26,3 +26,9 @@ Click a category for more information.
   * postInstall
   * preUninstall
   * postUninstall
+  * preVersion
+  * postVersion
+  * prePublish
+  * postPublish
+  * preUnpublish
+  * postUnpublish
