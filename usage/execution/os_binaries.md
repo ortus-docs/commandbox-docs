@@ -1,8 +1,8 @@
 # Executing OS Binaries
 
-If you want to execute a native binary from inside the interactive shell or as part of a CommandBox recipe, we allow this via the `run` command.    You can read the API docs for `run` [here](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/run.html).
+If you want to execute a native binary from inside the interactive shell or as part of a CommandBox recipe, we allow this via the `run` command.    You can read the API docs for `run` [here](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/run.html).
 
-http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/run.html
+http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/run.html
 
 > **Hint** This behavior is dependent on your operating system.
 
