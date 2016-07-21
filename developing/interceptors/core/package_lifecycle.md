@@ -76,3 +76,12 @@ Announced prior to publishing a package to an endpoint
   * `endpointName` - The name of the endpoint being published to
   * `directory` - The directory that the package lives in
 * `boxJSON` - A struct containing the defaulted `box.json` properties for the package
+
+## postPublish
+
+Announced after publishing a package to an endpoint
+
+**interceptData**
+
+* `publishArgs` - Same as `prePublish` above.
+* `boxJSON` - Same as `prePublish` above.
