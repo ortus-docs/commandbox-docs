@@ -56,8 +56,8 @@ Announced before the new version is set in the package.
   * `tagVersion` - Boolean that determines whether to tag a Git repo
   * `message` - Commit message to use when tagging Git repo
   * `directory` - The working directory of the package
-  * `force` - If true, tag a Git repo even if it isn't clean.
-  * 
+  * `force` - If true, tag a Git repo even if it isn't clean
+ 
 ## postVersion
 
 Announced after the new version is set in the package.
@@ -65,3 +65,14 @@ Announced after the new version is set in the package.
 **interceptData**
 
 * `versionArgs` - Same as `preVersion` above.
+ 
+## prePublish
+
+Announced prior to publishing a package to an endpoint
+
+**interceptData**
+
+* `publishArgs` - A struct containing the following keys:
+  * `endpointName` - The name of the endpoint being published to
+  * `directory` - The directory that the package lives in
+* `boxJSON` - A struct containing the defaulted `box.json` properties for the package
