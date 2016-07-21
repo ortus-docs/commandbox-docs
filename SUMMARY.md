@@ -63,7 +63,6 @@
    * [Manage Servers](embedded_server/manage_servers.md)
 * [Config Settings](config_settings/config_settings.md)
    * [Module Settings](config_settings/override_module_settings.md)
-   * [Shell Settings](config_settings/shell_settings.md)
    * [Proxy Settings](config_settings/proxy_settings.md)
    * [Endpoint Settings](config_settings/endpoint_settings.md)
    * [Server Settings](config_settings/server_settings.md)
