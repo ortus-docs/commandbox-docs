@@ -35,7 +35,7 @@ Announced before a server start.  Use this to modify the settings for the server
  
 ## onServerInstall
 
-Announced when a server is starting and the `cfengine` specified has not been installed yet.  This gives you a chance to influence how the server is installed or to modify default settings befor the server process actually starts/
+Announced when a server is starting and the `cfengine` specified has not been installed yet.  This gives you a chance to influence how the server is installed or to modify default settings befor the server process actually starts.
 
 **interceptData**
 
