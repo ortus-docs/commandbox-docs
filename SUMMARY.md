@@ -58,11 +58,11 @@
    * [Multi-Engine Support](embedded_server/multi-engine_support.md)
    * [Offline Server Starts](embedded_server/offline_server_starts.md)
    * [Server Processes](embedded_server/server_processes.md)
+   * [Server Port and Host](embedded_server/server_port_and_host.md)
    * [Server.json](embedded_server/serverJSON/serverjson.md)
        * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
        * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
        * Using Multiple server.json Files
-   * [Server Port and Host](embedded_server/server_port_and_host.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Manage Servers](embedded_server/manage_servers.md)
