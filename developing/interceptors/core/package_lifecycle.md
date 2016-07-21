@@ -85,3 +85,25 @@ Announced after publishing a package to an endpoint
 
 * `publishArgs` - Same as `prePublish` above.
 * `boxJSON` - Same as `prePublish` above.
+* 
+## preUnpublish
+
+Announced prior to unpublishing a package from an endpoint
+
+**interceptData**
+
+* `unpublishArgs` - A struct containing the following keys:
+  * `endpointName` - The name of the endpoint being published to
+  * `directory` - The directory that the package lives in
+  * `version` - The version being unpublished
+  * `force` - Boolean to skip the interactive prompt
+* `boxJSON` - A struct containing the defaulted `box.json` properties for the package
+
+## postUnpublish
+
+Announced after unpublishing a package from an endpoint
+
+**interceptData**
+
+* `unpublishArgs` - Same as `prePublish` above.
+* `boxJSON` - Same as `prePublish` above.
