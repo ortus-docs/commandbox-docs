@@ -61,6 +61,7 @@
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Manage Servers](embedded_server/manage_servers.md)
+   * Multi-Engine Support
 * [Config Settings](config_settings/config_settings.md)
    * [Module Settings](config_settings/override_module_settings.md)
    * [Proxy Settings](config_settings/proxy_settings.md)
