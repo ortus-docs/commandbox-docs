@@ -44,4 +44,17 @@ Announced after the uninstallation of a package.
 **interceptData**
 
 * `uninstallArgs` - Same as `preUninstall` above
+
+## preVersion
+
+Announced before the new version is set in the package.
+
+**interceptData**
+
+* `versionArgs` - A struct containing the following keys:
+  * `version` - 
+  * `tagVersion` - 
+  * `message` - 
+  * `version` - 
+  * `version` - 
  
