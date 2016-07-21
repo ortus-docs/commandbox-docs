@@ -17,6 +17,7 @@ Click a category for more information.
   * postModuleUnload
 * [**Server Lifecycle**](core/server_lifecycle.md)
   * onServerStart
+  * onServerInstall
   * onServerStop
 * [**Error Handling**](core/error_handling.md)
   * onException
