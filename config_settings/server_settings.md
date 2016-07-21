@@ -5,8 +5,10 @@ These settings control how servers start in CommandBox.
 ## server.defaults
 **struct**
 
-The API Token provided to you when you signed up for [ForgeBox.io](https://www.forgebox.io/).  This will be set for you automatically when you use the `forgebox register` or `forgebox login` commands.  This token will be sent to ForgeBox to authenticate you.  Please do not share this secret token with others as it will give them permission to edit your packages!
+This struct can contain any setting that is valid in a `server.json` file.  These settings are used as global default settings if there is not a corresponding setting provided by the user via a parameter to the `start` command or in the server's `server.json` file.
 ```bash
-config set endpoints.forgebox.APIToken=my-very-long-secret-key
-config show endpoints.forgebox.APIToken
+config set server.defaults.web.rewrites.enable=true
+config set server.defaults.openbrowser=false
+config set server.defaults.jvm.heapsize=1024
+config show server.defaults
 ```
