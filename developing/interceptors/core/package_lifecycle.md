@@ -57,4 +57,11 @@ Announced before the new version is set in the package.
   * `message` - Commit message to use when tagging Git repo
   * `directory` - The working directory of the package
   * `force` - If true, tag a Git repo even if it isn't clean.
- 
+  * 
+## postVersion
+
+Announced after the new version is set in the package.
+
+**interceptData**
+
+* `versionArgs` - Same as `preVersion` above.
