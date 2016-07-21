@@ -49,3 +49,12 @@ I can control the name of the JSON files by using the `serverConfigFile` paramet
 
 If you run the `server show` command, you'll see it returns `{}`.  This is because it looks for a file called `server.json` by default.  Not to worry, you can still programmatically manipulate your JSON files like so:
 
+``` bash
+server show server-lucee5.json name
+# named args are required to set properties
+server set serverConfigFile=server-lucee5.json jvm.heapSize=1024 
+server clear server-lucee5.json jvm
+```
+>**Info** The property name and server config file path are interchangeable for the `server show` and `server clear` commands for your convenience.
+
+
