@@ -59,7 +59,7 @@
    * [Offline Server Starts](embedded_server/offline_server_starts.md)
    * [Server Processes](embedded_server/server_processes.md)
    * [Server.json](embedded_server/serverjson.md)
-       * Working with server.json
+       * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
    * [Server Port and Host](embedded_server/server_port_and_host.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
