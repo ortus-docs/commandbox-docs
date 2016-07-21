@@ -105,5 +105,5 @@ Announced after unpublishing a package from an endpoint
 
 **interceptData**
 
-* `unpublishArgs` - Same as `prePublish` above.
-* `boxJSON` - Same as `prePublish` above.
+* `unpublishArgs` - Same as `preUnpublish` above.
+* `boxJSON` - Same as `preUnpublish` above.
