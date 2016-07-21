@@ -56,5 +56,5 @@ Announced before the new version is set in the package.
   * `tagVersion` - Boolean that determines whether to tag a Git repo
   * `message` - Commit message to use when tagging Git repo
   * `directory` - The working directory of the package
-  * `force` - If true, tag a Git reo even if it isn't clean.
+  * `force` - If true, tag a Git repo even if it isn't clean.
  
