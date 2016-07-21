@@ -56,13 +56,13 @@
    * [Managing Version](packages/managing_version.md)
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Multi-Engine Support](embedded_server/multi-engine_support.md)
+   * Offline Server Starts
    * [Server Processes](embedded_server/server_processes.md)
    * [Server.json](embedded_server/serverjson.md)
    * [Server Port and Host](embedded_server/server_port_and_host.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Manage Servers](embedded_server/manage_servers.md)
-   * Offline Server Starts
 * [Config Settings](config_settings/config_settings.md)
    * [Module Settings](config_settings/override_module_settings.md)
    * [Proxy Settings](config_settings/proxy_settings.md)
