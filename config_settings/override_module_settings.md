@@ -1,4 +1,6 @@
-# Override Module Settings
+# Module Settings
+
+These settings affect how CommandBox loads modules.
 
 ## ModulesExternalLocation
 **array**
