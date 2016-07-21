@@ -17,3 +17,11 @@ This is the port to connect to on the proxy server.
 config set proxy.port=9000
 config show proxy.port
 ```
+
+## proxy.user
+**string**
+This is the username t to connect to on the proxy server, if required.
+```bash
+config set proxy.user=rsmith
+config show proxy.port
+```
