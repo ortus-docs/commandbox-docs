@@ -91,6 +91,7 @@ openbrowser
 jvm.heapsize
 jvm.args
 web.host
+web.webroot
 web.directorybrowsing
 web.http.port
 web.http.enable
@@ -106,5 +107,7 @@ app.logdir
 app.serverconfigdir
 app.libdirs
 app.webconfigdir
+app.WARPath
+app.cfengine
 runwar.args
 ```
