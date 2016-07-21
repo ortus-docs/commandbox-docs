@@ -15,7 +15,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		args : ''
 	},
 	web : {
-		host : '127.0.0.1',				
+		host : '127.0.0.1',
+        webroot : 'src/cfml'
 		directoryBrowsing : true,
 		http : {
 			port : 8080,
@@ -38,7 +39,9 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		libDirs : '',
 		webConfigDir : '',
 		serverConfigDir :'',
-		webXML : ''
+		webXML : '',
+		WARPath : '',
+		cfengine : 'lucee@5.x'
 	},
 	runwar : {
 		args : ''
