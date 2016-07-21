@@ -48,6 +48,6 @@ $> ./test
 {ts '2015-02-19 20:31:32'}
 ```
 
-Hopefully this gives you a lot of ideas of how to start using CFML on your next automation task.  And if you want even more control like print objects, object oriented code, and fancy parameters, look into making custom [CommandBox commands](http://commandbox.ortusbooks.com/content/developing_commands/developing_commands.html).
+Hopefully this gives you a lot of ideas of how to start using CFML on your next automation task.  And if you want even more control like print objects, object oriented code, and fancy parameters, look into making custom [CommandBox commands](http://commandbox.ortusbooks.com/content/developing/commands/developing_commands.html).
 
 

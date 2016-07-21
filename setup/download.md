@@ -34,7 +34,7 @@ that are likely to change or bugs.
 
 Another way to get the bleeding edge version of CommandBox is to install
 the stable version and run our `upgrade` command using the
-**latest** flag. [Upgrade API docs](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/commands/upgrade.html).
+**latest** flag. [Upgrade API docs](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/upgrade.html).
 
 ```bash
 upgrade --latest
