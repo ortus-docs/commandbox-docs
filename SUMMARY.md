@@ -62,6 +62,7 @@
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Manage Servers](embedded_server/manage_servers.md)
 * [Config Settings](config_settings/config_settings.md)
+   * Module Settings
    * [Override Module Settings](config_settings/override_module_settings.md)
        * Module Settings
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
