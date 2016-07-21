@@ -76,6 +76,7 @@ This trick works on any `server` commands
 ```
 # Open your Lucee 5 site in the browser
 server open server-lucee5.json
+
 # cd into the web root for your Adobe 2016 web
 server cd /path/to/server-adobe2016.json
 ```
