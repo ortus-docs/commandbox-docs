@@ -4,4 +4,8 @@ With the advent of [Multi-server functionality](../multi-engine_support.md), you
 
 Let's say we want to test our app in Lucee 4, Lucee 5 and Adobe 2016.  Let's start 3 servers.  Note we give each server a unique name.  This will come in handy when we want to start/stop the servers by name later.
 
-
+```bash
+start cfengine=lucee@4 name=lucee4
+start cfengine=lucee@5 name=lucee5
+start cfengine=adobe@2016 name=adobe2016
+```
