@@ -10,3 +10,8 @@ To help with this, you can store your `server.json` file outside of the web root
 server set web.webroot=www
 ```
 
+When you start the server, you can run the `start` command from the same directory that the `server.json` file lives, or specifiy the path to the JSON file like so:
+
+```bash
+start /path/to/server.json
+```
