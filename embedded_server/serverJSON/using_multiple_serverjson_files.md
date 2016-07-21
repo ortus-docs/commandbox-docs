@@ -16,7 +16,7 @@ start cfengine=adobe@2016 name=adobe2016
 
 >**Info** It's important to always use a name when starting more than one server.  Otherwise, the settings will override each other and only the last server will be saved.  Also, you will only be able to stop the last server via the `stop` command.
 
-You can control the name of the JSON files by using the `serverConfigFile` parameter, but when CommandBox sees us use the `name` parameter, it will automatically create a file called `server-{name}.json`.  In this case, we'll have 3 new files:
+You can have full control over the name of the JSON files by using the `serverConfigFile` parameter, but when CommandBox sees us use the `name` parameter, it will automatically create a file called `server-{name}.json`.  In this case, we'll have 3 new files:
 
 **server-lucee4.json**
 ```js
