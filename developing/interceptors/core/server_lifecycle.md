@@ -33,6 +33,14 @@ Announced before a server start.  Use this to modify the settings for the server
   * `runwarArgs` - Additional Runwar options to use when starting the server
   * `logdir` - Path to directory for server logs
  
+## onServerInstall
+
+Announced when a server is starting and the `cfengine` specified has not been installed yet.  This gives you a chance to influence how the server is installed or to modify default settings befor the server process actually starts/
+
+**interceptData**
+
+* `serverInfo` - Same as `onServerStart` above
+
 ## onServerStop
 
 Announced before a server stop.
