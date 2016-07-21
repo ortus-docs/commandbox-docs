@@ -20,8 +20,16 @@ config show proxy.port
 
 ## proxy.user
 **string**
-This is the username t to connect to on the proxy server, if required.
+This is the username to connect to the proxy server with, if required.
 ```bash
-config set proxy.user=rsmith
-config show proxy.port
+config set proxy.user=proxyUser
+config show proxy.user
+```
+
+## proxy.password
+**string**
+This is the password to connect to the proxy server with, if required.
+```bash
+config set proxy.password=proxyPass
+config show proxy.password
 ```
