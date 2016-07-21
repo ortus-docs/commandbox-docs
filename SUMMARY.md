@@ -62,7 +62,7 @@
    * [Server.json](embedded_server/serverJSON/serverjson.md)
        * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
        * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
-       * Using Multiple server.json Files
+       * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Manage Servers](embedded_server/manage_servers.md)
