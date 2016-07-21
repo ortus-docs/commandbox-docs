@@ -60,7 +60,7 @@ That's it.  Once you run this command, you can run `forgebox show my-package` to
 
 ### Unpublish
 Sometimes you want to remove a specific package version or an entire package from ForgeBox. For this, use the `unpublish` command. 
-> Warning 
+>**Warn** 
 
 ### Publishing to ForgeBox from start to finish
 
