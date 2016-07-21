@@ -57,6 +57,19 @@ ForgeBox does not store your actual package files like npm.  We just point to yo
 
 That's it.  Once you run this command, you can run `forgebox show my-package` to confirm it's there. Any updates to your readme, title, etc. will overwrite the old data. If you change the slug, a new package will be created. If you change the version, a new version will be added to the existing package.
 
+
+### Unpublish
+Sometimes you want to remove a specific package version or an entire package from ForgeBox. For this, use the `unpublish` command. 
+>**Warning** Only remove a package if you're completely sure no one is using it.  Otherwise you may be breaking someone else's app!  Also, it's best to never re-use a version number.
+
+```bash
+# Remove all versions of a package
+CommandBox> unpublish
+# Remove a specific version of a package
+CommandBox> unpublish 1.2.3
+# Skip the user confirmation prompt
+CommandBox> unpublish 1.2.3 --force```
+
 ### Publishing to ForgeBox from start to finish
 
 Below is an example of the commands that would take you from scratch to a published package:
