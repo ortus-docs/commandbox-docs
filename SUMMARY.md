@@ -67,7 +67,7 @@
    * [Proxy Settings](config_settings/proxy_settings.md)
    * [Endpoint Settings](config_settings/endpoint_settings.md)
    * [Server Settings](config_settings/server_settings.md)
-   * Misc Settings
+   * [Misc Settings](config_settings/misc_settings.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
    * [Modules](developing/modules/developing_modules.md)
        * [Installation and Locations](developing/modules/installation_and_locations.md)
