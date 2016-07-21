@@ -60,7 +60,7 @@
    * [Server Processes](embedded_server/server_processes.md)
    * [Server.json](embedded_server/serverJSON/serverjson.md)
        * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
-       * Packaging Your Server
+       * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
    * [Server Port and Host](embedded_server/server_port_and_host.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
