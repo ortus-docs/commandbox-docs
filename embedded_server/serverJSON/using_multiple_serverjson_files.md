@@ -81,4 +81,13 @@ server cd /path/to/server-adobe2016.json
 ```
 
 ## Use server names to control servers
-You 
+After you've started a server at least once, you can use its server name to control it as well which is a great shortcut.  CommandBox will recognize the server name and remember where the server JSON for that server name is stored. Then it will pull the correct web root from the JSON file.
+
+```bash
+start lucee4
+start lucee5
+start adobe2106
+
+restart adobe2016
+stop lucee4
+```
