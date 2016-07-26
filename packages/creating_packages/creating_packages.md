@@ -10,11 +10,22 @@ Your `box.json` file describes your package, dependencies, and how to install it
 init name="My Package" version="1.0.0"
 ```
 
-That's it.  You can now commit this package to [ForgeBox](http://forgebox.io) and can be available world-wide.
+That's it.  Your folder now has extra meta data in the `box.json` file that describes it a way that is meaningful to [ForgeBox](http://forgebox.io) and CommandBox.
 
 ## Distribution
 
-When making a package available on ForgeBox, the download URL should point to a zip file, that when extracted, contains a folder with a box.json in it.  The box.json designates the root of the package.  
+When making a package available on ForgeBox, each version of that package has its own location.  Most download locations point to a zip file, that when extracted, contains a folder with a box.json in it.  The box.json designates the root of the package.  However, the `location` property of your box.json can be any valid endpoint ID.  An example would be:
+
+```js
+{
+  "name":"my project",
+  "slug":"my-project",
+  "version":"1.0.0",
+  "location":"githubUser/repoName#v1.0.0"
+}
+```
+
+In that case, the `location` for version `1.0.0` of this package is the `v1.0.0` tag in that GitHub repository.
 
 If your project is stored in GitHub, an easy approach is simply to treat the root of the repository as the root of the package.  That is where your box.json will live.  This also means you can use GitHub's automatic zip download URL as your ForgeBox URL since it returns a zip file containing your repo contents in a folder.
 
