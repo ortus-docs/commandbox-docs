@@ -9,14 +9,13 @@ Every package on ForgeBox has a unique slug.  To install a package, use the slug
 ```bash
 install cborm
 ```
-You can also specify the version of a package you want to install from Forgebox. Note, this only 
-currently works if the specified version of the package is in your local artifacts folder.  
+You can also specify the version of a package you want to install from Forgebox. 
 
 ```bash
 install coldbox@3.8.1
 ```
 
-Given the install command above, if the file `~/.CommandBox/artifacts/coldbox/3.8.1/coldbox.zip` exists on your hard drive, the installation will not connect to Forgebox at all.  It will be a completely offline installation.
+Given the install command above, if the file `~/.CommandBox/artifacts/coldbox/3.8.1/coldbox.zip` exists on your hard drive, the installation will not connect to Forgebox at all.  It will be a completely offline installation.  This only works when you type an exact version that includes a major, minor, and patch number.
 
 
 ## In box.json
@@ -26,12 +25,13 @@ You can specify packages from ForgeBox as dependencies in your `box.json` in thi
 ```javascript
 {
     "dependencies" : {
-        "coldbox" : "4.1.0"
+        "coldbox" : "^4.1.0"
     }
 }
 
 ```
 
+> *info* The caret `^` means that the `update` command will update minor releases but not major releases.
 
 ## ForgeBox Pro
 For companies who want to host internal code endpoints for private packages, we will soon support an Enterprise version of ForgeBox that can be installed behind your company's firewall. Please contact us if this feature interests you.
