@@ -34,3 +34,5 @@ If you run that command and pass a full file path such as `C:\sandbox\testSite`,
 However, if you changed the interactive shell to the `C:\sandbox` directory and then ran the command with `testsite` as the input, the relative path would now still resolve to `C:\sandbox\testSite`.
 
 If, from the same directory, you passed `testsite/foo/bar/../../`, you would still get `C:\sandbox\testSite` as the path.
+
+> **Warning** Path resolution follows the users' OS rules, not CFML rules.  Ex, any path starting with a forward slash will be considered absolute on Unix, but relative to the CWD on Windows.
