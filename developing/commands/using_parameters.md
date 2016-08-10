@@ -35,4 +35,4 @@ However, if you changed the interactive shell to the `C:\sandbox` directory and 
 
 If, from the same directory, you passed `testsite/foo/bar/../../`, you would still get `C:\sandbox\testSite` as the path.
 
-> **warn** Path resolution follows the users' OS rules, not CFML rules.  Ex, any path starting with a forward slash will be considered absolute on Unix, but relative to the CWD on Windows.
+> **Warning** Path resolution follows the users' OS rules, not CFML rules.  Ex, any path starting with a forward slash will be considered absolute on Unix, but relative to the CWD on Windows.
