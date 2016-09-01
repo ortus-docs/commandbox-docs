@@ -69,4 +69,4 @@ server show rewrites.enable
 server show rewrites.config
 ```
  
->**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams).
+>**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#configuration).
