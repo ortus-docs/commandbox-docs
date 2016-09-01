@@ -5,7 +5,7 @@ Interceptors are a powerful event-driven model inside CommandBox that allows you
 To create a simple interceptor, re-create the simple folder structure below inside your CommandBox installation directory.
 
 ```
-~/.CommandBox/cfm/modules
+~/.CommandBox/cfml/modules
 +-- myModule/
     |-- ModuleConfig.cfc
     +-- interceptors/
