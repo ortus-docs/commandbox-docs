@@ -24,7 +24,7 @@ http://localhost/main
 In `server.json`
 
 ```bash
-server set rewrites.enable=true
+server set web.rewrites.enable=true
 server show rewrites.enable
 ```
 
