@@ -24,8 +24,8 @@ http://localhost/main
 In `server.json`
 
 ```bash
-server set rewrites.enable=true
-server show rewrites.enable
+server set web.rewrites.enable=true
+server show web.rewrites.enable
 ```
 
 > **info** The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
@@ -61,12 +61,12 @@ start --rewritesEnable rewritesConfig=customRewrites.xml
 In `server.json`
 
 ```bash
-server set rewrites.enable=true
-server set rewrites.config=customRewrites.xml
+server set web.rewrites.enable=true
+server set web.rewrites.config=customRewrites.xml
 
 
-server show rewrites.enable
-server show rewrites.config
+server show web.rewrites.enable
+server show web.rewrites.config
 ```
  
 >**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#configuration).
