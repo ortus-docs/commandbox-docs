@@ -14,6 +14,11 @@ If you know that a CF engine is already downloaded in your server's artifacts di
 ```bash
 start cfengine=lucee@5.0.0
 ```
+NOTE: If this fails, check the location of the folder structure below the artifacts folder for it's exact path.
+e.g. /artifacts/lucee/5.0.0+252/lucee.zip - The box command for this would be: start cfengine=lucee@5.0.0+252
+This follows the pattern:
+/artifacts/[server-type]/[server-version]/[server-type].zip
+Useful if you've manually downloaded the file from forgebox and need to rename it.
 
 ## Fail Safe
 
