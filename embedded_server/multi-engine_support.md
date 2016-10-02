@@ -50,6 +50,18 @@ CommandBox> artifacts list
 CommandBox> artifacts remove adobe
 ```
 
+> <sup>**</sup> **Note**: [Adobe ColdFusion 9 does not support Java 8](http://blogs.coldfusion.com/post.cfm/which-jdk-is-supported-with-coldfusion-9-10-and-11). To run ColdFusion 9 you must first [install Java 6 or 7](https://www.java.com/en/download/faq/other_jreversions.xml). Then change the CommandBox java version, by doing one of the following:
+>
+>   - Update the OS default, defined in the `JAVA_HOME` environment variable, with the Java 6/7 JRE directory
+>
+>   - Copy the Java 6/7 JRE folder into the CommandBox installation directory, and rename the subfolder "jre". 
+>
+>        For example, if the new JRE is installed in `C:\Program files\java\jre7` copy it to `C:\CommandBox\jre`
+>
+>        *Note: This version will take precedence over `JAVA_HOME`*
+>
+> Restart CommandBox to apply the changes.
+
 ## ColdFusion Admin settings
 
 While Lucee asks for a password the first time running the admin, ColdFusion requires a username and password when CommandBox sets it up. The default username and password for the Adobe ColdFusion servers used are:
