@@ -13,7 +13,7 @@ By default, CommandBox uses the `cfengine` slug to search for the engine on Forg
 
 Supported engines are:
 
-* Adobe ColdFusion 9
+* Adobe ColdFusion 9 <sup>**</sup>
 * Adobe ColdFusion 10
 * Adobe ColdFusion 11
 * Adobe ColdFusion 2016
