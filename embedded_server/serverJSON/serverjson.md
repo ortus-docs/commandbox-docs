@@ -19,6 +19,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		host : '127.0.0.1',
         webroot : 'src/cfml'
 		directoryBrowsing : true,
+        aliases : {},
+        errorPages : {},
 		http : {
 			port : 8080,
 			enable : true
