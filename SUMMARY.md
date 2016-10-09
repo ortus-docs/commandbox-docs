@@ -44,7 +44,7 @@
    * [Updating Packages](packages/updating_packages.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
        * [Editing Package Properties](packages/creating_packages/editing_package_properties.md)
-   * ForgeBox Users
+   * [ForgeBox Users](packages/forgebox_users.md)
    * [Artifacts](packages/artifacts.md)
    * [Box.json](packages/boxjson/boxjson.md)
        * [Basic Package Data](packages/boxjson/basic_package_data.md)
