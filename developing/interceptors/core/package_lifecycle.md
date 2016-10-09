@@ -60,11 +60,20 @@ Announced before the new version is set in the package.
  
 ## postVersion
 
-Announced after the new version is set in the package.
+Announced after the new version is set in the package but before the Git repo is tagged.
 
 **interceptData**
 
 * `versionArgs` - Same as `preVersion` above.
+
+## onRelease
+
+Announced after a new version is set using the `bump` command and after the Git repo is tagged.
+
+**interceptData**
+
+* `directory` - The working directory of the package
+* `version` - The new version about was set
  
 ## prePublish
 
@@ -107,11 +116,4 @@ Announced after unpublishing a package from an endpoint
 
 * `unpublishArgs` - Same as `preUnpublish` above.
 * `boxJSON` - Same as `preUnpublish` above.
-## onRelease
 
-Announced after unpublishing a package from an endpoint
-
-**interceptData**
-
-* `unpublishArgs` - Same as `preUnpublish` above.
-* `boxJSON` - Same as `preUnpublish` above.
