@@ -27,6 +27,7 @@ Announced while a package is being installed, after the package endpoint and ins
 * `installDirectory` - Directory that the package will be installed in
 * `containerBoxJSON` - A struct containing the `box.json` of the page requesting the installation
 * `artifactDescriptor` - A struct containing the `box.json` of the package artifcat about to be installed
+* `artifactPath` - The folder containing the unzipped artifact, ready to be installed.
 * `ignorePatterns` - An array of file globbing patterns to ignore on installation
 * `endpointData` - A struct containing the following keys.
  * `endpointName` - The name of the endpoint.  i.e. "forgebox" or "HTTP"
