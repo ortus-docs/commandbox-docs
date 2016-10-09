@@ -25,7 +25,8 @@ server set web.aliases.404=/missing.htm
 ## Accessing error variables
 If your error page points to a CFM file, you can get access to the original path being accessed for 404s and the error that was thrown for 500s.  To see all the request headers that are available, use the following snippet of code:
 
-```req = getPageContext().getRequest();
+```
+req = getPageContext().getRequest();
 names = req.getAttributeNames();
 while( names.hasMoreElements() ) {
 	name = names.nextElement();
