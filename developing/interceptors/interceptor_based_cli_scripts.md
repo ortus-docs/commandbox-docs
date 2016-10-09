@@ -39,7 +39,7 @@ run-script generateAPIDocs
 run-script build
 ```
 ## pre/post package scripts
-Before any package script is run, CommandBox will look for another package script with the same name, but prefixed with `pre`.  After any package script is run, CommandBox will look for another package script with the same name, but suffixed with `Post`.   So if you have a package that contains 3 package scripts: `foo`, `preFoo`, and `postFoo`, they will run in this order.
+Before any package script is run, CommandBox will look for another package script with the same name, but prefixed with `pre`.  After any package script is run, CommandBox will look for another package script with the same name, but prefixed with `Post`.   So if you have a package that contains 3 package scripts: `foo`, `preFoo`, and `postFoo`, they will run in this order.
 
 1. preFoo
 2. foo
