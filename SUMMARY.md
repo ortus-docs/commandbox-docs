@@ -69,10 +69,10 @@
        * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
+   * Aliases
    * [Manage Servers](embedded_server/manage_servers.md)
    * [FusionReactor](embedded_server/fusionreactor.md)
    * [Custom Tray Menus](embedded_server/custom_tray_menus.md)
-   * Aliases
 * [Config Settings](config_settings/config_settings.md)
    * [Module Settings](config_settings/override_module_settings.md)
    * [Proxy Settings](config_settings/proxy_settings.md)
