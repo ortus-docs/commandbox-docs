@@ -70,7 +70,7 @@
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
    * [Aliases](embedded_server/aliases.md)
-   * Custom Error Pages
+   * [Custom Error Pages](embedded_server/custom_error_pages.md)
    * [Manage Servers](embedded_server/manage_servers.md)
    * [FusionReactor](embedded_server/fusionreactor.md)
    * [Custom Tray Menus](embedded_server/custom_tray_menus.md)
