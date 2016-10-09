@@ -25,6 +25,7 @@ For completeness, here is the full list of all `server.json` properties that can
 ```
 stopsocket
 trayicon
+trayOption
 name
 debug
 openbrowser
@@ -32,6 +33,8 @@ jvm.heapsize
 jvm.args
 web.host
 web.webroot
+web.aliases
+web.errorPages
 web.directorybrowsing
 web.http.port
 web.http.enable

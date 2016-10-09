@@ -17,6 +17,24 @@ Announced prior to installing a package. If a package has additional dependencie
   * `force` - Flag to force installation
   * `packagePathRequestingInstallation` - Path to package requesting installing.  This climbs the folders structure for nested dependencies.
 
+## onInstall
+
+Announced while a package is being installed, after the package endpoint and installation directory has been resolved but before the actual installation occurs.  This allows you to override things like the installation directory based on package type.  Any values updated in the `interceptData` struct will override what the `install` command uses.
+
+**interceptData**
+
+* `installArgs` - Same as `preInstall` above
+* `installDirectory` - Directory that the package will be installed in
+* `containerBoxJSON` - A struct containing the `box.json` of the page requesting the installation
+* `artifactDescriptor` - A struct containing the `box.json` of the package artifcat about to be installed
+* `artifactPath` - The folder containing the unzipped artifact, ready to be installed.
+* `ignorePatterns` - An array of file globbing patterns to ignore on installation
+* `endpointData` - A struct containing the following keys.
+ * `endpointName` - The name of the endpoint.  i.e. "forgebox" or "HTTP"
+ * `package` - The name of the package. i.e. "cborm" or "coldbox"
+ * `ID` - The canonical ID of the endpoint.  i.e. "forgebox:coldbox" or "github:user/repo"
+ * `endpoint` - The instance of the endpoint CFC that implements `IEndpoint`.
+
 ## postInstall
 
 Announced after an installation is complete.  If a package has additional dependencies to install, each of them will fire this interception point.
@@ -60,11 +78,20 @@ Announced before the new version is set in the package.
  
 ## postVersion
 
-Announced after the new version is set in the package.
+Announced after the new version is set in the package but before the Git repo is tagged.
 
 **interceptData**
 
 * `versionArgs` - Same as `preVersion` above.
+
+## onRelease
+
+Announced after a new version is set using the `bump` command and after the Git repo is tagged.
+
+**interceptData**
+
+* `directory` - The working directory of the package
+* `version` - The new version about was set
  
 ## prePublish
 
@@ -107,3 +134,4 @@ Announced after unpublishing a package from an endpoint
 
 * `unpublishArgs` - Same as `preUnpublish` above.
 * `boxJSON` - Same as `preUnpublish` above.
+

@@ -75,7 +75,10 @@ Additionally, CommandBox can start any WAR given to it using the `WARPath` argum
 
 ```bash
 CommandBox> start WARPath=/var/www/myExplodedWAR
+CommandBox> start WARPath=/var/www/myWAR.war
 ```
+
+If you run a regular `start` command inside of a folder that has a `/WEB-INF/web.xml` file, CommandBox will treat that folder as a WAR.
 
 ## Custom Engines
 

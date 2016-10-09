@@ -23,6 +23,7 @@ Click a category for more information.
   * onException
 * [**Package Lifecycle**](core/package_lifecycle.md)
   * preInstall
+  * onInstall
   * postInstall
   * preUninstall
   * postUninstall
@@ -32,3 +33,4 @@ Click a category for more information.
   * postPublish
   * preUnpublish
   * postUnpublish
+  * onRelease
