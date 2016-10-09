@@ -38,3 +38,11 @@ Call these scripts at any time with the `run-script` command
 run-script generateAPIDocs
 run-script build
 ```
+## pre/post package scripts
+Before any package script is run, CommandBox will look for another package script with the same name, but prefixed with `pre`.  After any package script is run, CommandBox will look for another package script with the same name, but suffixed with `Post`.   So if you have a package that contains 3 package scripts: `foo`, `preFoo`, and `postFoo`, they will run in this order.
+
+1. preFoo
+2. foo
+3. postFoo
+
+This works for built-in package script names as well as as doc package scripts.  It also works on any level.  In the example above, if you created a 4th package script called `prePreFoo`, it would run prior to `preFoo`.
