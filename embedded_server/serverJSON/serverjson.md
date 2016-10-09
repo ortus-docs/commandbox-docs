@@ -10,6 +10,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
 	stopsocket : 0,
 	debug : false,
 	trayicon : '/path/to/trayicon.png',
+    trayOptions : [],
 	jvm : {
 		heapSize : 512,
 		args : ''
