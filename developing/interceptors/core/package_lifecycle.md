@@ -17,6 +17,14 @@ Announced prior to installing a package. If a package has additional dependencie
   * `force` - Flag to force installation
   * `packagePathRequestingInstallation` - Path to package requesting installing.  This climbs the folders structure for nested dependencies.
 
+## onInstall
+
+Announced while a package is being installed, after the package endpoint and installation directory has been resolved but before the actual installation occurs.  This allows you to override things like the installation directory based on package type.  Any values updated in the `interceptData` struct will override what the `install` command uses.
+
+**interceptData**
+
+* `installArgs` - Same as `preInstall` above
+* 
 ## postInstall
 
 Announced after an installation is complete.  If a package has additional dependencies to install, each of them will fire this interception point.
