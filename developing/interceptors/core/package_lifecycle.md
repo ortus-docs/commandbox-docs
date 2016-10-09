@@ -107,3 +107,11 @@ Announced after unpublishing a package from an endpoint
 
 * `unpublishArgs` - Same as `preUnpublish` above.
 * `boxJSON` - Same as `preUnpublish` above.
+## onRelease
+
+Announced after unpublishing a package from an endpoint
+
+**interceptData**
+
+* `unpublishArgs` - Same as `preUnpublish` above.
+* `boxJSON` - Same as `preUnpublish` above.
