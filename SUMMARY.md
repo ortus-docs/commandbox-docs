@@ -44,6 +44,7 @@
    * [Updating Packages](packages/updating_packages.md)
    * [Creating Packages](packages/creating_packages/creating_packages.md)
        * [Editing Package Properties](packages/creating_packages/editing_package_properties.md)
+   * ForgeBox Users
    * [Artifacts](packages/artifacts.md)
    * [Box.json](packages/boxjson/boxjson.md)
        * [Basic Package Data](packages/boxjson/basic_package_data.md)
@@ -54,7 +55,6 @@
        * [Dependencies](packages/boxjson/dependencies.md)
        * [TestBox](packages/boxjson/testbox.md)
    * [Managing Version](packages/managing_version.md)
-   * ForgeBox Users
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Multi-Engine Support](embedded_server/multi-engine_support.md)
    * [Offline Server Starts](embedded_server/offline_server_starts.md)
