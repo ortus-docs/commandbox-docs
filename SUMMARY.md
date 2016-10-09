@@ -54,7 +54,7 @@
        * [Dependencies](packages/boxjson/dependencies.md)
        * [TestBox](packages/boxjson/testbox.md)
    * [Managing Version](packages/managing_version.md)
-   * ForgeBox
+   * [ForgeBox](packages/forgebox/forgebox.md)
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Multi-Engine Support](embedded_server/multi-engine_support.md)
    * [Offline Server Starts](embedded_server/offline_server_starts.md)
