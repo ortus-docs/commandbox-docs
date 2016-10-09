@@ -57,6 +57,7 @@
    * [ForgeBox](packages/forgebox/forgebox.md)
        * [Creating a user](packages/forgebox/creating_a_user.md)
        * [Publishing packages](packages/forgebox/publishing_packages.md)
+       * Managing Logins
 * [Embedded Server](embedded_server/embedded_server.md)
    * [Multi-Engine Support](embedded_server/multi-engine_support.md)
    * [Offline Server Starts](embedded_server/offline_server_starts.md)
