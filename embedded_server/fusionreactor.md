@@ -35,6 +35,6 @@ FusionReactor is a commercial product and requires a license to use.  If your co
 ```
 fr register "myLicenseKey"
 ```
-If you don't have a license, you can sign up for a trial and purchase a license from the http://www.fusion-reactor.com/ website.
+If you don't have a license, you can sign up for a trial and purchase a license from the [http://www.fusion-reactor.com/](http://www.fusion-reactor.com/?affiliate=ortussolutions) website.
 
 
