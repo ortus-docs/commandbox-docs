@@ -32,3 +32,4 @@ Click a category for more information.
   * postPublish
   * preUnpublish
   * postUnpublish
+  * onRelease
