@@ -55,3 +55,13 @@ Here is an example of adding a menu item from the command line.
 server set server.defaults.trayoptions ="[{ 'label':'Whoo Hoo', 'action':'openbrowser', 'url':'http://www.google.com' }]"
 ```
 
+## Module `onServerStart` interceptor
+If you develop a CommandBox module, your code can contribute menu items to servers as they start, but you even get more control than that.  Using the `onServerStart` interceptor, you have full access to the array of menu items.  You can remove existing menu items or even modify existing ones in the array before they get created.  This give you full control of the menu!
+
+An example of this is our FusionReactor module, which adds an "Open FusionReactor" menu item.  The `serverInfo` struct is passed into the `onServerStart` interceptor as part of the `interceptData`.
+```
+// Add FusionReactor menu item to tray icon.
+serverInfo.trayOptions.append(
+	{ 'label':'Open FusionReactor', 'action':'openbrowser', 'url':serverInfo.FRURL }
+);
+```
