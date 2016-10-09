@@ -35,7 +35,7 @@ Ex:
 If you choose  to structure your repo differently, no problem.  Just use a build process that generates a zip file in that format and make that zip publicly available for ForgeBox's download URL.
 
 
-### Publishing to ForgeBox from start to finish
+## Publishing to ForgeBox from start to finish
 
 Below is an example of the commands that would take you from scratch to a published package:
 
