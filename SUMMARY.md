@@ -69,7 +69,7 @@
        * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
    * [JVM Args](embedded_server/jvm_args.md)
    * [URL Rewrites](embedded_server/url_rewrites.md)
-   * Aliases
+   * [Aliases](embedded_server/aliases.md)
    * Custom Error Pages
    * [Manage Servers](embedded_server/manage_servers.md)
    * [FusionReactor](embedded_server/fusionreactor.md)
