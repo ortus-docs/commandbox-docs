@@ -36,17 +36,6 @@ If you choose  to structure your repo differently, no problem.  Just use a build
 
 ## Publishing to ForgeBox
 
-### Creating a User from CommandBox
-
-To create a new ForgeBox user right from the CLI run the "forgebox register" command.
-
-### Authenticating from CommandBox
-
-Once you have a confirmed user, you can run "forgebox login" to authenticate your account.  This will store your API key in a CommandBox config setting.  You can see it with:
-
-```bash
-CommandBox> config show endpoints.forgebox
-```
 
 ### Publish Packages
 
