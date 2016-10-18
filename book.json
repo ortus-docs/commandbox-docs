@@ -12,7 +12,8 @@
         "richquotes",
         "edit-link",
         "github",
-        "advanced-emoji"
+        "advanced-emoji",
+        "sitemap"
     ],
     "pluginsConfig": {
     	"edit-link": {
@@ -21,6 +22,9 @@
         },
         "github": {
             "url": "https://github.com/ortus-solutions/commandbox"
+        },
+        "sitemap": {
+            "hostname": "https://commandbox.ortusbooks.com"
         }
     },
     "links": {
