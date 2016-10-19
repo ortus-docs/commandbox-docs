@@ -20,7 +20,7 @@ artifacts remove
 artifacts help
 ```
 
-Namespaces can be more than one level. Another example would be [coldbox create](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/coldbox-commands/commands/coldbox/create/package-summary.html) which contains commands such as [app](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/coldbox-commands/commands/coldbox/create/app.html), [view](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/coldbox-commands/commands/coldbox/create/view.html), and [handler](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/coldbox-commands/commands/coldbox/create/handler.html).
+Namespaces can be more than one level. Another example would be [coldbox create](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/coldbox-commands/commands/coldbox/create/package-summary.html) which contains commands such as [app](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/coldbox-commands/commands/coldbox/create/app.html), [view](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/coldbox-commands/commands/coldbox/create/view.html), and [handler](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/coldbox-commands/commands/coldbox/create/handler.html).
 
 ```bash
 coldbox create handler
