@@ -43,9 +43,9 @@ back at your native OS shell.
 You can also leverage CommandBox as another operating system binary if you want to execute one-off commands without having the need to go into the interactive shell.  This is useful if you are integrating CommandBox with other system binaries, task runners, ANT, or you just want to execute a CFML template or CommandBox recipe.
 
 ```bash
-$box version
-$box install coldbox-be
-$box upgrade
+$ box version
+$ box install coldbox-be
+$ box upgrade
 ```
 
 >**Info** Executing one-off commands might have a delay when executing as the CommandBox environment needs to load first.

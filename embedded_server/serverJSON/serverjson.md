@@ -10,7 +10,15 @@ Every time you start a server, the settings used to start it are saved in a `ser
 	stopsocket : 0,
 	debug : false,
 	trayicon : '/path/to/trayicon.png',
-    trayOptions : [],
+    trayOptions : [
+      {
+        "label":"Foo",
+        "action":"openbrowser",
+        "url":"http://${runwar.host}:${runwar.port}/foobar.cfm",
+        "disabled":false,
+        "image":"/path/to/image.png"
+      }
+    ],
 	jvm : {
 		heapSize : 512,
 		args : ''
@@ -19,8 +27,15 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		host : '127.0.0.1',
         webroot : 'src/cfml'
 		directoryBrowsing : true,
-        aliases : {},
-        errorPages : {},
+        aliases : {
+          "/foo" : "../bar",
+          "/js" : "C:\static\shared\javascript"
+      },
+        errorPages : {
+          "404" : "/path/to/404.html",
+          "500" : "/path/to/500.html",
+          "default" : "/path/to/default.html"
+        },
 		http : {
 			port : 8080,
 			enable : true
