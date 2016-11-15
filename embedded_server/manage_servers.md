@@ -1,6 +1,10 @@
 # Managing CommandBox Servers
 
-CommandBox stores information about each of the servers you've ever started inside `~/.CommandBox/servers.json` so it can remember settings from one run to the next.  You can see an overview of your servers and what state they're in with the `server list` command.  
+CommandBox stores information about each of the servers you've ever started inside `~/.CommandBox/servers.json` so it can remember settings from one run to the next.  
+
+## List your server
+
+You can see an overview of your servers and what state they're in with the `server list` command.  
 
 ```bash
 server list
@@ -18,9 +22,17 @@ site3 (stopped)
   C:\site3
 ```
 
-You can take a quick look at the what's been happening with the `server log` command or use the `server status` command to see more detailed information including the arguments used previously to start/stop the server. 
+If you have many servers, you can provide parmeters to help filter the results from `server list`
 
->**Note** If the server is killed by an outside process other than the `stop` command, CommandBox will still think it's running.  Use the `--force` flag next time you start it.
+```bash
+# All servers containing the word "foo"
+server list foo
+
+# Running servers
+server list --running
+```
+
+You can take a quick look at the what's been happening with the `server log` command or use the `server status` command to see more detailed information including the arguments used previously to start/stop the server. 
 
 ## Multiple Servers
 Servers are uniquely identified by their full path, but they also have a short name which defaults to the immediate folder containing their web root.  The `stop`, `start`, etc commands can be run in the web root for a server, or in any working directory as long as you reference the server's short name.
