@@ -34,7 +34,7 @@ install cbi18n --verbose
 
 ## Forced Installation
 
-If CommandBox sees the directory that it was going to install into already exists, it will decline to install again since it would be overwriting what's already there.  If you want to install anyway, use the `--force` flag.
+If CommandBox sees the directory that it was going to install into already exists with a newer or equal version of the package inside, it will decline to install again since it would be overwriting what's already there.  If you want to install anyway, use the `--force` flag.
 
 ```bash
 install cbsoap --force
