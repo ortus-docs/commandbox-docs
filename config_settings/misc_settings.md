@@ -18,3 +18,11 @@ Running the `bump` command from a Git repo will attempt to tag the repo unless y
 config set tagVersion=false
 config show tagVersion
 ```
+## tagPrefix
+**string**
+
+Running the `bump` command from a Git repo will tag the repo using the format `v{version}` such as `v1.0.0` or `v4.3.6`.  You can remove the `v` or swap it for another prefix using the `tagPrefix` parameter.  Remember, another string like `foo1.2.3` will not be parseable by CommandBox as a valid semver.  This setting can be overriden by the `tagPrefix` parameter to the `bump` command.
+```bash
+config set tagPrefix=''
+config show tagPrefix
+```
