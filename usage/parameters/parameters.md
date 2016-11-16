@@ -37,10 +37,10 @@ Any parameter that is a boolean type can be specified as a flag in the format `-
 coldbox create app myApp --init --installColdBox
 ```
 
-You can also negate a flag by putting an exclamation point before the name in the format `--!name`. This sets the parameter to false which can be handy to turn off features that default to true.
+You can also negate a flag by putting an exclamation point or the word "no" before the name in the format `--no{paramName}`. This sets the parameter to false which can be handy to turn off features that default to true.
 
 ```bash
-coldbox create app myApp --!init
+coldbox create app myApp --noInit
 ```
 
 
