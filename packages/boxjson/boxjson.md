@@ -123,7 +123,7 @@ Below you will see all the possible options that we currently support in Command
         // directories or files to watch for changes, if they change, then tests execute
         "Watchers" : [ "/model" ] ,
         // after tests run we can do a notification report summary
-        "Notify : { 
+        "Notify" : { 
             "Emails" : [],
             "Growl" : address,
             // URL to hit with test report
