@@ -4,9 +4,13 @@ Once you start  using the embedded server for your development projects, you may
 
 You may be used to configuring URL rewrites in Apache or IIS, but rewrites are also possible in CommandBox's embedded server via a [Tuckey servlet filter](http://tuckey.org/urlrewrite/).
 
+http://tuckey.org/urlrewrite/
+
 ## Default Rules 
 
-We've already added the required jars and created a default rewrite [XML file](http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/index.html#filterparams) that will work out-of-the-box with the ColdBox MVC Platform.  To enable rewrites, start your server with the `--rewritesEnable` flag.
+We've already added the required jars and created a default rewrite [XML file](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#filterparams) that will work out-of-the-box with the ColdBox MVC Platform.  To enable rewrites, start your server with the `--rewritesEnable` flag.
+
+http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#filterparams
 
 ```bash
 start --rewritesEnable
@@ -68,5 +72,12 @@ server set web.rewrites.config=customRewrites.xml
 server show web.rewrites.enable
 server show web.rewrites.config
 ```
+ 
+## Apache mod_rewrite-style rules
+
+If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`.  You can simply put your rules in a file named `.htacess` and point the `web.rewrites.config` property to that file.  Please see the docs here on what's supported:
+
+http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#mod_rewrite_conf
+
  
 >**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#configuration).
