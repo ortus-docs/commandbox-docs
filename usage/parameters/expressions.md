@@ -57,7 +57,7 @@ This unlocks a new world of scripting potential when combined with other abiliti
 
 Set a package property in `box.json` equal to the current date passed through a CFML date mask
 ```bash
-package set createdDate=`#now | #dateformat mm/dd/yyyy`
+package set createdDate="'`#now | #dateformat mm/dd/yyyy`'"
 Set createdDate = 1/1/2016
 ```
 
