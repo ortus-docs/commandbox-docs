@@ -29,7 +29,7 @@ This allows you to get creative by combining commands together like so:
 
 ```bash
 package set name="hello world"
-package show name | sed s/hello/goodbye/ | package set name=''
+package show name | sed s/hello/goodbye/
 ```
 
 This takes a package name, replaces some text, and sets it back in all in one line.  One benefit is that Windows users don't have a native `sed` command in their OS, but those commands inside a CommandBox Recipe will execute consistently on any machine.  
