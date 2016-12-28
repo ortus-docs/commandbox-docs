@@ -29,6 +29,7 @@
 * [Embedded Server](embedded_server/embedded_server.md)
     * [Multi-Engine Support](embedded_server/multi-engine_support.md)
     * [Offline Server Starts](embedded_server/offline_server_starts.md)
+    * [Debugging Server Starts](embedded_server/debugging-server-starts.md)
     * [Server Processes](embedded_server/server_processes.md)
     * [Server Port and Host](embedded_server/server_port_and_host.md)
     * [Server.json](embedded_server/serverJSON/serverjson.md)
@@ -42,7 +43,7 @@
     * [Custom Welcome Files](embedded_server/custom-welcome-files.md)
     * [Manage Servers](embedded_server/manage_servers.md)
     * [FusionReactor](embedded_server/fusionreactor.md)
-    * [Custom Tray Menus](embedded_server/custom_tray_menus.md)
+    * Debugging Server Starts
 * [Package Management](packages/package_management.md)
     * [Installing Packages](packages/installing_packages/installing_packages.md)
         * [Installation Path](packages/installing_packages/installation_path.md)
