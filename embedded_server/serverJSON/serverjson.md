@@ -10,15 +10,15 @@ Every time you start a server, the settings used to start it are saved in a `ser
 	stopsocket : 0,
 	debug : false,
 	trayicon : '/path/to/trayicon.png',
-    trayOptions : [
-      {
-        "label":"Foo",
-        "action":"openbrowser",
-        "url":"http://${runwar.host}:${runwar.port}/foobar.cfm",
-        "disabled":false,
-        "image":"/path/to/image.png"
-      }
-    ],
+	trayOptions : [
+		{
+			"label":"Foo",
+			"action":"openbrowser",
+			"url":"http://${runwar.host}:${runwar.port}/foobar.cfm",
+			"disabled":false,
+			"image":"/path/to/image.png"
+		}
+	],
 	jvm : {
 		heapSize : 512,
 		args : ''
@@ -36,6 +36,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
           "500" : "/path/to/500.html",
           "default" : "/path/to/default.html"
         },
+        welcomeFiles : 'index.cfm,main.cfm,go.cfm'
 		http : {
 			port : 8080,
 			enable : true
