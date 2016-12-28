@@ -29,7 +29,6 @@
         * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
     * [Manage Servers](embedded_server/manage_servers.md)
     * [FusionReactor](embedded_server/fusionreactor.md)
-    * [Configuring Your Server](embedded_server/configuring-your-server.md)
 * [Usage](usage/usage.md)
     * [Execution](usage/execution/execution.md)
         * [Recipes](usage/execution/recipes.md)
