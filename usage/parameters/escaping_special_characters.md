@@ -39,10 +39,11 @@ echo "Nothing to \`see\` here"
 ```
 
 ## Equals Signs
-If you have an equals sign in your value, you'll need to escape it with a backlash.
+If you have an equals sign in your value, you'll need to escape it with a backslash unless you've quoted the entire string.
 
 ```bash
 echo 2+2\=4
+echo "2+2=4"
 ```
 
 ## Line Breaks
