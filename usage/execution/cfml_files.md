@@ -48,6 +48,11 @@ $> ./test
 {ts '2015-02-19 20:31:32'}
 ```
 
+## CFML Engine
+The underlying engine used to execute your files will be the version of Lucee Server that the CLI is currently running on.  Note, this can change between releases, and you can see the current version by running the `info` command.  If you want to try to use the `<cfadmin>` tag to do things like create datasources, the default password for the Lucee server context is `commandbox`.
+
+---
+
 Hopefully this gives you a lot of ideas of how to start using CFML on your next automation task.  And if you want even more control like print objects, object oriented code, and fancy parameters, look into making custom [CommandBox commands](http://commandbox.ortusbooks.com/content/developing/commands/developing_commands.html).
 
 
