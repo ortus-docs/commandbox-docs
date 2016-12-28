@@ -8,7 +8,7 @@ server log serverName
 If the log is very large, use the `tail` command to just see the last few lines of it.
 ```
 server log | tail
-server log | tail --lines 100
+server log | tail lines=100
 ```
 To get a live stream of the console log from a running server, use the `--follow` flag and the command will continue streaming new lines to the console until you press Ctrl-C to stop.
 ```
