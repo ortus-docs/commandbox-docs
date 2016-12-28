@@ -2,7 +2,7 @@
 
 ## preServerStart
 
-Announced before a server starts.  This fires after `server.json` has been located but before any configuration is resolved.  Use this to override any user inputs, influence how the server's details are resolved, or to modify things like host name before ports are bound.
+Announced before a server starts.  This fires after `server.json` has been located but before any configuration is resolved.  Use this to override any user inputs, influence how the server's details are resolved, or to modify things like hostname before ports are bound.
 
 **interceptData**
 
