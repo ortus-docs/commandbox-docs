@@ -23,15 +23,16 @@ So unless you're on Lucee 5, you're going to be limited.  I'm not aware of a com
 
 In the Lucee admin, you can click the little question mark under any setting and it will show you what to copy paste into your `Application.cfc` to set the equivalent setting in your code. There's also an option to export all your Lucee config at once.
 
-For an example of an Application-specific datasource in Adobe CF11+, click here.
+For an example of an Application-specific datasource in Adobe CF11+, [click here](https://github.com/foundeo/cfml-security-training/blob/master/wwwroot/Application.cfc#L15-L22).
 
-Environment variables/Java properties
-This is a Lucee 5-only option, not supported on Adobe CF or Lucee 4.x servers at all.  A select number of Lucee settings can be specified as environment variables or Java system properties prior to starting the server.  These are ideal for compilation settings which can't be specified in code.  Here is a Google doc that shows an overview of all the possible Lucee configurations.  Check the EnvVar/SysProp column.  Here are a few big ones:
+## Environment variables/Java properties
+This is a Lucee 5-only option, not supported on Adobe CF or Lucee 4.x servers at all.  A select number of Lucee settings can be specified as environment variables or Java system properties prior to starting the server.  These are ideal for compilation settings which can't be specified in code.  Here is a [Google doc](https://docs.google.com/spreadsheets/d/10s-nn_FsoSD_RiLwjYZICacCoC386SjkEGT3pOfBJVU/edit?usp=sharing) that shows an overview of all the possible Lucee configurations.  Check the `EnvVar/SysProp` column.  Here are a few big ones:
 
-lucee.full.null.support (boolean)
-lucee.web.dir (path)
-lucee.base.dir (path)
-lucee.enable.dialect (boolean)
+* **lucee.full.null.support** (boolean)
+* **lucee.web.dir** (path)
+* **lucee.base.dir** (path)
+* **lucee.enable.dialect** (boolean)
+
 To use these on a CommandBox server, you can set them as environment variables in your operating system, or package them as Java system properties in your server's server.json like so:
 
 {
