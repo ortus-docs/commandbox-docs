@@ -59,7 +59,7 @@ Each OS tends to handle things a bit differently, but as of CommandBox 3.4.0, th
 * If a command is waiting on user input, the command will exit and go back to the shell
 * If CommandBox is sitting at the interactive shell, the process will quit 
 
-## Special path expansions
+## Special Path Expansions
 
 On Windows, `/` or `\` will be treated as the current drive root based on the current working directory.  This is the same as DOS.
 ```
