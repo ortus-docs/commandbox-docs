@@ -50,13 +50,13 @@ CommandBox> install foo@^4.1.4
 
 When you install a package, here are the steps that are taken.  Most all of this should be evident by the output streamed to the console during the install process.  To get even more juicy details, use the `--verbose` flag while installing.
 
-1. CommandBox inspects the ID passed to the `install` command to determine the endpoint to use.
-2. The matching endpoint is asked to fetch the package represented by the ID. 
-3. For example, the ForgeBox endpoint checks the local artifact cache and possibly downloads the package.
-4. If ForgeBox is offline, the best match package will be looked for in your artifacts.
-5. The package is unzipped and its box.json is read
-6. Installation directory is finalized
-7. Contents of package are copied based the ignoreList and --production flag
-8. The package is saved as a dependency in the root box.json
-9. The package's dependencies are installed
+ #. CommandBox inspects the ID passed to the `install` command to determine the endpoint to use.
+ #. The matching endpoint is asked to fetch the package represented by the ID. 
+ #. For example, the ForgeBox endpoint checks the local artifact cache and possibly downloads the package.
+ #. If ForgeBox is offline, the best match package will be looked for in your artifacts.
+ #. The package is unzipped and its box.json is read
+ #. Installation directory is finalized
+ #. Contents of package are copied based the ignoreList and --production flag
+ #. The package is saved as a dependency in the root box.json
+ #. The package's dependencies are installed
 
