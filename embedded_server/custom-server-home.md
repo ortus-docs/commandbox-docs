@@ -1,7 +1,7 @@
 # Create a Custom Server Home
 The previous section uses a one-time copy of settings, but doesn't give you a way to easily get changes made in the administrator back into your source control for a team to share.  For this we can use the `serverHomeDirectory` setting which overrides where the server WAR will be extracted to.  You can "seed" a directory with config files and then ask CommandBox to start your server in that directory, thus using your configs.  Then if you tell your source control to ignore all files but the configs, you can commit any changes to the configs back to source control for the rest of your team to get.  Here's how it works:
 
-Consider the following `server.json`.  It defines a server whose web root will be in the `src` folder, but the actually server intallation will happen in the `serverHome` folder.
+Consider the following `server.json`.  It defines a server whose web root will be in the `src` folder, but the actual server installation will happen in the `serverHome` folder.
 ```
 {
     "wwwroot" : "src",
