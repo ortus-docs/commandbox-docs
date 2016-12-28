@@ -14,12 +14,7 @@ Announced before a server starts.  This fires after `server.json` has been locat
   * `serverInfo` - The serverInfo Struct (see below)
   * `serverIsNew` - A boolean whether this server has been started before.
 * `serverProps` - A struct with the parameters passed to the start command from the CLI.  Omitted params will not be present.
- 
-
-
-
-
-
+  * See the help for the `server start` command to see the current list of parmaters.
  
 ## onServerStart
 
