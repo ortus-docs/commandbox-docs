@@ -21,9 +21,11 @@ Now add this `.gitignore` in the `/serverHome` folder (assumes you're using Git 
 !.gitignore
 ```
 
-Running `start` will unzip the Adobe CF war into the `serverHome` folder.  All the new XML config files will show up to commit, which you can after making whatever setting changes you wish such as CF mappings, and datasources.  Note, the admin password is stored in the `password.properties` file so modify the ignored files if you wish to commit it.
+Running `start` will unzip the Adobe CF war into the `serverHome` folder.  All the new XML config files will show up to commit, which you can after making whatever setting changes you wish such as CF mappings, and datasources.  Note, the admin password is stored in the `password.properties` file and the ACF license information is stored in the `license.properties` file so modify the ignored files if you wish to commit those as well.
 
 Now, when your coworkers clone the repo, they will get a `serverHome` folder with nothing in it but the Adobe XML config files.  When they run `start` for the first time, the CF engine will be installed in the folder, using the pre-existing XML files which will automatically pick up all your config!  This is pretty sweet since it will let you deploy an app that comes pre-packaged with your engine's configs in a special folder prepared to be used as the server home.  
 
 If you want to do the same thing for Lucee, modify the ignores as needed.  When a new version of an engine is available, CommandBox won't re-install the engine since it's already there and there will be a warning on the screen that you're trying to start a newer version than what's there and you need to `server forget` and start again to actually get the new engine.
+
+*Note: When your engine WAR is expanded to your specified `serverHomeDirectory` a special file named `.engineInstall` is created with the current engine version.  Do not commit this file to your repository, as its presence will prevent the engine WAR from being expanded in to your directory.  Instead, to lock in a specific version of your engine, grab the version number from this file and paste it in to your `server.json` file after the engine brand (e.g. `adobe@2016.0.3`)*
 
