@@ -2,36 +2,11 @@
 
 ## preServerStart
 
-Announced before a server start.  Use this to modify the settings for the server before it starts.
+Announced before a server starts.  This fires prior to `server.json` being located and before any configuration is resolved.  Use this to override any user inputs or to modify things like host name before ports are bound.
 
 **interceptData**
 
 * `serverInfo` - A struct with the following keys used in starting the server
-  * `name` - The name of the server
-  * `webroot` - The path to the web root
-  * `debug` - Whether  to start Runwar in debug mode
-  * `openbrowser` - Flag to open web browser upon start
-  * `host` - The hostname to bind the server to
-  * `port` - The HTTP port
-  * `stopsocket` - The socket to listen for stop connections
-  * `webConfigDir` - Path to the Lucee web context
-  * `serverConfigDir` - Path to the Lucee server context
-  * `libDirs` -  List of additional lib paths
-  * `trayIcon` - path to .png file for tray icon
-  * `webXML` - Path to web.com file
-  * `SSLEnable` - Enable HTTPS flag
-  * `HTTPEnable` - Enable HTTP flag
-  * `SSLPort` - HTTPS port
-  * `SSLCert` - SSL Certificate
-  * `SSLKey` -SSL Key 
-  * `SSLKeyPass` - SSL Key passphrase
-  * `rewritesEnable` - Enable URL rewrites
-  * `rewritesConfig` - Path to custom Tuckey rewrite config file
-  * `heapSize` - Max heap size in Megabytes
-  * `directoryBrowsing` - Enable directory browsing
-  * `JVMargs` - Additional JVM args to use when starting the server
-  * `runwarArgs` - Additional Runwar options to use when starting the server
-  * `logdir` - Path to directory for server logs
  
 ## onServerStart
 
