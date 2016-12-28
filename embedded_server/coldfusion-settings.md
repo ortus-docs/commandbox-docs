@@ -103,6 +103,11 @@ Pay attention to your quotes. My JSON uses double quotes, and the second paramet
 
 We recommend keeping config files outside the web root so you don't deploy them on accident.  In that case you'd reference them with something like `../config.xml`.  Read more about [package scripts here](https://ortus.gitbooks.io/commandbox-documentation/content/developing/interceptors/interceptor_based_cli_scripts.html).
 
+## Create a Custom Server Home
+The previous section uses a one-time copy of settings, but doesn't give you a way to easily get changes made in the administrator back into your source control for a team to share.  For this we can use the `serverHomeDirectory` setting which overrides where the server WAR will be extracted to.  You can "seed" a directory with config files and then ask CommandBox to start your server in that directory, thus using your configs.  Then if you tell your source control to ignore all files but the configs, you can commit any changes to the configs back to source control for the rest of your team to get.  
+
+
+
 ## Conclusion
 Hopefully this guide has given you some ideas on how to better package up your servers.  If you want to learn more about server.json in general, check out the [docs here](https://ortus.gitbooks.io/commandbox-documentation/content/embedded_server/serverJSON/serverjson.html).  Please use these examples a starting point and remember you can get even more funky by [creating a CommandBox module](https://ortus.gitbooks.io/commandbox-documentation/content/developing/modules/developing_modules.html) that listens to the `onServerInstall` or `onServerStart` interception points.  They will have access to much more data than the package scripts do.  
 
