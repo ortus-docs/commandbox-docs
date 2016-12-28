@@ -32,7 +32,7 @@
             * [Application.cfc](embedded_server/applicationcfc.md)
             * [Environment Variables](embedded_server/environment-variables.md)
             * [Custom CF Engine](embedded_server/custom-cf-engine.md)
-            * Copy Configs
+            * [Copy Configs](embedded_server/copy-configs.md)
             * Custom Server Home
     * [FusionReactor](embedded_server/fusionreactor.md)
 * [Usage](usage/usage.md)
