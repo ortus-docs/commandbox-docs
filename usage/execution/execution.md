@@ -117,3 +117,4 @@ You can pipe a large amount of text or a file name into the `tail` command to on
 ```
 forgebox search luis | tail
 system-log | tail lines=50
+```
