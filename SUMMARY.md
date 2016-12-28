@@ -27,6 +27,7 @@
             * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
             * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
             * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
+        * [ColdFusion Settings](embedded_server/coldfusion-settings.md)
     * [FusionReactor](embedded_server/fusionreactor.md)
 * [Usage](usage/usage.md)
     * [Execution](usage/execution/execution.md)
