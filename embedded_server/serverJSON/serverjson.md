@@ -7,6 +7,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
 {
 	name : '',
 	openBrowser : true,
+	startTimeout : 240,
 	stopsocket : 0,
 	debug : false,
 	trayicon : '/path/to/trayicon.png',
