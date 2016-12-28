@@ -30,7 +30,7 @@
         * [ColdFusion Settings](embedded_server/coldfusion-settings.md)
             * [Manual Settings](embedded_server/manual-settings.md)
             * [Application.cfc](embedded_server/applicationcfc.md)
-            * Environment Variables
+            * [Environment Variables](embedded_server/environment-variables.md)
             * Custom CF Engine
             * Copy Configs
             * Custom Server Home
