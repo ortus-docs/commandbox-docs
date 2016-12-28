@@ -33,7 +33,7 @@
             * [Environment Variables](embedded_server/environment-variables.md)
             * [Custom CF Engine](embedded_server/custom-cf-engine.md)
             * [Copy Configs](embedded_server/copy-configs.md)
-            * Custom Server Home
+            * [Custom Server Home](embedded_server/custom-server-home.md)
     * [FusionReactor](embedded_server/fusionreactor.md)
 * [Usage](usage/usage.md)
     * [Execution](usage/execution/execution.md)
