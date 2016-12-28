@@ -68,15 +68,16 @@ CommandBox> server info property=serverHomeDirectory | open
 Zip up the contents of the folder that opens and optionally rename the zip file to have a `.WAR` extension.  The `WEB-INF` folder should be in the root of your zip file.  Then package up that new archive in a new zip long with a `box.json` that minimally has a `version`, `type` (cf-engines), and `slug`.
 
 ## Copy Configs on first start
-This is probably the best one as it is very flexible and will work on any CF engine regardless of vendor or version.  Please note, this requires you to have at least CommandBox 3.4.1-snapshot installed, which is in pre-release at the time of this blog post.  You can grab it here.  In this version of CommandBox, all CF engines have been standardized to expand their WARs to the same consistent directory structure.  We've also enhanced the onServerInstall package script to have access to the server home folder like we did above through the server info command.  onServerInstall will only fire the first time a server is started and the WAR gets installed. You'll need to stop, server forget and then start again for the event to fire again.  If you want to overwrite the configs every time, use the onServerStart event.  
+This is probably the best one as it is very flexible and will work on any CF engine regardless of vendor or version.  All CF engines have been standardized to expand their WARs to the same consistent directory structure.  We've also enhanced the `onServerInstall` package script to have access to the server home folder like we did above through the `server info` command.  `onServerInstall` will only fire the first time a server is started and the WAR gets installed. You'll need to `stop`, `server forget` and then `start` again for the event to fire again.  If you want to overwrite the configs every time, use the `onServerStart` event.  
 
 Basically, we'll just copy the XML config files for the server after we've installed the WAR, but before the server actually boots up.  The only drawbacks of this are that the config files differ per engine and per engine version.  If you're starting several different CF engines/versions in the same web root, you'll have some issues with the package script approach since it doesn't have access to the server name being started.
 
-For Adobe CF WARs, the xml config files are located in the WAR here: /WEB-INF/cfusion/lib/neo.*.xml
-For the Lucee server context, the xml config file is located in the WAR here: /WEB-INF/lucee-server/context/lucee-server.xml
-For the Lucee web context, the xml config file is located in the WAR here: /WEB-INF/lucee-web/lucee-web.xml.cfm
-An Adobe CF box.json might look like so.  This will copy my datasource XML file from my web root into the WAR the first time I start up the site.
+* For **Adobe CF** WARs, the xml config files are located in the WAR here: `/WEB-INF/cfusion/lib/neo.*.xml`
+* For the **Lucee server** context, the xml config file is located in the WAR here: `/WEB-INF/lucee-server/context/lucee-server.xml`
+* For the **Lucee web** context, the xml config file is located in the WAR here: `/WEB-INF/lucee-web/lucee-web.xml.cfm`
 
+An Adobe CF `box.json` might look like so.  This will copy my datasource XML file from my web root into the WAR the first time I start up the site.
+```js
 {
   "name":"My app",
   "version":"1.0.0",
@@ -85,8 +86,9 @@ An Adobe CF box.json might look like so.  This will copy my datasource XML file 
     onServerInstall: "cp neo-datasource.xml '`server info property=serverHomeDirectory`/WEB-INF/cfusion/lib/neo-datasource.xml'"
   }
 }
-A Lucee Server box.json might look like so.
-
+```
+A Lucee Server `box.json` might look like so.
+```js
 {
   "name":"My app",
   "version":"1.0.0",
@@ -95,10 +97,12 @@ A Lucee Server box.json might look like so.
     onServerInstall: "cp lucee-server.xml '`server info property=serverHomeDirectory`/WEB-INF/lucee-server/context/lucee-server.xml'"
   }
 }
-Pay attention to your quotes. My JSON uses double quotes, and the second parameter to the cp command is wrapped in single quotes, and contains a CommandBox expression wrapped in back ticks.  It's also worth noting the server-related package scripts run with their current working directory set to the web root of the server, so any relative paths will be relative to the web root.  The easiest way to get the config files is to make your desired changes via the web-based admin, then stop the server, open the server home, and copy the file.
+```
 
-I would recommend keeping config files outside the web root so you don't deploy them on accident.  In that case you'd reference them with something like "../config.xml".  Read more about package scripts here.
+Pay attention to your quotes. My JSON uses double quotes, and the second parameter to the `cp` command is wrapped in single quotes, and contains a [CommandBox expression](https://ortus.gitbooks.io/commandbox-documentation/content/usage/parameters/expressions.html) wrapped in back ticks.  It's also worth noting the server-related package scripts run with their current working directory set to the web root of the server, so any relative paths will be relative to the web root.  The easiest way to get the config files is to make your desired changes via the web-based admin, then stop the server, open the server home, and copy the file.
 
-Conclusion
-Hopefully this guide has given you some ideas on how to better package up your servers.  If you want to learn more about server.json in general, check out our docs here.  Please use these examples a starting point and remember you can get even more funky by creating a CommandBox module that listens to the onServerInstall or onServerStart interception points.  They will have access to much more data than the package scripts do.  
+We recommend keeping config files outside the web root so you don't deploy them on accident.  In that case you'd reference them with something like `../config.xml`.  Read more about [package scripts here](https://ortus.gitbooks.io/commandbox-documentation/content/developing/interceptors/interceptor_based_cli_scripts.html).
+
+## Conclusion
+Hopefully this guide has given you some ideas on how to better package up your servers.  If you want to learn more about server.json in general, check out the [docs here](https://ortus.gitbooks.io/commandbox-documentation/content/embedded_server/serverJSON/serverjson.html).  Please use these examples a starting point and remember you can get even more funky by [creating a CommandBox module](https://ortus.gitbooks.io/commandbox-documentation/content/developing/modules/developing_modules.html) that listens to the `onServerInstall` or `onServerStart` interception points.  They will have access to much more data than the package scripts do.  
 
