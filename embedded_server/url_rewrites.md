@@ -79,5 +79,17 @@ If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite
 
 http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#mod_rewrite_conf
 
- 
 >**info** For more information on custom rewrite rules, consult the [Tuckey docs](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#configuration).
+
+## SES URLs
+Your servers come ready to accept SES-style URLs where any text after the file name will show up in the `cgi.path_info`.  If rewrites are enabled, the `index.cfm` can be omitted.
+```
+site.com/index.cfm/home/login
+```
+
+SES URLs will also work in a sub directory, which used to only work on a "standard" Adobe CF Tomcat install.  Please note, in order to hide the `index.cfm` in a subfolder, you'll need a custom rewrite rule.
+
+```
+site.com/myFolder/index.cfm/home/login
+```
+
