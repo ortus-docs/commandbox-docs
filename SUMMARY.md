@@ -29,7 +29,7 @@
             * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
         * [ColdFusion Settings](embedded_server/coldfusion-settings.md)
             * [Manual Settings](embedded_server/manual-settings.md)
-            * Application.cfc
+            * [Application.cfc](embedded_server/applicationcfc.md)
             * Environment Variables
             * Custom CF Engine
             * Copy Configs
