@@ -60,7 +60,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		serverConfigDir :'',
 		webXML : '',
 		WARPath : '',
-		cfengine : 'lucee@5.x'
+		cfengine : 'lucee@5.x',
+		serverHomeDirectory : ''
 	},
 	runwar : {
 		args : ''
