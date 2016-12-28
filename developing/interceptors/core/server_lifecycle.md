@@ -2,11 +2,24 @@
 
 ## preServerStart
 
-Announced before a server starts.  This fires prior to `server.json` being located and before any configuration is resolved.  Use this to override any user inputs or to modify things like host name before ports are bound.
+Announced before a server starts.  This fires after `server.json` has been located but before any configuration is resolved.  Use this to override any user inputs or to modify things like host name before ports are bound.
 
 **interceptData**
 
-* `serverInfo` - A struct with the following keys used in starting the server
+* `serverDetails` - A struct with the following keys used in starting the server
+  * `defaultName` - The name of the server
+  * `defaultwebroot` - The web root of the server
+  * `defaultServerConfigFile` - The location of the server.json (May not exist yet)
+  * `serverJSON` - The parsed contents of the JSON file
+  * `serverInfo` - The serverInfo Struct (see below)
+  * `serverIsNew` - A boolean whether this server has been started before.
+* `serverProps` - A struct with the parameters passed to the start command from the CLI.  Omitted params will not be present.
+ 
+
+
+
+
+
  
 ## onServerStart
 
