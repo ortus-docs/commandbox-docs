@@ -1,0 +1,2 @@
+## The Manual way
+Each CommandBox server is a "full" CF server with access to the web-based administrator to add mappings, datasources, mail servers, and any other setting you want.  Right click on the tray icon for your server and choose the option to open the server admin.  For Lucee engines, you'll have an option to open the web admin as well.  Of course, using the web interface is a manual process and not something you can easily deploy to your entire team of developers without them each needing to take those manual steps. 

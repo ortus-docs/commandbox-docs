@@ -6,8 +6,7 @@ More and more people are starting to use CommandBox for their local development,
 
 This is a fair question, and for the most part we've treated configuring the settings in your CF engine to be outside the realm of what CommandBox tries to solve.  However the reality is, the CF engines often times fall short and people need a better way.  Here's a guide for your current options when it comes to configuring the settings on your CF engine.  These are listed in no particular order.
 
-## The Manual way
-Each CommandBox server is a "full" CF server with access to the web-based administrator to add mappings, datasources, mail servers, and any other setting you want.  Right click on the tray icon for your server and choose the option to open the server admin.  For Lucee engines, you'll have an option to open the web admin as well.  Of course, using the web interface is a manual process and not something you can easily deploy to your entire team of developers without them each needing to take those manual steps.  
+ 
 
 ## Application.cfc
 This is my favorite and recommended approach.  It's automatic, keeps your configuration with your codebase, and requires no manual process.  The biggest issue with configuring your app server's settings in `Application.cfc` is that Adobe ColdFusion doesn't provide nearly the same amount of configuration as Lucee, and older versions of Adobe CF don't allow any at all.  Lucee isn't 100% either.  For instance, mail servers and cache connections just got added there in recent releases.  Here's a quick run down:

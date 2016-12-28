@@ -28,6 +28,12 @@
             * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
             * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
         * [ColdFusion Settings](embedded_server/coldfusion-settings.md)
+            * [Manual Settings](embedded_server/manual-settings.md)
+            * Application.cfc
+            * Environment Variables
+            * Custom CF Engine
+            * Copy Configs
+            * Custom Server Home
     * [FusionReactor](embedded_server/fusionreactor.md)
 * [Usage](usage/usage.md)
     * [Execution](usage/execution/execution.md)
