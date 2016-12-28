@@ -50,21 +50,24 @@ This is probably the most work, but allows you to customize every nook and crann
 
 ```js
 {
-  "cfengine" : "/local/path/to/engine.zip"
+  "cfengine" : "/l[ocal/path/to/engine.zip"
   or...
   "cfengine" : "http://www.mysite.com/engine.zip"
 }
 ```
-As documented here, the package zip file needs to contain the following two things:
+As [documented here](https://ortus.gitbooks.io/commandbox-documentation/content/embedded_server/multi-engine_support.html), the package zip file needs to contain the following two things:
 
-box.json
-Engine.[zip|war] (file name doesn't matter)
+1. **box.json**
+2. **Engine.[zip|war]** (file name doesn't matter)
+
 The easiest way to do this is to start your server with one of our Ortus default engines, log into the administrator and make all your changes, and stop the server and navigate to the server's home directory by running this:
-
+```
 CommandBox> server info property=serverHomeDirectory | open
-Zip up the contents of the folder that opens and optionally rename the zip file to have a .WAR extension.  The WEB-INF folder should be in the root of your zip file.  Then package up that new archive in a new zip long with a box.json that minimally has a version, type (cf-engines), and slug.
+```
 
-Copy Configs on first start
+Zip up the contents of the folder that opens and optionally rename the zip file to have a `.WAR` extension.  The `WEB-INF` folder should be in the root of your zip file.  Then package up that new archive in a new zip long with a `box.json` that minimally has a `version`, `type` (cf-engines), and `slug`.
+
+## Copy Configs on first start
 This is probably the best one as it is very flexible and will work on any CF engine regardless of vendor or version.  Please note, this requires you to have at least CommandBox 3.4.1-snapshot installed, which is in pre-release at the time of this blog post.  You can grab it here.  In this version of CommandBox, all CF engines have been standardized to expand their WARs to the same consistent directory structure.  We've also enhanced the onServerInstall package script to have access to the server home folder like we did above through the server info command.  onServerInstall will only fire the first time a server is started and the WAR gets installed. You'll need to stop, server forget and then start again for the event to fire again.  If you want to overwrite the configs every time, use the onServerStart event.  
 
 Basically, we'll just copy the XML config files for the server after we've installed the WAR, but before the server actually boots up.  The only drawbacks of this are that the config files differ per engine and per engine version.  If you're starting several different CF engines/versions in the same web root, you'll have some issues with the package script approach since it doesn't have access to the server name being started.
