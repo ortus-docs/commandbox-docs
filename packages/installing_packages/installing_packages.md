@@ -59,3 +59,11 @@ When you install a package, here are the steps that are taken.  Most all of this
 7. The package is saved as a dependency in the root box.json
 8. The package's dependencies are installed
 
+## Custom Artifacts Directory
+
+You can control where your artifact cache is stored with the `artifactsDirectory` config setting.  This can be useful to keep your primary drive from filling up, or to point your files to a shared network drive that your coworkers can share.
+
+```
+config set artifactsDirectory=/path/to/artifacts
+```
+
