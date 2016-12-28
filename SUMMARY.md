@@ -17,7 +17,6 @@
     * [Server Processes](embedded_server/server_processes.md)
     * [Server Port and Host](embedded_server/server_port_and_host.md)
     * [Configuring Your Server](embedded_server/configuring-your-server.md)
-        * test
         * [JVM Args](embedded_server/jvm_args.md)
         * [URL Rewrites](embedded_server/url_rewrites.md)
         * [Aliases](embedded_server/aliases.md)
