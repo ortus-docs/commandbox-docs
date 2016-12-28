@@ -29,12 +29,14 @@ trayOption
 name
 debug
 openbrowser
+startTimeout
 jvm.heapsize
 jvm.args
 web.host
 web.webroot
 web.aliases
 web.errorPages
+web.welcomeFiles
 web.directorybrowsing
 web.http.port
 web.http.enable
@@ -52,5 +54,6 @@ app.libdirs
 app.webconfigdir
 app.WARPath
 app.cfengine
+app.serverHomeDirectory
 runwar.args
 ```
