@@ -18,6 +18,18 @@ if( favoriteColor == 'red' ) {
 }
 ```
 
+You can mask sensitive input so it doesn't show on the screen:
+```
+response = ask( message='What is your password?', mask='*' );
+```
+
+You can also put default text in the buffer for a wizard-style interface where the user can simply hit "enter" to accept the visible default values.
+
+```
+response = ask( message='Enter installation Directory: ', defaultResponse='/etc/foo/bar` );
+```
+
+
 ##waitForKey()
 
 If you just need a single character collected from a user, or perhaps any keystroke at all, use the `waitForKey()` method.  A message must be supplied that lets the user know what you need.  The **ASCII code** representing the character they enter will be returned in a string variable.

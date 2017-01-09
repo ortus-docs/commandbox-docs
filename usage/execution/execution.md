@@ -111,3 +111,11 @@ echo "Step 3 complete" >> log.txt
 ```
 
 [API Docs for fileAppend.](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/fileAppend.html)
+
+### Tail files
+You can pipe a large amount of text or a file name into the `tail` command to only output the few lines of the text/file.  Adding the `--follow` flag when tailing a file will live-stream changes to the file to your console until you press Ctrl-C to stop.
+```
+forgebox search luis | tail
+system-log | tail lines=50
+tail myLogFile.txt --follow
+```

@@ -16,6 +16,7 @@ Click a category for more information.
   * preModuleUnLoad
   * postModuleUnload
 * [**Server Lifecycle**](core/server_lifecycle.md)
+  * preServerStart
   * onServerStart
   * onServerInstall
   * onServerStop

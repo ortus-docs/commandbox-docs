@@ -53,9 +53,10 @@ When you install a package, here are the steps that are taken.  Most all of this
 1. CommandBox inspects the ID passed to the `install` command to determine the endpoint to use.
 2. The matching endpoint is asked to fetch the package represented by the ID. 
 3. For example, the ForgeBox endpoint checks the local artifact cache and possibly downloads the package.
-4. The package is unzipped and its box.json is read
-5. Installation directory is finalized
-6. Contents of package are copied based the ignoreList and --production flag
-7. The package is saved as a dependency in the root box.json
-8. The package's dependencies are installed
+4. If ForgeBox is offline, the best match package will be looked for in your artifacts.
+5. The package is unzipped and its box.json is read
+6. Installation directory is finalized
+7. Contents of package are copied based the ignoreList and --production flag
+8. The package is saved as a dependency in the root box.json
+9. The package's dependencies are installed
 

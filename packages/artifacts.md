@@ -24,3 +24,19 @@ cbfeeds - 1 version(s)
 You can clear individual artifacts by slug and version with the `artifacts remove` command.  Or just wipe all of them with `artifacts clean`.
 
 > **info** The artifact cache is only used by the ForgeBox endpoint.  It is the only remote endpoint capable of telling CommandBox what the latest version of a package is without downloading it again.
+
+## Snapshot versions
+
+CommandBox will cache snapshot package versions in the artifacts cache, but it will still download them every time.  A snapshot version is one that has a preReleaseID of `snapshot`.  
+```
+install myPackage@1.2.3-snapshot
+```
+The reason we store it in the artifacts directory is because it might still get used if you attempt to do an offline install.  CommandBox will check the artifacts folder as a last-ditch attempt if ForgeBox is down. 
+
+## Custom Artifacts Directory
+
+You can control where your artifact cache is stored with the `artifactsDirectory` config setting. This can be useful to keep your primary drive from filling up, or to point your files to a shared network drive that your coworkers can share.
+
+```
+config set artifactsDirectory=/path/to/artifacts
+```

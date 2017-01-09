@@ -1,8 +1,24 @@
 # Server Lifecycle
 
+## preServerStart
+
+Announced before a server starts.  This fires after `server.json` has been located but before any configuration is resolved.  Use this to override any user inputs, influence how the server's details are resolved, or to modify things like hostname before ports are bound.
+
+**interceptData**
+
+* `serverDetails` - A struct with the following keys used in starting the server
+  * `defaultName` - The name of the server
+  * `defaultwebroot` - The web root of the server
+  * `defaultServerConfigFile` - The location of the server.json (May not exist yet)
+  * `serverJSON` - The parsed contents of the JSON file
+  * `serverInfo` - The serverInfo Struct (see below)
+  * `serverIsNew` - A boolean whether this server has been started before.
+* `serverProps` - A struct with the parameters passed to the start command from the CLI.  Omitted params will not be present.
+  * See the help for the `server start` command to see the current list of parmeters.
+ 
 ## onServerStart
 
-Announced before a server start.  Use this to modify the settings for the server before it starts.
+Announced as a server is starting after the configuration values have been resolved, but prior to the actual server starts.  Use this to modify the settings for the server before it starts.
 
 **interceptData**
 
@@ -33,6 +49,7 @@ Announced before a server start.  Use this to modify the settings for the server
   * `runwarArgs` - Additional Runwar options to use when starting the server
   * `logdir` - Path to directory for server logs
  
+
 ## onServerInstall
 
 Announced when a server is starting and the `cfengine` is being installed.  This gives you a chance to influence how the server is installed or to modify default settings before the server process actually starts.  This is not announced for servers using a `WARPath` setting.  It is announced every time a server is started, but you can use the `isntallDetails.initialInstall` flag to determine if this is the first time the engine is being installed for one-time tasks.

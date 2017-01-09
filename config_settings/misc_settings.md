@@ -26,3 +26,13 @@ Running the `bump` command from a Git repo will tag the repo using the format `v
 config set tagPrefix=''
 config show tagPrefix
 ```
+
+## artifactsDirectory
+**string**
+
+You can control where your artifact cache is stored with the `artifactsDirectory` config setting.  This can be useful to keep your primary drive from filling up, or to point your files to a shared network drive that your coworkers can share.
+
+```bash
+config set artifactsDirectory=/path/to/artifacts
+config show artifactsDirectory
+```

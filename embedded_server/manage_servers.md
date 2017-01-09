@@ -57,6 +57,14 @@ restart
 
 >**Info** Server name is the first parameter to all server commands and tab completion works too, making it as easy as possible for you.
 
+## Get Server Information
+You can get information about a server using the `server info` command.  Add the `--JSON` flag to get the data back in a JSON format.  The `property` parameter will allow you to retrieve a single value for scripting mashups.
+```
+server info
+server info --JSON
+server info property=serverHomeDirectory
+server info property=consoleLogPath
+```
 
 ## Forgetting Servers
 If you want to wipe all configuration, logs, and WEB-INF files for a server, use the `server forget` command.  This will also remove any administrator settings you may have saved including data sources, mail servers, and server mappings.
