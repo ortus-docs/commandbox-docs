@@ -25,3 +25,11 @@ You can get additional information about a server start with the `--debug` flag.
 server start --debug
 server start --debug --console
 ```
+
+## Maximum logging!
+You may still really be having issues getting your server to start up correctly due to a setting not getting picked up, rewrites not working, or maybe a jar not loading.  You can "drink from the firehose" so to speak by tapping into an underlying debug setting in the Runwar engine used to start up server.  If you pass in a `runwarArgs` you can crank up Runwar's built-in logging to the highest level.  This works best when starting the server via the console so you can watch the logging as it streams past.  
+
+```
+server start --debug --console --runwarArgs="--log-level trace"
+```
+
