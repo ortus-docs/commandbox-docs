@@ -75,7 +75,34 @@ server show web.rewrites.config
  
 ## Apache mod_rewrite-style rules
 
-If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`.  You can simply put your rules in a file named `.htacess` and point the `web.rewrites.config` property to that file.  Please see the docs here on what's supported:
+If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`.  You can simply put your rules in a file named `.htacess` and point the `web.rewrites.config` property to that file.  
+
+_Note: The name of the file matters with mod_reqrite-style rules. It must be called `.htaccess`. With xml rewrites, the filename is not important, only the content._
+
+Here are some simple rewrite rules:
+
+```bash
+RewriteEngine on
+RewriteRule ^/foo/                         /
+
+# Defend your computer from some worm attacks
+RewriteRule .*(?:global.asa|default\.ida|root\.exe|\.\.).* . [F,I,O]
+
+# Redirect Robots to a cfm version of your robots.txt
+RewriteRule ^/robots\.txt                   /robots.cfm
+
+# Change your default cfm file to index.cfm
+RewriteRule ^/default.cfm                   /index.cfm [I,RP,L]
+RewriteRule ^/default.cfm((\?.+)|())$       /index.cfm$1  [I,RP,L]
+
+RewriteRule ^/News.html((\?.+)|())$         /News/index.cfm$1 [I,RP,L]
+
+# redirect mozilla to another area
+RewriteCond  %{HTTP_USER_AGENT}  ^Mozilla.*
+RewriteRule  ^/no-moz-here$                 /homepage.max.html  [L]
+```
+
+Please see the docs here on what's supported:
 
 http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#mod_rewrite_conf
 
