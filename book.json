@@ -13,7 +13,7 @@
         "edit-link",
         "github",
         "advanced-emoji",
-        "sitemap"
+        "sitemap-general"
     ],
     "pluginsConfig": {
     	"edit-link": {
@@ -23,8 +23,8 @@
         "github": {
             "url": "https://github.com/ortus-solutions/commandbox"
         },
-        "sitemap": {
-            "hostname": "https://commandbox.ortusbooks.com"
+        "sitemap-general": {
+            "prefix": "https://commandbox.ortusbooks.com/content/"
         }
     },
     "links": {
