@@ -1,6 +1,6 @@
 # Adding Custom Libs
 
-If you have custom jar files that you want to be available to a server, we recommend you use the \`this.javaSettings\` functionality in your \`Application.cfc\` to load those jars.  If that isn't an option for you, or you want to include libs for a JDBC drivers then we offer a feature for you to specify a list of directories for which CommandBox will load jars from.  This prevents you from worrying about getting your jars inside the \`WEB-INF/lib\` which starts fresh anything you forget a server.
+If you have custom jar files that you want to be available to a server, we recommend you use the \`this.javaSettings\` functionality in your \`Application.cfc\` to load those jars.  If that isn't an option for you, or you want to include libs for a JDBC drivers then we offer a feature for you to specify a list of directories for which CommandBox will load jars from.  This prevents you from worrying about getting your jars inside the \`WEB-INF/lib\` which starts fresh anytime you forget a server.
 
 To load in your jar files, the first method is to use the \`libDirs\` parameter to the \`server start\` command.
 
