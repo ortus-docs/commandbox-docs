@@ -13,7 +13,8 @@
         "edit-link",
         "github",
         "advanced-emoji",
-        "sitemap-general"
+        "sitemap-general",
+        "collapsible-chapters"
     ],
     "pluginsConfig": {
     	"edit-link": {
