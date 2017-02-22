@@ -9,13 +9,13 @@ Announced before a server starts.  This fires after `server.json` has been locat
 * `serverDetails` - A struct with the following keys used in starting the server
   * `defaultName` - The name of the server
   * `defaultwebroot` - The web root of the server
-  * `defaultServerConfigFile` - The location of the server.json (May not exist yet)
+  * `defaultServerConfigFile` - The location of the server.json \(May not exist yet\)
   * `serverJSON` - The parsed contents of the JSON file
-  * `serverInfo` - The serverInfo Struct (see below)
+  * `serverInfo` - The serverInfo Struct \(see below\)
   * `serverIsNew` - A boolean whether this server has been started before.
 * `serverProps` - A struct with the parameters passed to the start command from the CLI.  Omitted params will not be present.
   * See the help for the `server start` command to see the current list of parmeters.
- 
+
 ## onServerStart
 
 Announced as a server is starting after the configuration values have been resolved, but prior to the actual server starts.  Use this to modify the settings for the server before it starts.
@@ -48,7 +48,6 @@ Announced as a server is starting after the configuration values have been resol
   * `JVMargs` - Additional JVM args to use when starting the server
   * `runwarArgs` - Additional Runwar options to use when starting the server
   * `logdir` - Path to directory for server logs
- 
 
 ## onServerInstall
 
@@ -70,3 +69,22 @@ Announced before a server stop.
 **interceptData**
 
 * `serverInfo` - Same as `onServerStart` above
+
+## **preServerForget**
+
+Always fires before attempting to forget a server whether or not the forgetting is actually successful. Has access to all files and settings for the server.
+
+**interceptData**
+
+* `serverInfo` - Same as `onServerStart` above
+
+## **postServerForget**
+
+Fires after a successful server forget. If the forget fails, this will not fire.
+
+**interceptData**
+
+* `serverInfo` - Same as `onServerStart` above
+
+
+
