@@ -3,7 +3,7 @@ This is probably the most work, but allows you to customize every nook and crann
 
 ```js
 {
-  "cfengine" : "/l[ocal/path/to/engine.zip"
+  "cfengine" : "/local/path/to/engine.zip"
   or...
   "cfengine" : "http://www.mysite.com/engine.zip"
 }
