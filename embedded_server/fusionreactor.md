@@ -37,7 +37,7 @@ fr register "myLicenseKey"
 ```
 If you don't have a license, you can sign up for a trial and purchase a license from the [http://www.fusion-reactor.com/](http://www.fusion-reactor.com/?affiliate=ortussolutions) website.
 
-## Advanced Settings
+## Custom Port
 
 By default, the module always picks a random port to start Fusionreactor on.  You can also set your FusionReactor port on a per-server basis, or at a global level for all servers (if using the fancy [host updater module](https://www.forgebox.io//view/commandbox-hostupdater) which prevents port conflicts by binding each site to its own IP). The default behavior will still be to pick a random port if you don't specify one.
 
