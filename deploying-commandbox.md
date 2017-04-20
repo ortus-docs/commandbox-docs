@@ -9,11 +9,16 @@ Container-based deployments are also supported, with official Docker Images and 
 
 
 
-[![Docker Logo](/images/docker_logo.png)
-_Click to learn more._](/deploying-commandbox/docker.md)
+[![Docker Logo](/images/docker_logo.png)](/deploying-commandbox/docker.md)
+[_Click to learn more._](/deploying-commandbox/docker.md)
 
 
-[![Heroku Logo](/images/heroku_logo.png)
-_Click to learn more._](/deploying-commandbox/heroku-buildpack.md)
+
+[![Heroku Logo](/images/heroku_logo.png)](/deploying-commandbox/heroku-buildpack.md)
+[_Click to learn more._](/deploying-commandbox/heroku-buildpack.md)
+
+
+
+
 
 
