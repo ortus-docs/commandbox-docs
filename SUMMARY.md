@@ -121,4 +121,7 @@
     * [Custom Interception Points](developing/interceptors/custom_interception_points.md)
   * [Injection DSL](developing/injection_dsl.md)
   * [Example Project](developing/example_project.md)
+* [Deploying CommandBox](deploying-commandbox.md)
+  * [Docker](deploying-commandbox/docker.md)
+  * [Heroku Buildpack](deploying-commandbox/heroku-buildpack.md)
 
