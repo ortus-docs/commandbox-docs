@@ -1,4 +1,4 @@
-# Deploying Production CFML Servers with CommandBox
+![](/assets/docker_logo.png)# Deploying Production CFML Servers with CommandBox
 
 CommandBox may also be used in production deployments, since it allows you to orchestrate your server environment.  This eliminates dependency on hardware, and makes your CFML applications more portable, as a whole.   For advanced server configurations, be sure to check out the [`CFConfig` module](https://cfconfig.ortusbooks.com/).
 
