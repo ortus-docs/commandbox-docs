@@ -1,4 +1,6 @@
 # CommandBox Docker Deployments
+<img src="/images/docker_logo.png" height="50" width="50">
+
 
 CommandBox also provides an [official Docker image](https://hub.docker.com/r/ortussolutions/commandbox/), which allows you to leverage its capability to orchestrate live servers in multi-tier deployments.
 
