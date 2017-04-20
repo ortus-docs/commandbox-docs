@@ -1,4 +1,5 @@
 # Heroku/Dokku Deployments using CommandBox
+![](/images/heroku.png)
 
 The [Heroku buildpack for CommandBox](https://github.com/ortus-solutions/heroku-buildpack-commandbox) will allow you to deploy your CFML applications directly to [Heroku](https://www.heroku.com/) \(or to [Dokku](http://dokku.viewdocs.io/dokku/) hosts\) using CommandBox to manage your CFML engine.  It allows you to specify your custom server configuration settings using the CommandBox server API, avoiding additional script and configuration files during the Heroku deployment process.
 
