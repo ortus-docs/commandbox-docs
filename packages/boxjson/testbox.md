@@ -29,8 +29,10 @@ testbox run
 
 ```javascript
 "testbox" : {
-    { "cf11"   : "http://cf9.localhost/tests/runner.cfm" },
-    { "lucee" : "http://railo.localhost/tests/runner.cfm" }
+    "runner" : [
+        { "cf11"   : "http://cf9.localhost/tests/runner.cfm" },
+        { "lucee" : "http://railo.localhost/tests/runner.cfm" }
+    ]
 }
 ```
 
