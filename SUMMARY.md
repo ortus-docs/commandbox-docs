@@ -10,6 +10,7 @@
   * [Download](setup/download.md)
   * [Installation](setup/installation.md)
   * [Upgrading](setup/upgrading.md)
+  * [Common Errors](setup/common-errors.md)
 * [Usage](usage/usage.md)
   * [Execution](usage/execution/execution.md)
     * [Recipes](usage/execution/recipes.md)
