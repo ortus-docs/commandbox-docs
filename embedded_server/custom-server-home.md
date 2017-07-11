@@ -4,7 +4,9 @@ The previous section uses a one-time copy of settings, but doesn't give you a wa
 Consider the following `server.json`.  It defines a server whose web root will be in the `src` folder, but the actual server installation will happen in the `serverHome` folder.
 ```
 {
-    "wwwroot" : "src",
+    "web": {
+        "webroot" : "src"
+    },
     "app":{
         "serverHomeDirectory":"serverHome",
         "cfengine":"adobe"
