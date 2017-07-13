@@ -30,7 +30,7 @@
   * [History](usage/history.md)
 * [IDE Integrations](ide-integrations.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
-  * [Visual Studio Code](ide-integrations/visual-studio.md)
+  * [Visual Studio Code](ide-integrations/visual-studio-code.md)
 * [Embedded Server](embedded_server/embedded_server.md)
   * [Multi-Engine Support](embedded_server/multi-engine_support.md)
   * [Offline Server Starts](embedded_server/offline_server_starts.md)
