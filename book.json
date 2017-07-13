@@ -19,7 +19,7 @@
     ],
     "pluginsConfig": {
     	"edit-link": {
-            "base": "https://github.com/Ortus-Solutions/commandbox-docs/tree/development",
+            "base": "https://github.com/Ortus-Solutions/commandbox-docs/tree/master",
             "label": "Edit This Page"
         },
         "github": {
