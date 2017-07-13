@@ -125,4 +125,5 @@
 * [Deploying CommandBox](deploying-commandbox.md)
   * [Docker](deploying-commandbox/docker.md)
   * [Heroku/Dokku Buildpack](deploying-commandbox/heroku-buildpack.md)
+* [IDE Integrations](ide-integrations.md)
 
