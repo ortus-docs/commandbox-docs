@@ -1,2 +1,2 @@
-# CommandBox Visual Studio Integration
+# CommandBox Visual Studio Code Integration
 
