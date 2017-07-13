@@ -127,4 +127,5 @@
   * [Heroku/Dokku Buildpack](deploying-commandbox/heroku-buildpack.md)
 * [IDE Integrations](ide-integrations.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
+  * [Visual Studio](ide-integrations/visual-studio.md)
 
