@@ -125,7 +125,4 @@
     * [Custom Interception Points](developing/interceptors/custom_interception_points.md)
   * [Injection DSL](developing/injection_dsl.md)
   * [Example Project](developing/example_project.md)
-* [IDE Integrations](ide-integrations.md)
-  * [Sublime Text](ide-integrations/sublime-text.md)
-  * [Visual Studio](ide-integrations/visual-studio.md)
 
