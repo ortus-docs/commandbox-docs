@@ -67,6 +67,7 @@
     * [Installation Path](packages/installing_packages/installation_path.md)
     * [Installation Options](packages/installing_packages/installation_options.md)
     * [Advanced Installation](packages/installing_packages/advanced_installation.md)
+  * [Private Packages](packages/installing_packages/private-packages.md)
   * [System Modules](packages/installing_packages/system-modules.md)
   * [Code Endpoints](packages/endpoints/endpoints.md)
     * [ForgeBox](packages/endpoints/forgebox.md)
@@ -91,7 +92,7 @@
     * [Dependencies](packages/boxjson/dependencies.md)
     * [TestBox](packages/boxjson/testbox.md)
   * [Managing Version](packages/managing_version.md)
-  * System Modules
+  * Private Packages
 * [Task Runners](task-runners.md)
   * [Task Anatomy](task-runners/task-anatomy.md)
   * [Passing Parameters](task-runners/passing-parameters.md)
