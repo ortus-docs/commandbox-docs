@@ -16,3 +16,11 @@ watch()
 	} )
 	.start();
 ```
+
+Here's a rundown of the methods used above in the DSL.
+
+* paths( ... )
+* inDirectory( ... )
+* withDelay( ... )
+* onChange( ... )
+* start()
