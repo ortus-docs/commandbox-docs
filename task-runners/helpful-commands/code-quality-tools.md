@@ -18,3 +18,20 @@ command( 'rts' )
     .params( '**.cf*' )
     .run();
 ```
+
+## Add final EOL character
+
+Makes sure the last line of every source file has an EOL character.     
+
+### From the CLI
+
+```
+utils add-eol-at-eof **.cf*
+```
+
+### From CFML
+```js
+command( 'eol' )
+    .params( '**.cf*' )
+    .run();
+```
