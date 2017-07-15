@@ -18,3 +18,9 @@ package set testbox.runner="http://localhost:8080/tests/runner.cfm"
 testbox run
 ```
 
+## Additional Settings
+
+There are a number of settings you can provide to the `testbox run` command to control exactly what tests run and how much output is included.  Each of these can also be set in your box.json.  Run this for more information.
+```
+testbox run help
+```
