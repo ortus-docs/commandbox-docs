@@ -9,6 +9,7 @@ install "jar:https://search.maven.org/remotecontent?filepath=jline/jline/3.0.0.M
 ```
 
 ## Installation path
+Files from the `jar:` endpoint will be placed in a `lib/` folder by default unless you provide another folder for installation.
 
 ## In box.json
 
@@ -16,10 +17,8 @@ You can specify jars as dependencies in your `box.json` in this format.
 
 ```javascript
 {
-    "dependencies" : {
-        "iwantmylastfm" : "riaforge:iwantmylastfm"
-        "javaloader" : "riaforge:javaloader"
+    "dependencies":{
+        "jline-3.0.0.M1":"jar:https://search.maven.org/remotecontent?filepath=jline/jline/3.0.0.M1/jline-3.0.0.M1.jar"
     }
 }
-
 ```
