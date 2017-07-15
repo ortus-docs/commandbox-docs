@@ -4,7 +4,7 @@ The following JVM Args are supported when starting the embedded server.
 
 ## heapSize
 
-You can set the max heap size the server is allowed to have `-Xmx` by passing the `heapSize` parameter to the `start` command.  This parameter is always specified as megabytes. 
+You can set the max heap size the server is allowed to have (`-Xmx`) by passing the `heapSize` parameter to the `start` command.  This parameter is always specified as megabytes. 
 
 ```bash
 start heapSize=1024
@@ -16,6 +16,22 @@ In `server.json`
 server set JVM.heapSize=1024
 server show JVM.heapSize
 ```
+
+## minHeapSize 
+
+You can set the starting heap size for the server (`-Xms`) by passing the `minHeapSize` parameter to the `start` command. This parameter is always specified as megabytes. 
+
+```bash
+start minHeapSize=1024
+```
+
+In `server.json`
+
+```bash
+server set JVM.heapSize=1024
+server show JVM.heapSize
+```
+
 
 ## Ad Hoc JVM Args
 
