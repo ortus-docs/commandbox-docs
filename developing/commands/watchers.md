@@ -6,6 +6,7 @@ CommandBox has a powerful utility that can be used to watch a folder of files fo
 watch()
 	.paths( '**.cfc' )
 	.inDirectory( getCWD() )
+	.withDelay( 5000 )
 	.onChange( function() {
 	
 		print.line( 'Something changed!' );
