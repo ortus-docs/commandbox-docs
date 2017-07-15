@@ -48,9 +48,10 @@ If you're writing a custom command or task runner that reads a JSON file of your
 component {
     property name='systemSettings' inject='SystemSettings';
     
-    function run() {
-  
-    }
+     function run() {
+        var mySettings = deserializeJSON( fileRead( 'mySpecialConfigFile.json' ) );
+        systemSettings.expandDeepSystemSettings( mySettings );
+     }
     
 }
 ```
