@@ -98,6 +98,7 @@
     * [Managing Logins](packages/forgebox/managing_logins.md)
 * [Task Runners](task-runners.md)
   * [Task Anatomy](task-runners/task-anatomy.md)
+  * [Passing Parameters](task-runners/passing-parameters.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
   * [Modules](developing/modules/developing_modules.md)
     * [Installation and Locations](developing/modules/installation_and_locations.md)
