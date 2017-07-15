@@ -67,4 +67,10 @@ var myQry = path
 }
 ```
 
-
+## Globber.getPattern()
+To get the original globbing pattern that the user typed, use the `getPattern()` method on the Globber CFC.
+```
+function run( required Globber path ) {
+  print.line( 'You typed ' & path.getPattern() );
+}
+```
