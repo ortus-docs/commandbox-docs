@@ -7,3 +7,7 @@ If an unexpected error happens inside a task that is non-recoverable, do not att
 ## Controlled Errors
 
 If there are expected situations such as a file not existing, that you know might go wrong, we wholeheartedly recommend checking for these situations and using the `error()` method to alert the user.  Errors returned from the `error()` method will not contain any stack traces, etc.  
+
+```javascript
+error( "I don't like your tone of voice" );
+```
