@@ -13,3 +13,14 @@ package list --system
 package update --system
 package uninstall commandbox-fusionreactor --system
 ```
+
+The package commands that accept a `--system` flag are as follows:
+
+* install
+* uninstall
+* outdated
+* list
+* update
+* show
+* set
+* clear
