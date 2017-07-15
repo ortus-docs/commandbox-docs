@@ -7,3 +7,19 @@ install jar:http://site.com/path/to/file.jar
 install "jar:https://github.com/coldbox-modules/cbox-bcrypt/blob/master/modules/bcrypt/models/lib/jbcrypt.jar?raw=true"
 install "jar:https://search.maven.org/remotecontent?filepath=jline/jline/3.0.0.M1/jline-3.0.0.M1.jar"
 ```
+
+## Installation path
+
+## In box.json
+
+You can specify jars as dependencies in your `box.json` in this format.  
+
+```javascript
+{
+    "dependencies" : {
+        "iwantmylastfm" : "riaforge:iwantmylastfm"
+        "javaloader" : "riaforge:javaloader"
+    }
+}
+
+```
