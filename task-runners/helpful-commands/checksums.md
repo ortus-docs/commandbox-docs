@@ -18,3 +18,21 @@ command( 'checksum' )
     .params( path = 'build.zip', algorithm = 'SHA-256' )
     .run();
 ```
+
+## Checksum all files in a directory
+
+You can provide a file globbing pattern to receive a checksum for all files in a directory that match that pattern.
+
+```
+checksum *.cfc
+```
+
+## Output format
+
+The `checksum` command also supports some other popular formats for outputting checksums.  The default format is `checksum`.
+```
+checksum path=**.cfc format=checksum
+checksum path=**.cfc format=sfv
+checksum path=**.cfc format=md5sum
+
+```
