@@ -42,7 +42,9 @@ Now, if your server has an environment variable called `WEB_PORT`, it will be us
 
 ## Manual system setting replacements
 
-If you're writing a custom command or task runner that reads a JSON file of your own making, you can do easy system setting replacements on the file like this.
+If you're writing a custom command or task runner that reads a JSON file of your own making, you can do easy system setting replacements on the file.
+
+## In a complex data structure
 
 ```js
 component {
@@ -55,5 +57,22 @@ component {
     
 }
 ```
+## In a string
 
 The `expandDeepSystemSettings()` method will recursively crawl the struct and find any strings with system setting placeholders inside them.  Be careful not to write back out the same struct after you've done replacements on it.  Otherwise, you'll overwrite the placeholders with the current values!
+
+You can also manually replace system setting placeholders in a single string like so:
+
+```js
+var myValue = 'User home is in ${user.home}';
+myValue = systemSettings.expandSystemSettings( myValue );     
+```
+
+## Programmatic access
+
+The `SystemSettings` service also gives you programmatic access to individual system settings in your custom commands and task runners.
+```js
+var mySetting = systemSetting.getSystemSetting( 'settingName' );
+or
+var mySetting = systemSetting.getSystemSetting( 'settingName', 'defaultValue' );
+```
