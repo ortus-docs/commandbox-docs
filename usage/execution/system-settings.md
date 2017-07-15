@@ -55,3 +55,5 @@ component {
     
 }
 ```
+
+The `expandDeepSystemSettings()` method will recursively crawl the struct and find any strings with system setting placeholders inside them.  Be careful not to write back out the same struct after you've done replacements on it.  Otherwise, you'll overwrite the placeholders with the current values!
