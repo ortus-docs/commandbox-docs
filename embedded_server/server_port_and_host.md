@@ -46,5 +46,17 @@ server set web.host=mycoolsite.local
 server show web.host
 ```
 
+## Customize URL that opens for server
+
+By default, CommandBox will open your browser with the host and port of the server.  You can customize the exact URL that opens.  This setting will be appended to the current host and port.
+```
+server set openBrowserURL=/bar.cfm
+```
+
+Or you can completely override the URL if your setting starts with `http://`.
+
+```
+server set openBrowserURL=http://127.0.0.1:59715/test.cfm
+```
 
 
