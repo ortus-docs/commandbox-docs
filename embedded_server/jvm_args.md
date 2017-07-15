@@ -28,8 +28,8 @@ start minHeapSize=1024
 In `server.json`
 
 ```bash
-server set JVM.heapSize=1024
-server show JVM.heapSize
+server set JVM.minHeapSize=1024
+server show JVM.minHeapSize
 ```
 
 
