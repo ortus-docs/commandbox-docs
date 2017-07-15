@@ -15,12 +15,42 @@ Even though the user types a string, CommandBox will hand you a CFC instance tha
 
 Use the `count()` method to get the total number of paths matched on the file system.
 ```
-/**
-* @path.hint file or directory to interact with.
-**/
 function run( required Globber path ) {
   print.line( path.count() & ' files affected!' );
 }
 ```
 
-## 
+## Globber.apply( ... )
+
+The easiest way to apply some processing to each of the file paths found is by passing a closure to the `apply()` method.  The closure will be executed once for each result.
+
+```
+function run( required Globber path ) {
+  path.apply( function( thisPath ){
+    print.line( 'Processing file ' & thisPath );
+  } );
+}
+```
+## Globber.asQuery()
+If you want to get the results back as a query object, use the `asQuery()` method and then you can loop over them yourself. The query contents match what comes back from `directoryList()`.
+```
+function run( required Globber path ) {
+var myQry = path.asQuery();
+}
+```
+## Globber.asArray()
+If you want to get the results back as an array, use the `asArray()` method and then you can loop over them yourself. 
+```
+function run( required Globber path ) {
+var myArr = path.asArray();
+}
+```
+
+
+
+## Globber.withSort( ... )
+
+Affect the order that the results come back by setting a sort. The sort follows the same pattern as the directoryList() function, which means it can be a comma-delimited list of columns to sort on.
+```
+path.withSort( 'type, name' );
+```
