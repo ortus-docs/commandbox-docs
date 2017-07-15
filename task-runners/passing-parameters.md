@@ -34,7 +34,13 @@ The parameters `:name` and `:verbose` will be passed directly along to the task 
 
 ## Flags
 
-Tasks with boolean parameters can also have those passed using flags just like commands.  Simply prepend a colon (`:`) to the name of the flag like so
+Tasks with boolean parameters can also have those passed using flags just like commands.  Simply prepend a colon (`:`) to the name of the flag like so.
+
+```
+task run --no:verbose
+or
+task run --!:verbose
+```
 
 ## Mix it up
 
