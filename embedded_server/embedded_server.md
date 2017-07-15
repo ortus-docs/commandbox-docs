@@ -23,6 +23,19 @@ You can start as many embedded server instances as you want.  Each running serve
 
  <img src="../images/embedded_server/system_tray_server_icons.png" alt="System Tray Server Icons">
 
+### Disable the tray icon
+
+If you don't want the tray integration, then you can turn it off in your `server.json` with this setting.
+```
+server set trayEnable=false
+```
+Or turn it off at a global level in your config settings.
+
+```
+config set server.defaults.trayEnable=false
+```
+
+
 ## Full  Control
 
 CommandBox's embedded server does not require any prior installations of any CFML engine to work.  It does not use Apache, IIS, or Nginx.  A very lightweight Java web server called [Undertow](http://undertow.io/) is used and a context is programmatically deployed via a WAR file.

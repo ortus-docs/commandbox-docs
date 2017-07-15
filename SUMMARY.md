@@ -39,6 +39,7 @@
   * [Debugging Server Starts](embedded_server/debugging-server-starts.md)
   * [Server Processes](embedded_server/server_processes.md)
   * [Manage Servers](embedded_server/manage_servers.md)
+  * [FusionReactor](embedded_server/fusionreactor.md)
   * [Configuring Your Server](embedded_server/configuring-your-server.md)
     * [JVM Args](embedded_server/jvm_args.md)
     * [Server Port and Host](embedded_server/server_port_and_host.md)
@@ -55,7 +56,6 @@
       * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
       * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
     * Basic Authentication
-  * [FusionReactor](embedded_server/fusionreactor.md)
 * [Config Settings](config_settings/config_settings.md)
   * [Module Settings](config_settings/override_module_settings.md)
   * [Proxy Settings](config_settings/proxy_settings.md)
