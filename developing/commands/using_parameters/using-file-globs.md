@@ -31,18 +31,25 @@ function run( required Globber path ) {
   } );
 }
 ```
-## Globber.asQuery()
+## Globber.matches()
+To get the raw results back, use the `matches()` method.  
+
+### Globber.asQuery()
 If you want to get the results back as a query object, use the `asQuery()` method and then you can loop over them yourself. The query contents match what comes back from `directoryList()`.
 ```
 function run( required Globber path ) {
-var myQry = path.asQuery();
+var myQry = path
+  .asQuery()
+  .matches();
 }
 ```
-## Globber.asArray()
+### Globber.asArray()
 If you want to get the results back as an array, use the `asArray()` method and then you can loop over them yourself. 
 ```
 function run( required Globber path ) {
-var myArr = path.asArray();
+var myArr = path
+  .asArray()
+  .matches();
 }
 ```
 
