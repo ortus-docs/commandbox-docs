@@ -106,6 +106,7 @@
   * [Helpful Commands](task-runners/helpful-commands.md)
     * [Token Replacements](task-runners/helpful-commands/token-replacements.md)
     * [Checksums](task-runners/helpful-commands/checksums.md)
+    * [Code Quality Tools](task-runners/helpful-commands/code-quality-tools.md)
 * [TestBox Integration](testbox-integration.md)
   * [Test Runner](testbox-integration/test-runner.md)
   * [Test Watcher](testbox-integration/test-watcher.md)
