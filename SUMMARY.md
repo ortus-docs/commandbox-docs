@@ -103,6 +103,7 @@
   * [Error Handling](task-runners/error-handling.md)
   * [Hitting Your Database](task-runners/hitting-your-database.md)
   * [Watchers](task-runners/watchers.md)
+  * [Helpful Commands](task-runners/helpful-commands.md)
 * [TestBox Integration](testbox-integration.md)
   * [Test Runner](testbox-integration/test-runner.md)
   * [Test Watcher](testbox-integration/test-watcher.md)
