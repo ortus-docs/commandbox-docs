@@ -15,7 +15,7 @@ command( 'tokenReplace' )
         path = "/tests/*.cfc",
         token = "@@version@@",
         replacement = command( 'package version' ).run()
-        )
+     )
     .run();
 ```
 
