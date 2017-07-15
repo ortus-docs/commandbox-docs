@@ -106,6 +106,7 @@
   * [Running Other Commands](task-runners/running-other-commands.md)
   * [Error Handling](task-runners/error-handling.md)
   * [Hitting Your Database](task-runners/hitting-your-database.md)
+* [TestBox Integration](testbox-integration.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
   * [Modules](developing/modules/developing_modules.md)
     * [Installation and Locations](developing/modules/installation_and_locations.md)
