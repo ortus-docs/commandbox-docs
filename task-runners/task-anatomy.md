@@ -56,3 +56,32 @@ task run build compileAssets
 task run build minimzeJS
 ```
 
+## WireBox DI
+
+All CFCs including tasks are created and wired via WireBox, so dependency injection and AOP are available to them.  This can be handy for tasks to wrap services provided by models, or to access utilities and services inside CommandBox.
+
+This task would inject CommandBox's ArtifactService to list out all the packages being stored.
+
+```javascript
+component {
+
+    property name='artifactService' inject='artifactService'; 
+	
+    function run(){
+        var results = artifactService.listArtifacts();
+		for( var package in results ) {
+			print.boldCyanLine( package );
+		}
+    }
+    
+}
+```
+
+Tasks also have a `variables.wirebox` variable as well as their own `getInstance()` method which proxies to WireBox to get objects.
+
+```javascript
+var results = getInstance( 'artifactService' ).listArtifacts();
+```
+
+
+
