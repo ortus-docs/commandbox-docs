@@ -32,3 +32,12 @@ task run task=fun target=greet :name=Brad :verbose=false
 
 The parameters `:name` and `:verbose` will be passed directly along to the task as `name` and `verbose`.
 
+## Mix it up
+
+Since `task run` is just a regular command, remember its parameters don't have to be hard coded.  They can expressions or system settings, etc.
+
+```
+task run ${APIDocURL} ${APIDocPort:8080}
+task run task=build :message=`cat message.txt`
+```
+
