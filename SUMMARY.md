@@ -101,6 +101,7 @@
   * [Passing Parameters](task-runners/passing-parameters.md)
   * [Using Parameters](task-runners/using-parameters.md)
   * [Task Output](task-runners/task-output.md)
+  * [Task Interactivity](task-runners/task-interactivity.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
   * [Modules](developing/modules/developing_modules.md)
     * [Installation and Locations](developing/modules/installation_and_locations.md)
