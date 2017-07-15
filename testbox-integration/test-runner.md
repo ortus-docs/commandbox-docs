@@ -24,3 +24,19 @@ There are a number of settings you can provide to the `testbox run` command to c
 ```
 testbox run help
 ```
+
+# Example Output
+
+Here is an example of the non-verbose output.
+
+```
+testbox run --noVerbose
+
+Executing tests via http://127.0.0.1:55197/tests/runner.cfm?&recurse=true&reporter=json, please wait...
+TestBox v2.5.0+107
+---------------------------------------------------------------------------------
+| Passed  | Failed  | Errored | Skipped | Time    | Bundles | Suites  | Specs   |
+---------------------------------------------------------------------------------
+| 8       | 0       | 0       | 0       | 112 ms  | 1       | 3       | 8       |
+---------------------------------------------------------------------------------
+```
