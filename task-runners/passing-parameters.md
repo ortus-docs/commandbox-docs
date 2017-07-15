@@ -42,6 +42,6 @@ Since `task run` is just a regular command, remember its parameters don't have t
 
 ```
 task run ${APIDocURL} ${APIDocPort:8080}
-task run task=build :message=`cat message.txt`
+task run taskFile=build :message=`cat message.txt`
 ```
 
