@@ -29,6 +29,7 @@
   * [REPL](usage/repl.md)
   * [Tab Completion](usage/tab_completion.md)
   * [History](usage/history.md)
+  * [System Settings](usage/execution/system-settings.md)
 * [IDE Integrations](ide-integrations.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
   * [Visual Studio Code](ide-integrations/visual-studio-code.md)
