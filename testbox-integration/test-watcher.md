@@ -14,6 +14,12 @@ server start
 testbox watch
 ```
 
+You can also control what files to watch.
+
+```
+testbox watch **.cfc
+```
+
 If you need more control over what tests run and their output, you can set additional options in your `box.json` which will be picked up automatically by `testbox run` when it fires.
 
 ```
