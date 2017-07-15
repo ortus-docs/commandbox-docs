@@ -46,7 +46,7 @@ Write checksum(s) to a file named after the original file plus a new extension. 
 checksum myFile.zip md5 --write
 ```
 
-Control the file extension like so.  (--write is optional when supplying an extension)  This will create a file called "myFile.zip.hash".
+Control the file extension like so.  (`--write` is optional when supplying an extension)  This will create a file called "myFile.zip.hash".
 
 ```
 checksum path=myFile.zip extension=hash --write
