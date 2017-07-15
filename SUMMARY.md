@@ -103,6 +103,7 @@
   * [Error Handling](task-runners/error-handling.md)
   * [Hitting Your Database](task-runners/hitting-your-database.md)
   * [Watchers](task-runners/watchers.md)
+  * [Property Files](task-runners/property-files.md)
   * [Helpful Commands](task-runners/helpful-commands.md)
     * [Token Replacements](task-runners/helpful-commands/token-replacements.md)
     * [Checksums](task-runners/helpful-commands/checksums.md)
