@@ -34,5 +34,12 @@ The `checksum` command also supports some other popular formats for outputting c
 checksum path=**.cfc format=checksum
 checksum path=**.cfc format=sfv
 checksum path=**.cfc format=md5sum
+```
+
+## Verify a file against an existing checksum
+
+You can check a file against an existing checksum to make sure the file hasn't changed.
+
+```
 
 ```
