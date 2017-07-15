@@ -40,13 +40,13 @@ checksum path=**.cfc format=md5sum
 
 The `checksum` command will also write out a file that contains the hash which is a common requirement for builds that produce artifacts.  
 
-Write checksum(s) to a file named after the original file plus a new extension.  This will create a file called "myFile.zip.md5".
+Write checksum(s) to a file named after the original file plus a new extension.  This will create a file called `myFile.zip.md5`.
 
 ```
 checksum myFile.zip md5 --write
 ```
 
-Control the file extension like so.  (`--write` is optional when supplying an extension)  This will create a file called "myFile.zip.hash".
+Control the file extension like so.  (`--write` is optional when supplying an extension)  This will create a file called `myFile.zip.hash`.
 
 ```
 checksum path=myFile.zip extension=hash --write
