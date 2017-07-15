@@ -23,9 +23,8 @@ var value = propertyFile( 'myFile.properties' )
 	
 // Create one from scratch
 propertyFile()
-d
-	.store();
-
+	.set( 'brad', 'wood' )
+	.store( 'myFile.properties' );
 ```
 
 A `propertyFile` CFC instance can also be treated as a struct as it stores the properties in its `this` scope.
