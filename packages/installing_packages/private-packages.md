@@ -22,3 +22,4 @@ Replace `forgeBoxUser` with your actual ForgeBox username.  When you install the
 install @forgeBoxUser/my-slug
 ```
 
+Note, private packages are free for a limited time.  This will eventually be a paid feature of ForgeBox.
