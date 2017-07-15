@@ -120,3 +120,11 @@ SES URLs will also work in a sub directory, which used to only work on a "standa
 site.com/myFolder/index.cfm/home/login
 ```
 
+## Logging
+
+The Tuckey Rewrite engine has debug and trace level logging that can help you troubleshoot why your rewrite rules aren't (or _are_) firing.  To view these logs, simply start your server with the `--debug` or `--trace` flags.  Trace shows more details than debug.  These options work best when starting in `--console` mode so you can watch the server logs as you hit the site. Alternatively, you can follow the server's logs with the `server log --follow` command.
+
+```
+start --debug
+server log --follow
+```
