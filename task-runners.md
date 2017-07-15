@@ -11,7 +11,7 @@ Let's look at how easy it is to write your first task:
 CommandBox> touch task.cfc --open
 ```
 Now, place the following code in your file:
-```
+```javascript
 component {
   function run() {
     print.greenLine( 'This is my first task!' );
