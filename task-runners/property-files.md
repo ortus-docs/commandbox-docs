@@ -17,3 +17,21 @@ propertyFile( 'myFile.properties' )
 	.set( 'my.new.property', 'my value' )
 	.store();
 ```
+
+A `propertyFile` CFC instance can also be treated as a struct as it stores the properties in its `this` scope.
+
+```js
+// Create object
+var propFile = propertyFile( 'myFile.properties' );
+
+// Access proeprties
+print.line( propFile.brad );
+
+// Change/add properties
+propFile.foobar = true;
+propFile[ 'another.new.property' ] = false;
+
+// Save it
+propFile.store();
+```
+
