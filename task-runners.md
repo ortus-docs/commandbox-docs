@@ -1,0 +1,3 @@
+# Task Runners
+
+CommandBox allows you to automate common jobs that you want to run via Task Runners.  Tasks are for when you want something more flexible than a recipe or just a simple .cfm execution.  Tasks are analogous to other build tools like Ant, except you get to use CFML to build them instead of XML!  A task is defined as a CFC and can have one or more "targets", which are declared as public methods on the CFC.  This gives your task a much more well-defined API than a simple .cfm execution which includes proper arguments, base methods, and print helpers, and portability but with very little boilerplate.

@@ -96,6 +96,7 @@
     * [Creating a user](packages/forgebox/creating_a_user.md)
     * [Publishing packages](packages/forgebox/publishing_packages.md)
     * [Managing Logins](packages/forgebox/managing_logins.md)
+* [Task Runners](task-runners.md)
 * [Developing For CommandBox](developing/developing_for_commandbox.md)
   * [Modules](developing/modules/developing_modules.md)
     * [Installation and Locations](developing/modules/installation_and_locations.md)
