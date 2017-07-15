@@ -84,6 +84,16 @@ command( "echo" )
     .run();
 ```
 
+## inWorkingDirectory()
+
+Control the working directory that the command runs in if you don't want it to be the current working directory of the shell.  
+
+```javascript
+command( "ls" )
+    .inWorkingDirectory( 'C:/' )
+    .run();
+```
+
 ## pipe()
 
 Piping is a very powerful way to combine multiple commands and is accomplished via the `pipe` method.  This method expects to receive another `CommandDSL` instance.  You do not need to call `run()` on the nested command.  This example is the equivalent to `echo "hello\nworld" | grep lo`.
