@@ -22,3 +22,5 @@ You can specify jars as dependencies in your `box.json` in this format.
     }
 }
 ```
+
+Note this installation method does not include any dependencies of the jar like a Maven installation would.  That will be a future endpoint.
