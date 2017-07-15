@@ -27,10 +27,14 @@ task run fun greet Brad false
 A more self-documenting method is to use named parameters.  Note, it is not necessary to pass the task and target name when using named parameters, but in this case, my example does not use the default task and target convention names, so I'll need to pass them anyway.  Note that we start each parameter name with a colon (`:`) so they don't interfere with any of the parameters to the actual `task run` command. 
 
 ```
-task run task=fun target=greet :name=Brad :verbose=false
+task run taskFile=fun target=greet :name=Brad :verbose=false
 ```
 
 The parameters `:name` and `:verbose` will be passed directly along to the task as `name` and `verbose`.
+
+## Flags
+
+Tasks with boolean parameters can also have those passed using flags just like commands.  Simply prepend a colon (`:`) to the name of the flag like so
 
 ## Mix it up
 
