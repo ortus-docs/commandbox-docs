@@ -3,7 +3,7 @@
 A task target can defined as many method arguments as it wants which can be passed in via command arguments when calling the task.
 
 **fun.cfc**
-```
+```javascript
 component{
     function greet( string name, boolean verbose ){
         print.line( 'Well, hello there #name#!' );
