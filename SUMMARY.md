@@ -108,6 +108,7 @@
   * [Commands](developing/commands/developing_commands.md)
     * [Aliases](developing/commands/aliases.md)
     * [Using Parameters](developing/commands/using_parameters.md)
+      * [Using File Globs](developing/commands/using_parameters/using-file-globs.md)
     * [Command Output](developing/commands/command_output.md)
     * [Tab Completion & Help](developing/commands/tab_completion_&_help.md)
     * [Interactivity](developing/commands/interactivity.md)
