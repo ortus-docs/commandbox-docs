@@ -16,6 +16,16 @@ propertyFile clear foo.properties newProp
 propertyFile( 'myFile.properties' )
 	.set( 'my.new.property', 'my value' )
 	.store();
+
+// Get a property
+var value = propertyFile( 'myFile.properties' )
+	.get( 'existing.property' );
+	
+// Create one from scratch
+propertyFile()
+d
+	.store();
+
 ```
 
 A `propertyFile` CFC instance can also be treated as a struct as it stores the properties in its `this` scope.
