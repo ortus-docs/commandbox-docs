@@ -59,5 +59,12 @@ var myArr = path
 
 Affect the order that the results come back by setting a sort. The sort follows the same pattern as the directoryList() function, which means it can be a comma-delimited list of columns to sort on.
 ```
-path.withSort( 'type, name' );
+function run( required Globber path ) {
+var myQry = path
+  .asQuery()
+  .withSort( 'type, name' )
+  .matches();
+}
 ```
+
+
