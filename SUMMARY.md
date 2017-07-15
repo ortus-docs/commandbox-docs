@@ -22,6 +22,7 @@
   * [Parameters](usage/parameters/parameters.md)
     * [Escaping Special Characters](usage/parameters/escaping_special_characters.md)
     * [File Paths](usage/parameters/file_paths.md)
+    * [Globbing Patterns](usage/parameters/globbing-patterns.md)
     * [Piping into Commands](usage/parameters/piping_into_commands.md)
     * [Expressions](usage/parameters/expressions.md)
   * [Command Help](usage/command_help.md)
