@@ -127,10 +127,10 @@ print.Line( 'Step 3 complete' ).toConsole();
 All the methods in the `print` object can be chained together to clean up your code.
 
 ```javascript
-	print.whiteOnRedLine( 'ERROR' )
-		.line()
-		.redLine( message )
-		.line();
+print.whiteOnRedLine( 'ERROR' )
+	.line()
+	.redLine( message )
+	.line();
 
 ```
 
