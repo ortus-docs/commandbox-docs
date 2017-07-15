@@ -45,6 +45,7 @@
     * [Aliases](embedded_server/aliases.md)
     * [Custom Error Pages](embedded_server/custom_error_pages.md)
     * [Custom Welcome Files](embedded_server/custom-welcome-files.md)
+    * [Basic Authentication](embedded_server/basic-authentication.md)
     * [Custom Java Version](embedded_server/custom-java-version.md)
     * [Adding Custom Libs](embedded_server/adding-custom-libs.md)
     * [REST Servlet](embedded_server/rest-servlet.md)
@@ -52,7 +53,7 @@
       * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
       * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
       * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
-    * Custom Java Version
+    * Basic Authentication
   * [FusionReactor](embedded_server/fusionreactor.md)
 * [Config Settings](config_settings/config_settings.md)
   * [Module Settings](config_settings/override_module_settings.md)
