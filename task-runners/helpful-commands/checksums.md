@@ -8,16 +8,6 @@ checksum file.txt
 checksum path=build.zip algorithm=SHA-256
 ```
 
-## From CFML
-```js
-command( 'checksum' )
-    .params( 'file.txt' )
-    .run();
-
-command( 'checksum' )
-    .params( path = 'build.zip', algorithm = 'SHA-256' )
-    .run();
-```
 
 
 
