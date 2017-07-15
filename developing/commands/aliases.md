@@ -1,6 +1,6 @@
 # Aliases
 
-A command can go by more than one name.  For instance, the `dir` command can also be called as `ls`, `ll`, or `directory`.  Set a comma-delimited list of aliases in your comnponent declaration like so:
+A command can go by more than one name.  For instance, the `dir` command can also be called as `ls`, `ll`, or `directory`.  Set a comma-delimited list of aliases in your component declaration like so:
 
 ```javascript
 component aliases="ls,ll,directory" {
