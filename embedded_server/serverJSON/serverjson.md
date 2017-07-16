@@ -59,6 +59,13 @@ Every time you start a server, the settings used to start it are saved in a `ser
 			"config": "/path/to/config.xml",
 			"statusPath": "/rewriteStatus",
 			"configReloadSeconds": 60
+		},
+		"basicAuth": {
+			"enable": true,
+			"users"': {
+				"userName1": "password1",
+				"userName2": "password2"
+			}
 		}
 	},
 	"app": {
