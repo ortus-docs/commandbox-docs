@@ -17,3 +17,11 @@ foobar
 In the above example, typing `foobar` is the same as running the giant command string that's being set into the alias.
 
 If you create an alias that matches an existing command name, your alias will take precedence since aliases are expanded before commands are resolved.
+
+Here we can change the name of a common command like `echo` that we really wish had been named `print`.
+
+```
+config set command.aliases.print=echo
+print brad
+```
+
