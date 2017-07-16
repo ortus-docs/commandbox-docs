@@ -30,6 +30,7 @@
   * [Tab Completion](usage/tab_completion.md)
   * [History](usage/history.md)
   * [System Settings](usage/execution/system-settings.md)
+  * [Ad-hoc Command Aliases](usage/execution/ad-hoc-command-aliases.md)
 * [IDE Integrations](ide-integrations.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
   * [Visual Studio Code](ide-integrations/visual-studio-code.md)
