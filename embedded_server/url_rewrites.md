@@ -128,3 +128,19 @@ The Tuckey Rewrite engine has debug and trace level logging that can help you tr
 start --debug
 server log --follow
 ```
+
+## Additional Tuckey Settings
+
+The Tuckey Rewrite library that CommandBox uses under the hood.  It has some extra settings that CommandBox allows you to use.
+
+### Watch rewrite file for changes
+
+To monitor your custom rewrite file for changes without needing to restart the server, use this setting.
+```
+server set web.rewrites.configReloadSeconds=30
+```
+### Internal Tuckey Status Page
+To enable the inbuilt Tuckey status page, use the following setting.  Note, `debug` mode needs to be turned on for the Tuckey status page to work.  Also, you'll need to customize your rewrite file if you use a path other than `/tuckey-status`.
+```
+server set web.rewrites.statusPath=/tuckey-status
+```
