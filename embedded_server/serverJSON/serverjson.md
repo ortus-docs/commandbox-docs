@@ -50,13 +50,15 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		"ssl": {
 			"enable": false,
 			"port": 443,
-			"cert": "",
-			"key": "",
+			"certFile": "",
+			"keyFile": "",
 			"keyPass": ""
 		},
 		"rewrites": {
 			"enable": true,
-			"config": "/path/to/config.xml"
+			"config": "/path/to/config.xml",
+			"statusPath": "/rewriteStatus",
+			"configReloadSeconds": 60
 		}
 	},
 	"app": {
