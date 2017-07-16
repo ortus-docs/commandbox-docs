@@ -76,6 +76,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
 		"webXML": "",
 		"WARPath": "",
 		"cfengine": "lucee@5.x",
+		"restMappings": "/rest/*,/api/*",
 		"serverHomeDirectory": ""
 	},
 	"runwar": {
