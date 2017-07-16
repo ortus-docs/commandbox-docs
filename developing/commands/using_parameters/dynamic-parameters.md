@@ -15,7 +15,7 @@ doWidget :foo=blue :bar=seven :baz=turkey
 
 And the command might look like this:
 
-```
+```js
 function run( args={} ){
     args.each( function( k, v ) {
         print.line( '#k# has a value of #v#.' );
