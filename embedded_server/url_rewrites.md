@@ -139,7 +139,7 @@ To monitor your custom rewrite file for changes without needing to restart the s
 ```
 server set web.rewrites.configReloadSeconds=30
 ```
-### Internal Tuckey Status Page
+### Internal Tuckey status page
 To enable the inbuilt Tuckey status page, use the following setting.  Note, `debug` mode needs to be turned on for the Tuckey status page to work.  Also, you'll need to customize your rewrite file if you use a path other than `/tuckey-status`.
 ```
 server set web.rewrites.statusPath=/tuckey-status
