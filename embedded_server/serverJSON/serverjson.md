@@ -26,7 +26,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
 	"jvm": {
 		"heapSize": 512,
 		"minHeapSize": 256,
-		"args": ""
+		"args": "",
+		"javaHome" : "/path/to/java/home",
 	},
 	"web": {
 		"host": "127.0.0.1",
