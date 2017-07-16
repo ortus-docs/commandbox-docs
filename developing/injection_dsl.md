@@ -37,7 +37,7 @@ property name='myDeepSetting'       inject='commandbox:moduleSettings:moduleName
 
 ## CommandBox Config
 
-You can also inject Commandbox config settings into your CFCs.  Only inject a specific config setting if you expect it to exist.  If you need to check for its existence (and provide a default), then inject the entire settings struct.
+You can also inject Commandbox config settings into your CFCs.  Only inject a specific config setting if you expect it to exist.  If you need to check for its existence (and provide a default), then inject the entire settings struct.  You can also inject nested keys of a complex config setting directly like the last line shows.
 
 ```javascript
 property name='allConfigSettings'   inject='commandbox:ConfigSettings';
