@@ -25,3 +25,11 @@ config set command.aliases.print=echo
 print brad
 ```
 
+Let's take it a step further and alias the alias!
+
+```
+config set command.aliases.cout=print
+cout brad
+```
+
+Running `cout brad` is the same as running `print brad` which is the same as running `echo brad`.  Try not to get dizzy when doing this, please.
