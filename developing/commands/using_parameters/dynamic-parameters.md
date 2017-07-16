@@ -22,3 +22,9 @@ function run( args={} ){
     } );
 }
 ```
+Which, given the parameters shown above, would output this:
+```
+foo has a value of blue.
+bar has a value of seven.
+baz has a value of turkey.
+```
