@@ -6,7 +6,7 @@ To configure aliases for your server, create an object under `web` called `alias
 
 Here's what your `server.json` might look like.
 
-```
+```json
 {
   "web" : {
     "aliases" : {
