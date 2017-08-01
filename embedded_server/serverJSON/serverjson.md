@@ -10,7 +10,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
     "openBrowser": true,
     "openBrowserURL" : "http://localhost/admin/login",
     "startTimeout": 240,
-    "stopsocket": 0,
+    "stopsocket": 50123,
     "debug": false,
     "trace": false,
     "console": false,
