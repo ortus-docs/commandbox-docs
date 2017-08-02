@@ -25,6 +25,7 @@ Announced as a server is starting after the configuration values have been resol
 * `serverInfo` - A struct with the following keys used in starting the server
   * `name` - The name of the server
   * `webroot` - The path to the web root
+  * `serverConfigFile` - The path to the server.json file (may not exist)
   * `debug` - Whether  to start Runwar in debug mode
   * `openbrowser` - Flag to open web browser upon start
   * `host` - The hostname to bind the server to
