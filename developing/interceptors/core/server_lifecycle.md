@@ -68,7 +68,7 @@ Announced when a server is starting and the `cfengine` is being installed.  This
   * `internal` - True if using the embedded jars from the CLI
   * `version` - The version of the cfengine that was installed
   * `installDir` - The folder where the server is installed to
-  * `intialInstall` - True if this is the first time the engine was installed
+  * `initialInstall` - True if this is the first time the engine was installed
 
 ## onServerStop
 
