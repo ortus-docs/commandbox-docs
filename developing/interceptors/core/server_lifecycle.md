@@ -26,7 +26,11 @@ Announced as a server is starting after the configuration values have been resol
   * `name` - The name of the server
   * `webroot` - The path to the web root
   * `serverConfigFile` - The path to the server.json file (may not exist)
+  * `trayEnable` - If tray menu is enabled
+  * `customServerFolder` - Where the server's log files live. May be the same as `serverHomeDirectory`
   * `debug` - Whether  to start Runwar in debug mode
+  * `trace` - Whether  to start Runwar in trace mode
+  * `console` - Whether  to start server in console mode
   * `openbrowser` - Flag to open web browser upon start
   * `host` - The hostname to bind the server to
   * `port` - The HTTP port
@@ -34,7 +38,9 @@ Announced as a server is starting after the configuration values have been resol
   * `webConfigDir` - Path to the Lucee web context
   * `serverConfigDir` - Path to the Lucee server context
   * `libDirs` -  List of additional lib paths
-  * `trayIcon` - path to .png file for tray icon
+  * `trayEnable` - If tray menu is enabled
+  * `trayIcon` - Path to .png file for tray icon
+  * `trayOptions` - Array of tray menu options
   * `webXML` - Path to web.com file
   * `SSLEnable` - Enable HTTPS flag
   * `HTTPEnable` - Enable HTTP flag
@@ -49,6 +55,7 @@ Announced as a server is starting after the configuration values have been resol
   * `JVMargs` - Additional JVM args to use when starting the server
   * `runwarArgs` - Additional Runwar options to use when starting the server
   * `logdir` - Path to directory for server logs
+  * `welcomeFiles` - List of welcome files
 
 ## onServerInstall
 
