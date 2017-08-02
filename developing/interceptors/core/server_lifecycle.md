@@ -14,7 +14,7 @@ Announced before a server starts.  This fires after `server.json` has been locat
   * `serverInfo` - The serverInfo Struct \(see below\)
   * `serverIsNew` - A boolean whether this server has been started before.
 * `serverProps` - A struct with the parameters passed to the start command from the CLI.  Omitted params will not be present.
-  * See the help for the `server start` command to see the current list of parmeters.
+  * See the help for the `server start` command to see the current list of parameters.
 
 ## onServerStart
 
@@ -51,7 +51,7 @@ Announced as a server is starting after the configuration values have been resol
 
 ## onServerInstall
 
-Announced when a server is starting and the `cfengine` is being installed.  This gives you a chance to influence how the server is installed or to modify default settings before the server process actually starts.  This is not announced for servers using a `WARPath` setting.  It is announced every time a server is started, but you can use the `isntallDetails.initialInstall` flag to determine if this is the first time the engine is being installed for one-time tasks.
+Announced when a server is starting and the `cfengine` is being installed.  This gives you a chance to influence how the server is installed or to modify default settings before the server process actually starts.  This is not announced for servers using a `WARPath` setting.  It is announced every time a server is started, but you can use the `installDetails.initialInstall` flag to determine if this is the first time the engine is being installed for one-time tasks.
 
 **interceptData**
 
