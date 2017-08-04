@@ -42,23 +42,44 @@ If you don't have a license, you can sign up for a trial and purchase a license 
 By default, the module always picks a random port to start Fusionreactor on.  You can also set your FusionReactor port on a per-server basis, or at a global level for all servers (if using the fancy [host updater module](https://www.forgebox.io//view/commandbox-hostupdater) which prevents port conflicts by binding each site to its own IP). The default behavior will still be to pick a random port if you don't specify one.
 
 ```
-CommandBox> server set fusionreactor.port=8088
-CommandBox> config set server.defaults.fusionreactor.port=8088
+// Server specific port
+server set fusionreactor.port=8088
+// global default port
+config set server.defaults.fusionreactor.port=8088
 ```
 
 ## Disable the module
 You may want to turn the FusionReactor functionality on or off based on your testing or for specific sites.  There is now an enable flag for just that.  It can be set per server and for all servers as well.
 
 ```
-CommandBox> server set fusionreactor.enable=false
-CommandBox> config set server.defaults.fusionreactor.enable=false
+server set fusionreactor.enable=false
+config set server.defaults.fusionreactor.enable=false
 ```
 
 ## Per-server License Key
 
 You can set a license key per server if you wish like so:
 ```
-CommandBox> server set fusionreactor.licenseKey=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+server set fusionreactor.licenseKey=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```
+
+## Custom Version of FusionReactor
+
+The module is regularly updated to use the latest version of FusionReactor.  Note however that your license key may not be for the latest FR version.  When the internal default version of FR is updated for a major release, the version of the actual FR module will also have a "major" version increment.  This is so you can always run `upgrade --system` and you won't have to worry about suddenly getting a major FR upgrade one day that doesn't work with your license key.
+
+If you want to upgrade your CommandBox FusionReactor module to a new major release, just re-run the installation command.
+
+```
+install commandbox-fusionreactor
+```
+
+If you have an older FR license you want to use, you can specify the version of FR you'd like like so:
+
+```
+// Server specific version
+server set fusionreactor.version=6.2.8
+// global default version
+config set server.defaults.fusionreactor.version=6.2.8
 ```
 
 ## Custom Download URL
@@ -66,13 +87,13 @@ If you have a specific version of the FusionReactor jar that you want to use, or
 
 If one server is downloading a custom URL, make sure you also set a unique jarPath setting as well so it doesn't interfere with your others servers still using the default download.
 ```
-CommandBox> server set fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
-CommandBox> server set fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
+server set fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
+server set fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
 ```
 Or override it for all your servers:
 ```
-CommandBox> config set server.defaults.fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
-CommandBox> config set server.defaults.fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
+config set server.defaults.fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
+config set server.defaults.fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
 ```
 
 
