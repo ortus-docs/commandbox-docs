@@ -63,7 +63,7 @@ You can set a license key per server if you wish like so:
 server set fusionreactor.licenseKey=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 ```
 
-## Custom Version of FusionReactor
+## Managing Versions
 
 The module is regularly updated to use the latest version of FusionReactor.  Note however that your license key may not be for the latest FR version.  When the internal default version of FR is updated for a major release, the version of the actual FR module will also have a "major" version increment.  This is so you can always run `upgrade --system` and you won't have to worry about suddenly getting a major FR upgrade one day that doesn't work with your license key.
 
@@ -72,6 +72,8 @@ If you want to upgrade your CommandBox FusionReactor module to a new major relea
 ```
 install commandbox-fusionreactor
 ```
+
+## Custom Version of FusionReactor
 
 If you have an older FR license you want to use, you can specify the version of FR you'd like like so:
 
