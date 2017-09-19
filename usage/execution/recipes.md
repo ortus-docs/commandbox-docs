@@ -53,11 +53,11 @@ If any commands in the recipe stop and ask for input, the recipe will pause unti
 
 ## Spice It Up
 
-You can also bind the recipe with arguments that will be replaced inside of your recipe at run time. 
+You can also bind the recipe with arguments that will be replaced inside of your recipe at run time.
 Pass any arguments as additional parameters to the `recipe` command and they will be passed along to the commands in your recipe.
 
 ### Named arguments
-If you use named arguments to the recipe command, they will be accessible inside the recipe as $arg1Name, $arg2Name, etc. 
+If you use named arguments to the recipe command, they will be accessible inside the recipe as $arg1Name, $arg2Name, etc.
 
 Consider the following recipe:
 
@@ -85,7 +85,7 @@ Note, all parameters to the `recipe` command needed to be named, including the `
 Now let's look at the same recipe set up to receive positional parameters.
 
 ```bash
-echo "Hello there, $1\n You've won a $1!"
+echo "Hello there, $1\n You've won a $2!"
 ```
 
 You would call it like so:
@@ -129,7 +129,7 @@ echo off
 version
 ```
 
-Output: 
+Output:
 
 ```bash
 version
@@ -137,19 +137,3 @@ CommandBox 1.2.3.00000
 echo off
 CommandBox 1.2.3.00000
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
