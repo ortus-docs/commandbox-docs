@@ -20,7 +20,7 @@ You can use the `--console` flag to the `server start` command to start a server
 server start --console
 ```
 ## Debug Logging
-You can get additional information about a server start with the `--debug` flag.  When debug is set, the `start` command will not exit immediately, but wit for the server to come up and live stream the debugging information and server logs to the console while the server is coming up.  
+You can get additional information about a server start with the `--debug` flag.  When debug is set, the `start` command will not exit immediately, but wait for the server to come up and live stream the debugging information and server logs to the console while the server is coming up.  
 ```
 server start --debug
 server start --debug --console
@@ -32,4 +32,3 @@ You may still really be having issues getting your server to start up correctly 
 ```
 server start --trace --console
 ```
-
