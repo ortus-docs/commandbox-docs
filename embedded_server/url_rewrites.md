@@ -78,6 +78,7 @@ You can place your custom rewrite rule wherever you like, and refer to it by usi
 ```bash
 server set web.rewrites.enable=true
 server set web.rewrites.config=/my/custom/path/customRewrites.xml
+```
 
 or
 
