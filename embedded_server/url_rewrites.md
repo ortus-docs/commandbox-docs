@@ -72,7 +72,19 @@ server set web.rewrites.config=customRewrites.xml
 server show web.rewrites.enable
 server show web.rewrites.config
 ```
- 
+
+You can place your custom rewrite rule wherever you like, and refer to it by using either a relative path or an absolute path.  CommandBox will start looking relative to where the `server.json` file resides.
+
+```bash
+server set web.rewrites.enable=true
+server set web.rewrites.config=/my/custom/path/customRewrites.xml
+
+or
+
+```bash 
+server set web.rewrites.enable=true
+server set web.rewrites.config=~\.CommandBox\cfml\system\config\customRewrites.xml
+```
 ## Apache mod_rewrite-style rules
 
 If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`.  You can simply put your rules in a file named `.htacess` and point the `web.rewrites.config` property to that file.  
