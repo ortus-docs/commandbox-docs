@@ -70,6 +70,8 @@ Below you will see all the possible options that we currently support in Command
     "keywords" : [ "groovy", "module" ],
     // Bit that if set to true, will not allow ForgeBox posting if using commands
     "private" : "boolean",
+    // Bit that if set to false, will not show the package in search results unless an exact slug name is given
+    "isListed": "boolean",
     // cfml engines it supports, type and version
     "engines" : [
         { "type" : "railo", "version" : ">=4.1.x" },
