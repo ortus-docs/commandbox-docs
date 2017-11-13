@@ -31,7 +31,6 @@
   * [Default Command Parameters](usage/execution/default-command-parameters.md)
   * [REPL](usage/repl.md)
   * [Tab Completion](usage/tab_completion.md)
-  * Default Command Parameters
 * [IDE Integrations](ide-integrations.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
   * [Visual Studio Code](ide-integrations/visual-studio-code.md)
@@ -63,7 +62,6 @@
       * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
       * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
       * [Using Multiple server.json Files](embedded_server/serverJSON/using_multiple_serverjson_files.md)
-    * Basic Authentication
 * [Package Management](packages/package_management.md)
   * [Installing Packages](packages/installing_packages/installing_packages.md)
     * [Installation Path](packages/installing_packages/installation_path.md)
@@ -95,7 +93,6 @@
     * [Dependencies](packages/boxjson/dependencies.md)
     * [TestBox](packages/boxjson/testbox.md)
   * [Managing Version](packages/managing_version.md)
-  * Private Packages
 * [Task Runners](task-runners.md)
   * [Task Anatomy](task-runners/task-anatomy.md)
   * [Passing Parameters](task-runners/passing-parameters.md)
