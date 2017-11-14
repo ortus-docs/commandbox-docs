@@ -58,7 +58,6 @@
     * [Custom Java Version](embedded_server/custom-java-version.md)
     * [Adding Custom Libs](embedded_server/adding-custom-libs.md)
     * [REST Servlet](embedded_server/rest-servlet.md)
-    * Loading Server Settings
   * [Server.json](embedded_server/serverJSON/serverjson.md)
     * [Working with server.json](embedded_server/serverJSON/working_with_serverjson.md)
     * [Packaging Your Server](embedded_server/serverJSON/packaging_your_server.md)
