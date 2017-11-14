@@ -25,6 +25,36 @@ If the server won't start or is unreachable, make sure it's port is free with yo
  $> netstat -pan | grep 80
 ```
 
+### HTTPS
+
+You can start your server to listen for SSL connections too.
+
+```bash
+start SSLEnable=true SSLPort=443
+```
+
+```bash
+server set web.SSL.enable=true
+server set web.SSL.port=8080
+server show web.SSL.enable
+server show web.SSL.port
+```
+
+### AJP
+
+You can start your server to listen for AJP connections too.
+
+```bash
+start AJPEnable=true AJPPort=8009
+```
+
+```bash
+server set web.AJP.enable=true
+server set web.AJP.port=8080
+server show web.AJP.enable
+server show web.AJP.port
+```
+
 ## A Gracious Host
 
 Your application may rely on a specific host name other than the default of `127.0.0.1`.  You can set the host to anything you like, but you must add a `host` file entry that resolves your host name to an IP address assigned to your network adapter \(usually 127.0.0.1\)
