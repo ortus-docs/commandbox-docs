@@ -50,7 +50,7 @@ start AJPEnable=true AJPPort=8009
 
 ```bash
 server set web.AJP.enable=true
-server set web.AJP.port=8080
+server set web.AJP.port=8009
 server show web.AJP.enable
 server show web.AJP.port
 ```
