@@ -50,3 +50,7 @@ mkdir \\\\10.10.1.205/webroot/logs
 ```
 
 You cannot directly list the contents of a server like `\\webdev01` as that is not a true directory.  You always need to access a specific share like `\\webdev01/webroot`.
+
+### Permissions
+
+By default, CommandBox will access UNC paths using the same permissions of the user that the `box` process was started with.  There's no way to specify a user, so if you need to use a custom user, you'll need to run native `NET USE` command from the CLI first to change how it is authenticating.  Unfortunately, this is a limitation of how Java accesses UNC paths so CommandBox has little control over it.
