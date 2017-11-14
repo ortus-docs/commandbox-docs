@@ -76,9 +76,6 @@ Below you will see all the possible options that we currently support in Command
         { "type" : "lucee", "version" : ">=4.5.x" },
         { "type" : "adobe", "version" : ">=10.0.0" }
     ],
-    // default engine to use using our run embedded server command
-    // Available engines are lucee, railo, cf9, cf10, cf11
-    "defaultEngine" : "cf9, railo, cf11",
      // default project URL if not using our start server commands
     "ProjectURL" : "http://railopresso.local/myApp",
     // license array of licenses it can have
