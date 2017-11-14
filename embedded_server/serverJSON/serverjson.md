@@ -86,14 +86,6 @@ Every time you start a server, the settings used to start it are saved in a `ser
 }
 ```
 
-## Server Setting Order
-
-Settings are loaded in this order:
-
-1. Typed by the user into the `start` command parameters
-2. Read from `server.json`
-3. Global defaults in the `server.defaults` config setting
-4. Internal defaults from the `ServerService`
 
 
 
