@@ -32,6 +32,12 @@ server list foo
 server list --running
 ```
 
+To list only the servers  that have been started in a given directory, use the `--local` flag.
+
+```bash
+server list --local
+```
+
 You can take a quick look at the what's been happening with the `server log` command or use the `server status` command to see more detailed information including the arguments used previously to start/stop the server. 
 
 ## Multiple Servers
