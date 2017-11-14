@@ -44,16 +44,21 @@ Every time you start a server, the settings used to start it are saved in a `ser
             "default": "/path/to/default.html"
         },
         "welcomeFiles": "index.cfm,main.cfm,go.cfm",
-        "http": {
-            "port": 8080,
+        "HTTP": {
+            "enable": true,
+            "port": 8080
             "enable": true
         },
-        "ssl": {
+        "SSL": {
             "enable": false,
             "port": 443,
             "certFile": "",
             "keyFile": "",
             "keyPass": ""
+        },
+        "AJP": {
+            "enable": false,
+            "port": 8009
         },
         "rewrites": {
             "enable": true,
