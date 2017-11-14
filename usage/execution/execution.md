@@ -119,3 +119,13 @@ forgebox search luis | tail
 system-log | tail lines=50
 tail myLogFile.txt --follow
 ```
+
+### Ad-hoc Java properties for the CLI
+
+If you want to add ad-hoc Java Properties to the actual CLI process, you can set an environment variable in your OS called `BOX_JAVA_PROPS` in this format:
+
+```bash
+BOX_JAVA_PROPS="foo=bar;brad=wood"
+```
+
+That would create a property called `foo` and a property called `brad` with the values `bar` and `wood` respectively.  
