@@ -4,7 +4,7 @@ CommandBox allows you full control over the servers you start.  This includes th
 
 ## Ways to provide configuration
 
-Configuration can be set at 3 different levels:
+Configuration can be set at several different levels:
 
 1. Passed as parameters to the `server start` command
 2. Stored in a `server.json` file for that server
