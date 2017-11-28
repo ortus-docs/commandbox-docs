@@ -1,4 +1,4 @@
-# CommandBox Manual - Version 3.9.0
+# CommandBox Manual - Version 3.9.1
 
 <img src="images/CommandBoxLogo.png" width="300" alt="CommandBox" />
 
