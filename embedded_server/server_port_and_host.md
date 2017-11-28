@@ -69,6 +69,12 @@ If you have multiple IP addresses assigned to your PC, you can bind the server t
  start host=192.168.10.15 port=80
 ```
 
+A server configuration can only have one host entry. If you require your server to be available on multiple IP addresses of the machine it runs on, you can set the host to 0.0.0.0. This will effectively bind the server to all network interfaces (including local).
+
+```bash
+ start host=0.0.0.0 port=80
+```
+
 Or save in `server.json`
 
 ```bash
