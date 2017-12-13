@@ -19,7 +19,7 @@ This is what you `server.json` might look like:
 
 You can set error pages via the `server set` command like this:
 ```
-server set web.aliases.404=/missing.htm
+server set web.errorPages.404=/missing.htm
 ```
 
 ## Accessing error variables
