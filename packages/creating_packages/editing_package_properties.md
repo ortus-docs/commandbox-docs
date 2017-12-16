@@ -87,7 +87,7 @@ package set contributors="[ 'brad@coldbox.org' ]" --append
 Add an additional dependency to the existing `dependencies` object.
 
 ```bash
-package set dependencies="{'cbcommons':'1.0.0'}"  --append****
+package set dependencies="{'cbcommons':'1.0.0'}"  --append
 ```
 
 ## package clear
