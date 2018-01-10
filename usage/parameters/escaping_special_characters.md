@@ -53,6 +53,13 @@ A new line can be specified with the text `\n`. Keep in mind, some parameters mi
 package set description="first line\nSecond Line\nThird Line"
 ```
 
+## Tabs
+A tab character can be specified with the text `\t`. 
+
+```bash
+echo "Brad\tWood"
+```
+
 ## Backslash
 Since the backslash is used as our escape character you'll need to escape any legitimate backslash that happens to precede a single quote, double quote, equals sign, or letter n.
 
