@@ -61,7 +61,7 @@ package show description
 
 **boolean**
 
-A flag that designates if this package is a ForgeBox private package.
+A flag that designates if this package is a ForgeBox private package. ForgeBox private packages are not publicly accessible, but offer all the benefits of ForgeBox.  Private packages will be a paid feature for ForgeBox Pro subscribers, though the feature is currently available to all users for free.
 
 ```bash
 package set private=false
