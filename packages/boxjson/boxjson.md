@@ -1,11 +1,12 @@
 # Box.json
 
-The `box.json` file must be in your root of your project and it is a JSON file that describes your project, dependencies, development dependencies, installation data, and CommandBox command data. 
+The `box.json` file must be in your root of your project and it is a JSON file that describes your project, dependencies, development dependencies, installation data, and CommandBox command data.
 
->**Note** Please note that you can add as many settings or alter the `box.json` structure to meet your needs when developing commands. This makes our descriptor incredibly flexible.
+> **Note** Please note that you can add as many settings or alter the `box.json` structure to meet your needs when developing commands. This makes our descriptor incredibly flexible.
 
 ## Initialize a package
-To initialize any folder as a package, run the `init` command.  
+
+To initialize any folder as a package, run the `init` command.
 
 ```bash
 init
@@ -68,7 +69,9 @@ Below you will see all the possible options that we currently support in Command
     "type" : "1 from forgebox available types",
     // ForgeBox keywords, array of strings
     "keywords" : [ "groovy", "module" ],
-    // Bit that if set to true, will not allow ForgeBox posting if using commands
+    // Bit that designates the package as a private ForgeBox package.
+    // Private packages are not publicly accessible, but still
+    // offer all the benefits of ForgeBox.
     "private" : "boolean",
     // cfml engines it supports, type and version
     "engines" : [
@@ -129,3 +132,6 @@ Below you will see all the possible options that we currently support in Command
     }
 }
 ```
+
+
+
