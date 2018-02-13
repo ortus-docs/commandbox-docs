@@ -28,7 +28,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "heapSize": 512,
         "minHeapSize": 256,
         "args": "",
-        "javaHome" : "/path/to/java/home",
+        "javaHome" : "/path/to/java/home"
     },
     "web": {
         "host": "127.0.0.1",
@@ -47,7 +47,6 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "HTTP": {
             "enable": true,
             "port": 8080
-            "enable": true
         },
         "SSL": {
             "enable": false,
