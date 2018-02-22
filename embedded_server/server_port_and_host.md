@@ -57,7 +57,7 @@ Generating a key and CSR with openSSL
 ```
 openssl req -utf8 -nodes -sha256 -newkey rsa:2048 -keyout dev_mydomain_com.key -out dev_mydomain_com.csr
 ```
-This will generate output and some questions:
+This will generate output and some questions, and will finally result in a key file named `dev_mydomain_com.key` and a certificate signing request (csr) named `dev_mydomain_com.csr`
 ```
 You are about to be asked to enter information that will be incorporated
 into your certificate request.
@@ -83,10 +83,10 @@ You have to enter Country Name, State and City. Organization Name is preferably 
 Organizational Unit Name will not be checked, so enter something simple such as ICT
 Common Name is the hostname for your site, such as dev.mydomain.com
 You can skip Email Adress and optional company name. 
-For development you don't need a challenge password, which means your key file is NOT protected. But don't give this key to others or protect it with a challenge password.
+For development you don't need a challenge password, which means your key file is NOT protected. But don't give this key to others or protect it with a challenge password. If you protect your key you have to `server set web.SSL.keyPass=MyChallengePassword` 
 Now you have a CSR, which you can submit at your SSL provider.
 They will send you a certificate file (*.csr), and probably one or more intermediate certificates.
-Create a new my.csr file and copy everything from your certificate file into it, and append the certificate.
+Create a new my.csr file and copy everything from your certificate file into it, and append the intermediate certificate(s).
 Now you have a valid my.csr certificate file and a key file. Place both files in a location accessible for your commandbox and enter the corresponding paths to web.SSL.certFile and web.SSL.keyFile
 
 ### AJP
