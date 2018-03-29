@@ -46,8 +46,8 @@ server set web.SSL.certFile=/path/to/dev_mydomain_ext.crt
 server set web.SSL.keyFile=/path/to/dev_mydomain_ext.key
 ```
 Although free certificates are available (e.g LetsEncrypt) this is not very convenient, because these certs are valid only for three months. Automatic renewal it is difficult if your dev site is not accessible from the web.
-For a few dollars a year (< 10) you can apply for a domainvalidated certificate from companies like Comodo, RapidSSL, Trustwave, Digicert, Geotrust and others or a reseller for these certs.
-For a domein validated certificate you need a valid domain which is under your control which means (depending on provider):
+For a few dollars a year (< 10) you can apply for a domain validated certificate from companies like Comodo, RapidSSL, Trustwave, Digicert, Geotrust and others or a reseller for these certs.
+For a domain validated certificate you need a valid domain which is under your control which means (depending on provider):
 - mail is sent to domain owner
 - or mail is sent to well-known administrative contact in the domain, e.g. (admin@, postmaster@, etc.)
 - or you can publish a DNS TXT record
