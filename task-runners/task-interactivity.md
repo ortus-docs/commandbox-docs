@@ -43,32 +43,30 @@ print
 
 If the return is not a single character, it will be one of the following special strings:
 
-* key\_left   - Left arrow
-* key\_right -   Right arrow
-* key\_up   - Up arrow
-* key\_down   - Down arrow
-* back\_tab   - Shift-tab.  \(Regular tab will come through as a normal tab char\)
-* key\_home   - Home key
-* key\_end   - End end
-* key\_dc   - Delete
-* key\_ic   - Insert key
-* key\_npage -   Page down
-* key\_ppage   - Page up
-* key\_f1   - F1 key
-* key\_f2   - F2 key
-* key\_f3   - F3 key
-* key\_f4   - F4 key
-* key\_f5   - F5 key
-* key\_f6   - F6 key
-* key\_f7   - F7 key
-* key\_f8   - F8 key
-* key\_f9   - F9 key
-* key\_f10 -   F10 key
-* key\_f11   - F11 key
-* key\_f12   - F12 key
-* esc   - Escape key
-
-
+* `key_left  ` - Left arrow
+* `key_right` -   Right arrow
+* `key_up  ` - Up arrow
+* `key_down`   - Down arrow
+* `back_tab  ` - Shift-tab.  \(Regular tab will come through as a normal tab char\)
+* `key_home`   - Home key
+* `key_end  ` - End end
+* `key_dc  ` - Delete
+* `key_ic  ` - Insert key
+* `key_npage` -   Page down
+* `key_ppage`   - Page up
+* `key_f1  ` - F1 key
+* `key_f2  ` - F2 key
+* `key_f3  ` - F3 key
+* `key_f4  ` - F4 key
+* `key_f5  ` - F5 key
+* `key_f6  ` - F6 key
+* `key_f7  ` - F7 key
+* `key_f8  ` - F8 key
+* `key_f9  ` - F9 key
+* `key_f10` -   F10 key
+* `key_f11  ` - F11 key
+* `key_f12`   - F12 key
+* `esc` - Escape key
 
 ## confirm\(\)
 
