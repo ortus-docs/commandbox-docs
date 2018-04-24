@@ -31,6 +31,7 @@
   * [Default Command Parameters](usage/default-command-parameters.md)
   * [REPL](usage/repl.md)
   * [Tab Completion](usage/tab-completion.md)
+  * [Interactive Shell Features](usage/interactive-shell-features.md)
 * [IDE Integrations](ide-integrations/README.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
   * [Visual Studio Code](ide-integrations/visual-studio-code.md)

@@ -30,13 +30,6 @@ $ box upgrade
 
 So let's go a little deeper into [CommandBox execution.](execution/)
 
-## Ctrl-C
-
-Each OS tends to handle things a bit differently, but as of CommandBox 3.4.0, there is better support for capturing Ctrl-C from the user, especially on Windows.
-
-* If a command is waiting on user input, the command will exit and go back to the shell
-* If CommandBox is sitting at the interactive shell, the process will quit 
-
 ## Special Path Expansions
 
 On Windows, `/` or `\` will be treated as the current drive root based on the current working directory. This is the same as DOS.
