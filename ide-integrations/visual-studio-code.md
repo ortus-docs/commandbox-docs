@@ -1,4 +1,4 @@
-# CommandBox Visual Studio Code Integration
+# Visual Studio Code
 
 Here are suggestions for using **VSC** \(_Visual Studio Code_\) for developing in **CFML**.
 
@@ -35,18 +35,18 @@ Install Shell Launcher and reload the IDE.
 
 Now open your user settings like is shown in the Commandbox only section just above. Add the following to your `USER SETTINGS`.
 
-`//Shell launcher  
-     // A list of shell configurations for Windows  
-    "shellLauncher.shells.windows": [  
-        {  
-        "shell": "C:\\Windows\\sysnative\\cmd.exe",  
-        "label": "cmd"  
-        },  
-        {  
-        "shell": "/path/to/box",  
-        "label": "Commandbox"  
-        }  
-    ],`
+`//Shell launcher    
+// A list of shell configurations for Windows    
+"shellLauncher.shells.windows": [    
+{    
+"shell": "C:\\Windows\\sysnative\\cmd.exe",    
+"label": "cmd"    
+},    
+{    
+"shell": "/path/to/box",    
+"label": "Commandbox"    
+}    
+],`
 
 ### Or loading it as desired
 

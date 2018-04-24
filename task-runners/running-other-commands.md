@@ -1,10 +1,10 @@
 # Running Other Commands
 
-Many times when developing a task, you find the need to run another, existing command.   To do this, we have provided you with a DSL you can use to call any command, pass parameters, and even pipe commands together.  
+Many times when developing a task, you find the need to run another, existing command. To do this, we have provided you with a DSL you can use to call any command, pass parameters, and even pipe commands together.
 
 ## The DSL
 
-The DSL is a sequence of chained methods that will always start with `command()` and end with `.run()`.  The `run` method tells the DSL that you are finished chaining methods and that the command should be executed. Here is the simplest possible example:
+The DSL is a sequence of chained methods that will always start with `command()` and end with `.run()`. The `run` method tells the DSL that you are finished chaining methods and that the command should be executed. Here is the simplest possible example:
 
 ```javascript
 command( 'version' )
@@ -12,7 +12,6 @@ command( 'version' )
 ```
 
 This runs the `version` command and the output will be flushed to the console.
-
 
 Here are all the possible DSL methods that we'll unpack below:
 
@@ -25,9 +24,9 @@ command( ... )
     .run( ... );
 ```
 
-## command()
+## command\(\)
 
-This is required to be the first method you call.  It creates an instance of the `CommandDSL` class and returns it.  It accepts a single parameter called `name` which is the name of the command you wish to run.  Type the name exactly as you would in the shell including the namespace, if applicable.  
+This is required to be the first method you call. It creates an instance of the `CommandDSL` class and returns it. It accepts a single parameter called `name` which is the name of the command you wish to run. Type the name exactly as you would in the shell including the namespace, if applicable.
 
 ```javascript
 command( 'info' )
@@ -37,10 +36,10 @@ command( 'server start' )
     .run();
 ```
 
-## params()
- 
-This method is used to pass parameters to your command.  You can pass named or positional parameters to this method, and they will be pass along to the command in the same fashion.  There is no need to escape parameter values like you would when running a command manually from the shell.
- 
+## params\(\)
+
+This method is used to pass parameters to your command. You can pass named or positional parameters to this method, and they will be pass along to the command in the same fashion. There is no need to escape parameter values like you would when running a command manually from the shell.
+
 ### Named parameters
 
 ```javascript
@@ -48,6 +47,7 @@ command( 'cp' )
     .params( path='/my/path', newPath='/my/new/path' )
     .run();
 ```
+
 ### Positional parameters
 
 ```javascript
@@ -56,9 +56,9 @@ command( 'cp' )
     .run();
 ```
 
-## flags()
+## flags\(\)
 
-Just like when running a command manually, flags are an optional shortcut for specifying boolean parameters.  Pass in each flag as a separate argument.  It is not necessary to include the `--` prior to the value, but it will still work.  
+Just like when running a command manually, flags are an optional shortcut for specifying boolean parameters. Pass in each flag as a separate argument. It is not necessary to include the `--` prior to the value, but it will still work.
 
 ```javascript
 command( "install" )
@@ -67,26 +67,25 @@ command( "install" )
     .run();
 ```
 
-## append() and overwrite()
+## append\(\) and overwrite\(\)
 
-You may redirect the output of a command to a file (normally accomplished by `>` and `>>`) by chaining the `append()` or `overwrite()` methods.  These are mutually exclusive.
-
+You may redirect the output of a command to a file \(normally accomplished by `>` and `>>`\) by chaining the `append()` or `overwrite()` methods. These are mutually exclusive.
 
 ```javascript
 command( "cat" )
     .params( "myFile.txt" )
     .append( "myOtherFile.txt" )
     .run();
-    
+
 command( "echo" )
     .params( "Your new file contents" )
     .overwrite( "myFile.txt" )
     .run();
 ```
 
-## inWorkingDirectory()
+## inWorkingDirectory\(\)
 
-Control the working directory that the command runs in if you don't want it to be the current working directory of the shell.  
+Control the working directory that the command runs in if you don't want it to be the current working directory of the shell.
 
 ```javascript
 command( "ls" )
@@ -94,9 +93,9 @@ command( "ls" )
 .run();
 ```
 
-## pipe()
+## pipe\(\)
 
-Piping is a very powerful way to combine multiple commands and is accomplished via the `pipe` method.  This method expects to receive another `CommandDSL` instance.  You do not need to call `run()` on the nested command.  This example is the equivalent to `echo "hello\nworld" | grep lo`.
+Piping is a very powerful way to combine multiple commands and is accomplished via the `pipe` method. This method expects to receive another `CommandDSL` instance. You do not need to call `run()` on the nested command. This example is the equivalent to `echo "hello\nworld" | grep lo`.
 
 ```javascript
 command( "echo" )
@@ -108,7 +107,7 @@ command( "echo" )
     .run();
 ```
 
-You can have more than one `pipe()` method.  Each piped command will be called in order, receiving the output from the previous one.
+You can have more than one `pipe()` method. Each piped command will be called in order, receiving the output from the previous one.
 
 ```javascript
 command( "cat" )
@@ -133,9 +132,9 @@ The above is the equivalent of
 cat myFile.txt | grep searchString | sed s/find/replace/g | more
 ```
 
-## run()
+## run\(\)
 
-Your DSL should always end with a `run` method. This executes the command.  By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
+Your DSL should always end with a `run` method. This executes the command. By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
 
 ```javascript
 var output = command( "echo" )
@@ -143,16 +142,17 @@ var output = command( "echo" )
       .run( returnOutput=true );
 ```
 
-If you want to help debug the exact command that is being passed along to the shell for executing, set the `echo` parameter to `true` and the command will be echoed out prior to execution.  The echoed text is not part of what gets returned or piped.
+If you want to help debug the exact command that is being passed along to the shell for executing, set the `echo` parameter to `true` and the command will be echoed out prior to execution. The echoed text is not part of what gets returned or piped.
 
 ```javascript
 command( "version" )
     .run( echo=true );
 ```
 
-You may want to manually pipe data into the command (which is the same as passing it as the first parameter.  Do so with the `piped` parameter to the `run` method.
+You may want to manually pipe data into the command \(which is the same as passing it as the first parameter. Do so with the `piped` parameter to the `run` method.
 
 ```javascript
 command( "touch" )
     .run( piped='myFile' );
 ```
+

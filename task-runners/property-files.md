@@ -1,9 +1,10 @@
-# Property files
-If you're touching Java, there's probably some property files in your future.  We've included the `PropertyFile` module in CommandBox that you can call directly from CFML.  There are also some commands so you can script the creation and updating of property files from the command line and CommandBox recipes.
+# Property Files
+
+If you're touching Java, there's probably some property files in your future. We've included the `PropertyFile` module in CommandBox that you can call directly from CFML. There are also some commands so you can script the creation and updating of property files from the command line and CommandBox recipes.
 
 ## From the CLI
 
-```
+```text
 propertyFile show foo.properties
 propertyFile set propertyFilePath=foo.properties newProp=newValue
 propertyFile clear foo.properties newProp
@@ -11,25 +12,25 @@ propertyFile clear foo.properties newProp
 
 ## From CFML
 
-```js
+```javascript
 // Create and load property file object
 propertyFile( 'myFile.properties' )
-	.set( 'my.new.property', 'my value' )
-	.store();
+    .set( 'my.new.property', 'my value' )
+    .store();
 
 // Get a property
 var value = propertyFile( 'myFile.properties' )
-	.get( 'existing.property' );
-	
+    .get( 'existing.property' );
+
 // Create one from scratch
 propertyFile()
-	.set( 'brad', 'wood' )
-	.store( 'myFile.properties' );
+    .set( 'brad', 'wood' )
+    .store( 'myFile.properties' );
 ```
 
 A `propertyFile` CFC instance can also be treated as a struct as it stores the properties in its `this` scope.
 
-```js
+```javascript
 // Create object
 var propFile = propertyFile( 'myFile.properties' );
 

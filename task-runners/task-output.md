@@ -1,14 +1,14 @@
 # Task Output
 
-Taskss aren't required to output anything, but if you do, use the handy `print` helper that lives in the `variables` scope.  You can output ANSI-formatted text this way.  All the text you output  will be stored in a "buffer" and at the end of the task it will be output to the console, or piped into the next command if necessary;  
+Taskss aren't required to output anything, but if you do, use the handy `print` helper that lives in the `variables` scope. You can output ANSI-formatted text this way. All the text you output will be stored in a "buffer" and at the end of the task it will be output to the console, or piped into the next command if necessary;
 
 ## Print Helper
 
-The print object has an unlimited number of methods you can call on it since it uses onMissingMethod.  Here are the rules.
+The print object has an unlimited number of methods you can call on it since it uses onMissingMethod. Here are the rules.
 
 ### Line Break
 
-If the method has the word "line" in it, a new line will be added to the end of the string.  If the string is empty or not provided, you'll just output a blank line.
+If the method has the word "line" in it, a new line will be added to the end of the string. If the string is empty or not provided, you'll just output a blank line.
 
 ```javascript
 print.line( 'I like Spam.' );
@@ -54,7 +54,7 @@ print.greenOnRedLine( "Christmas?" );
 
 ### Text Decoration
 
-If any of the following words appear in the method, their decoration will be added.  Note, not all of these work on all ANSI consoles.  Blink, for instance, doesn't seem to work in Windows.
+If any of the following words appear in the method, their decoration will be added. Note, not all of these work on all ANSI consoles. Blink, for instance, doesn't seem to work in Windows.
 
 * bold
 * underscored
@@ -68,8 +68,7 @@ print.boldText( "Don't make me turn this car around!" );
 print.underscoredLine( "Have I made my point?" );
 ```
 
-`indented` isn't part of the ANSI standard but rather a nice way to indent each line of output with two spaces to help clean up nested lines of output.  If the string being passed in has carriage returns, each of them will be preceded by two spaces.
-
+`indented` isn't part of the ANSI standard but rather a nice way to indent each line of output with two spaces to help clean up nested lines of output. If the string being passed in has carriage returns, each of them will be preceded by two spaces.
 
 ```javascript
 print.boldText( "Header" )
@@ -80,7 +79,7 @@ print.boldText( "Header" )
 
 ### Mix It Up
 
-Any combination of the above is possible.  Filler words like "text" will simply be ignored so you can make your method nice and readable.  Get creative, but just don't overdo it.  No one wants their console to look like a rainbow puked on it.
+Any combination of the above is possible. Filler words like "text" will simply be ignored so you can make your method nice and readable. Get creative, but just don't overdo it. No one wants their console to look like a rainbow puked on it.
 
 ```javascript
 print.redOnWhiteLine( 'Ready the cannons!' );
@@ -90,7 +89,7 @@ print.boldBlinkingUnderscoredBlueTextOnRedBackground( "That's just cruel" );
 
 ### Dynamic Formatting
 
-Some times you want to apply formatting at run time.  For instance, show a status green if it's good and red if it's bad.  You can pass a second string to the print helper with additional formatting that will be appended to the method name.
+Some times you want to apply formatting at run time. For instance, show a status green if it's good and red if it's bad. You can pass a second string to the print helper with additional formatting that will be appended to the method name.
 
 ```javascript
 print.text( status, ( status == 'running' ? 'green' : 'red' ) );
@@ -105,8 +104,7 @@ print.redText( status );
 
 ### Flush
 
-If you have a task that takes a while to complete and you want to update the user right away, you can flush out everything in the buffer to the console with the .toConsole() method.  Note, any text flushed to the console cannot be piped to another command.
-
+If you have a task that takes a while to complete and you want to update the user right away, you can flush out everything in the buffer to the console with the .toConsole\(\) method. Note, any text flushed to the console cannot be piped to another command.
 
 ```javascript
 print.Line( 'Step 1 complete' ).toConsole();
@@ -120,14 +118,8 @@ All the methods in the `print` object can be chained together to clean up your c
 
 ```javascript
 print.whiteOnRedLine( 'ERROR' )
-	.line()
-	.redLine( message )
-	.line();
-
+    .line()
+    .redLine( message )
+    .line();
 ```
-
-
-
-
-
 

@@ -1,18 +1,23 @@
-# Task Runner Anatomy
+# Task Anatomy
 
-In the previous section, we built our first task and executed it.  Let's take a look at how the simple conventions work for task runners.
+In the previous section, we built our first task and executed it. Let's take a look at how the simple conventions work for task runners.
 
 ## Default conventions
-The `task run` command will look for a default task name of `task.cfc` in the current working directory. The default target (or method) is called `run`. Therefore, when you run
-```
+
+The `task run` command will look for a default task name of `task.cfc` in the current working directory. The default target \(or method\) is called `run`. Therefore, when you run
+
+```text
 task run
 ```
+
 you will execute the `run()` method of `./task.cfc` relative to your current working directory.
 
 ## Take you to task
-A task is just a CFC file.  The task CFCs will extend the `commandbox.system.BaseTask` class, but it isn't necessary for your to extend it manually.  CommandBox will add in virtual inheritance for you.  The task CFCs can live wherever you want in your project (or outside of it!) and can have any name you wish.  Since tasks are not scanned and registered by CommandBox, but rather created on-the-fly by convention, you don't have to worry about more than one task in different projects with the same name.  That means, each of your projects can have a `workbench/build.cfc` task runner and they won't collide.  When you run the task, the correct CFC will be located based on your current working directory.  Therefore, tasks are not "global" like commands, but rather in the context of a given project or folder.
+
+A task is just a CFC file. The task CFCs will extend the `commandbox.system.BaseTask` class, but it isn't necessary for your to extend it manually. CommandBox will add in virtual inheritance for you. The task CFCs can live wherever you want in your project \(or outside of it!\) and can have any name you wish. Since tasks are not scanned and registered by CommandBox, but rather created on-the-fly by convention, you don't have to worry about more than one task in different projects with the same name. That means, each of your projects can have a `workbench/build.cfc` task runner and they won't collide. When you run the task, the correct CFC will be located based on your current working directory. Therefore, tasks are not "global" like commands, but rather in the context of a given project or folder.
 
 **myTaskName.cfc**
+
 ```javascript
 component {
   function run() {
@@ -21,37 +26,39 @@ component {
 }
 ```
 
-To call the above task, we'd reference the path to where the CFC lives.  It isn't necessary to include the `.cfc` part of the name, though we'll forgive you if you do!
-```
+To call the above task, we'd reference the path to where the CFC lives. It isn't necessary to include the `.cfc` part of the name, though we'll forgive you if you do!
+
+```text
 task run path/to/myTaskName
 ```
 
 ## Hit the target
-You can have as many targets in your task as you wish, by simply declaring public methods.  A task can have no parameters or as many as you like.  Default argument values will be used as well.  It's just a method execution, but from the command line!
+
+You can have as many targets in your task as you wish, by simply declaring public methods. A task can have no parameters or as many as you like. Default argument values will be used as well. It's just a method execution, but from the command line!
 
 **build.cfc**
-```javascript
 
+```javascript
 component {
 
   function createZips() {
     print.line( 'Zips created!' );
   }
-  
+
   function compileAssets(){
     print.line( 'Assets Compiled!' );
   }
-  
+
   function minimizeJS(){
     print.line( 'JS Minimized!' );
   }
-  
+
 }
 ```
 
 To run each of the targets above, you'd type this:
 
-```
+```text
 task run build createZips
 task run build compileAssets
 task run build minimzeJS
@@ -59,7 +66,7 @@ task run build minimzeJS
 
 ## WireBox DI
 
-All CFCs including tasks are created and wired via WireBox, so dependency injection and AOP are available to them.  This can be handy for tasks to wrap services provided by models, or to access utilities and services inside CommandBox.
+All CFCs including tasks are created and wired via WireBox, so dependency injection and AOP are available to them. This can be handy for tasks to wrap services provided by models, or to access utilities and services inside CommandBox.
 
 This task would inject CommandBox's ArtifactService to list out all the packages being stored.
 
@@ -67,14 +74,14 @@ This task would inject CommandBox's ArtifactService to list out all the packages
 component {
 
     property name='artifactService' inject='artifactService'; 
-	
+
     function run(){
         var results = artifactService.listArtifacts();
-		for( var package in results ) {
-			print.boldCyanLine( package );
-		}
+        for( var package in results ) {
+            print.boldCyanLine( package );
+        }
     }
-    
+
 }
 ```
 
@@ -83,6 +90,4 @@ Tasks also have a `variables.wirebox` variable as well as their own `getInstance
 ```javascript
 var results = getInstance( 'artifactService' ).listArtifacts();
 ```
-
-
 

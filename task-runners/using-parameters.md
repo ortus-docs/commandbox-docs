@@ -6,7 +6,7 @@ If the parameters were escaped when typed into the command line, you will receiv
 
 ## Dynamic Parameters
 
-Users can pass named or positional parameters that aren't declared, and they will come through the `arguments` scope.  Named parameters will be accessable as `arguments.name`, and positional parameters as `arguments[ 1 ]`, `arguments.[ 2 ]`, etc.  
+Users can pass named or positional parameters that aren't declared, and they will come through the `arguments` scope. Named parameters will be accessable as `arguments.name`, and positional parameters as `arguments[ 1 ]`, `arguments.[ 2 ]`, etc.
 
 ```bash
 task run :foo=bar :baz=bum
@@ -19,11 +19,11 @@ If your task accepts a file or folder path from the user, you'll want to resolve
 ```javascript
 component {
 
-	function run( String directory )  {
-		// This will make each directory canonical and absolute
-		directory = fileSystemUtil.resolvePath( directory );
-		print.line( directory );
-	}
+    function run( String directory )  {
+        // This will make each directory canonical and absolute
+        directory = fileSystemUtil.resolvePath( directory );
+        print.line( directory );
+    }
 }
 ```
 
