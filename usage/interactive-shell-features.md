@@ -8,6 +8,8 @@ Pressing Ctrl-C will send an interrupt signal to the terminal which will end any
 
 Pressing Ctrl-D from a prompt sends an OEF signal and will exit out of the shell entirely, just like if you had run the `exit` command.
 
+History Search
+
 
 
 

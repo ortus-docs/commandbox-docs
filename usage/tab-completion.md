@@ -114,3 +114,11 @@ type=mvc                     type=modules                 type=interceptors
 type=demos                   type=plugins                 type=wirebox-aspects
 ```
 
+## REPL
+
+When writing code inside the REPL, you can also press tab to get completion on 
+
+* CFML function names
+* Member function names like `.append()`
+* Variable names you have created as part of your REPL session
+
