@@ -80,7 +80,37 @@ if( confirm( 'Do you like Pizza? [y/n]' ) ) {
 }
 ```
 
-## Force
+## Multiselect input
+
+Sometimes you want to collect input from the user that is constrained to a limited number of predefined options.  You could have them enter via `ask()` as freetext, but  that is more prone to errors.  This is where the Multiselect input control comes in handy.   It blocks just like the ask command until the user responds but allows the user to interact with it via their keyboard.  Think of it like radio buttons or checkboxes.  If you configure it to only allow a single response \(radio buttons\) then a string will come back containing the answer.  If you configure it to allow multiple selections, you will receive an array of responses back, even if there was only one selection made. 
+
+Here is a simple example that uses a comma-delimited list to define the options.
+
+```text
+var color =  multiselect()
+    .setQuestion( 'What is your favorite color? ' )
+    .setOptions( 'Red,Green,Blue' )
+    .ask();
+```
+
+Here is another example that defines the options in an array.  This allows you to have different text on screen from what gets returned in the response.  This sets multiple responses on so an array will come back.  This also sets the input as required so the user will be required to select at least one option.
+
+```text
+var colorArray =  multiselect()
+    .setQuestion( 'What is your favorite color? ' )
+    .setOptions( [
+        { display='Red', value='r', selected=true },
+        { display='Green', value='g' },
+        { display='Blue', value='b' }
+    ] )
+    .setMultiple( true )
+    .setRequired( true )
+    .ask();
+```
+
+Notice how the "red" option is set as selected by default.  Even though the colors will show up as "Red", "Green", and "Blue, the values will come back in the array as "r", "g" and "b" in the array.  
+
+##  Force
 
 Remember that while interactivity is cool, people might want to automate your tasks as part of a script that runs headlessly. Therefore you should always provide a way to skip prompts if possible.
 
