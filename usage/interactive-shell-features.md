@@ -8,9 +8,9 @@ Pressing Ctrl-C will send an interrupt signal to the terminal which will end any
 
 Pressing Ctrl-D from a prompt sends an OEF signal and will exit out of the shell entirely, just like if you had run the `exit` command.
 
-History Search
+## History Search
 
 
 
-
+CommandBox allows you to re-run items from your command and/or REPL history by pressing the up arrow  to cycle through previous commands.  You  can type a partial command  like `cd` and then hit up arrow and the history items will be filtered to items starting with that.  You can also use what's commonly known as `i-search` 
 
