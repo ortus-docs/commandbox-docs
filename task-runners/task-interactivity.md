@@ -32,14 +32,43 @@ response = ask( message='Enter installation Directory: ', defaultResponse='/etc/
 
 ## waitForKey\(\)
 
-If you just need a single character collected from a user, or perhaps any keystroke at all, use the `waitForKey()` method. A message must be supplied that lets the user know what you need. The **ASCII code** representing the character they enter will be returned in a string variable.
+If you just need a single character collected from a user, or perhaps any keystroke at all, use the `waitForKey()` method. A message must be supplied that lets the user know what you need. This method  can capture a single standard character and also has some special \(multi-char\) return values that represent special key presses.  
 
 ```javascript
-var ASCIICode = waitForKey( 'Press any key, any key.' );
-print.line().line( 'My magic tells me you pressed: #Chr( ASCIICode )#' );
+var keyPress = waitForKey( 'Press any key, any key.' );
+print
+  .line()
+  .line( 'My magic tells me you pressed: #keyPress#' );
 ```
 
-> **Note** It is a known behavior that multi-byte characters such as the up arrow will only return the first byte which kind of makes them useless. We have [logged a bug](https://github.com/jline/jline2/issues/152) in the Java project that handles the low-level shell.
+If the return is not a single character, it will be one of the following special strings:
+
+* key\_left   - Left arrow
+* key\_right -   Right arrow
+* key\_up   - Up arrow
+* key\_down   - Down arrow
+* back\_tab   - Shift-tab.  \(Regular tab will come through as a normal tab char\)
+* key\_home   - Home key
+* key\_end   - End end
+* key\_dc   - Delete
+* key\_ic   - Insert key
+* key\_npage -   Page down
+* key\_ppage   - Page up
+* key\_f1   - F1 key
+* key\_f2   - F2 key
+* key\_f3   - F3 key
+* key\_f4   - F4 key
+* key\_f5   - F5 key
+* key\_f6   - F6 key
+* key\_f7   - F7 key
+* key\_f8   - F8 key
+* key\_f9   - F9 key
+* key\_f10 -   F10 key
+* key\_f11   - F11 key
+* key\_f12   - F12 key
+* esc   - Escape key
+
+
 
 ## confirm\(\)
 
