@@ -10,7 +10,7 @@ If you want to execute a native binary from inside the interactive shell or as p
 
 Execute an operation system level command using the native shell. For Windows users, `cmd.exe` is used. For Unix, `/bin/bash` is used. Command will wait for the OS command to finish.
 
-The binary must be in the PATH, or you can specify the full path to it. This cannot be used for any commands that require interactivity or don't exit automatically or the call will hang indefinitely.
+The binary must be in the PATH, or you can specify the full path to it. Your keyboard will pass through to the standard input stream of the process if it blocks for input and the standard output and error streams of the process will be bound to your terminal so you see output as soon as it is flushed by the process.
 
 ```bash
 run myApp.exe
@@ -19,7 +19,7 @@ run /path/to/myApp
 
 ## !binary
 
-A shortcut for running OS binaries is to prefix the binary with `!`. In this mode, any other params need to be positional. There is no CommandBox parsing applied to the command's arguments. They are passed straight to the native shell.
+A shortcut for running OS binaries is to prefix the binary with `!`. In this mode, any other params need to be positional. There is no CommandBox parsing applied to the command's arguments. They are passed straight to the native shell.  As such, you don't need to escape any of the parameters for CommandBox when using this syntax.
 
 ```bash
 !myApp.exe
