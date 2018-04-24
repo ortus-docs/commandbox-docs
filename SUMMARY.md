@@ -33,6 +33,7 @@
   * [Tab Completion](usage/tab-completion.md)
   * [Interactive Shell Features](usage/interactive-shell-features.md)
   * [Auto Update Checks](usage/auto-update-checks.md)
+  * [Bullet Train Prompt](usage/bullet-train-prompt.md)
 * [IDE Integrations](ide-integrations/README.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
   * [Visual Studio Code](ide-integrations/visual-studio-code.md)
