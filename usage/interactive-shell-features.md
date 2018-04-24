@@ -1,15 +1,14 @@
 # Interactive Shell Features
 
-When you run \`box\` without any parameters, you get the CommandBox interactive shell.
+When you run `box` without any parameters, you get the CommandBox interactive shell.  We use a library called JLine for this interaction and it has a number of bash-like behaviors to make you more productive.  CommandBox also bundles several bash-like commands to give you a consistent shell regardless of whether you're on Windows or Linux.
 
-## 
+## Ctrl-C & Ctrl-D
 
-Ctrl-C
+Pressing Ctrl-C will send an interrupt signal to the terminal which will end any currently executing command and exit you back to the shell's prompt.  Pressing Ctrl-C if you're already at the prompt won't do anything at all.
 
-Each OS tends to handle things a bit differently, but as of CommandBox 3.4.0, there is better support for capturing Ctrl-C from the user, especially on Windows.
+Pressing Ctrl-D from a prompt sends an OEF signal and will exit out of the shell entirely, just like if you had run the `exit` command.
 
-* If a command is waiting on user input, the command will exit and go back to the shell
-* If CommandBox is sitting at the interactive shell, the process will quit 
+
 
 
 

@@ -4,6 +4,8 @@ One of the most productive features of the shell is tab completion. This means y
 
 When "tab" is pressed, the text you've entered so far is run through the CommandBox command parser to see if it can match a namespace, command, or parameters. If you press tab at an empty prompt, all top level commands and namespaces will display. Since tab completion is run through the standard command parser, that means it works on command aliases as well.
 
+The tab completion options are broken up into groups to visualize the commands, parameters, flags, etc.  As you type, the list of available options will auto-filter for you.  You can keep hitting tab to toggle through the available options and you can press enter to select the one you want.
+
 ## Commands
 
 If your text matches only command, namespace, or alias, it will be auto-filled in for you. For instance, if you type the following and press tab...
@@ -22,9 +24,12 @@ If you then press tab again, you will be presented with a list of second-level n
 
 ```text
 CommandBox> coldbox
-war test-watch notes create reinit module compile help
-stats test-directory interceptor test report integrate
-CommandBox> coldbox
+
+Commands
+  help
+  reinit  (This command will reinitialize a running ColdBox application if a server was started with CommandBox)
+Namespaces
+  create
 ```
 
 ## Parameters
@@ -35,7 +40,12 @@ Here is CommandBox giving every option possible for the [delete](http://apidocs.
 
 ```text
 CommandBox> delete
-path= force= --force recurse= --recurse
+
+Flags
+  --force     (Force deletion without asking)    --recurse   (Delete sub directories)
+Parameters
+  path=        (file or directory to delete.)    recurse=    (Delete sub directories)
+  force=      (Force deletion without asking)
 ```
 
 ### Named
@@ -44,8 +54,11 @@ If you have started typing named parameters, CommandBox will only suggest unused
 
 ```text
 CommandBox> delete path=myDir force=true
- recurse= --recurse
-CommandBox> delete path=myDir force=true
+
+Flags
+  --recurse  (Delete sub directories)
+Parameters
+  recurse=   (Delete sub directories)
 ```
 
 If you are using named parameters, and you have typed the name of a parameter followed by an equals sign and no space, CommandBox will attempt to prompt valid values. This includes but is not limited to booleans and file system paths.
@@ -54,18 +67,20 @@ Here, **true** and **false** are offered as possible values for the **force** pa
 
 ```text
 CommandBox> delete path=myDir force=
-true false
-CommandBox> delete path=myDir force=
+
+Values
+  force=true     force=false
 ```
 
 Here, all files and folders in the current working directory are offered as possibilities for the **path** parameter of the [delete](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/delete.html) command.
 
 ```text
 CommandBox> delete path=
-.project Application.cfc box.json coldbox/ config/ favicon.ico handlers/ includes/
-index.cfm interceptors/ layouts/ lib/ model/ modules/ remote/ robots.txt
-tests/ views/
-CommandBox> delete path=
+
+Directories
+  path=tests/       path=models/      path=coldbox/     path=modules/
+Files
+  path=box.json     path=index.cfm    path=server.json
 ```
 
 ### Positional
@@ -78,8 +93,9 @@ Tab completion will always work for flags if your command has any boolean parame
 
 ```text
 CommandBox> delete myDir --
---force --recurse
-CommandBox> delete myDir --
+
+Flags
+  --force  (Force deletion without asking)   --recurse   (Delete sub directories)
 ```
 
 ### Custom
@@ -90,10 +106,11 @@ Here the [forgebox show](http://apidocs.ortussolutions.com/commandbox/current/in
 
 ```text
 CommandBox> forgebox show type=
-caching cfbuilder-extensions cms commandbox-commands commandbox-recipes contentbox-layouts
-contentbox-modules contentbox-widgets di interceptors logging models
-modules mvc plugins projects testing wirebox-aspects
-wirebox-listeners
-CommandBox> forgebox show type=
+
+Values
+type=di                      type=caching                 type=projects
+type=cms                     type=logging                 type=cf-engines
+type=mvc                     type=modules                 type=interceptors
+type=demos                   type=plugins                 type=wirebox-aspects
 ```
 
