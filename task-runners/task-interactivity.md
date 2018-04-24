@@ -110,6 +110,19 @@ var colorArray =  multiselect()
 
 Notice how the "red" option is set as selected by default.  Even though the colors will show up as "Red", "Green", and "Blue, the values will come back in the array as "r", "g" and "b" in the array.  
 
+Display and value are both both required in the array of options above.  If you provide at least one of the two, the other will default to the same.  A keyboard shortcut will be created for each option which defaults to the first character of the display.  So for instance, pressing "R" on your keyboard will select the Red option. Pressing "G" will select Green, etc.  You can override the shortcut with an `accessKey` setting in the struct.  
+
+```text
+var response = multiselect()
+	.setQuestion( 'What place would you like? ' )
+	.setOptions( [
+		{ value='First', accessKey=1 },
+		{ value='Second', accessKey=2 },
+		{ value='Third', accessKey=3 }
+	] )
+	.ask();
+```
+
 ##  Force
 
 Remember that while interactivity is cool, people might want to automate your tasks as part of a script that runs headlessly. Therefore you should always provide a way to skip prompts if possible.
