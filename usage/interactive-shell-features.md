@@ -1,12 +1,6 @@
----
-description: >-
-  When you run `box` without any parameters, you get the CommandBox interactive
-  shell.
----
-
 # Interactive Shell Features
 
-
+When you run \`box\` without any parameters, you get the CommandBox interactive shell.
 
 ## 
 
