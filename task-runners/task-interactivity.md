@@ -86,7 +86,7 @@ Sometimes you want to collect input from the user that is constrained to a limit
 
 Here is a simple example that uses a comma-delimited list to define the options.
 
-```text
+```javascript
 var color =  multiselect()
     .setQuestion( 'What is your favorite color? ' )
     .setOptions( 'Red,Green,Blue' )
@@ -95,7 +95,7 @@ var color =  multiselect()
 
 Here is another example that defines the options in an array.  This allows you to have different text on screen from what gets returned in the response.  This sets multiple responses on so an array will come back.  This also sets the input as required so the user will be required to select at least one option.
 
-```text
+```javascript
 var colorArray =  multiselect()
     .setQuestion( 'What is your favorite color? ' )
     .setOptions( [
@@ -112,7 +112,7 @@ Notice how the "red" option is set as selected by default.  Even though the colo
 
 Display and value are both both required in the array of options above.  If you provide at least one of the two, the other will default to the same.  A keyboard shortcut will be created for each option which defaults to the first character of the display.  So for instance, pressing "R" on your keyboard will select the Red option. Pressing "G" will select Green, etc.  You can override the shortcut with an `accessKey` setting in the struct.  
 
-```text
+```javascript
 var response = multiselect()
 	.setQuestion( 'What place would you like? ' )
 	.setOptions( [
