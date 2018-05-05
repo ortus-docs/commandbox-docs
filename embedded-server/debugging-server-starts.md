@@ -1,6 +1,6 @@
 # Debugging Server Starts
 
-If a server isn't starting, the first thing to run is the `server log` command. It will show you the console log for that server.
+If a server isn't starting, the first thing to run is the `server log` command. It will show you the console log for that server.  Note, this dumps the entire log file to the console, which may be very large.  We recommend using the `tail` or `--follow`  tricks below.
 
 ```text
 server log
@@ -20,6 +20,13 @@ To get a live stream of the console log from a running server, use the `--follow
 
 ```text
 server log --follow
+```
+
+You can also look at your server's access log \(if enabled\) and rewrite log \(if enabled\).  
+
+```text
+server log --follow -access
+server log --follow --rewrite
 ```
 
 ## Start server in console mode
