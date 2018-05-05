@@ -34,6 +34,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "host": "127.0.0.1",
         "webroot": "src/cfml",
         "directoryBrowsing": true,
+        "accessLogEnable": true,
         "aliases": {
             "/foo": "../bar",
             "/js": "C:/static/shared/javascript"
@@ -61,6 +62,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
         },
         "rewrites": {
             "enable": true,
+            "logEnable": true,
             "config": "/path/to/config.xml",
             "statusPath": "/rewriteStatus",
             "configReloadSeconds": 60
@@ -82,7 +84,9 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "WARPath": "",
         "cfengine": "lucee@5.x",
         "restMappings": "/rest/*,/api/*",
-        "serverHomeDirectory": ""
+        "serverHomeDirectory": "",
+        "sessionCookieSecure": true,
+        "sessionCookieHTTPOnly": true
     },
     "runwar": {
         "args": ""
