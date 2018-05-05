@@ -50,6 +50,7 @@
   * [Server Processes](embedded-server/server-processes.md)
   * [Manage Servers](embedded-server/manage-servers.md)
   * [FusionReactor](embedded-server/fusionreactor.md)
+  * [Server Logs](embedded-server/server-logs.md)
   * [Configuring Your Server](embedded-server/configuring-your-server/README.md)
     * [JVM Args](embedded-server/configuring-your-server/jvm-args.md)
     * [Server Port and Host](embedded-server/configuring-your-server/server-port-and-host.md)
