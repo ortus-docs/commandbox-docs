@@ -121,5 +121,5 @@ server log --follow --rewrites
 server log myServername --follow --rewrites
 ```
 
-Your rewrites log will be auto-rotated every day.  The amount of information that appears in the rewrites log will be affected by the `--debug` and `--trace` flags when you start the server.  
+Your rewrites log will be auto-rotated every 10MB.  The amount of information that appears in the rewrites log will be affected by the `--debug` and `--trace` flags when you start the server.  
 
