@@ -56,6 +56,8 @@ Announced as a server is starting after the configuration values have been resol
   * `runwarArgs` - Additional Runwar options to use when starting the server
   * `logdir` - Path to directory for server logs
   * `welcomeFiles` - List of welcome files
+* `serverDetails` - Same as `onServerStart` above
+* `installDetails` - Same as `onInstall` below
 
 ## onServerInstall
 
