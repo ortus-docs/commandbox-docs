@@ -21,6 +21,15 @@ package set testbox.runner="http://localhost:8080/tests/runner.cfm"
 testbox run
 ```
 
+You can also use a relative path and CommandBox will look up the host and port from your server settings.  
+
+```text
+package set testbox.runner="/tests/runner.cfm"
+testbox run
+```
+
+The default runner URL of the `testbox run` command is  `/tests/runner.cfm` so there's actually no need to even configure it if you're using the default convention location for your runner.
+
 ### Additional Settings
 
 There are a number of settings you can provide to the `testbox run` command to control exactly what tests run and how much output is included. Each of these can also be set in your box.json. Run this for more information.
