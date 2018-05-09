@@ -156,3 +156,23 @@ command( "touch" )
     .run( piped='myFile' );
 ```
 
+If you try to pass a shell expansion into a command, it won't work since the CommandDSL escapes all your special characters.  This example doesn't work because the special characters are escaped. So the exact text is printed out and it's not possible to have it evaluated.
+
+```javascript
+command( 'echo' )
+  .params( '${ os.name }' )
+  .run();
+------------------------------------------
+Output: ${ os.name }
+```
+
+You can ask the CommandDSL to treat your parameters as 'raw' so they are just passed along. This allows them to include system setting expansions and CommandBox backtick expressions.  Make sure that you escape any special chars yourself in this mode just like you would if typing the parameters from the shell.
+
+```javascript
+command( 'echo' )
+  .params( '${ os.name }' )
+  .run( rawParams=true );
+------------------------------------------
+Output: Windows 7
+```
+

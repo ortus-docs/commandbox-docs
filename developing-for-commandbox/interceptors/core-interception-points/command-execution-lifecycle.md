@@ -44,6 +44,10 @@ echo `package show name`
 
 `preProcessLine` will fire only once for the above command after the user hits enter but before anything is processed.
 
+**interceptData**
+
+* `line` - A string representing the line typed into the shell.  Changing the contents of this string will override what actually gets executed.
+
 ## postProcessLine
 
 Pre and post command fire before and after each command, but that means they fire twice for something like:
@@ -52,5 +56,9 @@ Pre and post command fire before and after each command, but that means they fir
 echo `package show name`
 ```
 
-`postProcessLine` will fire only once for the above command after the entire line has been executed.
+`postProcessLine` will fire only once for the above command after the entire line has been executed.  Any output is already sent to the console by the time this interception point fires.
+
+**interceptData**
+
+* `line` - A string representing the line that was just executed in the shell. 
 
