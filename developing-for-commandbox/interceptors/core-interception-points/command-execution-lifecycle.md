@@ -26,3 +26,31 @@ Announced immediately after command execution is complete. If more than one comm
 * `parameterInfo` - Same as `preCommand` above
 * `results` - A string that represents any output from the command that hasn't already been flushed to the console.
 
+## prePrompt
+
+Announced prior to drawing the prompt in the interactive shell.  This interception point can be used to customize the text of the prompt by modifying the `prompt` variable in intercept data which is an ANSI-formatted string to be output before the cursor.
+
+**interceptData**
+
+* `prompt` - An ANSI-formatted string containing the prompt text.  Replacing this value will override the prompt.
+
+## preProcessLine
+
+Pre and post command fire before and after each command, but that means they fire twice for something like:
+
+```text
+echo `package show name`
+```
+
+`preProcessLine` will fire only once for the above command after the user hits enter but before anything is processed.
+
+## postProcessLine
+
+Pre and post command fire before and after each command, but that means they fire twice for something like:
+
+```text
+echo `package show name`
+```
+
+`postProcessLine` will fire only once for the above command after the entire line has been executed.
+
