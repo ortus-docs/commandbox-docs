@@ -114,6 +114,7 @@
     * [Token Replacements](task-runners/helpful-commands/token-replacements.md)
     * [Checksums](task-runners/helpful-commands/checksums.md)
     * [Code Quality Tools](task-runners/helpful-commands/code-quality-tools.md)
+  * [Running other Tasks](task-runners/running-other-tasks.md)
 * [Deploying CommandBox](deploying-commandbox/README.md)
   * [Docker](deploying-commandbox/docker.md)
   * [Heroku](deploying-commandbox/heroku.md)
