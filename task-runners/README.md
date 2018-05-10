@@ -9,16 +9,24 @@ A task is defined as a CFC and can have one or more "targets", which are declare
 Let's look at how easy it is to write your first task:
 
 ```text
-CommandBox> touch task.cfc --open
+CommandBox> task create --open
 ```
 
-Now, place the following code in your file:
+That will open the following new file in your default CFML IDE:
 
 ```javascript
+/**
+* Description of task
+*/
 component {
-  function run() {
-    print.greenLine( 'This is my first task!' );
-  }
+
+	/**
+	* 
+	*/
+	function run() {
+		print.greenLine( 'Complete!' );
+	}
+
 }
 ```
 
@@ -26,7 +34,7 @@ Aaaaand, now we run it!
 
 ```text
 CommandBox> task run
-This is my first task!
+Complete!
 ```
 
 That's it! The code in your `run()` method will be executed and has access to all the goodies that custom commands get like the `print` helper for easy ANSI formatting. Check out task run help for additional information on how to call a task CFC of another name, how to invoke another target method, and how to pass parameters to your tasks.

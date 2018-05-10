@@ -146,6 +146,7 @@
     * [Running Other Commands](developing-for-commandbox/commands/running-other-commands.md)
     * [Error handling](developing-for-commandbox/commands/error-handling.md)
     * [Watchers](developing-for-commandbox/commands/watchers-1.md)
+    * [Loading Ad hoc Jars](developing-for-commandbox/commands/loading-ad-hoc-jars.md)
   * [Interceptors](developing-for-commandbox/interceptors/README.md)
     * [Core Interception Points](developing-for-commandbox/interceptors/core-interception-points/README.md)
       * [CLI Lifecycle](developing-for-commandbox/interceptors/core-interception-points/cli-lifecycle.md)
