@@ -34,6 +34,7 @@
   * [Interactive Shell Features](usage/interactive-shell-features.md)
   * [Auto Update Checks](usage/auto-update-checks.md)
   * [Bullet Train Prompt](usage/bullet-train-prompt.md)
+  * [256 Color Support](usage/256-color-support.md)
 * [IDE Integrations](ide-integrations/README.md)
   * [Sublime Text](ide-integrations/sublime-text.md)
   * [Visual Studio Code](ide-integrations/visual-studio-code.md)
