@@ -117,6 +117,7 @@
     * [Code Quality Tools](task-runners/helpful-commands/code-quality-tools.md)
   * [Running other Tasks](task-runners/running-other-tasks.md)
   * [Loading Ad hoc Jars](task-runners/loading-ad-hoc-jars.md)
+  * [Interactive Jobs](task-runners/interactive-jobs.md)
 * [Deploying CommandBox](deploying-commandbox/README.md)
   * [Docker](deploying-commandbox/docker.md)
   * [Heroku](deploying-commandbox/heroku.md)
