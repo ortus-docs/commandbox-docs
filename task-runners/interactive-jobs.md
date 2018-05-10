@@ -22,6 +22,10 @@ job.complete();
 
 The log messages will show up in the order they appear, but once you complete the job, the log messages are hidden and only a single, green line shows to represented the completed job regardless of how many steps it had in the meantime.  Do not output normal text with the `print` helper if possible.  Once you've started the job, use the `job.addLog()` calls.
 
+The final output of the above code would be this green text:
+
+![](../.gitbook/assets/image%20%283%29.png)
+
 ## Log Messages
 
 You can log the individual steps of your job for instant user feedback:
@@ -70,7 +74,66 @@ The `job.error()` method can take an optional message to describe what happened 
 
 If you want to have a verbose mode in your task that dumps out all the log messages at the end you can do that by passing `dumpLog` as true in your `job.complete()` or `job.error()` calls.  This is great for debugging tasks that ran on a CI server. This dumps ALL logging lines regardless of what your `logSize` was set to.  `logSize` is only used for the interactive output during execution to keep things clean.
 
-```text
+```javascript
 job.complete( dumpLog=true );
 ```
+
+## Nesting Jobs
+
+Ok, so here is where it really gets cool.  Let's say you have a Task Runner that starts a server, which in turn installs a new Adobe CF engine.  That's 3 jobs all nested inside of each other.  You can call job.start\(\) at any time, and the Interactive Job handler will keep a call stack of what's going on.  Log messages always get added to the last job to be started.   \(Last In, First Out\)
+
+```javascript
+job.start( 'Starting server' );
+  job.addLog( 'This is the server name' );
+  job.addWarnLog( 'Hey, don''t touch that dial' );
+
+    job.start( 'Installing CF Engine first' );
+      job.addLog( 'This was the version used' );
+      job.addLog( 'Yeah, we''re done' );
+    job.complete();
+
+  job.addLog( 'Aaand, we''re back!.' );
+  job.addErrorLog( 'I think we''re going to crash' );
+
+job.error( 'Didn''t see that coming' );
+```
+
+The output of this is:
+
+![](../.gitbook/assets/image%20%284%29.png)
+
+Here we have two nested jobs.   The first two lines would be red representing the outer failed job and it's failure message.  The 3rd indented line would be green representing the nested job that completed successfully.  
+
+And if we add `dumpLog` to each job, what do we get?
+
+![](../.gitbook/assets/image%20%282%29.png)
+
+## Other Considerations
+
+Interactive jobs are fully compatible with progressable downloaders as well as the multi-select input control.  Any progress bars will display at the bottom of the job output and disappear when complete.  
+
+If for some reason you need to call an external process that outputs text that you can't control and funnel through a job or you need to stop and ask the user a question with the `ask()` function, you can temporarily clear out output from all current jobs.
+
+```javascript
+job.clear();
+```
+
+All the output will come back the next time you call a job method.
+
+Check if there is currently a job running like so:
+
+```javascript
+if( job.isActive() ) {
+}
+```
+
+If there are several nested jobs currently running and something catastrophic happens and you just want to mark all the in progress ones as errors without necessarily knowing how many are still currently running you can do this:
+
+```javascript
+job.errorRemaining( 'That escalated quickly!' );
+```
+
+This can be handy to call from some high level error handling that can catch errors from tasks/commands/functions several layers deep.  It's basically your escape hatch.
+
+
 
