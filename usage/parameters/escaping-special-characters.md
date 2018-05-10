@@ -52,19 +52,13 @@ echo "2+2=4"
 
 ## Line Breaks
 
-A new line can be specified with the text `\n`. Keep in mind, some parameters might not expect new lines to exist and could error.
+Line breaks can't be escaped directly as of Commandbox 4.0.  Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter.  To enter a line feed, press Ctrl-V followed by Ctrl-J.
 
-```bash
-package set description="first line\nSecond Line\nThird Line"
-```
+On ConEMU, which performs a paste operation with Ctrl-V, use Ctrl-Shift-V instead.
 
 ## Tabs
 
-A tab character can be specified with the text `\t`.
-
-```bash
-echo "Brad\tWood"
-```
+A tab character can't be escaped directly as of CommandBox 4.0.  Instead, most terminals let you enter a tab char by pressing Ctrl-V followed by tab.  In ConEMU which allows pasting via Ctrl-V, you can use Ctrl-Shift-V and then press tab.
 
 ## Backslash
 
