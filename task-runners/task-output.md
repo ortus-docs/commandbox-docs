@@ -1,6 +1,6 @@
 # Task Output
 
-Taskss aren't required to output anything, but if you do, use the handy `print` helper that lives in the `variables` scope. You can output ANSI-formatted text this way. All the text you output will be stored in a "buffer" and at the end of the task it will be output to the console, or piped into the next command if necessary;
+Tasks aren't required to output anything, but if you do, use the handy `print` helper that lives in the `variables` scope. You can output ANSI-formatted text this way. All the text you output will be stored in a "buffer" and at the end of the task it will be output to the console, or piped into the next command if necessary;
 
 ## Print Helper
 
@@ -17,16 +17,24 @@ print.line();
 
 ### Text Color
 
-If the method has one of the 8 ANSI colors in it, the text will be colored.
+CommandBox supports 256 colors, but some terminals only support 16 or even 8.  If you use a color that the terminal doesn't support, it will be adjusted to the next closest color.  If the method has one of the names of a supported color in it, the text will be colored.  Here are the basic 16 color names:
 
-* black
-* red
-* green
-* yellow
-* blue
-* magenta
-* cyan
-* white
+* Black
+* Maroon
+* Green
+* Olive
+* Navy
+* Magenta
+* Cyan
+* Silver
+* Grey
+* Red
+* Lime
+* Yellow
+* Blue
+* Fuchsia
+* Aqua
+* White
 
 ```javascript
 print.magenta( 'I sound like a toner cartridge' );
@@ -34,9 +42,15 @@ print.greenText( "You wouldn't like me when I'm angry" );
 print.somethingBlue( 'UHF ' );
 ```
 
+To view all the color names run the `system-colors` command.
+
+```text
+print.MistyRose3( 'Fancy colors' );
+```
+
 ### Background Color
 
-If the method has one of the 8 ANSI colors preceded by the word "on", the background of the text will be that color.
+If the method has a valid color name preceded by the word "on", the background of the text will be that color.
 
 * onBlack
 * onRed
@@ -46,10 +60,19 @@ If the method has one of the 8 ANSI colors preceded by the word "on", the backgr
 * onMagenta
 * onCyan
 * onWhite
+* etc...
 
 ```javascript
 print.blackOnWhiteText( 'Inverse!' );
 print.greenOnRedLine( "Christmas?" );
+```
+
+### Color by Numbers
+
+When you run the system-colors command, you'll see that each of the 256 colors have a number.  You can reference a color like so:
+
+```text
+print.color221( 'I will print PaleVioletRed1' );
 ```
 
 ### Text Decoration
@@ -59,7 +82,7 @@ If any of the following words appear in the method, their decoration will be add
 * bold
 * underscored
 * blinking
-* reversed
+* reversed - Inverse of the default terminal colors
 * concealed
 * indented
 
