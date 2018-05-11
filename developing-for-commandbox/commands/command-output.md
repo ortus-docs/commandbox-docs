@@ -23,18 +23,28 @@ print.line( 'I like Spam.' );
 print.line();
 ```
 
-### Text Color
+### 
 
-If the method has one of the 8 ANSI colors in it, the text will be colored.
+### Text Color {#text-color}
 
-* black
-* red
-* green
-* yellow
-* blue
-* magenta
-* cyan
-* white
+CommandBox supports 256 colors, but some terminals only support 16 or even 8. If you use a color that the terminal doesn't support, it will be adjusted to the next closest color. If the method has one of the names of a supported color in it, the text will be colored. Here are the basic 16 color names:
+
+* Black
+* Maroon
+* Green
+* Olive
+* Navy
+* Magenta
+* Cyan
+* Silver
+* Grey
+* Red
+* Lime
+* Yellow
+* Blue
+* Fuchsia
+* Aqua
+* White
 
 ```javascript
 print.magenta( 'I sound like a toner cartridge' );
@@ -42,9 +52,15 @@ print.greenText( "You wouldn't like me when I'm angry" );
 print.somethingBlue( 'UHF ' );
 ```
 
-### Background Color
+To view all the color names run the `system-colors` command.
 
-If the method has one of the 8 ANSI colors preceded by the word "on", the background of the text will be that color.
+```javascript
+print.MistyRose3( 'Fancy colors' );
+```
+
+### Background Color {#background-color}
+
+If the method has a valid color name preceded by the word "on", the background of the text will be that color.
 
 * onBlack
 * onRed
@@ -54,20 +70,29 @@ If the method has one of the 8 ANSI colors preceded by the word "on", the backgr
 * onMagenta
 * onCyan
 * onWhite
+* etc...
 
 ```javascript
 print.blackOnWhiteText( 'Inverse!' );
 print.greenOnRedLine( "Christmas?" );
 ```
 
-### Text Decoration
+### Color by Numbers {#color-by-numbers}
+
+When you run the system-colors command, you'll see that each of the 256 colors have a number. You can reference a color like so:
+
+```javascript
+print.color221( 'I will print PaleVioletRed1' );
+```
+
+### Text Decoration {#text-decoration}
 
 If any of the following words appear in the method, their decoration will be added. Note, not all of these work on all ANSI consoles. Blink, for instance, doesn't seem to work in Windows.
 
 * bold
 * underscored
 * blinking
-* reversed
+* reversed - Inverse of the default terminal colors
 * concealed
 * indented
 
