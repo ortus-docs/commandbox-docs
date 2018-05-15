@@ -56,7 +56,7 @@ CommandBox> artifacts remove adobe
 >
 >   For example, if the new JRE is installed in `C:\Program files\java\jre7` copy it to `C:\CommandBox\jre`
 >
->   _Note: This version will take precedence over _`JAVA_HOME`
+>   _Note: This version will take precedence over_ `JAVA_HOME`
 >
 > Restart CommandBox to apply the changes.
 

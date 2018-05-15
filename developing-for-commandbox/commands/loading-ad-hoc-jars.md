@@ -18,8 +18,8 @@ classLoad( 'D:/amqp-client-5.1.2.jar' );
 
 You can pass either an array or list of:
 
-* D**irectories  ** - All jar and class files will be loaded from each directory recursively
-* **Jar files  ** - Each jar file will be loaded
+* D**irectories**   - All jar and class files will be loaded from each directory recursively
+* **Jar files**   - Each jar file will be loaded
 * **Class files** - Each class file will be loaded
 
 Note, paths need to be absolute when you pass them in!  Here's some more examples.
