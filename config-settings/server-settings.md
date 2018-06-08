@@ -6,7 +6,7 @@ These settings control how servers start in CommandBox.
 
 **struct**
 
-This struct can contain [any setting that is valid in a `server.json` file](https://github.com/ortus/commandbox-documentation/tree/c1beb7155f97414bba701c3e9999520d300f6465/embedded_server/serverjson.md). These settings are used as global default settings if there is not a corresponding setting provided by the user via a parameter to the `start` command or in the server's `server.json` file.
+This struct can contain [any setting that is valid in a `server.json` file](https://github.com/ortus-docs/commandbox-docs/blob/master/embedded-server/server.json/README.md). These settings are used as global default settings if there is not a corresponding setting provided by the user via a parameter to the `start` command or in the server's `server.json` file.
 
 ```bash
 config set server.defaults.web.rewrites.enable=true
