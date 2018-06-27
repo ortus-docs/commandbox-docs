@@ -12,7 +12,6 @@ We've already added the required jars and created a default rewrite [XML file](h
 
 [http://tuckey.org/urlrewrite/manual/4.0/index.html](http://tuckey.org/urlrewrite/manual/4.0/index.html)
 
-
 ```bash
 start --rewritesEnable
 ```
