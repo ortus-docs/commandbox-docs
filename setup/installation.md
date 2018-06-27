@@ -1,6 +1,6 @@
 # Installation
 
-Regardless of where you place the **box** binary, the first time you execute it, a `.CommandBox` folder will be created in your user's home directory and CommandBox will be extracted into that location. If you delete this directory, it will be replaced the next time the CommandBox executable is run.
+egardless of where you place the **box** binary, the first time you execute it, a `.CommandBox` folder will be created in your user's home directory and CommandBox will be extracted into that location. If you delete this directory, it will be replaced the next time the CommandBox executable is run.
 
 You can specify a different install location by adding `-commandbox_home=E:\CommandBox` when you run the box binary.
 
@@ -57,15 +57,6 @@ echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/
 sudo apt-get update && sudo apt-get install commandbox
 ```
 
-### Bleeding Edge
-
-```bash
-gpg --keyserver keys.gnupg.net --recv-key 6DA70622
-gpg -a --export 6DA70622 | sudo apt-key add -
-echo "deb http://integration.stg.ortussolutions.com/artifacts/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
-sudo apt-get update && sudo apt-get install commandbox
-```
-
 Then run the `box` binary to begin the one-time unpacking process.
 
 ## Linux yum
@@ -79,18 +70,6 @@ Add the following to: `/etc/yum.repos.d/commandbox.repo`
 name=CommandBox $releasever - $basearch
 failovermethod=priority
 baseurl=http://downloads.ortussolutions.com/RPMS/noarch
-enabled=1
-metadata_expire=7d
-gpgcheck=0
-```
-
-### Bleeding Edge
-
-```text
-[CommandBox]
-name=CommandBox $releasever - $basearch
-failovermethod=priority
-baseurl=http://integration.stg.ortussolutions.com/artifacts/RPMS/noarch
 enabled=1
 metadata_expire=7d
 gpgcheck=0
