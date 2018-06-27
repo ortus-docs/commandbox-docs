@@ -10,7 +10,8 @@ You may be used to configuring URL rewrites in Apache or IIS, but rewrites are a
 
 We've already added the required jars and created a default rewrite [XML file](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#filterparams) that will work out-of-the-box with the ColdBox MVC Platform. To enable rewrites, start your server with the `--rewritesEnable` flag.
 
-[http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html\#filterparams](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#filterparams)
+[http://tuckey.org/urlrewrite/manual/4.0/index.html](http://tuckey.org/urlrewrite/manual/4.0/index.html)
+
 
 ```bash
 start --rewritesEnable
