@@ -116,6 +116,7 @@
   * [Property Files](task-runners/property-files.md)
   * [Running other Tasks](task-runners/running-other-tasks.md)
   * [Loading Ad hoc Jars](task-runners/loading-ad-hoc-jars.md)
+  * [Loading Ad-hoc Modules](task-runners/loading-ad-hoc-modules.md)
   * [Cancel Long Tasks](task-runners/cancel-long-tasks.md)
 * [Helpful Commands](helpful-commands/README.md)
   * [Token Replacements](helpful-commands/token-replacements.md)
