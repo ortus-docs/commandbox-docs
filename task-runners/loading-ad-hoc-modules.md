@@ -8,7 +8,7 @@ loadModule( 'build/modules/myUtils' );
 
 That code will load the `myUtils` module right there into the core CLI.  Note, the module needs to be compatible with CommandBox.  All models, interceptors, or commands inside the module will instantly be available in the CLI. 
 
-This means your task runners can rely on other functionality in the form of modules which are easily distributed and shared.  While you could manually install the module into the CLI, this method is more flexible and ad-hoc as the module is just temporarily loaded.
+This means your task runners can rely on other functionality in the form of modules which are easily distributed and shared.  While you could manually install the module globally into the CLI, this method is more flexible and ad-hoc as the module is just temporarily loaded.
 
 ### Considerations
 
