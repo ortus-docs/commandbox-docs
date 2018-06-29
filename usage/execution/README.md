@@ -113,3 +113,11 @@ BOX_JAVA_PROPS="foo=bar;brad=wood"
 
 That would create a property called `foo` and a property called `brad` with the values `bar` and `wood` respectively.
 
+## Noninteractive Mode
+
+If you are using CommandBox in a continuous integration server such as Jenkins or Travis-CI, you may find that features like the progress bar which redraw the screen many times create hundreds of lines of output in the console log for your builds.  You can enable a non interactive mode that will bypass the output from interactive jobs and the download progress bar.
+
+```text
+config set nonInteractiveShell=true
+```
+
