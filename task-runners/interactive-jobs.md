@@ -65,7 +65,12 @@ job.start( name='My job', lineSize=10 );
 All good things must come to an end.  use the `complete()` method to show that your job has finished successfully.  use the `error()` method to show your job has ended but with issues.  
 
 ```javascript
-job.start( 'I have a good feeling about this' );if( warmFuzzy ) {  job.complete();} else {  job.error( 'I''ve lost that loving feeling.' );}
+job.start( 'I have a good feeling about this' );
+if( warmFuzzy ) {
+  job.complete();
+} else {
+  job.error( 'I''ve lost that loving feeling.' );
+}
 ```
 
 The `job.error()` method can take an optional message to describe what happened which will remain on the screen. If a Task Runner has an unhandled error or the user interrupts execution with Ctrl-C, CommandBox will end the job for you as an error.  The exception message will be passed to the `job.error()` call for you so the user can see what happened.
