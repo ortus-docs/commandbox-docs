@@ -13,7 +13,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
     "stopsocket": 50123,
     "debug": false,
     "trace": false,
-    "console": false,
+    "console": false,    
+    "trayEnable": true,
     "trayicon": "/path/to/trayicon.png",
     "trayOptions": [
         {
