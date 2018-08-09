@@ -68,6 +68,7 @@ Announced when a server is starting and the `cfengine` is being installed. This 
 * `serverInfo` - Same as `onServerStart` above
 * `installDetails` A struct with the following keys:
   * `internal` - True if using the embedded jars from the CLI
+  * `enginename` - The name of the cfengine that was installed
   * `version` - The version of the cfengine that was installed
   * `installDir` - The folder where the server is installed to
   * `initialInstall` - True if this is the first time the engine was installed
