@@ -41,6 +41,24 @@ When a user hits tab while typing a parameter value, booleans will prompt with t
 
 You can provide additional hints though for your parameters to make them super user friendly.
 
+If you have a parameter that doesn't contain one of the keywords above but you still want it to provide the user with path, directory, or file tab completion, you can add annotations to the arguments to enable this.  
+
+* **optionsFileComplete**
+* **optionsDirectoryComplete**
+
+Ex:
+
+```text
+/**
+* @myParam This is a parameter that will autocomplete files
+* @myParam.optionsFileComplete true
+* @yourParam This is a parameter that will autocomplete directories
+* @yourParam.optionsDirectoryComplete true
+*/
+```
+
+A parameter can have both the annotations for file and directory completion as well as an `optionsUDF` ****or `options` list specified and they will all be used.  The user will be presented with the combined list of tab completion candidates.
+
 ### Static Options
 
 If a parameter has a set number of exact options, you can specify an `options` attribute for that parameter that is a comma-delimited list of options for tab completion to give.

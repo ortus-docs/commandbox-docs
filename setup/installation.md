@@ -10,13 +10,13 @@ To avoid specifying the commandbox\_home variable every time you can create a fi
 commandbox_home=E:\\CommandBox
 ```
 
-##  Windows
+## Windows
 
 Unzip the executable **box.exe** and just double click on it to open the shell. When you are finished running commands, you can just close the window, or type `exit`.
 
 > **Hint** You can make the `box.exe` available in any Windows terminal by adding its location to the `PATH` system environment variable. See [http://www.computerhope.com/issues/ch000549.htm](http://www.computerhope.com/issues/ch000549.htm)
 
-##  Mac/  \*Unix
+## Mac/  \*Unix
 
 ### Homebrew \(Mac\)
 
