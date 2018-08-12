@@ -88,10 +88,27 @@ function run( String forgeBoxType ) {
 
 array function completeTypes() {
     // Return array of possible types
+    return [ 'type1', 'type2', 'type2' ];
 }
 ```
 
 An example of this in action is the install command. It will auto-complete the ForgeBox slug for you. Try typing `install cold` and hitting tab to see what happens.
+
+Instead of just passing back an array of strings from your options UDF, you can pass an array of structs to provide the following for each option:
+
+* name \(required\)
+* group
+* description
+
+```javascript
+array function completeTypes() {
+ return [
+  { name:'type1', group:'Types', description:'This is Type 1' },
+  { name:'type2', group:'Types', description:'This is Type 2' },
+  { name:'type3', group:'Types', description:'This is Type 3' }
+ ];
+}
+```
 
 ## Namespace help
 
