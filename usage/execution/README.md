@@ -121,3 +121,5 @@ If you are using CommandBox in a continuous integration server such as Jenkins o
 config set nonInteractiveShell=true
 ```
 
+If there is no `nonInteractiveShell` setting, CommandBox will automatically default it to true if there is an environment variable named `CI` present, which is standard for many build servers such as Travis-CI.
+
