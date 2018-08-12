@@ -18,6 +18,7 @@
       * [Using a DB in CFML scripts](usage/execution/cfml-files/using-a-db-in-cfml-scripts.md)
     * [OS Binaries](usage/execution/os-binaries.md)
     * [CFML Functions](usage/execution/cfml-functions.md)
+    * [Exit Codes](usage/execution/exit-codes.md)
   * [Commands](usage/commands.md)
   * [Parameters](usage/parameters/README.md)
     * [Escaping Special Characters](usage/parameters/escaping-special-characters.md)

@@ -137,3 +137,19 @@ echo off
 CommandBox 1.2.3.00000
 ```
 
+## Exiting a recipe
+
+You can use the exit command in a recipe and instead of leaving the entire shell, the recipe will simply stop execution right there.  If an exit code is passed, it will because the exit code of the recipe command as well as the entire shell.
+
+```bash
+exit 1
+```
+
+Any command that errors or returns a non-0 exit code will end the recipe immediately and the recipe command will inherit that exit code.  This line in a recipe will stop the recipe if there is not a `foobar` property in your `box.json`, but not before outputting a message.
+
+```bash
+package show foobar || echo "Missing property!" && exit 999
+```
+
+
+
