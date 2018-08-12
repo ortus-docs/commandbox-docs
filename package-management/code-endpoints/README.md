@@ -12,6 +12,7 @@ Here is a list of the package endpoints currently supported by CommandBox.
 * **Folder** - A local folder containing a package [\(_Read more_\)](folder.md)
 * **Git** - Any Git repo containing a package [\(_Read more_\)](git.md)
 * **Jar** - A jar file hosted via HTTP that's _not_ contained in a zip file [\(_Read more_\)](jar-via-http.md)
+* **S3** - A package zip stored in a private S3 bucket [\(_Read more_\)](s3.md)
 * **CFLib** - UDFs posted on CFLib.org [\(_Read more_\)](cflib.md)
 * **RIAForge** - Projects posted to RIAForge.org  [\(_Read more_\)](riaforge.md)
 

@@ -81,6 +81,7 @@
     * [File](package-management/code-endpoints/file.md)
     * [Folder](package-management/code-endpoints/folder.md)
     * [Git](package-management/code-endpoints/git.md)
+    * [S3](package-management/code-endpoints/s3.md)
     * [CFLib](package-management/code-endpoints/cflib.md)
     * [RIAForge](package-management/code-endpoints/riaforge.md)
     * [Jar \(via HTTP\)](package-management/code-endpoints/jar-via-http.md)
