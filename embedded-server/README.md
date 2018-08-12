@@ -15,13 +15,14 @@ CommandBox> stop
 
 ## OS Integration
 
-You can start as many embedded server instances as you want. Each running server will add a little green "Ortus" icon in your system tray with the logo of your currently running engine. Right click on it for options:
+You can start as many embedded server instances as you want. Each running server will add an icon in your system tray with the logo of your currently running engine. Click on it for options:
 
 * Stop Server
 * Open Browser
 * Open Admin
+* Open File System
 
-  ![System Tray Server Icons](../.gitbook/assets/system_tray_server_icons.png)
+![CommandBox Server Tray Menu](../.gitbook/assets/image%20%284%29.png)
 
 ### Disable the tray icon
 
