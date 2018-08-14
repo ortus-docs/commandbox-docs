@@ -51,8 +51,7 @@ Run the following series of commands to add the Ortus signing key, register our 
 ### Stable
 
 ```bash
-gpg --keyserver keys.gnupg.net --recv-key 6DA70622
-gpg -a --export 6DA70622 | sudo apt-key add -
+curl -fsSl https://downloads.ortussolutions.com/debs/gpg | sudo apt-key add -
 echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
 sudo apt-get update && sudo apt-get install commandbox
 ```
