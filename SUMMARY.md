@@ -120,6 +120,7 @@
   * [Loading Ad hoc Jars](task-runners/loading-ad-hoc-jars.md)
   * [Loading Ad-hoc Modules](task-runners/loading-ad-hoc-modules.md)
   * [Cancel Long Tasks](task-runners/cancel-long-tasks.md)
+  * [Progress Bar](task-runners/progress-bar.md)
 * [Helpful Commands](helpful-commands/README.md)
   * [Token Replacements](helpful-commands/token-replacements.md)
   * [Checksums](helpful-commands/checksums.md)
