@@ -10,26 +10,7 @@ Here is how you can download a file in a Task Runner and have a progress bar ani
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
-If the remote server doesn't send a content length header \(like S3 cloudfront\) then instead of a progress bar, you'll just see a climbing file size that shows how much as been downloaded so far.  
-
-```javascript
-component {
-	property name="progressableDownloader"	inject="ProgressableDownloader";
-	property name="progressBar" 			inject="ProgressBar";
-	
-	function run() {
-		progressableDownloader.download(
-			'http://site.com/file.zip',
-			'C:/savedFileHere.zip',
-			function( status ) {
-				progressBar.update( argumentCollection = status );
-			}
-		);
-	}
-}
-```
-
-That is all you need.  The **ProgressableDownloader** class takes care of the actual downloading of the file and the **ProgessBar** class deals with drawing the progress bar to the screen.  
+Full docs for the Progressable Downloader are [here](downloading-files.md).
 
 ## Generic Progress Bar
 
