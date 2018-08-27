@@ -56,7 +56,8 @@ If you have commandbox mapped to a path you can of course just call box like you
 
 You should also install a few extensions. \(These extensions can also be added from the built in Extentions item.\)
 
-* [CFML Language Support](https://marketplace.visualstudio.com/items?itemName=ilich8086.ColdFusion)
+* [CFML Language Support](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml)
+* [CFLint Support](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cflint)
 * [Tag Comment Support](https://marketplace.visualstudio.com/items?itemName=trst.cfml-comment-tags)
 
 ## Git Extensions
