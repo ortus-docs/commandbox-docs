@@ -13,7 +13,7 @@ server info property=serverHomeDirectory
 You can also get the full path to your servlet's "out" log with this command:
 
 ```text
-server info propery=consolelogPath
+server info property=consolelogPath
 ```
 
 This log file is the equivalent of your **catalina.out** file on a typical Lucee/Tomcat install or the equivalent of your **coldfusion-out.log** file on a typical ColdFusion install.
