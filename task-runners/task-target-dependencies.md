@@ -20,5 +20,7 @@ Given the above Task Runner, typing
 task run
 ```
 
-would run the `runMeFirst()` and `run()` method in that order.
+would run the `runMeFirst()` and `run()` method in that order.  
+
+Any parameters passed to the target will also be passed along to methods who are dependencies.  Don't forget, task CFCs are re-created every time they are executed as transients, so feel free to borrow the `variables` scope inside the CFC to share state between methods.
 
