@@ -44,7 +44,7 @@ Cars that do not apply to the current directory will simply not be displayed. Fa
 
 You can customize the cars that show, change the colors of existing cars and even create your own custom additions to Bullet Train.  Read all about it in the readme of the Module homepage on ForgeBox.
 
-{% embed data="{\"url\":\"https://www.forgebox.io/view/commandbox-bullet-train\",\"type\":\"link\",\"title\":\"\\n\\t\\tCommandBox Bullet Train\\n\\t\",\"description\":\"CommandBox Bullet Train. A cool zsh-inspired prompt customizer for CommandBox 4.0\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.forgebox.io/favicon.ico\",\"aspectRatio\":0},\"caption\":\"CommandBox Bullet Train Module on ForgeBox.io\"}" %}
+{% embed url="https://www.forgebox.io/view/commandbox-bullet-train" caption="CommandBox Bullet Train Module on ForgeBox.io" %}
 
 
 

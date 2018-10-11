@@ -2,7 +2,7 @@
 
 If you need to use a 3rd party jar, we recommend you use the extra parameters to the createObject\(\) function, which allows you to specify a list of jars to load from \(this is a Lucee-specific feature\). Read up on the `context` parameter here:
 
-{% embed data="{\"url\":\"http://docs.lucee.org/reference/functions/createobject.html\",\"type\":\"link\",\"title\":\"CreateObject :: Lucee Documentation\",\"description\":\"The CreateObject function takes different arguments depending on the value of the first argument: CreateObject\(\'com\', class, context, serverName\) CreateObject\(\'component\', component-name\) CreateObject\(\'java\', class, ...\) CreateObject\(\'webservice\', urltowsdl, \[, portname\]\)\",\"icon\":{\"type\":\"icon\",\"url\":\"http://docs.lucee.org/assets/images/favicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"http://docs.lucee.org/assets/images/favicon.png\",\"aspectRatio\":0}}" %}
+{% embed url="http://docs.lucee.org/reference/functions/createobject.html" %}
 
 There are some scenarios however that don't work. One is if you need to use the `createDynamicProxy()` BIF to create CFC instances that implement Java classes that exist in an ad hoc jar. Lucee currently requires those classes to be loaded by the Lucee system classloader.
 

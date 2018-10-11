@@ -1,14 +1,14 @@
 # Recipes
 
-If you want to automate several commands from your native shell, it will be faster to use our [**recipe**](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/recipe.html) command that allows you to run several CommandBox commands at once. This will allow you to only load the CommandBox engine once for all those commands, but still be dumped back at your native prompt when done. Recipes can also just be useful for a series of commands you run on a regular basis.
+If you want to automate several commands from your native shell, it will be faster to use our [**recipe** ](https://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/system-commands/commands/recipe.html)command that allows you to run several CommandBox commands at once. This will allow you to only load the CommandBox engine once for all those commands, but still be dumped back at your native prompt when done. Recipes can also just be useful for a series of commands you run on a regular basis.
 
-Read more about the **recipe** command in our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules/system-commands/commands/recipe.html).
+Read more about the **recipe** command in our [Command API docs](https://apidocs.ortussolutions.com/commandbox/current/index.html?commandbox/system/modules_app/system-commands/commands/recipe.html).
 
 ## Ingredients
 
 Think of a recipe as a simple batch file for Windows or a shell script for Unix. It's just a text file where you place one command on each line and they are executed in order. Enter the commands exactly as you would from the interactive shell.
 
-Technically a recipe can have any file extension, but the default recommendation is `.boxr` which stands for "box recipe". Lines that start with a pound and whitespace characters (e.g. "# My Comments") will be ignored as comments. The pound character followed immediately by word-like characters is the mechanism for invoking [CFML functions](/usage/execution/cfml-functions).
+Technically a recipe can have any file extension, but the default recommendation is `.boxr` which stands for "box recipe". Lines that start with a pound and whitespace characters \(e.g. "\# My Comments"\) will be ignored as comments. The pound character followed immediately by word-like characters is the mechanism for invoking [CFML functions](https://github.com/ortus-docs/commandbox-docs/tree/dede3618bafa5226b7c0cb035db51008415196cf/usage/execution/cfml-functions/README.md).
 
 **buildSite.boxr**
 
@@ -139,17 +139,15 @@ CommandBox 1.2.3.00000
 
 ## Exiting a recipe
 
-You can use the exit command in a recipe and instead of leaving the entire shell, the recipe will simply stop execution right there.  If an exit code is passed, it will because the exit code of the recipe command as well as the entire shell.
+You can use the exit command in a recipe and instead of leaving the entire shell, the recipe will simply stop execution right there. If an exit code is passed, it will because the exit code of the recipe command as well as the entire shell.
 
 ```bash
 exit 1
 ```
 
-Any command that errors or returns a non-0 exit code will end the recipe immediately and the recipe command will inherit that exit code.  This line in a recipe will stop the recipe if there is not a `foobar` property in your `box.json`, but not before outputting a message.
+Any command that errors or returns a non-0 exit code will end the recipe immediately and the recipe command will inherit that exit code. This line in a recipe will stop the recipe if there is not a `foobar` property in your `box.json`, but not before outputting a message.
 
 ```bash
 package show foobar || echo "Missing property!" && exit 999
 ```
-
-
 
