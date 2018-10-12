@@ -8,7 +8,7 @@ Read more about the **recipe** command in our [Command API docs](https://apidocs
 
 Think of a recipe as a simple batch file for Windows or a shell script for Unix. It's just a text file where you place one command on each line and they are executed in order. Enter the commands exactly as you would from the interactive shell.
 
-Technically a recipe can have any file extension, but the default recommendation is `.boxr` which stands for "box recipe". Lines that start with a pound and whitespace characters \(e.g. "\# My Comments"\) will be ignored as comments. The pound character followed immediately by word-like characters is the mechanism for invoking CFML functions.
+Technically a recipe can have any file extension, but the default recommendation is `.boxr` which stands for "box recipe". Lines that start with a pound and whitespace characters \(e.g. "\# My Comments"\) will be ignored as comments. The pound character followed immediately by word-like characters is the mechanism for invoking [CFML functions](cfml-functions.md).
 
 **buildSite.boxr**
 
