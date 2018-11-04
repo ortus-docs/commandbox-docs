@@ -1,6 +1,6 @@
 # Gist
 
-CommandBox can install a Github Gist from [gist.github.com](https://gist.github.com/) as a package. 
+CommandBox can install a Github Gist from [gist.github.com](https://gist.github.com/) as a package.
 
 Make sure the root of your Git repo has a `box.json` inside of it so CommandBox can tell the version and name of the package. If there is no `box.json`, the name of the Gist ID will be used as the package name.
 
@@ -19,7 +19,7 @@ The Github username is optional.
 install gist:<username>/<gistID>
 ```
 
-You can target a specific `commit` by adding a "commit-ish" after the Gist ID. 
+You can target a specific `commit` by adding a "commit-ish" after the Gist ID.
 
 ```bash
 install gist:b6cfe92a08c742bab78dd15fc2c1b2bb#37348a126f1f410120785be0d84ad7a2148c3e9f
@@ -36,3 +36,4 @@ You can specify packages from folder endpoints as dependencies in your `box.json
     }
 }
 ```
+
