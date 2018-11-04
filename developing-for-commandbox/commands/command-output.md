@@ -25,7 +25,7 @@ print.line();
 
 ### 
 
-### Text Color {#text-color}
+### Text Color <a id="text-color"></a>
 
 CommandBox supports 256 colors, but some terminals only support 16 or even 8. If you use a color that the terminal doesn't support, it will be adjusted to the next closest color. If the method has one of the names of a supported color in it, the text will be colored. Here are the basic 16 color names:
 
@@ -58,7 +58,7 @@ To view all the color names run the `system-colors` command.
 print.MistyRose3( 'Fancy colors' );
 ```
 
-### Background Color {#background-color}
+### Background Color <a id="background-color"></a>
 
 If the method has a valid color name preceded by the word "on", the background of the text will be that color.
 
@@ -77,7 +77,7 @@ print.blackOnWhiteText( 'Inverse!' );
 print.greenOnRedLine( "Christmas?" );
 ```
 
-### Color by Numbers {#color-by-numbers}
+### Color by Numbers <a id="color-by-numbers"></a>
 
 When you run the system-colors command, you'll see that each of the 256 colors have a number. You can reference a color like so:
 
@@ -85,7 +85,7 @@ When you run the system-colors command, you'll see that each of the 256 colors h
 print.color221( 'I will print PaleVioletRed1' );
 ```
 
-### Text Decoration {#text-decoration}
+### Text Decoration <a id="text-decoration"></a>
 
 If any of the following words appear in the method, their decoration will be added. Note, not all of these work on all ANSI consoles. Blink, for instance, doesn't seem to work in Windows.
 

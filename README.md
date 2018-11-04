@@ -1,6 +1,6 @@
 # Introduction
 
-## CommandBox Manual - Version 4.3.0
+## CommandBox Manual - Version 4.4.0
 
 ![CommandBox](.gitbook/assets/commandboxlogo.png)
 
