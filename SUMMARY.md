@@ -88,6 +88,7 @@
     * [CFLib](package-management/code-endpoints/cflib.md)
     * [RIAForge](package-management/code-endpoints/riaforge.md)
     * [Jar \(via HTTP\)](package-management/code-endpoints/jar-via-http.md)
+    * [Gist](package-management/code-endpoints/gist.md)
   * [Package Scripts](package-management/package-scripts.md)
   * [Dependencies](package-management/dependencies.md)
   * [Updating Packages](package-management/updating-packages.md)
