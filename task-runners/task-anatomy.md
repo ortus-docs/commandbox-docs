@@ -93,8 +93,7 @@ var results = getInstance( 'artifactService' ).listArtifacts();
 
 ## Threading
 
-The CommandBox CLI is implemented as a single long request in the underlying Lucee server. Due to this it is required to make a unique thread name every call to the task or else an error can occur.
-The following is an example you can use for running threads.
+The CommandBox CLI is implemented as a single long request in the underlying Lucee server. Due to this it is required to make a unique thread name every call to the task or else an error can occur. The following is an example you can use for running threads.
 
 ```javascript
 var threadName = createGUID();
@@ -103,3 +102,4 @@ cfthread( action="run" name=threadName) {
 }
 cfthread( action="terminate" name=threadName);
 ```
+

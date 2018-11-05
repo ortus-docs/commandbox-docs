@@ -1,6 +1,6 @@
 # forEach Command
 
-The `foreach` command will excecute another command against every item in an incoming list. The list can be passed directly or piped into this command. The default delimiter is a new line so this works great piping the output of file listings direclty in, which have a file name per line.
+The `foreach` command will execute another command against every item in an incoming list. The list can be passed directly or piped into this command. The default delimiter is a new line so this works great piping the output of file listings directly in, which have a file name per line.
 
 This powerful construct allows you to perform basic loops from the CLI over arbitrary input.  
 Most of the examples show file listings, but any input can be used that you want to iterate over.
@@ -40,4 +40,22 @@ You may also choose a custom placeholder name for readability.
 ```text
 ll *.json --simple | foreach "echo \${filename} && cat \${filename}" filename
 ```
+
+### Iterating over JSON
+
+The `forEach` can also iterate over JSON representations of objects or arrays.  This means you can pipe in JSON from a file, a command such as `package show` or any REPL operation that returns complex data.  The `delimiter` parameter is ignored for JSON input.
+
+```text
+package show dependencies | foreach
+```
+
+If iterating over an array, each item in the array will be available as `${item}`.  If iterating over a object, the object keys will be in `${item}` and the values will be in `${value}`.    You can customize the system setting name for value with the `valueName` parameter to `forEach`. 
+
+```text
+package show dependencies | foreach command="echo 'You have \${package} version \${version} installed'" itemName=package valueName=version
+```
+
+
+
+
 
