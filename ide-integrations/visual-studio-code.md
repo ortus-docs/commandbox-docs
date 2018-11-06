@@ -9,7 +9,7 @@ What do you want to do with VSC?
 3. Working with the shell/terminal
 4. Git Extensions?
 
-## Installing VSC
+## Installing VSCode
 
 This IDE has it's own domain. \( [https://code.visualstudio.com/](https://code.visualstudio.com/) \) with downloads for **macOS**, **Windows** and **Linux** on the home page. :+1:
 
