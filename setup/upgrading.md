@@ -45,5 +45,6 @@ Note, if you delete your `{user}/.CommandBox` folder and re-run the executable, 
 
 If you have used Hombrew to install CommandBox you must use Homebrew for any upgrade, minor or major. To upgrade CommandBox with Homebrew:
 
-```brew uninstall commandbox
+```bash
+brew uninstall commandbox
 brew install commandbox```
