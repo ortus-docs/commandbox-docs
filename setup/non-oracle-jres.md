@@ -4,6 +4,10 @@ In the past, 99% of people used the Oracle \(previously SUN\) version of Java fo
 
 This page is a work in progress to track the non-Oracle JREs and how to use them.  Please send pull requests to this page with any additional information you have as this is a changing landscape right now.
 
+You can read more about Oracle's changes in this post:
+
+{% embed url="https://www.aspera.com/en/blog/oracle-will-charge-for-java-starting-in-2019/" %}
+
 ## Amazon Corretto
 
 {% embed url="https://aws.amazon.com/blogs/opensource/amazon-corretto-no-cost-distribution-openjdk-long-term-support/" %}
