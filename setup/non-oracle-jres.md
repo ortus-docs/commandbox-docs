@@ -24,7 +24,14 @@ Zulu is free and offers long term support.  Zulu provides supported builds of Op
 
 ## Installing on Windows
 
-When running `box.exe` on Windows, the registry is used to determine the current versions of java that are installed.  If you install a non-Oracle JRE such as Corretto, you will not currently have the necessary registry entries created for box to find Java.  You can manually create the needed keys by modifying and running the following registry entries.  \(Contributed by Jim Pickering\)
+When running `box.exe` on Windows, the registry is used to determine the current versions of java that are installed.  If you install a some non-Oracle JRE such as Corretto, you will not currently have the necessary registry entries created for box to find Java.  
+
+* **Oracle** - No manual action needed
+* **Azul** - No manual action needed
+* **OpenJDK** - Manual creation of registry keys required
+* **Corretto** - Manual creation of registry keys required
+
+You can manually create the needed keys by modifying and running the following registry entries.  \(Contributed by Jim Pickering\)
 
 {% code-tabs %}
 {% code-tabs-item title="JavaSoft-Registry-Keys.reg" %}
@@ -33,31 +40,12 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft]
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment]
+[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit]
+"CurrentVersion"="8.0.192"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.8]
+[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit\8.0.192]
 "JavaHome"="C:\\Program Files\\Amazon Corretto\\jre8"
-"MicroVersion"="0"
 "RuntimeLib"="C:\\Program Files\\Amazon Corretto\\jre8\\bin\\server\\jvm.dll"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_192]
-"JavaHome"="C:\\Program Files\\Amazon Corretto\\jre8"
-"MicroVersion"="0"
-"RuntimeLib"="C:\\Program Files\\Amazon Corretto\\jre8\\bin\\server\\jvm.dll"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_192\MSI]
-"AUTOUPDATECHECK"="0"
-"AUTOUPDATEDELAY"=""
-"EULA"=""
-"FROMVERSION"="NA"
-"FROMVERSIONFULL"=""
-"FullVersion"="1.8.0_192"
-"INSTALLDIR"="C:\\Program Files\\Amazon Corretto\\jre8"
-"JAVAUPDATE"="0"
-"JU"=""
-"OEMUPDATE"=""
-"PRODUCTVERSION"="8.0.1920.12"
-
 
 ```
 {% endcode-tabs-item %}
