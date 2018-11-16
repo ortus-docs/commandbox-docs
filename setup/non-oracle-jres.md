@@ -1,6 +1,6 @@
 # Non-Oracle JREs
 
-In the past, 99% of people used the Oracle \(previously SUN\) version of Java for all their Java needs.  As of January 2019, the license is changing on Oracle Java which makes it no longer free for commercial use.  This has led to Adobe and many others dropping Oracle in favor of one of the community Java versions.  Java itself is open source, so it will always be free, but if you want support, it matters which provider you get Java from.  
+In the past, 99% of people used the Oracle \(previously SUN\) version of Java for all their Java needs.  As of January 2019, the license is changing on Oracle Java which makes it no longer free for commercial use.  This has led to many people looking at alternatives to Oracle.  Java itself is open source, so it will always be free and there are several other organizations offering their own builds of Java.  If you want support, it matters which provider you get Java from.  
 
 This page is a work in progress to track the non-Oracle JREs and how to use them.  Please send pull requests to this page with any additional information you have as this is a changing landscape right now.
 
