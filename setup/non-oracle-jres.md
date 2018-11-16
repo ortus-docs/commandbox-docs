@@ -51,5 +51,23 @@ Windows Registry Editor Version 5.00
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+## Installing on \*nix
 
+The `box` binary on \*nix uses your OS environment variables to locate Java.  In the absense of an env var called `JAVA_HOME`, box will look for `java` in the default system path.  
+
+* **Oracle** - No manual action needed
+* **Azul** - No manual action needed
+* **OpenJDK** - Manual creation of `JAVA_HOME` required
+* **Corretto** - Manual creation of `JAVA_HOME` required
+
+To manually configure the `JAVA_HOME` env var on a \*nix system, edit your `/etc/profile` file to have these lines.  Adjust the path as necessary based on your installation.
+
+```bash
+export JAVA_HOME=/opt/ibm/java-x86_64-60/
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+## The JRE Folder
+
+And as always, on any operating system and with any JRE provider, you can override what version of java is used by creating a folder called `JRE` in the same directory as the `box` or `box.exe` binary that contains the JRE you wish CommandBox to use.  This will bypass all registry and env var checks above.
 
