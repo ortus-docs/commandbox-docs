@@ -42,7 +42,8 @@ When using Hombrew to install CommandBox you must use Homebrew for any upgrade, 
 
 ```bash
 brew uninstall commandbox
-brew install commandbox```
+brew install commandbox
+```
 
 ### Manual Installation
 

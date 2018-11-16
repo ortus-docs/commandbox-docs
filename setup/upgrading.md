@@ -47,4 +47,6 @@ If you have used Hombrew to install CommandBox you must use Homebrew for any upg
 
 ```bash
 brew uninstall commandbox
-brew install commandbox```
+brew install commandbox
+```
+

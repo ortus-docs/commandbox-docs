@@ -9,6 +9,7 @@
   * [Requirements](setup/requirements.md)
   * [Download](setup/download.md)
   * [Installation](setup/installation.md)
+  * [Non-Oracle JREs](setup/non-oracle-jres.md)
   * [Upgrading](setup/upgrading.md)
   * [Common Errors](setup/common-errors.md)
 * [Usage](usage/README.md)
