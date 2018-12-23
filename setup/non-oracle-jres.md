@@ -12,7 +12,7 @@ You can read more about Oracle's changes in this post:
 
 {% embed url="https://aws.amazon.com/blogs/opensource/amazon-corretto-no-cost-distribution-openjdk-long-term-support/" %}
 
-Corretto is a build of OpenJDK maintained by Amazon.  It is free and will have long term support.  Initial tests show that Corretto 1.8 works with CommandBox.
+Corretto is a build of OpenJDK maintained by Amazon.  It is free and will have long term support.  Initial tests show that Corretto 1.8 works with CommandBox and ACF 11.
 
 ## OpenJDK
 
@@ -24,7 +24,7 @@ OpenJDK is Oracle's free version of Java.  it comes with a 6 month support windo
 
 {% embed url="https://www.azul.com/" %}
 
-Zulu is free and offers long term support.  Zulu provides supported builds of OpenJDK.  CommandBox has not been tested yet on Zulu \(please contact us if you have tested it!\)
+Zulu is free and offers long term support.  Zulu provides supported builds of OpenJDK.  Initial tests show that Corretto 1.8 works with CommandBox and ACF 11.
 
 ## Installing on Windows
 

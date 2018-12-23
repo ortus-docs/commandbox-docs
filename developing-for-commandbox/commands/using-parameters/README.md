@@ -16,7 +16,7 @@ package set foo=bar
 
 ## File System Paths As Parameters
 
-If your command accepts a file or folder path from the user, you'll want to resolve that path before you use it. To do this, use the `resolvePath()` method that is available to all commands via the BaseCommand class. (This method wraps the `resolvePath()` method of the `fileSystemUtil` object that is injected into all commands.) The method `resolvePath()` will make the file system path canonical and absolute. This ensures you have a fully qualified path to work with even if a user might passed a folder relative to their current working directory passed something like `../../`.
+If your command accepts a file or folder path from the user, you'll want to resolve that path before you use it. To do this, use the `resolvePath()` method that is available to all commands via the BaseCommand class. \(This method wraps the `resolvePath()` method of the `fileSystemUtil` object that is injected into all commands.\) The method `resolvePath()` will make the file system path canonical and absolute. This ensures you have a fully qualified path to work with even if a user might passed a folder relative to their current working directory passed something like `../../`.
 
 ```javascript
 component extends="commandbox.system.BaseCommand" {
