@@ -19,7 +19,7 @@ run /path/to/myApp
 
 ## Using `!binary`
 
-A shortcut for running OS binaries is to prefix the binary with `!`. In this mode, any other params need to be positional. There is no CommandBox parsing applied to the command's arguments. They are passed straight to the native shell.  As such, you don't need to escape any of the parameters for CommandBox when using this syntax.
+A shortcut for running OS binaries is to prefix the binary with `!`. In this mode, any other params need to be positional. There is no CommandBox parsing applied to the command's arguments. They are passed straight to the native shell. As such, you don't need to escape any of the parameters for CommandBox when using this syntax.
 
 ```bash
 !myApp.exe
@@ -53,17 +53,17 @@ The output of native calls can be used in [expressions](../parameters/expression
 
 ## Parsing Rules
 
-When passing a command string for native execution, any piping, redirection, `&&` or `||` will be processed on the CommandBox side.  In the above example, the native `!pwd` output is passed back to a CommandBox command.  
+When passing a command string for native execution, any piping, redirection, `&&` or `||` will be processed on the CommandBox side. In the above example, the native `!pwd` output is passed back to a CommandBox command.
 
-Additionally, any [expansions you put in your command string with backticks](../parameters/expressions.md) or [System Setting placeholders](../system-settings.md#using-system-settings-from-the-cli) will not be processed by CommandBox, but will be passed to the native OS directly.  
+Additionally, any [expansions you put in your command string with backticks](../parameters/expressions.md) or [System Setting placeholders](../system-settings.md#using-system-settings-from-the-cli) will not be processed by CommandBox, but will be passed to the native OS directly.
 
-In the event you want to have the piping done by the operating system OR you want expansions to be processed by CommandBox prior to passing to the OS, you can workaround this by echoing out what you want to run and then piping that to the `run` command. 
+In the event you want to have the piping done by the operating system OR you want expansions to be processed by CommandBox prior to passing to the OS, you can workaround this by echoing out what you want to run and then piping that to the `run` command.
 
 ```bash
 echo 'git status | find "`package show name`"' | run
 ```
 
-In the above example, written for Windows, the output of the `echo` command has the `package show name` expression expanded into the string and then the ENTIRE string is piped to `run` where the pipe and the `find` command are processed by Windows.  Note, there is no need for preceding the command with `!` when passing to `run` since `!` is just an alias for `run`.
+In the above example, written for Windows, the output of the `echo` command has the `package show name` expression expanded into the string and then the ENTIRE string is piped to `run` where the pipe and the `find` command are processed by Windows. Note, there is no need for preceding the command with `!` when passing to `run` since `!` is just an alias for `run`.
 
 ## Setting the Native Shell
 

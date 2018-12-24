@@ -28,6 +28,7 @@
     * [Piping into Commands](usage/parameters/piping-into-commands.md)
     * [Expressions](usage/parameters/expressions.md)
   * [Command Help](usage/command-help.md)
+  * [Environment Variables](usage/environment-variables.md)
   * [System Settings](usage/system-settings.md)
   * [Ad-hoc Command Aliases](usage/ad-hoc-command-aliases.md)
   * [Default Command Parameters](usage/default-command-parameters.md)

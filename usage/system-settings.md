@@ -16,10 +16,32 @@ If a system setting can't be found in a Java property or an environment variable
 
 ```text
 server start port=${SERVER_PORT:8080}
-`
 ```
 
 This does assume that your default value will never contain a colon!
+
+## Lookup Order
+
+System settings are looked up in the following order.  If the same variable exists in more than one place, the first one found will be used:
+
+1. Environment variables for the currently executing command
+2. Environment variables for the parent \(calling\) command \(if applicable\)
+3. Global shell environment variables
+4. JVM System Properties in the CLI process
+5. Environment Variables from your actual operating system
+
+For example, if you run the following it will output the contents of your OS's `PATH` environment variable.
+
+```text
+echo ${path}
+```
+
+However, if you set a shell environment variable from inside CommandBox called `path` and then output it, you will see the contents of your variable since it overrides.
+
+```text
+set path=donuts
+echo ${path}
+```
 
 ## Using system settings in JSON files
 
