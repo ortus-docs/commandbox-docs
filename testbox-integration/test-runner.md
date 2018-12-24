@@ -54,3 +54,7 @@ TestBox v2.5.0+107
 ---------------------------------------------------------------------------------
 ```
 
+## Code Coverage
+
+If you run tests on a server with FusionReactor installed and you are using TestBox 2.9 or greater, you will have code coverage reported in the CLI output as a percentage as well as the LOC \(lines of code\) that were tracked. 
+

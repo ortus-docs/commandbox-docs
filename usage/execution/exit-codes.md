@@ -14,7 +14,12 @@ Every command that executes has an exit code.  Usually the exit code is 0 if the
 You can access the last exit code from CommandBox in a [System Setting](../system-settings.md) called `exitCode`.  
 
 ```bash
-echo ${exitCode}
+> !git status
+fatal: not a git repository (or any of the parent directories): .git
+Command returned failing exit code [128]
+​
+> echo ${exitCode}
+128
 ```
 
 ## Shell Exit Code

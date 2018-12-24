@@ -4,7 +4,7 @@ Tab completion and help are powered by metadata on your command CFCs. For basic 
 
 ## Command Help
 
-When a user types `yourCommand help`, the text they see is the hint attribute on the component. The easiest way to add this is via a Javadoc-style comment at the top of your component. Feel free to include sample execuctions which can be wrapped in `{code:bash}{code}` blocks.
+When a user types `yourCommand help`, the text they see is the hint attribute on the component. The easiest way to add this is via a Javadoc-style comment at the top of your component. Feel free to include sample executions which can be wrapped in `{code:bash}{code}` blocks.
 
 ```javascript
 /**
@@ -48,7 +48,7 @@ If you have a parameter that doesn't contain one of the keywords above but you s
 
 Ex:
 
-```text
+```javascript
 /**
 * @myParam This is a parameter that will autocomplete files
 * @myParam.optionsFileComplete true
@@ -86,7 +86,7 @@ function run( String forgeBoxType ) {
     ...
 }
 
-array function completeTypes() {
+array function completeTypes( string paramSoFar, struct passedNamedParameters ) {
     // Return array of possible types
     return [ 'type1', 'type2', 'type2' ];
 }
@@ -109,6 +109,19 @@ array function completeTypes() {
  ];
 }
 ```
+
+## Smart Tab Complete
+
+Your tab complete UDF is called every time the user hits tab, but sometimes the options you want to present are based on some context.  There are two parameters to your UDF which give you some context.
+
+```javascript
+array function completeTypes( string paramSoFar, struct passedNamedParameters ) {
+   ...
+}
+```
+
+* **paramSoFar** - A string containing the text the user has typed thus far.  CommandBox will automatically filter the candidates you send back, if if you're doing something complicated like making an API call to get the candidates, this allows you to do some pre-filtering of your own.  This string may be empty if they haven't typed anything yet.
+* **passedNamedParameters** - A struct containing the parameters the user has typed already.  You get name/value pairs even if the user is typing positional params.  This is handy if the possible options for one parameter are based on what is being passed for another parameter.  The struct may be empty, or may only contain some params.  Always check existence!
 
 ## Namespace help
 

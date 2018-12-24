@@ -16,6 +16,13 @@ Announced before the execution of a command. This fires after all command parame
   * `namedParameters` - A struct of name/value pairs.  The named parameters are always what is passed to the command's `run()` method.
   * `flags` - A struct of flags that were passed in.
 
+## preCommandParamProcess
+
+**preCommand** fires after expression, system setting, and colon param expansions have already occurred. **preCommandParamProcess** will fire prior to that so you can affect the system prior to the time the system settings are expanded in parameter values.
+
+* `commandInfo` - Same as above
+* `parameterInfo` - Same as above
+
 ## postCommand
 
 Announced immediately after command execution is complete. If more than one command is piped together in a command chain, this is announced after each command in the chain.

@@ -2,7 +2,7 @@
 
 If you want users to be able to pass file globbing patterns to your command, set a type of `Globber` for the argument.
 
-```text
+```javascript
 /**
 * @path.hint file or directory to interact with.
 **/
@@ -15,7 +15,7 @@ Even though the user types a string, CommandBox will hand you a CFC instance tha
 
 Use the `count()` method to get the total number of paths matched on the file system.
 
-```text
+```javascript
 function run( required Globber path ) {
   print.line( path.count() & ' files affected!' );
 }
@@ -25,7 +25,7 @@ function run( required Globber path ) {
 
 The easiest way to apply some processing to each of the file paths found is by passing a closure to the `apply()` method. The closure will be executed once for each result.
 
-```text
+```javascript
 function run( required Globber path ) {
   path.apply( function( thisPath ){
     print.line( 'Processing file ' & thisPath );
@@ -41,7 +41,7 @@ To get the raw results back, use the `matches()` method.
 
 If you want to get the results back as a query object, use the `asQuery()` method and then you can loop over them yourself. The query contents match what comes back from `directoryList()`.
 
-```text
+```javascript
 function run( required Globber path ) {
 var myQry = path
   .asQuery()
@@ -53,7 +53,7 @@ var myQry = path
 
 If you want to get the results back as an array, use the `asArray()` method and then you can loop over them yourself.
 
-```text
+```javascript
 function run( required Globber path ) {
 var myArr = path
   .asArray()
@@ -65,7 +65,7 @@ var myArr = path
 
 Affect the order that the results come back by setting a sort. The sort follows the same pattern as the directoryList\(\) function, which means it can be a comma-delimited list of columns to sort on.
 
-```text
+```javascript
 function run( required Globber path ) {
 var myQry = path
   .asQuery()
@@ -78,9 +78,11 @@ var myQry = path
 
 To get the original globbing pattern that the user typed, use the `getPattern()` method on the Globber CFC.
 
-```text
+```javascript
 function run( required Globber path ) {
   print.line( 'You typed ' & path.getPattern() );
 }
 ```
+
+
 

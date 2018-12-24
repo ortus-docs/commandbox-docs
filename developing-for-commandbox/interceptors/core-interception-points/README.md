@@ -9,7 +9,11 @@ Click a category for more information.
   * onCLIExit
 * [**Command Execution Lifecycle**](command-execution-lifecycle.md)
   * preCommand
+  * preCommandParamProcess
   * postCommand
+  * prePrompt
+  * preProcessLine
+  * postProcessLine
 * [**Module Lifecycle**](module-lifecycle.md)
   * preModuleLoad
   * postModuleLoad
@@ -20,6 +24,8 @@ Click a category for more information.
   * onServerStart
   * onServerInstall
   * onServerStop
+  * preServerForget
+  * postServerForget
 * [**Error Handling**](error-handling.md)
   * onException
 * [**Package Lifecycle**](package-lifecycle.md)

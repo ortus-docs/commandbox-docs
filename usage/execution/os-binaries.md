@@ -69,3 +69,7 @@ In the above example, written for Windows, the output of the `echo` command has 
 
 You can override the default native shell from `/bin/bash` to any shell of your choosing, like zsh. This will let you use shell specific aliases. You can set your native shell property using the `config set` command \(i.e., `config set nativeShell=/bin/zsh`\)
 
+## Exit Codes
+
+If the native binary errors, the exit code returned will become the exit code of the `run` command itself and will be available via the usual mechanisms such as `${exitCode}`.
+

@@ -11,6 +11,7 @@ Here is a list of the package endpoints currently supported by CommandBox.
 * **File**  - A local file containing a package [\(_Read more_\)](file.md)
 * **Folder** - A local folder containing a package [\(_Read more_\)](folder.md)
 * **Git** - Any Git repo containing a package [\(_Read more_\)](git.md)
+* **Java** - Install OpenJDK for your servers [\(Read more\)](java.md)
 * **Jar** - A jar file hosted via HTTP that's _not_ contained in a zip file [\(_Read more_\)](jar-via-http.md)
 * **S3** - A package zip stored in a private S3 bucket [\(_Read more_\)](s3.md)
 * **CFLib** - UDFs posted on CFLib.org [\(_Read more_\)](cflib.md)

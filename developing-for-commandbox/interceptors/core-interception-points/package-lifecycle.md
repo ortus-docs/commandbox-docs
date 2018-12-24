@@ -37,7 +37,7 @@ Announced while a package is being installed, after the package endpoint and ins
 
 ## postInstall
 
-Announced after an installation is complete. If a package has additional dependencies to install, each of them will fire this interception point.
+Announced after an installation is complete. If a package has additional dependencies to install, each of them will fire this interception point.  This fires even if an install is skipped due to an existing package that satisfies the dependencies, or if the package is already installed.
 
 **interceptData**
 

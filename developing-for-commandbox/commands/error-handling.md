@@ -14,3 +14,32 @@ Errors returned from the `error()` method will not contain any stack traces, etc
 error( "I don't like your tone of voice" );
 ```
 
+You can set a detail and an error code as well.  The error code will be used as the exit code for the command.
+
+```javascript
+error( "We're sorry, but happy hour ended 20 minutes ago.", "Sux 2B U", 123 );
+```
+
+The CFML exception that is thrown from the `error()` method will contain the exit code in the `errorcode` part of the cfcatch struct.  The Exit code is also available as a system setting called `exitCode`.  
+
+```bash
+> !git status
+fatal: not a git repository (or any of the parent directories): .git
+Command returned failing exit code [128]
+
+> echo ${exitCode}
+128
+```
+
+## Verbose Errors in the Shell
+
+When an unhandled exception happens in the shell, only the tag context is shown.  You can enable full stack trace output like so:
+
+```bash
+config set verboseErrors=true
+```
+
+
+
+
+
