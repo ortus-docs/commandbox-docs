@@ -52,14 +52,14 @@ You can also bind the recipe with arguments that will be replaced inside of your
 
 ### Named arguments
 
-If you use named arguments to the recipe command, they will be accessible inside the recipe as $arg1Name, $arg2Name, etc.
+If you use named arguments to the recipe command, they will be accessible via environment variables inside the recipe as `${arg1Name}`, `${arg2Name}`, etc.
 
 Consider the following recipe:
 
 **notifyWinner.boxr**
 
 ```bash
-echo "Hello there, $name\n You've won a $prize!"
+echo "Hello there, ${name}, You've won a ${prize}!"
 ```
 
 You would call it like so:
@@ -71,8 +71,7 @@ recipe recipeFile=notifyWinner.boxr name=Luis prize="NEW CAR"
 Output:
 
 ```bash
-Hello there, Luis
-You've won a NEW CAR!
+Hello there, Luis, You've won a NEW CAR!
 ```
 
 Note, all parameters to the `recipe` command needed to be named, including the `recipeFile`.
@@ -82,7 +81,7 @@ Note, all parameters to the `recipe` command needed to be named, including the `
 Now let's look at the same recipe set up to receive positional parameters.
 
 ```bash
-echo "Hello there, $1\n You've won a $2!"
+echo "Hello there, ${1}\n You've won a ${2}!"
 ```
 
 You would call it like so:
@@ -94,23 +93,16 @@ recipe notifyWinner.boxr Luis "NEW CAR"
 Output:
 
 ```bash
-Hello there, Luis
-You've won a NEW CAR!
+Hello there, Luis, You've won a NEW CAR!
 ```
-
-### Escaping Parameters
-
-When using an arg as a parameter to a command in a recipe, make sure you wrap the variable in quotes if it might contain spaces. Otherwise you will get syntax errors.
-
-```bash
-rm "$arg1"
-```
-
-In this recipe `$arg1` is replaced with the exact value so we wrap it in quotes in case it contain spaces
 
 ### Missing Args
 
-If an argument is not bound, no error will be thrown, and the name of the argument will be left in the command. There is currently no way to default the value of an arg. Stay tuned for task runners which will give you much more control over custom scripts.
+If an argument is not passed, you can use the default value mechanism:
+
+```bash
+echo "Hello there, ${name:human}, You've won a ${prize:something cool}!"
+```
 
 ## Is there an echo in here?
 
@@ -150,4 +142,21 @@ Any command that errors or returns a non-0 exit code will end the recipe immedia
 ```bash
 package show foobar || echo "Missing property!" && exit 999
 ```
+
+## On The Fly Commands
+
+In addition to passing a file path to the `recipe` command for execution, you can also pipe the contents of a file directly into the command.  if the input does not match a file path, it is assumed to be executable commands.
+
+```bash
+echo myCommands.txt | recipe
+```
+
+This can also give you some interesting ability to do dynamic evaluation of command strings.
+
+```bash
+set cmd=version
+echo ${cmd} | recipe
+```
+
+
 
