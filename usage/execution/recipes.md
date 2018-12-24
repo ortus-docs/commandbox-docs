@@ -143,3 +143,20 @@ Any command that errors or returns a non-0 exit code will end the recipe immedia
 package show foobar || echo "Missing property!" && exit 999
 ```
 
+## On The Fly Commands
+
+In addition to passing a file path to the `recipe` command for execution, you can also pipe the contents of a file directly into the command.  if the input does not match a file path, it is assumed to be executable commands.
+
+```bash
+echo myCommands.txt | recipe
+```
+
+This can also give you some interesting ability to do dynamic evaluation of command strings.
+
+```bash
+set cmd=version
+echo ${cmd} | recipe
+```
+
+
+
