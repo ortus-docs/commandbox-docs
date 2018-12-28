@@ -1,6 +1,6 @@
 # Hitting Your Database
 
-One very handy thing can be to write tasks perform database manipulations. Your code is executed on Lucee Server \(version 4.5 at the time of this writing\) which is the version of Lucee that the core CLI runs on. The CLI has the full power of a Lucee server running under the covers, but there's no web-based administrator for you to acess to do things like adding datasources for your scripts to use. It would considered poor form anyway since standalone scripts are best if they're self-contained and don't have external dependencies like server settings necessary to run.
+One very handy thing can be to write tasks perform database manipulations. Your code is executed on Lucee Server 5.2 which is the version of Lucee that the core CLI runs on. The CLI has the full power of a Lucee server running under the covers, but there's no web-based administrator for you to acess to do things like adding datasources for your scripts to use. It would considered poor form anyway since standalone scripts are best if they're self-contained and don't have external dependencies like server settings necessary to run.
 
 ## Lucee allows datasource to be a struct
 
@@ -52,7 +52,7 @@ So let's break this down real quick. First we get the current settings of the CL
 
 ## Notes
 
-The internal CLI of CommandBox still runs on Luce 4.5 so make sure you copy the data source definitions from a Lucee 4.5 server, and not a 5.0 server. Also, you'll note I used encrypted passwords above. You can also just put the plain text password in. Just omit the `encrypted:` text like so:
+The internal CLI of CommandBox still runs on Lucee 5.2 so make sure you copy the data source definitions from a Lucee 5 server. Also, you'll note I used encrypted passwords above. You can also just put the plain text password in. Just omit the `encrypted:` text like so:
 
 ```javascript
 username: 'root',
