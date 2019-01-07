@@ -105,19 +105,19 @@ cfthread( action="terminate" name=threadName);
 
 ## Modifying Application Settings
 
-Task Runners do not execute a `application.cfc` or `application.cfm`, but you can use the [cfapplication](https://docs.lucee.org/reference/tags/application.html) tag to modify the properties and behaviors of the Task Runner application. Any setting that can be modified using [cfapplication](https://docs.lucee.org/reference/tags/application.html) can be modified in Task Runners as follows:
+Task Runners do not execute a `application.cfc` or `application.cfm`, but you can use the [cfapplication](https://docs.lucee.org/reference/tags/application.html) tag (or script variant: `application`) to modify the properties and behaviors of the Task Runner application. Any setting that can be modified using [cfapplication](https://docs.lucee.org/reference/tags/application.html) can be modified in Task Runners as follows:
 
 ```javascript
-// to create a datasource, first get the settings
+// to create a datasource, first get the application settings
 appSettings = getApplicationSettings();
 
-// set the default value to the current datasources
+// initialize with the current value of application datasources
 dsources = appSettings.datasources ?: {};
 
-// add a new datasource
+// add a new datasource to it
 dsources[ 'myNewDS' ] = { ... };
 
-// call cfapplication to update the datasources and set AWS S3 credentials
+// call cfapplication (cfscript variant) to update the datasources and set AWS S3 credentials
 application action="update" datasources=dsources s3={} /* and any other settings */ ;
 ```
 
@@ -127,10 +127,4 @@ You can also define mappings as follows:
 fileSystemUtil.createMapping( name, physicalpath );
 ```
 
-You can also use [getApplicationMetadata()](https://docs.lucee.org/reference/functions/getapplicationmetadata.html) to get application information, which can be used to set default values prior to making an application settings change.
-```javascript
-metaData = getApplicationMetadata();
-locale = metaData.locale;
-```
-
-**NOTE:** The settings that are changed using `cfapplication` will last for the duration of the CLI shell and will affect any and all code run from the CLI including the CommandBox core code. Also, [cfapplication](https://docs.lucee.org/reference/tags/application.html) doc is incomplete. You may also want to see [application.cfc](https://cfdocs.org/application-cfc) for a more up-to-date list of settings.
+**NOTE:** The settings that are changed using `cfapplication` will last for the duration of the CLI shell and will affect any and all code run from the CLI including the CommandBox core code.
