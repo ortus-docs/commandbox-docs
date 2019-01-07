@@ -59,3 +59,6 @@ username: 'root',
 password: 'clear text password'
 ```
 
+## Microsoft SQL Server Issues
+
+If you are getting SSL related exceptions when trying connecting to an MS SQL database using the **Microsoft SQL Server (JDBC4)** driver (`com.microsoft.sqlserver.jdbc.SQLServerDriver`), try using the **jTDS driver** (`net.sourceforge.jtds.jdbc.Driver`) instead.
