@@ -59,3 +59,10 @@ username: 'root',
 password: 'clear text password'
 ```
 
+## Microsoft SQL Server Issues
+
+If you are getting SSL related exceptions when trying connecting to an MS SQL database using the **Microsoft SQL Server (JDBC4)** driver (`com.microsoft.sqlserver.jdbc.SQLServerDriver`), try using the **jTDS driver** (`net.sourceforge.jtds.jdbc.Driver`) instead.
+
+## Connecting to SMTP Services Using SSL or TLS
+
+If you cannot connect to a SMTP service that requires `SSL` or `TLS`, like [Amazon SES](https://aws.amazon.com/ses/), one workaround is to install a local SMTP server and configure it as a relay to your SMTP server. This has been done successfully on Windows servers using [hMailServer](https://www.hmailserver.com/) (free, opensource), which is fairly easy to install and configure as an SMTP relay.
