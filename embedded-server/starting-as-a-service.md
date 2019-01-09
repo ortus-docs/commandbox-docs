@@ -18,15 +18,15 @@ Coming soon...
 
 Create a `.service` file 
 ```
-nano /usr/lib/systemd/system/coldbox.service
+nano /usr/lib/systemd/system/mySite.service
 ```
 as follows:
 ```
 [Unit]
-Description=ColdBox Service
+Description=mySite Service
 
 [Service]
-ExecStart=/usr/bin/box server start /var/www/coldboxAPI/server.json
+ExecStart=/usr/bin/box server start /var/www/mySiteAPI/server.json
 Type=forking
 
 [Install]
@@ -35,17 +35,17 @@ WantedBy=multi-user.target
 
 Start the service
 ```
-systemctl start coldbox.service
+systemctl start mySite.service
 ```
 
 Give the service about a minute to load up, then check its status
 ```
-systemctl status coldbox.service
+systemctl status mySite.service
 ```
 
 Once you've verified the service is running as expected, enable the service to load at boot
 ```
-systemctl enable coldbox.service
+systemctl enable mySite.service
 ```
 
 
