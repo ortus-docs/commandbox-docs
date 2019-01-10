@@ -69,6 +69,7 @@
     * [Adding Custom Libs](embedded-server/configuring-your-server/adding-custom-libs.md)
     * [GZip Compression](embedded-server/configuring-your-server/gzip-compression.md)
     * [REST Servlet](embedded-server/configuring-your-server/rest-servlet.md)
+  * [Starting as a Service](embedded-server/starting-as-a-service.md)
   * [Server.json](embedded-server/server.json/README.md)
     * [Working with server.json](embedded-server/server.json/working-with-server.json.md)
     * [Packaging Your Server](embedded-server/server.json/packaging-your-server.md)

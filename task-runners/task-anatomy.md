@@ -130,3 +130,30 @@ writeOutput(emailBody);
 ### Connecting to SMTP Services Using SSL or TLS
 
 If you cannot connect to a SMTP server that requires `SSL` or `TLS`, like [Amazon SES](https://aws.amazon.com/ses/), one workaround is to install a local SMTP server and configure it as a relay to your SMTP server. This has been done successfully on Windows servers using [hMailServer](https://www.hmailserver.com/) (free, opensource), which is fairly easy to install and configure as an SMTP relay.
+
+## Modifying Application Settings
+
+Task Runners do not execute a `application.cfc` or `application.cfm`, but you can use the [cfapplication](https://docs.lucee.org/reference/tags/application.html) tag \(or script variant: `application`\) to modify the properties and behaviors of the Task Runner application. Any setting that can be modified using [cfapplication](https://docs.lucee.org/reference/tags/application.html) can be modified in Task Runners as follows:
+
+```javascript
+// to create a datasource, first get the application settings
+appSettings = getApplicationSettings();
+
+// initialize with the current value of application datasources
+dsources = appSettings.datasources ?: {};
+
+// add a new datasource to it
+dsources[ 'myNewDS' ] = { ... };
+
+// call cfapplication (cfscript variant) to update the datasources and set AWS S3 credentials
+application action="update" datasources=dsources s3={} /* and any other settings */ ;
+```
+
+You can also define mappings as follows:
+
+```javascript
+fileSystemUtil.createMapping( name, physicalpath );
+```
+
+**NOTE:** The settings that are changed using `cfapplication` will last for the duration of the CLI shell and will affect any and all code run from the CLI including the CommandBox core code.
+
