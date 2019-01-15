@@ -68,6 +68,18 @@ task( 'mytask' )
     .run();
 ```
 
+### Using argumentCollection
+
+```javascript
+args = {
+   "arg1": true,
+   "arg2": "something else"
+};
+task( 'mytask' )
+    .params( argumentCollection=args )
+    .run();
+```
+
 ## flags\(\)
 
 Just like when running a  task manually, flags are an optional shortcut for specifying boolean parameters. Pass in each flag as a separate argument. It is not necessary to include the `--` prior to the value, but it will still work.
