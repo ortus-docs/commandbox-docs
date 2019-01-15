@@ -146,3 +146,13 @@ print.whiteOnRedLine( 'ERROR' )
     .line();
 ```
 
+## Strip ANSI Formatting
+
+If you have a string that contains ANSI formatting and you want to strip it out to just plain text, there is a function on the print helper to do this for you.
+
+```javascript
+var strippedOutput = print.unANSI( formattedOutput );
+```
+
+
+

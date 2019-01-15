@@ -97,6 +97,9 @@ Your DSL should always end with a `run` method. This executes the  task. By defa
 var output =  task()
       .params( "My name is Brad" )
       .run( returnOutput=true );
+      
+// You can optinally strip any ANSi formatting too
+output = print.unANSI( output );
 ```
 
 If you want to help debug the exact  task that is being passed along to the shell for executing, set the `echo` parameter to `true` and the  task will be echoed out prior to execution. The echoed text is not part of what gets returned.
