@@ -38,7 +38,7 @@ or set a default for all servers
 config set server.defaults.jvm.javaVersion=openjdk8
 ```
 
-To review what possible IDs you can use to dial in your exact Java version, read the [docs on our Java endpoint](../../package-management/code-endpoints/java.md#installation-id).  You don't need to manually install Java-- CommandBox will do that for you.  You just need to provide the ID so CommadnBox knows what you want.
+To review what possible IDs you can use to dial in your exact Java version, read the [docs on our Java endpoint](../../package-management/code-endpoints/java.md#installation-id).  You don't need to manually install Java-- CommandBox will do that for you.  You just need to provide the ID so CommandBox knows what you want.
 
 ## Java Namespace
 
