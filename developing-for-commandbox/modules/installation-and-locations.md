@@ -18,7 +18,7 @@ The first way to create a module is to manually create a folder in the `~/.Comma
 If you have a package of type `commandbox-modules` locally, in a Git repo, or in Forgebox, you can install from any working directory. When CommandBox sees the package type, it will change the installation directory to be the user modules folder.
 
 ```bash
-install /path/to/modue
+install /path/to/module
 install githubuser/modulerepo
 install forgebox-module-slug
 ```
