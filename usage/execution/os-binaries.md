@@ -73,3 +73,15 @@ You can override the default native shell from `/bin/bash` to any shell of your 
 
 If the native binary errors, the exit code returned will become the exit code of the `run` command itself and will be available via the usual mechanisms such as `${exitCode}`.
 
+## Debugging
+
+If you're having issues getting a native binary to run, you can turn on a config setting that will echo out the exact native command being run including the call to your OS's command interpreter.  
+
+```bash
+config set debugNativeExecution=true
+```
+
+
+
+
+

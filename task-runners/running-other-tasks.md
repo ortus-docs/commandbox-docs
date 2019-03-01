@@ -121,3 +121,22 @@ task()
     .run( echo=true );
 ```
 
+## Handling Exceptions
+
+If a task encounters an error or returns a non-zero exit code, the Task DSL will throw an exception.  if you want to ignore failing tasks or rethrow an exception of your own design, you may place the task in a try/catch.  The exit code of the task may be accessed via:
+
+* The `${exitCode}` environment variable
+* The `errorcode` property of the exception if the `error()` method was used
+* Calling `getExitCode()` on the Task DSL object
+
+```javascript
+try { 
+  var t = task( 'myTask' )
+  t.run();
+}  catch( any var e ) {
+  print.line( 'myTask errored with #t.getExitCode()#, but we ignoring it.' );
+}
+```
+
+
+

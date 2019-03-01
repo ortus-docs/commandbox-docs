@@ -12,3 +12,21 @@ If there are expected situations such as a file not existing, that you know migh
 error( "I don't like your tone of voice" );
 ```
 
+Or with an exit code:
+
+```javascript
+error( message="prepare to be deleted", exitCode=666 );
+```
+
+If you want your task to set a failing exit code, but you don't have a message to go with it, you can also simply return the exit code you want using the `return` keyword.
+
+```javascript
+function run() {
+  if( condition ) {
+    print.greenLine( 'Well that was easy' );
+  } else {
+    return 1;
+  }
+}
+```
+
