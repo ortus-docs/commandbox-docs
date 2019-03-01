@@ -44,6 +44,8 @@ say hello
 
 There is no limit to how deeply you can nest your namespace folders. CommandBox's built in help and tab-completion will always work via conventions.
 
+Note: The box.json file can have a key called "ignore" that allows you stipulate folders or files which should not be installed but can be kept in reserve for testing or private purposes. Any folder in your namespace that matches that pattern will not be copied during installation.
+
 ## Making Changes
 
 Commands are created and stored once for the duration that CommandBox is running. If testing changes to a command in the interactive shell, use the `reload` command \(aliased as `r`\) to reload the shell. Your changes will immediately be available. Using the up arrow to access the shell's history can also be useful here.

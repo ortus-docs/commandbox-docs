@@ -140,6 +140,9 @@ Your DSL should always end with a `run` method. This executes the command. By de
 var output = command( "echo" )
       .params( "My name is Brad" )
       .run( returnOutput=true );
+      
+// You can optinally strip any ANSi formatting too
+output = print.unANSI( output );
 ```
 
 If you want to help debug the exact command that is being passed along to the shell for executing, set the `echo` parameter to `true` and the command will be echoed out prior to execution. The echoed text is not part of what gets returned or piped.
