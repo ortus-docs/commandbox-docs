@@ -175,3 +175,7 @@
   * [Injection DSL](developing-for-commandbox/injection-dsl.md)
   * [Example Project](developing-for-commandbox/example-project.md)
 
+## ForgeBox Enterprise
+
+* [Introduction](forgebox-enterprise/introduction.md)
+
