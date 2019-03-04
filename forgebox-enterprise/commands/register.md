@@ -1,7 +1,7 @@
 # Register
 
-**https://www.forgebox.io/api/v1/** is the endpoint by default and you can check the registered endpoints by typing  
-`forgebox endpoint list`
+In order to register a new endpoint, just give it a name and set your endpoint as follows:  
+`forgebox endpoint register stg-forgebox https://forgebox.stg.ortushq.com/api/v1/`
 
-{% file src="../../.gitbook/assets/forgebox-endpoint-register.gif" caption="forgebox register" %}
+![](../../.gitbook/assets/forgebox-endpoint-register.gif)
 

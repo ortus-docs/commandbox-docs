@@ -11,6 +11,6 @@ This is a list of the commands you have available to integrate integrate with Fo
 
 {% hint style="info" %}
 You can always ask CommandBox for help by adding a question mark at the end of your command.  
-_**Example:** **`forgebox endpoint ?`**_
+e_xample: `forgebox endpoint ?`_
 {% endhint %}
 

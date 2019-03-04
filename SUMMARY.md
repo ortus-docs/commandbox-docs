@@ -178,7 +178,11 @@
 ## ForgeBox Enterprise
 
 * [Introduction](forgebox-enterprise/introduction.md)
-* [Integration](forgebox-enterprise/integration.md)
 * [Commands](forgebox-enterprise/commands/README.md)
+  * [List](forgebox-enterprise/commands/list.md)
   * [Register](forgebox-enterprise/commands/register.md)
+  * [Login](forgebox-enterprise/commands/login.md)
+  * [Set Default](forgebox-enterprise/commands/set-default.md)
+  * [Remove](forgebox-enterprise/commands/remove.md)
+* [Usage](forgebox-enterprise/usage.md)
 
