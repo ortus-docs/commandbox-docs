@@ -88,27 +88,23 @@ If you have an older FR license you want to use, you can specify the version of 
 
 ```text
 // Server specific version
-server set fusionreactor.version=6.2.8
+server set fusionreactor.installID=fusionreactor@7.x
 // global default version
-config set server.defaults.fusionreactor.version=6.2.8
+config set server.defaults.fusionreactor.installID=fusionreactor@7.x
 ```
 
-## Custom Download URL
+The `installID` setting can be any valid CommandBox endpoint installation ID, which means you can point to a custom HTTP URL, or ForgeBox slug, etc.
 
-If you have a specific version of the FusionReactor jar that you want to use, or you need to cache it internally in a local network, you can even override the download URL for the jar file. This URL is only hit once and then the jar is cached. And of course, this can be set globally or for a single server so you can test more than one version of FusionReactor at a time.
+## Debugger Libs
 
-If one server is downloading a custom URL, make sure you also set a unique jarPath setting as well so it doesn't interfere with your others servers still using the default download.
+As of version 4.0 of this module, the debugger libs will be added automatically for you based on your OS.  To disable the debugger libs use the following setting:
 
-```text
-server set fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
-server set fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
-```
+```bash
+// Server specific version
+server set fusionreactor.debugEnable=false
+// global default version
+config set server.defaults.fusionreactor.debugEnable=false
 
-Or override it for all your servers:
-
-```text
-config set server.defaults.fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
-config set server.defaults.fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
 ```
 
 ## Additional JVM args
