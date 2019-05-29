@@ -4,7 +4,7 @@ When using CommandBox on a staging or production server, you may wish to start u
 
 ## Windows
 
-See screencast here: https://www.ortussolutions.com/blog/screencast-starting-commandbox-servers-as-a-windows-service
+See screencast here: [https://www.ortussolutions.com/blog/screencast-starting-commandbox-servers-as-a-windows-service](https://www.ortussolutions.com/blog/screencast-starting-commandbox-servers-as-a-windows-service)
 
 ## MacOS
 

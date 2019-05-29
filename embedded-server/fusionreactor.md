@@ -55,6 +55,8 @@ server set fusionreactor.port=8088
 config set server.defaults.fusionreactor.port=8088
 ```
 
+FusionReactor will bind the port on whatever host address is used for your server.
+
 ## Disable the module
 
 You may want to turn the FusionReactor functionality on or off based on your testing or for specific sites. There is now an enable flag for just that. It can be set per server and for all servers as well.
