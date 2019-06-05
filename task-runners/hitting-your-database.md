@@ -27,7 +27,7 @@ So, the first block simply declares a struct that represents a datasource connec
 
 ## Another method
 
-There are a couple tags inside Lucee that don't support this just yet. `<CFDBInfo>` is one of them. [Ticket Here](https://luceeserver.atlassian.net/browse/LDEV-1026) In this case, you need a "proper" datasource defined that you can reference by name. Lucee has some more tricks up its sleeve for this. You can simulate the same thing that happens when you add a datasource to your `Application.cfc` with the following code. This will define a datasource for the duration of the time the CLI is running in memory, but it will be gone the next time you start the CLI.
+There are a couple tags inside Lucee that don't support datasource structs prior to Lucee 5.3.1. `<CFDBInfo>` is one of them. [Ticket Here](https://luceeserver.atlassian.net/browse/LDEV-1026) In this case, you need a "proper" datasource defined that you can reference by name. Lucee has some more tricks up its sleeve for this. You can simulate the same thing that happens when you add a datasource to your `Application.cfc` with the following code. This will define a datasource for the duration of the time the CLI is running in memory, but it will be gone the next time you start the CLI.
 
 ```javascript
 appSettings = getApplicationSettings();
