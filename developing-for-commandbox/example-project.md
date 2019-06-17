@@ -6,7 +6,7 @@ Here is an example CommandBox module that uses an interceptor \(in the `ModuleCo
 
 **On Forgebox:**
 
-[http://www.coldbox.org/forgebox/view/commandbox-banner-customizer](http://www.coldbox.org/forgebox/view/commandbox-banner-customizer)
+[https://www.forgebox.io/view/commandbox-banner-customizer](https://www.forgebox.io/view/commandbox-banner-customizer)
 
 **On GitHub:**
 

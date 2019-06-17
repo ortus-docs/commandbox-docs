@@ -64,6 +64,18 @@ Note, we escaped the system setting by putting a backslash \(`\`\) in front of i
 
 Now, if your server has an environment variable called `WEB_PORT`, it will be used as the port for your server.
 
+## In the REPL
+
+You can use system settings and environment variables in the REPL using the same syntax as the CLI
+
+```javascript
+CommandBox> set foo=bar
+CommandBox> REPL
+
+CFSCRIPT-REPL: echo( '${foo}' )
+bar
+```
+
 ## Manual system setting replacements
 
 If you're writing a custom command or task runner that reads a JSON file of your own making, you can do easy system setting replacements on the file.

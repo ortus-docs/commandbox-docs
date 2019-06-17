@@ -44,3 +44,7 @@ property name='myConfigSetting'     inject='commandbox:ConfigSettings:myConfigSe
 property name='myDeepConfigSetting' inject='commandbox:ConfigSettings:myConfigSetting.nested.keys.here';
 ```
 
+## Reloading Changes
+
+CFProperty injections are aggressively caches on disk to survive restarts.  If you change the injections on a command CFC, you will need to run the `reload` command \(aliased as `r`\) to reprocess metadata on your CFCs.
+
