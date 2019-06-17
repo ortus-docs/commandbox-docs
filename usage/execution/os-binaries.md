@@ -48,22 +48,44 @@ touch index.cfm
 The output of native calls can be used in [expressions](../parameters/expressions.md) or piped into other commands. Here's a Unix example that uses [CFML functions](cfml-functions.md) from the command line to parse the parent folder from the current working directory:
 
 ```bash
-!pwd | #ListLast /
+#listlast `!pwd` /
 ```
 
 ## Parsing Rules
 
-When passing a command string for native execution, any piping, redirection, `&&` or `||` will be processed on the CommandBox side. In the above example, the native `!pwd` output is passed back to a CommandBox command.
+When passing a command string for native execution, ALL REMAINING TEXT in the line will be "eaten" by the native execution and passed to the OS for processing.  This is so the CommandBox parser doesn't "'screw up" any special syntax that your OS command processor is expecting.  That means any use of piping or `&&` will get passed straight to the OS.  On Windows, the following string will run the `ver` command twice in Windows.
 
-Additionally, any [expansions you put in your command string with backticks](../parameters/expressions.md) or [System Setting placeholders](../system-settings.md#using-system-settings-from-the-cli) will not be processed by CommandBox, but will be passed to the native OS directly.
+```bash
+!ver && ver
+```
 
-In the event you want to have the piping done by the operating system OR you want expansions to be processed by CommandBox prior to passing to the OS, you can workaround this by echoing out what you want to run and then piping that to the `run` command.
+In the event you want to pipe the result of an OS binary to another CommandBox command or chain another CommandBox command on the end, you can workaround this by echoing out the string and then piping that to the `run` command.  This example will run the Windows `ver` command followed by the CommandBox `ver` command.  
+
+```bash
+echo "ver" | run && ver
+```
+
+Additionally, any [expansions you put in your command string with backticks](../parameters/expressions.md) or [System Setting placeholders](../system-settings.md#using-system-settings-from-the-cli) will not be processed by CommandBox, but will be passed to the native OS directly.  This Windows example won't do what you might think since the backticks are passed, untouched to the OS \(so the OS can expand them if it needs\):
+
+```bash
+!git status | find "'package show name'"
+```
+
+Instead, you can pass the command text through `echo` to have CommandBox process the backtick expansions first before sending it off to the OS for processing.
 
 ```bash
 echo 'git status | find "`package show name`"' | run
 ```
 
 In the above example, written for Windows, the output of the `echo` command has the `package show name` expression expanded into the string and then the ENTIRE string is piped to `run` where the pipe and the `find` command are processed by Windows. Note, there is no need for preceding the command with `!` when passing to `run` since `!` is just an alias for `run`.
+
+## Debugging
+
+If you're having issues getting a native binary to run, you can turn on a config setting that will echo out the exact native command being run including the call to your OS's command interpreter.  
+
+```bash
+config set debugNativeExecution=true
+```
 
 ## Setting the Native Shell
 
@@ -73,12 +95,18 @@ You can override the default native shell from `/bin/bash` to any shell of your 
 
 If the native binary errors, the exit code returned will become the exit code of the `run` command itself and will be available via the usual mechanisms such as `${exitCode}`.
 
-## Debugging
+## CLI Environment Variables
 
-If you're having issues getting a native binary to run, you can turn on a config setting that will echo out the exact native command being run including the call to your OS's command interpreter.  
+Any environment variables you set in the CommandBox shell will be available to the native process that your OS binary runs in. Here's a Windows and \*nix example of setting an env var in CommandBox and then using it from the native shell.
 
 ```bash
-config set debugNativeExecution=true
+set name=brad
+!echo %name%
+```
+
+```bash
+set name=brad
+!echo $name
 ```
 
 

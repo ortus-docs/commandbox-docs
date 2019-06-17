@@ -97,3 +97,17 @@ There is a command to help you debug what variables are set in each command cont
 ]
 ```
 
+## Native Binaries
+
+Any environment variables you set in the CommandBox shell will be available to the native process that your OS binary runs in. Here's a Windows and \*nix example of setting an env var in CommandBox and then using it from the native shell.
+
+```bash
+set name=brad
+!echo %name%
+```
+
+```bash
+set name=brad
+!echo $name
+```
+
