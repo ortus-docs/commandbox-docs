@@ -26,7 +26,7 @@ You can also create ad-hoc scripts with arbitrary names that contain a collectio
   "slug" : "my-package",
   "version" : "1.0.0",
   "scripts" : {
-   "build" : "!grunt build && testsbox run && run-script generateAPIDocs && bump --patch && publish",
+   "build" : "!grunt build && testbox run && run-script generateAPIDocs && bump --patch && publish",
    "generateAPIDocs" : "docbox generate"
   }
 }
