@@ -47,7 +47,7 @@ package list --JSON | #structFind dependencies | #structKeyArray
 The sky is the limit with the mashups you can create. This example runs your native `java` binary, uses CFML functions to strip out the first line, and then grabs a portion of that string via regex in the `sed` command.
 
 ```bash
-!java -version | #listToArray #chr 10 | #arrayFirst | sed 's/java version "(.*)"/\1/'
+echo "java -version" | run  | #listToArray `#chr 10` | #arrayFirst | sed 's/java version "(.*)"/\1/'
 ```
 
 ## Named Parameters
