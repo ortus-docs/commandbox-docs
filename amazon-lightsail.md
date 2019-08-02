@@ -2,6 +2,8 @@
 
 Amazon Lightsail is a service that lets you spin up managed service quickly with a shell script.
 
+[https://aws.amazon.com/lightsail/](https://aws.amazon.com/lightsail/)
+
 ## Setting up a Server
 
 First login to your Amazon Lightsail account and create an instance
