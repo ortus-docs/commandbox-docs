@@ -135,6 +135,7 @@
   * [Checksums](helpful-commands/checksums.md)
   * [Code Quality Tools](helpful-commands/code-quality-tools.md)
 * [Deploying CommandBox](deploying-commandbox/README.md)
+  * [Amazon Lightsail](deploying-commandbox/amazon-lightsail.md)
   * [Docker](deploying-commandbox/docker.md)
   * [Heroku](deploying-commandbox/heroku.md)
 * [TestBox Integration](testbox-integration/README.md)
