@@ -4,7 +4,7 @@ Amazon Lightsail is a service that lets you spin up managed service quickly with
 
 [https://aws.amazon.com/lightsail/](https://aws.amazon.com/lightsail/)
 
-![Amazon Lightsail](.gitbook/assets/image.png)
+![Amazon Lightsail](../.gitbook/assets/image.png)
 
 ## Setting up a Server
 
@@ -98,5 +98,5 @@ sudo box start --debug host=0.0.0.0 port=80
 
 #### That's it
 
-All you have to do is create your instance. It will boot up and when it is finally running, you should have an _**Public IP**_ address assigned to it...But don't be in to big of a hurry. With these settings, it takes about 4 minutes and 30 seconds before Commandbox is serving something. Wait for it and enjoy!
+All you have to do is create your instance. It will boot up and when it is finally running, you should have a _**Public IP**_ address assigned to it...But don't be in to big of a hurry. With these settings, it takes about 4 minutes and 30 seconds before Commandbox is serving something. Wait for it and enjoy!
 

@@ -137,7 +137,7 @@
 * [Deploying CommandBox](deploying-commandbox/README.md)
   * [Docker](deploying-commandbox/docker.md)
   * [Heroku](deploying-commandbox/heroku.md)
-* [Amazon Lightsail](amazon-lightsail.md)
+  * [Amazon Lightsail](deploying-commandbox/amazon-lightsail.md)
 * [TestBox Integration](testbox-integration/README.md)
   * [Test Runner](testbox-integration/test-runner.md)
   * [Test Watcher](testbox-integration/test-watcher.md)
