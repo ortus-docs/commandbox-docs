@@ -37,7 +37,7 @@ echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/
 sudo apt-get update && sudo apt-get install commandbox
 ```
 ##### 3. Download your code/repo
-In this template, we are using a Github repo. There are other ways like copying over from a local file with SSH or use a disk that you created in Amazon Lightsail that will persist even if the instance is delete. Notice here that we saved it to the /app directory. Note that for later when you run your app, to navigate to it.
+In this template, we are using Ortus' awesome Github repo with Elixir and Vue.js. There are other ways like copying over from a local file with SSH or use a disk that you created in Amazon Lightsail that will persist even if the instance is delete. Notice here that we saved it to the /app directory. Note that for later when you run your app, to navigate to it.
 
 ```bash
 sudo git clone https://github.com/coldbox-templates/elixir-vuejs.git /app
