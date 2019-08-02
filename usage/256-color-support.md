@@ -8,7 +8,7 @@ For Windows users, we recommend using an add-on terminal like ConEMU which has g
 system-colors
 ```
 
-![256 Color support from ConEMU in Windows](../.gitbook/assets/image%20%282%29.png)
+![256 Color support from ConEMU in Windows](../.gitbook/assets/image%20%283%29.png)
 
 This will show you at the top how many colors are supported.  It will also output a sample of each of the 256 colors.  Terminals that support less than 256 colors will "round" down and show the next closest color automatically.  Some darker colors might turn to black.  Note, some advanced terminals allow the user to choose color themes which will also change the default colors.  CommandBox has no control over how colors show up for you.
 
