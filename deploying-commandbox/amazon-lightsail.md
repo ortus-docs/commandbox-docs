@@ -35,8 +35,8 @@ Commandbox needs Java to run
 ```bash
 # They try to ship out Ubuntu as light as possible so you'll want to run this first to get all the latest repo information
 sudo apt-get update
-# install java for commandbox
-yes | sudo apt-get install default-jre
+# install java openJDK 8 for commandbox
+yes | sudo apt-get install openjdk-8-jre
 ```
 
 **2. Install Commandbox**
@@ -78,8 +78,8 @@ cd /app && sudo box start --debug host=0.0.0.0 port=80
 
 ```bash
 sudo apt-get update
-#install java for commandbox
-yes | sudo apt-get install default-jre
+#install java openJDK 8 for commandbox. For openJDK 11,you can use apt-get install default-jre
+yes | sudo apt-get install openjdk-8-jre
 
 #taken straight from ortus docs commandbox install
 curl -fsSl https://downloads.ortussolutions.com/debs/gpg | sudo apt-key add -
@@ -94,6 +94,10 @@ sudo git clone https://github.com/coldbox-templates/elixir-vuejs.git /app
 #start server and expose it to the world
 cd /app && sudo box install
 sudo box start --debug host=0.0.0.0 port=80
+
+#Note: For openJDK 11 to work, you will need to add a JVM arg to prevent this issue https://luceeserver.atlassian.net/browse/LDEV-1138
+#sudo box start --debug host=0.0.0.0 port=80 JVMArgs="-Djdk.attach.allowAttachSelf=true"
+
 ```
 
 #### That's it
