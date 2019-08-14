@@ -126,3 +126,14 @@ Here's the module setting, followed by the JVM arg it creates. Remember, you can
 * **fusionreactor.requestObfuscateParameters** - `fr.request.obfuscate.parameters`
 * **fusionreactor.defaultApplicationName** - `fr.application.name`
 
+## External Server
+
+By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port.  If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.
+
+```bash
+// Server specific version
+server set fusionreactor.externalServerEnable=true
+// global default version
+config set server.defaults.fusionreactor.externalServerEnable=true
+```
+

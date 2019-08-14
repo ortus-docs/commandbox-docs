@@ -74,7 +74,7 @@ In here we start the server in the `/app` directory. We set the host to `0.0.0.0
 cd /app && sudo box start --debug host=0.0.0.0 port=80
 ```
 
-#### Final script
+### Final script
 
 ```bash
 sudo apt-get update
@@ -97,10 +97,9 @@ sudo box start --debug host=0.0.0.0 port=80
 
 #Note: For openJDK 11 to work, you will need to add a JVM arg to prevent this issue https://luceeserver.atlassian.net/browse/LDEV-1138
 #sudo box start --debug host=0.0.0.0 port=80 JVMArgs="-Djdk.attach.allowAttachSelf=true"
-
 ```
 
-#### That's it
+### That's it
 
 All you have to do is create your instance. It will boot up and when it is finally running, you should have a _**Public IP**_ address assigned to it...But don't be in to big of a hurry. With these settings, it takes about 4 minutes and 30 seconds before Commandbox is serving something. Wait for it and enjoy!
 
