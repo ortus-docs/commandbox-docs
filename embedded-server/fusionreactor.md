@@ -109,6 +109,52 @@ config set server.defaults.fusionreactor.debugEnable=false
 
 ```
 
+## Provide External reactor.conf File
+
+There are a handful of JVM args we can use to set things like license key or password, but there are many many settings inside of FusionReactor that have no corresponding method to externalize them.  These are stored in a file called `conf/reactor.conf` inside of the FusionReactor home directory.  If you want to script out settings such as 
+
+* E-mail servers
+* Notification settings
+* Profiler settings
+* Request history settings
+
+Then you can make a copy of a `reactor.conf` file that contains the settings you want the point this module at the file to be copied over when starting the server so FR will pick it up and use it.  Just need in mind that this setting will **override** any manual setting changes you make in the FR web admin every time you start the server.
+
+#### Start up a test server with the FR module installed
+
+```bash
+install commandbox-fusionreactor
+server start
+```
+
+#### Navigate to the FR admin, login, and set your desired settings
+
+```bash
+fr open
+```
+
+#### Copy the populated `reactor.conf` file somewhere for later use
+
+```bash
+cp "`server info property=FRHomeDirectory`conf/reactor.conf" ./reactor.conf
+```
+
+Point your `server.json` to the new file.  Remember, non-absolute paths are relative to the directory the `server.json` lives in.
+
+```bash
+server set fusionreactor.reactorconfFile=reactor.conf
+```
+
+Now, a fresh new server will have these settings.
+
+```bash
+server stop 
+server forget --force
+server start
+```
+
+Note: the `reactor.conf` file may contain _passwords or other sensitive information_.  It is in a java properties file format, so feel free to edit it and remove items you don't want.  Also, take care when committing it to a source repo or making it web accessible so you don't reveal information.  There is currently no support for environment variable expansions in this file, but perhaps we'll add it if it's useful.
+
 ## Additional JVM args
 
 The CommandBox FusionReactor module has passthrough settings for every documented JVM arg. Here are the remaining ones we haven't covered. If you want to know what some of these do, read [the official FR docs](https://docs.fusion-reactor.com/display/FR70/System+Configuration+Keys) on them.
