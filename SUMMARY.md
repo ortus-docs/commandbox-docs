@@ -69,6 +69,7 @@
     * [Adding Custom Libs](embedded-server/configuring-your-server/adding-custom-libs.md)
     * [GZip Compression](embedded-server/configuring-your-server/gzip-compression.md)
     * [REST Servlet](embedded-server/configuring-your-server/rest-servlet.md)
+  * [External Web Server](embedded-server/external-web-server.md)
   * [Starting as a Service](embedded-server/starting-as-a-service.md)
   * [Server.json](embedded-server/server.json/README.md)
     * [Working with server.json](embedded-server/server.json/working-with-server.json.md)
@@ -136,6 +137,7 @@
 * [Deploying CommandBox](deploying-commandbox/README.md)
   * [Docker](deploying-commandbox/docker.md)
   * [Heroku](deploying-commandbox/heroku.md)
+  * [Amazon Lightsail](deploying-commandbox/amazon-lightsail.md)
 * [TestBox Integration](testbox-integration/README.md)
   * [Test Runner](testbox-integration/test-runner.md)
   * [Test Watcher](testbox-integration/test-watcher.md)
@@ -174,4 +176,16 @@
     * [Custom Interception Points](developing-for-commandbox/interceptors/custom-interception-points.md)
   * [Injection DSL](developing-for-commandbox/injection-dsl.md)
   * [Example Project](developing-for-commandbox/example-project.md)
+
+## ForgeBox Enterprise
+
+* [Introduction](forgebox-enterprise/introduction.md)
+* [Storage](forgebox-enterprise/storage.md)
+* [Commands](forgebox-enterprise/commands/README.md)
+  * [List](forgebox-enterprise/commands/list.md)
+  * [Register](forgebox-enterprise/commands/register.md)
+  * [Login](forgebox-enterprise/commands/login.md)
+  * [Set Default](forgebox-enterprise/commands/set-default.md)
+  * [Remove](forgebox-enterprise/commands/remove.md)
+* [Usage](forgebox-enterprise/usage.md)
 

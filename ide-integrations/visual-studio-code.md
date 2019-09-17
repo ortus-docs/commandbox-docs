@@ -54,7 +54,7 @@ If you have commandbox mapped to a path you can of course just call box like you
 
 ## Key Extensions
 
-You should also install a few extensions. \(These extensions can also be added from the built in Extentions item.\)
+You should also install a few extensions. \(These extensions can also be added from the built in Extensions item.\)
 
 * [CFML Language Support](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml)
 * [CFLint Support](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cflint)

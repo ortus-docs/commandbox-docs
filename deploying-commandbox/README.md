@@ -14,3 +14,7 @@ Container-based deployments are also supported, with official Docker Images and 
 
 [_Click to learn more._](heroku.md)
 
+![Amazon Lightsail](../.gitbook/assets/image.png)
+
+[_Click to learn more._](amazon-lightsail.md)
+

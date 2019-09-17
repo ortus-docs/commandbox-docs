@@ -10,7 +10,7 @@ Your `box.json` file describes your package, dependencies, and how to install it
 init name="My Package" version="1.0.0"
 ```
 
-That's it. Your folder now has extra meta data in the `box.json` file that describes it a way that is meaningful to [ForgeBox](http://forgebox.io) and CommandBox.
+That's it. Your folder now has extra meta data in the `box.json` file that describes it in a way that is meaningful to [ForgeBox](http://forgebox.io) and CommandBox.
 
 ## Distribution
 
@@ -56,11 +56,7 @@ Package Initialized & Created /Users/username/code/sandbox/my-package/box.json
 
 ## Storing Package Binaries on ForgeBox
 
-ForgeBox can store the binaries for your packages in the ForgeBox Cloud. This provides you with an easy way to store multiple versions of your package distributed across the globe.
-
-> Package storage will be a paid feature for ForgeBox Pro subscribers, though the feature is currently available to all users for free.
-
-To utilize ForgeBox Storage, simply set `forgeboxStorage` as the value of your package's `location`.
+ForgeBox can store the binaries for your packages in the ForgeBox Cloud. This provides you with an easy way to store multiple versions of your package distributed across the globe.  To utilize ForgeBox Storage, simply set `forgeboxStorage` as the value of your package's `location`.
 
 ```bash
 CommandBox:my-package> package set location=forgeboxStorage
