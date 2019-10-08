@@ -18,7 +18,7 @@ We highly encourage contribution to this book and our open source software. The 
 
 ## Charitable Proceeds
 
-15% of the proceeds of this book will go to charity to support orphaned kids in El Salvador - [http://www.harvesting.org/](http://www.harvesting.org/). So please donate and purchase the printed version of this book, every book sold can help a child for almost 2 months.
+15% of the proceeds of this book will go to charity to support orphaned kids in El Salvador - [http://www.harvesting.org/](http://www.harvesting.org/). Please donate and purchase the printed version of this book as every book sold can help a child for almost 2 months.
 
 ### Shalom Children's Home
 
