@@ -4,7 +4,7 @@ One common question is how to access the database from one of these scripts. You
 
 ## Lucee allows datasource to be a struct
 
-So the easiest way to accomplish this is simply to exploit a little known but very cool feature of Lucee that allows the datasource attribute of most tags to be not only a string which contains the name of the datasource, but also a struct that contains the \_definitiion\_ of the datasource. This will create an on-the-fly connection to your database without any server config being necessary which is perfect for a stand-alone script. Here is what that looks like. Note, I'm using queryExecute\(\), but it would work just as well in a cfquery tag.
+So the easiest way to accomplish this is simply to exploit a little known but very cool feature of Lucee that allows the datasource attribute of most tags to be not only a string which contains the name of the datasource, but also a struct that contains the \_definition\_ of the datasource. This will create an on-the-fly connection to your database without any server config being necessary which is perfect for a stand-alone script. Here is what that looks like. Note, I'm using queryExecute\(\), but it would work just as well in a cfquery tag.
 
 ```javascript
 ds = {
