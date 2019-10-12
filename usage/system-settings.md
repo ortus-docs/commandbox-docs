@@ -55,7 +55,8 @@ Note, we escaped the system setting by putting a backslash \(`\`\) in front of i
 
 ```javascript
 {
-    "http":{
+    "web":{
+        "http":{
             "port":"${WEB_PORT:8080}"
         }
     }
