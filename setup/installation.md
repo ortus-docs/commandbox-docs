@@ -58,8 +58,8 @@ Run the following series of commands to add the Ortus signing key, register our 
 
 ```bash
 curl -fsSl https://downloads.ortussolutions.com/debs/gpg | sudo apt-key add -
-echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
-sudo apt-get update && sudo apt-get install commandbox
+echo "deb https://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+sudo apt-get update && sudo apt-get install apt-transport-https commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
