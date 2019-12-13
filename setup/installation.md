@@ -52,7 +52,7 @@ Unzip the binary **box** and just double click on it to open the shell terminal.
 
 ## Linux apt-get
 
-> **Please note** that if you are running Ubuntu 18.04 or greater, or Debian 8 (Jessie) or greater, it's necesarry to have the `libappindicator-dev` package in order to have the tray icon working correctly.
+> **Please note** that if you are running Ubuntu 18.04 or greater, or Debian 8 \(Jessie\) or greater, it's necesarry to have the `libappindicator-dev` package in order to have the tray icon working correctly.
 
 ```bash
 sudo apt install libappindicator-dev

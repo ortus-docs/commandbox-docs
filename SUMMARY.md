@@ -76,6 +76,7 @@
     * [Packaging Your Server](embedded-server/server.json/packaging-your-server.md)
     * [Using Multiple server.json Files](embedded-server/server.json/using-multiple-server.json-files.md)
 * [Package Management](package-management/README.md)
+  * [Semantic Versioning \(semver\)](package-management/semantic-versioning-semver.md)
   * [Installing Packages](package-management/installing-packages/README.md)
     * [Installation Path](package-management/installing-packages/installation-path.md)
     * [Installation Options](package-management/installing-packages/installation-options.md)

@@ -22,7 +22,7 @@ This does assume that your default value will never contain a colon!
 
 ## Lookup Order
 
-System settings are looked up in the following order.  If the same variable exists in more than one place, the first one found will be used:
+System settings are looked up in the following order. If the same variable exists in more than one place, the first one found will be used:
 
 1. Environment variables for the currently executing command
 2. Environment variables for the parent \(calling\) command \(if applicable\)
@@ -65,7 +65,7 @@ Note, we escaped the system setting by putting a backslash \(`\`\) in front of i
 
 Now, if your server has an environment variable called `WEB_PORT`, it will be used as the port for your server.
 
-System settings can also be used in object key names as well in your JSON files.  Here is an example of a `.cfconfig.json` file with a dynamic datasource name.
+System settings can also be used in object key names as well in your JSON files. Here is an example of a `.cfconfig.json` file with a dynamic datasource name.
 
 ```javascript
 {
