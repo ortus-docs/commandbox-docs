@@ -37,8 +37,7 @@ When running `box.exe` on Windows, the registry is used to determine the current
 
 You can manually create the needed keys by modifying and running the following registry entries. \(Contributed by Jim Pickering\)
 
-{% code-tabs %}
-{% code-tabs-item title="JavaSoft-Registry-Keys.reg" %}
+{% code title="JavaSoft-Registry-Keys.reg" %}
 ```text
 Windows Registry Editor Version 5.00
 
@@ -51,8 +50,7 @@ Windows Registry Editor Version 5.00
 "JavaHome"="C:\\Program Files\\Amazon Corretto\\jre8"
 "RuntimeLib"="C:\\Program Files\\Amazon Corretto\\jre8\\bin\\server\\jvm.dll"
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Installing on \*nix
 
