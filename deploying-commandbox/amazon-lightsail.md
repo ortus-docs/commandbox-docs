@@ -58,8 +58,7 @@ In this template, we are using Ortus' awesome Github repo with Elixir and Vue.js
 sudo git clone https://github.com/coldbox-templates/elixir-vuejs.git /app
 ```
 
-**Private Repo**
-If you want to automate a private repo, one way you can do it is to use an access token. The procedure is here https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line. You can create an an access token for downloading private repos without exposing your account password. Fair warning, it's not a perfect solution because as of 08/27/19, they still don't have a read-only permission for private repos.
+**Private Repo** If you want to automate a private repo, one way you can do it is to use an access token. The procedure is here [https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line). You can create an an access token for downloading private repos without exposing your account password. Fair warning, it's not a perfect solution because as of 08/27/19, they still don't have a read-only permission for private repos.
 
 ```bash
 sudo git clone https://{username}:{access-token}@github.com/your/repo.git /app
