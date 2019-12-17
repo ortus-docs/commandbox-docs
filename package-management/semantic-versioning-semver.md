@@ -51,7 +51,7 @@ CommandBox> install coldbox@4.x
 
 Or in your box.json to show what versions of a particular dependency you're willing to accept.
 
-```
+```js
  "dependencies":{
      "coldbox":"^4.3.0"
  },
