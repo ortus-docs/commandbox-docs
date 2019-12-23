@@ -1,6 +1,6 @@
 # Semantic Versioning
 
-The main goal of semver is to create a common ground among developers and their projects for describing the status of their releases and help users get the versions they want. Semver describes how a proper version number can be formatted as well as a special syntax for describing ranges of versions. There are many ways to describe a version number and semver is just one of them. We chose semver for CommandBox due to it's popularity and usage among other common tools like npm. In fact, we've copied the npm flavor or semver specifically which you can [read about here](https://github.com/npm/node-semver/blob/master/README.md).
+The main goal of semver is to create a common ground among developers and their projects for describing the status of their releases and help users get the versions they want. Semver describes how a proper version number can be formatted as well as a special syntax for describing ranges of versions. There are many ways to describe a version number and semver is just one of them. We chose semver for CommandBox due to its popularity and usage among other common tools like npm. In fact, we've copied the npm flavor or semver specifically which you can [read about here](https://github.com/npm/node-semver/blob/master/README.md).
 
 ## Format
 
