@@ -140,7 +140,7 @@ Your DSL should always end with a `run` method. This executes the command. By de
 var output = command( "echo" )
       .params( "My name is Brad" )
       .run( returnOutput=true );
-      
+
 // You can optinally strip any ANSi formatting too
 output = print.unANSI( output );
 ```
@@ -159,7 +159,7 @@ command( "touch" )
     .run( piped='myFile' );
 ```
 
-If you try to pass a shell expansion into a command, it won't work since the CommandDSL escapes all your special characters.  This example doesn't work because the special characters are escaped. So the exact text is printed out and it's not possible to have it evaluated.
+If you try to pass a shell expansion into a command, it won't work since the CommandDSL escapes all your special characters. This example doesn't work because the special characters are escaped. So the exact text is printed out and it's not possible to have it evaluated.
 
 ```javascript
 command( 'echo' )
@@ -169,7 +169,7 @@ command( 'echo' )
 Output: ${ os.name }
 ```
 
-You can ask the CommandDSL to treat your parameters as 'raw' so they are just passed along. This allows them to include system setting expansions and CommandBox backtick expressions.  Make sure that you escape any special chars yourself in this mode just like you would if typing the parameters from the shell.
+You can ask the CommandDSL to treat your parameters as 'raw' so they are just passed along. This allows them to include system setting expansions and CommandBox backtick expressions. Make sure that you escape any special chars yourself in this mode just like you would if typing the parameters from the shell.
 
 ```javascript
 command( 'echo' )

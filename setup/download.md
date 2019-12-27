@@ -4,8 +4,7 @@ If you already have a Java JRE installed level 1.7 or higher \(and set in your e
 
 > **Info** The non-JRE versions are all around 40MB in size, while the embedded JRE versions will go up to 90MB in size.
 
-  
- Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
+Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
 
 ![](../.gitbook/assets/versions.png)
 

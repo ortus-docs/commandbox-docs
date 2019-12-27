@@ -8,7 +8,7 @@ There are two different progress bars in CommandBox.  One specifically for downl
 
 Here is how you can download a file in a Task Runner and have a progress bar animation that contains all the usual data such as download speed and file size.  The progressable downloader will automatically take any HTTP proxy settings into account.
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 Full docs for the Progressable Downloader are [here](downloading-files.md).
 
@@ -16,7 +16,7 @@ Full docs for the Progressable Downloader are [here](downloading-files.md).
 
 You can also use a generic progress bar for any purpose.  It is up to you to update the progress bar with the current percentage.  If you are inside of an Interactive Job, the progress bar will automatically show at the bottom of the job output.
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 ```javascript
 component {

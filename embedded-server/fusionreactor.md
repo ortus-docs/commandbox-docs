@@ -55,6 +55,8 @@ server set fusionreactor.port=8088
 config set server.defaults.fusionreactor.port=8088
 ```
 
+FusionReactor will bind the port on whatever host address is used for your server.
+
 ## Disable the module
 
 You may want to turn the FusionReactor functionality on or off based on your testing or for specific sites. There is now an enable flag for just that. It can be set per server and for all servers as well.
@@ -88,28 +90,70 @@ If you have an older FR license you want to use, you can specify the version of 
 
 ```text
 // Server specific version
-server set fusionreactor.version=6.2.8
+server set fusionreactor.installID=fusionreactor@7.x
 // global default version
-config set server.defaults.fusionreactor.version=6.2.8
+config set server.defaults.fusionreactor.installID=fusionreactor@7.x
 ```
 
-## Custom Download URL
+The `installID` setting can be any valid CommandBox endpoint installation ID, which means you can point to a custom HTTP URL, or ForgeBox slug, etc.
 
-If you have a specific version of the FusionReactor jar that you want to use, or you need to cache it internally in a local network, you can even override the download URL for the jar file. This URL is only hit once and then the jar is cached. And of course, this can be set globally or for a single server so you can test more than one version of FusionReactor at a time.
+## Debugger Libs
 
-If one server is downloading a custom URL, make sure you also set a unique jarPath setting as well so it doesn't interfere with your others servers still using the default download.
+As of version 4.0 of this module, the debugger libs will be added automatically for you based on your OS.  To disable the debugger libs use the following setting:
 
-```text
-server set fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
-server set fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
+```bash
+// Server specific version
+server set fusionreactor.debugEnable=false
+// global default version
+config set server.defaults.fusionreactor.debugEnable=false
+
 ```
 
-Or override it for all your servers:
+## Provide External reactor.conf File
 
-```text
-config set server.defaults.fusionreactor.downloadURL=http://site.com/custom/path/fusionreactor.jar
-config set server.defaults.fusionreactor.jarPath=/FR-home/fusionreactor-custom.jar
+There are a handful of JVM args we can use to set things like license key or password, but there are many many settings inside of FusionReactor that have no corresponding method to externalize them.  These are stored in a file called `conf/reactor.conf` inside of the FusionReactor home directory.  If you want to script out settings such as 
+
+* E-mail servers
+* Notification settings
+* Profiler settings
+* Request history settings
+
+Then you can make a copy of a `reactor.conf` file that contains the settings you want the point this module at the file to be copied over when starting the server so FR will pick it up and use it.  Just need in mind that this setting will **override** any manual setting changes you make in the FR web admin every time you start the server.
+
+#### Start up a test server with the FR module installed
+
+```bash
+install commandbox-fusionreactor
+server start
 ```
+
+#### Navigate to the FR admin, login, and set your desired settings
+
+```bash
+fr open
+```
+
+#### Copy the populated `reactor.conf` file somewhere for later use
+
+```bash
+cp "`server info property=FRHomeDirectory`conf/reactor.conf" ./reactor.conf
+```
+
+Point your `server.json` to the new file.  Remember, non-absolute paths are relative to the directory the `server.json` lives in.
+
+```bash
+server set fusionreactor.reactorconfFile=reactor.conf
+```
+
+Now, a fresh new server will have these settings.
+
+```bash
+server stop 
+server forget --force
+server start
+```
+
+Note: the `reactor.conf` file may contain _passwords or other sensitive information_.  It is in a java properties file format, so feel free to edit it and remove items you don't want.  Also, take care when committing it to a source repo or making it web accessible so you don't reveal information.  There is currently no support for environment variable expansions in this file, but perhaps we'll add it if it's useful.
 
 ## Additional JVM args
 
@@ -127,4 +171,15 @@ Here's the module setting, followed by the JVM arg it creates. Remember, you can
 * **fusionreactor.cloudGroup** - `fr.cloud.group`
 * **fusionreactor.requestObfuscateParameters** - `fr.request.obfuscate.parameters`
 * **fusionreactor.defaultApplicationName** - `fr.application.name`
+
+## External Server
+
+By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port.  If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.
+
+```bash
+// Server specific version
+server set fusionreactor.externalServerEnable=true
+// global default version
+config set server.defaults.fusionreactor.externalServerEnable=true
+```
 

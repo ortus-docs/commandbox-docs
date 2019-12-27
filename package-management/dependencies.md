@@ -4,7 +4,7 @@ Dependencies are other packages that are required by another package for it to r
 
 When a package is installed, CommandBox will read its dependencies \(from the box.json\) and recursively install them as well. This encourages developers to write small, reusable libraries for everyone to use. When installing via a package manager, you don't have to worry about getting all the pieces installed.
 
-Dependencies and development dependencies are stored in an object with the slug for the key a version range for the value.
+Dependencies and development dependencies are stored in an object with the slug for the key and a version range for the value. The are several options available for these version ranges and more information can be found in the section on [Semantic versioning](semantic-versioning.md).
 
 ```bash
 "dependencies":{

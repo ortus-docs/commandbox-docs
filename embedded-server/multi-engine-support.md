@@ -50,16 +50,7 @@ CommandBox> artifacts list
 CommandBox> artifacts remove adobe
 ```
 
-> \*\* **Note**: [Adobe ColdFusion 9 does not support Java 8](http://blogs.coldfusion.com/post.cfm/which-jdk-is-supported-with-coldfusion-9-10-and-11). To run ColdFusion 9 you must first [install Java 6 or 7](https://www.java.com/en/download/faq/other_jreversions.xml). Then change the CommandBox java version, by doing one of the following:
->
-> * Update the OS default, defined in the `JAVA_HOME` environment variable, with the Java 6/7 JRE directory
-> * Copy the Java 6/7 JRE folder into the CommandBox installation directory, and rename the subfolder "jre".
->
->   For example, if the new JRE is installed in `C:\Program files\java\jre7` copy it to `C:\CommandBox\jre`
->
->   _Note: This version will take precedence over_ `JAVA_HOME`
->
-> Restart CommandBox to apply the changes.
+> \*\* **Note**: [Adobe ColdFusion 9 does not support the latest Java 8](http://blogs.coldfusion.com/post.cfm/which-jdk-is-supported-with-coldfusion-9-10-and-11). To run ColdFusion 9 you must use an older version of CommandBox 3.x on Java 7 or run CommandBox 4.x on Java 8 update 92 or earlier.  Several people are doing this, but beware your mileage may vary.
 
 ## ColdFusion Admin settings
 
