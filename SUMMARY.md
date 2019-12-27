@@ -69,6 +69,8 @@
     * [Adding Custom Libs](embedded-server/configuring-your-server/adding-custom-libs.md)
     * [GZip Compression](embedded-server/configuring-your-server/gzip-compression.md)
     * [REST Servlet](embedded-server/configuring-your-server/rest-servlet.md)
+    * [Performance Tuning](embedded-server/configuring-your-server/performance-tuning.md)
+    * [Undertow Options](embedded-server/configuring-your-server/undertow-options.md)
   * [External Web Server](embedded-server/external-web-server.md)
   * [Starting as a Service](embedded-server/starting-as-a-service.md)
   * [Server.json](embedded-server/server.json/README.md)
@@ -177,6 +179,7 @@
     * [Custom Interception Points](developing-for-commandbox/interceptors/custom-interception-points.md)
   * [Injection DSL](developing-for-commandbox/injection-dsl.md)
   * [Example Project](developing-for-commandbox/example-project.md)
+  * [FusionReactor for the CLI](developing-for-commandbox/fusionreactor-for-the-cli.md)
 
 ## ForgeBox Enterprise
 

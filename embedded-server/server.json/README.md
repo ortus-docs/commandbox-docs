@@ -36,6 +36,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "webroot": "src/cfml",
         "directoryBrowsing": true,
         "accessLogEnable": true,
+        "maxRequests":30,
         "aliases": {
             "/foo": "../bar",
             "/js": "C:/static/shared/javascript"
@@ -90,7 +91,13 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "sessionCookieHTTPOnly": true
     },
     "runwar": {
-        "args": ""
+        "args": "",
+        "XNIOOptions": {
+            "WORKER_NAME": "MyWorker"
+        },
+        "UndertowOptions": {
+            "ALLOW_UNESCAPED_CHARACTERS_IN_URL": true
+        }
     }
 }
 ```
