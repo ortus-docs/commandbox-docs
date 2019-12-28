@@ -41,6 +41,14 @@ You may also choose a custom placeholder name for readability.
 ll *.json --simple | foreach "echo \${filename} && cat \${filename}" filename
 ```
 
+Here's an example that has several things going on.  It takes a list of globbing patterns to get all CFC and CFM files recursively in a directory, then it loops over each file path, outputting it preceded by the current working directory, with backslashes replaced with forward slashes.  
+
+```bash
+dir **.cfc,**.cfm --simple | foreach "echo `pwd | #listchangedelims / \\`/\${item}"
+```
+
+
+
 ### Iterating over JSON
 
 The `forEach` can also iterate over JSON representations of objects or arrays.  This means you can pipe in JSON from a file, a command such as `package show` or any REPL operation that returns complex data.  The `delimiter` parameter is ignored for JSON input.
