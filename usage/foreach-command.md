@@ -20,15 +20,15 @@ ls *.json --simple | forEach cat
 ```
 
 You can customize the delimiter. This example passes a hard-coded input and spits it on commas.  
-So here, the install command is run three times, once for each package. A contrived, but effective example.
+So here, the `install` command is run three times, once for each package. A contrived, but effective example.
 
 ```text
 forEach input="coldbox,testbox,cborm" delimiter="," command=install
 ```
 
 If you want a more complex command, you can choose exactly where you wish to use the incoming item  
-by referencing the default system setting expansion of ${item}. Remember to escape the expansion in   
-your command so it's resolution is deferred until the forEach runs it internally.  
+by referencing the default system setting expansion of `${item}`. Remember to escape the expansion in   
+your command so it's resolution is deferred until the `forEach` runs it internally.  
 Here we echo each file name followed by the contents of the file.
 
 ```text
@@ -57,7 +57,13 @@ The `forEach` can also iterate over JSON representations of objects or arrays.  
 package show dependencies | foreach
 ```
 
-If iterating over an array, each item in the array will be available as `${item}`.  If iterating over a object, the object keys will be in `${item}` and the values will be in `${value}`.    You can customize the system setting name for value with the `valueName` parameter to `forEach`. 
+If iterating over an array, each item in the array will be available as `${item}`.  If iterating over a object, the object keys will be in `${item}` and the values will be in `${value}`.  
+
+```bash
+package show dependencies | foreach "echo 'You have \${item} version \${value} installed'"
+```
+
+ You can customize the system setting name for value with the `valueName` parameter to `forEach`. 
 
 ```text
 package show dependencies | foreach command="echo 'You have \${package} version \${version} installed'" itemName=package valueName=version
