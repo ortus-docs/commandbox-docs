@@ -111,7 +111,28 @@ If you want to add ad-hoc Java Properties to the actual CLI process, you can set
 BOX_JAVA_PROPS="foo=bar;brad=wood"
 ```
 
-That would create a property called `foo` and a property called `brad` with the values `bar` and `wood` respectively.
+That would create a property called `foo` and a property called `brad` with the values `bar` and `wood` respectively.  This environment variable works the same on all operating systems.
+
+### Ad-hoc JVM args for the CLI
+
+Similar to above, you may want to add ad-hoc JVM args to the java process that powers the CLI.  The steps differ per operating system.  For \*nix \(Linux, Mac\), set an environment variable called `BOX_JAVA_ARGS` in the environment that `box` will run in.
+
+```bash
+BOX_JAVA_ARGS="-Xms1024m -Xmx2048m -Dfoo=bar"
+box
+```
+
+For Windows, create a file called `box.l4j.ini` in the same directory as the `box.exe` file and place a JVM arg on each line.  Escape any backslashes with an additional backslash like a properties file format.
+
+{% code title="box.l4j.ini" %}
+```bash
+-Xms1024m
+-Xmx2048m
+-Dfoo=bar
+```
+{% endcode %}
+
+Both of those examples would set the min/max heap size of the CLI process and also set a Java System Property called "foo" equal to "bar".  There is no effective difference between setting system properties this way as opposed to using `BOX_JAVA_PROPS` as shown in the previous section, but actual JVM `-X` settings must be set as described in this section.
 
 ## Noninteractive Mode
 
