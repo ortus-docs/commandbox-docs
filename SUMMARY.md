@@ -192,16 +192,3 @@
   * [Set Default](forgebox-enterprise/commands/set-default.md)
   * [Remove](forgebox-enterprise/commands/remove.md)
 * [Usage](forgebox-enterprise/usage.md)
-
-## ForgeBox Enterprise
-
-* [Introduction](forgebox-enterprise/introduction.md)
-* [Storage](forgebox-enterprise/storage.md)
-* [Commands](forgebox-enterprise/commands/README.md)
-  * [List](forgebox-enterprise/commands/list.md)
-  * [Register](forgebox-enterprise/commands/register.md)
-  * [Login](forgebox-enterprise/commands/login.md)
-  * [Set Default](forgebox-enterprise/commands/set-default.md)
-  * [Remove](forgebox-enterprise/commands/remove.md)
-* [Usage](forgebox-enterprise/usage.md)
-
