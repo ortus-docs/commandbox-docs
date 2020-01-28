@@ -173,7 +173,7 @@ The CommandBox FusionReactor module has passthrough settings for every documente
 Here's the module setting, followed by the JVM arg it creates. Remember, you can use environment variables in your `server.json` to control these dynamically on a per-server basis!
 
 * **fusionreactor.password** - `fradminpassword`
-* **fusionreactor.RESTRegisterURL** - `frregisterhostname`
+* **fusionreactor.RESTRegisterURL** - `frregisterwith`
 * **fusionreactor.RESTShutdownAction** - `frshutdownaction`
 * **fusionreactor.RESTRegisterHostname** - `frregisterhostname`
 * **fusionreactor.RESTRegisterGroup** - `frregistergroup`
