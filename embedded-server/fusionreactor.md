@@ -181,6 +181,7 @@ Here's the module setting, followed by the JVM arg it creates. Remember, you can
 * **fusionreactor.licenseLeaseTimeout** - `frlicenseservice.leasetime.hint`
 * **fusionreactor.cloudGroup** - `fr.cloud.group`
 * **fusionreactor.requestObfuscateParameters** - `fr.request.obfuscate.parameters`
+* **fusionreactor.autoApplicationNaming** - `fr.application.auto_naming`
 * **fusionreactor.defaultApplicationName** - `fr.application.name`
 
 ## External Server
