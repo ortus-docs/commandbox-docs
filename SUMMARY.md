@@ -93,8 +93,8 @@
     * [Java](package-management/code-endpoints/java.md)
     * [S3](package-management/code-endpoints/s3.md)
     * [CFLib](package-management/code-endpoints/cflib.md)
-    * [RIAForge](package-management/code-endpoints/riaforge.md)
     * [Jar \(via HTTP\)](package-management/code-endpoints/jar-via-http.md)
+    * [Lex \(via HTTP\)](package-management/code-endpoints/lex-via-http.md)
     * [Gist](package-management/code-endpoints/gist.md)
   * [Package Scripts](package-management/package-scripts.md)
   * [Dependencies](package-management/dependencies.md)
@@ -192,3 +192,4 @@
   * [Set Default](forgebox-enterprise/commands/set-default.md)
   * [Remove](forgebox-enterprise/commands/remove.md)
 * [Usage](forgebox-enterprise/usage.md)
+

@@ -1,12 +1,12 @@
 # Starting as a Service
 
-When using CommandBox on a staging or production server, you may wish to start up servers as a service when the OS comes online.  The recommended approach is to use the [**CommandBox Service Manager Module**](https://www.ortussolutions.com/products/commandbox-service-manager), which is a commercial module that handles all major operating systems \(Linux, Mac, Windows\) automatically.
+When using CommandBox on a staging or production server, you may wish to start up servers as a service when the OS comes online. The recommended approach is to use the [**CommandBox Service Manager Module**](https://www.ortussolutions.com/products/commandbox-service-manager), which is a commercial module that handles all major operating systems \(Linux, Mac, Windows\) automatically.
 
 ![CommandBox Service Manager ](../.gitbook/assets/image%20%287%29.png)
 
+See screencast here:
 
-See screencast here: 
-{% embed url="https://www.ortussolutions.com/products/commandbox-service-manager" %}
+{% embed url="https://www.ortussolutions.com/products/commandbox-service-manager" caption="" %}
 
 Alternatively, you can manually do so following one of these community guides.
 

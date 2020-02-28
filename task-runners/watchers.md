@@ -25,9 +25,9 @@ Here's a rundown of the methods used above in the DSL.
 * **onChange\( ... \)** - Pass a closure to be executed when a change has occurred.
 * **start\(\)** - Starts the watcher. Always call this at the end of the DSL chain
 
-### onChange\(\) Closure
+## onChange\(\) Closure
 
-If you don't care what the change was then you don't need to define any arguments to your closure.  However, each time your closure is called, there is a struct of data passed to it that defines what paths were added removed and changed.  The data is the format of:
+If you don't care what the change was then you don't need to define any arguments to your closure. However, each time your closure is called, there is a struct of data passed to it that defines what paths were added removed and changed. The data is the format of:
 
 ```javascript
 {
@@ -37,7 +37,7 @@ If you don't care what the change was then you don't need to define any argument
 }
 ```
 
-The arrays will contain the corresponding file paths.  For example, if the `removed` array is empty, it means no files were removed.  There should be at least one file path in at least one of the 3 arrays.
+The arrays will contain the corresponding file paths. For example, if the `removed` array is empty, it means no files were removed. There should be at least one file path in at least one of the 3 arrays.
 
 ```javascript
 watch()

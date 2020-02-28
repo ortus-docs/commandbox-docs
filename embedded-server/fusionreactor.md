@@ -110,26 +110,25 @@ The `installID` setting can be any valid CommandBox endpoint installation ID, wh
 
 ## Debugger Libs
 
-As of version 4.0 of this module, the debugger libs will be added automatically for you based on your OS.  To disable the debugger libs use the following setting:
+As of version 4.0 of this module, the debugger libs will be added automatically for you based on your OS. To disable the debugger libs use the following setting:
 
 ```bash
 // Server specific version
 server set fusionreactor.debugEnable=false
 // global default version
 config set server.defaults.fusionreactor.debugEnable=false
-
 ```
 
 ## Provide External reactor.conf File
 
-There are a handful of JVM args we can use to set things like license key or password, but there are many many settings inside of FusionReactor that have no corresponding method to externalize them.  These are stored in a file called `conf/reactor.conf` inside of the FusionReactor home directory.  If you want to script out settings such as 
+There are a handful of JVM args we can use to set things like license key or password, but there are many many settings inside of FusionReactor that have no corresponding method to externalize them. These are stored in a file called `conf/reactor.conf` inside of the FusionReactor home directory. If you want to script out settings such as
 
 * E-mail servers
 * Notification settings
 * Profiler settings
 * Request history settings
 
-Then you can make a copy of a `reactor.conf` file that contains the settings you want the point this module at the file to be copied over when starting the server so FR will pick it up and use it.  Just need in mind that this setting will **override** any manual setting changes you make in the FR web admin every time you start the server.
+Then you can make a copy of a `reactor.conf` file that contains the settings you want the point this module at the file to be copied over when starting the server so FR will pick it up and use it. Just need in mind that this setting will **override** any manual setting changes you make in the FR web admin every time you start the server.
 
 #### Start up a test server with the FR module installed
 
@@ -150,7 +149,7 @@ fr open
 cp "`server info property=FRHomeDirectory`conf/reactor.conf" ./reactor.conf
 ```
 
-Point your `server.json` to the new file.  Remember, non-absolute paths are relative to the directory the `server.json` lives in.
+Point your `server.json` to the new file. Remember, non-absolute paths are relative to the directory the `server.json` lives in.
 
 ```bash
 server set fusionreactor.reactorconfFile=reactor.conf
@@ -164,7 +163,7 @@ server forget --force
 server start
 ```
 
-Note: the `reactor.conf` file may contain _passwords or other sensitive information_.  It is in a java properties file format, so feel free to edit it and remove items you don't want.  Also, take care when committing it to a source repo or making it web accessible so you don't reveal information.  There is currently no support for environment variable expansions in this file, but perhaps we'll add it if it's useful.
+Note: the `reactor.conf` file may contain _passwords or other sensitive information_. It is in a java properties file format, so feel free to edit it and remove items you don't want. Also, take care when committing it to a source repo or making it web accessible so you don't reveal information. There is currently no support for environment variable expansions in this file, but perhaps we'll add it if it's useful.
 
 ## Additional JVM args
 
@@ -186,7 +185,7 @@ Here's the module setting, followed by the JVM arg it creates. Remember, you can
 
 ## External Server
 
-By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port.  If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.
+By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port. If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.
 
 ```bash
 // Server specific version
