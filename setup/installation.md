@@ -30,8 +30,7 @@ To stay with current bleeding edge releases use the following:
 
 ```bash
 brew tap ortus-solutions/boxtap
-brew tap-pin ortus-solutions/boxtap
-brew install --devel commandbox
+brew install --devel ortus-solutions/boxtap/commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
