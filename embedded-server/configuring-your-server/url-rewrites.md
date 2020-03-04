@@ -93,7 +93,7 @@ server set web.rewrites.config=~\.CommandBox\cfml\system\config\customRewrites.x
 
 ## Apache mod\_rewrite-style rules
 
-If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`. You can simply put your rules in a file named `.htacess` and point the `web.rewrites.config` property to that file.
+If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`. You can simply put your rules in a file named `.htaccess` and point the `web.rewrites.config` property to that file.
 
 _Note: The name of the file matters with mod\_rewrite-style rules. It must be called_ `.htaccess`_. With xml rewrites, the filename is not important, only the content._
 
