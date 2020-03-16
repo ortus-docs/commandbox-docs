@@ -27,7 +27,7 @@ forEach input="coldbox,testbox,cborm" delimiter="," command=install
 ```
 
 If you want a more complex command, you can choose exactly where you wish to use the incoming item  
-by referencing the default system setting expansion of ${item}. Remember to escape the expansion in   
+by referencing the default system setting expansion of ${item}. Remember to escape the expansion in  
 your command so it's resolution is deferred until the forEach runs it internally.  
 Here we echo each file name followed by the contents of the file.
 
@@ -41,21 +41,17 @@ You may also choose a custom placeholder name for readability.
 ll *.json --simple | foreach "echo \${filename} && cat \${filename}" filename
 ```
 
-### Iterating over JSON
+## Iterating over JSON
 
-The `forEach` can also iterate over JSON representations of objects or arrays.  This means you can pipe in JSON from a file, a command such as `package show` or any REPL operation that returns complex data.  The `delimiter` parameter is ignored for JSON input.
+The `forEach` can also iterate over JSON representations of objects or arrays. This means you can pipe in JSON from a file, a command such as `package show` or any REPL operation that returns complex data. The `delimiter` parameter is ignored for JSON input.
 
 ```text
 package show dependencies | foreach
 ```
 
-If iterating over an array, each item in the array will be available as `${item}`.  If iterating over a object, the object keys will be in `${item}` and the values will be in `${value}`.    You can customize the system setting name for value with the `valueName` parameter to `forEach`. 
+If iterating over an array, each item in the array will be available as `${item}`. If iterating over a object, the object keys will be in `${item}` and the values will be in `${value}`. You can customize the system setting name for value with the `valueName` parameter to `forEach`.
 
 ```text
 package show dependencies | foreach command="echo 'You have \${package} version \${version} installed'" itemName=package valueName=version
 ```
-
-
-
-
 
