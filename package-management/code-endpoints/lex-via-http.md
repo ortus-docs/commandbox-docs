@@ -7,7 +7,7 @@ description: Lucee Extensions
 If you have external Lucee Extensions that need downloaded into your Lucee Server, you can use the `lex:` endpoint to download them. The lex endpoint does not expect the download to be contained in a zip file or to have a box.json. As such, there is no real package slug or name, so CommandBox will "guess" the name based on the name of the lex based on the URL.
 
 ```text
-install install lex:https://server.com/path/to/ortus-redis-cache-1.4.0.lex
+install lex:https://server.com/path/to/ortus-redis-cache-1.4.0.lex
 ```
 
 Please note that if a Lucee extension is already hosted on ForgeBox, you do not need the Lex extension, as you can simply use the ForgeBox slug just like you would any other page and get the same result but with the addition of semantic versioning.

@@ -14,7 +14,7 @@ Undertow has its own set of options which can be found here:
 To set an XNIO option that CommandBox doesn't already expose with a first-class setting, you can set them into your `server.json` like so:
 
 ```bash
-server set runwar.undertowOptions.ALLOW_UNESCAPED_CHARACTERS_IN_URL=truer
+server set runwar.undertowOptions.ALLOW_UNESCAPED_CHARACTERS_IN_URL=true
 ```
 
 You can also set global XNIO objects that will apply to all servers.  Global options will be appended to server-level options.

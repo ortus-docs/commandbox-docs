@@ -30,9 +30,9 @@ When CommandBox first starts, you should see some extra output in the console fr
 
 All of the standard FR functions you're used to including memory/CPU tracking JDBC requests, stack traces, the profiler and debugger are all available to you!  This works because FusionReactor has an API that CommandBox uses to report what it's doing automatically.  
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/fr-cli-history.png)
 
 You even get sweet trans breakdowns. Here is a `coldbox create app` command that runs several HTTP calls and a nested `package set` command.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/fr-cli-detail.png)
 
