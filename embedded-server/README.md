@@ -42,7 +42,7 @@ config set server.defaults.trayEnable=false
 
 CommandBox's embedded server does not require any prior installations of any CFML engine to work. It does not use Apache, IIS, or Nginx. A very lightweight Java web server called [Undertow](http://undertow.io/) is used and a context is programmatically deployed via a WAR file.
 
-You should still have all the options you need to set up most local development servers quickly. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers. To see a list of all the parameters you can pass to the `server start` command, refer to the [CommandBox API Docs](http://apidocs.ortussolutions.com/commandbox/3.5.0/index.html?commandbox/system/modules_app/server-commands/commands/server/start.html) or run `server start help` command directly from the CLI.
+You should still have all the options you need to set up most local development servers quickly. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers. To see a list of all the parameters you can pass to the `server start` command, refer to the [CommandBox API Docs](http://apidocs.ortussolutions.com/commandbox/5.0.0/index.html?commandbox/system/modules_app/server-commands/commands/server/start.html) or run `server start help` command directly from the CLI.
 
 ## Environment Variables
 
