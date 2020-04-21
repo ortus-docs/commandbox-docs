@@ -37,6 +37,8 @@ Then run the `box` binary to begin the one-time unpacking process.
 
 Versions will be installed in `/usr/local/Cellar/commandbox`. To switch between versions, simply use `brew switch commandbox [version number]`
 
+If you want to use a `commandbox.properties` as mentioned above, your `box` file will be in the `/usr/local/Cellar/commandbox/<version>/bin/` directory.
+
 When using Homebrew to install CommandBox you must use Homebrew for any upgrade, minor or major. To upgrade CommandBox with Homebrew:
 
 ```bash
