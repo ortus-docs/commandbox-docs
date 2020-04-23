@@ -141,7 +141,7 @@ var output = command( "echo" )
       .params( "My name is Brad" )
       .run( returnOutput=true );
 
-// You can optinally strip any ANSi formatting too
+// You can optionally strip any ANSi formatting too
 output = print.unANSI( output );
 ```
 
