@@ -37,6 +37,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "directoryBrowsing": true,
         "accessLogEnable": true,
         "maxRequests":30,
+        "gzipEnable": true,
         "aliases": {
             "/foo": "../bar",
             "/js": "C:/static/shared/javascript"
