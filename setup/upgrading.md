@@ -39,7 +39,7 @@ upgrade --latest --force
 
 ## Brute Force
 
-Note, if you delete your `{user}/.CommandBox` folder and re-run the executable, the version of CommandBox in the executable will be unpacked regardless of any upgrades you may have installed in the mean time. On that note, another way to force an upgrade is to simply download the new executable, wipe the `.CommandBox` folder in your user directory and re-run. This will also erase any saved command history, embedded servers, or installed user commands. servers, or installed user commands.
+Note, if you delete your `{user}/.CommandBox` folder and re-run the executable, the version of CommandBox in the executable will be unpacked regardless of any upgrades you may have installed in the mean time. On that note, another way to force an upgrade is to simply download the new executable, wipe the `.CommandBox` folder in your user directory and re-run. This will also erase any saved command history, embedded servers, or installed user commands.
 
 ## Mac/  \*Unix
 
