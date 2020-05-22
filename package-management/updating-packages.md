@@ -22,8 +22,7 @@ Found (1) Outdated Dependency
 Would you like to update the dependency? (yes/no) :
 ```
 
-Entering "yes" will install the newest version of the package. Use the --force flag to automatically answer "yes".
-It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
+Entering "yes" will install the newest version of the package. Use the --force flag to automatically answer "yes". It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
 
 ```bash
 outdated
