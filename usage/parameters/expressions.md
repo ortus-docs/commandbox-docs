@@ -70,7 +70,7 @@ package set name="`package show name` wood"
 Set name = brad wood
 ```
 
-Perform CFML opertaions on local files:
+Perform CFML operations on local files:
 
 ```bash
 Commandbox> #hash `cat pass.txt`

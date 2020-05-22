@@ -74,3 +74,5 @@ And as always, on any operating system and with any JRE provider, you can overri
 
 For macOS users who have installed CommandBox via HomeBrew, the installer creates a `box` _alias_ in `/usr/local/bin/` which points to the `box` _binary_ in the `/usr/local/Cellar/commandbox/<version>/bin/` directory. If you want CommandBox to use a particular version of the `JRE` then put the `jre` folder in the `/usr/local/bin/` directory. If you want CommandBox to have [a different home `.CommandBox` directory](https://commandbox.ortusbooks.com/setup/installation#homebrew-mac), place your `commandbox.properties` file in the `/usr/local/Cellar/commandbox/<version>/bin/` directory.
 
+If you want to debug what JRE is being used by the CommandBox CLI, use the `-clidebug` flag when starting CommandBox and the first few lines will tell you what version of Java is being used, and where on disk it lives.
+

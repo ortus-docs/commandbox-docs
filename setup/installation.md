@@ -30,19 +30,19 @@ To stay with current bleeding edge releases use the following:
 
 ```bash
 brew tap ortus-solutions/boxtap
-brew tap-pin ortus-solutions/boxtap
-brew install --devel commandbox
+brew install --devel ortus-solutions/boxtap/commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
 
 Versions will be installed in `/usr/local/Cellar/commandbox`. To switch between versions, simply use `brew switch commandbox [version number]`
 
-When using Hombrew to install CommandBox you must use Homebrew for any upgrade, minor or major. To upgrade CommandBox with Homebrew:
+If you want to use a `commandbox.properties` file as mentioned above, your `box` _binary_ file will be in the `/usr/local/Cellar/commandbox/<version>/bin/` directory where you should place your `commandbox.properties` file. There will also be a `box` _alias_ in the `/usr/local/bin/` directory where you should place the `jre` if you want CommandBox to use a version of Java that is different from your default version reported by `java -version`.
+
+When using Homebrew to install CommandBox you must use Homebrew for any upgrade, minor or major. To upgrade CommandBox with Homebrew:
 
 ```bash
-brew uninstall commandbox
-brew install commandbox
+brew upgrade commandbox
 ```
 
 ### Manual Installation
@@ -53,14 +53,20 @@ Unzip the binary **box** and just double click on it to open the shell terminal.
 
 ## Linux apt-get
 
+> **Please note** that if you are running Ubuntu 18.04 or greater, or Debian 8 \(Jessie\) or greater, it's necesarry to have the `libappindicator-dev` package in order to have the tray icon working correctly.
+
+```bash
+sudo apt install libappindicator-dev
+```
+
 Run the following series of commands to add the Ortus signing key, register our Debian repo, and install CommandBox.
 
 ### Stable
 
 ```bash
 curl -fsSl https://downloads.ortussolutions.com/debs/gpg | sudo apt-key add -
-echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
-sudo apt-get update && sudo apt-get install commandbox
+echo "deb https://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
+sudo apt-get update && sudo apt-get install apt-transport-https commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.

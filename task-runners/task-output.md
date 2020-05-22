@@ -17,7 +17,7 @@ print.line();
 
 ### Text Color
 
-CommandBox supports 256 colors, but some terminals only support 16 or even 8.  If you use a color that the terminal doesn't support, it will be adjusted to the next closest color.  If the method has one of the names of a supported color in it, the text will be colored.  Here are the basic 16 color names:
+CommandBox supports 256 colors, but some terminals only support 16 or even 8. If you use a color that the terminal doesn't support, it will be adjusted to the next closest color. If the method has one of the names of a supported color in it, the text will be colored. Here are the basic 16 color names:
 
 * Black
 * Maroon
@@ -69,7 +69,7 @@ print.greenOnRedLine( "Christmas?" );
 
 ### Color by Numbers
 
-When you run the system-colors command, you'll see that each of the 256 colors have a number.  You can reference a color like so:
+When you run the system-colors command, you'll see that each of the 256 colors have a number. You can reference a color like so:
 
 ```text
 print.color221( 'I will print PaleVioletRed1' );
@@ -153,6 +153,4 @@ If you have a string that contains ANSI formatting and you want to strip it out 
 ```javascript
 var strippedOutput = print.unANSI( formattedOutput );
 ```
-
-
 

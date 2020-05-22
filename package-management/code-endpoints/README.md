@@ -13,9 +13,9 @@ Here is a list of the package endpoints currently supported by CommandBox.
 * **Git** - Any Git repo containing a package [\(_Read more_\)](git.md)
 * **Java** - Install OpenJDK for your servers [\(Read more\)](java.md)
 * **Jar** - A jar file hosted via HTTP that's _not_ contained in a zip file [\(_Read more_\)](jar-via-http.md)
+* **Lex**- A Lucee Extension hosted via HTTP that's _not_ contained in a zip file [\(_Read more_\)](lex-via-http.md)
 * **S3** - A package zip stored in a private S3 bucket [\(_Read more_\)](s3.md)
 * **CFLib** - UDFs posted on CFLib.org [\(_Read more_\)](cflib.md)
-* **RIAForge** - Projects posted to RIAForge.org  [\(_Read more_\)](riaforge.md)
 * **Gist** - A package hosted as a Gist from gist.github.com  [\(_Read more_\)](gist.md)
 
 ## Examples
