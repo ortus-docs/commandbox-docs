@@ -46,3 +46,57 @@ config set artifactsDirectory=/path/to/artifacts
 config show artifactsDirectory
 ```
 
+## Additional actions available to create tray icon options
+
+`action` values available
+
+`run:` Use this to execute a command from your tray menu if you are expecting to get some feedback from the result, a small window will pop to show the output for the executed command.
+
+```bash
+"label":"Open VScode",
+"action":"runAsync",
+"command":"code .",
+"disabled":false,
+"image":"/path/to/image.png"
+```
+
+`runAsync:` Use this to execute a command from your tray menu if you are NOT expecting to get any output, this will execute the command in silent mode.
+
+```bash
+"label":"Open VScode",
+"action":"runAsync",
+"command":"code .",
+"disabled":false,
+"image":"/path/to/image.png"
+```
+
+`runTerminal:` Use this to execute a command in a separated terminal window, the window will not close when the actions is done.
+
+```bash
+"label":"Say Hello",
+"action":"runTerminal",
+"command":"echo " hello "",
+"disabled":false,
+"image":"/path/to/image.png"
+```
+
+Also the new property `workingDirectory` has been added to the `trayOption` definition, this property allows to set the current working directory for all the executed commands i.e.
+
+```bash
+"label":"Start an awesome app",
+"action":"run",
+"command":"box server start",
+"workingDirectory":"/path/to/my/app/folder"
+"disabled":false,
+"image":"/path/to/image.png"
+```
+
+## Defining a custom shell to use arbitrary actions
+
+To define a custom shell to use arbitrary actions on tray menu, Commandbox has the ability to determinate an available shell to use, however it is possible to set a particular shell setting a property to your `server.json`
+
+```bash
+server set defaultShell="/bin/bash"
+```
+
+If you start your server using  `--trace` you can check the parameter been set.
