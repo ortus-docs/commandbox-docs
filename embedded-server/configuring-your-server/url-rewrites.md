@@ -45,6 +45,7 @@ If you want to customize your rewrite rules, just create your own XML file and s
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN" "http://tuckey.org/res/dtds/urlrewrite4.0.dtd">
 <urlrewrite>
     <!-- this will redirect the user from /foo to /index.cfm -->
     <rule>
