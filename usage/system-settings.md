@@ -130,8 +130,8 @@ myValue = systemSettings.expandSystemSettings( myValue );
 The `SystemSettings` service also gives you programmatic access to individual system settings in your custom commands and task runners.
 
 ```javascript
-var mySetting = systemSetting.getSystemSetting( 'settingName' );
+var mySetting = systemSettings.getSystemSetting( 'settingName' );
 or
-var mySetting = systemSetting.getSystemSetting( 'settingName', 'defaultValue' );
+var mySetting = systemSettings.getSystemSetting( 'settingName', 'defaultValue' );
 ```
 
