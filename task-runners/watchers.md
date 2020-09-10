@@ -19,7 +19,7 @@ watch()
 
 Here's a rundown of the methods used above in the DSL.
 
-* **paths\( ... \)** - Receives a comma-delimited list of globbing patterns to watch for changes. \(defaults to `**`\)
+* **paths\( ... \)** - Receives one or more globbing patterns to watch for changes. Pass each globbing pattern as a separate argument. \(defaults to `**`\)
 * **inDirectory\( ... \)** - Set the base directory that the file globs are relative to. \(defaults to current working directory\)
 * **withDelay\( ... \)** - Set the number of milliseconds between polling the file system. \(defaults to 500 ms\)
 * **onChange\( ... \)** - Pass a closure to be executed when a change has occurred.
