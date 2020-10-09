@@ -1,10 +1,10 @@
 # Introduction
 
-## CommandBox Manual - Version 4.5.0
+## CommandBox Manual - Version 5.2.0
 
 ![CommandBox](.gitbook/assets/commandboxlogo.png)
 
-Welcome to the CommandBox Manual. CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface \(CLI\) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and sweet ASCII art. It seamlessly integrate to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) \*Box products but it is also open for extensibility for any ColdFusion \(CFML\) project as it is also written in ColdFusion \(CFML\) using our concepts of CommandBox Commands.
+Welcome to the CommandBox Manual. CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface \(CLI\) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and sweet ASCII art. It seamlessly integrates to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) \*Box products, but it is also open for extensibility for any ColdFusion \(CFML\) project as it is written in ColdFusion \(CFML\) using our concepts of CommandBox Commands.
 
 ## Versioning
 
@@ -35,7 +35,7 @@ The CommandBox help and discussion group can be found here: [https://groups.goog
 
 ## Reporting a Bug
 
-We all make mistakes from time to time :\) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/ortus-solutions/commandbox](https://github.com/ortus-solutions/commandbox)
+We all make mistakes from time to time :\) so why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/ortus-solutions/commandbox](https://github.com/ortus-solutions/commandbox)
 
 * [https://ortussolutions.atlassian.net/browse/COMMANDBOX](https://ortussolutions.atlassian.net/browse/COMMANDBOX)
 
@@ -43,7 +43,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
 
-CommandBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
+CommandBox is professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
 * Custom Development
 * Professional Support & Mentoring
