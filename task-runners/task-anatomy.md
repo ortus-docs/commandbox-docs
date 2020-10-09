@@ -131,7 +131,7 @@ fileSystemUtil.createMapping( name, physicalpath );
 
 ## Sending Email
 
-To send email, use the `cfscript` variant of `cfmail` making sure you set `asyc=false` \(see below\). Not setting this flag to `false` may result in undelivered email because mail may still exist in Lucee spooler \(Lucee tasks\) when your task runner exits.
+To send email, use the `cfscript` variant of `cfmail` making sure you set `async=false` \(see below\). Not setting this flag to `false` may result in undelivered email because mail may still exist in Lucee spooler \(Lucee tasks\) when your task runner exits.
 
 ```javascript
 mail 

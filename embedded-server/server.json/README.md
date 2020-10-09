@@ -13,7 +13,9 @@ Every time you start a server, the settings used to start it are saved in a `ser
     "stopsocket": 50123,
     "debug": false,
     "trace": false,
-    "console": false,    
+    "console": false,
+    "profile": "prod",
+    "dockEnable": true,
     "trayEnable": true,
     "trayicon": "/path/to/trayicon.png",
     "trayOptions": [
@@ -29,13 +31,17 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "heapSize": 512,
         "minHeapSize": 256,
         "args": "",
-        "javaHome" : "/path/to/java/home"
+        "javaHome" : "/path/to/java/home",
+        "javaVersion" : "openjdk11"
     },
     "web": {
         "host": "127.0.0.1",
         "webroot": "src/cfml",
         "directoryBrowsing": true,
         "accessLogEnable": true,
+        "maxRequests":30,
+        "gzipEnable": true,
+        "gzipPredicate": "regex( '(.*).css' ) and request-larger-than( 500 )",
         "aliases": {
             "/foo": "../bar",
             "/js": "C:/static/shared/javascript"
@@ -75,6 +81,24 @@ Every time you start a server, the settings used to start it are saved in a `ser
                 "userName2": "password2"
             }
         }
+        "​rules​"​​:​​ [
+          ​"​path-suffix(/box.json) -> send-error(404)​"​,
+          ​"​path-prefix(.env) -> send-error(404)​"​,
+          ​"​path-prefix(/admin/) -> ip-access-control(192.168.0.* allow)​"​,​
+          "​path(/sitemap.xml) -> rewrite(/sitemap.cfm)​",
+          "disallowed-methods(trace)"
+        ​],
+        "​rulesFile​"​​: ​​"../secure-rules.json"
+        // Or...
+        "​rulesFile​"​​:​ [
+          ​"../security.json",
+          "../rewrites.json",
+          "../app-headers.json"
+        ]
+        // Or...
+        "​rulesFile​"​​:​​"../rules/*.json",
+        "blockCFAdmin": false,
+				"blockConfigPaths":  true
     },
     "app": {
         "logDir": "",
@@ -90,7 +114,14 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "sessionCookieHTTPOnly": true
     },
     "runwar": {
-        "args": ""
+        "jarPath": "/path/to/runwar.jar"
+        "args": "",
+        "XNIOOptions": {
+            "WORKER_NAME": "MyWorker"
+        },
+        "UndertowOptions": {
+            "ALLOW_UNESCAPED_CHARACTERS_IN_URL": true
+        }
     }
 }
 ```

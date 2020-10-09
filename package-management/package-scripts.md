@@ -26,7 +26,7 @@ You can also create ad-hoc scripts with arbitrary names that contain a collectio
   "slug" : "my-package",
   "version" : "1.0.0",
   "scripts" : {
-   "build" : "!grunt build && testsbox run && run-script generateAPIDocs && bump --patch && publish",
+   "build" : "!grunt build && testbox run && run-script generateAPIDocs && bump --patch && publish",
    "generateAPIDocs" : "docbox generate"
   }
 }
@@ -48,4 +48,30 @@ Before any package script is run, CommandBox will look for another package scrip
 3. postFoo
 
 This works for built-in package script names as well as as doc package scripts. It also works on any level. In the example above, if you created a 4th package script called `prePreFoo`, it would run prior to `preFoo`.
+
+## Access Intercept Data
+
+Any package script fired by an internal interception announcement in CommandBox will have access to any intercept data via environment variables in the shell.  All intercept data will be prefixed with `interceptData.` and will use "dot notation" for nested structs.  You can see if the docs on what intercept data is available to each interception point.  
+
+For example, a `preCommand` interception announcement receives a struct called `commandInfo` with a key called `commandString` which means your package script can access that via the following environment variable:
+
+```text
+${interceptData.commandinfo.commandString}
+```
+
+You can see this in action with this simple package script:
+
+```text
+package set scripts.preCommand="echo 'You are running [\${interceptData.commandinfo.commandString}]'"
+```
+
+Or if you wanted to simply debug what is available to you, use the `env show` command in your package script to dump out all environment variables to the console.  
+
+Here's another example that writes a file to the server home directory when a server starts, using an environment variable to dynamically obtain the proper path.
+
+```text
+package set scripts.onServerStart="touch \${interceptData.serverInfo.serverHomeDirectory}/hi.txt"
+```
+
+
 

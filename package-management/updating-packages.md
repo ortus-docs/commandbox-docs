@@ -1,6 +1,6 @@
 # Updating Packages
 
-CommandBox does more than help yo install packages. It also helps you keep them up to date as well. Remember, you can always get a quick list of all the dependencies installed your app with the `list` command.
+CommandBox does more than help you install packages. It also helps you keep them up to date as well. Remember, you can always get a quick list of all the dependencies installed your app with the `list` command.
 
 ```bash
 CommandBox> list
@@ -22,7 +22,7 @@ Found (1) Outdated Dependency
 Would you like to update the dependency? (yes/no) :
 ```
 
-Entering "yes" will install the newest version of the package. It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
+Entering "yes" will install the newest version of the package. Use the --force flag to automatically answer "yes". It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
 
 ```bash
 outdated

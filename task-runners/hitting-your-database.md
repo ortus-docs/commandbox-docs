@@ -27,7 +27,7 @@ So, the first block simply declares a struct that represents a datasource connec
 
 ## Another method
 
-There are a couple tags inside Lucee that don't support this just yet. `<CFDBInfo>` is one of them. [Ticket Here](https://luceeserver.atlassian.net/browse/LDEV-1026) In this case, you need a "proper" datasource defined that you can reference by name. Lucee has some more tricks up its sleeve for this. You can simulate the same thing that happens when you add a datasource to your `Application.cfc` with the following code. This will define a datasource for the duration of the time the CLI is running in memory, but it will be gone the next time you start the CLI.
+If you want to just create a "proper" datasource that you can reference by name, Lucee has some more tricks up its sleeve for this. You can simulate the same thing that happens when you add a datasource to your `Application.cfc` with the following code. This will define a datasource for the duration of the time the CLI is running in memory, but it will be gone the next time you start the CLI.
 
 ```javascript
 appSettings = getApplicationSettings();
@@ -52,7 +52,7 @@ So let's break this down real quick. First we get the current settings of the CL
 
 ## Notes
 
-The internal CLI of CommandBox still runs on Lucee 5.2 so make sure you copy the data source definitions from a Lucee 5 server. Also, you'll note I used encrypted passwords above. You can also just put the plain text password in. Just omit the `encrypted:` text like so:
+The internal CLI of CommandBox runs on Lucee 5 so make sure you copy the data source definitions from a Lucee 5 server. Also, you'll note I used encrypted passwords above. You can also just put the plain text password in. Just omit the `encrypted:` text like so:
 
 ```javascript
 username: 'root',

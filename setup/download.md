@@ -1,11 +1,10 @@
 # Download
 
-If you already have a Java JRE installed level 1.7 or higher \(and set in your environment variables\) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included. Below you will find the way to get the latest stable and bleeding edge releases. Please also note that in our [installation](installation.md) page you will find much more detail information on how to install CommandBox with modern Operating System package managers as well.
+If you already have a Java JRE installed level 1.8 or higher \(and set in your environment variables\) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included. Below you will find the way to get the latest stable and bleeding edge releases. Please also note that in our [installation](installation.md) page you will find much more detail information on how to install CommandBox with modern Operating System package managers as well.
 
-> **Info** The non-JRE versions are all around 40MB in size, while the embedded JRE versions will go up to 90MB in size.
+> **Info** The non-JRE versions are all around 80MB in size, while the embedded JRE versions will go up to 120MB in size.
 
-  
- Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
+Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
 
 ![](../.gitbook/assets/versions.png)
 

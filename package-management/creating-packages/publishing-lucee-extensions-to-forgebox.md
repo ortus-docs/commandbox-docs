@@ -16,7 +16,7 @@ A new package will be created if it doesn’t exist, otherwise it will be update
 
 In your `box.json`, you’ll want to minimally have the following properties set:
 
-* The `slug` property in your `box.json` to be the unique name of your extension from your manifest file. Lucee's docs recommends this to be a UUID, but from what I can tell, Lucee doesn’t actually care what the string is so far as it is unique. But regardless, it needs to match what’s in your manifest or updates won’t work.
+* The `slug` property in your `box.json` to be the unique GUID of your extension from your manifest file. Lucee's docs state this needs to be a UUID.  It needs to match what’s in your manifest or updates won’t work.
 * The `version` needs to be the current version of your package that you want to publish. To add a new version, you’ll just update the json and re-run the `publish` command. One thing to watch out for is that Lucee likes to use the `x.y.z.q` version format which does not quite match the npm-style `x.y.z-prerelease+build` format of ForgeBox. I usually stick with just three digits `x.y.z` so it’s compatible across the board.
 * You want the `type` property in your json to be `lucee-extensions`
 * Set your publicly-acessable thumbnail URL in a `thumbnail` property in the json

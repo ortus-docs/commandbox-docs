@@ -24,7 +24,7 @@ The log messages will show up in the order they appear, but once you complete th
 
 The final output of the above code would be this green text:
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 ## Log Messages
 
@@ -105,13 +105,13 @@ job.error( 'Didn''t see that coming' );
 
 The output of this is:
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 Here we have two nested jobs.   The first two lines would be red representing the outer failed job and it's failure message.  The 3rd indented line would be green representing the nested job that completed successfully.  
 
 And if we add `dumpLog` to each job, what do we get?
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 ## Other Considerations
 

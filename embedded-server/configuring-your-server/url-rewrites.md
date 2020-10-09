@@ -45,6 +45,7 @@ If you want to customize your rewrite rules, just create your own XML file and s
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN" "http://tuckey.org/res/dtds/urlrewrite4.0.dtd">
 <urlrewrite>
     <!-- this will redirect the user from /foo to /index.cfm -->
     <rule>
@@ -93,7 +94,7 @@ server set web.rewrites.config=~\.CommandBox\cfml\system\config\customRewrites.x
 
 ## Apache mod\_rewrite-style rules
 
-If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`. You can simply put your rules in a file named `.htacess` and point the `web.rewrites.config` property to that file.
+If you're coming from Apache, Tuckey supports a large subset of the `mod_rewrite` style rules like what you would put in `.htaccess`. You can simply put your rules in a file named `.htaccess` and point the `web.rewrites.config` property to that file.
 
 _Note: The name of the file matters with mod\_rewrite-style rules. It must be called_ `.htaccess`_. With xml rewrites, the filename is not important, only the content._
 
