@@ -82,8 +82,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
             }
         }
         "​rules​"​​:​​ [
-          ​"​path-suffix(/box.json) -> send-error(404)​"​,
-          ​"​path-prefix(.env) -> send-error(404)​"​,
+          ​"​path-suffix(/box.json) -> set-error(404)​"​,
+          ​"​path-prefix(.env) -> set-error(404)​"​,
           ​"​path-prefix(/admin/) -> ip-access-control(192.168.0.* allow)​"​,​
           "​path(/sitemap.xml) -> rewrite(/sitemap.cfm)​",
           "disallowed-methods(trace)"
