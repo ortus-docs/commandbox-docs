@@ -16,3 +16,14 @@ This fires every time the `reload` command runs and a fresh shell is created.
 
 Announced right before the shell exits and control is returned back to the OS. This fires every time the `reload` command runs right before the shell is destroyed and re-created.
 
+## onSystemSettingExpansion
+
+Announced every time a system setting in the format of `${something}` is expanded.  Any interceptor listening can provide an expanded value.
+
+**interceptData**
+
+* **setting** - The name of the setting with the default value removed.
+* **defaultValue** - The text after the final `:` or an empty string if there is no default provided
+* **resolved** - Set this to `true` if your interceptor expands the value and return `true` from your interceptor method so CommandBox stops the interceptor chain.
+* **context** - A struct of values if this system setting is being expanded in the context of a JSON file.
+

@@ -31,6 +31,7 @@
   * [Command Help](usage/command-help.md)
   * [Environment Variables](usage/environment-variables.md)
   * [System Settings](usage/system-settings.md)
+  * [System Setting Expansion Namespaces](usage/system-setting-expansion-namespaces.md)
   * [Ad-hoc Command Aliases](usage/ad-hoc-command-aliases.md)
   * [Default Command Parameters](usage/default-command-parameters.md)
   * [REPL](usage/repl.md)
