@@ -67,7 +67,7 @@ External rule files with a `.json` suffix will be expected to be a valid JSON fi
 
 External rule files with any extension OTHER than `.json` will be expected to be a raw text file with one rule per line.  Emtpy lines are ignored and the rules are processed in the order defined.
 
-{% code title="myRuleFile.json" %}
+{% code title="myRuleFile.txt" %}
 ```text
 path-suffix(/box.json) -> set-error(404)
 path-suffix(hidden.js) -> set-error(404)
