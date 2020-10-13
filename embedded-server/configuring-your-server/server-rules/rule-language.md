@@ -1,4 +1,4 @@
-# Rule Langauge
+# Rule Language
 
 CommandBox's server rules are based directly on the "Predicate Language" feature of JBoss Undertow.  All of the official documentation for Undertow's predicate language applies to CommandBox. CommandBox doesn't limit the power of what Undertow provides at all.  In fact, we give you some additional out-of-the box predicates and handlers you can use.
 

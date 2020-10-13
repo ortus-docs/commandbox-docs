@@ -64,7 +64,7 @@
   * [Configuring Your Server](embedded-server/configuring-your-server/README.md)
     * [Server Profiles](embedded-server/configuring-your-server/server-profiles.md)
     * [Server Rules](embedded-server/configuring-your-server/server-rules/README.md)
-      * [Rule Langauge](embedded-server/configuring-your-server/server-rules/rule-langauge.md)
+      * [Rule Language](embedded-server/configuring-your-server/server-rules/rule-language.md)
       * [Custom Predicates/Handlers](embedded-server/configuring-your-server/server-rules/custom-predicates-handlers.md)
       * [Rule Examples](embedded-server/configuring-your-server/server-rules/rule-examples.md)
     * [JVM Args](embedded-server/configuring-your-server/jvm-args.md)
