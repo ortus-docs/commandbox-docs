@@ -24,7 +24,7 @@ Which create this property
 }
 ```
 
-Or you can specify it when startign the server like so:
+Or you can specify it when starting the server like so:
 
 ```bash
 server start profile=production
