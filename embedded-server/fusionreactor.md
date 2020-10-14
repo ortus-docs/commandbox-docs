@@ -167,7 +167,7 @@ Note: the `reactor.conf` file may contain _passwords or other sensitive informat
 
 ## Additional JVM args
 
-The CommandBox FusionReactor module has passthrough settings for every documented JVM arg. Here are the remaining ones we haven't covered. If you want to know what some of these do, read [the official FR docs](https://docs.fusion-reactor.com/display/FR70/System+Configuration+Keys) on them.
+The CommandBox FusionReactor module has passthrough settings for every documented JVM arg. Here are the remaining ones we haven't covered. If you want to know what some of these do, read [the official FR docs](https://docs.fusion-reactor.com/Configuration/FusionReactor-System-Properties/) on them.
 
 Here's the module setting, followed by the JVM arg it creates. Remember, you can use environment variables in your `server.json` to control these dynamically on a per-server basis!
 
