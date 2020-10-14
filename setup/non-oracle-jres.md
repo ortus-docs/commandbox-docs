@@ -24,7 +24,7 @@ OpenJDK is Oracle's free version of Java. it comes with a 6 month support window
 
 {% embed url="https://www.azul.com/" caption="" %}
 
-Zulu is free and offers long term support. Zulu provides supported builds of OpenJDK. Initial tests show that Corretto 1.8 works with CommandBox and ACF 11.
+Zulu is free and offers long term support. Zulu provides supported builds of OpenJDK. Initial tests show that Azul Zulu works with CommandBox and ACF 11.
 
 ## Installing on Windows
 
