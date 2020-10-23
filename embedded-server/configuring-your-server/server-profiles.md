@@ -44,7 +44,8 @@ When profile is set to "**production**", the following defaults are provided:
 
 * `web.directoryListing` = false
 * `web.blockCFAdmin` = external
-* `web.blockConfigPaths` = true
+* `web.blockSensitivePaths` = true
+* `web.blockFlashRemoting` = true
 
 ## Development profile
 
@@ -52,7 +53,8 @@ When profile is set to "**development**", the following defaults are provided:
 
 * `web.directoryListing` = true
 * `web.blockCFAdmin` = false
-* `web.blockConfigPaths` = true
+* `web.blockSensitivePaths` = true
+* `web.blockFlashRemoting` = true
 
 ## None profile
 
@@ -60,7 +62,8 @@ When profile is set to "**none**", the following defaults are provided:
 
 * `web.directoryListing` = true
 * `web.blockCFAdmin` = false
-* `web.blockConfigPaths` = false
+* `web.blockSensitivePaths` = false
+* `web.blockFlashRemoting` = false
 
 ## Customizing your profile
 

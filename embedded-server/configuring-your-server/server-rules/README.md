@@ -89,7 +89,8 @@ config set server.defaults.web.ruleFile=/path/to/rules.json
 CommandBox has a few baked in rules that you can apply ad-hoc or as part of a server `profile`.
 
 * **web.blockCFAdmin** - Returns 404 error page for any Adobe CF or Lucee Server admin administrator paths
-* **web.blockConfigPaths** - Returns 404 error page for common config files such as `box.json` or `.env`
+* **web.blockSensitivePaths** - Returns 404 error page for common config files such as `box.json` or `.env`
+* **web.blockFlashRemoting -** Blocks all paths related to Flash and Flex remoting calls
 
 {% hint style="success" %}
 If you want to customize the rules above, simply turn them off and include the rules directly in your `server.json` where you can modify them as you see fit.
@@ -115,18 +116,40 @@ The exact rule activated when you set this property to `external` is:
 cf-admin() -> block-external()
 ```
 
-## Block Config Paths
+## Block Sensitive Paths
 
-This setting only allows `true`/`false`.  When set to `true`, the following rules are activated:
+This setting only allows `true`/`false`.  This is a bit of a catch-all rule for any sort of paths that a user should never be able to make on production that could reveal information or access secret parts of your CF installation. When set to `true`, the following rules are activated:
 
 ```javascript
 // track and trace verbs can leak data in XSS attacks
 disallowed-methods( methods={trace,track} )
 
 // Common config files
-regex(pattern='.*/(box.json|server.json|web.config|urlrewrite.xml|package.json|package-lock.json|Gulpfile.js|CFIDE/multiservermonitor-access-policy.xml|CFIDE/probe.cfm)', case-sensitive=false) -> set-error(404)
+regex( pattern='.*/(box.json|server.json|web.config|urlrewrite.xml|package.json|package-lock.json|Gulpfile.js|CFIDE/multiservermonitor-access-policy.xml|CFIDE/probe.cfm|CFIDE/main/ide.cfm)', case-sensitive=false ) -> set-error(404)
 
 // Any file or folder starting with a period
 regex('/\.')-> set-error( 404 )
+
+// Additional serlvlet mappings in Adobe CF's web.xml
+path-prefix( { '/JSDebugServlet','/securityanalyzer','/WSRPProducer' } ) -> set-error( 404 )
+
+// java web service (Axis) files
+regex( pattern='\.jws$', case-sensitive=false ) -> set-error( 404 )
 ```
+
+If you need to legitimately access any of these paths, you'll need to turn off this setting and custom-add the rules that you want to keep.  This setting is a convenience that adds several rules at once.
+
+## Block Flash Remoting
+
+This setting only allows `true`/`false`.  When set to `true`, the following rules are activated:
+
+```javascript
+// These all map to web.xml servlet mappings for ACF
+path-prefix( { '/flex2gateway','/flex-internal','/flashservices/gateway','/cfform-internal','/CFFormGateway' } ) -> set-error( 404 )
+
+// Files used for flash remoting
+regex( pattern='\.(mxml|cfswf)$', case-sensitive=false ) -> set-error( 404 )
+```
+
+If you need to legitimately access any of these paths, you'll need to turn off this setting and custom-add the rules that you want to keep.  This setting is a convenience that adds several rules at once.
 
