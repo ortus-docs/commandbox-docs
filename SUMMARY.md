@@ -64,6 +64,7 @@
   * [Configuring Your Server](embedded-server/configuring-your-server/README.md)
     * [Server Profiles](embedded-server/configuring-your-server/server-profiles.md)
     * [Server Rules](embedded-server/configuring-your-server/server-rules/README.md)
+      * [Allowed Static Files](embedded-server/configuring-your-server/server-rules/allowed-static-files.md)
       * [Rule Language](embedded-server/configuring-your-server/server-rules/rule-language.md)
       * [Custom Predicates/Handlers](embedded-server/configuring-your-server/server-rules/custom-predicates-handlers.md)
       * [Rule Examples](embedded-server/configuring-your-server/server-rules/rule-examples.md)
