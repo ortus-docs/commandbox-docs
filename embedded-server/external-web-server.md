@@ -1,6 +1,6 @@
 # External Web Server
 
-You can place CommandBox downstream behind another external web server if you wish.  Here is an overview of how to do that.
+You can place CommandBox downstream behind another external web server if you wish. Here is an overview of how to do that.
 
 ## Microsoft IIS
 
@@ -8,7 +8,7 @@ You can place CommandBox downstream behind another external web server if you wi
 
 ## Nginx
 
-```
+```text
 server {
 
   server_name  example.net www.example.net;
@@ -49,7 +49,7 @@ server {
   location / {
     try_files $uri $uri/ @rewrites;
   }
-  
+
   #set indexfileinurls=0 in Mura's settings.ini.cfm     
   location @rewrites {
     rewrite ^/(.*)? /index.cfm/$1 last;
@@ -97,3 +97,4 @@ server {
 
 }
 ```
+

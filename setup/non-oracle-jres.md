@@ -73,3 +73,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 And as always, on any operating system and with any JRE provider, you can override what version of java is used by creating a folder called `JRE` in the same directory as the `box` or `box.exe` binary that contains the JRE you wish CommandBox to use. This will bypass all registry and env var checks above.
 
 For macOS users who have installed CommandBox via HomeBrew, the installer creates a `box` _alias_ in `/usr/local/bin/` which points to the `box` _binary_ in the `/usr/local/Cellar/commandbox/<version>/bin/` directory. If you want CommandBox to use a particular version of the `JRE` then put the `jre` folder in the `/usr/local/bin/` directory. If you want CommandBox to have [a different home `.CommandBox` directory](https://commandbox.ortusbooks.com/setup/installation#homebrew-mac), place your `commandbox.properties` file in the `/usr/local/Cellar/commandbox/<version>/bin/` directory.
+
