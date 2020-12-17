@@ -66,3 +66,16 @@ config set preferredBrowser=chrome
 config show preferredBrowser
 ```
 
+## tabCompleteInline
+
+**boolean**
+
+You can change CommandBox's default tab completion to be an inline list that follows your cursor.  **This setting requires you to close and re-open the shell to take affect.**
+
+```bash
+config set tabCompleteInline=true
+config show tabCompleteInline
+```
+
+![](../.gitbook/assets/image%20%2818%29.png)
+
