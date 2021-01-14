@@ -80,23 +80,26 @@ Every time you start a server, the settings used to start it are saved in a `ser
                 "userName1": "password1",
                 "userName2": "password2"
             }
-        }
-        "​rules​"​​:​​ [
-          ​"​path-suffix(/box.json) -> set-error(404)​"​,
-          ​"​path-prefix(.env) -> set-error(404)​"​,
-          ​"​path-prefix(/admin/) -> ip-access-control(192.168.0.* allow)​"​,​
-          "​path(/sitemap.xml) -> rewrite(/sitemap.cfm)​",
+        },
+        "rules": [
+          "path-suffix(/box.json) -> set-error(404)",
+          "path-prefix(.env) -> set-error(404)",
+          "path-prefix(/admin/) -> ip-access-control(192.168.0.* allow)",
+          "path(/sitemap.xml) -> rewrite(/sitemap.cfm)",
           "disallowed-methods(trace)"
-        ​],
-        "​rulesFile​"​​: ​​"../secure-rules.json"
-        // Or...
-        "​rulesFile​"​​:​ [
-          ​"../security.json",
+        ],
+	
+	//3 ways to specify rulesFile
+        "rulesFile": "../secure-rules.json",
+        // Or... 
+        "rulesFile": [
+          "../security.json",
           "../rewrites.json",
           "../app-headers.json"
-        ]
+        ],
         // Or...
-        "​rulesFile​"​​:​​"../rules/*.json",
+        "rulesFile":"../rules/*.json",
+	
         "blockCFAdmin": false,
 				"blockSensitivePaths":  true,
 				"blockFlashRemoting":  true
@@ -115,7 +118,7 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "sessionCookieHTTPOnly": true
     },
     "runwar": {
-        "jarPath": "/path/to/runwar.jar"
+        "jarPath": "/path/to/runwar.jar",
         "args": "",
         "XNIOOptions": {
             "WORKER_NAME": "MyWorker"
