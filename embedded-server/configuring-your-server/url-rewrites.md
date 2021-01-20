@@ -102,6 +102,13 @@ Here are some simple rewrite rules:
 
 ```bash
 RewriteEngine on
+
+#The ColdBox index.cfm/{path_info} rules.
+RewriteRule ^$ index.cfm [QSA,NS]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.cfm/%{REQUEST_URI} [QSA,L,NS]
+
 RewriteRule ^/foo/                         /
 
 # Defend your computer from some worm attacks
