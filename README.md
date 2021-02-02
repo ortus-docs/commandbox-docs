@@ -31,7 +31,7 @@ CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LI
 
 ## Discussion & Help
 
-The CommandBox help and discussion group can be found here: [https://groups.google.com/a/ortussolutions.com/forum/\#!forum/commandbox](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox)
+The CommandBox help and discussion group can be found here: [https://community.ortussolutions.com/c/communities/commandbox/](https://community.ortussolutions.com/c/communities/commandbox/)
 
 ## Reporting a Bug
 
