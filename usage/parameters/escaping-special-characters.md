@@ -52,7 +52,7 @@ echo "2+2=4"
 
 ## Line Breaks
 
-Line breaks can't be escaped directly as of Commandbox 4.0.  Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter.  To enter a line feed, press Ctrl-V followed by Ctrl-J.
+Line breaks can't be escaped directly since Commandbox 4.0.  Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter.  To enter a line feed, press Ctrl-V followed by Ctrl-J.
 
 On ConEMU, which performs a paste operation with Ctrl-V, use Ctrl-Shift-V instead.
 
