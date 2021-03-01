@@ -3,10 +3,10 @@
 You can specify the CFML engine via the command line arguments:
 
 ```bash
-CommandBox> start cfengine=adobe@9
+CommandBox> start cfengine=adobe@2018
 ```
 
-This will start an Adobe ColdFusion 9 server in your webroot. That's it!
+This will start an Adobe ColdFusion 2018 server in your webroot. That's it!
 
 By default, CommandBox uses the `cfengine` slug to search for the engine on ForgeBox. The format is `slug@version` where the version is optional. Ortus Solutions maintains the versions of the engines available on ForgeBox.
 
@@ -17,6 +17,7 @@ Supported engines are:
 * Adobe ColdFusion 11
 * Adobe ColdFusion 2016
 * Adobe ColdFusion 2018
+* Adobe ColdFusion 2021
 * Railo 4.2
 * Lucee 4.5
 * Lucee 5
