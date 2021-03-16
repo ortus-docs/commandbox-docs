@@ -3,7 +3,7 @@
 Once you have registered your endpoint and you are authenticated, you are able to install packages from your own endpoint like this:  
 `install stg-forgebox:coldbox`
 
-![](../.gitbook/assets/forgebox-endpoint-usage.gif)
+![](../.gitbook/assets/forgebox-endpoint-default-list.gif)
 
 In the previous example you can see we are installing a `coldbox` package from `stg-forgebox`  which is our own endpoint instead of the default one.
 
