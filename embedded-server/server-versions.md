@@ -57,7 +57,7 @@ server start cfengine=adobe@2018
 server start cfengine=lucee@be
 ```
 
-However, you may have good reason to NEVER want a new version automatically installed.  In order to do this, you must specify a COMPLETE version number, including the build number, making sure to use the proper version format.  This means you need a major, minor, patch, and build number.
+However, you may have good reason to NEVER want a new version automatically installed.  In order to do this, you must specify a COMPLETE version number, including the build number, making sure to use the proper version format.  This means you need a **major**, **minor**, **patch**, and build number.
 
 ```bash
 # Pinned exact Adobe version
