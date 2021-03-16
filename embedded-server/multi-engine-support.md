@@ -51,7 +51,7 @@ CommandBox> artifacts list
 CommandBox> artifacts remove adobe
 ```
 
-> \*\* **Note**: [Adobe ColdFusion 9 does not support the latest Java 8](http://blogs.coldfusion.com/post.cfm/which-jdk-is-supported-with-coldfusion-9-10-and-11). To run ColdFusion 9 you must use an older version of CommandBox 3.x on Java 7 or run CommandBox 4.x on Java 8 update 92 or earlier.  Several people are doing this, but beware your mileage may vary.
+> \*\* **Note**: [Adobe ColdFusion 9 does not support the latest Java 8](http://blogs.coldfusion.com/post.cfm/which-jdk-is-supported-with-coldfusion-9-10-and-11). To run ColdFusion 9 you must use an older version of CommandBox 3.x on Java 7 or run CommandBox 4.x on Java 8 update 92 or earlier. Several people are doing this, but beware your mileage may vary.
 
 ## ColdFusion Admin settings
 

@@ -88,8 +88,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
           "path(/sitemap.xml) -> rewrite(/sitemap.cfm)",
           "disallowed-methods(trace)"
         ],
-	
-	//3 ways to specify rulesFile
+
+    //3 ways to specify rulesFile
         "rulesFile": "../secure-rules.json",
         // Or... 
         "rulesFile": [
@@ -99,10 +99,10 @@ Every time you start a server, the settings used to start it are saved in a `ser
         ],
         // Or...
         "rulesFile":"../rules/*.json",
-	
+
         "blockCFAdmin": false,
-				"blockSensitivePaths":  true,
-				"blockFlashRemoting":  true
+                "blockSensitivePaths":  true,
+                "blockFlashRemoting":  true
     },
     "app": {
         "logDir": "",

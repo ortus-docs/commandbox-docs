@@ -52,13 +52,13 @@ echo "2+2=4"
 
 ## Line Breaks
 
-Line breaks can't be escaped directly since Commandbox 4.0.  Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter.  To enter a line feed, press Ctrl-V followed by Ctrl-J.
+Line breaks can't be escaped directly since Commandbox 4.0. Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter. To enter a line feed, press Ctrl-V followed by Ctrl-J.
 
 On ConEMU, which performs a paste operation with Ctrl-V, use Ctrl-Shift-V instead.
 
 ## Tabs
 
-A tab character can't be escaped directly as of CommandBox 4.0.  Instead, most terminals let you enter a tab char by pressing Ctrl-V followed by tab.  In ConEMU which allows pasting via Ctrl-V, you can use Ctrl-Shift-V and then press tab.
+A tab character can't be escaped directly as of CommandBox 4.0. Instead, most terminals let you enter a tab char by pressing Ctrl-V followed by tab. In ConEMU which allows pasting via Ctrl-V, you can use Ctrl-Shift-V and then press tab.
 
 ## Backslash
 

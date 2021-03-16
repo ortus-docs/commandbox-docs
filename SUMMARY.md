@@ -54,6 +54,7 @@
   * [Misc Settings](config-settings/misc-settings.md)
 * [Embedded Server](embedded-server/README.md)
   * [Multi-Engine Support](embedded-server/multi-engine-support.md)
+  * [Server Versions](embedded-server/server-versions.md)
   * [Start HTML Server](embedded-server/start-html-server.md)
   * [Offline Server Starts](embedded-server/offline-server-starts.md)
   * [Debugging Server Starts](embedded-server/debugging-server-starts.md)

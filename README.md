@@ -41,7 +41,7 @@ We all make mistakes from time to time :\) so why not let us know about it and h
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%281%29.png)
 
 CommandBox is professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
