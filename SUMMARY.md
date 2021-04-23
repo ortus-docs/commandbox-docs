@@ -51,6 +51,7 @@
   * [Proxy Settings](config-settings/proxy-settings.md)
   * [Endpoint Settings](config-settings/endpoint-settings.md)
   * [Server Settings](config-settings/server-settings.md)
+  * [JSON Settings](config-settings/json-settings.md)
   * [Misc Settings](config-settings/misc-settings.md)
 * [Embedded Server](embedded-server/README.md)
   * [Multi-Engine Support](embedded-server/multi-engine-support.md)
