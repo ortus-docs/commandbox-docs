@@ -39,6 +39,7 @@
   * [Interactive Shell Features](usage/interactive-shell-features.md)
   * [forEach Command](usage/foreach-command.md)
   * [watch command](usage/watch-command.md)
+  * [jq command](usage/jq-command.md)
   * [Auto Update Checks](usage/auto-update-checks.md)
   * [Bullet Train Prompt](usage/bullet-train-prompt.md)
   * [256 Color Support](usage/256-color-support.md)
