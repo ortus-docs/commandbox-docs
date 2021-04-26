@@ -22,7 +22,7 @@ This does assume that your default value will never contain a colon!
 
 ## Lookup Order
 
-System settings are looked up in the following order.  If the same variable exists in more than one place, the first one found will be used:
+System settings are looked up in the following order. If the same variable exists in more than one place, the first one found will be used:
 
 1. Environment variables for the currently executing command
 2. Environment variables for the parent \(calling\) command \(if applicable\)

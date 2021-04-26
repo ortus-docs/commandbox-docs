@@ -42,9 +42,7 @@ Cars that do not apply to the current directory will simply not be displayed. Fa
 
 ## Customize it!
 
-You can customize the cars that show, change the colors of existing cars and even create your own custom additions to Bullet Train.  Read all about it in the readme of the Module homepage on ForgeBox.
+You can customize the cars that show, change the colors of existing cars and even create your own custom additions to Bullet Train. Read all about it in the readme of the Module homepage on ForgeBox.
 
 {% embed url="https://www.forgebox.io/view/commandbox-bullet-train" caption="CommandBox Bullet Train Module on ForgeBox.io" %}
-
-
 

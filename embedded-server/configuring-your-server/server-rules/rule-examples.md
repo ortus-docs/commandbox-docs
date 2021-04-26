@@ -104,3 +104,29 @@ Basic MVC rewrite:
 not regex( pattern='.*\.(bmp|gif|jpe?g|png|css|js|txt|xls|ico|swf|cfm|cfc|html|htm)$', case-sensitive=false ) -> rewrite('/index.cfm/%{RELATIVE_PATH}')
 ```
 
+Add a CORs header to every request
+
+```javascript
+set(attribute='%{o,Access-Control-Allow-Origin}', value='*')
+```
+
+Rewrite requests to a sub folder based on the domain
+
+```javascript
+equals( %{LOCAL_SERVER_NAME}, 'site1.com' ) -> rewrite( '/site1/%{REQUEST_URL}' )
+equals( %{LOCAL_SERVER_NAME}, 'site2.com' ) -> rewrite( '/site2/%{REQUEST_URL}' )
+equals( %{LOCAL_SERVER_NAME}, 'site3.com' ) -> rewrite( '/site3/%{REQUEST_URL}' )
+```
+
+Custom SES URL rewrite that turns 6 digit product code into a query string.  \(If this rule goes in your `server.json`, you'll need `\\` in front of the dollar sign to escape it twice.  Once for the system setting expansion and once for the JSON file.\)
+
+```javascript
+regex( '^/product/([A-Z]{6})$' ) -> rewrite( '/product.cfm?productID=${1}' )
+```
+
+Reject requests  using an unknown host header.
+
+```javascript
+not equals( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 )
+```
+

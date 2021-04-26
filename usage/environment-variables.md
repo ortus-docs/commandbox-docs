@@ -1,10 +1,10 @@
 # Environment Variables
 
-CommandBox allows you to access Java System Properties from the CLI and environment variables from your operating system via the `${name_here}` mechanism.  But CommandBox also gives you the ability to create variables of your own directly in the shell.  The scope \(life\) of these environment variables depends on how and where they are declared.  
+CommandBox allows you to access Java System Properties from the CLI and environment variables from your operating system via the `${name_here}` mechanism. But CommandBox also gives you the ability to create variables of your own directly in the shell. The scope \(life\) of these environment variables depends on how and where they are declared.
 
 ## Shell Environment Variables \(Global\)
 
-Every shell instance has its own set of environment variables you can set and read.  These live for the duration of the shell and have the same lifespan as Java system properties in the CLI.  There is an `env` namespace of commands for dealing with environment variables.
+Every shell instance has its own set of environment variables you can set and read. These live for the duration of the shell and have the same lifespan as Java system properties in the CLI. There is an `env` namespace of commands for dealing with environment variables.
 
 To set a new variable, you can run this:
 
@@ -35,9 +35,9 @@ env clear foo
 
 ## Per-Command Environment Variables
 
-In addition to the global shell environment, each executing command receives its own set of environment variables that go away when the command finishes executing.  Unlike Bash, the parent variables are not copied into each command, but a hierarchy is maintained and when a variable is not found, the parent command is checked and so on until the global shell variables.  After that, the Java system properties and then OS's actual environment is checked.
+In addition to the global shell environment, each executing command receives its own set of environment variables that go away when the command finishes executing. Unlike Bash, the parent variables are not copied into each command, but a hierarchy is maintained and when a variable is not found, the parent command is checked and so on until the global shell variables. After that, the Java system properties and then OS's actual environment is checked.
 
-Here is a contrived example of an `echo` command that run a sub command as part of a command expression \(backtick expansion\).  The sub command sets an environment variable and then outputs it.  
+Here is a contrived example of an `echo` command that run a sub command as part of a command expression \(backtick expansion\). The sub command sets an environment variable and then outputs it.
 
 ```bash
 echo `set myVar=cheese && echo \${myVar}`
@@ -48,7 +48,7 @@ The first line will output the text "Cheese" but the second line will output the
 
 ## Recipes
 
-Recipes behave like a subshell and any variables set in a recipe will live for the duration of that recipe but will be gone once the recipe exits.  
+Recipes behave like a subshell and any variables set in a recipe will live for the duration of that recipe but will be gone once the recipe exits.
 
 ## Viewing Variables
 
@@ -72,7 +72,7 @@ The var number is set to 2
 The var color is set to red
 ```
 
-There is a command to help you debug what variables are set in each command context as well as the global shell.  Here we pipe some commands into a recipe for execution.  The context for the `env debug` command has no variables, the `recipe` command has a variable called `inRecipe` and the global shell as the 2 variables from the example above. 
+There is a command to help you debug what variables are set in each command context as well as the global shell. Here we pipe some commands into a recipe for execution. The context for the `env debug` command has no variables, the `recipe` command has a variable called `inRecipe` and the global shell as the 2 variables from the example above.
 
 ```bash
 > echo "set inrecipe=true; env debug" | recipe

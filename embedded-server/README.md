@@ -22,7 +22,7 @@ You can start as many embedded server instances as you want. Each running server
 * Open Admin
 * Open File System
 
-![CommandBox Server Tray Menu](../.gitbook/assets/image%20%285%29.png)
+![CommandBox Server Tray Menu](https://github.com/ortus-docs/commandbox-docs/tree/df981947c5780503203384f9de7118f57ee01ca5/.gitbook/assets/image%20%285%29.png)
 
 ### Disable the tray icon
 

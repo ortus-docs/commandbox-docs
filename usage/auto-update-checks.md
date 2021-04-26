@@ -4,5 +4,3 @@ Never miss an update again by installing the CommandBox update check module for 
 
 {% embed url="https://www.forgebox.io/view/commandbox-update-check" caption="CommandBox Update Check Module" %}
 
-
-
