@@ -179,3 +179,14 @@ command( 'echo' )
 Output: Windows 7
 ```
 
+There are also setter methods for each of the `run()` parameters.
+
+```javascript
+command( 'echo' )
+  .setReturnOutput( true )
+  .setPipedInput( 'Brad' )
+  .setEcho( false )
+  .setRawParams( false )
+  .run( rawParams=true );
+```
+
