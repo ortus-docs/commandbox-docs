@@ -35,7 +35,7 @@ Your CommandBox is sent to you via a zip archive. Decompress the archive to a lo
 
 Now just double click the file from your GUI, or execute it via a console window. This will start a short, quick, one-time process of unpacking CommandBox into your user's home directory. Congratulations, CommandBox is now installed! You'll still run the same executable binary every time you want to use the CLI, but the extraction process won't need to happen again.
 
-![First Run](.gitbook/assets/first_run.png)
+![First Run](.gitbook/assets/image%20%2810%29.png)
 
 The green `CommandBox>` prompt is what we call the _interactive shell_. Type `exit` to close the window or be returned to your OS's native shell.
 

@@ -10,6 +10,12 @@ To avoid specifying the commandbox\_home variable every time you can create a fi
 commandbox_home=E:\\CommandBox
 ```
 
+The CommandBox home can also be a path relative to the location of the `commandbox.properties` file.
+
+```bash
+commandbox_home=../boxHome
+```
+
 ## Windows
 
 Unzip the executable **box.exe** and just double click on it to open the shell. When you are finished running commands, you can just close the window, or type `exit`.

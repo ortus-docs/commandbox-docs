@@ -85,6 +85,16 @@ An optional company name []:
 
 You have to enter Country Name, State and City. Organization Name is preferably the same as the domain owner. Organizational Unit Name will not be checked, so enter something simple such as ICT Common Name is the hostname for your site, such as dev.mydomain.com You can skip Email Adress and optional company name. For development you don't need a challenge password, which means your key file is NOT protected. But don't give this key to others or protect it with a challenge password. If you protect your key you have to `server set web.SSL.keyPass=MyChallengePassword` Now you have a CSR, which you can submit at your SSL provider. They will send you a certificate file \(\*.csr\), and probably one or more intermediate certificates. Create a new my.csr file and copy everything from your certificate file into it, and append the intermediate certificate\(s\). Now you have a valid my.csr certificate file and a key file. Place both files in a location accessible for your commandbox and enter the corresponding paths to web.SSL.certFile and web.SSL.keyFile
 
+### HTTP/2
+
+HTTP/2 is a newer standard of HTTP supported by all modern browsers.  HTTP/2 is enabled by default any time you are using an HTTP/HTTPS listener, however all major browsers will only allow the server to negotiate HTTP/2 over an HTTPS connection.  HTTP/2 runs over the same port and only changes the exchange between the server and browser.  You can disable HTTP/2 support like so:
+
+```bash
+server set web.http2.enable=false
+```
+
+If you want to confirm whether your browser is using HTTP/2, you can open your debugging tools and look at the network requests.  You may need to add the "protocol" column in the UI.  HTTP/2 will usually show up as something like "h2" in the protocol column.
+
 ### AJP
 
 You can start your server to listen for AJP connections too.
@@ -98,6 +108,22 @@ server set web.AJP.enable=true
 server set web.AJP.port=8009
 server show web.AJP.enable
 server show web.AJP.port
+```
+
+#### AJP Secret
+
+CommandBox's AJP listener \(provided by Undertow\) is already protected against the [Ghostcat vulnerability](https://www.synopsys.com/blogs/software-security/ghostcat-vulnerability-cve-2020-1938/).  However, if you would like to set up an AJP secret as well to ensure all requests coming into the AJP listener are from a trusted source, you can do by setting the `web.ajp.secret` property.
+
+```bash
+server set web.AJP.secret=mySecret
+```
+
+For this to work, you must also configure your AJP proxy in your web server to send the same secret!  For requests received to the AJP listener which do not contain the secret, a `403` status code will be returned.  You can customize the output of the 403 page via the [Error Pages](custom-error-pages.md) settings. 
+
+The AJP secret is implemented via a [Server Rule](server-rules/).  Feel free to add your own server rule instead of this setting if you want to customize how it works.
+
+```javascript
+equals(%p, 8009) and not equals(%{r,secret}, 'mySecret') -> set-error(403)
 ```
 
 ## A Gracious Host
