@@ -77,6 +77,7 @@
       * [Debugging Server Rules](embedded-server/configuring-your-server/server-rules/debugging-server-rules.md)
     * [JVM Args](embedded-server/configuring-your-server/jvm-args.md)
     * [Server Port and Host](embedded-server/configuring-your-server/server-port-and-host.md)
+    * [SSL Certs](embedded-server/configuring-your-server/ssl-certs.md)
     * [HTTPS Redirect/HSTS](embedded-server/configuring-your-server/https-redirect-hsts.md)
     * [URL Rewrites](embedded-server/configuring-your-server/url-rewrites.md)
     * [Aliases](embedded-server/configuring-your-server/aliases.md)
