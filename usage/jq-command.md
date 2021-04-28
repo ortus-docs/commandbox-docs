@@ -1,10 +1,10 @@
 # jq command
-JSON Query command for filtering data out of a JSON Object, file, or URL. jq is a query language
-built specifically for interacting with JSON type data. More information can be found
-at https://jmespath.org/ as well as an online version to test your query
-Pass or pipe the text to process or a filename
-## Using jq with a file 
-```bash 
+
+JSON Query command for filtering data out of a JSON Object, file, or URL. jq is a query language built specifically for interacting with JSON type data. More information can be found at [https://jmespath.org/](https://jmespath.org/) as well as an online version to test your query Pass or pipe the text to process or a filename
+
+## Using jq with a file
+
+```bash
 # basic.json
    "a": {
       "b": {
@@ -18,6 +18,7 @@ Pass or pipe the text to process or a filename
    "cat": "baz"
 }
 ```
+
 ```bash
 > jq "basic.json" "a"
 => "a": {
@@ -28,10 +29,12 @@ Pass or pipe the text to process or a filename
       }
    }
 ```
+
 ```bash
 > jq "basic.json" "a.b.c.d"
 => value
 ```
+
 ```bash
 > jq "basic.json" "dan"
 => [
@@ -45,11 +48,14 @@ Pass or pipe the text to process or a filename
     8
 ]
 ```
+
 ```bash
 > jq "basic.json" "dan[1]"
 => 2
 ```
+
 ## Using jq with a URL
+
 ```bash
 > jq "https://official-joke-api.appspot.com/jokes/ten" [].join('.....',[setup,punchline])
 => [
@@ -65,13 +71,16 @@ Pass or pipe the text to process or a filename
     "Did you hear the news?.....FedEx and UPS are merging. They’re going to go by the name Fed-Up from now on."
 ]
 ```
+
 ## Using jq with inline json
+
 ```bash
 > jq '{"a": {"b": {"c": {"d": "value"}}}}' a.b.c.d
 => value
 ```
 
 ## Special Keys / Expressions
+
 `@` - Current Node \(eg. current number/string/array/object\) used to evaluate or check value
 
 `&` - Expression \(Function or Keyname\) \(eg. &to\_number\(\) or &keyname\)
@@ -82,31 +91,37 @@ Pass or pipe the text to process or a filename
 
 `||` - OR expression
 
-``\`{'ab':true}\```  - Literal Expressions \(this will be converted to json\)
+```\``{'ab':true}\`\`\` - Literal Expressions \(this will be converted to json\)
 
 `'foo'` - Raw String Literals not evaluated \(Single Quotes\)
 
 ## Available Functions
 
-
 ### Generic Functions
-length, reverse, type, not_null
+
+length, reverse, type, not\_null
 
 ### Conversion Functions
-to_list, to_array, to_string, to_number
+
+to\_list, to\_array, to\_string, to\_number
 
 ## String / Number Functions
+
 abs, ceil, floor
 
 ## Boolean Checks
-ends_with, starts_with, contains 
+
+ends\_with, starts\_with, contains
 
 #### All functions can be used in other functions with the "&" operator.
+
 A common example would be getting a person with the highest or lowest networth `max_by(people, &abs(net_worth))`
 
 ### Array Functions
-avg, first, group_by, join, last, matches, min, max, reverse, sum, sort, split, unique/uniq
+
+avg, first, group\_by, join, last, matches, min, max, reverse, sum, sort, split, unique/uniq
 
 ### Struct or Array of Structs functions
-defaults, key_contains, from_entries, keys, max_by, merge, min_by, omit, pluck, sort_by, to_entries, values,  map
+
+defaults, key\_contains, from\_entries, keys, max\_by, merge, min\_by, omit, pluck, sort\_by, to\_entries, values, map
 

@@ -31,7 +31,7 @@ You're well on your way now. While you wait for arrival you might want to secure
 
 Your CommandBox is sent to you via a zip archive. Decompress the archive to a location of your choice. The **No JRE Included** download will only have one file in it named `box`. For Windows users, this will be an `exe` file. For unix-based users, it will be an executable binary. The **With JRE Included** version will have a `jre` folder. You can move `box.exe`, but keep the `jre` folder in the same relative location as the executable so it can be found.
 
-![CommandBox Icon](.gitbook/assets/box_icon.png)
+![CommandBox Icon](.gitbook/assets/box_icon%20%281%29.png)
 
 Now just double click the file from your GUI, or execute it via a console window. This will start a short, quick, one-time process of unpacking CommandBox into your user's home directory. Congratulations, CommandBox is now installed! You'll still run the same executable binary every time you want to use the CLI, but the extraction process won't need to happen again.
 
@@ -41,7 +41,7 @@ The green `CommandBox>` prompt is what we call the _interactive shell_. Type `ex
 
 ## 3. Setup & Usage
 
-![Start Using](.gitbook/assets/run.png)
+![Start Using](.gitbook/assets/run%20%281%29.png)
 
 To open up the interactive shell at any time, just double click on the `box` executable. If you prefer to stay in your OS's native shell, then just place the `box` file in your system path and add it before any CommandBox commands like so:
 
@@ -144,7 +144,7 @@ CommandBox> rm playground --recurse --force
 
 ### Next Steps
 
-![Next Steps](.gitbook/assets/extensbility.png)
+![Next Steps](.gitbook/assets/extensbility%20%281%29.png)
 
 You're well on your way to becoming a more productive you. Experiment with CommandBox to see what else you can do with it. This rest of this documentation book is a good place to start. Also, we have full documentation of every command in our [Command API Docs](http://apidocs.ortussolutions.com/commandbox/current).
 

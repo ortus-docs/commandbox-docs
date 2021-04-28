@@ -56,6 +56,7 @@ config show mySettingArray[1]
 ```
 
 using JMESPath filter on the config show command
+
 ```bash
 #normal selections like above just appended with the special `jq:` filter key
 config show jq:modules.myModule.settingName
@@ -79,7 +80,6 @@ config show 'jq:to_entries(command.aliases)'
     }
 ]
 ```
-
 
 ## Clear Config Setting
 
