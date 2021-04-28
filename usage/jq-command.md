@@ -91,7 +91,7 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 
 `||` - OR expression
 
-```\``{'ab':true}\`\`\` - Literal Expressions \(this will be converted to json\)
+`` `{'ab':true}` `` - Literal Expressions \(this will be converted to json\)
 
 `'foo'` - Raw String Literals not evaluated \(Single Quotes\)
 
