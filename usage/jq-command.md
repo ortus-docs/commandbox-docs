@@ -149,7 +149,19 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
 
 defaults, from\_entries, group\_by,  key\_contains, keys, map, max\_by, merge, min\_by, omit, pluck, sort\_by, to\_entries, values
 ```bash
-CommandBox> jq [{"logdir":"logs/bb","Size":303},{"logdir":"logs/aa","Size":308}] 'sort_by(@,&Size)'
+# jsonfile.json
+[
+     {
+        "logdir":"logs/aa",
+        "Size":308
+    },
+    {
+        "logdir":"logs/bb",
+        "Size":303
+    }
+]
+
+CommandBox> jq jsonfile.json sort_by(@,&Size)
 => [
     {
         "logdir":"logs/bb",
