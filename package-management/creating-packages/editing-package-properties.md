@@ -42,6 +42,16 @@ Output the entire box.json
 package show
 ```
 
+using JmesPath with package show
+
+```bash
+package show jq:slug
+package show "jq:contributors|split(@,' ')" // grab contributors and split each result by spaces
+package show "jq:engines[].type" //get an array of all engine names
+package show "jq:{name:name, myprop:'test'}" // filter struct values and add in an additional value => { "myprop":"test", "name":"MyPackageName" }
+package show "jq:[name,version]|join('...',@)" //return struct values in an array then join all values together with ... => MyPackageName...2.4
+```
+
 ## package set
 
 Any property in your box.json can be set from the command line with the `package set` command.
