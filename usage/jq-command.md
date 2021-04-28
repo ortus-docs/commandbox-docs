@@ -101,27 +101,63 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 
 length, reverse, type, not\_null
 
+
 ### Conversion Functions
 
 to\_list, to\_array, to\_string, to\_number
-
+```bash
+CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
+=> 9
+```
 ## String / Number Functions
-
+```bash
 abs, ceil, floor
-
+CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].abs(@)
+=> [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+]
+```
 ## Boolean Checks
 
 ends\_with, starts\_with, contains
-
+```bash
+CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [?contains('-8',@)]
+=> [
+    -8
+]
+```
 #### All functions can be used in other functions with the "&" operator.
 
 A common example would be getting a person with the highest or lowest networth `max_by(people, &abs(net_worth))`
 
 ### Array Functions
 
-avg, first, group\_by, join, last, matches, min, max, reverse, sum, sort, split, unique/uniq
-
+avg, first, join, last, matches, min, max, reverse, sum, sort, split, unique/uniq
+```bash
+CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
+-0.111111111111
+```
 ### Struct or Array of Structs functions
 
-defaults, key\_contains, from\_entries, keys, max\_by, merge, min\_by, omit, pluck, sort\_by, to\_entries, values, map
-
+defaults, from\_entries, group\_by,  key\_contains, keys, map, max\_by, merge, min\_by, omit, pluck, sort\_by, to\_entries, values
+```bash
+CommandBox> jq [{"logdir":"logs/bb","Size":303},{"logdir":"logs/aa","Size":308}] 'sort_by(@,&Size)'
+=> [
+    {
+        "logdir":"logs/bb",
+        "Size":303
+    },
+    {
+        "logdir":"logs/aa",
+        "Size":308
+    }
+]
+```
