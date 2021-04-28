@@ -91,6 +91,7 @@
     * [Undertow Options](embedded-server/configuring-your-server/undertow-options.md)
     * [Custom Tray Menus](embedded-server/configuring-your-server/custom-tray-menus.md)
     * [Env Var overrides](embedded-server/configuring-your-server/env-var-overrides.md)
+    * [Server Home](embedded-server/configuring-your-server/server-home.md)
     * [Experimental Features](embedded-server/configuring-your-server/experimental-features.md)
   * [External Web Server](embedded-server/external-web-server.md)
   * [Starting as a Service](embedded-server/starting-as-a-service.md)

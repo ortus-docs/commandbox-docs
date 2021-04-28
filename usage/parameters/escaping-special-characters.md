@@ -13,13 +13,13 @@ echo "Good Morning Vietnam"
 
 ## Quotes
 
-Quotes are actually allowed unescaped in a value like so:
+Quotes are actually allowed unescaped in a value, so long as they don't appear at the start of the string.
 
 ```bash
 echo O'reilly
 ```
 
-However, if the parameter contains whitespace and is surrounded by quotes, you'll need to escape them with a backslash.
+However, if the parameter contains white space and is surrounded by quotes, you'll need to escape them with a backslash.
 
 ```bash
 echo 'O\'reilly Auto Parts'

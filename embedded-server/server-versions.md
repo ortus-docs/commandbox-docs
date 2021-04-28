@@ -28,6 +28,10 @@ However, [CommandBox](https://commandbox.ortusbooks.com/) and [ForgeBox](https:/
 
 The important thing to remember is, when starting a server via CommandBox **always use the second format shown above** since that is how ForgeBox recognizes each release. 
 
+{% hint style="info" %}
+As of version `5.3.0`, CommandBox will also recognize the fourth digit in `1.2.3.4` as a build ID if there is no plus sign in the version.  This makes `5.3.4+80` and `5.3.4.80` equivalent.
+{% endhint %}
+
 ### What versions exist?
 
 Questions about what versions are available?  No problem!  Here are some ways you can find out:
@@ -44,7 +48,7 @@ server start cfengine=lucee@be
 
 ## Pinning Exact Version
 
-It is a nice feature of CommandBox to have it automatically grab the latest version of your favoriate CF engine every time it starts.
+It is a nice feature of CommandBox to have it automatically grab the latest version of your favorite CF engine every time it starts.
 
 ```bash
 # Latest Lucee 5.3.7 build

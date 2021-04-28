@@ -46,3 +46,14 @@ config set artifactsDirectory=/path/to/artifacts
 config show artifactsDirectory
 ```
 
+## colorInDumbTerminal
+
+**boolean**
+
+You can enable this setting if you want to force CommandBox to output ANSI formatting code even though you're running box inside of a non-interactive terminal.  This is handy for CI builds such as Gitlab, which will process color coded text in your job logs.
+
+```bash
+config set colorInDumbTerminal=/path/to/artifacts
+config show colorInDumbTerminal
+```
+
