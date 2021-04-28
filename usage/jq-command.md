@@ -100,14 +100,27 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 ### Generic Functions
 
 length, reverse, type, not\_null
-
+```bash
+CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
+=> 9
+```
 
 ### Conversion Functions
 
 to\_list, to\_array, to\_string, to\_number
 ```bash
-CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
-=> 9
+CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].to_string(@)
+> [
+    "1",
+    "2",
+    "-3",
+    "4",
+    "-5",
+    "6",
+    "-7",
+    "-8",
+    "9"
+]
 ```
 ## String / Number Functions
 ```bash
