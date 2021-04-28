@@ -1,5 +1,9 @@
 # jq command
-
+JSON Query command for filtering data out of a JSON Object, file, or URL. jq is a query language
+built specifically for interacting with JSON type data. More information can be found
+at https://jmespath.org/ as well as an online version to test your query
+Pass or pipe the text to process or a filename
+## Using jq with a file 
 ``` 
 # basic.json
    "a": {
@@ -45,6 +49,28 @@
 > jq "basic.json" "dan[1]"
 => 2
 ```
+## Using jq with a URL
+```
+> jq "https://official-joke-api.appspot.com/jokes/ten" [].join('.....',[setup,punchline])
+=> [
+    "Lady: How do I spread love in this cruel world?.....Random Dude: [...\ud83d\udc98]",
+    "Why are skeletons so calm?.....Because nothing gets under their skin.",
+    "How come a man driving a train got struck by lightning?.....He was a good conductor.",
+    "What do you call a pig with three eyes?.....Piiig",
+    "How do you steal a coat?.....You jacket.",
+    "Did you hear about the submarine industry?.....It really took a dive...",
+    "What does a pirate pay for his corn?.....A buccaneer!",
+    "A programmer puts two glasses on his bedside table before going to sleep......A full one, in case he gets thirsty, and an empty one, in case he doesn’t.",
+    "How did the hipster burn the roof of his mouth?.....He ate the pizza before it was cool.",
+    "Did you hear the news?.....FedEx and UPS are merging. They’re going to go by the name Fed-Up from now on."
+]
+```
+## Using jq with inline json
+```
+> jq '{"a": {"b": {"c": {"d": "value"}}}}' a.b.c.d
+=> value
+```
+
 ### Special Keys / Expressions
 `@` - Current Node \(eg. current number/string/array/object\) used to evaluate or check value
 `&` - Expression \(Function or Keyname\) \(eg. &to\_number\(\) or &keyname\)
