@@ -55,6 +55,17 @@ config show modules.myModule.settingName
 config show mySettingArray[1]
 ```
 
+using JMESPath filter on the config show command
+```
+config show jq:modules.myModule.settingName
+config show jq:mySettingArray[1]
+config show 'jq:{name:name, modules:modules}'
+config show 'jq:keys(modules)'
+config show "jq:key_contains(modules,'book')"
+config show 'jq:to_entries(command.aliases)'
+```
+
+
 ## Clear Config Setting
 
 To Remove a setting out of the `CommandBox.json` use the `config clear` command. Nested attributes may be set by specifying dot-delimited names or using array notation.
