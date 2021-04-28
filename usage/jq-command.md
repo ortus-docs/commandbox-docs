@@ -123,8 +123,8 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].to_string(@)
 ]
 ```
 ## String / Number Functions
+`abs`, `ceil`, `floor`
 ```bash
-abs, ceil, floor
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].abs(@)
 => [
     1,
@@ -140,7 +140,7 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].abs(@)
 ```
 ## Boolean Checks
 
-ends\_with, starts\_with, contains
+`ends_with`, `starts_with`, `contains`
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [?contains('-8',@)]
 => [
@@ -153,14 +153,14 @@ A common example would be getting a person with the highest or lowest networth `
 
 ### Array Functions
 
-avg, first, join, last, matches, min, max, reverse, sum, sort, split, unique/uniq
+`avg`, `first`, `join`, `last`, `matches`, `min`, `max`, `reverse`, `sum`, `sort`, `split`, `unique/uniq`
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
 -0.111111111111
 ```
 ### Struct or Array of Structs functions
 
-defaults, from\_entries, group\_by,  key\_contains, keys, map, max\_by, merge, min\_by, omit, pluck, sort\_by, to\_entries, values
+`defaults`, `from_entries`, `group_by`,  `key_contains`, `keys`, `map`, `max_by`, `merge`, `min_by`, `omit`, `pluck`, `sort_by`, `to_entries`, `values`
 ```bash
 # jsonfile.json
 [
