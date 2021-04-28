@@ -84,5 +84,16 @@ Like all other config server defaults, they follow the same pattern as the `serv
 config set server.defaults.web.ruleFile=/path/to/rules.json
 ```
 
-## 
+## Commenting Out Rules
+
+You can comment out any rule \(whether it's in JSON or a text file\) by proceeding it with a pound sign \(`#`\).
+
+{% code title="myRuleFile.txt" %}
+```text
+# Here is a comment that will be ignored
+
+# The following rule also won't be run
+# path-suffix(hidden.js) -> set-error(404)
+```
+{% endcode %}
 
