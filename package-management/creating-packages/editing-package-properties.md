@@ -46,12 +46,16 @@ using JmesPath with package show
 
 ```bash
 package show jq:slug
+
 # grab contributors and split each result by spaces
 package show "jq:contributors|split(@,' ')" 
+
 # get an array of all engine names
 package show "jq:engines[].type"
+
 # filter struct values and add in an additional value => { "myprop":"test", "name":"MyPackageName" }
 package show "jq:{name:name, myprop:'test'}"
+
 # return struct values in an array => [MyPackageName,2.4]
 package show "jq:[name,version]"
 ```
