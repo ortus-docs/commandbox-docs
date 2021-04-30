@@ -7,6 +7,7 @@ Click a category for more information.
 * [**CLI Lifecycle**](cli-lifecycle.md)
   * onCLIStart
   * onCLIExit
+  * onSystemSettingExpansion
 * [**Command Execution Lifecycle**](command-execution-lifecycle.md)
   * preCommand
   * preCommandParamProcess
@@ -34,6 +35,8 @@ Click a category for more information.
   * postInstall
   * preUninstall
   * postUninstall
+  * preInstallAll
+  * postInstallAll
   * preVersion
   * postVersion
   * prePublish

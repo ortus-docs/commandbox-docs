@@ -1,18 +1,22 @@
 # Server Rules
 
-CommandBox servers have a method of locking down secure URLs and or implementing any of the Undertow predicate and handlers via a nice text based language.  Undertow supports a “predicate language” that allows a string to be parsed into a graph of predicates \(conditions\) and handlers \(actions to take\).  Ex:
+CommandBox servers have a method of locking down secure URLs and or implementing any of the Undertow predicate and handlers via a nice text based language.  Undertow supports a “predicate language” that allows a string to be parsed into a graph of predicates \(conditions\) and handlers \(actions to take\).  Ex:
+
 
 ```javascript
 path-suffix(/box.json) -> set-error(404)
 ```
 
-These rules can be used for any of the following:
+
+These rules can be used for any of the following:
 
 * **Security** - Block paths, IPs, or users
 * **URL rewrites** - Rewrite incoming URLs to something different
 * **Modifying HTTP requests on the fly** - Set headers, cookies, or response codes
 
-Much of this functionality overlaps with the existing Tuckey-based rewrites in CommandBox, but this functionality is built directly into Undertow, has a more streamlined syntax, and allows for easier ad-hoc rules to be layered into a server that allows for you to have custom rules layered on top of built in rules.  It can be used to replace what Tuckey does, or added on top.  
+
+Much of this functionality overlaps with the existing Tuckey-based rewrites in CommandBox, but this functionality is built directly into Undertow, has a more streamlined syntax, and allows for easier ad-hoc rules to be layered into a server that allows for you to have custom rules layered on top of built in rules.  It can be used to replace what Tuckey does, or added on top.
+  
 
 {% hint style="info" %}
 If you have Tuckey rewrites enabled AND use the Undertow predicate-based server rules, the server rules will fire BEFORE the Tuckey rewrites.  

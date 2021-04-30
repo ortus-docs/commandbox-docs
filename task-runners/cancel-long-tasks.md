@@ -10,5 +10,5 @@ checkInterrupted();
 
 If the current thread hasn't been interrupted, that call will simply return immediately and you can continue with your work. If your thread has been interrupted, that call with throw an exception. No need to catch it-- the exception will automatically stop execution of your task and the CommandBox shell will catch the exception itself, output the text "CANCELLED" and return to the prompt.
 
-If you do call this method from inside of a try/catch, you'll want to rethrow any interrupted exceptions.
+If you do call this method from inside of a try/catch, you'll want to rethrow any interrupted exceptions.  Also, if your work has any cleanup that must always be performed like closing a socket connection, make sure you use a `finally {}` block for those items.
 

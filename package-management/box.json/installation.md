@@ -74,6 +74,13 @@ package set installPaths="{ foo : 'lib/foo' }" --append
 package show installPaths
 ```
 
+or
+
+```bash
+package set installPaths.logbox=../logbox/
+package show installPaths
+```
+
 ## createPackageDirectory
 
 **boolean**

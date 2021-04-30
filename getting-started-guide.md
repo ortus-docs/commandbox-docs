@@ -21,13 +21,13 @@ If you don't already have CommandBox in hand, download it from the product page 
 
 * [http://www.ortussolutions.com/products/commandbox](http://www.ortussolutions.com/products/commandbox#download)
 
-If you already have Java 1.7 or higher installed on your PC, choose the **No JRE Included** download for your operating system. Otherwise, you can grab the **With JRE Included** for a single-download solution.
+If you already have Java 1.8 or higher installed on your PC, choose the **No JRE Included** download for your operating system. Otherwise, you can grab the **With JRE Included** for a single-download solution.
 
 You're well on your way now. While you wait for arrival you might want to secure any loose hair or shirt sleeves and clear a clean space to work on your desktop. Safety first!
 
 ## 2. Unzip & First Run
 
-![Setup](.gitbook/assets/open_package.png)
+![Setup](.gitbook/assets/open_package%20%281%29.png)
 
 Your CommandBox is sent to you via a zip archive. Decompress the archive to a location of your choice. The **No JRE Included** download will only have one file in it named `box`. For Windows users, this will be an `exe` file. For unix-based users, it will be an executable binary. The **With JRE Included** version will have a `jre` folder. You can move `box.exe`, but keep the `jre` folder in the same relative location as the executable so it can be found.
 

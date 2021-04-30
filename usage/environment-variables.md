@@ -97,3 +97,28 @@ There is a command to help you debug what variables are set in each command cont
 ]
 ```
 
+## Native Binaries
+
+Any environment variables you set in the CommandBox shell will be available to the native process that your OS binary runs in. Here's a Windows and \*nix example of setting an env var in CommandBox and then using it from the native shell.
+
+```bash
+set name=brad
+!echo %name%
+```
+
+```bash
+set name=brad
+!echo $name
+```
+
+## Passing Environment Variables to Servers
+
+Any ComandBox environment variables present in the shell will automatically be passed to the environment of the server process.  This means, given an example like this:
+
+```bash
+set foo=bar
+server start
+```
+
+The CFML code running that server process will be able to "see" the `foo` environment variable.  
+

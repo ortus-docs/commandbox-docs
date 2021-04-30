@@ -68,6 +68,18 @@ task( 'mytask' )
     .run();
 ```
 
+### Using argumentCollection
+
+```javascript
+args = {
+   "arg1": true,
+   "arg2": "something else"
+};
+task( 'mytask' )
+    .params( argumentCollection=args )
+    .run();
+```
+
 ## flags\(\)
 
 Just like when running a task manually, flags are an optional shortcut for specifying boolean parameters. Pass in each flag as a separate argument. It is not necessary to include the `--` prior to the value, but it will still work.
@@ -108,4 +120,23 @@ If you want to help debug the exact task that is being passed along to the shell
 task()
     .run( echo=true );
 ```
+
+## Handling Exceptions
+
+If a task encounters an error or returns a non-zero exit code, the Task DSL will throw an exception.  if you want to ignore failing tasks or rethrow an exception of your own design, you may place the task in a try/catch.  The exit code of the task may be accessed via:
+
+* The `${exitCode}` environment variable
+* The `errorcode` property of the exception if the `error()` method was used
+* Calling `getExitCode()` on the Task DSL object
+
+```javascript
+try { 
+  var t = task( 'myTask' )
+  t.run();
+}  catch( any var e ) {
+  print.line( 'myTask errored with #t.getExitCode()#, but we ignoring it.' );
+}
+```
+
+
 

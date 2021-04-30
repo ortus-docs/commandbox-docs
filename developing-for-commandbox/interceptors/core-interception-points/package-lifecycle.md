@@ -63,6 +63,22 @@ Announced after the uninstallation of a package.
 
 * `uninstallArgs` - Same as `preUninstall` above
 
+## preInstallAll 
+
+Announced once before all dependencies are installed, no matter how many are actually installed.
+
+**interceptData**
+
+* `installArgs` - Raw parameters passed to the `install` command.
+
+## postInstallAll
+
+Announced once after all dependencies are installed, no matter how many are actually installed.
+
+**interceptData**
+
+* `installArgs` - Raw parameters passed to the `install` command.
+
 ## preVersion
 
 Announced before the new version is set in the package.

@@ -117,6 +117,9 @@ fileSystemUtil.createMapping( name, physicalpath );
 
 **NOTE:** The settings that are changed using `cfapplication` will last for the duration of the CLI shell and will affect any and all code run from the CLI including the CommandBox core code.
 
+## Sending Email
+
+To send email, use the `cfscript` variant of `cfmail` making sure you set `async=false` \(see below\). Not setting this flag to `false` may result in undelivered email because mail may still exist in Lucee spooler \(Lucee tasks\) when your task runner exits.
 
 
 

@@ -10,7 +10,7 @@ Your `box.json` file describes your package, dependencies, and how to install it
 init name="My Package" version="1.0.0"
 ```
 
-That's it. Your folder now has extra meta data in the `box.json` file that describes it a way that is meaningful to [ForgeBox](http://forgebox.io) and CommandBox.
+That's it. Your folder now has extra meta data in the `box.json` file that describes it in a way that is meaningful to [ForgeBox](http://forgebox.io) and CommandBox.
 
 ## Distribution
 
