@@ -17,6 +17,7 @@ Supported engines are:
 * Adobe ColdFusion 11
 * Adobe ColdFusion 2016
 * Adobe ColdFusion 2018
+* Adobe ColdFusion 2021
 * Railo 4.2
 * Lucee 4.5
 * Lucee 5

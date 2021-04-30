@@ -91,7 +91,7 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 
 `||` - OR expression
 
-`` `{'ab':true}` `` - Literal Expressions \(this will be converted to json\)
+```{'ab':true}```  - Literal Expressions \(this will be converted to json\)
 
 `'foo'` - Raw String Literals not evaluated \(Single Quotes\)
 
@@ -100,6 +100,7 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 ### Generic Functions
 
 length, reverse, type, not\_null
+
 ```bash
 CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
 => 9
@@ -108,6 +109,7 @@ CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
 ### Conversion Functions
 
 to\_list, to\_array, to\_string, to\_number
+
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].to_string(@)
 > [
@@ -122,8 +124,11 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].to_string(@)
     "9"
 ]
 ```
+
 ## String / Number Functions
+
 `abs`, `ceil`, `floor`
+
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].abs(@)
 => [
@@ -138,15 +143,18 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].abs(@)
     9
 ]
 ```
+
 ## Boolean Checks
 
 `ends_with`, `starts_with`, `contains`
+
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [?contains('-8',@)]
 => [
     -8
 ]
 ```
+
 #### All functions can be used in other functions with the "&" operator.
 
 A common example would be getting a person with the highest or lowest networth `max_by(people, &abs(net_worth))`
@@ -154,13 +162,16 @@ A common example would be getting a person with the highest or lowest networth `
 ### Array Functions
 
 `avg`, `first`, `join`, `last`, `matches`, `min`, `max`, `reverse`, `sum`, `sort`, `split`, `unique/uniq`
+
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
 -0.111111111111
 ```
+
 ### Struct or Array of Structs functions
 
-`defaults`, `from_entries`, `group_by`,  `key_contains`, `keys`, `map`, `max_by`, `merge`, `min_by`, `omit`, `pluck`, `sort_by`, `to_entries`, `values`
+`defaults`, `from_entries`, `group_by`, `key_contains`, `keys`, `map`, `max_by`, `merge`, `min_by`, `omit`, `pluck`, `sort_by`, `to_entries`, `values`
+
 ```bash
 # jsonfile.json
 [
@@ -186,3 +197,4 @@ CommandBox> jq jsonfile.json sort_by(@,&Size)
     }
 ]
 ```
+
