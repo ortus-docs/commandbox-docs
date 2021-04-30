@@ -22,7 +22,7 @@ You can start as many embedded server instances as you want. Each running server
 * Open Admin
 * Open File System
 
-![CommandBox Server Tray Menu](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
+![CommandBox Server Tray Menu](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%282%29%20%281%29.png)
 
 ### Disable the tray icon
 
