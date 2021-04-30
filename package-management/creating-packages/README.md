@@ -27,43 +27,14 @@ When making a package available on ForgeBox, each version of that package has it
 
 In that case, the `location` for version `1.0.0` of this package is the `v1.0.0` tag in that GitHub repository.
 
-If your project is stored in GitHub, an easy approach is simply to treat the root of the repository as the root of the package. That is where your box.json will live. This also means you can use GitHub's automatic zip download URL as your ForgeBox URL since it returns a zip file containing your repo contents in a folder.
-
-Ex: `https://github.com/bdw429s/Weather-Lookup-By-IP/archive/master.zip`
-
-If you choose to structure your repo differently, no problem. Just use a build process that generates a zip file in that format and make that zip publicly available for ForgeBox's download URL.
-
-## Private Packages
-
-ForgeBox supports private packages. Private packages are only visible to the user who created it.
-
-> Private packages will be a paid feature for ForgeBox Pro subscribers, though the feature is currently available to all users for free.
-
-To create a private package, pass the `private` flag to the `package init` command.
-
-> Note: Creating private packages requires you to be logged in to ForgeBox
-
-```bash
-CommandBox:my-package> package init slug=my-package --private
-- Set name = My Package
-- Set slug = my-package@username
-- Set version = 0.0.0
-- Set private = true
-- Set shortDescription = A sweet package
-- Set ignore = ["**/.*","test","tests"]
-Package Initialized & Created /Users/username/code/sandbox/my-package/box.json
-```
-
 ## Storing Package Binaries on ForgeBox
 
 ForgeBox can store the binaries for your packages in the ForgeBox Cloud. This provides you with an easy way to store multiple versions of your package distributed across the globe.
 
-> Package storage will be a paid feature for ForgeBox Pro subscribers, though the feature is currently available to all users for free.
-
 To utilize ForgeBox Storage, simply set `forgeboxStorage` as the value of your package's `location`.
 
 ```bash
-CommandBox:my-package> package set location=forgeboxStorage
+package set location=forgeboxStorage
 ```
 
 When you publish a package, CommandBox will automatically zip up your package and send it to ForgeBox.
@@ -74,22 +45,35 @@ Below is an example of the commands that would take you from scratch to a publis
 
 ```bash
 # Create user (first time only)
-CommandBox> forgebox register username password your@email.com firstName lastName
-CommandBox> forgebox login username password
+forgebox register username password your@email.com firstName lastName
+forgebox login username password
 
-# Create package/git repo
-CommandBox> mkdir mypackage --cd
-CommandBox> !git init
-CommandBox> package init slug=my-package type=modules location=gitUser/my-package
-CommandBox> bump --minor message="Initial Commit"
+# Create package
+mkdir mypackage --cd
+package init slug=my-package type=modules
 
 # Publish it
-CommandBox> !git remote add origin <git url>
-CommandBox> !git push
-CommandBox> publish
+publish
 
 # Viewable and installable by the world!
-CommandBox> forgebox show my-package
-CommandBox> install my-package
+forgebox show my-package
+install my-package
+```
+
+## Private Packages
+
+ForgeBox supports private packages. Private packages are only visible to the user who created it.
+
+To create a private package, pass the `private` flag to the `package init` command.
+
+```bash
+CommandBox:my-package> package init slug=my-package --private
+- Set name = My Package
+- Set slug = my-package@username
+- Set version = 0.0.0
+- Set private = true
+- Set shortDescription = A sweet package
+- Set ignore = ["**/.*","test","tests"]
+Package Initialized & Created /Users/username/code/sandbox/my-package/box.json
 ```
 
