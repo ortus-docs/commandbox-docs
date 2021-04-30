@@ -51,6 +51,7 @@ forgebox login username password
 # Create package
 mkdir mypackage --cd
 package init slug=my-package type=modules
+bump --major
 
 # Publish it
 publish
