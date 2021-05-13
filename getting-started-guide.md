@@ -27,7 +27,7 @@ You're well on your way now. While you wait for arrival you might want to secure
 
 ## 2. Unzip & First Run
 
-![Setup](.gitbook/assets/open_package%20%281%29.png)
+![Setup](.gitbook/assets/open_package%20%282%29.png)
 
 Your CommandBox is sent to you via a zip archive. Decompress the archive to a location of your choice. The **No JRE Included** download will only have one file in it named `box`. For Windows users, this will be an `exe` file. For unix-based users, it will be an executable binary. The **With JRE Included** version will have a `jre` folder. You can move `box.exe`, but keep the `jre` folder in the same relative location as the executable so it can be found.
 
@@ -41,7 +41,7 @@ The green `CommandBox>` prompt is what we call the _interactive shell_. Type `ex
 
 ## 3. Setup & Usage
 
-![Start Using](.gitbook/assets/run%20%281%29%20%281%29%20%281%29.png)
+![Start Using](.gitbook/assets/run%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 To open up the interactive shell at any time, just double click on the `box` executable. If you prefer to stay in your OS's native shell, then just place the `box` file in your system path and add it before any CommandBox commands like so:
 
