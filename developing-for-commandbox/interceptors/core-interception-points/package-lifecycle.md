@@ -63,7 +63,7 @@ Announced after the uninstallation of a package.
 
 * `uninstallArgs` - Same as `preUninstall` above
 
-## preInstallAll 
+## preInstallAll
 
 Announced once before all dependencies are installed, no matter how many are actually installed.
 

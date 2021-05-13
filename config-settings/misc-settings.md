@@ -50,7 +50,7 @@ config show artifactsDirectory
 
 **boolean**
 
-You can enable this setting if you want to force CommandBox to output ANSI formatting code even though you're running box inside of a non-interactive terminal.  This is handy for CI builds such as Gitlab, which will process color coded text in your job logs.  Default value is `false`.
+You can enable this setting if you want to force CommandBox to output ANSI formatting code even though you're running box inside of a non-interactive terminal. This is handy for CI builds such as Gitlab, which will process color coded text in your job logs. Default value is `false`.
 
 ```bash
 config set colorInDumbTerminal=true
@@ -61,7 +61,7 @@ config show colorInDumbTerminal
 
 **string**
 
-Used to override the default browser to open when a server starts, or when using a command like `server open` or calling the `openURL()` method from a command or Task Runner.  Possible values are:
+Used to override the default browser to open when a server starts, or when using a command like `server open` or calling the `openURL()` method from a command or Task Runner. Possible values are:
 
 * **firefox**
 * **chrome**
@@ -81,7 +81,7 @@ config show preferredBrowser
 
 **boolean**
 
-You can change CommandBox's default tab completion to be an inline list that follows your cursor.  **This setting requires you to close and re-open the shell to take affect.**
+You can change CommandBox's default tab completion to be an inline list that follows your cursor. **This setting requires you to close and re-open the shell to take affect.**
 
 ```bash
 config set tabCompleteInline=true

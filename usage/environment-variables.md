@@ -113,12 +113,12 @@ set name=brad
 
 ## Passing Environment Variables to Servers
 
-Any ComandBox environment variables present in the shell will automatically be passed to the environment of the server process.  This means, given an example like this:
+Any ComandBox environment variables present in the shell will automatically be passed to the environment of the server process. This means, given an example like this:
 
 ```bash
 set foo=bar
 server start
 ```
 
-The CFML code running that server process will be able to "see" the `foo` environment variable.  
+The CFML code running that server process will be able to "see" the `foo` environment variable.
 

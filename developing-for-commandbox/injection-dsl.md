@@ -46,7 +46,7 @@ property name='myDeepConfigSetting' inject='commandbox:ConfigSettings:myConfigSe
 
 ## box Injection Namespace
 
-In order to provide compatibility for generic modules to work the same between Coldbox MVC and CommandBox CLI, we have introduced a new injection namespace called `box` which is simply an alias for `commandbox`.  All of the examples above such as 
+In order to provide compatibility for generic modules to work the same between Coldbox MVC and CommandBox CLI, we have introduced a new injection namespace called `box` which is simply an alias for `commandbox`. All of the examples above such as
 
 ```javascript
 property name='moduleSettings' inject='commandbox:moduleSettings:moduleName';
@@ -58,9 +58,9 @@ can also be written as
 property name='moduleSettings' inject='box:moduleSettings:moduleName';
 ```
 
-and will allow your module to work the same when installed to ColdBox MVC or CommandBox CLI.  note the `box` injection namespace was added to CommandBox in version `4.7.0` and added to ColdBox MVC in version `5.4.0` so using it will preclude the use of your module on older versions of either platform.
+and will allow your module to work the same when installed to ColdBox MVC or CommandBox CLI. note the `box` injection namespace was added to CommandBox in version `4.7.0` and added to ColdBox MVC in version `5.4.0` so using it will preclude the use of your module on older versions of either platform.
 
 ## Reloading Changes
 
-CFProperty injections are aggressively caches on disk to survive restarts.  If you change the injections on a command CFC, you will need to run the `reload` command \(aliased as `r`\) to reprocess metadata on your CFCs.
+CFProperty injections are aggressively caches on disk to survive restarts. If you change the injections on a command CFC, you will need to run the `reload` command \(aliased as `r`\) to reprocess metadata on your CFCs.
 

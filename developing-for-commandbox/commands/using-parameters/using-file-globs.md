@@ -86,7 +86,7 @@ function run( required Globber path ) {
 
 ## Create your own Globber
 
-You can create your own File Gobber object from any pattern using the `globber()` method.  You can pass a comma delimited list or an array of globber patterns to the constructor.  
+You can create your own File Gobber object from any pattern using the `globber()` method. You can pass a comma delimited list or an array of globber patterns to the constructor.
 
 ```javascript
 globber( 'models/**.cfc' ).matches()
@@ -106,7 +106,7 @@ globber( 'models/**.cfc' )
 
 ## Exclude Patterns
 
-Sometimes when using a Globbing pattern, it's desirable to exclude a small number of patterns and it's cumbersome to manually include every pattern you want. You can set more than one excludes pattern to be passed to filter the matches.  Excludes follow the same format as include patterns.  If a pattern is both excluded and included, the exclude wins.  
+Sometimes when using a Globbing pattern, it's desirable to exclude a small number of patterns and it's cumbersome to manually include every pattern you want. You can set more than one excludes pattern to be passed to filter the matches. Excludes follow the same format as include patterns. If a pattern is both excluded and included, the exclude wins.
 
 ```javascript
 globber( '**.cf?' )
@@ -114,7 +114,7 @@ globber( '**.cf?' )
   .matches()
 ```
 
-Excludes, like includes, allow for a comma-delimited list or an array to be passed.  
+Excludes, like includes, allow for a comma-delimited list or an array to be passed.
 
 ```javascript
 globber( '**.cf?' )

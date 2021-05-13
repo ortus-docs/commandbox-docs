@@ -64,7 +64,7 @@ The `git+ssh` endpoint will look for a private SSH key in your `~/.ssh` director
 
 ## Password authentication
 
-You can authenticate to a Git repo over HTTP using a username/password combination or a personal access token.  The format looks like this:
+You can authenticate to a Git repo over HTTP using a username/password combination or a personal access token. The format looks like this:
 
 ```bash
 install git+https://username@domain.com/user/repo.git
@@ -86,7 +86,7 @@ or just the personal access token like
 install git+https://keyhere@github.com/user/repo.git
 ```
 
-and they both appear to work the same.  It appears that a private Github repo requires the “**repo**” scope selected for the personal access token.
+and they both appear to work the same. It appears that a private Github repo requires the “**repo**” scope selected for the personal access token.
 
 ### GitLab <a id="GitLab"></a>
 
@@ -98,7 +98,7 @@ install git+https://whateverYouWantHere:keyhere@gitlab.com/group/repo.git
 
 ### Env Vars <a id="Env-Vars"></a>
 
-You can use environment variables from the CLI or in your **box.json** to protect sensitive information like passwords and keys. 
+You can use environment variables from the CLI or in your **box.json** to protect sensitive information like passwords and keys.
 
 ```bash
 set token=myToken
@@ -107,7 +107,7 @@ install git+https://user:${token}@gitlab.com/group/repo.git
 
 ## NetRC
 
-We also support the NetRC file format.  Just create a files in your user's home directory called `~/.netrc` or `~/_netrc` with the following format:
+We also support the NetRC file format. Just create a files in your user's home directory called `~/.netrc` or `~/_netrc` with the following format:
 
 ```text
 machine github.com
@@ -115,11 +115,9 @@ login myUser
 password mypass
 ```
 
-CommandBox will find this file, match the hostname to the Git repo being cloned, and use the username and password as specified.  
+CommandBox will find this file, match the hostname to the Git repo being cloned, and use the username and password as specified.
 
 ### Note:
 
-We do not support any of these username/password options over HTTP as it just seems unwise.  Please use HTTPS. 
-
-
+We do not support any of these username/password options over HTTP as it just seems unwise. Please use HTTPS.
 

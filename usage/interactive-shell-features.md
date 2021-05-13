@@ -10,7 +10,7 @@ Pressing Ctrl-D from a prompt sends an OEF signal and will exit out of the shell
 
 ## History Search
 
-CommandBox allows you to re-run items from your command and/or REPL history by pressing the up arrow  to cycle through previous commands.  You  can type a partial command  like `cd` and then hit up arrow and the history items will be filtered to items starting with that.  You can also use what's commonly known as `i-search`.  Press Ctrl-Shift-R to open a search from the console where you can search your entire command history by keyword.  Keep pressing Ctrl-Shift-R to cycle through the results.  Press Ctrl-Shift-S to cycle backwards through the results.
+CommandBox allows you to re-run items from your command and/or REPL history by pressing the up arrow to cycle through previous commands. You can type a partial command like `cd` and then hit up arrow and the history items will be filtered to items starting with that. You can also use what's commonly known as `i-search`. Press Ctrl-Shift-R to open a search from the console where you can search your entire command history by keyword. Keep pressing Ctrl-Shift-R to cycle through the results. Press Ctrl-Shift-S to cycle backwards through the results.
 
 ## Change to Previous Directory
 
@@ -21,8 +21,4 @@ cd -
 ```
 
 If you run this same command more than once, you will keep toggling between the same two directories \(bash behavior\)
-
-
-
-
 

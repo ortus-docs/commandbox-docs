@@ -22,7 +22,7 @@ Entering "yes" will install the newest version of the package. Use the --force f
 outdated
 ```
 
-The table of information in the `outdated` and `update` command has several different version numbers.  This is what they mean:
+The table of information in the `outdated` and `update` command has several different version numbers. This is what they mean:
 
 * **Package** - This contains the slug and semver range you've put in your `box.json` file.  i.e., what version you "asked" for.
 * **Installed** - This is the exact version installed right now in your project
@@ -30,7 +30,7 @@ The table of information in the `outdated` and `update` command has several diff
 * **Latest** - This is the absolute latest stable version of this package regardless of your semver range.  In order to update to this version, you may need to run the `install` command again and ask specifically for it.  An orange highlight in this column means a new major update is available.
 
 {% hint style="info" %}
-Note, updating to a new major version of a library may contain breaking changes. This is why the default semver range is the caret \(^\) range which will prompt you with patch and minor updates, but NOT major updates.  Those upgrades require manual intervention by default.
+Note, updating to a new major version of a library may contain breaking changes. This is why the default semver range is the caret \(^\) range which will prompt you with patch and minor updates, but NOT major updates. Those upgrades require manual intervention by default.
 {% endhint %}
 
 ## ForgeBox Semantic Versioning Support

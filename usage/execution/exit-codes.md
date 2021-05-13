@@ -5,7 +5,7 @@ CommandBox follows the standard system of exit codes. In Bash or DOS, every proc
 * **0** - Success
 * **Any other number** - Failure
 
-This slightly counterintuitive to CFML developers since we are used to positive numbers as being truthy and zero as being falsely, but it is the industry standard for shells.  It makes more sense if you think of it in terms of what Windows calls it-- `%errorlevel%`.  if the error level is 0 there was no error! 
+This slightly counterintuitive to CFML developers since we are used to positive numbers as being truthy and zero as being falsely, but it is the industry standard for shells. It makes more sense if you think of it in terms of what Windows calls it-- `%errorlevel%`. if the error level is 0 there was no error!
 
 ## Command Exit Codes
 

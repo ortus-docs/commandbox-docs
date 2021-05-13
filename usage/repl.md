@@ -78,7 +78,7 @@ Tab completion is currently not supported in either of the REPLs.
 
 ## Environment Variable Expansions
 
-You can use environment variable expansions in the REPL with the same syntax that works in the CLI and JSON files.  Consider this example which sets an environment variable in the shell and then enters the REPL command and references the variable.  Note, the variable is expanded in-place, so you still need to wrap it in quotes so the resulting CFML code is valid.
+You can use environment variable expansions in the REPL with the same syntax that works in the CLI and JSON files. Consider this example which sets an environment variable in the shell and then enters the REPL command and references the variable. Note, the variable is expanded in-place, so you still need to wrap it in quotes so the resulting CFML code is valid.
 
 ```javascript
 CommandBox> set foo=bar
@@ -94,6 +94,4 @@ Escapes work the same way in the REPL
 CFSCRIPT-REPL: echo( '\${foo}' )
 ${foo}
 ```
-
-
 

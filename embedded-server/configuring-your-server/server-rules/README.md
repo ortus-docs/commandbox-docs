@@ -1,12 +1,10 @@
 # Server Rules
 
-CommandBox servers have a method of locking down secure URLs and or implementing any of the Undertow predicate and handlers via a nice text based language.  Undertow supports a “predicate language” that allows a string to be parsed into a graph of predicates \(conditions\) and handlers \(actions to take\).  Ex:
-
+CommandBox servers have a method of locking down secure URLs and or implementing any of the Undertow predicate and handlers via a nice text based language. Undertow supports a “predicate language” that allows a string to be parsed into a graph of predicates \(conditions\) and handlers \(actions to take\). Ex:
 
 ```javascript
 path-suffix(/box.json) -> set-error(404)
 ```
-
 
 These rules can be used for any of the following:
 
@@ -14,19 +12,17 @@ These rules can be used for any of the following:
 * **URL rewrites** - Rewrite incoming URLs to something different
 * **Modifying HTTP requests on the fly** - Set headers, cookies, or response codes
 
-
-Much of this functionality overlaps with the existing Tuckey-based rewrites in CommandBox, but this functionality is built directly into Undertow, has a more streamlined syntax, and allows for easier ad-hoc rules to be layered into a server that allows for you to have custom rules layered on top of built in rules.  It can be used to replace what Tuckey does, or added on top.
-  
+Much of this functionality overlaps with the existing Tuckey-based rewrites in CommandBox, but this functionality is built directly into Undertow, has a more streamlined syntax, and allows for easier ad-hoc rules to be layered into a server that allows for you to have custom rules layered on top of built in rules. It can be used to replace what Tuckey does, or added on top.
 
 {% hint style="info" %}
-If you have Tuckey rewrites enabled AND use the Undertow predicate-based server rules, the server rules will fire BEFORE the Tuckey rewrites.  
+If you have Tuckey rewrites enabled AND use the Undertow predicate-based server rules, the server rules will fire BEFORE the Tuckey rewrites.
 {% endhint %}
 
 ## Create your Rules
 
-Unlike custom Tuckey-based rewrites that must be placed in a single XML file, sever rule can be provided ad-hoc in a variety of locations.  They are combined and passed to the server in the order defined.  This allows you to easily "layer" custom rules along with out-of-the-box lockdown profiles.
+Unlike custom Tuckey-based rewrites that must be placed in a single XML file, sever rule can be provided ad-hoc in a variety of locations. They are combined and passed to the server in the order defined. This allows you to easily "layer" custom rules along with out-of-the-box lockdown profiles.
 
-For maximum configuration options, the following mechanisms are supported for specifying the rules for a given server.  Rules are processed in the order listed.  i.e., a rule defined in your `server.json` is processed prior to a rule in your `server.default` config setting.
+For maximum configuration options, the following mechanisms are supported for specifying the rules for a given server. Rules are processed in the order listed. i.e., a rule defined in your `server.json` is processed prior to a rule in your `server.default` config setting.
 
 1. Ad-hoc rule array in `server.json`
 2. External rules files in `server.json` in the order defined
@@ -37,7 +33,7 @@ For maximum configuration options, the following mechanisms are supported for sp
 
 ### `server.json` Rules
 
-You can specify ad-hoc rules in the `web.rules` property as an array of strings in your `server.json` as well as specify one or more external rule files in the `web.rulesFile` property as an array or list of file glob patterns.  
+You can specify ad-hoc rules in the `web.rules` property as an array of strings in your `server.json` as well as specify one or more external rule files in the `web.rulesFile` property as an array or list of file glob patterns.
 
 ```javascript
 {
@@ -47,13 +43,13 @@ You can specify ad-hoc rules in the `web.rules` property as an array of strings 
             "path-suffix(hidden.js) -> set-error(404)",
             "path-prefix(/admin/) -> ip-access-control(192.168.0.* allow)",
             "path(/sitemap.xml) -> rewrite(/sitemap.cfm)",
-		"disallowed-methods(trace)"
+        "disallowed-methods(trace)"
         ],
-	      "rulesFile" : "../secure-rules.json"
+          "rulesFile" : "../secure-rules.json"
         // Or...
-	      "rulesFile" : ["../security.json","../rewrites.txt","../app-headers.json"]
+          "rulesFile" : ["../security.json","../rewrites.txt","../app-headers.json"]
         // Or...
-	      "rulesFile" : "../rules/*.json"
+          "rulesFile" : "../rules/*.json"
     }
 }
 ```
@@ -69,7 +65,7 @@ External rule files with a `.json` suffix will be expected to be a valid JSON fi
 ```
 {% endcode %}
 
-External rule files with any extension OTHER than `.json` will be expected to be a raw text file with one rule per line.  Emtpy lines are ignored and the rules are processed in the order defined.
+External rule files with any extension OTHER than `.json` will be expected to be a raw text file with one rule per line. Emtpy lines are ignored and the rules are processed in the order defined.
 
 {% code title="myRuleFile.txt" %}
 ```text
@@ -78,7 +74,7 @@ path-suffix(hidden.js) -> set-error(404)
 ```
 {% endcode %}
 
-Rules specified directly in the `server.json` or in an external JSON file must be escaped for the JSON they are a part of.  Using a plain text external file can help readability since no additional escaping is required for the rules.
+Rules specified directly in the `server.json` or in an external JSON file must be escaped for the JSON they are a part of. Using a plain text external file can help readability since no additional escaping is required for the rules.
 
 ### config setting `server.defaults` Rules
 

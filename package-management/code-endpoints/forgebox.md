@@ -34,7 +34,7 @@ You can specify packages from ForgeBox as dependencies in your `box.json` in thi
 
 ## Installing Lucee Extensions
 
-If the package being installed from ForgeBox is of type `lucee-extensions` and if the current working directory is found to have a Lucee server in it, the lex file will instead be installed to the server context's deploy folder.  Note the Lucee server will need to have been started at least once so CommandBox "knows" about it, but it need not be running at the time.  
+If the package being installed from ForgeBox is of type `lucee-extensions` and if the current working directory is found to have a Lucee server in it, the lex file will instead be installed to the server context's deploy folder. Note the Lucee server will need to have been started at least once so CommandBox "knows" about it, but it need not be running at the time.
 
 ```text
 install 5C558CC6-1E67-4776-96A60F9726D580F1

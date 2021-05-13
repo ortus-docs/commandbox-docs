@@ -18,7 +18,7 @@ Announced right before the shell exits and control is returned back to the OS. T
 
 ## onSystemSettingExpansion
 
-Announced every time a system setting in the format of `${something}` is expanded.  Any interceptor listening can provide an expanded value.
+Announced every time a system setting in the format of `${something}` is expanded. Any interceptor listening can provide an expanded value.
 
 **interceptData**
 
