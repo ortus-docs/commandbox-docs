@@ -8,9 +8,10 @@ The print helper contains a feature that will generate ASCII tables to print tab
 
 There are several easy ways to call the table printer.  Here are the arguments to the `print.table()` method:
 
-* `headers` - An array of column headers, or a query.  When passing a query, the "data" argument is not used.
-* `data` - An array of data for the table.  Each item in the array may either be an array in the correct order matching the number of headers or a struct with keys matching the headers.
-* `includeHeaders` - A list of headers to include.  Used for query inputs
+* `data` - Any type of data for the table. Each item in the array may either be an array in the correct order matching the number of headers or a struct with keys matching the headers.
+* `includedHeaders` - A list of headers to include. Used for query inputs
+* `headerNames` - An list/array of column headers to use instead of the default
+* `debug` - Only print out the names of the columns and the first row values
 
 Below are some basic examples that all produce the same CLI output:
 
