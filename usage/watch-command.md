@@ -1,4 +1,4 @@
-# watch command
+# watch Command
 
 There are some specific commands that make use of the Watcher library in CommandBox such as `testbox watch` and `coldbox watch-reinit`.  However, there is also a generic watch command that will run any arbitrary command of your choosing when a path matching your file globbing pattern is added/updated/deleted. 
 

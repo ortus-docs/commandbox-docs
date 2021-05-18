@@ -1,4 +1,4 @@
-# jq command
+# jq Command
 
 JSON Query command for filtering data out of a JSON Object, file, or URL. jq is a query language built specifically for interacting with JSON type data. More information can be found at [https://jmespath.org/](https://jmespath.org/) as well as an online version to test your query Pass or pipe the text to process or a filename
 
