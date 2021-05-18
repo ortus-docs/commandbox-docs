@@ -1,4 +1,4 @@
-# PrintTable Command
+# printTable Command
 
 CommandBox has a helper for printing ASCII Art tables in your custom commands and task runners called `print.table()`. We've taken this a step further and wrapped the table printer utility in a new command so you can use it from the CLI directly. The `printTable` command will accept ANY data in as JSON and it will marshal it into a query for you. This means it can be a query, an array of structs, an array or arrays, and more. You can now get quick and easy visualization of any data right from the CLI or in builds.
 
@@ -8,6 +8,8 @@ CommandBox has a helper for printing ASCII Art tables in your custom commands an
 * `includeHeaders` - A list of headers to include. 
 * `headerNames` - A list/array of column headers to use instead of the default specifically for array of arrays
 * `debug` - Only print out the names of the columns and the first row values
+
+When using an array of arrays and not specifying `headerNames`, the columns will be named `col_1`, `col_2`, `col_3`, etc...
 
 ## Examples
 
