@@ -43,7 +43,7 @@ Then run the `box` binary to begin the one-time unpacking process.
 
 Versions will be installed in `/usr/local/Cellar/commandbox`. To switch between versions, simply use `brew switch commandbox [version number]`
 
-If you want to use a `commandbox.properties` file as mentioned above, your `box` _binary_ file will be in the `/usr/local/Cellar/commandbox/<version>/bin/`, or the `/usr/local/Cellar/commandbox/<version>/bin/libexec/bin/`, directory where you should place your `commandbox.properties` file. There will also be a `box` _alias_ in the `/usr/local/bin/` directory where you should place the `jre` if you want CommandBox to use a version of Java that is different from your default version reported by `java -version`.
+If you want to use a `commandbox.properties` file as mentioned above, your `box` _binary_ file will be in the `/usr/local/Cellar/commandbox/<version>/bin/libexec/bin/` directory where you should place your `commandbox.properties` file. There will also be a `box` _alias_ in the `/usr/local/bin/` directory where you should place the `jre` if you want CommandBox to use a version of Java that is different from your default version reported by `java -version`.
 
 When using Homebrew to install CommandBox you must use Homebrew for any upgrade, minor or major. To upgrade CommandBox with Homebrew:
 
@@ -51,7 +51,7 @@ When using Homebrew to install CommandBox you must use Homebrew for any upgrade,
 brew upgrade commandbox
 ```
 
-NOTE: If you use Homebrew to upgrade your version of CommandBox it will erase your `commandbox.properties` file.
+NOTE: If you use Homebrew to upgrade your version of CommandBox it will erase your `commandbox.properties` file. So before upgrading, take a copy of your `commandbox.properties` file to drop back into `/usr/local/Cellar/commandbox/<version>/bin/libexec/bin/` before running `box` for the first time after upgrading. 
 
 ### Manual Installation
 
