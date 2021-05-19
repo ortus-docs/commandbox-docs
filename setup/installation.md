@@ -51,7 +51,7 @@ When using Homebrew to install CommandBox you must use Homebrew for any upgrade,
 brew upgrade commandbox
 ```
 
-NOTE: If you use Homebrew to upgrade your version of CommandBox it will erase your `commandbox.properties` file. So before upgrading, take a copy of your `commandbox.properties` file to drop back into `/usr/local/Cellar/commandbox/<version>/bin/libexec/bin/` before running `box` for the first time after upgrading. 
+NOTE: If you use Homebrew to upgrade your version of CommandBox it will erase your `commandbox.properties` file. So before upgrading, take a copy of your `commandbox.properties` file to drop back into `/usr/local/Cellar/commandbox/<version>/bin/libexec/bin/` before running `box` for the first time after upgrading.
 
 ### Manual Installation
 

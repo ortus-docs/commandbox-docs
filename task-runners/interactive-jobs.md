@@ -105,7 +105,7 @@ job.error( 'Didn''t see that coming' );
 
 The output of this is:
 
-![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%282%29%20%282%29.png)
+![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29.png)
 
 Here we have two nested jobs. The first two lines would be red representing the outer failed job and it's failure message. The 3rd indented line would be green representing the nested job that completed successfully.
 
