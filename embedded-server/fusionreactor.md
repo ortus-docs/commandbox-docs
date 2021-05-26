@@ -194,7 +194,9 @@ Here's the module setting, followed by the JVM arg it creates. Remember, you can
 
 ## External Server
 
-By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port. If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.
+By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port. If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.  This completely bypasses the custom port and custom host discussed above.  
+
+This can provide a convenient method to make FR accessible, but remember to put appropriate lock-down rules on your external web server so FR is not publicly accessible.  Also note if you have a web server such as Nginx only proxying traffic to .cfm URLs to CommandBox, you'll need to modify it to also proxy requests to `/fusionreactor/` to CommandBox as well or this feature will not work and you'll just get an Nginx/etc 404 instead.
 
 ```bash
 # Server specific version
