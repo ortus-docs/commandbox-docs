@@ -8,7 +8,7 @@ FusionReactor is a popular tool for monitoring performance and gathering metrics
 
 The CommandBox FusionReactor module is a separate project that you can optionally install by typing this:
 
-```text
+```bash
 install commandbox-fusionreactor
 ```
 
@@ -18,7 +18,7 @@ That's it-- now every server you start with the `start` command will automatical
 
 There's nothing special you have to do in order for FusionReactor to load. A random port will be chosen for FusionReactor to use so you can have more than one server running at a time and each of them will have their own FusionReactor instance running. When you start a server, you should see some output similar to this:
 
-```text
+```bash
 ******************************************
 * CommandBox FusionReactor Module Loaded *
 ******************************************
@@ -28,7 +28,7 @@ FusionReactor will be available at the URL http://127.0.0.1:2871
 
 To open FusionReactor in your browser, you can run the following command:
 
-```text
+```bash
 fr open
 ```
 
@@ -38,7 +38,7 @@ If you right click on the tray icon for this server, you'll see there is a new m
 
 FusionReactor is a commercial product and requires a license to use. If your company has a license for you to use on your PC, then you can register your CommandBox FusionReactor license with this command:
 
-```text
+```bash
 fr register "myLicenseKey"
 ```
 
@@ -48,10 +48,10 @@ If you don't have a license, you can sign up for a trial and purchase a license 
 
 By default, the license key will always be displayed on the home page after login. You can turn off the display of the key on a per-server basis or at a global level for all servers.
 
-```text
-// Server specific
+```bash
+# Server specific
 server set fusionreactor.hideLicenseKey=true
-// global default
+# global default
 config set server.defaults.fusionreactor.hideLicenseKey=true
 ```
 
@@ -59,20 +59,29 @@ config set server.defaults.fusionreactor.hideLicenseKey=true
 
 By default, the module always picks a random port to start FusionReactor on. You can also set your FusionReactor port on a per-server basis, or at a global level for all servers \(if using the fancy [host updater module](https://www.forgebox.io//view/commandbox-hostupdater) which prevents port conflicts by binding each site to its own IP\). The default behavior will still be to pick a random port if you don't specify one.
 
-```text
-// Server specific port
+```bash
+# Server specific port
 server set fusionreactor.port=8088
-// global default port
+# global default port
 config set server.defaults.fusionreactor.port=8088
 ```
 
-FusionReactor will bind the port on whatever host address is used for your server.
+## Custom Host
+
+By default, the module will bind FR's port to the same host as your CommandBox web server.  You can ask FR to bind to a separate host/IP on a per server basis, or a global basis.
+
+```bash
+# Server specific host
+server set fusionreactor.host=0.0.0.0
+# global default hsot
+config set server.defaults.fusionreactor.host=0.0.0.0
+```
 
 ## Disable the module
 
 You may want to turn the FusionReactor functionality on or off based on your testing or for specific sites. There is now an enable flag for just that. It can be set per server and for all servers as well.
 
-```text
+```bash
 server set fusionreactor.enable=false
 config set server.defaults.fusionreactor.enable=false
 ```
@@ -81,7 +90,7 @@ config set server.defaults.fusionreactor.enable=false
 
 You can set a license key per server if you wish like so:
 
-```text
+```bash
 server set fusionreactor.licenseKey=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 ```
 
@@ -91,7 +100,7 @@ The module is regularly updated to use the latest version of FusionReactor. Note
 
 If you want to upgrade your CommandBox FusionReactor module to a new major release, just re-run the installation command.
 
-```text
+```bash
 install commandbox-fusionreactor
 ```
 
@@ -99,10 +108,10 @@ install commandbox-fusionreactor
 
 If you have an older FR license you want to use, you can specify the version of FR you'd like like so:
 
-```text
-// Server specific version
+```bash
+# Server specific version
 server set fusionreactor.installID=fusionreactor@7.x
-// global default version
+# global default version
 config set server.defaults.fusionreactor.installID=fusionreactor@7.x
 ```
 
@@ -113,9 +122,9 @@ The `installID` setting can be any valid CommandBox endpoint installation ID, wh
 As of version 4.0 of this module, the debugger libs will be added automatically for you based on your OS. To disable the debugger libs use the following setting:
 
 ```bash
-// Server specific version
+# Server specific version
 server set fusionreactor.debugEnable=false
-// global default version
+# global default version
 config set server.defaults.fusionreactor.debugEnable=false
 ```
 
@@ -188,9 +197,9 @@ Here's the module setting, followed by the JVM arg it creates. Remember, you can
 By default, FusionReactor is only available on the FR port, and not the HTTP or HTTPS port. If you want to hit FusionReactor's web UI through your main web server on the standard HTTP port, then enable the external server setting.
 
 ```bash
-// Server specific version
+# Server specific version
 server set fusionreactor.externalServerEnable=true
-// global default version
+# global default version
 config set server.defaults.fusionreactor.externalServerEnable=true
 ```
 
