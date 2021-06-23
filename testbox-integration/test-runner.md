@@ -30,6 +30,32 @@ testbox run
 
 The default runner URL of the `testbox run` command is  `/tests/runner.cfm` so there's actually no need to even configure it if you're using the default convention location for your runner.
 
+## Multiple Output Formats
+
+You can run your tests and post-produce many reporting results, great for CI purposes
+
+```bash
+testbox run outputformats=json,antjunit,simple
+testbox run outputformats=json,antjunit,simple outputFile=myresults
+```
+
+## Arbitrary URL options
+
+You can set arbitrary URL options in our box.json like so
+
+```bash
+package set testbox.options.opt1=value1
+package set testbox.options.opt2=value2
+```
+
+You can set arbitrary URL options when you run the command like so
+
+```bash
+testbox run options:opt1=value1 options:opt2=value2
+```
+
+Both of those examples will include `?opt1=value1&opt2=value2` on the runner URL. 
+
 ### Additional Settings
 
 There are a number of settings you can provide to the `testbox run` command to control exactly what tests run and how much output is included. Each of these can also be set in your box.json. Run this for more information.
