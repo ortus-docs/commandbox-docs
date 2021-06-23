@@ -18,7 +18,7 @@ install cborm --!save
 
 ## Production Installation
 
-When you install a package, all dependencies will be installed. If you want to skip development dependencies, use the `--production` flag. This will also cause CommandBox to obey the package's ignoreList property in its box.json.
+When you install a package, all dependencies will be installed. If you want to skip development dependencies, use the `--production` flag. This will also cause CommandBox to obey the package's `ignore` property in its box.json.
 
 ```bash
 install cbvalidation --production
