@@ -1,6 +1,6 @@
 # Server Home
 
-When you start a CF server in CommandBox, the default behavior is that the WAR for that version is expanded into a folder inside the `servers` directory inside your CommandBox home.  There is a sub folder containing an MD5 hash of the server name and web root concatenated with the server name.  Inside of that, is a folder containing the name of the CF Engine followed by the engine version.  The result is something like this:
+When you start a CF server in CommandBox, the default behavior is that the WAR for that version is expanded into a folder inside the `server` directory inside your CommandBox home.  There is a sub folder containing an MD5 hash of the server name and web root concatenated with the server name.  Inside of that, is a folder containing the name of the CF Engine followed by the engine version.  The result is something like this:
 
 ```bash
 ~/.CommandBox/server/C3D9460AC18B18AC462BBBF1E02425C8-cfconfig/lucee-5.3.7.48
