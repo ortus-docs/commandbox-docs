@@ -70,11 +70,18 @@ sudo apt install libappindicator-dev
 Run the following series of commands to add the Ortus signing key, register our Debian repo, and install CommandBox.
 
 ### Stable
+( This first install routine also works for the Raspberry Pi. )
 
 ```bash
 curl -fsSl https://downloads.ortussolutions.com/debs/gpg | sudo apt-key add -
 echo "deb https://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/apt/sources.list.d/commandbox.list
 sudo apt-get update && sudo apt-get install apt-transport-https commandbox
+```
+
+If you do not have Java installed you can install it with the following command.
+
+```bash
+sudo apt install openjdk-11-jdk
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
