@@ -145,13 +145,13 @@ If there is no `nonInteractiveShell` setting, CommandBox will automatically defa
 
 ## Custom working directory
 
-CommandBox will start its current working directory in the same folder that you started the box process from. Once you are in the interactive shell, you can always change the current working directory with the `cd` command. If you want to change the default working directory or just want to run a one-off command in another folder, you can use the `-cliworkingDir` flag to the box binary when you start it.
+CommandBox will start its current working directory in the same folder that you started the box process from. Once you are in the interactive shell, you can always change the current working directory with the `cd` command. If you want to change the default working directory or just want to run a one-off command in another folder, you can use the `-cliworkingdir` flag to the box binary when you start it.
 
 ```text
-box -cliworkingDir=C:/my/path/here/
+box -cliworkingdir=C:/my/path/here/
 # This works too
-box -cliworkingDir C:/my/path/here/
+box -cliworkingdir C:/my/path/here/
 # And can be coupled with a command to run
-box -cliworkingDir C:/my/path/here/ install
+box -cliworkingdir C:/my/path/here/ install
 ```
 
