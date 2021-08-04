@@ -6,7 +6,7 @@ This module will customize your CommandBox prompt while in the interactive shell
 
 This project is based on the Zsh Bullet Train theme which is based on the Powerline shell prompt. The goal is to add in additional information to your prompt that is specific to the current working directory, or the last command you ran.
 
-![CommandBox Bullet Train Prompt](../.gitbook/assets/image%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![CommandBox Bullet Train Prompt](../.gitbook/assets/image%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ## Installation
 

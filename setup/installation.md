@@ -70,7 +70,8 @@ sudo apt install libappindicator-dev
 Run the following series of commands to add the Ortus signing key, register our Debian repo, and install CommandBox.
 
 ### Stable
-( This first install routine also works for the Raspberry Pi. )
+
+\( This first install routine also works for the Raspberry Pi. \)
 
 ```bash
 curl -fsSl https://downloads.ortussolutions.com/debs/gpg | sudo apt-key add -

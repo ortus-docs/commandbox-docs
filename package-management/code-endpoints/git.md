@@ -121,3 +121,19 @@ CommandBox will find this file, match the hostname to the Git repo being cloned,
 
 We do not support any of these username/password options over HTTP as it just seems unwise. Please use HTTPS.
 
+## Known Behaviors
+
+Some users of Circle-CI have reported the following error when trying to clone a Git repo over HTTPS.
+
+```text
+Error cloning github repositoryorg.eclipse.jgit.api.errors.TransportException: ssh://git@github.com/ColdBox/coldbox-platform.git: Auth fail 
+org.eclipse.jgit.errors.TransportException: ssh://git@github.com/ColdBox/coldbox-platform.git: Auth fail 
+com.jcraft.jsch.JSchException: Auth fail 
+```
+
+It is changing the https github url to ssh in the call. You can remove the config setting like so:
+
+```bash
+git config --global --unset "url.ssh://git@github.com.insteadof"
+```
+
