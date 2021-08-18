@@ -33,6 +33,31 @@ CommandBox>
 
 > **Info** It is not necessary to escape special characters in parameter values that are collected in this manner since the shell doesn't need to parse them. The exact value you enter is used.
 
+## Funky Parameters
+
+In addition to quoting parameter values, parameter names can also be quoted.  This is useful when setting keys into settings or JSON files that have spaces, hyphens or special characters.  Each of these examples are supported:
+
+```bash
+# quoted string
+package set foo."bar.baz"=bum
+
+# bracketed string
+package set foo[bar.baz]=bum
+
+# quoted, bracketed string
+package set foo["bar.baz"]=bum
+```
+
+Each of those examples will create this in your `box.json`
+
+```javascript
+{
+  "foo":{
+        "bar.baz":"bum"
+  }
+}
+```
+
 ## Flags
 
 Any parameter that is a boolean type can be specified as a flag in the format `--name`. Flags can be mixed with named or positional parameters and can appear anywhere in the list. Putting the flag in the parameter list sets that parameter to true. This can be very handy if you want to use positional parameters on a command with a large amount of optional parameters, but you don't want to specify all the in-between ones.

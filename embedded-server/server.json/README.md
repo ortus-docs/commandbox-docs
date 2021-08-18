@@ -18,6 +18,10 @@ Every time you start a server, the settings used to start it are saved in a `ser
     "dockEnable": true,
     "trayEnable": true,
     "trayicon": "/path/to/trayicon.png",
+    "env" : {
+      "ANYTHING_HERE" : "you want",
+      "THESE_ARE_ADDED" : "As environment variables to the server"
+    }
     "trayOptions": [
         {
             "label": "Foo",
@@ -115,7 +119,9 @@ Every time you start a server, the settings used to start it are saved in a `ser
         "restMappings": "/rest/*,/api/*",
         "serverHomeDirectory": "",
         "sessionCookieSecure": true,
-        "sessionCookieHTTPOnly": true
+        "sessionCookieHTTPOnly": true,
+        "webXMLOverride" : "path/to/web.xml",
+        "webXMLOverrideForce" : false
     },
     "runwar": {
         "jarPath": "/path/to/runwar.jar",

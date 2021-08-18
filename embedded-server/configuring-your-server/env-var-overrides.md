@@ -1,4 +1,4 @@
-# Env Var overrides
+# server.json Env Var overrides
 
 Every [server setting](../server.json/) can be overridden by convention by creating environment variables in the shell where you run `box`.  This is idea for CI builds were you want to easily set ports, or tweak settings for your build.  You set set these as actual environment variables or [Java system properties of the CLI](https://commandbox.ortusbooks.com/usage/execution#ad-hoc-java-properties-for-the-cli). 
 

@@ -89,3 +89,20 @@ You can forget all your servers at once too if you want to start with a clean sl
 server stop --all --forget
 ```
 
+## Prune Old Servers
+
+You can easily forget all servers which have not been started for a certain period of time with the `server prune` command.  It accepts the number of days that need to have passed since a server was last started in order to prune it.
+
+```bash
+server prune days=30
+
+# Skip the confirmation check
+server prune --force
+```
+
+You can also get back just a JSON representation of servers matching the filter with the `--json` flag.  The JSON will be in the same format as the `server list --json` command.
+
+```bash
+server prune 100 --json
+```
+

@@ -26,3 +26,21 @@ You can specify jars as dependencies in your `box.json` in this format.
 
 Note this installation method does not include any dependencies of the jar like a Maven installation would. That will be a future endpoint.
 
+## Semantic Versioning
+
+The jar endpoint will make the following assumptions about what version of a jar a particular URL may point to:
+
+* It tries and parse a semantic version from the URL's path
+* It will store that version in the package's box.json \(`0.0.0` if not found\)
+* It will use that version when checking for updates to the jar
+
+This will be reflected in what you see in the **package list** and **outdated** commands.
+
+So for example, if you install a jar dependency like so:
+
+```bash
+install jar:https://repo1.maven.org/maven2/co/elastic/apm/elastic-apm-agent/1.24.0/elastic-apm-agent-1.24.0.jar
+```
+
+CommandBox will parse out the `1.24.0` from the path of the URL and will assume that as the version of the package.  When checking for outdated dependencies, that version will be used to compare to the current URL in your `box.json` which means an unchanged URL will know it is not out of date.
+
