@@ -1,6 +1,6 @@
 # Updating Packages
 
-CommandBox does more than help yo install packages. It also helps you keep them up to date as well. Remember, you can always get a quick list of all the dependencies installed your app with the `list` command.
+CommandBox does more than help you install packages. It also helps you keep them up to date as well. Remember, you can always get a quick list of all the dependencies installed your app with the `list` command.
 
 ```bash
 CommandBox> list
@@ -14,19 +14,24 @@ Dependency Hierarchy myApp (1.0.0)
 
 To check and see if any of your installed packages can be updated to a newer version, run the `update` command.
 
-```bash
-CommandBox> update
-Resolving Dependencies, please wait...
-Found (1) Outdated Dependency
-* cbvalidation (1.0.0) ─> new version: 1.0.3
-Would you like to update the dependency? (yes/no) :
-```
+![update command](../.gitbook/assets/image%20%2819%29.png)
 
-Entering "yes" will install the newest version of the package. It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
+Entering "yes" will install the newest version of the package. Use the --force flag to automatically answer "yes". It is also possible to get a list of outdated dependencies without the prompt to update them with the `outdated` command.
 
 ```bash
 outdated
 ```
+
+The table of information in the `outdated` and `update` command has several different version numbers. This is what they mean:
+
+* **Package** - This contains the slug and semver range you've put in your `box.json` file.  i.e., what version you "asked" for.
+* **Installed** - This is the exact version installed right now in your project
+* **Update** - This is the newest possible version of the package _that satisfies the semver range in your `box.json`_.  Not there may be newer versions of the library not shown here depending on what your semver range is allowing.  A red highlight in this columns means a new version is available.
+* **Latest** - This is the absolute latest stable version of this package regardless of your semver range.  In order to update to this version, you may need to run the `install` command again and ask specifically for it.  An orange highlight in this column means a new major update is available.
+
+{% hint style="info" %}
+Note, updating to a new major version of a library may contain breaking changes. This is why the default semver range is the caret \(^\) range which will prompt you with patch and minor updates, but NOT major updates. Those upgrades require manual intervention by default.
+{% endhint %}
 
 ## ForgeBox Semantic Versioning Support
 

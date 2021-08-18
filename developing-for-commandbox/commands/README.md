@@ -48,7 +48,7 @@ Note: The box.json file can have a key called "ignore" that allows you stipulate
 
 ## Making Changes
 
-Commands are created and stored once for the duration that CommandBox is running. If testing changes to a command in the interactive shell, use the `reload` command \(aliased as `r`\) to reload the shell. Your changes will immediately be available. Using the up arrow to access the shell's history can also be useful here.
+Commands are created and stored once for the duration that CommandBox is running. CFProperty injections are also aggressively cached on disk across restarts. If testing changes to a command in the interactive shell, use the `reload` command \(aliased as `r`\) to reload the shell. Your changes will immediately be available. Using the up arrow to access the shell's history can also be useful here.
 
 ## WireBox DI
 

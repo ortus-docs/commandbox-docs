@@ -91,18 +91,6 @@ Tasks also have a `variables.wirebox` variable as well as their own `getInstance
 var results = getInstance( 'artifactService' ).listArtifacts();
 ```
 
-## Threading
-
-The CommandBox CLI is implemented as a single long request in the underlying Lucee server. Due to this it is required to make a unique thread name every call to the task or else an error can occur. The following is an example you can use for running threads.
-
-```javascript
-var threadName = createGUID();
-cfthread( action="run" name=threadName) {
-  //Thread body
-}
-cfthread( action="terminate" name=threadName);
-```
-
 ## Modifying Application Settings
 
 Task Runners do not execute a `application.cfc` or `application.cfm`, but you can use the [cfapplication](https://docs.lucee.org/reference/tags/application.html) tag \(or script variant: `application`\) to modify the properties and behaviors of the Task Runner application. Any setting that can be modified using [cfapplication](https://docs.lucee.org/reference/tags/application.html) can be modified in Task Runners as follows:
@@ -131,29 +119,5 @@ fileSystemUtil.createMapping( name, physicalpath );
 
 ## Sending Email
 
-To send email, use the `cfscript` variant of `cfmail` making sure you set `asyc=false` \(see below\). Not setting this flag to `false` may result in undelivered email because mail may still exist in Lucee spooler \(Lucee tasks\) when your task runner exits.
-
-```javascript
-mail 
-    subject=subject 
-    from=from 
-    to=to
-    cc=cc
-    bcc=bcc
-    replyTo=replyTo
-    type=type
-    server=server
-    port=port
-    username=username
-    password=password
-    useTls=tls
-    usessl=ssl
-    async=false {
-writeOutput(emailBody);
-};
-```
-
-### Connecting to SMTP Services Using SSL or TLS
-
-If you cannot connect to a SMTP server that requires `SSL` or `TLS`, like [Amazon SES](https://aws.amazon.com/ses/), one workaround is to install a local SMTP server and configure it as a relay to your SMTP server. This has been done successfully on Windows servers using [hMailServer](https://www.hmailserver.com/) \(free, opensource\), which is fairly easy to install and configure as an SMTP relay.
+To send email, use the `cfscript` variant of `cfmail` making sure you set `async=false` \(see below\). Not setting this flag to `false` may result in undelivered email because mail may still exist in Lucee spooler \(Lucee tasks\) when your task runner exits.
 

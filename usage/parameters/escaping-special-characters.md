@@ -13,13 +13,13 @@ echo "Good Morning Vietnam"
 
 ## Quotes
 
-Quotes are actually allowed unescaped in a value like so:
+Quotes are actually allowed unescaped in a value, so long as they don't appear at the start of the string.
 
 ```bash
 echo O'reilly
 ```
 
-However, if the parameter contains whitespace and is surrounded by quotes, you'll need to escape them with a backslash.
+However, if the parameter contains white space and is surrounded by quotes, you'll need to escape them with a backslash.
 
 ```bash
 echo 'O\'reilly Auto Parts'
@@ -52,13 +52,13 @@ echo "2+2=4"
 
 ## Line Breaks
 
-Line breaks can't be escaped directly as of Commandbox 4.0.  Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter.  To enter a line feed, press Ctrl-V followed by Ctrl-J.
+Line breaks can't be escaped directly as of Commandbox 4.0. Instead, most terminals let you enter a carriage return by pressing Ctrl-V and pressing enter. To enter a line feed, press Ctrl-V followed by Ctrl-J.
 
 On ConEMU, which performs a paste operation with Ctrl-V, use Ctrl-Shift-V instead.
 
 ## Tabs
 
-A tab character can't be escaped directly as of CommandBox 4.0.  Instead, most terminals let you enter a tab char by pressing Ctrl-V followed by tab.  In ConEMU which allows pasting via Ctrl-V, you can use Ctrl-Shift-V and then press tab.
+A tab character can't be escaped directly as of CommandBox 4.0. Instead, most terminals let you enter a tab char by pressing Ctrl-V followed by tab. In ConEMU which allows pasting via Ctrl-V, you can use Ctrl-Shift-V and then press tab.
 
 ## Backslash
 

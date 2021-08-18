@@ -40,50 +40,15 @@ server show web.SSL.enable
 server show web.SSL.port
 ```
 
-This will enable SSL without an approved SSL certificate. If you need an official certificate so you don't have to confirm your SSL connection you can add these entries
+### HTTP/2
+
+HTTP/2 is a newer standard of HTTP supported by all modern browsers.  HTTP/2 is enabled by default any time you are using an HTTP/HTTPS listener, however all major browsers will only allow the server to negotiate HTTP/2 over an HTTPS connection.  HTTP/2 runs over the same port and only changes the exchange between the server and browser.  You can disable HTTP/2 support like so:
 
 ```bash
-server set web.SSL.certFile=/path/to/dev_mydomain_ext.crt
-server set web.SSL.keyFile=/path/to/dev_mydomain_ext.key
+server set web.http2.enable=false
 ```
 
-Although free certificates are available \(e.g LetsEncrypt\) this is not very convenient, because these certs are valid only for three months. Automatic renewal it is difficult if your dev site is not accessible from the web. For a few dollars a year \(&lt; 10\) you can apply for a domain validated certificate from companies like Comodo, RapidSSL, Trustwave, Digicert, Geotrust and others or a reseller for these certs. For a domain validated certificate you need a valid domain which is under your control which means \(depending on provider\):
-
-* mail is sent to domain owner
-* or mail is sent to well-known administrative contact in the domain, e.g. \(admin@, postmaster@, etc.\)
-* or you can publish a DNS TXT record
-
-So, now you have a valid domain, you have to generate a SSL key and a SSL Certificate Signing Request. With the CSR you can apply for the certificate. Generating a key and CSR with openSSL
-
-```text
-openssl req -utf8 -nodes -sha256 -newkey rsa:2048 -keyout dev_mydomain_com.key -out dev_mydomain_com.csr
-```
-
-This will generate output and some questions, and will finally result in a key file named `dev_mydomain_com.key` and a certificate signing request \(csr\) named `dev_mydomain_com.csr`
-
-```text
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) [AU]:NL
-State or Province Name (full name) [Some-State]:YourState
-Locality Name (eg, city) []:YourCity
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:YourCompany
-Organizational Unit Name (eg, section) []:IT
-Common Name (e.g. server FQDN or YOUR name) []:dev.mydomain.com
-Email Address []:
-
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []:
-An optional company name []:
-```
-
-You have to enter Country Name, State and City. Organization Name is preferably the same as the domain owner. Organizational Unit Name will not be checked, so enter something simple such as ICT Common Name is the hostname for your site, such as dev.mydomain.com You can skip Email Adress and optional company name. For development you don't need a challenge password, which means your key file is NOT protected. But don't give this key to others or protect it with a challenge password. If you protect your key you have to `server set web.SSL.keyPass=MyChallengePassword` Now you have a CSR, which you can submit at your SSL provider. They will send you a certificate file \(\*.csr\), and probably one or more intermediate certificates. Create a new my.csr file and copy everything from your certificate file into it, and append the intermediate certificate\(s\). Now you have a valid my.csr certificate file and a key file. Place both files in a location accessible for your commandbox and enter the corresponding paths to web.SSL.certFile and web.SSL.keyFile
+If you want to confirm whether your browser is using HTTP/2, you can open your debugging tools and look at the network requests.  You may need to add the "protocol" column in the UI.  HTTP/2 will usually show up as something like "h2" in the protocol column.
 
 ### AJP
 
@@ -98,6 +63,22 @@ server set web.AJP.enable=true
 server set web.AJP.port=8009
 server show web.AJP.enable
 server show web.AJP.port
+```
+
+#### AJP Secret
+
+CommandBox's AJP listener \(provided by Undertow\) is already protected against the [Ghostcat vulnerability](https://www.synopsys.com/blogs/software-security/ghostcat-vulnerability-cve-2020-1938/).  However, if you would like to set up an AJP secret as well to ensure all requests coming into the AJP listener are from a trusted source, you can do by setting the `web.ajp.secret` property.
+
+```bash
+server set web.AJP.secret=mySecret
+```
+
+For this to work, you must also configure your AJP proxy in your web server to send the same secret!  For requests received to the AJP listener which do not contain the secret, a `403` status code will be returned.  You can customize the output of the 403 page via the [Error Pages](custom-error-pages.md) settings. 
+
+The AJP secret is implemented via a [Server Rule](server-rules/).  Feel free to add your own server rule instead of this setting if you want to customize how it works.
+
+```javascript
+equals(%p, 8009) and not equals(%{r,secret}, 'mySecret') -> set-error(403)
 ```
 
 ## A Gracious Host
@@ -125,6 +106,12 @@ Or save in `server.json`
 ```bash
 server set web.host=mycoolsite.local
 server show web.host
+```
+
+Most modern browsers allow you to make up any subdomain you want before localhost such as `mySite.localhost` and will simply resolve them to `localhost` \(`127.0.0.1`\) even without a hosts file entry.  CommandBox now supports using these domains and will bind your server's ports to localhost even without using the `commandbox-hostupdater` module.
+
+```text
+server set web.host=mySite.localhost
 ```
 
 ## Customize URL that opens for server

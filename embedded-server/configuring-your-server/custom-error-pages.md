@@ -28,18 +28,26 @@ server set web.errorPages.404=/missing.htm
 
 If your error page points to a CFM file, you can get access to the original path being accessed for 404s and the error that was thrown for 500s. To see all the request headers that are available, use the following snippet of code:
 
-```text
+```javascript
 req = getPageContext().getRequest();
 names = req.getAttributeNames();
 while( names.hasMoreElements() ) {
     name = names.nextElement();
-    writeDump( name & ' = ' & req.getAttribute( name ) );
+    writeOutput( name & ' = ' & req.getAttribute( name ) & '<br>' );
 }
 ```
 
-An example of getting the original missing path in a 404 would look like this:
+An example of getting the original missing path in a 404 in Lucee would look like this:
 
-```text
+```javascript
 var originalPath = getPageContext().getRequest().getAttribute( "javax.servlet.error.request_uri" );
 ```
+
+In Adobe ColdFusion, you can access `ServletRequest` Attributes directly via the CGI scope:
+
+```javascript
+var originalPath = cgi[ 'javax.servlet.error.request_uri' ];
+```
+
+
 

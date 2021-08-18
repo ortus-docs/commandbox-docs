@@ -2,7 +2,7 @@
 
 Since CommandBox is a command line tool, it requires no GUI. If you are using an OS with a GUI \(like Windows\) and you run the `box` executable, the CommandBox interactive shell will open in a new window. CommandBox looks and behaves like a Bash or DOS window, but the command prompt is not your native OS-- it's CommandBox running _INSIDE_ your native shell and interpreting what you type.
 
-![commandbox](../.gitbook/assets/welcome.png)
+![CommandBox CLI](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 ## Interactive Shell
 

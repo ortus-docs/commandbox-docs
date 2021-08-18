@@ -22,7 +22,7 @@ site3 (stopped)
   C:\site3
 ```
 
-If you have many servers, you can provide parmeters to help filter the results from `server list`
+If you have many servers, you can provide parameters to help filter the results from `server list`
 
 ```bash
 # All servers containing the word "foo"

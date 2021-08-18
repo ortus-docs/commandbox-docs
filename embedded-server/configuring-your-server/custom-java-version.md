@@ -20,7 +20,7 @@ config set server.defaults.jvm.javaHome="C:\Program Files\Java\jdk1.8.0_25"
 
 ## Automatic Java Download
 
-To let CommandBox take over and acquire Java for you, pass an installation endpoint ID to the `start` command 
+To let CommandBox take over and acquire Java for you, pass an installation endpoint ID to the `start` command
 
 ```bash
 server start javaVersion=openjdk8
@@ -38,11 +38,11 @@ or set a default for all servers
 config set server.defaults.jvm.javaVersion=openjdk8
 ```
 
-To review what possible IDs you can use to dial in your exact Java version, read the [docs on our Java endpoint](../../package-management/code-endpoints/java.md#installation-id).  You don't need to manually install Java-- CommandBox will do that for you.  You just need to provide the ID so CommandBox knows what you want.
+To review what possible IDs you can use to dial in your exact Java version, read the [docs on our Java endpoint](../../package-management/code-endpoints/java.md#installation-id). You don't need to manually install Java-- CommandBox will do that for you. You just need to provide the ID so CommandBox knows what you want.
 
 ## Java Namespace
 
-To make it easier for you to manage the Java installations CommandBox makes for you, we have a namespace of commands you can use.  The Java versions CommandBox installs automatically for your servers to use are stored in a folder under your CommandBox home.  CommandBox manages this folder for you.  You can change where the system Java installation go like so:
+To make it easier for you to manage the Java installations CommandBox makes for you, we have a namespace of commands you can use. The Java versions CommandBox installs automatically for your servers to use are stored in a folder under your CommandBox home. CommandBox manages this folder for you. You can change where the system Java installation go like so:
 
 ```bash
 config set server.javaInstallDirectory=C:/path/to/JREs/
@@ -56,7 +56,7 @@ Search the AdoptOpenJDk API for available versions of Java for you to use.
 java search version=openjdk8
 ```
 
-You can filter the version, jvm, os, CPU arch, type, and release. Most of those parameters default to match your local system.  For instance, running this command on Windows will only return Windows versions.  To open up the search, pass nothing to that filter.
+You can filter the version, jvm, os, CPU arch, type, and release. Most of those parameters default to match your local system. For instance, running this command on Windows will only return Windows versions. To open up the search, pass nothing to that filter.
 
 ```bash
 java search version=openjdk8 os=
@@ -64,7 +64,7 @@ java search version=openjdk8 os=
 
 ### java list
 
-List the installed Java installations for you to start servers with.  If you have set a global default Java version it will be marked in the list.
+List the installed Java installations for you to start servers with. If you have set a global default Java version it will be marked in the list.
 
 ```bash
 java list
@@ -78,11 +78,11 @@ You may change the global default Java version for your servers with this comman
 server java setDefault openjdk11
 ```
 
-The ID follows the format from the [Java endpoint](../../package-management/code-endpoints/java.md#installation-id).  If the version you set as the default isn't installed yet, CommandBox will install it for you the next time a server starts or you can use the `--install` flag.
+The ID follows the format from the [Java endpoint](../../package-management/code-endpoints/java.md#installation-id). If the version you set as the default isn't installed yet, CommandBox will install it for you the next time a server starts or you can use the `--install` flag.
 
 ### java install
 
-You can pre-install a Java version so it's ready to go the next time you start a server with this command.  This differs from the normal `package install` command in that it doesn't install to the current working directory, but into the core server JRE folder that CommandBox manages for you.  Use the `--setDefault` flag to also set the newly installed Java version as the global default for all servers.
+You can pre-install a Java version so it's ready to go the next time you start a server with this command. This differs from the normal `package install` command in that it doesn't install to the current working directory, but into the core server JRE folder that CommandBox manages for you. Use the `--setDefault` flag to also set the newly installed Java version as the global default for all servers.
 
 ```bash
 server java install openjdk11 --setDefault
@@ -90,13 +90,11 @@ server java install openjdk11 --setDefault
 
 ### java uninstall
 
-You can remove a java installation so it doesn't take up space on your hard drive.  Use the FULL ID that shows in the `java list` command to uninstall.  
+You can remove a java installation so it doesn't take up space on your hard drive. Use the FULL ID that shows in the `java list` command to uninstall.
 
 ```bash
 server java uninstall openjdk9_jre_x64_windows_hotspot_jdk-9.0.4+11
 ```
 
-Note, the download will still be in your artifacts cache.  Also, if you start a server up again that asks for a Java installation you've uninstalled, CommandBox will simply re-install it again.
-
-
+Note, the download will still be in your artifacts cache. Also, if you start a server up again that asks for a Java installation you've uninstalled, CommandBox will simply re-install it again.
 

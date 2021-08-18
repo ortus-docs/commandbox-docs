@@ -1,6 +1,6 @@
 # Overview
 
-![CommandBox](.gitbook/assets/terminal.png)
+![CommandBox CLI](.gitbook/assets/image%20%281%29.png)
 
 CommandBox is a standalone, native Command Line Interface \(**CLI**\), Package Manager, Embedded CFML Server and Read Eval Print Loop \(**REPL**\) aimed to help ColdFusion \(CFML\) developers become more productive through automation, dependency management, command line-based tools, and ASCII snake games.
 
@@ -9,7 +9,7 @@ CommandBox is a standalone, native Command Line Interface \(**CLI**\), Package M
 CommandBox is an amalgamation of many different tools and borrows concepts from NPM, Grunt/Gulp, Maven, Bower, and Node. Features include:
 
 * Command Line for ColdFusion \(CFML\)
-* Operation System integration for executing commands
+* Operating System integration for executing commands
 * Ability to create and execute commands built using ColdFusion \(CFML\)
 * ForgeBox integration for cloud package management and installations
 * ColdBox Platform, TestBox, and ContentBox CMS Integrations

@@ -22,7 +22,7 @@ You can start as many embedded server instances as you want. Each running server
 * Open Admin
 * Open File System
 
-![CommandBox Server Tray Menu](../.gitbook/assets/image%20%285%29.png)
+![CommandBox Server Tray Menu](https://github.com/ortus-docs/commandbox-docs/tree/df981947c5780503203384f9de7118f57ee01ca5/.gitbook/assets/image%20%285%29.png)
 
 ### Disable the tray icon
 
@@ -42,5 +42,16 @@ config set server.defaults.trayEnable=false
 
 CommandBox's embedded server does not require any prior installations of any CFML engine to work. It does not use Apache, IIS, or Nginx. A very lightweight Java web server called [Undertow](http://undertow.io/) is used and a context is programmatically deployed via a WAR file.
 
-You should still have all the options you need to set up most local development servers quickly. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers. To see a list of all the parameters you can pass to the `server start` command, refer to the [CommandBox API Docs](http://apidocs.ortussolutions.com/commandbox/3.5.0/index.html?commandbox/system/modules_app/server-commands/commands/server/start.html) or run `server start help` command directly from the CLI.
+You should still have all the options you need to set up most local development servers quickly. The web-based administrator is available to you where you can edit any setting, add data sources, CF mappings, and mail servers. To see a list of all the parameters you can pass to the `server start` command, refer to the [CommandBox API Docs](http://apidocs.ortussolutions.com/commandbox/5.0.0/index.html?commandbox/system/modules_app/server-commands/commands/server/start.html) or run `server start help` command directly from the CLI.
+
+## Environment Variables
+
+Any ComandBox environment variables present in the shell will automatically be passed to the environment of the server process. This means, given an example like this:
+
+```bash
+set foo=bar
+server start
+```
+
+The CFML code running that server process will be able to "see" the `foo` environment variable.
 

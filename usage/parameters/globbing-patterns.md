@@ -46,3 +46,9 @@ a/**/z
 /h?t
 ```
 
+Since the Globber library can handle more than one globbing pattern, any command that uses a Globber type can accept a comma-delimited list of patterns. The following will list any .cfm AND .md files in the directory.
+
+```bash
+dir *.cfm,*.md
+```
+

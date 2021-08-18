@@ -14,6 +14,12 @@ View the port:
 server show web.http.port
 ```
 
+View the port with JMESPath:
+
+```bash
+server show jq:web.http.port
+```
+
 Remove the saved setting:
 
 ```bash

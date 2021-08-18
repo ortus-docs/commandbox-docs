@@ -46,3 +46,47 @@ config set artifactsDirectory=/path/to/artifacts
 config show artifactsDirectory
 ```
 
+## colorInDumbTerminal
+
+**boolean**
+
+You can enable this setting if you want to force CommandBox to output ANSI formatting code even though you're running box inside of a non-interactive terminal. This is handy for CI builds such as Gitlab, which will process color coded text in your job logs. Default value is `false`.
+
+```bash
+config set colorInDumbTerminal=true
+config show colorInDumbTerminal
+```
+
+## preferredBrowser
+
+**string**
+
+Used to override the default browser to open when a server starts, or when using a command like `server open` or calling the `openURL()` method from a command or Task Runner. Possible values are:
+
+* **firefox**
+* **chrome**
+* **opera**
+* **edge** \(Windows and Mac only\)
+* **ie** \(Windows only\)
+* **safari** \(Mac only\)
+* **konqueror** \(Linux only\)
+* **epiphany** \(Linux only\)
+
+```bash
+config set preferredBrowser=chrome
+config show preferredBrowser
+```
+
+## tabCompleteInline
+
+**boolean**
+
+You can change CommandBox's default tab completion to be an inline list that follows your cursor. **This setting requires you to close and re-open the shell to take affect.**
+
+```bash
+config set tabCompleteInline=true
+config show tabCompleteInline
+```
+
+![](../.gitbook/assets/image%20%2818%29.png)
+

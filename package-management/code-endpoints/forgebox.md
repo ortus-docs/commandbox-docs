@@ -32,6 +32,14 @@ You can specify packages from ForgeBox as dependencies in your `box.json` in thi
 
 > _info_ The caret `^` means that the `update` command will update minor releases but not major releases.
 
+## Installing Lucee Extensions
+
+If the package being installed from ForgeBox is of type `lucee-extensions` and if the current working directory is found to have a Lucee server in it, the lex file will instead be installed to the server context's deploy folder. Note the Lucee server will need to have been started at least once so CommandBox "knows" about it, but it need not be running at the time.
+
+```text
+install 5C558CC6-1E67-4776-96A60F9726D580F1
+```
+
 ## ForgeBox Pro
 
 For companies who want to host internal code endpoints for private packages, we will soon support an Enterprise version of ForgeBox that can be installed behind your company's firewall. Please contact us if this feature interests you.

@@ -37,7 +37,7 @@ Announced while a package is being installed, after the package endpoint and ins
 
 ## postInstall
 
-Announced after an installation is complete. If a package has additional dependencies to install, each of them will fire this interception point.  This fires even if an install is skipped due to an existing package that satisfies the dependencies, or if the package is already installed.
+Announced after an installation is complete. If a package has additional dependencies to install, each of them will fire this interception point. This fires even if an install is skipped due to an existing package that satisfies the dependencies, or if the package is already installed.
 
 **interceptData**
 
@@ -62,6 +62,22 @@ Announced after the uninstallation of a package.
 **interceptData**
 
 * `uninstallArgs` - Same as `preUninstall` above
+
+## preInstallAll
+
+Announced once before all dependencies are installed, no matter how many are actually installed.
+
+**interceptData**
+
+* `installArgs` - Raw parameters passed to the `install` command.
+
+## postInstallAll
+
+Announced once after all dependencies are installed, no matter how many are actually installed.
+
+**interceptData**
+
+* `installArgs` - Raw parameters passed to the `install` command.
 
 ## preVersion
 

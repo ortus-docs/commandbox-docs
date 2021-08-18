@@ -37,8 +37,7 @@ When running `box.exe` on Windows, the registry is used to determine the current
 
 You can manually create the needed keys by modifying and running the following registry entries. \(Contributed by Jim Pickering\)
 
-{% code-tabs %}
-{% code-tabs-item title="JavaSoft-Registry-Keys.reg" %}
+{% code title="JavaSoft-Registry-Keys.reg" %}
 ```text
 Windows Registry Editor Version 5.00
 
@@ -51,8 +50,7 @@ Windows Registry Editor Version 5.00
 "JavaHome"="C:\\Program Files\\Amazon Corretto\\jre8"
 "RuntimeLib"="C:\\Program Files\\Amazon Corretto\\jre8\\bin\\server\\jvm.dll"
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Installing on \*nix
 
@@ -73,4 +71,8 @@ export PATH=$JAVA_HOME/bin:$PATH
 ## The JRE Folder
 
 And as always, on any operating system and with any JRE provider, you can override what version of java is used by creating a folder called `JRE` in the same directory as the `box` or `box.exe` binary that contains the JRE you wish CommandBox to use. This will bypass all registry and env var checks above.
+
+For macOS users who have installed CommandBox via HomeBrew, the installer creates a `box` _alias_ in `/usr/local/bin/` which points to the `box` _binary_ in the `/usr/local/Cellar/commandbox/<version>/bin/` directory. If you want CommandBox to use a particular version of the `JRE` then put the `jre` folder in the `/usr/local/bin/` directory. If you want CommandBox to have [a different home `.CommandBox` directory](https://commandbox.ortusbooks.com/setup/installation#homebrew-mac), place your `commandbox.properties` file in the `/usr/local/Cellar/commandbox/<version>/bin/libexec/bin/` directory.
+
+If you want to debug what JRE is being used by the CommandBox CLI, use the `-clidebug` flag when starting CommandBox and the first few lines will tell you what version of Java is being used, and where on disk it lives.
 

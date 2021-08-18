@@ -4,7 +4,7 @@ One common question is how to access the database from one of these scripts. You
 
 ## Lucee allows datasource to be a struct
 
-So the easiest way to accomplish this is simply to exploit a little known but very cool feature of Lucee that allows the datasource attribute of most tags to be not only a string which contains the name of the datasource, but also a struct that contains the \_definitiion\_ of the datasource. This will create an on-the-fly connection to your database without any server config being necessary which is perfect for a stand-alone script. Here is what that looks like. Note, I'm using queryExecute\(\), but it would work just as well in a cfquery tag.
+So the easiest way to accomplish this is simply to exploit a little known but very cool feature of Lucee that allows the datasource attribute of most tags to be not only a string which contains the name of the datasource, but also a struct that contains the \_definition\_ of the datasource. This will create an on-the-fly connection to your database without any server config being necessary which is perfect for a stand-alone script. Here is what that looks like. Note, I'm using queryExecute\(\), but it would work just as well in a cfquery tag.
 
 ```javascript
 ds = {
@@ -23,11 +23,11 @@ for( var row in qry ) {
 
 So, the first block simply declares a struct that represents a datasource connection. Then I use that struct as my datasource. You might be thinking, "where the heck did he get that struct??". Glad you asked. Start up a Lucee 4 server, edit a datasource that has the connection properties you want and then at the bottom of the edit page you'll see a code sample you can just copy and paste from. This is the code for an \`Application.cfc\`, but you can re-use the same struct here.
 
-!\[Get DS definition from the Lucee administrator\]\([https://www.ortussolutions.com//\\_\\_media/datasource-lucee-definition.png\](https://www.ortussolutions.com//__media/datasource-lucee-definition.png%29\)
+![Get DS definition from the Lucee administrator](https://www.ortussolutions.com/__media/datasource-lucee-definition.png)
 
 ## Another method
 
-There are a couple tags inside Lucee that don't support this just yet. \`&lt;CFDBInfo&gt;\` is one of them. \[Ticket Here\]\([https://luceeserver.atlassian.net/browse/LDEV-1026\](https://luceeserver.atlassian.net/browse/LDEV-1026%29\) In this case, you need a "proper" datasource defined that you can reference by name. Lucee has some more tricks up its sleeve for this. You can simulate the same thing that happens when you add a datasource to your \`Application.cfc\` with the following code. This will define a datasource for the duration of the time the CLI is running in memory, but it will be gone the next time you start the CLI.
+There are a couple tags inside Lucee that don't support this just yet. \`&lt;CFDBInfo&gt;\` is one of them. \[[Ticket Here\]](https://luceeserver.atlassian.net/browse/LDEV-1026) In this case, you need a "proper" datasource defined that you can reference by name. Lucee has some more tricks up its sleeve for this. You can simulate the same thing that happens when you add a datasource to your \`Application.cfc\` with the following code. This will define a datasource for the duration of the time the CLI is running in memory, but it will be gone the next time you start the CLI.
 
 ```javascript
 appSettings = getApplicationSettings();

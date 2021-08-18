@@ -48,11 +48,10 @@ The `box` text is calling the CommandBox binary, and the `version` bit is passed
 
 ## Debug Mode
 
-You can also activate CommandBox in **debug** mode by passing the `-debug` flag in the command line. This will give you much more verbose information about the running CommandBox environment. This affects both the interactive shell or one-off commands
+You can also activate CommandBox in **debug** mode by passing the `-clidebug` flag in the command line. This will give you much more verbose information about the running CommandBox environment. This only one-off commands
 
 ```bash
-box version -debug
-box server start -debug
+box -clidebug
 ```
 
 ## Output
@@ -111,15 +110,48 @@ If you want to add ad-hoc Java Properties to the actual CLI process, you can set
 BOX_JAVA_PROPS="foo=bar;brad=wood"
 ```
 
-That would create a property called `foo` and a property called `brad` with the values `bar` and `wood` respectively.
+That would create a property called `foo` and a property called `brad` with the values `bar` and `wood` respectively. This environment variable works the same on all operating systems.
+
+### Ad-hoc JVM args for the CLI
+
+Similar to above, you may want to add ad-hoc JVM args to the java process that powers the CLI. The steps differ per operating system. For \*nix \(Linux, Mac\), set an environment variable called `BOX_JAVA_ARGS` in the environment that `box` will run in.
+
+```bash
+BOX_JAVA_ARGS="-Xms1024m -Xmx2048m -Dfoo=bar"
+box
+```
+
+For Windows, create a file called `box.l4j.ini` in the same directory as the `box.exe` file and place a JVM arg on each line. Escape any backslashes with an additional backslash like a properties file format.
+
+{% code title="box.l4j.ini" %}
+```bash
+-Xms1024m
+-Xmx2048m
+-Dfoo=bar
+```
+{% endcode %}
+
+Both of those examples would set the min/max heap size of the CLI process and also set a Java System Property called "foo" equal to "bar". There is no effective difference between setting system properties this way as opposed to using `BOX_JAVA_PROPS` as shown in the previous section, but actual JVM `-X` settings must be set as described in this section.
 
 ## Noninteractive Mode
 
-If you are using CommandBox in a continuous integration server such as Jenkins or Travis-CI, you may find that features like the progress bar which redraw the screen many times create hundreds of lines of output in the console log for your builds.  You can enable a non interactive mode that will bypass the output from interactive jobs and the download progress bar.
+If you are using CommandBox in a continuous integration server such as Jenkins or Travis-CI, you may find that features like the progress bar which redraw the screen many times create hundreds of lines of output in the console log for your builds. You can enable a non interactive mode that will bypass the output from interactive jobs and the download progress bar.
 
 ```text
 config set nonInteractiveShell=true
 ```
 
 If there is no `nonInteractiveShell` setting, CommandBox will automatically default it to true if there is an environment variable named `CI` present, which is standard for many build servers such as Travis-CI.
+
+## Custom working directory
+
+CommandBox will start its current working directory in the same folder that you started the box process from. Once you are in the interactive shell, you can always change the current working directory with the `cd` command. If you want to change the default working directory or just want to run a one-off command in another folder, you can use the `-cliworkingdir` flag to the box binary when you start it.
+
+```text
+box -cliworkingdir=C:/my/path/here/
+# This works too
+box -cliworkingdir C:/my/path/here/
+# And can be coupled with a command to run
+box -cliworkingdir C:/my/path/here/ install
+```
 

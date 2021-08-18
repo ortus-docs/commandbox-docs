@@ -28,3 +28,23 @@ You can specify packages from HTTP\(S\) endpoints as dependencies in your `box.j
 }
 ```
 
+## Cached URLs
+
+If you know a given URL will always return the exact same package, then you can request CommandBox to cache the download in local artifacts to speed up builds. To do so, use an endpoint name of `https+cached` or `http+cached` in your install ID.
+
+```bash
+install https+cached://downloads.ortussolutions.com/ortussolutions/coldbox-modules/cbi18n/1.4.0/cbi18n-1.4.0.zip
+```
+
+Or
+
+```bash
+start cfengine=http+cached://update.lucee.org/rest/update/provider/forgebox/5.3.3.60-RC
+```
+
+Cached artifacts will be stored under the slug `HTTP_Cached` and can be viewed like so:
+
+```bash
+ artifacts list HTTP_Cached
+```
+

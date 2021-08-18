@@ -6,7 +6,7 @@ This module will customize your CommandBox prompt while in the interactive shell
 
 This project is based on the Zsh Bullet Train theme which is based on the Powerline shell prompt. The goal is to add in additional information to your prompt that is specific to the current working directory, or the last command you ran.
 
-![CommandBox Bullet Train Prompt](../.gitbook/assets/image.png)
+![CommandBox Bullet Train Prompt](../.gitbook/assets/image%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ## Installation
 
@@ -42,9 +42,7 @@ Cars that do not apply to the current directory will simply not be displayed. Fa
 
 ## Customize it!
 
-You can customize the cars that show, change the colors of existing cars and even create your own custom additions to Bullet Train.  Read all about it in the readme of the Module homepage on ForgeBox.
+You can customize the cars that show, change the colors of existing cars and even create your own custom additions to Bullet Train. Read all about it in the readme of the Module homepage on ForgeBox.
 
 {% embed url="https://www.forgebox.io/view/commandbox-bullet-train" caption="CommandBox Bullet Train Module on ForgeBox.io" %}
-
-
 

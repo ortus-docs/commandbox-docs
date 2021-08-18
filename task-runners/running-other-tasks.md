@@ -1,6 +1,6 @@
 # Running other Tasks
 
-When developing a task, you may find the need to run another task. To do this, we have provided you with a DSL you can use to call any task.  The Task DSL is very similar to the Command DSL, but designed to delegate to the `task run` command for you.
+When developing a task, you may find the need to run another task. To do this, we have provided you with a DSL you can use to call any task. The Task DSL is very similar to the Command DSL, but designed to delegate to the `task run` command for you.
 
 ## The DSL
 
@@ -25,7 +25,7 @@ task( ... )
 
 ## task\(\)
 
-This is required to be the first method you call. It creates an instance of the `TaskDSL` class and returns it. It accepts a single parameter called `taskFile` which is the path of the task CFC you wish to run. Just like the `task run` command, you can supply a full path or a relative path.  The `.cfc` extension is also optional.  If you don't pass in a task CFC name, it defaults to `task`.
+This is required to be the first method you call. It creates an instance of the `TaskDSL` class and returns it. It accepts a single parameter called `taskFile` which is the path of the task CFC you wish to run. Just like the `task run` command, you can supply a full path or a relative path. The `.cfc` extension is also optional. If you don't pass in a task CFC name, it defaults to `task`.
 
 ```javascript
 task( 'build' )
@@ -37,7 +37,7 @@ task( 'build' )
 
 ## target\(\)
 
-Use this method to override the default task target of `run`.  
+Use this method to override the default task target of `run`.
 
 ```javascript
 task()
@@ -68,9 +68,21 @@ task( 'mytask' )
     .run();
 ```
 
+### Using argumentCollection
+
+```javascript
+args = {
+   "arg1": true,
+   "arg2": "something else"
+};
+task( 'mytask' )
+    .params( argumentCollection=args )
+    .run();
+```
+
 ## flags\(\)
 
-Just like when running a  task manually, flags are an optional shortcut for specifying boolean parameters. Pass in each flag as a separate argument. It is not necessary to include the `--` prior to the value, but it will still work.
+Just like when running a task manually, flags are an optional shortcut for specifying boolean parameters. Pass in each flag as a separate argument. It is not necessary to include the `--` prior to the value, but it will still work.
 
 ```javascript
  task( "mytask" )
@@ -91,23 +103,38 @@ task()
 
 ## run\(\)
 
-Your DSL should always end with a `run` method. This executes the  task. By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
+Your DSL should always end with a `run` method. This executes the task. By default, the output will be sent to the console, however you can capture it by specifying `returnOutput` as `true`.
 
 ```javascript
 var output =  task()
       .params( "My name is Brad" )
       .run( returnOutput=true );
-      
+
 // You can optinally strip any ANSi formatting too
 output = print.unANSI( output );
 ```
 
-If you want to help debug the exact  task that is being passed along to the shell for executing, set the `echo` parameter to `true` and the  task will be echoed out prior to execution. The echoed text is not part of what gets returned.
+If you want to help debug the exact task that is being passed along to the shell for executing, set the `echo` parameter to `true` and the task will be echoed out prior to execution. The echoed text is not part of what gets returned.
 
 ```javascript
 task()
     .run( echo=true );
 ```
 
+## Handling Exceptions
 
+If a task encounters an error or returns a non-zero exit code, the Task DSL will throw an exception. if you want to ignore failing tasks or rethrow an exception of your own design, you may place the task in a try/catch. The exit code of the task may be accessed via:
+
+* The `${exitCode}` environment variable
+* The `errorcode` property of the exception if the `error()` method was used
+* Calling `getExitCode()` on the Task DSL object
+
+```javascript
+try { 
+  var t = task( 'myTask' )
+  t.run();
+}  catch( any var e ) {
+  print.line( 'myTask errored with #t.getExitCode()#, but we ignoring it.' );
+}
+```
 

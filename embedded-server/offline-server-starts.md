@@ -10,7 +10,7 @@ That is because `5.x` is a semver range and not a specific version. CommandBox m
 
 ## Be More Specific
 
-If you know that a CF engine is already downloaded in your server's artifacts directory, start your server with a specific major, minor, and patch version to skip the ForgeBox check.
+If you know that a CF engine is already downloaded in your server's artifacts directory, start your server with a specific major, minor, patch, and build version to skip the ForgeBox check.
 
 ```bash
 start cfengine=lucee@5.0.0+252
