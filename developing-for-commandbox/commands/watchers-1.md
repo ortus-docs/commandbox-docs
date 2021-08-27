@@ -25,6 +25,7 @@ Here's a rundown of the methods used above in the DSL.
     - A path without a leading slash (or backslash) will be applied as a glob filter to *all files* within the current working directory. E.g. `watch foo` will result in the entire working directory being watched, but only files matching the glob `**foo` will be processed.
 
     If your watcher seems slow, unresponsive, or is failing to notice some file change events, it is likely that you have it watching too many files. Try specifying more specific paths to the files you want to process, and use leading slashes in your arguments to avoid watching all files in the current working directory.
+
 * **inDirectory\( ... \)** - Set the base directory that the file globs are relative to. \(defaults to current working directory\)
 * **withDelay\( ... \)** - Set the number of milliseconds between polling the file system. \(defaults to 500 ms\)
 * **onChange\( ... \)** - Pass a closure to be executed when a change has occurred.
