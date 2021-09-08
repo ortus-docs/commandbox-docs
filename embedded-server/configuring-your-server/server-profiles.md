@@ -71,7 +71,7 @@ The defaults above only apply if you do not have am explicit `server.json` or `s
 
 ```javascript
 {
-  "profile": "production"
+  "profile": "production",
   "web": {
     "blockCFAdmin": false
   }
