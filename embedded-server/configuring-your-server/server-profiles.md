@@ -1,8 +1,8 @@
 # Server Profiles
 
-CommandBox has profiles you can assign to a server when you start it to configure the default settings.  This is to provide easy secure-by-default setups for your production servers, and to make it easier to switch between a development mode and production mode.
+CommandBox has profiles you can assign to a server when you start it to configure the default settings. This is to provide easy secure-by-default setups for your production servers, and to make it easier to switch between a development mode and production mode.
 
-There are 3 currently supported profiles.  Custom profiles will be added as a future feature.
+There are 3 currently supported profiles. Custom profiles will be added as a future feature.
 
 * **Production** - Locked down for production hosting
 * **Development** - Lax security for local development
@@ -10,7 +10,7 @@ There are 3 currently supported profiles.  Custom profiles will be added as a fu
 
 ## Setting the profile
 
-You can set the profile for your server in your `server.json` 
+You can set the profile for your server in your `server.json`
 
 ```bash
 server set profile=production
@@ -67,7 +67,7 @@ When profile is set to "**none**", the following defaults are provided:
 
 ## Customizing your profile
 
-The defaults above only apply if you do not have am explicit `server.json` or `server.defaults` config setting.  If you have an explicit setting, it will override the profile's default.  Therefore, if you set the `profile` to`production` but set `web.blockCFAdmin` to `false`, your CF administrator will be public, but the remaining production defaults will still be applied.  This allows even the default profiles to be customizable.
+The defaults above only apply if you do not have am explicit `server.json` or `server.defaults` config setting. If you have an explicit setting, it will override the profile's default. Therefore, if you set the `profile` to`production` but set `web.blockCFAdmin` to `false`, your CF administrator will be public, but the remaining production defaults will still be applied. This allows even the default profiles to be customizable.
 
 ```javascript
 {
@@ -77,6 +77,4 @@ The defaults above only apply if you do not have am explicit `server.json` or `s
   }
 }
 ```
-
-
 
