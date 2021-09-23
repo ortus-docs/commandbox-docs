@@ -192,7 +192,7 @@ install commandbox-update-check
 This used to work back in the day, but was a regression back when I added the ability to interact with native binaries.  Now you have the best of both worlds.
 
 ```bash
-!java -ver | #ucase
+ echo "java -version" | run | #ucase
 ```
 
 ### Task DSL
