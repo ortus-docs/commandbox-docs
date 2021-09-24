@@ -161,7 +161,32 @@ A common example would be getting a person with the highest or lowest networth `
 
 ### Array Functions
 
-`avg`, `first`, `join`, `last`, `matches`, `min`, `max`, `reverse`, `sum`, `sort`, `split`, `unique/uniq`
+`avg: ( ARR )` - convert array of number to average (ex. [1,2,3] -> 2)
+
+`first: ( ARR/STR ) ` - convience method to get the first item
+
+`group_by: ( ARR ) ` - Splits a collection into sets
+
+`join: ( ARR, STR )` - concatenate an array of strings/numbers with a provided delimiter to a string
+
+`last: ( ARR/STR ) ` - convience method to get the last item
+
+`matches: ( STR/ARR, searchTerm ) ` - regex match string
+
+`min: ( ARR )` - get the minimum string/number/dates of an array (ex. [1,2,3] -> 1)
+
+`max: ( ARR )` - get the maximum string/number/dates of an array (ex. [1,2,3] -> 3)
+
+`reverse: ( STR/ARR ) ` - returns a reversal of a string or array
+
+`sum: ( ARR )` - convert array of number to sum (ex. [1,2,3] -> 6)
+
+`sort: ( STR_ARR/NUM_ARR ) ` - sorts an array of strings/numbers/dates
+
+`split: ( ARR/STR, STR ) ` - splits strings into arrays
+
+`unique/uniq: ( ARR ) ` - remove duplicates
+
 
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
@@ -170,21 +195,93 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
 
 ### Struct or Array of Structs functions
 
-`defaults`, `from_entries`, `group_by`, `key_contains`, `keys`, `map`, `max_by`, `merge`, `min_by`, `omit`, `pluck`, `sort_by`, `to_entries`, `values`
+`defaults: ( OBJ/ARR, OBJ ) ` - sets default values if missing on **1 or more** structs
+
+`key_contains ( OBJ, &KeyName )` - boolean check if struct contains key name
+
+`from_entries ( OBJ/ARR )` - converts a `{type:orange}` -> `{key: type, value:orange}`
+
+`keys: ( OBJ/ARR )` - returns an array of keys
+
+`max_by: ( ARR,Function/Key )` - same as **min** but targets a key inside the array and returns **a single struct**
+
+`merge: ( OBJ/ARR, ...)` - Merges objects into one single object **with overwrite**
+
+`min_by: ( ARR,Function/Key )` - same as **max** but targets a key inside the array and returns **a single struct**
+
+`omit ( OBJ/ARR, STR/ARR )` - loops over 1+ struct and excludes keys provided `to_pairs: ( OBJ/ARR ) `- converts a `{type:orange}` -> `[[type, orange]]`
+
+`pluck ( OBJ/ARR, STR/ARR )` - loops over 1+ struct and only includes keys provided
+
+`sort_by: ( ARR, Function/Key ) ` - same as **sort** but targets a key inside the array and returns **the entire array**
+
+`to_entries ( OBJ/ARR )` - converts a `{type:orange}` -> `{key: type, value:orange}`
+
+`values: ( OBJ/ARR )` - returns an array of values
+
+`map: ( Function/Key, ARR )` -
+
 
 ```bash
 # jsonfile.json
-[
-     {
-        "logdir":"logs/aa",
-        "Size":308
-    },
-    {
-        "logdir":"logs/bb",
-        "Size":303
-    }
-]
 
+CommandBox> jq box.json pluck(@,'name') # only show 'name' key
+
+CommandBox> jq box.json omit(@,'name,version') # show all keys except 'name & version' keys
+
+CommandBox> jq box.json keys(@) # list an array of all keys in a struct
+
+CommandBox> jq box.json values(@) # list an array of all values in a struct
+
+CommandBox> jq box.json to_entries(@)
+=> [
+  {
+    "key":"author",
+    "value":"Scott Steinbeck"
+  },
+  {
+    "key":"bugs",
+    "value":""
+  },
+  {
+    "key":"changelog",
+    "value":""
+  }...
+  
+  
+Commandbox> jq box.json key_contains(@,'on')
+=> {
+  "shortDescription":"",
+  "instructions":"",
+  "version":"0.0.0",
+  "location":"ForgeboxStorage",
+  "documentation":"",
+  "contributors":[],
+  "description":""
+}
+
+# filter the server list and then group by the value of the status key
+Commandbox>  server list --json | jq "group_by([].{name: name, status: status},'status')" 
+
+# Can also be written with pipes
+# Step 1. filter server list array to just name and status keys
+# JQ Pipe to next function
+# Step 2. group by @ (each item) where the value of 'status' is the same
+Commandbox> server list --json | jq "[].{name: name, status: status} | group_by(@,'status')" 
+
+=> {
+  "running":[
+    {
+      "status":"running",
+      "name":"Server 1"
+    }
+  ],
+  "stopped":[
+    {
+      "status":"stopped",
+      "name":"Server 2"
+    },...
+    
 CommandBox> jq jsonfile.json sort_by(@,&Size)
 => [
     {
