@@ -16,7 +16,7 @@ CommandBox's expressive CLI gets its power from commands. You can create your ow
 
 ## Event Model
 
-Customizing the internals of CommandBox is achieved via an event model known as interceptors. What this means is that at pre-defined points in the lifecylce of the shell, command execution, or web server starting, the CLI broadcasts events that you can listen to. This lets you provide custom error handling, special server handling, or modify command output. Interceptors are packaged up in modules and can be combined with custom commands and config settings for fully-configurable shell add-ons.
+Customizing the internals of CommandBox is achieved via an event model known as interceptors. What this means is that at pre-defined points in the lifecycle of the shell, command execution, or web server starting, the CLI broadcasts events that you can listen to. This lets you provide custom error handling, special server handling, or modify command output. Interceptors are packaged up in modules and can be combined with custom commands and config settings for fully-configurable shell add-ons.
 
 [Read about **Developing Interceptors** here.](interceptors/)
 
