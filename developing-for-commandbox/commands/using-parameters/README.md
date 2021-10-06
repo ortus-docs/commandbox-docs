@@ -6,7 +6,7 @@ If the parameters were escaped when typed into the command line, you will receiv
 
 ## Dynamic Parameters
 
-Users can pass named or positional parameters that aren't declared, and they will come through the `arguments` scope. Named parameters will be accessable as `arguments.name`, and positional parameters as `arguments[ 1 ]`, `arguments.[ 2 ]`, etc.
+Users can pass named or positional parameters that aren't declared, and they will come through the `arguments` scope. Named parameters will be accessible as `arguments.name`, and positional parameters as `arguments[ 1 ]`, `arguments.[ 2 ]`, etc.
 
 This can allow for powerful commands like `package set` that allows users to set any box.json property they want.
 
