@@ -19,7 +19,7 @@ watch()
 
 Here's a rundown of the methods used above in the DSL.
 
-* **paths\( ... \)** - Receives a comma-delimtied list of globbing patterns to watch for changes. \(defaults to `**`\) Note that the "paths" here work more like `.gitignore` entries and less like bash paths. Specifically:
+* **paths\( ... \)** - Receives a comma-delimited list of globbing patterns to watch for changes. \(defaults to `**`\) Note that the "paths" here work more like `.gitignore` entries and less like bash paths. Specifically:
   * A path with a leading slash \(or backslash\), will be evaluated relative to the current working directory. E.g. `watch /foo` will only watch files in the directory at `./foo`, but not in directories like `./bar/foo`.
   * A path without a leading slash \(or backslash\) will be applied as a glob filter to _all files_ within the current working directory. E.g. `watch foo` will result in the entire working directory being watched, but only files matching the glob `**foo` will be processed.
 
