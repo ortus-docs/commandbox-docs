@@ -62,6 +62,14 @@ The `git+ssh` endpoint will look for a private SSH key in your `~/.ssh` director
 
 > **Info** If you are deploying to a server and you have not previously logged into the Git server from the new machine you will need to make sure the Git server is added to your `known_hosts` file. The quickest way to do this is to use `git clone git@github.com/user/repo.git` from the terminal OR add the line from your local machine to the server.
 
+### Note:
+
+If you receive an invalid private key exception, check your version of SSH. OpenSSH (7.8 and newer) generates keys in the new OpenSSH format, which starts with **-----BEGIN OPENSSH PRIVATE KEY-----**. JGit does not support this key format. Generate your key in the classic format using the following:
+
+```bash
+ssh-keygen -t rsa -m PEM
+```
+
 ## Password authentication
 
 You can authenticate to a Git repo over HTTP using a username/password combination or a personal access token. The format looks like this:
