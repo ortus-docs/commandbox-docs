@@ -32,7 +32,7 @@ Here's what your server.json might look like.
 }
 ```
 
-  
+\
  Here's how to create aliases from the server set command:
 
 ```bash
@@ -41,8 +41,8 @@ server set web.aliases./foo = bar
 
 #### Custom Error Pages
 
-You can customize the error page that CommandBox servers return. You can have a setting for each status code including a default error page to be used if no other setting applies.  
- Create an errorPages object inside the web object in your server.json where each key is the status code integer or the word default and the value is a relative \(to the web root\) path to be loaded for that status code.  
+You can customize the error page that CommandBox servers return. You can have a setting for each status code including a default error page to be used if no other setting applies.\
+ Create an errorPages object inside the web object in your server.json where each key is the status code integer or the word default and the value is a relative (to the web root) path to be loaded for that status code.\
  This is what you server.json might look like:
 
 ```javascript
@@ -57,7 +57,7 @@ You can customize the error page that CommandBox servers return. You can have a 
 }
 ```
 
-  
+\
  You can set error pages via the server set command like this:
 
 ```bash
@@ -86,7 +86,7 @@ You can customize these tray menus and add your own option for your convenience.
 
 We've updated to a new library that creates the tray icon for your running servers and the menu that appears when you right click.  In addition to better support for some Linux distros, we've added some nice new icons to the menus.
 
-![](https://www.ortussolutions.com/__media/tray.icon.3.3.0.png)
+![](https://www.ortussolutions.com/\__media/tray.icon.3.3.0.png)
 
 ### Pre/Post package scripts
 
@@ -139,7 +139,7 @@ publish
 
 Those two commands, in combination with your package scripts, would accomplish the following:
 
-1. Run the package's test suite \(a failure will abort the process\)
+1. Run the package's test suite (a failure will abort the process)
 2. Increase the minor version of the page
 3. Tag the Git repo
 4. Change the package's location property in box.json to point to the new tag
@@ -165,56 +165,55 @@ There are tons of little bug fixes in this version that you can view in our rele
 
 ### Bug
 
-* \[[COMMANDBOX-187](https://ortussolutions.atlassian.net/browse/COMMANDBOX-187)\] - error when updating forgebox when slugname changes
-* \[[COMMANDBOX-422](https://ortussolutions.atlassian.net/browse/COMMANDBOX-422)\] - Empty command CFCs with no functions throw an error starting box
-* \[[COMMANDBOX-423](https://ortussolutions.atlassian.net/browse/COMMANDBOX-423)\] - Error "key \[FUNCTIONS\] doesn't exist" thrown when trying to start command box
-* \[[COMMANDBOX-426](https://ortussolutions.atlassian.net/browse/COMMANDBOX-426)\] - server name completion errors on server open command
-* \[[COMMANDBOX-434](https://ortussolutions.atlassian.net/browse/COMMANDBOX-434)\] - Document the resolvePath\(\) differing behaviour on OSX vs Windows
-* \[[COMMANDBOX-435](https://ortussolutions.atlassian.net/browse/COMMANDBOX-435)\] - artifacts clean fails on OSX when there's .DS\_Store files
-* \[[COMMANDBOX-437](https://ortussolutions.atlassian.net/browse/COMMANDBOX-437)\] - appSkeleton in the coldbox create app wizard needs to comply to IDs instead of local disk
-* \[[COMMANDBOX-449](https://ortussolutions.atlassian.net/browse/COMMANDBOX-449)\] - "server open" always opens localhost
-* \[[COMMANDBOX-451](https://ortussolutions.atlassian.net/browse/COMMANDBOX-451)\] - The trayicon in server.json does not work with relative paths
-* \[[COMMANDBOX-464](https://ortussolutions.atlassian.net/browse/COMMANDBOX-464)\] - update command doesn't respect original install path
-* \[[COMMANDBOX-465](https://ortussolutions.atlassian.net/browse/COMMANDBOX-465)\] - custom url rewrite location doesn't respect starting server by name in different location
-* \[[COMMANDBOX-466](https://ortussolutions.atlassian.net/browse/COMMANDBOX-466)\] - coldbox create crud doesn't work on Windows
+* \[[COMMANDBOX-187](https://ortussolutions.atlassian.net/browse/COMMANDBOX-187)] - error when updating forgebox when slugname changes
+* \[[COMMANDBOX-422](https://ortussolutions.atlassian.net/browse/COMMANDBOX-422)] - Empty command CFCs with no functions throw an error starting box
+* \[[COMMANDBOX-423](https://ortussolutions.atlassian.net/browse/COMMANDBOX-423)] - Error "key \[FUNCTIONS] doesn't exist" thrown when trying to start command box
+* \[[COMMANDBOX-426](https://ortussolutions.atlassian.net/browse/COMMANDBOX-426)] - server name completion errors on server open command
+* \[[COMMANDBOX-434](https://ortussolutions.atlassian.net/browse/COMMANDBOX-434)] - Document the resolvePath() differing behaviour on OSX vs Windows
+* \[[COMMANDBOX-435](https://ortussolutions.atlassian.net/browse/COMMANDBOX-435)] - artifacts clean fails on OSX when there's .DS_Store files
+* \[[COMMANDBOX-437](https://ortussolutions.atlassian.net/browse/COMMANDBOX-437)] - appSkeleton in the coldbox create app wizard needs to comply to IDs instead of local disk
+* \[[COMMANDBOX-449](https://ortussolutions.atlassian.net/browse/COMMANDBOX-449)] - "server open" always opens localhost
+* \[[COMMANDBOX-451](https://ortussolutions.atlassian.net/browse/COMMANDBOX-451)] - The trayicon in server.json does not work with relative paths
+* \[[COMMANDBOX-464](https://ortussolutions.atlassian.net/browse/COMMANDBOX-464)] - update command doesn't respect original install path
+* \[[COMMANDBOX-465](https://ortussolutions.atlassian.net/browse/COMMANDBOX-465)] - custom url rewrite location doesn't respect starting server by name in different location
+* \[[COMMANDBOX-466](https://ortussolutions.atlassian.net/browse/COMMANDBOX-466)] - coldbox create crud doesn't work on Windows
 
 ### New Feature
 
-* \[[COMMANDBOX-316](https://ortussolutions.atlassian.net/browse/COMMANDBOX-316)\] - Add Fusion Reactor support for server
-* \[[COMMANDBOX-399](https://ortussolutions.atlassian.net/browse/COMMANDBOX-399)\] - Starting server in web root with WEB-INF treats CWD as war
-* \[[COMMANDBOX-416](https://ortussolutions.atlassian.net/browse/COMMANDBOX-416)\] - Add "open" flag to touch/new command.
-* \[[COMMANDBOX-430](https://ortussolutions.atlassian.net/browse/COMMANDBOX-430)\] - forgebox whoami command to show what user your API key is set to
-* \[[COMMANDBOX-431](https://ortussolutions.atlassian.net/browse/COMMANDBOX-431)\] - Update the storage of the APIkey in the commandbox settings to include multiple keys
-* \[[COMMANDBOX-432](https://ortussolutions.atlassian.net/browse/COMMANDBOX-432)\] - Have a forgebox use {username} command to switch the current api key
-* \[[COMMANDBOX-445](https://ortussolutions.atlassian.net/browse/COMMANDBOX-445)\] - Allow aliases \(virtual directory\) in web server
-* \[[COMMANDBOX-458](https://ortussolutions.atlassian.net/browse/COMMANDBOX-458)\] - Provide custom 40x and 50x error pages for servers
+* \[[COMMANDBOX-316](https://ortussolutions.atlassian.net/browse/COMMANDBOX-316)] - Add Fusion Reactor support for server
+* \[[COMMANDBOX-399](https://ortussolutions.atlassian.net/browse/COMMANDBOX-399)] - Starting server in web root with WEB-INF treats CWD as war
+* \[[COMMANDBOX-416](https://ortussolutions.atlassian.net/browse/COMMANDBOX-416)] - Add "open" flag to touch/new command.
+* \[[COMMANDBOX-430](https://ortussolutions.atlassian.net/browse/COMMANDBOX-430)] - forgebox whoami command to show what user your API key is set to
+* \[[COMMANDBOX-431](https://ortussolutions.atlassian.net/browse/COMMANDBOX-431)] - Update the storage of the APIkey in the commandbox settings to include multiple keys
+* \[[COMMANDBOX-432](https://ortussolutions.atlassian.net/browse/COMMANDBOX-432)] - Have a forgebox use {username} command to switch the current api key
+* \[[COMMANDBOX-445](https://ortussolutions.atlassian.net/browse/COMMANDBOX-445)] - Allow aliases (virtual directory) in web server
+* \[[COMMANDBOX-458](https://ortussolutions.atlassian.net/browse/COMMANDBOX-458)] - Provide custom 40x and 50x error pages for servers
 
 ### Improvement
 
-* \[[COMMANDBOX-398](https://ortussolutions.atlassian.net/browse/COMMANDBOX-398)\] - Catch error scenario when user tries to start a server with a WEB-INF
-* \[[COMMANDBOX-410](https://ortussolutions.atlassian.net/browse/COMMANDBOX-410)\] - Upgrade to latest Runwar with several bug fixes
-* \[[COMMANDBOX-412](https://ortussolutions.atlassian.net/browse/COMMANDBOX-412)\] - Refactor string similarity to use external library
-* \[[COMMANDBOX-413](https://ortussolutions.atlassian.net/browse/COMMANDBOX-413)\] - Refactor semver CFC to be separate lib
-* \[[COMMANDBOX-414](https://ortussolutions.atlassian.net/browse/COMMANDBOX-414)\] - Refactor path pattern matcher CFC to be separate lib
-* \[[COMMANDBOX-419](https://ortussolutions.atlassian.net/browse/COMMANDBOX-419)\] - coldbox create app command does not list all templates
-* \[[COMMANDBOX-420](https://ortussolutions.atlassian.net/browse/COMMANDBOX-420)\] - Run pre/post package scripts by convention
-* \[[COMMANDBOX-421](https://ortussolutions.atlassian.net/browse/COMMANDBOX-421)\] - Add onRelease interception point/package script
-* \[[COMMANDBOX-424](https://ortussolutions.atlassian.net/browse/COMMANDBOX-424)\] - Serious performance issue with formatting large JSON strings
-* \[[COMMANDBOX-425](https://ortussolutions.atlassian.net/browse/COMMANDBOX-425)\] - Better handle syntax errors in a module's config
-* \[[COMMANDBOX-427](https://ortussolutions.atlassian.net/browse/COMMANDBOX-427)\] - Move onServerStart interception announcement to have server home dir
-* \[[COMMANDBOX-428](https://ortussolutions.atlassian.net/browse/COMMANDBOX-428)\] - Allow tray options to be customized
-* \[[COMMANDBOX-433](https://ortussolutions.atlassian.net/browse/COMMANDBOX-433)\] - Add onInstall interception point
-* \[[COMMANDBOX-436](https://ortussolutions.atlassian.net/browse/COMMANDBOX-436)\] - Incorrect custom model path in the unit test
-* \[[COMMANDBOX-440](https://ortussolutions.atlassian.net/browse/COMMANDBOX-440)\] - Exit REPL multi-line with extra enter stroke
-* \[[COMMANDBOX-442](https://ortussolutions.atlassian.net/browse/COMMANDBOX-442)\] - Don't use in-use port specified in start params or server.json
-* \[[COMMANDBOX-443](https://ortussolutions.atlassian.net/browse/COMMANDBOX-443)\] - Wait for full debug output when starting server with debug=true
-* \[[COMMANDBOX-444](https://ortussolutions.atlassian.net/browse/COMMANDBOX-444)\] - Append JVM args and runwar args to server defaults
-* \[[COMMANDBOX-454](https://ortussolutions.atlassian.net/browse/COMMANDBOX-454)\] - Update to Runwar 3.4.10
-* \[[COMMANDBOX-457](https://ortussolutions.atlassian.net/browse/COMMANDBOX-457)\] - Improve server status detections
-* \[[COMMANDBOX-460](https://ortussolutions.atlassian.net/browse/COMMANDBOX-460)\] - Show tag stack when executing .cfm files
-* \[[COMMANDBOX-461](https://ortussolutions.atlassian.net/browse/COMMANDBOX-461)\] - Improve tab completion of forgebox slugs
-* \[[COMMANDBOX-467](https://ortussolutions.atlassian.net/browse/COMMANDBOX-467)\] - Allow custom images inside tray menu plus disabled items
-* \[[COMMANDBOX-468](https://ortussolutions.atlassian.net/browse/COMMANDBOX-468)\] - Add overwrite confirmations to all coldbox create commands
-* \[[COMMANDBOX-469](https://ortussolutions.atlassian.net/browse/COMMANDBOX-469)\] - Improve version output in "forgebox show" command
-* \[[COMMANDBOX-470](https://ortussolutions.atlassian.net/browse/COMMANDBOX-470)\] - Upgrade engine to Lucee 4.5.3.020
-
+* \[[COMMANDBOX-398](https://ortussolutions.atlassian.net/browse/COMMANDBOX-398)] - Catch error scenario when user tries to start a server with a WEB-INF
+* \[[COMMANDBOX-410](https://ortussolutions.atlassian.net/browse/COMMANDBOX-410)] - Upgrade to latest Runwar with several bug fixes
+* \[[COMMANDBOX-412](https://ortussolutions.atlassian.net/browse/COMMANDBOX-412)] - Refactor string similarity to use external library
+* \[[COMMANDBOX-413](https://ortussolutions.atlassian.net/browse/COMMANDBOX-413)] - Refactor semver CFC to be separate lib
+* \[[COMMANDBOX-414](https://ortussolutions.atlassian.net/browse/COMMANDBOX-414)] - Refactor path pattern matcher CFC to be separate lib
+* \[[COMMANDBOX-419](https://ortussolutions.atlassian.net/browse/COMMANDBOX-419)] - coldbox create app command does not list all templates
+* \[[COMMANDBOX-420](https://ortussolutions.atlassian.net/browse/COMMANDBOX-420)] - Run pre/post package scripts by convention
+* \[[COMMANDBOX-421](https://ortussolutions.atlassian.net/browse/COMMANDBOX-421)] - Add onRelease interception point/package script
+* \[[COMMANDBOX-424](https://ortussolutions.atlassian.net/browse/COMMANDBOX-424)] - Serious performance issue with formatting large JSON strings
+* \[[COMMANDBOX-425](https://ortussolutions.atlassian.net/browse/COMMANDBOX-425)] - Better handle syntax errors in a module's config
+* \[[COMMANDBOX-427](https://ortussolutions.atlassian.net/browse/COMMANDBOX-427)] - Move onServerStart interception announcement to have server home dir
+* \[[COMMANDBOX-428](https://ortussolutions.atlassian.net/browse/COMMANDBOX-428)] - Allow tray options to be customized
+* \[[COMMANDBOX-433](https://ortussolutions.atlassian.net/browse/COMMANDBOX-433)] - Add onInstall interception point
+* \[[COMMANDBOX-436](https://ortussolutions.atlassian.net/browse/COMMANDBOX-436)] - Incorrect custom model path in the unit test
+* \[[COMMANDBOX-440](https://ortussolutions.atlassian.net/browse/COMMANDBOX-440)] - Exit REPL multi-line with extra enter stroke
+* \[[COMMANDBOX-442](https://ortussolutions.atlassian.net/browse/COMMANDBOX-442)] - Don't use in-use port specified in start params or server.json
+* \[[COMMANDBOX-443](https://ortussolutions.atlassian.net/browse/COMMANDBOX-443)] - Wait for full debug output when starting server with debug=true
+* \[[COMMANDBOX-444](https://ortussolutions.atlassian.net/browse/COMMANDBOX-444)] - Append JVM args and runwar args to server defaults
+* \[[COMMANDBOX-454](https://ortussolutions.atlassian.net/browse/COMMANDBOX-454)] - Update to Runwar 3.4.10
+* \[[COMMANDBOX-457](https://ortussolutions.atlassian.net/browse/COMMANDBOX-457)] - Improve server status detections
+* \[[COMMANDBOX-460](https://ortussolutions.atlassian.net/browse/COMMANDBOX-460)] - Show tag stack when executing .cfm files
+* \[[COMMANDBOX-461](https://ortussolutions.atlassian.net/browse/COMMANDBOX-461)] - Improve tab completion of forgebox slugs
+* \[[COMMANDBOX-467](https://ortussolutions.atlassian.net/browse/COMMANDBOX-467)] - Allow custom images inside tray menu plus disabled items
+* \[[COMMANDBOX-468](https://ortussolutions.atlassian.net/browse/COMMANDBOX-468)] - Add overwrite confirmations to all coldbox create commands
+* \[[COMMANDBOX-469](https://ortussolutions.atlassian.net/browse/COMMANDBOX-469)] - Improve version output in "forgebox show" command
+* \[[COMMANDBOX-470](https://ortussolutions.atlassian.net/browse/COMMANDBOX-470)] - Upgrade engine to Lucee 4.5.3.020

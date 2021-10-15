@@ -6,7 +6,7 @@ CommandBox has a few baked in rules that you can apply ad-hoc or as part of a se
 
 * **web.blockCFAdmin** - Returns 404 error page for any Adobe CF or Lucee Server admin administrator paths
 * **web.blockSensitivePaths** - Returns 404 error page for common config files such as `box.json` or `.env`
-* **web.blockFlashRemoting -** Blocks all paths related to Flash and Flex remoting calls
+* **web.blockFlashRemoting - **Blocks all paths related to Flash and Flex remoting calls
 
 {% hint style="success" %}
 If you want to customize the rules above, simply turn them off and include the rules directly in your `server.json` where you can modify them as you see fit.
@@ -102,6 +102,4 @@ The `done` handler is what bypasses all subsequent rules for the request.
 {% hint style="danger" %}
 Since your custom rules are processed BEFORE the built-in rules, that also means that you have the ability to accidentally bypass security rules by applying another rule that intercepts the request! By default a custom rule won't block subsequent rules from firing unless you rewrite the request or use the special `done` handler.
 {% endhint %}
-
-
 

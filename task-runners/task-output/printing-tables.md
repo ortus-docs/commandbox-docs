@@ -2,7 +2,7 @@
 
 The print helper contains a feature that will generate ASCII tables to print tabular data from the CLI.  The easiest way to see what this looks like is to run the `outdated` command in the root of a project:
 
-![Table output](../../.gitbook/assets/image%20%2821%29.png)
+![Table output](<../../.gitbook/assets/image (21).png>)
 
 ## Usage
 
@@ -15,7 +15,7 @@ There are several easy ways to call the table printer.  Here are the arguments t
 
 Below are some basic examples that all produce the same CLI output:
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](<../../.gitbook/assets/image (5).png>)
 
 ### Array of arrays plus column headers
 
@@ -23,8 +23,8 @@ You can pass an array of column headers as the first argument and then an array 
 
 ```javascript
 print.table(
-	[ 'First Name', 'Last Name' ],
-	[
+	headerNames = [ 'First Name', 'Last Name' ],
+	data = [
 		[ 'Brad', 'Wood' ],
 		[ 'Luis', 'Majano' ],
 		[ 'Gavin', 'Pickin' ]
@@ -38,8 +38,8 @@ You can also pass an array of structs where the keys of the structs match the co
 
 ```javascript
 print.table(
-	[ 'First Name', 'Last Name' ],
-	[
+	headerNames = [ 'First Name', 'Last Name' ],
+	data = [
 		{ 'First Name' : 'Brad', 'Last Name' : 'Wood' },
 		{ 'First Name' : 'Luis', 'Last Name' : 'Majano' },
 		{ 'First Name' : 'Gavin', 'Last Name' : 'Pickin' }
@@ -76,8 +76,8 @@ The `options` can contain any color from the `system-colors` command and follows
 
 ```javascript
 print.table(
-	[ 'First Name', 'Last Name' ],
-	[
+	headerNames = [ 'First Name', 'Last Name' ],
+	data = [
 		[
 			{ value : 'Brad', options : 'blueOnWhite' },
 			'Wood'
@@ -94,34 +94,31 @@ print.table(
 );
 ```
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](<../../.gitbook/assets/image (20).png>)
 
 ### Include only certain columns
 
-You can limit the columns that display in the table regardless of whether you use an array of data or a query object by using the `includeHeaders` parameter.  This example outputs a sorted list of the names and version of all the Lucee Extensions installed in the CLI. \(`extensionList()` is a built in Lucee function that returns a query object\)
+You can limit the columns that display in the table regardless of whether you use an array of data or a query object by using the `includeHeaders` parameter.  This example outputs a sorted list of the names and version of all the Lucee Extensions installed in the CLI. (`extensionList()` is a built in Lucee function that returns a query object)
 
 ```javascript
 print.table(
-	extensionList()
+	data = extensionList()
 		.sort( (a,b)=>compare( a.name, b.name ) ),
-	[],
-	'name,version'
+	includeHeaders = 'name,version'
 );
 ```
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](<../../.gitbook/assets/image (14).png>)
 
 ### Auto-resizing columns
 
 If the data on a given row is too much to display in the given terminal, the table printer will automatically shrink columns based on how much "whitespace" is in them. Values which are too long to display will be truncated and `...` will appear at the end.  Here is the output of the `outdated` command.
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](<../../.gitbook/assets/image (7).png>)
 
 ### Removal of columns in small terminals
 
 If a user has a terminal so small that all the columns simply won't fit, the table printer will automatically eliminate extra columns on the right hand side of the table and insert a single column whose header and values are all `...` to show missing data.  Here is the output of the `outdated` command.
 
-![](../../.gitbook/assets/image%20%284%29.png)
-
-
+![](<../../.gitbook/assets/image (4).png>)
 

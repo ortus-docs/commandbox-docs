@@ -1,9 +1,9 @@
 # Usage
 
-Once you have registered your endpoint and you are authenticated, you are able to install packages from your own endpoint like this:  
+Once you have registered your endpoint and you are authenticated, you are able to install packages from your own endpoint like this:\
 `install stg-forgebox:coldbox`
 
-![](../.gitbook/assets/forgebox-endpoint-default-list%20%281%29.gif)
+![](<../.gitbook/assets/forgebox-endpoint-default-list (1) (1).gif>)
 
 In the previous example you can see we are installing a `coldbox` package from `stg-forgebox`  which is our own endpoint instead of the default one.
 
@@ -12,4 +12,3 @@ You can set your own endpoint as default and then you will not need to use the n
 
 example: `install coldbox`
 {% endhint %}
-

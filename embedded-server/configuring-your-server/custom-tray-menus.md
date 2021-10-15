@@ -22,19 +22,19 @@ Each menu item struct can have the following keys.  Only `label` is required.
 * **label** - This text appears on the menu and is the unique name
 * **action** - This controls what the menu item does when clicked.  Possible options are:
   * **openfilesystem** - Opens a folder on the file system.  Requires `path` to be set as well.
-  * **openbrowser** - Opens a URL in your default browser. Requires `url` to be set as well.
-  * **stopserver** - Stops the current server
-  * **run** - Runs an arbitrary native command synchronously. Requires `command` to be set as well.
-  * **runAsync** - Runs an arbitrary native command asynchronously  Requires `command` to be set as well. 
-  * **runTerminal** - Runs an arbitrary native command in a new Terminal window. Requires `command` to be set as well. 
+  * **openbrowser **- Opens a URL in your default browser. Requires `url` to be set as well.
+  * **stopserver **- Stops the current server
+  * **run **- Runs an arbitrary native command synchronously. Requires `command` to be set as well.
+  * **runAsync **- Runs an arbitrary native command asynchronously  Requires `command` to be set as well. 
+  * **runTerminal **- Runs an arbitrary native command in a new Terminal window. Requires `command` to be set as well. 
 * **path** - The file system path to use for the `openfilesystem` action.
-* **url** - The HTTP URL to use for the `openbrowser` action
+* **url **- The HTTP URL to use for the `openbrowser` action
 * **image** - A custom image file to use for the icon. Relative paths in the `server.json` will be relative to the JSON file  Relative paths in the global config will be relative to the web root of the server.
-  * **command** - The native command to run for the `run`, `runAsync`, or `runTerminal` actions.
-* **workingDirectory** - The working directory to use for the `run`, `runAsync` or `runTerminal` actions.
-* **shell** - Override the native shell to use on your OS.  Defaults to your `nativeShell` config setting.
+  * **command **- The native command to run for the `run`, `runAsync`, or `runTerminal` actions.
+* **workingDirectory **- The working directory to use for the `run`, `runAsync` or `runTerminal` actions.
+* **shell **- Override the native shell to use on your OS.  Defaults to your `nativeShell` config setting.
 * **items** - An array that contains a struct of sub menus.
-* **disabled** - Boolean that greys out menu item and disables any action.  Use for informational items.
+* **disabled **- Boolean that greys out menu item and disables any action.  Use for informational items.
 
 ### openfilesystem Example
 
@@ -182,4 +182,3 @@ This example `server.json` will add a new sub menu into the existing "Open..." t
 ```
 
 There is no way to remove existing menu items via your config settings or `server.json`. To do that, you'd need to directly manipulate the `trayOptions` array in an interceptor.
-

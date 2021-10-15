@@ -1,23 +1,23 @@
 # Introduction
 
-## CommandBox Manual - Version 5.4.1
+## CommandBox Manual - Version 5.4.2
 
 ![CommandBox](.gitbook/assets/commandboxlogo.png)
 
-Welcome to the CommandBox Manual. CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface \(CLI\) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and sweet ASCII art. It seamlessly integrates to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) \*Box products, but it is also open for extensibility for any ColdFusion \(CFML\) project as it is written in ColdFusion \(CFML\) using our concepts of CommandBox Commands.
+Welcome to the CommandBox Manual. CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and sweet ASCII art. It seamlessly integrates to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) \*Box products, but it is also open for extensibility for any ColdFusion (CFML) project as it is written in ColdFusion (CFML) using our concepts of CommandBox Commands.
 
 ## Versioning
 
 CommandBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible. Releases will be numbered with the following format:
 
-```text
+```
 <major>.<minor>.<patch>.<buildID>
 ```
 
 And constructed with the following guidelines:
 
-* Breaking backward compatibility bumps the major \(and resets the minor and patch\)
-* New additions without breaking backward compatibility bumps the minor \(and resets the patch\)
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions without breaking backward compatibility bumps the minor (and resets the patch)
 * Bug fixes and misc changes bumps the patch
 
 ## License
@@ -35,13 +35,13 @@ The CommandBox help and discussion group can be found here: [https://community.o
 
 ## Reporting a Bug
 
-We all make mistakes from time to time :\) so why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/ortus-solutions/commandbox](https://github.com/ortus-solutions/commandbox)
+We all make mistakes from time to time :) so why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/ortus-solutions/commandbox](https://github.com/ortus-solutions/commandbox)
 
 * [https://ortussolutions.atlassian.net/browse/COMMANDBOX](https://ortussolutions.atlassian.net/browse/COMMANDBOX)
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%281%29.png)
+![Ortus Solutions, Corp](<.gitbook/assets/ortussolutions_button (1).png>)
 
 CommandBox is professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
@@ -68,4 +68,3 @@ CommandBox is professional open source software backed by [Ortus Solutions, Corp
 Because of His grace, this project exists. If you don't like this, then don't read it, it's not for you.
 
 > "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
-

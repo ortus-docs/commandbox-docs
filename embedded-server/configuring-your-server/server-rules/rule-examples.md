@@ -39,7 +39,7 @@ Set a request header that you can access in your CFML app just like a normal HTT
 set(attribute='%{i,someHeader}', value=someValue)
 ```
 
-Match certain SES-style URLs and store the place holders \(referenced as exchange attributes\) into HTTP request headers.
+Match certain SES-style URLs and store the place holders (referenced as exchange attributes) into HTTP request headers.
 
 ```javascript
 path-template('/product/{productid}') -> set(attribute='%{i,productid}', value='${productid}')
@@ -71,7 +71,7 @@ path(box.json) -> set-error( 404 )
 path(/box.json) -> set-error( 404 )
 ```
 
-It is not required to include `.*` _at the end of a regex path unless you’ve set `full-match=true`_ 
+It is not required to include `.*`_ at the end of a regex path unless you’ve set `full-match=true `_
 
 ```javascript
 regex( "^/tests/" ) -> set-error( 404 ) 
@@ -118,7 +118,7 @@ equals( %{LOCAL_SERVER_NAME}, 'site2.com' ) -> rewrite( '/site2/%{REQUEST_URL}' 
 equals( %{LOCAL_SERVER_NAME}, 'site3.com' ) -> rewrite( '/site3/%{REQUEST_URL}' )
 ```
 
-Custom SES URL rewrite that turns 6 digit product code into a query string.  \(If this rule goes in your `server.json`, you'll need `\\` in front of the dollar sign to escape it twice.  Once for the system setting expansion and once for the JSON file.\)
+Custom SES URL rewrite that turns 6 digit product code into a query string.  (If this rule goes in your `server.json`, you'll need `\\` in front of the dollar sign to escape it twice.  Once for the system setting expansion and once for the JSON file.)
 
 ```javascript
 regex( '^/product/([A-Z]{6})$' ) -> rewrite( '/product.cfm?productID=${1}' )
@@ -129,4 +129,3 @@ Reject requests  using an unknown host header.
 ```javascript
 not equals( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 )
 ```
-

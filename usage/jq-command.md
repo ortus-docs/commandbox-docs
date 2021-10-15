@@ -1,6 +1,6 @@
 # jq Command
 
-JSON Query command for filtering data out of a JSON Object, file, or URL. jq is a query language built specifically for interacting with JSON type data. More information can be found at [https://jmespath.org/](https://jmespath.org/) as well as an online version to test your query Pass or pipe the text to process or a filename
+JSON Query command for filtering data out of a JSON Object, file, or URL. jq is a query language built specifically for interacting with JSON type data. More information can be found at [https://jmespath.org/](https://jmespath.org) as well as an online version to test your query Pass or pipe the text to process or a filename
 
 ## Using jq with a file
 
@@ -81,9 +81,9 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 
 ## Special Keys / Expressions
 
-`@` - Current Node \(eg. current number/string/array/object\) used to evaluate or check value
+`@` - Current Node (eg. current number/string/array/object) used to evaluate or check value
 
-`&` - Expression \(Function or Keyname\) \(eg. &to\_number\(\) or &keyname\)
+`&` - Expression (Function or Keyname) (eg. \&to_number() or \&keyname)
 
 `!` - NOT Expression
 
@@ -91,15 +91,15 @@ JSON Query command for filtering data out of a JSON Object, file, or URL. jq is 
 
 `||` - OR expression
 
-```{'ab':true}```  - Literal Expressions \(this will be converted to json\)
+`{'ab':true}` - Literal Expressions (this will be converted to json)
 
-`'foo'` - Raw String Literals not evaluated \(Single Quotes\)
+`'foo'` - Raw String Literals not evaluated (Single Quotes)
 
 ## Available Functions
 
 ### Generic Functions
 
-length, reverse, type, not\_null
+length, reverse, type, not_null
 
 ```bash
 CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
@@ -108,7 +108,7 @@ CommandBox> jq [1,2,3,4,5,6,7,8,9] length(@)
 
 ### Conversion Functions
 
-to\_list, to\_array, to\_string, to\_number
+to_list, to_array, to_string, to_number
 
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] [].to_string(@)
@@ -161,32 +161,31 @@ A common example would be getting a person with the highest or lowest networth `
 
 ### Array Functions
 
-`avg: ( ARR )` - convert array of number to average (ex. [1,2,3] -> 2)
+`avg: ( ARR )` - convert array of number to average (ex. \[1,2,3] -> 2)
 
-`first: ( ARR/STR ) ` - convience method to get the first item
+`first: ( ARR/STR )` - convience method to get the first item
 
-`group_by: ( ARR ) ` - Splits a collection into sets
+`group_by: ( ARR )` - Splits a collection into sets
 
 `join: ( ARR, STR )` - concatenate an array of strings/numbers with a provided delimiter to a string
 
-`last: ( ARR/STR ) ` - convience method to get the last item
+`last: ( ARR/STR )` - convience method to get the last item
 
-`matches: ( STR/ARR, searchTerm ) ` - regex match string
+`matches: ( STR/ARR, searchTerm )` - regex match string
 
-`min: ( ARR )` - get the minimum string/number/dates of an array (ex. [1,2,3] -> 1)
+`min: ( ARR )` - get the minimum string/number/dates of an array (ex. \[1,2,3] -> 1)
 
-`max: ( ARR )` - get the maximum string/number/dates of an array (ex. [1,2,3] -> 3)
+`max: ( ARR )` - get the maximum string/number/dates of an array (ex. \[1,2,3] -> 3)
 
-`reverse: ( STR/ARR ) ` - returns a reversal of a string or array
+`reverse: ( STR/ARR )` - returns a reversal of a string or array
 
-`sum: ( ARR )` - convert array of number to sum (ex. [1,2,3] -> 6)
+`sum: ( ARR )` - convert array of number to sum (ex. \[1,2,3] -> 6)
 
-`sort: ( STR_ARR/NUM_ARR ) ` - sorts an array of strings/numbers/dates
+`sort: ( STR_ARR/NUM_ARR )` - sorts an array of strings/numbers/dates
 
-`split: ( ARR/STR, STR ) ` - splits strings into arrays
+`split: ( ARR/STR, STR )` - splits strings into arrays
 
-`unique/uniq: ( ARR ) ` - remove duplicates
-
+`unique/uniq: ( ARR )` - remove duplicates
 
 ```bash
 CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
@@ -195,7 +194,7 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
 
 ### Struct or Array of Structs functions
 
-`defaults: ( OBJ/ARR, OBJ ) ` - sets default values if missing on **1 or more** structs
+`defaults: ( OBJ/ARR, OBJ )` - sets default values if missing on **1 or more** structs
 
 `key_contains ( OBJ, &KeyName )` - boolean check if struct contains key name
 
@@ -209,18 +208,17 @@ CommandBox> jq [1,2,-3,4,-5,6,-7,-8,9] avg(@)
 
 `min_by: ( ARR,Function/Key )` - same as **max** but targets a key inside the array and returns **a single struct**
 
-`omit ( OBJ/ARR, STR/ARR )` - loops over 1+ struct and excludes keys provided `to_pairs: ( OBJ/ARR ) `- converts a `{type:orange}` -> `[[type, orange]]`
+`omit ( OBJ/ARR, STR/ARR )` - loops over 1+ struct and excludes keys provided `to_pairs: ( OBJ/ARR )`- converts a `{type:orange}` -> `[[type, orange]]`
 
 `pluck ( OBJ/ARR, STR/ARR )` - loops over 1+ struct and only includes keys provided
 
-`sort_by: ( ARR, Function/Key ) ` - same as **sort** but targets a key inside the array and returns **the entire array**
+`sort_by: ( ARR, Function/Key )` - same as **sort** but targets a key inside the array and returns **the entire array**
 
 `to_entries ( OBJ/ARR )` - converts a `{type:orange}` -> `{key: type, value:orange}`
 
 `values: ( OBJ/ARR )` - returns an array of values
 
 `map: ( Function/Key, ARR )` -
-
 
 ```bash
 # jsonfile.json
@@ -247,8 +245,8 @@ CommandBox> jq box.json to_entries(@)
     "key":"changelog",
     "value":""
   }...
-  
-  
+
+
 Commandbox> jq box.json key_contains(@,'on')
 => {
   "shortDescription":"",
@@ -281,7 +279,7 @@ Commandbox> server list --json | jq "[].{name: name, status: status} | group_by(
       "status":"stopped",
       "name":"Server 2"
     },...
-    
+
 CommandBox> jq jsonfile.json sort_by(@,&Size)
 => [
     {
@@ -294,4 +292,3 @@ CommandBox> jq jsonfile.json sort_by(@,&Size)
     }
 ]
 ```
-

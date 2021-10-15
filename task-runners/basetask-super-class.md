@@ -2,7 +2,7 @@
 
 Much of the functionality available to you in task runners comes via inheritance from the super class that all tasks extend.  Even if you don't have an `extends` attribute, CommandBox uses the power of WireBox virtual inheritance to apply the super class.  
 
-```text
+```
 ─┬ commandbox.system.BaseCommand - Base task for all custom commands
  └─┬ commandbox.system.BaseTask - base task for all task runners
    └── task - Your custom task runner
@@ -10,16 +10,20 @@ Much of the functionality available to you in task runners comes via inheritance
 
 The see most up-to-date list of all methods and properties from the base classes, check the API docs:
 
-{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/BaseTask.html" caption="BaseTask" %}
+{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/BaseTask.html" %}
+BaseTask
+{% endembed %}
 
-{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/BaseCommand.html" caption="BaseCommand" %}
+{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/BaseCommand.html" %}
+BaseCommand
+{% endembed %}
 
 ## Properties
 
 Here is an over view of common methods available to every task from the base classes
 
 * `wirebox` - WireBox injector
-* `CR` - carriage return \( `char(10)` \)
+* `CR` - carriage return ( `char(10)` )
 * `formatterUtil` - [Formatter Utility](https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/util/Formatter.html)
 * `fileSystemUtil` - [File System Utility](https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/util/FileSystem.html)
 * `shell` - CLI [Shell](https://s3.amazonaws.com/apidocs.ortussolutions.com/commandbox-core/current/index.html?commandbox/system/Shell.html) class
@@ -123,4 +127,3 @@ getCurrentThread()
 getThreadName()
 
 ```
-
