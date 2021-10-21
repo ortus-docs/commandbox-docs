@@ -24,9 +24,15 @@ command( ... )
     .run( ... );
 ```
 
+The chained methods make declarative or functional programming possible. However, the command() method will also accept a full command string:
+
+```javascript
+command( 'rm --recurse --force' ).run();
+```
+
 ## command\(\)
 
-This is required to be the first method you call. It creates an instance of the `CommandDSL` class and returns it. It accepts a single parameter called `name` which is the name of the command you wish to run. Type the name exactly as you would in the shell including the namespace, if applicable.
+This is required to be the first method you call. It creates an instance of the `CommandDSL` class and returns it. It accepts a single parameter called `command` which is the name of the command you wish to run. Type the name exactly as you would in the shell including the namespace, if applicable.
 
 ```javascript
 command( 'info' )
@@ -34,6 +40,12 @@ command( 'info' )
 
 command( 'server start' )
     .run();
+```
+
+The `command` param could also accept a full command string, for solutions that do not require a functional appproach.
+
+```javascript
+command( 'rm --recurse --force' ).run();
 ```
 
 ## params\(\)
