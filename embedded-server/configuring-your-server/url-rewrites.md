@@ -1,10 +1,10 @@
-# URL Rewrites
+# URL Rewrites with Tuckey
 
 Once you start using the embedded server for your development projects, you may wish to enable URL rewriting. Rewrites are used by most popular frameworks to do things like add the `index.cfm` back into SES URLs.
 
-You may be used to configuring URL rewrites in Apache or IIS, but rewrites are also possible in CommandBox's embedded server via a [Tuckey servlet filter](http://tuckey.org/urlrewrite/).
+You may be used to configuring URL rewrites in Apache or IIS, but rewrites are also possible in CommandBox's embedded server via a [Tuckey servlet filter](http://tuckey.org/urlrewrite/) which uses an xml configuration.
 
-[http://tuckey.org/urlrewrite/](http://tuckey.org/urlrewrite/)
+Commandbox also exposes a way to do url rewrites with the Undertow predicate language. If you missed the (Server Rules)[/embedded-server/configuring-your-server/server-rules] section, go there to learn how to do url rewrites, security, and http header modification in a nice text based language (non-xml). 
 
 ## Default Rules
 

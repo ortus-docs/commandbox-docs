@@ -1,4 +1,4 @@
-# Server Rules
+# Server Rules with Undertow
 
 CommandBox servers have a method of locking down secure URLs and or implementing any of the Undertow predicate and handlers via a nice text based language. Undertow supports a “predicate language” that allows a string to be parsed into a graph of predicates \(conditions\) and handlers \(actions to take\). Ex:
 
@@ -20,7 +20,7 @@ If you have Tuckey rewrites enabled AND use the Undertow predicate-based server 
 
 ## Create your Rules
 
-Unlike custom Tuckey-based rewrites that must be placed in a single XML file, sever rule can be provided ad-hoc in a variety of locations. They are combined and passed to the server in the order defined. This allows you to easily "layer" custom rules along with out-of-the-box lockdown profiles.
+Unlike custom Tuckey-based rewrites that must be placed in a single XML file, server rules can be provided ad-hoc in a variety of locations. They are combined and passed to the server in the order defined. This allows you to easily "layer" custom rules along with out-of-the-box lockdown profiles.
 
 For maximum configuration options, the following mechanisms are supported for specifying the rules for a given server. Rules are processed in the order listed. i.e., a rule defined in your `server.json` is processed prior to a rule in your `server.default` config setting.
 
