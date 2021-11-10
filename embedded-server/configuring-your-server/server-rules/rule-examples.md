@@ -45,14 +45,14 @@ Match certain SES-style URLs and store the place holders (referenced as exchange
 path-template('/product/{productid}') -> set(attribute='%{i,productid}', value='${productid}')
 ```
 
-In this example, hitting the server with `/restart` skips the first rule, the second rule rewrites the request and then restarts back at the first rule which fires the second time through. 
+In this example, hitting the server with `/restart` skips the first rule, the second rule rewrites the request and then restarts back at the first rule which fires the second time through.&#x20;
 
 ```javascript
 path(/foo/a/b) -> response-code(503)
 path(/restart) -> { rewrite(/foo/a/b); restart; }
 ```
 
-Block access to a URL unless coming from a specific IP.  
+Block access to a URL unless coming from a specific IP. &#x20;
 
 ```javascript
 path-prefix(/admin/) and not equals('%{REMOTE_IP}', 127.0.0.1) -> set-error( 404 )
@@ -78,7 +78,7 @@ regex( "^/tests/" ) -> set-error( 404 )
 regex( pattern='^/tests/.*", full-match=true ) -> set-error( 404 )
 ```
 
-Perform a regex a case insensitive search like so: 
+Perform a regex a case insensitive search like so:&#x20;
 
 ```javascript
 regex(pattern="Googlebot", value="%{i,USER-AGENT}", case-sensitive=false ) -> set-error( 404 )
@@ -92,7 +92,7 @@ path(/foobar)
 path( /foobar )
 ```
 
-But this example is different. The leading and trailing spaces will be preserved in the path string. 
+But this example is different. The leading and trailing spaces will be preserved in the path string.&#x20;
 
 ```javascript
 path( " /foobar " )
@@ -129,3 +129,10 @@ Reject requests  using an unknown host header.
 ```javascript
 not equals( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 )
 ```
+
+Create reverse proxy
+
+```json
+path-prefix('/reports') -> reverse-proxy({'http://reports1.mydomain.com','http://reports2.mydomain.com'})
+```
+
