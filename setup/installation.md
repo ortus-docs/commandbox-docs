@@ -97,7 +97,7 @@ Add the following to: `/etc/yum.repos.d/commandbox.repo`
 [CommandBox]
 name=CommandBox $releasever - $basearch
 failovermethod=priority
-baseurl=http://downloads.ortussolutions.com/RPMS/noarch
+baseurl=https://downloads.ortussolutions.com/RPMS/noarch
 enabled=1
 metadata_expire=7d
 gpgcheck=0
