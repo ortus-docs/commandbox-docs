@@ -61,7 +61,7 @@ NOTE: If you use Homebrew to upgrade your version of CommandBox it will erase yo
 
 Unzip the binary **box** and just double click on it to open the shell terminal. When you are finished running commands, you can just close the window, or type `exit`.
 
-> **Hint** You can place the binary in your `/usr/bin` directory so it can be available system-wide via the `box` command in any terminal window.
+> **Hint** You can place the binary in your `/usr/local/bin` directory so it can be available system-wide via the `box` command in any terminal window.
 
 ## Linux apt-get
 
