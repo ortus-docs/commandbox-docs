@@ -18,7 +18,11 @@ If a system setting can't be found in a Java property or an environment variable
 server start port=${SERVER_PORT:8080}
 ```
 
-This does assume that your default value will never contain a colon!
+```text
+server set web.host=${SERVER_HOST:localsite.dev}
+```
+
+This does assume that your default value will never contain a colon! Also do not use inner single quotes for environment variable name nor the default value.
 
 ## Lookup Order
 
