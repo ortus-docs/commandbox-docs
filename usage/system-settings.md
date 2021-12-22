@@ -22,7 +22,7 @@ server start port=${SERVER_PORT:8080}
 server set web.host=${SERVER_HOST:localsite.dev}
 ```
 
-This does assume that your default value will never contain a colon! Also do not use inner single quotes for environment variable name nor the default value.
+This does assume that your system setting name will never contain a colon! Also do not use inner single quotes for system setting name nor the default value.
 
 ## Lookup Order
 
