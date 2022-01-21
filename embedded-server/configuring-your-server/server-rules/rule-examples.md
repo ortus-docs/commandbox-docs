@@ -33,10 +33,22 @@ Redirect all jpg requests to the same file name but with the png extension.  The
 regex('(.*).jpg$') -> redirect('${1}.png')
 ```
 
-Set a request header that you can access in your CFML app just like a normal HTTP header.
+Set a request header for all requests that you can access in your CFML app just like a normal HTTP header.
 
 ```javascript
 set(attribute='%{i,someHeader}', value=someValue)
+```
+
+Set a response header only for matching requests.
+
+```javascript
+regex('**/index.*') -> set(attribute='%{o,Cache-Control}', value='no-cahce')
+```
+
+Set a response header for a specific path.
+
+```javascript
+path('/freshcontent.html') -> set(attribute='%{o,Cache-Control}', value='no-cahce')
 ```
 
 Match certain SES-style URLs and store the place holders (referenced as exchange attributes) into HTTP request headers.
