@@ -38,7 +38,17 @@ or set a default for all servers
 config set server.defaults.jvm.javaVersion=openjdk8
 ```
 
-To review what possible IDs you can use to dial in your exact Java version, read the [docs on our Java endpoint](../../package-management/code-endpoints/java.md#installation-id). You don't need to manually install Java-- CommandBox will do that for you. You just need to provide the ID so CommandBox knows what you want.
+To review what possible IDs you can use to dial in your exact Java version, read the [docs on our Java endpoint](../../package-management/code-endpoints/java.md#installation-id). You don't need to manually install Java  CommandBox will do that for you. You just need to provide a valid ID so CommandBox knows what you want.
+
+In some cases you might not want to interact with the command line manually to setup an environment, in particular in production setups. If you prefer to setup your server via a server.json file, the same syntax for valid IDs applies to setting your JVM ID:
+
+```json
+{
+    "JVM":{
+        "javaVersion":"openjdk11_jre_x64_linux_hotspot_jdk-11.0.13+8"
+    }
+}
+```
 
 ## Java Namespace
 
