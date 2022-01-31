@@ -23,7 +23,7 @@ install java:<version>_<type>_<arch>_<os>_<jvm-implementation>_<release>
 An example utilizing every option would be
 
 ```bash
-install java:OpenJDK8_jre_x64_windows_hotspot_8u181b13
+install java:OpenJDK8_jre_x64_windows_hotspot_jdk8u181b13
 ```
 
 However, everything is optional except the major version. These are also valid installation IDs
@@ -40,10 +40,10 @@ install java:OpenJDK8_jdk_jdk8u181b13
 Here are the possible options for each section of the ID.
 
 * **version** - openjdk8, openjdk9, openjdk10, etc... 
-* **type** - jdk, jre 
-* **arch** - x64, x32, ppc64, s390x, ppc64le, aarch64 
-* **os** - windows, linux, mac 
-* **jvm-implementation** - hotspot, openj9 
+* **type** - jdk, jre
+* **arch** - x64, x32, ppc64, s390x, ppc64le, aarch64, arm etc...
+* **os** - windows, linux, mac, solaris, alpine-linux (openjdk11+ only) 
+* **jvm-implementation** - hotspot
 * **release** - latest, jdk8u172, jdk8u172-b00, etc...
 
 ## Defaults

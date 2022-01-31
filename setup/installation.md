@@ -18,9 +18,13 @@ commandbox_home=../boxHome
 
 ## Windows
 
-Unzip the executable **box.exe** and just double click on it to open the shell. When you are finished running commands, you can just close the window, or type `exit`.
+Extract the executable **box.exe** from the downloaded zip file, placing it anywhere you prefer where you can then execute it when needed, such as from the Windows command line/terminal. You can also run it directly Windows File Explorer, where you would just double click on the exe,which will open the CommandBox shell in a new terminal window.
 
-> **Hint** You can make the `box.exe` available in any Windows terminal by adding its location to the `PATH` system environment variable. See [http://www.computerhope.com/issues/ch000549.htm](http://www.computerhope.com/issues/ch000549.htm)
+> **Warning** On Windows 10 and above, the first time you try to run via Windows File Explorer an exe that you've downloaded, Windows Defender Smartscreen will popup with a warning that "Windows protected your PC". You will need to choose the offered "More info" link and then the offered "Run anway" button, to proceed.
+
+> **Hint** When running from the Windows command line/terminal, you can make it so that you can run `box.exe` while you are in any folder (not just the one where you placed it), by simply adding the exe's location to the Windows `PATH` system environment variable. See [http://www.computerhope.com/issues/ch000549.htm](http://www.computerhope.com/issues/ch000549.htm)
+
+When you are finished running commands in the CommandBox shell, type `exit`. Or if you ran the box.exe from within Windows File Explorer, you can just close the terminal window which that opened.
 
 ## Mac/  \*Unix
 
@@ -57,7 +61,7 @@ NOTE: If you use Homebrew to upgrade your version of CommandBox it will erase yo
 
 Unzip the binary **box** and just double click on it to open the shell terminal. When you are finished running commands, you can just close the window, or type `exit`.
 
-> **Hint** You can place the binary in your `/usr/bin` directory so it can be available system-wide via the `box` command in any terminal window.
+> **Hint** You can place the binary in your `/usr/local/bin` directory so it can be available system-wide via the `box` command in any terminal window.
 
 ## Linux apt-get
 
@@ -96,7 +100,6 @@ Add the following to: `/etc/yum.repos.d/commandbox.repo`
 ```text
 [CommandBox]
 name=CommandBox $releasever - $basearch
-failovermethod=priority
 baseurl=https://downloads.ortussolutions.com/RPMS/noarch
 enabled=1
 metadata_expire=7d

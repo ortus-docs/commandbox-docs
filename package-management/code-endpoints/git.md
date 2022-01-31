@@ -64,7 +64,7 @@ The `git+ssh` endpoint will look for a private SSH key in your `~/.ssh` director
 
 ### Note:
 
-If you receive an invalid private key exception, check your version of SSH. OpenSSH (7.8 and newer) generates keys in the new OpenSSH format, which starts with **-----BEGIN OPENSSH PRIVATE KEY-----**. JGit does not support this key format. Generate your key in the classic format using the following:
+If you receive an invalid private key exception (**Error cloning git+ssh repository and com.jcraft.jsch.JSchException: Auth fail**), check your version of SSH. OpenSSH (7.8 and newer) generates keys in the new OpenSSH format, which starts with **-----BEGIN OPENSSH PRIVATE KEY-----**. JGit does not support this key format. Generate your key in the classic format using the following:
 
 ```bash
 ssh-keygen -t rsa -m PEM
