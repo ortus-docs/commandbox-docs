@@ -39,16 +39,16 @@ Set a request header for all requests that you can access in your CFML app just 
 set(attribute='%{i,someHeader}', value=someValue)
 ```
 
-Set a response header only for matching requests.
+Set a Cache-Control response header only for default index pages(ie: index.html or index.cfm) in any folder.
 
 ```javascript
-regex('**/index.*') -> set(attribute='%{o,Cache-Control}', value='no-cahce')
+regex('.*/index\..*') or path-suffix('/') -> set(attribute='%{o,Cache-Control}', value='no-cache')
 ```
 
-Set a response header for a specific path.
+Set a response header for a specific file.
 
 ```javascript
-path('/freshcontent.html') -> set(attribute='%{o,Cache-Control}', value='no-cahce')
+path('/freshcontent.html') -> set(attribute='%{o,Cache-Control}', value='no-cache')
 ```
 
 Match certain SES-style URLs and store the place holders (referenced as exchange attributes) into HTTP request headers.
