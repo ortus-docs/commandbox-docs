@@ -13,6 +13,15 @@ command( 'version' )
 
 This runs the `version` command and the output will be flushed to the console.
 
+We can also run commands that exist outside of Commandbox. This will run 'git --version':
+
+```javascript
+command('run')
+	.params('git')
+	.flags( 'version' )
+	.run();
+```
+
 Here are all the possible DSL methods that we'll unpack below:
 
 ```javascript
