@@ -131,7 +131,7 @@ CommandBox 1.2.3.00000
 
 ## Exiting a recipe
 
-You can use the exit command in a recipe and instead of leaving the entire shell, the recipe will simply stop execution right there. If an exit code is passed, it will because the exit code of the recipe command as well as the entire shell.
+You can use the exit command in a recipe and instead of leaving the entire shell, the recipe will simply stop execution right there. If an exit code is passed, it will become the exit code of the recipe command as well as the entire shell.
 
 ```bash
 exit 1
