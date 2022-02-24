@@ -176,7 +176,7 @@ More Info: [https://commandbox.ortusbooks.com/embedded-server/configuring-your-s
 When using a CommandBox web server in production, you may wish to force your users to visit your site over HTTPS for security \(and for HTTP/2 to work\). However, it is desirable to still have your web server listening on HTTP so a user just typing your address in his browser can still connect to HTTP and then redirect.  CommandBox can be configured to redirect all HTTP traffic over to HTTPS with the following setting.
 
 ```bash
-server set web.SSL.forceSSLRediect=true
+server set web.SSL.forceSSLRedirect=true
 ```
 
 If you want to go one step further, you can add a `Strict-Transport-Security` header to your site. This instructs the browser to _automatically_ use HTTPS every time the user visits your site again.
