@@ -7,7 +7,7 @@ When using a CommandBox web server in production, you may wish to force your use
 CommandBox can be configured to redirect all HTTP traffic over to HTTPS with the following rule.  The redirect will use a `301` status code and will include the URL and query string.  The redirect will only fire for `GET` HTTP requests since redirecting a form `POST` would lose the form fields \(request body\).
 
 ```bash
-server set web.SSL.forceSSLRediect=true
+server set web.SSL.forceSSLRedirect=true
 ```
 
 Or in the `server.json` as:
