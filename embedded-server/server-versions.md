@@ -26,7 +26,7 @@ However, [CommandBox](https://commandbox.ortusbooks.com) and [ForgeBox](https://
 5.3.4+80
 ```
 
-The important thing to remember is, when starting a server via CommandBox **always use the second format shown above** since that is how ForgeBox recognizes each release. 
+The important thing to remember is, when starting a server via CommandBox **always use the second format shown above** since that is how ForgeBox recognizes each release.&#x20;
 
 {% hint style="info" %}
 As of version `5.3.0`, CommandBox will also recognize the fourth digit in `1.2.3.4` as a build ID if there is no plus sign in the version.  This makes `5.3.4+80` and `5.3.4.80` equivalent.
@@ -64,7 +64,7 @@ server start cfengine=adobe@2018
 server start cfengine=lucee@be
 ```
 
-However, you may have good reason to NEVER want a new version automatically installed.  In order to do this, you must specify a COMPLETE version number, including the build number, making sure to use the proper version format.  This means you need a **major**, **minor**, **patch**, and **build **number.
+However, you may have good reason to NEVER want a new version automatically installed.  In order to do this, you must specify a COMPLETE version number, including the build number, making sure to use the proper version format.  This means you need a **major**, **minor**, **patch**, and **build** number.
 
 ```bash
 # Pinned exact Adobe version

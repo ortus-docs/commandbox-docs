@@ -1,6 +1,6 @@
 # Custom Tray Menus
 
-For every server you start, there is a corresponding icon in your PC's system tray.  In addition to the menu options you get out of the box, you can add in custom menu items.  Menus are defined as nested arrays of structs, where each struct represents a single menu item.  A menu item can be informational, have an action, or contain sub menus.   
+For every server you start, there is a corresponding icon in your PC's system tray.  In addition to the menu options you get out of the box, you can add in custom menu items.  Menus are defined as nested arrays of structs, where each struct represents a single menu item.  A menu item can be informational, have an action, or contain sub menus.  &#x20;
 
 ```javascript
 [
@@ -17,24 +17,24 @@ You can customize the tray menus for a server via 3 different methods:
 * The `server.defaults.trayOptions` config setting. These menu additions will be added to every server you start
 * A custom CommandBox Module with an interceptor listening to the `onServerStart` interception point that modifies the `serverInfo.trayOptions` array.
 
-Each menu item struct can have the following keys.  Only `label` is required. 
+Each menu item struct can have the following keys.  Only `label` is required.&#x20;
 
 * **label** - This text appears on the menu and is the unique name
 * **action** - This controls what the menu item does when clicked.  Possible options are:
   * **openfilesystem** - Opens a folder on the file system.  Requires `path` to be set as well.
-  * **openbrowser **- Opens a URL in your default browser. Requires `url` to be set as well.
-  * **stopserver **- Stops the current server
-  * **run **- Runs an arbitrary native command synchronously. Requires `command` to be set as well.
-  * **runAsync **- Runs an arbitrary native command asynchronously  Requires `command` to be set as well. 
-  * **runTerminal **- Runs an arbitrary native command in a new Terminal window. Requires `command` to be set as well. 
+  * **openbrowser** - Opens a URL in your default browser. Requires `url` to be set as well.
+  * **stopserver** - Stops the current server
+  * **run** - Runs an arbitrary native command synchronously. Requires `command` to be set as well.
+  * **runAsync** - Runs an arbitrary native command asynchronously  Requires `command` to be set as well.&#x20;
+  * **runTerminal** - Runs an arbitrary native command in a new Terminal window. Requires `command` to be set as well.&#x20;
 * **path** - The file system path to use for the `openfilesystem` action.
-* **url **- The HTTP URL to use for the `openbrowser` action
+* **url** - The HTTP URL to use for the `openbrowser` action
 * **image** - A custom image file to use for the icon. Relative paths in the `server.json` will be relative to the JSON file  Relative paths in the global config will be relative to the web root of the server.
-  * **command **- The native command to run for the `run`, `runAsync`, or `runTerminal` actions.
-* **workingDirectory **- The working directory to use for the `run`, `runAsync` or `runTerminal` actions.
-* **shell **- Override the native shell to use on your OS.  Defaults to your `nativeShell` config setting.
+  * **command** - The native command to run for the `run`, `runAsync`, or `runTerminal` actions.
+* **workingDirectory** - The working directory to use for the `run`, `runAsync` or `runTerminal` actions.
+* **shell** - Override the native shell to use on your OS.  Defaults to your `nativeShell` config setting.
 * **items** - An array that contains a struct of sub menus.
-* **disabled **- Boolean that greys out menu item and disables any action.  Use for informational items.
+* **disabled** - Boolean that greys out menu item and disables any action.  Use for informational items.
 
 ### openfilesystem Example
 
@@ -76,7 +76,7 @@ Each menu item struct can have the following keys.  Only `label` is required.
 
 ### run Example
 
-Commands executed by the `run` action will display their output in a popup window.  The PID of the process is available if running on Java 9 or later.  Also, there is a button to kill the process, but your mileage may vary.  Only use this option to run command line apps that have console output you want to see.  
+Commands executed by the `run` action will display their output in a popup window.  The PID of the process is available if running on Java 9 or later.  Also, there is a button to kill the process, but your mileage may vary.  Only use this option to run command line apps that have console output you want to see. &#x20;
 
 ```javascript
 [
@@ -104,7 +104,7 @@ Commands executed by the `runAsync` action work like the `run` action except the
 
 ### runTerminal  Example
 
-Commands executed by the `runTerminal` action work like the `run` action except a new terminal window is opened to run the command.  The terminal windows stays open and you can continue to interact with it when the command finishes.  
+Commands executed by the `runTerminal` action work like the `run` action except a new terminal window is opened to run the command.  The terminal windows stays open and you can continue to interact with it when the command finishes. &#x20;
 
 ```javascript
 [

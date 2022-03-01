@@ -41,7 +41,7 @@ When a user hits tab while typing a parameter value, booleans will prompt with t
 
 You can provide additional hints though for your parameters to make them super user friendly.
 
-If you have a parameter that doesn't contain one of the keywords above but you still want it to provide the user with path, directory, or file tab completion, you can add annotations to the arguments to enable this.  
+If you have a parameter that doesn't contain one of the keywords above but you still want it to provide the user with path, directory, or file tab completion, you can add annotations to the arguments to enable this. &#x20;
 
 * **optionsFileComplete**
 * **optionsDirectoryComplete**
@@ -57,7 +57,7 @@ Ex:
 */
 ```
 
-A parameter can have both the annotations for file and directory completion as well as an `optionsUDF`** **or `options` list specified and they will all be used.  The user will be presented with the combined list of tab completion candidates.
+A parameter can have both the annotations for file and directory completion as well as an `optionsUDF` **** or `options` list specified and they will all be used.  The user will be presented with the combined list of tab completion candidates.
 
 ### Static Options
 
@@ -120,8 +120,8 @@ array function completeTypes( string paramSoFar, struct passedNamedParameters ) 
 }
 ```
 
-* **paramSoFar **- A string containing the text the user has typed thus far.  CommandBox will automatically filter the candidates you send back, if if you're doing something complicated like making an API call to get the candidates, this allows you to do some pre-filtering of your own.  This string may be empty if they haven't typed anything yet.
-* **passedNamedParameters **- A struct containing the parameters the user has typed already.  You get name/value pairs even if the user is typing positional params.  This is handy if the possible options for one parameter are based on what is being passed for another parameter.  The struct may be empty, or may only contain some params.  Always check existence!
+* **paramSoFar** - A string containing the text the user has typed thus far.  CommandBox will automatically filter the candidates you send back, if if you're doing something complicated like making an API call to get the candidates, this allows you to do some pre-filtering of your own.  This string may be empty if they haven't typed anything yet.
+* **passedNamedParameters** - A struct containing the parameters the user has typed already.  You get name/value pairs even if the user is typing positional params.  This is handy if the possible options for one parameter are based on what is being passed for another parameter.  The struct may be empty, or may only contain some params.  Always check existence!
 
 ## Namespace help
 

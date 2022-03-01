@@ -6,7 +6,7 @@ CommandBox has a few baked in rules that you can apply ad-hoc or as part of a se
 
 * **web.blockCFAdmin** - Returns 404 error page for any Adobe CF or Lucee Server admin administrator paths
 * **web.blockSensitivePaths** - Returns 404 error page for common config files such as `box.json` or `.env`
-* **web.blockFlashRemoting - **Blocks all paths related to Flash and Flex remoting calls
+* **web.blockFlashRemoting -** Blocks all paths related to Flash and Flex remoting calls
 
 {% hint style="success" %}
 If you want to customize the rules above, simply turn them off and include the rules directly in your `server.json` where you can modify them as you see fit.
@@ -18,7 +18,7 @@ This setting has three possible settings:
 
 * **true** - Block ALL access to ColdFusion and Lucee admins
 * **false** - Do not block anything
-* **external** - Only block access not coming from localhost. 
+* **external** - Only block access not coming from localhost.&#x20;
 
 The exact rule activated when you set this property to `true` is:
 
@@ -77,7 +77,7 @@ If you need to legitimately access any of these paths, you'll need to turn off t
 
 ## Override just part of a baked-in rule
 
-What if you want to go one step deeper? For instance, the `blockSensitivePaths` setting blocks a whole bunch of stuff all in one shot.  An example might be wanting to open up JUST the RDS IDE integration for your developers, which funnels through the `/CFIDE/main/ide.cfm` path which you can see is blocked above.  
+What if you want to go one step deeper? For instance, the `blockSensitivePaths` setting blocks a whole bunch of stuff all in one shot.  An example might be wanting to open up JUST the RDS IDE integration for your developers, which funnels through the `/CFIDE/main/ide.cfm` path which you can see is blocked above. &#x20;
 
 The solution to this is quite simple and is all based on the ORDER in which your rules are processed.  Built-in CommandBox rules are the last to process. This means that if you hijack the predicates with a custom rule FIRST, you can override the behavior of the built in rules.  So, if we want to allow access to the /CFIDE/main/ide.cfm path, we just need to add a custom rule that matches that path and then aborts the predicate chain so no further rules fire.
 
@@ -97,7 +97,7 @@ Which gives you the following `server.json`
 }
 ```
 
-The `done` handler is what bypasses all subsequent rules for the request. 
+The `done` handler is what bypasses all subsequent rules for the request.&#x20;
 
 {% hint style="danger" %}
 Since your custom rules are processed BEFORE the built-in rules, that also means that you have the ability to accidentally bypass security rules by applying another rule that intercepts the request! By default a custom rule won't block subsequent rules from firing unless you rewrite the request or use the special `done` handler.

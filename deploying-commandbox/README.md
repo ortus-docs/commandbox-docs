@@ -10,11 +10,11 @@ Since the startup of a CommandBox server allows you specify a host and server po
 
 Container-based deployments are also supported, with official Docker Images and a buildpack for Heroku/Dokku.
 
-![Docker Logo](../.gitbook/assets/docker.png)
+![Docker Logo](../images/docker.png)
 
 [_Click to learn more._](docker.md)
 
-![Heroku Logo](../.gitbook/assets/heroku.png)
+![Heroku Logo](../images/heroku.png)
 
 [_Click to learn more._](heroku.md)
 

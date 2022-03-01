@@ -2,7 +2,7 @@
 
 Sometimes you have a task that will run for a while or just produce a lot of logging output as it executes to let the user know what's going on. it is very easy to keep the user up to date with the print helper like so:
 
-```text
+```
 print.greenLine( 'Step 57 complete!' );
 ```
 
@@ -24,7 +24,7 @@ The log messages will show up in the order they appear, but once you complete th
 
 The final output of the above code would be this green text:
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](<../.gitbook/assets/image (11).png>)
 
 ## Log Messages
 
@@ -85,7 +85,7 @@ job.complete( dumpLog=true );
 
 ## Nesting Jobs
 
-Ok, so here is where it really gets cool. Let's say you have a Task Runner that starts a server, which in turn installs a new Adobe CF engine. That's 3 jobs all nested inside of each other. You can call job.start\(\) at any time, and the Interactive Job handler will keep a call stack of what's going on. Log messages always get added to the last job to be started. \(Last In, First Out\)
+Ok, so here is where it really gets cool. Let's say you have a Task Runner that starts a server, which in turn installs a new Adobe CF engine. That's 3 jobs all nested inside of each other. You can call job.start() at any time, and the Interactive Job handler will keep a call stack of what's going on. Log messages always get added to the last job to be started. (Last In, First Out)
 
 ```javascript
 job.start( 'Starting server' );
@@ -105,13 +105,13 @@ job.error( 'Didn''t see that coming' );
 
 The output of this is:
 
-![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![](<../.gitbook/assets/image (8) (1) (1) (2) (2) (2) (2) (2) (1).png>)
 
 Here we have two nested jobs. The first two lines would be red representing the outer failed job and it's failure message. The 3rd indented line would be green representing the nested job that completed successfully.
 
 And if we add `dumpLog` to each job, what do we get?
 
-![](https://github.com/ortus-docs/commandbox-docs/tree/df981947c5780503203384f9de7118f57ee01ca5/.gitbook/assets/image%20%284%29.png)
+![](https://github.com/ortus-docs/commandbox-docs/tree/df981947c5780503203384f9de7118f57ee01ca5/.gitbook/assets/image%20\(4\).png)
 
 ## Other Considerations
 
@@ -139,4 +139,3 @@ job.errorRemaining( 'That escalated quickly!' );
 ```
 
 This can be handy to call from some high level error handling that can catch errors from tasks/commands/functions several layers deep. It's basically your escape hatch.
-

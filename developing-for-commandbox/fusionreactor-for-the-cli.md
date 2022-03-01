@@ -22,13 +22,13 @@ export BOX_JAVA_ARGS
 box
 ```
 
-You can set the debugger lib and license the same in \*nix, I just omitted it above for brevity. 
+You can set the debugger lib and license the same in \*nix, I just omitted it above for brevity.&#x20;
 
 ## Web UI
 
-When CommandBox first starts, you should see some extra output in the console from FusionReactor.  Now you can navigate to the port you set on localhost in a browser and se the **Transactions **menu.  Don't look under **Web Requests** as you won't find anything there.  You want **Transactions**!  Running commands will show up in the activity page and completed commands will show in the history. 
+When CommandBox first starts, you should see some extra output in the console from FusionReactor.  Now you can navigate to the port you set on localhost in a browser and se the **Transactions** menu.  Don't look under **Web Requests** as you won't find anything there.  You want **Transactions**!  Running commands will show up in the activity page and completed commands will show in the history.&#x20;
 
-All of the standard FR functions you're used to including memory/CPU tracking JDBC requests, stack traces, the profiler and debugger are all available to you!  This works because FusionReactor has an API that CommandBox uses to report what it's doing automatically.  
+All of the standard FR functions you're used to including memory/CPU tracking JDBC requests, stack traces, the profiler and debugger are all available to you!  This works because FusionReactor has an API that CommandBox uses to report what it's doing automatically. &#x20;
 
 ![](../.gitbook/assets/fr-cli-history.png)
 

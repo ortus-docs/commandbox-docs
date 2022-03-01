@@ -2,7 +2,7 @@
 
 ## CommandBox Manual - Version 5.4.2
 
-![CommandBox](.gitbook/assets/commandboxlogo.png)
+![CommandBox](images/CommandBoxLogo.png)
 
 Welcome to the CommandBox Manual. CommandBox is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and sweet ASCII art. It seamlessly integrates to work with any of [Ortus Solutions](http://www.ortussolutions.com/products) \*Box products, but it is also open for extensibility for any ColdFusion (CFML) project as it is written in ColdFusion (CFML) using our concepts of CommandBox Commands.
 
@@ -41,7 +41,7 @@ We all make mistakes from time to time :) so why not let us know about it and he
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](<.gitbook/assets/ortussolutions_button (1).png>)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions\_button.png)
 
 CommandBox is professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 

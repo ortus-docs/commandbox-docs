@@ -2,7 +2,7 @@
 
 ## Upgrade Compatibility
 
-Even though this is a new major version, it should be very backwards compatible.  CommandBox proper has no known backwards compatibility issues we're aware of, but note we've bumped libraries like Lucee Server, Undertow, and Java support, so you may notice differences due to these 3rd party lib updates.  For example, one [breaking change](https://dev.lucee.org/t/cfdump-not-rendering-when-output-false/3589) in Lucee 5.3 (which now powers your default server) is how page output buffer is handled. 
+Even though this is a new major version, it should be very backwards compatible.  CommandBox proper has no known backwards compatibility issues we're aware of, but note we've bumped libraries like Lucee Server, Undertow, and Java support, so you may notice differences due to these 3rd party lib updates.  For example, one [breaking change](https://dev.lucee.org/t/cfdump-not-rendering-when-output-false/3589) in Lucee 5.3 (which now powers your default server) is how page output buffer is handled.&#x20;
 
 You should be able to simply replace your box.exe binary and run it to get the same in-place upgrade you're used to.  If you run into issue, you can try removing the "engine" folder in your \~/.CommandBox folder and try again.  If you need to downgrade for any reason, replace the box binary with the old version, remove the "engine", "cfml", and "lib" folders in your CommandBox home and they will get re-created on the next run.
 
@@ -12,7 +12,7 @@ And finally, if you have installed any custom OSGI bundles into your CLI, they w
 
 ## What's New?
 
-There's a lot of new stuff in CommandBox 5.0.0.  Here's an overview.   One of the biggest new "features" is you can finally use CommandBox on Java 11+.  This was not possible in CommandBox 4.x due to the version of Lucee not fully supporting newer versions of Java.  Now that Lucee has been bumped to 5.3 (see below) you are free to leave java 8 behind for the CLI.  Note if you're using CommandBox to start up older versions of Adobe CF or Lucee/Railo, you may still need to use java 8 specifically for your servers.  
+There's a lot of new stuff in CommandBox 5.0.0.  Here's an overview.   One of the biggest new "features" is you can finally use CommandBox on Java 11+.  This was not possible in CommandBox 4.x due to the version of Lucee not fully supporting newer versions of Java.  Now that Lucee has been bumped to 5.3 (see below) you are free to leave java 8 behind for the CLI.  Note if you're using CommandBox to start up older versions of Adobe CF or Lucee/Railo, you may still need to use java 8 specifically for your servers. &#x20;
 
 ### New Libraries
 
@@ -22,9 +22,9 @@ Let's start with the library updates.  For the most part, all the jars we bundle
 * **JLine** 3.13.0
 * **Runwar** 4.0.3 _(major bump from 3.x)_
 * **JBoss Undertow** 2.0.27.Final _(major bump from 1.x)_
-* **JGit **5.5.1.201910021850-r
-* **Lucee **5.3.4.77_("major" bump from 5.2)_
-* **AdoptOpenJDK **jdk-11.0.6+10 (In the JRE-included download) _(major bump from 8.x)_
+* **JGit** 5.5.1.201910021850-r
+* **Lucee** 5.3.4.77_("major" bump from 5.2)_
+* **AdoptOpenJDK** jdk-11.0.6+10 (In the JRE-included download) _(major bump from 8.x)_
 
 ### New Features/Enhancements
 
@@ -117,7 +117,7 @@ dir | grep .*\.md --count
 
 The tray icon for your servers now has a new option under the "Open" menu that will open up the file system folder where the server home lives.  This is nice for finding your CF Engine's log files.
 
-![](https://www.ortussolutions.com/\__media/blog/new-menu-commandbox-5-0-0.png)
+![](https://www.ortussolutions.com/\_\_media/blog/new-menu-commandbox-5-0-0.png)
 
 ## Release Notes
 

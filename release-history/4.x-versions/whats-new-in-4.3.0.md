@@ -23,7 +23,7 @@ task run
 ```
 
 would run the **`runMeFirst()`** and **`run()`** method in that order.\
-  
+&#x20;&#x20;
 
 Docs:
 
@@ -63,7 +63,7 @@ Docs: [https://commandbox.ortusbooks.com/usage/foreach-command](https://commandb
 
 This is still a little experimental since it hasn't gone through full testing, but we upgraded to Lucee 5.2.9.31 in the core CLI which has support for the newer versions of Java.  We've removed the checks that previously preventing CommandBox from even trying to run on versions of Java later than 8 and at first glance it seems to be working though there's been some flakiness on Java 11.  Please help test these later Java versions and remember that if you spin up a server, you'll want to still dial in Java 8 for Adobe CF 2016 and prior and Lucee 5.2.8.50 and prior even if you have the CLI running on Java 9+.
 
-Docs for setting custom Java version in your server: 
+Docs for setting custom Java version in your server:&#x20;
 
 [https://commandbox.ortusbooks.com/embedded-server/configuring-your-server/custom-java-version](http://server/:%C2%A0https/commandbox.ortusbooks.com/embedded-server/configuring-your-server/custom-java-version)
 
