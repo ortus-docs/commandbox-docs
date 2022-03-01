@@ -39,13 +39,19 @@ brew install commandbox
 To stay with current bleeding edge releases use the following:
 
 ```bash
-brew tap ortus-solutions/homebrew-boxtap
+brew tap-pin ortus-solutions/homebrew-boxtap
 brew install --head ortus-solutions/homebrew-boxtap/commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
 
-Versions will be installed in `/usr/local/Cellar/commandbox`. To switch between versions, simply use `brew switch commandbox [version number]`
+Versions will be installed in `/usr/local/Cellar/commandbox`. To switch between versions, you will need to install the new version - either using the bleeding edge tap or the main repo. For example to switch to a (very) old version:
+
+```
+brew install commandbox@5.1.1
+brew unlink commandbox
+brew link commandbox@5.1.1
+```
 
 If you want to use a `commandbox.properties` file as mentioned above, your `box` _binary_ file will be in the `/usr/local/Cellar/commandbox/<version>/libexec/bin/` directory where you should place your `commandbox.properties` file. There will also be a `box` _binary_ in the `/usr/local/Cellar/commandbox/<version>/bin/` directory where you should place the `jre` if you want CommandBox to use a version of Java that is different from your default version reported by `java -version`.
 
