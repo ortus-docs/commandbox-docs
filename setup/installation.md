@@ -39,7 +39,7 @@ brew install commandbox
 To stay with current bleeding edge releases use the following:
 
 ```bash
-brew tap-pin ortus-solutions/homebrew-boxtap
+brew tap ortus-solutions/homebrew-boxtap
 brew install --head ortus-solutions/homebrew-boxtap/commandbox
 ```
 
@@ -53,7 +53,14 @@ brew unlink commandbox
 brew link commandbox@5.1.1
 ```
 
-If you want to use a `commandbox.properties` file as mentioned above, your `box` _binary_ file will be in the `/usr/local/Cellar/commandbox/<version>/libexec/bin/` directory where you should place your `commandbox.properties` file. There will also be a `box` _binary_ in the `/usr/local/Cellar/commandbox/<version>/bin/` directory where you should place the `jre` if you want CommandBox to use a version of Java that is different from your default version reported by `java -version`.
+If you are using a tap, and want to revert back to the current stable version
+
+```
+brew uninstall ortus-solutions/homebrew-boxtap/commandbox
+brew install commandbox
+```
+
+If you want to use a `commandbox.properties` file as mentioned above, even though the symlink is added in `/usr/local/bin`,  your `box` _binary_ file will be in the `/usr/local/Cellar/commandbox/<version>/libexec/bin/` directory where you should place your `commandbox.properties` file. There will also be a `box` _binary_ in the `/usr/local/Cellar/commandbox/<version>/bin/` directory where you should place the `jre` if you want CommandBox to use a version of Java that is different from your default version reported by `java -version`.
 
 When using Homebrew to install CommandBox you must use Homebrew for any upgrade, minor or major. To upgrade CommandBox with Homebrew:
 
