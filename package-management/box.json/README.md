@@ -114,11 +114,11 @@ Below you will see all the possible options that we currently support in Command
             { "cf9"   : "http://cf9cboxdev.jfetmac/coldbox/testing/runner.cfm" },
             { "railo" : "http://railocboxdev.jfetmac/coldbox/testing/runner.cfm" }
         ],
-        "runner" : ""
+        "runner" : "",
         "Labels" : [],
         "Reporter" : "",
-        "ReporterResults" : "/test/results"
-        "Bundles" : [ "test.specs" ]
+        "ReporterResults" : "/test/results",
+        "Bundles" : [ "test.specs" ],
         "Directory" : { mapping : "test.specs", recurse: true }, 
         // directories or files to watch for changes, if they change, then tests execute
         "Watchers" : [ "/model" ] ,
