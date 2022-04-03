@@ -4,7 +4,7 @@ Once you start using the embedded server for your development projects, you may 
 
 You may be used to configuring URL rewrites in Apache or IIS, but rewrites are also possible in CommandBox's embedded server via a [Tuckey servlet filter](http://tuckey.org/urlrewrite/) which uses an xml configuration.
 
-Commandbox also exposes a way to do url rewrites with the Undertow predicate language. If you missed the (Server Rules)[/embedded-server/configuring-your-server/server-rules] section, go there to learn how to do url rewrites, security, and http header modification in a nice text based language (non-xml). 
+Commandbox also exposes a way to do url rewrites with the Undertow predicate language. If you missed the [Server Rules](/embedded-server/configuring-your-server/server-rules) section, go there to learn how to do url rewrites, security, and http header modification in a nice text based language (non-xml). 
 
 ## Default Rules
 
