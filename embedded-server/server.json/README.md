@@ -31,16 +31,16 @@ Every time you start a server, the settings used to start it are saved in a `ser
             "image": "/path/to/image.png"
         },
         {
-			"label":"Open VScode",
-			"action":"runAsync",
-			"command":"code .", //command is run relative to webroot, for box commands begin command with `box`
+	    "label":"Open VScode",
+	    "action":"runAsync",
+	    "command":"code .", //command is run relative to webroot, for box commands begin command with `box`
             "disabled": false,
             "image": "/path/to/image.png"
         },
         {
-			"label":"Open Webroot",
-			"action":"openfilesystem",
-			"path":"./", //path is relative to your webroot
+	    "label":"Open Webroot",
+	    "action":"openfilesystem",
+	    "path":"./", //path is relative to your webroot
             "disabled": false,
             "image": "/path/to/image.png"
         }
