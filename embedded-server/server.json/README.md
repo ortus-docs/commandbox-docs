@@ -48,7 +48,11 @@ Every time you start a server, the settings used to start it are saved in a `ser
     "jvm": {
         "heapSize": 512,
         "minHeapSize": 256,
-        "args": "",
+        "args" : [ //can be a string or an array
+	   "-XX:+UseG1GC",
+	   "-XX:-CreateMinidumpOnCrash",
+	   "--add-opens=java.base/java.net=ALL-UNNAMED"
+	],
         "javaHome" : "/path/to/java/home",
         "javaVersion" : "openjdk11"
     },
@@ -139,7 +143,12 @@ Every time you start a server, the settings used to start it are saved in a `ser
     },
     "runwar": {
         "jarPath": "/path/to/runwar.jar",
-        "args": "",
+        "args" : [ //can be a string or an array
+	     "--runwar-option",
+	     "value",
+	     "--runwar-option2",
+	     "value2"
+	]
         "XNIOOptions": {
             "WORKER_NAME": "MyWorker"
         },
