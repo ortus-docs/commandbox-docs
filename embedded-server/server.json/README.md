@@ -4,10 +4,6 @@ Every time you start a server, the settings used to start it are saved in a `ser
 
 `/server.json`
 
-{% content-ref url="embedded-server/configuring-your-server/custom-tray-menus.md" %}
-[Custom Tray Menus](embedded-server/configuring-your-server/custom-tray-menus.md)
-{% endcontent-ref %}
-
 ```javascript
 {
     "name": "",
