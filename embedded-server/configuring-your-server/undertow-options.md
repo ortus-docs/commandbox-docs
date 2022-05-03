@@ -25,9 +25,9 @@ config set server.defaults.runwar.undertowOptions.WORKER_NAME=myWorker
 
 ## XNIO Options
 
-XNIO \(which is a refined version of NIO \(Non-blocking I/O\) has its own set of options that apply to the low level network transport functions it provides.  You can find the full set of XNIO options here:
+XNIO (which is a refined version of NIO (Non-blocking I/O) has its own set of options that apply to the low level network transport functions it provides.  You can find the full set of XNIO options here:
 
-{% embed url="https://docs.jboss.org/xnio/3.1/api/org/xnio/Options.html" %}
+{% embed url="https://javadoc.io/doc/org.jboss.xnio/xnio-api/latest/org/xnio/Options.html" %}
 
 To set an XNIO option that CommandBox doesn't already expose with a first-class setting, you can set them into your `server.json` like so:
 
@@ -40,4 +40,3 @@ You can also set global XNIO objects that will apply to all servers.  Global opt
 ```bash
 config set server.defaults.runwar.XNIOOptions.WORKER_NAME=myWorker
 ```
-
