@@ -76,23 +76,3 @@ server list --json | printTable name,host,port,status
 ║ FRDemos                    │ 127.0.0.1                │ 50458 │ stopped ║
 ╚══════════════════════════════╧═════════════════════════════╧═══════╧══════════╝
 ```
-
-## Terminal Width
-
-If you are running inside a build server, the terminal width will use a default setting, which may be smaller than you wish.  Terminal width can be overridden for entire CLI
-
-```
-config set terminalWidth=150
-```
-
-or for a specific `printTable` command
-
-```
-#extensionlist | printTable width=150
-```
-
-or for a specific `print.table()` call
-
-```
-print.table( data=qry, width=150 )
-```

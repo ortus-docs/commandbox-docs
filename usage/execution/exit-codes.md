@@ -68,14 +68,6 @@ You can use a single semi colon (`;`) to separate commands and each command will
 mkdir foo; echo "I always run"
 ```
 
-### Chaining Commands
-
-You can have more than two chained commands, and the command chain will keep executing so long as the next part is compatible with the previous exit code.  Ex:
-
-```
-assertTrue false && echo "it was true!" || echo "back on track"; echo "regardless"
-```
-
 ## Assertions
 
 With the above building blocks, we can get clever to create simple conditionals to only run commands if a condition is met. Or these can simply be used to cause recipes to stop execution or to fail builds based on a condition. The following commands output nothing, but they return an appropriate exit code based on their inputs.
@@ -105,16 +97,6 @@ assertTrue ${ENABLE_DOOM} && run-doom
 assertTrue `#fileExists foo.txt` && echo "it's there!"
 ```
 
-### assertFalse
-
-Returns a passing (0) or failing (1) exit code whether falsy parameter passed. Truthy values are "yes", "true" and positive integers. All other values are considered falsy
-
-```
-assertFalse false && echo "The inputs was false"
-```
-
-
-
 ### assertEqual
 
 Returns a passing (0) or failing (1) exit code whether both parameters match. Comparison is case insensitive.
@@ -123,12 +105,3 @@ Returns a passing (0) or failing (1) exit code whether both parameters match. Co
 assertEqual `package show name` "My Package" || package set name="My Package"
 assertEqual ${ENVIRONMENT} production && install --production
 ```
-
-### assertNotEqual
-
-Returns a passing (0) or failing (1) exit code whether both parameters DO NOT match. Comparison is case insensitive.
-
-```
-assertNotEqual "foo" "bar" && echo "The inputs are not equal"
-```
-

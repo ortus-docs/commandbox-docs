@@ -34,11 +34,11 @@ Here are some additional ModCFML settings you may want to tweak:
 
 #### maxContexts
 
-This limits the number of contexts which can be created to prevent a malicious client from causing a DOS from a huge number of contexts, which would eventually begin consuming memory.
+This limits the number of contexts which can be created to prevent a malicious client from causing a DOS from a huge number of contexts, which would eventually begin consuming memory.  Default is `200`.
 
 #### requireSharedKey
 
-Set this to `true` FOR DEVELOPMENT PURPOSES ONLY to not require the shared key header to be present.  This may simplify your local setup, but do NOT enable this on any externally-accessible web server as a malicious client could send their own HTTP headers and serve content from anywhere on your server's hard drive!
+Set this to `true` FOR DEVELOPMENT PURPOSES ONLY to not require the shared key header to be present.  This may simplify your local setup, but do NOT enable this on any externally-accessible web server as a malicious client could send their own HTTP headers and serve content from anywhere on your server's hard drive!  Default is `true`.
 
 ### **Unsupported Configuration**
 

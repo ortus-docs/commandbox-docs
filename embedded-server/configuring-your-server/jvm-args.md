@@ -49,28 +49,6 @@ server set JVM.args="-XX:MaxGCPauseMillis\=200"
 server show JVM.args
 ```
 
-JVM args can also be set an array of strings which prevents you from needing to escape or quote anything. &#x20;
-
-```
-{
-  "jvm" : {
-    "args" : [
-       "-XX:+UseG1GC",
-       "-XX:-CreateMinidumpOnCrash",
-       "--add-opens=java.base/java.net=ALL-UNNAMED"
-    ]
-  }
-}
-```
-
-Or via the CLI like so:
-
-```
-server set jvm.args=["-XX:+UseG1GC"]
-server set jvm.args=["-XX:-CreateMinidumpOnCrash"] --append
-server set jvm.args=["--add-opens=java.base/java.net=ALL-UNNAMED"] --append
-```
-
 ## Ad Hoc Runwar Options
 
 You can specify ad-hoc options for the underlying Runwar library using the `RunwarArgs` parameter.
@@ -84,26 +62,4 @@ In `server.json`
 ```bash
 server set runwar.args="--sendfile-enable false"
 server show runwar.args
-```
-
-Runwar args can also be set an array of strings which prevents you from needing to escape or quote anything. &#x20;
-
-```
-{
-  "runwar" : {
-    "args" : [
-      "--runwar-option",
-      "value",
-      "--runwar-option2",
-      "value2"
-    ]
-  }
-}
-```
-
-Or via the CLI like so:
-
-```
-server set runwar.args=["--runwar-option","value"]
-server set runwar.args=["--runwar-option2","value2"] --append
 ```
