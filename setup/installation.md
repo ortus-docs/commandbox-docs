@@ -122,7 +122,8 @@ gpgcheck=0
 Then run:
 
 ```bash
-sudo yum update && yum install commandbox
+sudo yum update
+sudo yum install commandbox
 ```
 
 ## Debian Linux manual install
