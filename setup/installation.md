@@ -140,5 +140,5 @@ Run the `box` binary to begin the one-time unpacking process.
 After you have downloaded the `commandbox.rpm` file, install it using the `rpm` command.
 
 ```bash
-rpm –ivh commandbox-rpm-1.2.3.rpm
+rpm -ivh commandbox-rpm-1.2.3.rpm
 ```
