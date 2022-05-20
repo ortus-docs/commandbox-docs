@@ -67,7 +67,7 @@ The rest of the changes don't really need a dedicated section but they're worth 
 * You can now **touch** files in a non-existent directory and it will create the directory instead of erroring.
 * Viewing a ForgeBox package via **package show** with a markdown based description, now has basic formatting in the CLI
 * The default URL rewrite file doesn't try to rewrite requests to **/favicon.ico** even when it doesn't exist.
-* Our CF11 servers no longer have secure profile enabled. That was causing issues due to some of the settings like returning 200 on error.   If you were making use of that default, please use [CFConfig](https://cfconfig.ortusbooks.com) to set what you need.
+* Our CF11 servers no longer have secure profile enabled. That was causing issues due to some of the settings like returning 200 on error.   If you were making use of that default, please use [CFConfig](https://cfconfig.ortusbooks.com/) to set what you need.
 * At John Farrar's request, several URLs in output messages have had space put before and after them so capable shells will auto-link them correctly.&#x20;
 * Improved the Java networking error messages on server start if the host name wasn't correct in your host file and you were letting CommandBox pick a random port for you.
 * Prevented unnecessary saves to **box.json** when installing to keep file updated dates from being touched.

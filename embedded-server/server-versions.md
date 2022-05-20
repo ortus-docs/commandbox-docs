@@ -14,7 +14,7 @@ One minor difference to keep in mind is Lucee server and Adobe ColdFusion use a 
 5.3.4.80
 ```
 
-However, [CommandBox](https://commandbox.ortusbooks.com) and [ForgeBox](https://www.forgebox.io) use the [npm-flavored semantic versioning](https://commandbox.ortusbooks.com/package-management/semantic-versioning) (semver) which is slightly different.  Basically the build ID is moved to the end after a plus (+) sign.
+However, [CommandBox](https://commandbox.ortusbooks.com/) and [ForgeBox](https://www.forgebox.io/) use the [npm-flavored semantic versioning](https://commandbox.ortusbooks.com/package-management/semantic-versioning) (semver) which is slightly different.  Basically the build ID is moved to the end after a plus (+) sign.
 
 ```bash
 <major>.<minor>.<patch>[-<preReleaseID>]+<build>
@@ -76,7 +76,7 @@ server start cfengine=lucee@5.3.7+48
 
 ## **Lucee Light builds on ForgeBox**
 
-Lucee has a modular core and comes bundled with a bunch of extensions that approximate the functionality that comes bundled with Adobe ColdFusion.  But that means you are loading the Hibernate libraries, PDF libraries or JDBC drivers even if you don't need them. There is a second type of Lucee server called "Lucee Light" which contains all the core engine, but with zero extensions.  People creating custom docker builds for example will start with Lucee Light and then add back only the extensions their app needs.  To get a feel for all the Lucee extensions available, see [this page](https://download.lucee.org) that lists all official extensions.
+Lucee has a modular core and comes bundled with a bunch of extensions that approximate the functionality that comes bundled with Adobe ColdFusion.  But that means you are loading the Hibernate libraries, PDF libraries or JDBC drivers even if you don't need them. There is a second type of Lucee server called "Lucee Light" which contains all the core engine, but with zero extensions.  People creating custom docker builds for example will start with Lucee Light and then add back only the extensions their app needs.  To get a feel for all the Lucee extensions available, see [this page](https://download.lucee.org/) that lists all official extensions.
 
 We're now publishing CF Engines to ForgeBox based on the Lucee Light builds which allows you to start up a Lucee Light server. These are under a ForgeBox package named `lucee-light` and we've also backfilled all the same versions that exist for the normal `lucee` engine.  Note, the three bullets points above apply to Lucee Light as well,  Just replace `lucee` with `lucee-light` and you're good to go.
 

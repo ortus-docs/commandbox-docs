@@ -143,4 +143,4 @@ And one final trick. You can string together any of the ranges we showed above w
 1.x || >=2.5.0 || 5.0.0 - 7.2.3
 ```
 
-If you want more reading or examples, check out the [home page for semver](http://semver.org) as well as the docs for the [npm semver library](https://github.com/npm/node-semver/blob/master/README.md). You can also peruse the [unit test suite](https://github.com/Ortus-Solutions/commandbox/blob/development/tests/cfml/system/util/TestSemanticVersion.cfc) I have for the CommandBox semver library here which tests every possible combination.
+If you want more reading or examples, check out the [home page for semver](http://semver.org/) as well as the docs for the [npm semver library](https://github.com/npm/node-semver/blob/master/README.md). You can also peruse the [unit test suite](https://github.com/Ortus-Solutions/commandbox/blob/development/tests/cfml/system/util/TestSemanticVersion.cfc) I have for the CommandBox semver library here which tests every possible combination.

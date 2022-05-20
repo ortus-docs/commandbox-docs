@@ -11,7 +11,7 @@ What do you want to do with VSC?
 
 ## Installing VSCode
 
-This IDE has it's own domain. ( [https://code.visualstudio.com/](https://code.visualstudio.com) ) with downloads for **macOS**, **Windows** and **Linux** on the home page. :+1:
+This IDE has it's own domain. ( [https://code.visualstudio.com/](https://code.visualstudio.com/) ) with downloads for **macOS**, **Windows** and **Linux** on the home page. :+1:
 
 ![Visual Studio Code Snapshot](https://code.visualstudio.com/home/home-screenshot-win-lg.png)
 

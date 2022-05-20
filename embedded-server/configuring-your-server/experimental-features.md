@@ -84,5 +84,41 @@ server set runwar.args="--cache-servlet-paths=true"
 
 Standard Adobe ColdFusion installations have a similar cache of "real" paths from the servlet context that is tied to a setting in the administrator called "Cache Webserver paths" but that setting is not available and does not work on CommandBox servers for some reason..
 
+## Custom Log Pattern
 
+The Java logging library Log4j is used for servers' log files and console logs.  The default logging pattern is:
 
+```
+[%-5p] %c: %m%n
+```
+
+You can customize this with any valid Log4j pattern layout, which you can find here:
+
+{% embed url="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html" %}
+
+This would put the date/time into every log message:
+
+```
+server set runwar.args='--log-pattern "[%-5p] %d{dd MMM yyyy HH:mm:ss.SSS} %c: %m%n"'
+```
+
+This would log ONLY the message with no severity or category:
+
+```
+server set runwar.args='--log-pattern "%m%n"'
+```
+
+Note, the color coding of log lines in CommandBox is dependent upon the default Log4j pattern layout.
+
+## Disable Resource Manager Change Listener
+
+There is an XNIO file system watcher started for the web root and any virtual directories in your server. This change listener serves two purposes:
+
+* Cache invalidation for the servlet path lookup matching
+* Cache invalidation for welcome file lookups
+
+In normal operations you should have no issues with this, but it has been observed starting a server in a web root with a very large number of files (like over 200,000) can consume a lot of resources, and even cause out of memory errors.  The change listener in Undertow can be disabled with this setting:
+
+```
+server set runwar.args='--resource-manager-file-system-watcher=false'
+```

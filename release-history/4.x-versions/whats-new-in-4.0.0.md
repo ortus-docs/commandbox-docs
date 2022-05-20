@@ -25,7 +25,7 @@ There are currently 69 tickets that are part of the 4.0 release. You can view th
 
 ### 256 Color support
 
-This is dependant on your terminal, but the CLI now can look a lot prettier. For Mac users, this will probably work out of the box. For Windows users, **cmd** won't cut it. We recommend checking out [**ConEMU**](https://conemu.github.io) as a sweet, tabbed terminal replacement. To see what kind of punch your terminal packs, run this new command:
+This is dependant on your terminal, but the CLI now can look a lot prettier. For Mac users, this will probably work out of the box. For Windows users, **cmd** won't cut it. We recommend checking out [**ConEMU**](https://conemu.github.io/) as a sweet, tabbed terminal replacement. To see what kind of punch your terminal packs, run this new command:
 
 ```
 system-colors

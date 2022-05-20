@@ -102,6 +102,18 @@ system-log | tail lines=50
 tail myLogFile.txt --follow
 ```
 
+### Head Command
+
+Similar to the `tail` command you can also capture the TOP x lines of a file.&#x20;
+
+```bash
+# Pass file name
+system-log | head
+ 
+# Pass text directly
+cat data.txt | head lines=5
+```
+
 ### Ad-hoc Java properties for the CLI
 
 If you want to add ad-hoc Java Properties to the actual CLI process, you can set an environment variable in your OS called `BOX_JAVA_PROPS` in this format:

@@ -17,13 +17,13 @@ CommandBox> start WARPath=/var/www/myApp.war
 
 ### ForgeBox 2.0 API
 
-We'v released a brand new [ForgeBox.io](https://www.forgebox.io) site with a new UI, fresh features, and a shiny new API.  CommandBox 3.1.1 is now powered by the new ForgeBox site and API which includes features like having more than one version for a package. &#x20;
+We'v released a brand new [ForgeBox.io](https://www.forgebox.io/) site with a new UI, fresh features, and a shiny new API.  CommandBox 3.1.1 is now powered by the new ForgeBox site and API which includes features like having more than one version for a package. &#x20;
 
 ![](https://www.ortussolutions.com/\_\_media/forgebox2.0.png)
 
 ### Semantic Versioning support
 
-When you install packages from [ForgeBox](https://www.forgebox.io), you can use fancy semver ranges to specify the versions of a package you're willing to install.  CommandBox will automatically grab the latest version that satisfies your version range.  This also applies to the "update" command which makes keeping your projects' dependencies up-to-date even easier.
+When you install packages from [ForgeBox](https://www.forgebox.io/), you can use fancy semver ranges to specify the versions of a package you're willing to install.  CommandBox will automatically grab the latest version that satisfies your version range.  This also applies to the "update" command which makes keeping your projects' dependencies up-to-date even easier.
 
 ```bash
 # A specific version
@@ -41,7 +41,7 @@ CommandBox> install "foo@>5.2 <=6.3.4"
 
 ### Create user from CLI
 
-Another feature of the new [ForgeBox](https://www.forgebox.io) site is the ability to create a new ForgeBox user right from the CLI.  After creation, you'll be logged in with your ForgeBox API Key which let's you update your packages.
+Another feature of the new [ForgeBox](https://www.forgebox.io/) site is the ability to create a new ForgeBox user right from the CLI.  After creation, you'll be logged in with your ForgeBox API Key which let's you update your packages.
 
 ```bash
 CommandBox> forgebox register
@@ -73,7 +73,7 @@ You can now run commands of your choosing automatically when certain events in t
 
 ## Have Fun
 
-We hope you enjoy playing with the new features.  As always, jump on our [mailing list](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox), or the [CFML slack team](https://cfml-slack.heroku.com) with any questions or feedback.  And remember, we provide tools like CommandBox CLI free of charge to the community as [professionally-supported ](https://www.ortussolutions.com/#services)[open source](https://www.ortussolutions.com/#services).   If you have specific needs in the form of features or training for your team, Ortus is here to help you.  [Contact us](https://www.ortussolutions.com/#contact) with any questions.
+We hope you enjoy playing with the new features.  As always, jump on our [mailing list](https://groups.google.com/a/ortussolutions.com/forum/#!forum/commandbox), or the [CFML slack team](https://cfml-slack.heroku.com/) with any questions or feedback.  And remember, we provide tools like CommandBox CLI free of charge to the community as [professionally-supported ](https://www.ortussolutions.com/#services)[open source](https://www.ortussolutions.com/#services).   If you have specific needs in the form of features or training for your team, Ortus is here to help you.  [Contact us](https://www.ortussolutions.com/#contact) with any questions.
 
 ## Release Notes
 

@@ -89,3 +89,51 @@ config show tabCompleteInline
 ```
 
 ![](<../.gitbook/assets/image (7).png>)
+
+## developerMode
+
+The `developerMode` setting reloads shell before each command to help testing changes to CommandBox core or modules.
+
+```
+config set developerMode=true
+```
+
+It will prevent you from needing to use the `reload` command, but it will cause a delay before each command.  Don't forget to turn this back off when you're done.
+
+## terminalWidth
+
+Terminal width can be overridden for entire CLI.  This will affect ASCII art, interactive job output, progress bars, and the table printer.
+
+```
+config set terminalWidth=150
+```
+
+## offlineMode
+
+The `offlineMode` setting will disable most external HTTP calls.  This can be useful for
+
+* testing production server starts to ensure they aren’t reliant on external calls
+* running `box` in a secure network which blocks or flags any external access
+
+```bash
+# enable offline mode
+config set offlineMode=true
+
+# go back to normal
+config set offlineMode=falses
+```
+
+&#x20;This setting is obeyed in the following parts of CommandBox:
+
+* commandbox-update-check module
+* installation endpoints
+  * forgebox
+  * http/https/cached+http/cached\_https
+  * git/git+ssh/git+https/github
+  * java
+  * lex
+  * jar
+  * CFLib
+  * S3
+* upgrade command
+* inside the progressable downloader class

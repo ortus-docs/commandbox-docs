@@ -4,14 +4,14 @@
 
 After almost a year in development, we are so excited to finally announce the release of [CommandBox 1.0.0 Final](https://www.ortussolutions.com/products/commandbox).  This has been definitely one of the most challenging and fun projects we have overtaken here at Ortus.  We had a vision of how we could accelerate not only development, tools and ultimately the ColdFusion (CFML) landscape by building a tool that could put us up to par with many other technologies.  I am glad to say we have now a great foundation to move forward.  CommandBox brings CFML to any Operating System and even embedded systems like the Raspberry and Banana Pi.  It also gives ColdFusion (CFML) developers a much better workflow to work with their projects and a sense of community we lovingly call [ForgeBox](http://www.coldbox.org/forgebox). &#x20;
 
-With anything we do here at Ortus, it is fully documented using our new book formats.  So head on over to [commandbox.ortusbooks.com](http://commandbox.ortusbooks.com) to download or read the entire CommandBox documentation.  In the next coming weeks we will begin our CommandBox 5-week roadshow that will include weekly blogging tutorials and video presentations, so stay tuned as each week progresses.  So without further ado, I present to you project Gideon: CommandBox CLI!
+With anything we do here at Ortus, it is fully documented using our new book formats.  So head on over to [commandbox.ortusbooks.com](http://commandbox.ortusbooks.com/) to download or read the entire CommandBox documentation.  In the next coming weeks we will begin our CommandBox 5-week roadshow that will include weekly blogging tutorials and video presentations, so stay tuned as each week progresses.  So without further ado, I present to you project Gideon: CommandBox CLI!
 
 ## CommandBox
 
 CommandBox is a standalone, native tool for Windows, Mac, and Linux.  It provides a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art.  It includes a plethora of commands to interact with your Operating System, TestBox, ForgeBox, ContentBox, CacheBox, etc.  Built-in help is completely integrated for every command.  You can pop open a CommandBox shell in your terminal window and manually type commands, or even automate things externally via the CommandBox binary with your OS's native shell. &#x20;
 
 * [Download & Install CommandBox](https://www.ortussolutions.com/products/commandbox)
-* [Download-Read CommandBox Manual](http://commandbox.ortusbooks.com)
+* [Download-Read CommandBox Manual](http://commandbox.ortusbooks.com/)
 * [ForgeBox](http://www.coldbox.org/forgeBox)
 * [Vimeo Video Channel](https://vimeo.com/channels/commandbox)
 

@@ -24,4 +24,4 @@ writeOutput(emailBody);
 
 ### Connecting to SMTP Services Using SSL or TLS
 
-If you cannot connect to a SMTP server that requires `SSL` or `TLS`, like [Amazon SES](https://aws.amazon.com/ses/), one workaround is to install a local SMTP server and configure it as a relay to your SMTP server. This has been done successfully on Windows servers using [hMailServer](https://www.hmailserver.com) (free, opensource), which is fairly easy to install and configure as an SMTP relay.
+If you cannot connect to a SMTP server that requires `SSL` or `TLS`, like [Amazon SES](https://aws.amazon.com/ses/), one workaround is to install a local SMTP server and configure it as a relay to your SMTP server. This has been done successfully on Windows servers using [hMailServer](https://www.hmailserver.com/) (free, opensource), which is fairly easy to install and configure as an SMTP relay.

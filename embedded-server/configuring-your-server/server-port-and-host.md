@@ -40,6 +40,14 @@ server show web.SSL.enable
 server show web.SSL.port
 ```
 
+#### Setting SSL Enabled protocols
+
+You can customize what SSL protocols your HTTPS listener will respond to with the following XNIO option.  Supply a comma-delimited list of valid protocols. &#x20;
+
+```
+server set runwar.XNIOOptions.SSL_ENABLED_PROTOCOLS=TLSv1.3,TLSv1.2
+```
+
 ### HTTP/2
 
 HTTP/2 is a newer standard of HTTP supported by all modern browsers.  HTTP/2 is enabled by default any time you are using an HTTP/HTTPS listener, however all major browsers will only allow the server to negotiate HTTP/2 over an HTTPS connection.  HTTP/2 runs over the same port and only changes the exchange between the server and browser.  You can disable HTTP/2 support like so:

@@ -33,10 +33,12 @@ To set an XNIO option that CommandBox doesn't already expose with a first-class 
 
 ```bash
 server set runwar.XNIOOptions.WORKER_NAME=myWorker
+server set runwar.XNIOOptions.SSL_ENABLED_PROTOCOLS=TLSv1.3,TLSv1.2
 ```
 
 You can also set global XNIO objects that will apply to all servers.  Global options will be appended to server-level options.
 
 ```bash
 config set server.defaults.runwar.XNIOOptions.WORKER_NAME=myWorker
+config set server.defaults.runwar.XNIOOptions.SSL_ENABLED_PROTOCOLS=TLSv1.3,TLSv1.2
 ```

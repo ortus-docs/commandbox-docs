@@ -16,6 +16,8 @@ You can define a struct in your `box.json` called `scripts` that correspond to t
 
 Package scripts can be named after any valid interception point and can contain any valid command that you can run from the interactive shell.
 
+**Note:** _server-related package scripts can also be placed directly in the `server.json` for a server._ [Read more here.](../embedded-server/server-scripts.md)
+
 ## Ad-hoc package scripts
 
 You can also create ad-hoc scripts with arbitrary names that contain a collection of often-run commands.

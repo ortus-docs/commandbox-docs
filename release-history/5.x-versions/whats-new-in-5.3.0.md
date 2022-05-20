@@ -53,7 +53,7 @@ More Info: [https://commandbox.ortusbooks.com/embedded-server/configuring-your-s
 
 ### JMES JSON filtering / jq Command
 
-Thanks to a massive effort from Scott Steinbeck, the CFML world has a new [CF implementation](https://www.forgebox.io/view/jmespath) of the [JMES spec](https://jmespath.org), which is what powers the popular ["jq" (or JSON Query) bash command](https://stedolan.github.io/jq/). We've plugged this new library into CommandBox and exposed it in the following ways.
+Thanks to a massive effort from Scott Steinbeck, the CFML world has a new [CF implementation](https://www.forgebox.io/view/jmespath) of the [JMES spec](https://jmespath.org/), which is what powers the popular ["jq" (or JSON Query) bash command](https://stedolan.github.io/jq/). We've plugged this new library into CommandBox and exposed it in the following ways.
 
 We've added a new **jq** command which behaves roughly like the bash counterpart. You can pipe in JSON, or read the JSON from a file and apply a JSON query against it which can be used to filter, massage, rewrite, map, or filter the JSON into a new JSON object.
 
