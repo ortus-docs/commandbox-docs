@@ -39,7 +39,7 @@ package set location=forgeboxStorage
 
 When you publish a package, CommandBox will automatically zip up your package and send it to ForgeBox.
 
-## Forgebox \`publish\` Command
+## Forgebox `publish` Command
 
 When you run the `publish` command from the root of a package, the package will be created on ForgeBox.  If the package already exists in ForgeBox, the new version will be added.  If the version already exists, the package metadata will be updated. &#x20;
 
