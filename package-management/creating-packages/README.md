@@ -39,6 +39,20 @@ package set location=forgeboxStorage
 
 When you publish a package, CommandBox will automatically zip up your package and send it to ForgeBox.
 
+## Forgebox \`publish\` Command
+
+When you run the `publish` command from the root of a package, the package will be created on ForgeBox.  If the package already exists in ForgeBox, the new version will be added.  If the version already exists, the package metadata will be updated. &#x20;
+
+Most of the data about a package exists in the `box.json` such as name, slug, version, etc.  There are also some files read from disk by convention.  The `publish` command looks by convention for the following files (case insensitive) when publishing
+
+* `readme` - Maps to Package Description
+* `instructions` - Maps to Installation Instructions
+* `changelog` - Maps to Change Log
+
+Every file is checked for `.md`, `.txt`, and no extension in that order. &#x20;
+
+
+
 ## Publishing to ForgeBox from start to finish
 
 Below is an example of the commands that would take you from scratch to a published package:
