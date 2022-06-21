@@ -10,7 +10,7 @@ The key is the unique slug of the package and the value is the a semvar range, l
 
 ```javascript
 "dependencies" : {
-    "coldbox" : "x" // latest version from ForgeBox
+    "coldbox" : "stable" // latest version from ForgeBox
     "cborm" : "1.0.1", // a specific version from ForgeBox
     "private-package" : "C:\\libs\\foo", // local folder
     "private-package2" : "C:\\libs\\foo.zip", // local file
