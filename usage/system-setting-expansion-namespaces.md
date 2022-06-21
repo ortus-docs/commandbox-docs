@@ -81,6 +81,12 @@ ${serverinfo.serverHomeDirectory}
 ${serverinfo.serverHomeDirectory:defaultValue}
 ```
 
+To see all the possible properties you can acess in the `serverinfo` namespace, run this command:
+```bash
+server info --json
+```
+Every key in the outputted struct is a valid `serverinfo` property. 
+
 By default, the expansion looks at the default server in the current working directory.  To grab a server property by server name, use this syntax:
 
 ```javascript
