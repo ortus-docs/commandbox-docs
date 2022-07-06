@@ -18,7 +18,7 @@ That will create the following data in your `server.json`, which will be picked 
                 "brad":"pass",
                 "luis":"pass2"
             },
-            "enabled":"true"
+            "enable":"true"
         }
     }
 }
