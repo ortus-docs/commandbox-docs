@@ -104,7 +104,7 @@ After you've started a server at least once, you can use its server name to cont
 ```bash
 start lucee4
 start lucee5
-start adobe2106
+start adobe2016
 
 restart adobe2016
 stop lucee4
