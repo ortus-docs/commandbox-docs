@@ -57,7 +57,7 @@ CommandBox is professional open source software backed by [Ortus Solutions, Corp
 
 * Official Site: [http://www.ortussolutions.com/products/commandbox](http://www.ortussolutions.com/products/commandbox)
 * Source Code: [https://github.com/ortus-solutions/commandbox](https://github.com/ortus-solutions/commandbox)
-* Help Group: [https://community.ortussolutions.com/c/communities/commandbox/14](https://community.ortussolutions.com/c/communities/commandbox/14)
+* Ortus Community Forum: [https://community.ortussolutions.com/c/communities/commandbox/14](https://community.ortussolutions.com/c/communities/commandbox/14)
 * Bug Tracker: [https://ortussolutions.atlassian.net/browse/COMMANDBOX](https://ortussolutions.atlassian.net/browse/COMMANDBOX)
 * Twitter: [@ortussolutions](http://www.twitter.com/ortussolutions)
 * Facebook: [https://www.facebook.com/ortussolutions](https://www.facebook.com/ortussolutions)
