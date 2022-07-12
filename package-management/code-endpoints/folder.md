@@ -32,8 +32,8 @@ You can specify packages from folder endpoints as dependencies in your `box.json
 ```javascript
 {
     "dependencies" : {
-        "myPackage" : "/var/libs/myPackage/"
-        "myPackage2" : "C:\\websites\libs\\myPackage\\"
+        "myPackage" : "folder:/var/libs/myPackage/"
+        "myPackage2" : "folder:C:\\websites\libs\\myPackage\\"
     }
 }
 ```
