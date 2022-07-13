@@ -38,7 +38,7 @@ This limits the number of contexts which can be created to prevent a malicious c
 
 #### requireSharedKey
 
-Set this to `true` FOR DEVELOPMENT PURPOSES ONLY to not require the shared key header to be present.  This may simplify your local setup, but do NOT enable this on any externally-accessible web server as a malicious client could send their own HTTP headers and serve content from anywhere on your server's hard drive!  Default is `true`.
+Set this to `false` FOR DEVELOPMENT PURPOSES ONLY to not require the shared key header to be present.  This may simplify your local setup, but do NOT enable this on any externally-accessible web server as a malicious client could send their own HTTP headers and serve content from anywhere on your server's hard drive!  Default is `true`.
 
 ### **Unsupported Configuration**
 
