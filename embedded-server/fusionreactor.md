@@ -181,16 +181,28 @@ The CommandBox FusionReactor module has passthrough settings for every documente
 Here's the module setting, followed by the JVM arg it creates. Remember, you can use environment variables in your `server.json` to control these dynamically on a per-server basis!
 
 * **fusionreactor.password** - `fradminpassword`
+* **fusionreactor.cloudGroup** - `fr.cloud.group`
+* **fusionreactor.requestObfuscateParameters** - `fr.request.obfuscate.parameters`
+* **fusionreactor.autoApplicationNaming** - `fr.application.auto_naming`
+* **fusionreactor.defaultApplicationName** - `fr.application.name`
+
+
+* **fusionreactor.EDSEnable** - `fr.ed.ds.enable` (version added: 8.1.0) 
+* **fusionreactor.EDSListen** - `fr.ed.ds.listen` (version added: 8.1.0)
+* **fusionreactor.EDSPollTimeout** - `fr.ed.ds.polltimeout` (version added: 8.1.0)
+* **fusionreactor.EDSMaxDataSize** - `fr.ed.ds.maxdatasize` (version added: 8.2.2)
+* **fusionreactor.EDSTarget** - `fr.ed.ds.target` (version added: 8.1.0)
+* **fusionreactor.EDSGroups** - `fr.ed.ds.groups` (version added: 8.1.0)
+* **fusionreactor.ChatEnabled** - `fr.chat.enabled` (version added: 8.7.2)
+
+### Deprecated since 8.0.x
+
 * **fusionreactor.RESTRegisterURL** - `frregisterwith`
 * **fusionreactor.RESTShutdownAction** - `frshutdownaction`
 * **fusionreactor.RESTRegisterHostname** - `frregisterhostname`
 * **fusionreactor.RESTRegisterGroup** - `frregistergroup`
 * **fusionreactor.licenseDeactivateOnShutdown** - `frlicenseservice.deactivateOnShutdown`
 * **fusionreactor.licenseLeaseTimeout** - `frlicenseservice.leasetime.hint`
-* **fusionreactor.cloudGroup** - `fr.cloud.group`
-* **fusionreactor.requestObfuscateParameters** - `fr.request.obfuscate.parameters`
-* **fusionreactor.autoApplicationNaming** - `fr.application.auto_naming`
-* **fusionreactor.defaultApplicationName** - `fr.application.name`
 
 ## External Server
 
