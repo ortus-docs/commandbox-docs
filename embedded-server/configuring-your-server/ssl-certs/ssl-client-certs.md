@@ -10,6 +10,10 @@ To enable client certs to be negotiated by CommandBox SSL must be enabled, and t
 * **REQUESTED** - SSL client authentication is requested but not required. (same as “request” in IIS)
 * **REQUIRED** - SSL client authentication is required. (same as “require” in IIS)
 
+```bash
+server set web.ssl.clientCert.mode=required
+```
+
 ### Trust Store
 
 CommandBox will NOT use your OS trust store nor your Java trust store, nor Lucee Server's trust store by default to establish a trust chain for incoming client certs. You must specify the trusted root CA certs that you want trusted. ONLY client certs trusted by one of these CAs will be accepted. Any intermediate certs must also be included. You can specify a comma-delimited list of absolute or relative paths OR an array of strings in the `web.ssl.clientCert.CACertFiles` setting that point to any number of public keys in a DER format (typically .crt or .cer extension)

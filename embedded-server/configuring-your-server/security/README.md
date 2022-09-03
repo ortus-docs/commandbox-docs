@@ -8,7 +8,7 @@ There are currently two authentication mechanisms you can enable in CommandBox. 
 
 #### Basic Authentication
 
-Basic Authentication is built on a simple username/password list and challenges the user to provide credentials in their browser.  [Read more here](basic-authentication.md)
+Basic Authentication is built on a simple username/password list and challenges the user to provide credentials in their browser.  [Read more here](../basic-authentication.md)
 
 #### Client Cert Authentication
 

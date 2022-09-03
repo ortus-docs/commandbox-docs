@@ -1,4 +1,4 @@
-# SSL Certs
+# SSL Server Certs
 
 Turning on SSL in your web server will will enable SSL without an approved SSL certificate. If you need an official certificate so you don't have to confirm your SSL connection you can add these entries
 
