@@ -10,8 +10,10 @@ There are a number of automatically-mapped objects inside WireBox. Here are some
 property name='shell'           inject='commandbox';
 property name='tempDir'         inject='tempDir@constants';
 property name='formatterUtil'   inject='formatter';
-property name='ModuleService'   inject='ModuleService';
+property name='ModuleService'   inject='commandbox:ModuleService';
 property name='ConfigService'   inject='ConfigService';
+property name='InterceptorService'   inject='commandbox:interceptorService';
+property name='AsyncManager'   inject='commandbox:asyncManager';
 ```
 
 ## Custom Models
