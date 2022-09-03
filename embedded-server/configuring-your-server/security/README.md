@@ -12,7 +12,7 @@ Basic Authentication is built on a simple username/password list and challenges 
 
 #### Client Cert Authentication
 
-Client Cert auth is common for internal government sites and involves the user installing a private certificate on their PC which the server asks the browser to send while negotiation the SSL connection.  Client certs are a PKI cert, and often times are stored on a CAC which is a physical card issued to the user.
+Client Cert auth is common for internal government sites and involves the user installing a private certificate on their PC which the server asks the browser to send while negotiation the SSL connection.  Client certs are a PKI cert, and often times are stored on a CAC which is a physical card issued to the user. [Read more here](client-cert-authentication.md)
 
 #### More to Come
 
