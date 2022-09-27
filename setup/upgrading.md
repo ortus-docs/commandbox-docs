@@ -48,3 +48,12 @@ If you have used Hombrew to install CommandBox you must use Homebrew for any upg
 ```bash
 brew upgrade commandbox
 ```
+
+## Linux Update
+
+(Debian)
+```bash
+> sudo apt update
+
+> sudo apt upgrade commandbox
+```
