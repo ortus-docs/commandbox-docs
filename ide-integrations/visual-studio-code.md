@@ -25,7 +25,7 @@ Go to `File > Preferences > Settings` and search for `shell.windows`. Hover over
 
 `"terminal.integrated.shell.windows": "/path/to/box",`
 
-When adding a path, follow the rules for adding platform specific path seperators.
+When adding a path, follow the rules for adding platform specific path separators.
 
 ### Commandbox and Shells of Choice
 
