@@ -163,13 +163,13 @@ A common example would be getting a person with the highest or lowest networth `
 
 `avg: ( ARR )` - convert array of number to average (ex. \[1,2,3] -> 2)
 
-`first: ( ARR/STR )` - convience method to get the first item
+`first: ( ARR/STR )` - convenient method to get the first item
 
 `group_by: ( ARR )` - Splits a collection into sets
 
 `join: ( ARR, STR )` - concatenate an array of strings/numbers with a provided delimiter to a string
 
-`last: ( ARR/STR )` - convience method to get the last item
+`last: ( ARR/STR )` - convenient method to get the last item
 
 `matches: ( STR/ARR, searchTerm )` - regex match string
 
