@@ -54,7 +54,7 @@ Windows Registry Editor Version 5.00
 
 ## Installing on \*nix
 
-The `box` binary on \*nix uses your OS environment variables to locate Java. In the absense of an env var called `JAVA_HOME`, box will look for `java` in the default system path.
+The `box` binary on \*nix uses your OS environment variables to locate Java. In the absence of an env var called `JAVA_HOME`, box will look for `java` in the default system path.
 
 * **Oracle** - No manual action needed
 * **Azul** - No manual action needed
