@@ -20,7 +20,7 @@ commandbox_home=../boxHome
 
 Extract the executable **box.exe** from the downloaded zip file, placing it anywhere you prefer where you can then execute it when needed, such as from the Windows command line/terminal. You can also run it directly Windows File Explorer, where you would just double click on the exe,which will open the CommandBox shell in a new terminal window.
 
-> **Warning** On Windows 10 and above, the first time you try to run via Windows File Explorer an exe that you've downloaded, Windows Defender Smartscreen will popup with a warning that "Windows protected your PC". You will need to choose the offered "More info" link and then the offered "Run anway" button, to proceed.
+> **Warning** On Windows 10 and above, the first time you try to run via Windows File Explorer an exe that you've downloaded, Windows Defender Smartscreen will popup with a warning that "Windows protected your PC". You will need to choose the offered "More info" link and then the offered "Run anyway" button, to proceed.
 
 > **Hint** When running from the Windows command line/terminal, you can make it so that you can run `box.exe` while you are in any folder (not just the one where you placed it), by simply adding the exe's location to the Windows `PATH` system environment variable. See [http://www.computerhope.com/issues/ch000549.htm](http://www.computerhope.com/issues/ch000549.htm)
 
@@ -78,7 +78,7 @@ Unzip the binary **box** and just double click on it to open the shell terminal.
 
 ## Linux apt-get
 
-> **Please note** that if you are running Ubuntu 18.04 or greater, or Debian 8 (Jessie) or greater, it's necesarry to have the `libappindicator-dev` package in order to have the tray icon working correctly.
+> **Please note** that if you are running Ubuntu 18.04 or greater, or Debian 8 (Jessie) or greater, it's necessary to have the `libappindicator-dev` package in order to have the tray icon working correctly.
 
 ```bash
 sudo apt install libappindicator-dev
