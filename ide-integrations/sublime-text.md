@@ -12,7 +12,7 @@ A plugin to run your [Commandbox](https://www.ortussolutions.com/products/comman
 
 If you have [PackageControl](http://wbond.net/sublime\_packages/package\_control) installed, you can use it to install the package.
 
-Just type `cmd-shift-p`/`ctrl-shift-p` to bring up the command pallete and pick `Package Control: Install Package` from the dropdown, search and select the `CommandBox` package there and you're all set.
+Just type `cmd-shift-p`/`ctrl-shift-p` to bring up the command palette and pick `Package Control: Install Package` from the dropdown, search and select the `CommandBox` package there and you're all set.
 
 ### Manually
 
@@ -103,7 +103,7 @@ Defines the delay used to autoclose the panel or tab that holds the Commandbox r
 
 If true it will open the output panel when running [`Commandbox (silent)`](sublime-text.md#running-a-box-task) only if the task failed
 
-#### log\_erros
+#### log\_errors
 
 Toggles the creation of `sublime-commandbox.log` if any error occurs.
 
