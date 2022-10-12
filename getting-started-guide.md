@@ -4,7 +4,7 @@ Congratulations on your choice of CommandBox, the next generation of CFML produc
 
 ![In The Package](.gitbook/assets/in\_the\_package.png)
 
-Your CommandBox download was quality checked and shipped from our integration server with the following items. You'll want to check the contents of the package to ensure you received everthing.
+Your CommandBox download was quality checked and shipped from our integration server with the following items. You'll want to check the contents of the package to ensure you received everything.
 
 * CLI
 * Package Manager
