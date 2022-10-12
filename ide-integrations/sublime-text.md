@@ -103,7 +103,7 @@ Defines the delay used to autoclose the panel or tab that holds the Commandbox r
 
 If true it will open the output panel when running [`Commandbox (silent)`](sublime-text.md#running-a-box-task) only if the task failed
 
-#### log\_erros
+#### log\_errors
 
 Toggles the creation of `sublime-commandbox.log` if any error occurs.
 
