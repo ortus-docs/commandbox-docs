@@ -1,6 +1,6 @@
 # Misc Settings
 
-These are some one-off settings that doen't really belong anywhere else.
+These are some one-off settings that doesn't really belong anywhere else.
 
 ## nativeShell
 
@@ -28,7 +28,7 @@ config show tagVersion
 
 **string**
 
-Running the `bump` command from a Git repo will tag the repo using the format `v{version}` such as `v1.0.0` or `v4.3.6`. You can remove the `v` or swap it for another prefix using the `tagPrefix` parameter. Remember, another string like `foo1.2.3` will not be parseable by CommandBox as a valid semver. This setting can be overriden by the `tagPrefix` parameter to the `bump` command.
+Running the `bump` command from a Git repo will tag the repo using the format `v{version}` such as `v1.0.0` or `v4.3.6`. You can remove the `v` or swap it for another prefix using the `tagPrefix` parameter. Remember, another string like `foo1.2.3` will not be parseable by CommandBox as a valid semver. This setting can be overridden by the `tagPrefix` parameter to the `bump` command.
 
 ```bash
 config set tagPrefix=''
@@ -136,4 +136,4 @@ config set offlineMode=falses
   * CFLib
   * S3
 * upgrade command
-* inside the progressable downloader class
+* inside the progressible downloader class
