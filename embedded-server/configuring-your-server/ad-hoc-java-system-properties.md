@@ -2,11 +2,11 @@
 
 You've always been able to add ad-hoc Java system properties for a server in your `server.json` via `jvm.args` in the format of `-Dfoo=bar`.  There is also a top-level struct that is more readable which does the same thing:
 
-```
+```json
 {
   "jvm" : {
     "properties" : {
-       "foo" : "bar baz"
+       "foo" : "bar baz",
        "java.awt.headless" : "true"
     }
 }
@@ -16,13 +16,13 @@ No additional quoting or escaping is needed for spaces or special characters whe
 
 Set these programmatically like so:
 
-```
+```bash
 server set jvm.properties.java.awt.headless=true
 ```
 
 Or set them globally for all servers in your config setting server defaults.
 
-```
+```bash
 config set server.defaults.jvm.properties.java.awt.headless=true
 ```
 
