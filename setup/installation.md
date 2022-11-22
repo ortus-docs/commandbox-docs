@@ -91,12 +91,9 @@ Run the following series of commands to add the Ortus signing key, register our 
 ( This first install routine also works for the Raspberry Pi. )
 
 ```bash
-wget -O- https://downloads.ortussolutions.com/debs/gpg |\
-    gpg --dearmor |\
-    sudo tee /usr/share/keyrings/ortussolutions.gpg > /dev/null
+curl -fsSl https://downloads.ortussolutions.com/debs/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/ortussolutions.gpg > /dev/null
 
-echo "deb [signed-by=/usr/share/keyrings/ortussolutions.gpg] https://downloads.ortussolutions.com/debs/noarch /" |\
-    sudo tee /etc/apt/sources.list.d/commandbox.list
+echo "deb [signed-by=/usr/share/keyrings/ortussolutions.gpg] https://downloads.ortussolutions.com/debs/noarch /" | sudo tee /etc/apt/sources.list.d/commandbox.list
 
 sudo apt-get update && sudo apt-get install apt-transport-https commandbox
 ```
