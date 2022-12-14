@@ -60,7 +60,7 @@ When profile is set to "**development**", the following defaults are provided:
 
 When profile is set to "**none**", the following defaults are provided:
 
-* `web.directoryListing` = true
+* `web.directoryListing` = false
 * `web.blockCFAdmin` = false
 * `web.blockSensitivePaths` = false
 * `web.blockFlashRemoting` = false
