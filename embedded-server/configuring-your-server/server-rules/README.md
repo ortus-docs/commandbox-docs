@@ -28,7 +28,7 @@ For maximum configuration options, the following mechanisms are supported for sp
 2. External rules files in `server.json` in the order defined
 3. Ad-hoc rule array in config setting `server.defaults`
 4. External rules files in config setting `server.defaults` in the order defined
-5. CommandBox built-in rules (`web.blockCFAdmin`, `web.blockConfigPaths`)
+5. CommandBox built-in rules (`web.blockCFAdmin`, `web.blockSensitivePaths`)
 6. Any module listening to server interceptions can inject their rules _wherever they please in the array_.
 
 ### `server.json` Rules
