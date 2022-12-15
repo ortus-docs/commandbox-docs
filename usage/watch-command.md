@@ -3,7 +3,7 @@
 There are some specific commands that make use of the Watcher library in CommandBox such as `testbox watch` and `coldbox watch-reinit`. However, there is also a generic watch command that will run any arbitrary command of your choosing when a path matching your file globbing pattern is added/updated/deleted.
 
 ```bash
-watch *.json "echo 'config file updated!'"
+watch paths=*.json command="echo 'config file updated!'"
 ```
 
 The following environment variables will be available to your command
