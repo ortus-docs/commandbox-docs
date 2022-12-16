@@ -30,7 +30,7 @@ Each menu item struct can have the following keys.  Only `label` is required.&#x
 * **path** - The file system path to use for the `openfilesystem` action.
 * **url** - The HTTP URL to use for the `openbrowser` action
 * **image** - A custom image file to use for the icon. Relative paths in the `server.json` will be relative to the JSON file  Relative paths in the global config will be relative to the web root of the server.
-  * **command** - The native command to run for the `run`, `runAsync`, or `runTerminal` actions.
+* **command** - The native command to run for the `run`, `runAsync`, or `runTerminal` actions.
 * **workingDirectory** - The working directory to use for the `run`, `runAsync` or `runTerminal` actions.
 * **shell** - Override the native shell to use on your OS.  Defaults to your `nativeShell` config setting.
 * **items** - An array that contains a struct of sub menus.
