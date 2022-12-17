@@ -53,7 +53,7 @@ Here's an example of what your config could look like:
 	"CACertFiles" : "rootCA.cer,anotherRootCA.cer",
 	// OR...
 	"CACertFiles" : [
-    	"rootCA.cer",
+    	  "rootCA.cer",
           "anotherRootCA.cer"
 	],
 	"CATrustStoreFile' : "cacerts",
