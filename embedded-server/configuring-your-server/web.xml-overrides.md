@@ -28,7 +28,6 @@ Here is a list of all the top level items CommandBox will look for in your `web.
 So if you wanted to replace the default servlet mapping for a Lucee server to also process `.html` files, you could use an override file like this:
 
 ```markup
-<?xml version="1.0" encoding="utf-8"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metadata-complete="true" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 <web-app>
     <servlet-mapping>
     <servlet-name>CFMLServlet</servlet-name>
