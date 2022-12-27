@@ -1,10 +1,10 @@
 # Hitting Your Database
 
-One very handy thing can be to write tasks perform database manipulations. Your code is executed on Lucee Server 5.2 which is the version of Lucee that the core CLI runs on. The CLI has the full power of a Lucee server running under the covers, but there's no web-based administrator for you to acess to do things like adding datasources for your scripts to use. It would considered poor form anyway since standalone scripts are best if they're self-contained and don't have external dependencies like server settings necessary to run.
+One very handy thing can be to write tasks to perform database manipulations. Your code is executed on Lucee Server 5.2 which is the version of Lucee that the core CLI runs on. The CLI has the full power of a Lucee server running under the covers, but there's no web-based administrator for you to acess to do things like adding datasources for your scripts to use. It would considered poor form anyway since standalone scripts are best if they're self-contained and don't have external dependencies like server settings necessary to run.
 
 ## Lucee allows datasource to be a struct
 
-So the easiest way to accomplish this is simply to exploit a little known but very cool feature of Lucee that allows the `datasource` attribute of most tags to be not only a string which contains the name of the datasource, but also a struct that contains the _definitiion_ of the datasource. This will create an on-the-fly connection to your database without any server config being necessary which is perfect for a stand-alone script. Here is what that looks like. Note, I'm using `queryExecute()`, but it would work just as well in a `cfquery` tag.
+So the easiest way to accomplish this is simply to exploit a little known but very cool feature of Lucee that allows the `datasource` attribute of most tags to be not only a string which contains the name of the datasource, but also a struct that contains the _definition_ of the datasource. This will create an on-the-fly connection to your database without any server config being necessary which is perfect for a stand-alone script. Here is what that looks like. Note, I'm using `queryExecute()`, but it would work just as well in a `cfquery` tag.
 
 ```javascript
 ds = {
