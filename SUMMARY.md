@@ -98,6 +98,7 @@
   * [JSON Settings](config-settings/json-settings.md)
   * [Misc Settings](config-settings/misc-settings.md)
   * [Task Runner Settings](config-settings/task-runner-settings.md)
+  * [Setting Sync](config-settings/setting-sync.md)
   * [Env Var Overrides](config-settings/env-var-overrides.md)
 * [Embedded Server](embedded-server/README.md)
   * [Multi-Engine Support](embedded-server/multi-engine-support.md)
