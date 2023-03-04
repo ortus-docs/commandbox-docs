@@ -3,7 +3,7 @@
 CommandBox servers have a method of locking down secure URLs and or implementing any of the Undertow predicate and handlers via a nice text based language. Undertow supports a “predicate language” that allows a string to be parsed into a graph of predicates (conditions) and handlers (actions to take). Ex:
 
 ```javascript
-path-suffix(/box.json) -> set-error(404)
+path-suffix-nocase(/box.json) -> set-error(404)
 ```
 
 These rules can be used for any of the following:
@@ -39,9 +39,9 @@ You can specify ad-hoc rules in the `web.rules` property as an array of strings 
 {
     "web" : {
         "rules" : [
-            "path-suffix(/box.json) -> set-error(404)",
-            "path-suffix(hidden.js) -> set-error(404)",
-            "path-prefix(/admin/) -> ip-access-control(192.168.0.* allow)",
+            "path-suffix-nocase(/box.json) -> set-error(404)",
+            "path-suffix-nocase(hidden.js) -> set-error(404)",
+            "path-prefix-nocase(/admin/) -> ip-access-control(192.168.0.* allow)",
             "path(/sitemap.xml) -> rewrite(/sitemap.cfm)",
         "disallowed-methods(trace)"
         ],
@@ -59,8 +59,8 @@ External rule files with a `.json` suffix will be expected to be a valid JSON fi
 {% code title="myRuleFile.json" %}
 ```javascript
 [
-  "path-suffix(/box.json) -> set-error(404)",
-  "path-suffix(hidden.js) -> set-error(404)"
+  "path-suffix-nocase(/box.json) -> set-error(404)",
+  "path-suffix-nocase(hidden.js) -> set-error(404)"
 ]
 ```
 {% endcode %}
@@ -69,8 +69,8 @@ External rule files with any extension OTHER than `.json` will be expected to be
 
 {% code title="myRuleFile.txt" %}
 ```
-path-suffix(/box.json) -> set-error(404)
-path-suffix(hidden.js) -> set-error(404)
+path-suffix-nocase(/box.json) -> set-error(404)
+path-suffix-nocase(hidden.js) -> set-error(404)
 ```
 {% endcode %}
 
@@ -93,6 +93,6 @@ You can comment out any rule (whether it's in JSON or a text file) by proceeding
 # Here is a comment that will be ignored
 
 # The following rule also won't be run
-# path-suffix(hidden.js) -> set-error(404)
+# path-suffix-nocase(hidden.js) -> set-error(404)
 ```
 {% endcode %}

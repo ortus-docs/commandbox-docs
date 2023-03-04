@@ -30,7 +30,7 @@ regex('(.*).css') -> { rewrite('${1}.xcss'); set(attribute='%{o,rewritten}', val
 Redirect all jpg requests to the same file name but with the png extension. The `${1}` exchange attribute is used to reference the first regex group.
 
 ```javascript
-regex('(.*).jpg$') -> redirect('${1}.png')
+regex-nocase('(.*).jpg$') -> redirect('${1}.png')
 ```
 
 Set a request header for all requests that you can access in your CFML app just like a normal HTTP header.
@@ -67,33 +67,35 @@ path(/restart) -> { rewrite(/foo/a/b); restart; }
 Block access to a URL unless coming from a specific IP.
 
 ```javascript
-path-prefix(/admin/) and not equals('%{REMOTE_IP}', 127.0.0.1) -> set-error( 404 )
+path-prefix-nocase(/admin/) and not equals('%{REMOTE_IP}', 127.0.0.1) -> set-error( 404 )
 ```
 
 For more control over IP address matches, use the `ip-access-control()` handler.
 
 ```javascript
-path-prefix(value="/admin/") -> ip-access-control[default-allow=false, acl={'127.0.0.* allow'}, failure-status=404]
+path-prefix-nocase(value="/admin/") -> ip-access-control[default-allow=false, acl={'127.0.0.* allow'}, failure-status=404]
 ```
 
 Leading slash is NOT required. Both of these rules are the same:
 
 ```javascript
-path(box.json) -> set-error( 404 )
-path(/box.json) -> set-error( 404 )
+path-nocase(box.json) -> set-error( 404 )
+path-nocase(/box.json) -> set-error( 404 )
 ```
 
 It is not required to include `.*`\_ at the end of a regex path unless you’ve set `full-match=true` \_
 
 ```javascript
-regex( "^/tests/" ) -> set-error( 404 ) 
-regex( pattern='^/tests/.*", full-match=true ) -> set-error( 404 )
+regex-nocase( "^/tests/" ) -> set-error( 404 ) 
+regex-nocase( pattern='^/tests/.*", full-match=true ) -> set-error( 404 )
 ```
 
 Perform a regex a case insensitive search like so:
 
 ```javascript
 regex(pattern="Googlebot", value="%{i,USER-AGENT}", case-sensitive=false ) -> set-error( 404 )
+# or...
+regex-nocase(pattern="Googlebot", value="%{i,USER-AGENT}" ) -> set-error( 404 )
 ```
 
 When attribute values are not quoted, all leading and trailing whitespace will be trimmed. The following are all the same:
@@ -113,7 +115,7 @@ path( " /foobar " )
 Basic MVC rewrite:
 
 ```javascript
-not regex( pattern='.*\.(bmp|gif|jpe?g|png|css|js|txt|xls|ico|swf|cfm|cfc|html|htm)$', case-sensitive=false ) -> rewrite('/index.cfm/%{RELATIVE_PATH}')
+not regex-nocase( '.*\.(bmp|gif|jpe?g|png|css|js|txt|xls|ico|swf|cfm|cfc|html|htm)$' ) -> rewrite('/index.cfm/%{RELATIVE_PATH}')
 ```
 
 Add a CORs header to every request
@@ -139,7 +141,7 @@ regex( '^/product/([A-Z]{6})$' ) -> rewrite( '/product.cfm?productID=${1}' )
 Reject requests using an unknown host header.
 
 ```javascript
-not equals( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 )
+not equals-nocase( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 )
 ```
 
 Create reverse proxy

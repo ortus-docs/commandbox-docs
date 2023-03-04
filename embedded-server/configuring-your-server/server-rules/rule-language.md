@@ -69,16 +69,16 @@ regex('(.*).css') -> set(attribute='%{o,css}', value='true') else set(attribute=
 
 ## Predicates
 
-A predicate is a condition that must be matched for the handler to kick in.&#x20;
+A predicate is a condition that must be matched for the handler to kick in. If using path-based predicates on Windows, make sure to use the `-nocase` version for security rules since your file system is not case sensitive.
 
 ### Common predicates:
 
-* **path()** - match the incoming request path
-* **path-suffix()** - match full file/folder names at the end of the path like file.cfm
-* **path-prefix()** - match full file/folder names at the start of the path like /lucee/admin
+* **path()/path-nocase()** - match the incoming request path
+* **path-suffix()/path-suffix-nocase()** - match full file/folder names at the end of the path like file.cfm
+* **path-prefix()/path-prefix-nocase()** - match full file/folder names at the start of the path like /lucee/admin
 * **method()** - Match the HTTP method
-* **regex()** - Match a regular expression against any exchange attribute
-* **equals()** / contains() - Do a text compare on any exchange attribute
+* **regex()/regex-nocase()** - Match a regular expression against any exchange attribute
+* **equals()/equals-nocase()** and **contains()**/**contains-nocase()** - Do a text compare on any exchange attribute
 * **path-template()** - match a path with placeholders like `/foo/{bar}` and the placeholders become variables for use in later predicates or handlers in the chain.&#x20;
 * Full list here: [https://undertow.io/undertow-docs/undertow-docs-2.0.0/#textual-representation-of-predicates](https://undertow.io/undertow-docs/undertow-docs-2.0.0/#textual-representation-of-predicates)
 
