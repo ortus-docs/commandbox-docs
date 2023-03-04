@@ -36,7 +36,7 @@ disallowed-methods(trace)
 * **done** - Skips remaining rules
 * **request-limit()** - Limits concurrent requests
 * **restart** - Restarts process back at start of predicate rule chain (combine with rewrite, etc)
-* **reverse-proxy()** - Creates a round robin reverse proxy to a list of URLs
+* **load-balanced-proxy()** - Creates a round robin reverse proxy to a list of URLs
 * **allowed-methods()** / **disallowed-methods()** - Enforces whitelist/blacklist of HTTP methods on current request
 * Full list here: [https://undertow.io/undertow-docs/undertow-docs-2.0.0/#built-in-handlers-2](https://undertow.io/undertow-docs/undertow-docs-2.0.0/#built-in-handlers-2)
 
@@ -52,7 +52,7 @@ set-error(response-code="404")
 Handler parameters that accept an array use the Java array literal syntax which is a comma-delimited list of values in curly braces.
 
 ```javascript
-reverse-proxy( { 'http://host.com', 'http://host2.com' } )
+load-balanced-proxy( { 'http://host.com', 'http://host2.com' } )
 ```
 
 More than one handler can be run by wrapping them in curly braces and using semicolons between them

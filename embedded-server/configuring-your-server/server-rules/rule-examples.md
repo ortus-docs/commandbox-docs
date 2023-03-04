@@ -147,5 +147,5 @@ not equals-nocase( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 
 Create reverse proxy
 
 ```json
-path-prefix('/reports') -> reverse-proxy({'http://reports1.mydomain.com','http://reports2.mydomain.com'})
+path-prefix('/reports') -> load-balanced-proxy({'http://reports1.mydomain.com','http://reports2.mydomain.com'})
 ```

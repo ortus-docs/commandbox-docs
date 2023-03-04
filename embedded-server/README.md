@@ -24,6 +24,32 @@ You can start as many embedded server instances as you want. Each running server
 
 ![CommandBox Server Tray Menu](https://github.com/ortus-docs/commandbox-docs/tree/df981947c5780503203384f9de7118f57ee01ca5/.gitbook/assets/image%20\(5\).png)
 
+### Open Browser
+
+When a  server finishes starting, CommandBox will automatically open up the root of the site in your default browser.  You can control the URL that is opened with
+
+```bash
+server set openBrowserURL=/admin/foo.cfm
+```
+
+You can change the browser used to open all sites or override just the browser for a single site:
+
+```bash
+# Global setting
+config set preferredBrowser=Chrome
+# Per-server setting
+server set preferredBrowser=Chrome
+```
+
+Or you can disable this feature entirely
+
+```bash
+# Global setting
+config set server.defaults.openBrowser=false
+# Per-server setting
+server set openBrowser=false
+```
+
 ### Disable the tray icon
 
 If you don't want the tray integration, then you can turn it off in your `server.json` with this setting.

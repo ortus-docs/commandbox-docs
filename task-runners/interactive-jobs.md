@@ -24,7 +24,7 @@ The log messages will show up in the order they appear, but once you complete th
 
 The final output of the above code would be this green text:
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 ## Log Messages
 

@@ -22,6 +22,8 @@ install git://site.com/user/repo.git#v1.2.3
 install git://site.com/user/repo.git#09d302b4fffa0b988d1edd8ea747dc0c0f2883ea
 ```
 
+If you don't specify a commit-ish, the Girt endpoint will assume you want the `master` branch.   If there is no `master` branch,  we will attempt to checkout the `main` branch.
+
 ## GitHub shortcut
 
 If the repo you wish to install is located on Github.com, you can use this shortcut to specifying the package.

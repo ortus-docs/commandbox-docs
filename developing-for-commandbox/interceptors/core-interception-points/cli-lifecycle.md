@@ -26,3 +26,23 @@ Announced every time a system setting in the format of `${something}` is expande
 * **defaultValue** - The text after the final `:` or an empty string if there is no default provided
 * **resolved** - Set this to `true` if your interceptor expands the value and return `true` from your interceptor method so CommandBox stops the interceptor chain.
 * **context** - A struct of values if this system setting is being expanded in the context of a JSON file.
+
+## onConfigSettingSave
+
+Announced every time a Config Setting is added, removed, or updated.
+
+**interceptData**
+
+* **configFilePath**- Full path to the `CommandBox.json` file
+* **configSettings**- Struct of current config settings
+
+## onEndpointLogin
+
+Announced any time a user either logs into ForgeBox (`forgebox login`) or switches users (`forgebox use`)
+
+**interceptData**
+
+* **endpointName** - Name of endpoint logged into
+* **username** - Username that was logged into
+* **endpoint** - Endpoint CFC instance
+* **APIToken** - API Token of user that logged in

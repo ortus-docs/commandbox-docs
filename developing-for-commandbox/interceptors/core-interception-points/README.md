@@ -8,6 +8,8 @@ Click a category for more information.
   * onCLIStart
   * onCLIExit
   * onSystemSettingExpansion
+  * onConfigSettingSave
+  * onEndpointLogin
 * [**Command Execution Lifecycle**](command-execution-lifecycle.md)
   * preCommand
   * preCommandParamProcess
@@ -24,6 +26,7 @@ Click a category for more information.
   * preServerStart
   * onServerStart
   * onServerInstall
+  * onServerInitialInstall
   * onServerStop
   * preServerForget
   * postServerForget

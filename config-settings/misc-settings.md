@@ -77,6 +77,14 @@ config set preferredBrowser=chrome
 config show preferredBrowser
 ```
 
+Note, the preferred browser can also be overridden on a per-server basis in the `server.json` for that server like so:
+
+```bash
+server set preferredBrowser=firefox
+```
+
+This will override the browser which auto-opens on server start as well as the `server open` command.
+
 ## tabCompleteInline
 
 **boolean**
