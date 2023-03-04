@@ -131,6 +131,7 @@
     * [URL Rewrites](embedded-server/configuring-your-server/url-rewrites.md)
     * [Aliases](embedded-server/configuring-your-server/aliases.md)
     * [Custom Error Pages](embedded-server/configuring-your-server/custom-error-pages.md)
+    * [MIME Types](embedded-server/configuring-your-server/mime-types.md)
     * [Welcome Files](embedded-server/configuring-your-server/custom-welcome-files.md)
     * [Custom Java Version](embedded-server/configuring-your-server/custom-java-version.md)
     * [Adding Custom Libs](embedded-server/configuring-your-server/adding-custom-libs.md)
