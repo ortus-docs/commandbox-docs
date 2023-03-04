@@ -73,6 +73,10 @@ Announced when a server is starting and the `cfengine` is being installed. This 
   * `installDir` - The folder where the server is installed to
   * `initialInstall` - True if this is the first time the engine was installed
 
+## onServerInitialInstall
+
+This is the same as `onServerInstall` above, but it only runs the VERY FIRST time a CF engine is installed.  This is helpful if you want to install Lucee extensions or ACF modules and you only need to do it the first time.  This interceptor is easier than using `onServerInstall` and inspecting the `installDetails.initialInstall` flag.
+
 ## onServerStop
 
 Announced before a server stop.

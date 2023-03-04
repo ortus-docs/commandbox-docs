@@ -142,6 +142,7 @@
     * [Undertow Options](embedded-server/configuring-your-server/undertow-options.md)
     * [Custom Tray Menus](embedded-server/configuring-your-server/custom-tray-menus.md)
     * [JVM Args](embedded-server/configuring-your-server/jvm-args.md)
+    * [Case Sensitivity of Web Server](embedded-server/configuring-your-server/case-sensitivity-of-web-server.md)
     * [Ad-hoc Env Vars](embedded-server/configuring-your-server/ad-hoc-env-vars.md)
     * [Ad-Hoc Java System Properties](embedded-server/configuring-your-server/ad-hoc-java-system-properties.md)
     * [server.json Env Var overrides](embedded-server/configuring-your-server/env-var-overrides.md)

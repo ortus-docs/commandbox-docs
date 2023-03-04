@@ -96,6 +96,8 @@ ${serverinfo.serverHomeDirectory@serverName}
 ${serverinfo.serverHomeDirectory@serverName:defaultValue}
 ```
 
+If a `${serverinfo.xyz}` expansion is resolved in the context of a server specific package script or server script, it will use that server's details, regardless of what the current working directory is.
+
 ## Other properties in the same JSON file
 
 You can self-reference other properties in the same JSON file using the `@` namespace. So given the following JSON file:

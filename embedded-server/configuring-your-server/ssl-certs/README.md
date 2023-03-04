@@ -5,7 +5,14 @@ Turning on SSL in your web server will will enable SSL without an approved SSL c
 ```bash
 server set web.SSL.certFile=/path/to/dev_mydomain_ext.crt
 server set web.SSL.keyFile=/path/to/dev_mydomain_ext.key
+server set web.SSL.keyPass=myPass
 ```
+
+The cert file and private key can be a PEM encoded file, or a DER-format binary file.
+
+You can also use a PFX file (PKCS #8) by specifying it in the `web.ssl.keyFile` setting and then put the password for the PFX file in the `web.ssl.keyPass` setting.  You won't use the `web.ssl.keyFile` setting for a PFX since the private key is contained in the main file.
+
+## Generating a Server Cert
 
 Although free certificates are available (e.g LetsEncrypt) this is not very convenient, because these certs are valid only for three months. Automatic renewal it is difficult if your dev site is not accessible from the web. For a few dollars a year (< 10) you can apply for a domain validated certificate from companies like Comodo, RapidSSL, Trustwave, Digicert, Geotrust and others or a reseller for these certs. For a domain validated certificate you need a valid domain which is under your control which means (depending on provider):
 

@@ -1,6 +1,6 @@
 # Setting Sync
 
-If you are authenticated to ForgeBox in the CLI, you can syncronize your config settings to and from your ForgeBox account.  This is a great way to get up and running on a new PC, or keep multiple CommandBox installs in sync with each other.  In addition to synchronizing your Config Settings, this feature will also track your installed system modules, such as CFConfig, etc.
+If you are authenticated to ForgeBox in the CLI, you can synchronize your config settings to and from your ForgeBox account.  This is a great way to get up and running on a new PC, or keep multiple CommandBox installs in sync with each other.  In addition to synchronizing your Config Settings, this feature will also track your installed system modules, such as CFConfig, etc.
 
 In order to sync your settings and modules, you must first be logged into ForgeBox.  Check and see if you are logged in with
 
