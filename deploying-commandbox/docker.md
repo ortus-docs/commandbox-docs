@@ -6,7 +6,7 @@
 
 CommandBox also provides an [official Docker image](https://hub.docker.com/r/ortussolutions/commandbox/), which allows you to leverage its capability to orchestrate live servers in multi-tier deployments.
 
-Since, CommandBox allows you to configure your entire CFML engine environment from a single file in the root of your project, packaging or mounting your CFML application in to a running CommandBox image container allows you to stand up your application in Docker containers in a matter of seconds.
+Since CommandBox allows you to configure your entire CFML engine environment from a single file in the root of your project, packaging or mounting your CFML application in to a running CommandBox image container allows you to stand up your application in Docker containers in a matter of seconds.
 
 ## Usage
 
