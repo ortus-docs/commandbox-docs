@@ -10,7 +10,7 @@ server set web.SSL.keyPass=myPass
 
 The cert file and private key can be a PEM encoded file, or a DER-format binary file.
 
-You can also use a PFX file (PKCS #8) by specifying it in the `web.ssl.keyFile` setting and then put the password for the PFX file in the `web.ssl.keyPass` setting.  You won't use the `web.ssl.keyFile` setting for a PFX since the private key is contained in the main file.
+You can also use a PFX file (PKCS #8) by specifying it in the `web.ssl.certFile` setting and then put the password for the PFX file in the `web.ssl.keyPass` setting.  You won't use the `web.ssl.keyFile` setting for a PFX since the private key is contained in the main file.
 
 ## Generating a Server Cert
 
