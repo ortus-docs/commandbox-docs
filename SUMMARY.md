@@ -149,6 +149,7 @@
     * [Server Home](embedded-server/configuring-your-server/server-home.md)
     * [web.xml Overrides](embedded-server/configuring-your-server/web.xml-overrides.md)
     * [Console Log Layout](embedded-server/configuring-your-server/console-log-layout.md)
+    * [Adobe cfpm](embedded-server/configuring-your-server/adobe-cfpm.md)
     * [Experimental Features](embedded-server/configuring-your-server/experimental-features.md)
   * [External Web Server](embedded-server/external-web-server.md)
   * [Starting as a Service](embedded-server/starting-as-a-service.md)
