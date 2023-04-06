@@ -97,6 +97,8 @@ or
 
 In this case, `clip` is a Windows binary that will read the standard input and place that text on the clipboard. When the `run` command receives two inputs, it will assume the first input is the piped input and the second input is the actual command to run.
 
+For the macOS, replace `clip` with `pbcopy`, so `#createguid | !pbcopy` would place the text on the clipboard. 
+
 You can even pipe commands to an interpreter that normally reads from a keyboard on the standard input, but be aware that some binaries such as Windows `cmd` require line breaks after the input or it won't process. In the specific case of Windows `cmd` it seems to require at least two line breaks for some reason (this is also true outside of CommandBox)
 
 ```bash
