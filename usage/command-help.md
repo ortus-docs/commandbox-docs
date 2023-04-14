@@ -22,7 +22,7 @@ And finally, get help on a single command such as `server stop`. We can see the 
 
 ## HTML Command API Docs
 
-For a full list of all the commands that ship with CommandBox as well as all their paramaters and samples, please visit our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current) which are auto-generated each build. This is the same information available to you via the `help` command, but in a searchable format you can browse outside of the CLI.
+For a full list of all the commands that ship with CommandBox as well as all their parameters and samples, please visit our [Command API docs](http://apidocs.ortussolutions.com/commandbox/current) which are auto-generated each build. This is the same information available to you via the `help` command, but in a searchable format you can browse outside of the CLI.
 
 * [http://apidocs.ortussolutions.com/commandbox/current](http://apidocs.ortussolutions.com/commandbox/current)
 

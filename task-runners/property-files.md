@@ -34,7 +34,7 @@ A `propertyFile` CFC instance can also be treated as a struct as it stores the p
 // Create object
 var propFile = propertyFile( 'myFile.properties' );
 
-// Access proeprties
+// Access properties
 print.line( propFile.brad );
 
 // Change/add properties

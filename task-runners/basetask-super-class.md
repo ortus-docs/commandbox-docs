@@ -48,7 +48,7 @@ async()
 // Convenience method for getting stuff from WireBox
 getInstance( name, dsl, initArguments={}, targetObject='' )
 
-// Retuns current exit code
+// Returns current exit code
 getExitCode()
 
 // Sets exit code to be returned when task completes
