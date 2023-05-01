@@ -17,3 +17,5 @@ Here are the requirements for installing and using CommandBox on your system. No
 ## Software
 
 A Java JRE is listed as a software requirement, but if you have a brand new PC with no JRE we have a download option that contains the Java Runtime bundled with it.
+
+It is recommend to use Java 11, but there is preliminary support for Java 17.  Keep in mind, not all CF engines support Java 17, so if you use it for the CLI, you may want to set your default server JRE to use Java 11. &#x20;
