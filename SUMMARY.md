@@ -203,6 +203,8 @@
   * [Using Parameters](task-runners/using-parameters.md)
   * [Task Output](task-runners/task-output/README.md)
     * [Printing tables](task-runners/task-output/printing-tables.md)
+    * [Printing Columns](task-runners/task-output/printing-columns.md)
+  * [Printing Tree](task-runners/printing-tree.md)
   * [Lifecycle Events](task-runners/lifecycle-events.md)
   * [Threading/Async](task-runners/threading-async.md)
   * [Task Interactivity](task-runners/task-interactivity.md)
