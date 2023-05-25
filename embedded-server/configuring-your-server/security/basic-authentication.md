@@ -16,7 +16,7 @@ That will create the following data in your `server.json`, which will be picked 
     "web":{
         "security" : {
             "realm" : "My Realm",
-            "authPredicate" : "regex( pattern='^/lucee/admin/.*', case-sensitive=false )"
+            "authPredicate" : "regex( pattern='^/lucee/admin/.*', case-sensitive=false )",
             "basicAuth":{
                 "users":{
                     "brad":"pass",
