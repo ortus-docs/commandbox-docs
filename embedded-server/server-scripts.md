@@ -7,6 +7,7 @@ The interception points which will fire a server script are:
 * `preServerStart`
 * `onServerStart`
 * `onServerInstall`
+* `onServerInitialInstall`
 * `onServerStop`
 * `preServerForget`
 * `postServerForget`
