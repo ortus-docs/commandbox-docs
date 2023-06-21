@@ -36,7 +36,7 @@ disallowed-methods(trace)
 * **done** - Skips remaining rules
 * **request-limit()** - Limits concurrent requests
 * **restart** - Restarts process back at start of predicate rule chain (combine with rewrite, etc)
-* **load-balanced-proxy()** - Creates a round robin reverse proxy to a list of URLs
+* **load-balanced-proxy()** - Creates a round robin reverse proxy to a list of hosts
 * **allowed-methods()** / **disallowed-methods()** - Enforces whitelist/blacklist of HTTP methods on current request
 * Full list here: [https://undertow.io/undertow-docs/undertow-docs-2.0.0/#built-in-handlers-2](https://undertow.io/undertow-docs/undertow-docs-2.0.0/#built-in-handlers-2)
 
