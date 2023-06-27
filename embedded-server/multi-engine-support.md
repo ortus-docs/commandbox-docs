@@ -19,10 +19,10 @@ Supported engines are:
 * Adobe ColdFusion 2018
 * Adobe ColdFusion 2021
 * Adobe ColdFusion 2023
-* Railo 4.2
-* Lucee 4.5
 * Lucee 5
 * Lucee 6 (beta)
+* Railo 4.2
+* Lucee 4.5
 
 Here are some examples:
 
@@ -30,17 +30,24 @@ Here are some examples:
 # Start the default engine
 CommandBox> start
 
-# Start the latest stable Railo engine
-CommandBox> start cfengine=railo
+# Start a specific Adobe engine and version
+CommandBox> start cfengine=adobe@2021.0.6
 
-# Start a specific engine and version
-CommandBox> start cfengine=adobe@10.0.12
-
-# Start the most recent Adobe server that starts with version "11"
-CommandBox> start cfengine=adobe@11
+# Start the most recent Adobe server that starts with version "2023"
+CommandBox> start cfengine=adobe@2023
 
 # Start the most recent adobe engine that matches the range
 CommandBox> start cfengine="adobe@>9.0 <=11"
+
+# Start the latest stable Lucee engine
+CommandBox> start cfengine=lucee
+
+# Start a specific Lucee engine and version
+CommandBox> start cfengine=lucee@5.4
+
+# Start the latest stable Railo engine
+CommandBox> start cfengine=railo
+
 ```
 
 Engines are downloaded and stored in your CommandBox artifacts folder. You can view your engines and clear them using the standard artifacts commands:
@@ -55,12 +62,16 @@ CommandBox> artifacts remove adobe
 
 > \*\* **Note**: [Adobe ColdFusion 9 does not support the latest Java 8](http://blogs.coldfusion.com/post.cfm/which-jdk-is-supported-with-coldfusion-9-10-and-11). To run ColdFusion 9 you must use an older version of CommandBox 3.x on Java 7 or run CommandBox 4.x on Java 8 update 92 or earlier. Several people are doing this, but beware your mileage may vary.
 
-## ColdFusion Admin settings
+## Admin password
 
-While Lucee asks for a password the first time running the admin, ColdFusion requires a username and password when CommandBox sets it up. The default username and password for the Adobe ColdFusion servers used are:
+ColdFusion requires a username and password when CommandBox sets it up. When using the (default) `development` CommandBox profile, the default username and password for the Adobe ColdFusion servers used are:
 
 * Username: `admin`
 * Password: `commandbox`
+
+Since Lucee 5.3.4.46, Lucee no longer prompts you to set the admin password the first time running the admin. When using the (default) `development` CommandBox profile, Lucee offers the option for you creating a password.txt file to set that initial password. 
+
+See also options to [control the admin password via CFConfig(https://cfconfig.ortusbooks.com/using-the-cli/commandbox-server-interceptors/server-start#set-individual-settings)].
 
 ## WAR Support
 
@@ -113,7 +124,7 @@ These commands would create the following `server.json`
 Just a reminder that starting a server with any command line arguments will save the arguments to your `server.json` by default.
 
 ```bash
-CommandBox> start cfengine=adobe@9
+CommandBox> start cfengine=adobe@2023
 ```
 
-This command would add `adobe@9` to your `server.json`. If this is not what you want, you can append `saveSettings=false` or even `--!saveSettings` when you start your server and CommandBox will not save the arguments you specify to your `server.json`.
+This command would add `adobe@2023` to your `server.json`. If this is not what you want, you can append `saveSettings=false` or even `--!saveSettings` when you start your server and CommandBox will not save the arguments you specify to your `server.json`.
