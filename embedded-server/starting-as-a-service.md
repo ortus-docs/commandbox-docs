@@ -33,7 +33,7 @@ as follows:
 Description=mySite Service
 
 [Service]
-ExecStart=/usr/bin/box server start /var/www/mySiteAPI/server.json
+ExecStart=/usr/local/bin/box server start /var/www/mySiteAPI/server.json
 Type=forking
 
 [Install]
