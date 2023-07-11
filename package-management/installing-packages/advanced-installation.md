@@ -4,7 +4,7 @@
 
 In the CFML world, there are no global conventions for where to install things to nor where to store dependencies. Therefore, CommandBox for the most part will just stick packages in the root of your site unless you tell it otherwise. It may not be pretty, but it's as good as stock CFML apps can get. That means a lot of the cool things other package managers like NPM can do simply won't be available to you.
 
-If you're using the ColdBox MVC Platform, congratulation! You just unlocked **advanced mode**! ColdBox uses _conventions_ that tells you where to put stuff, and most importantly it has _modularity as a first class citizen_. Not only that, but modules can be nested infinitely to nicely encapsulate dependencies and WireBox will automatically find and register each module's models for your application to use.
+If you're using the ColdBox MVC Platform, congratulations! You just unlocked **advanced mode**! ColdBox uses _conventions_ that tells you where to put stuff, and most importantly it has _modularity as a first class citizen_. Not only that, but modules can be nested infinitely to nicely encapsulate dependencies and WireBox will automatically find and register each module's models for your application to use.
 
 ### Module Conventions
 
@@ -43,7 +43,7 @@ install cbi18n
 install cbvalidation
 ```
 
-We know that cbvaliation requires cbi18n, but since it is already installed in the root modules folder, we won't install it again under cbvalidation.
+We know that cbvalidation requires cbi18n, but since it is already installed in the root modules folder, we won't install it again under cbvalidation.
 
 ## Smart Uninstall
 
