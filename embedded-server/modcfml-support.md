@@ -9,7 +9,7 @@ CommandBox can also use a popular standard called ModCFML which allows it to beh
 ModCFML takes it's name from the convention of Apache modules, which are named `mod_xyz` and is really more of a standard implemented by several different libraries. The way ModCFML works, is the front-end web server (IIS, Apache, Nginx, etc) passes a few custom HTTP headers to the back end CF server on each request that tells the CF server where the web root lives for that site. Here's an overview of the related libraries:
 
 * **BonCode** - Boncode is an AJP proxy for IIS which can be configured globally or on a per-site basis to proxy requests to a back-end CF server. Boncode automatically sends the ModCFML HTTP headers. [Docs here.](http://www.boncode.net/boncode-connector)
-* **Apache mod\_cfml module** - This module can be installed into Apache HTTPd server to create an AJP reverse proxy. [Docs here.](http://www.boncode.net/boncode-connector)
+* **Apache mod\_cfml module** - This module can be installed into Apache HTTPd server to create an AJP reverse proxy. [Docs here.](https://github.com/viviotech/mod_cfml)
 * **Tomcat ModCFML Valve** - This Tomcat valve creates contexts in Tomcat for the incoming ModCFML Headers. Since you're using CommandBox, you don't need this since CommandBox has support for the equivalent behavior built in!
 * **CommandBox** - CommandBox will obey the standard ModCFML HTTP headers so long as `ModCFML.enable` is set to `true` for the server.
 * **Nginx** or other web servers - Even though there is no native ModCFML module for Nginx, you can still use it by just setting the necessary HTTP headers manually! More on this below.
