@@ -41,7 +41,7 @@ The green `CommandBox>` prompt is what we call the _interactive shell_. Type `ex
 
 ## 3. Setup & Usage
 
-![Start Using](.gitbook/assets/run.png)
+![Start Using](<.gitbook/assets/run (1) (1) (1) (1) (2) (2) (2) (2) (2) (2) (2).png>)
 
 To open up the interactive shell at any time, just double click on the `box` executable. If you prefer to stay in your OS's native shell, then just place the `box` file in your system path and add it before any CommandBox commands like so:
 

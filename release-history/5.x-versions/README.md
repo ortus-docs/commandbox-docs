@@ -2,6 +2,13 @@
 
 In this section you will find the release notes for the 5.x version of CommandBox.&#x20;
 
+* [Version 5.9.1](whats-new-in-5.9.1.md) - August 2023
+* [Version 5.9.0](whats-new-in-5.9.0.md) - May 2023
+* [Version 5.8.0](whats-new-in-5.8.0.md) - April 2023
+* [Version 5.7.0](whats-new-in-5.7.0.md) - December 2022
+* [Version 5.6.0](whats-new-in-5.6.0.md) - September 2022
+* [Version 5.5.2](whats-new-in-5.5.2.md) - May 2022
+* [Version 5.5.1](whats-new-in-5.5.1.md) - May 2022
 * [Version 5.4.2](whats-new-in-5.4.2.md) - October 2021
 * [Version 5.4.1](whats-new-in-5.4.1.md) - September 2021
 * [Version 5.4.0](whats-new-in-5.4.0.md) - August 2021
