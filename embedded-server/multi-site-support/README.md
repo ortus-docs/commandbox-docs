@@ -30,6 +30,8 @@ As a workaround if you're not ready to leave Tuckey, you can force the new Under
 server set web.servletPassPredicate=true
 ```
 
+Read more about the [servlet pass predicate here](servlet-pass-predicate.md).
+
 However, the best approach is to simply switch over to using [Server Rules](../configuring-your-server/server-rules/).  They do everything Tuckey does, AND each site can get its own separate set of server rules for maximum configurability.
 
 Also note, when you set this flag:
