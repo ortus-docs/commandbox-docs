@@ -108,6 +108,7 @@
   * [Setting Sync](config-settings/setting-sync.md)
   * [Env Var Overrides](config-settings/env-var-overrides.md)
 * [Embedded Server](embedded-server/README.md)
+  * [Multi-Site Support](embedded-server/multi-site-support.md)
   * [Multi-Engine Support](embedded-server/multi-engine-support.md)
   * [ModCFML Support](embedded-server/modcfml-support.md)
   * [Server Versions](embedded-server/server-versions.md)
