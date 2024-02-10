@@ -17,9 +17,26 @@ There is a repo on Github that contains working examples of all the features of 
 You are free to use CommandBox as you with for development purposes, but if you are using more than 2 sites in production, we ask you consider supporting us with a [CommandBox Pro](https://www.ortussolutions.com/products/commandbox-pro) license which bundles support and commercial modules and extensions.
 {% endhint %}
 
-##
+### Tuckey Rewrites
 
+Please note that the [legacy form of rewrites](./#tuckey-rewrites) using Tuckey will NOT work by default in Multi-Site mode.  There are two main issues
 
+* Tuckey is tied to the servlet and static files are now no longer served by the Default Servlet, but are returned to the browser without even touching the servlet.
+* There is only one servlet servicing all sites, so you can't have different rewrites per site
 
+As a workaround if you're not ready to leave Tuckey, you can force the new Undertow web server to not serve static files by forcing the `servletPassPredicate` to send ALL files to the servlet:
 
+```bash
+server set web.servletPassPredicate=true
+```
+
+However, the best approach is to simply switch over to using [Server Rules](../configuring-your-server/server-rules/).  They do everything Tuckey does, AND each site can get its own separate set of server rules for maximum configurability.
+
+Also note, when you set this flag:
+
+```bash
+server set web.rewrites.enable=true
+```
+
+as of CommandBox 6, a Tuckey XML rewrite file will no longer be employed.  Instead Server Rules will be added that perform the same rewrites as the old Tuckey functionality.  Tuckey will now ONLY be used if you specify a custom rewrite file.
 

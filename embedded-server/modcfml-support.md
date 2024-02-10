@@ -99,6 +99,10 @@ CommandBox's ModCFML support will work for both Adobe and Lucee servers! Keep in
 
 ### Naked ModCFML
 
+{% hint style="danger" %}
+As of CommandBox 6.0, this no longer works as the server rules have been moved back AFTER the ModCFML logic.  But don't fret, [Multi-Site mode](multi-site-support/) now gives you this capability and much much more.
+{% endhint %}
+
 You maybe wondering if it's possible to make use of multiple web roots in CommandBox without having any web server at all. Well, we weren't going to let you in on this, but actually YES it is possible! All you need to do is configure some Server Rules to detect the host name and set the HTTP headers and CommandBox's ModCFML will be none the wiser. You can turn off the requirement of a shared key, but make sure you have a catch-all rule that rejects requests from unknown host names.
 
 Here is the `server.json` for a simple setup. Note, we're using the `commandbox-hostupdater` module here to auto-create `hosts` file mappings for our domains. We're also pointing the webroots to `site1.com`, `site2.com`, and `site3.com` folders inside of the default web root, but these could really point anywhere you like.

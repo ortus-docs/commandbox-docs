@@ -40,9 +40,9 @@ You can see the custom handlers and predicates documented above in our Runwar so
 
 **Custom handlers:**
 
-{% embed url="https://github.com/Ortus-Solutions/runwar/tree/develop/src/main/java/runwar/undertow/handler" %}
+{% @github-files/github-code-block %}
 
 **Custom Predicates:**
 
-{% embed url="https://github.com/Ortus-Solutions/runwar/tree/develop/src/main/java/runwar/undertow/predicate" %}
+{% @github-files/github-code-block %}
 

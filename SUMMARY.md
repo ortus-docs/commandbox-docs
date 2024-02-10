@@ -111,6 +111,7 @@
   * [Multi-Site Support](embedded-server/multi-site-support/README.md)
     * [Defining Sites](embedded-server/multi-site-support/defining-sites.md)
     * [Configuring Sites](embedded-server/multi-site-support/configuring-sites.md)
+    * [Servlet Pass Predicate](embedded-server/multi-site-support/servlet-pass-predicate.md)
     * [Bindings](embedded-server/multi-site-support/bindings.md)
     * [Multi-Site Examples](embedded-server/multi-site-support/multi-site-examples.md)
     * [Pretty Diagrams](embedded-server/multi-site-support/pretty-diagrams.md)
