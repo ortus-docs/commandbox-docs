@@ -1,6 +1,10 @@
 # Bindings
 
-HTTP bindings are much more robust in multi-site mode.  In single-site mode, there is basically no such thing as host name bindings.  All traffic coming into that CommandBox server is simply routed to the one and only server regardless of its host name or IP address. &#x20;
+HTTP bindings are much more robust in multi-site mode.  In single-site mode, there is basically no such thing as host name bindings.  All traffic coming into that CommandBox server is simply routed to the one and only server regardless of its host name or IP address.  &#x20;
+
+{% hint style="info" %}
+This page covers bindings from a Multi-Site perspectice, but the general docs on all Binding options [is here](../configuring-your-server/bindings/).
+{% endhint %}
 
 As of version 6.0, a command server can now have
 

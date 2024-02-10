@@ -1,6 +1,6 @@
 # Bindings
 
-You can configure the IP, Port, and hostnames for your servers in the `bindings` object, which is new in CommandBox 6.0.  Whereas the legacy syntax defaults to binding to `localhost`, bindings will default to all IPs or `0.0.0.0` which is more consistent without mainstream web servers work.
+You can configure the IP, Port, and hostnames for your servers in the `bindings` object, which is new in CommandBox 6.0.  Whereas the [legacy syntax](server-port-and-host.md) defaults to binding to `localhost`, bindings will default to all IPs or `0.0.0.0` which is more consistent without mainstream web servers work.
 
 The `bindings` object goes inside your `web` object in `server.json` and for [Multi-Site](../../multi-site-support/) servers, you can also specify `bindings` in each site as well.
 
@@ -47,11 +47,11 @@ Each type of binding is represented by an object of that name inside the `bindin
 
 Every binding has
 
-* IP address (can be "All IPs" or `0.0.0.0`
+* IP address (can be `*` or `0.0.0.0` which means All IPs)
 * Port
 * zero or more hostnames (An empty string or `*` will match all hostnames)
 
-Note, hostnames are only really used for Multi-Site servers.  If you only have a single site defined, all traffic will be served by that site regardless of the hostname.
+Note, hostnames are only really used for Multi-Site servers.  If you only have a single site defined, all traffic will be served by that site regardless of the hostname of the incoming request.
 
 #### Just the port
 
@@ -120,6 +120,8 @@ server set web.bindings.HTTP.port=8080
 }
 ```
 {% endcode %}
+
+This syntax is mutually exclusive wiht the `listen` key.
 
 #### Host names
 
@@ -223,9 +225,9 @@ HTTP/2 is enabled by default.  The legacy `web.http2enable` flag is still obeyed
 
 To configure a single SSL Server cert, you can specify the following keys inside the binding:
 
-* certFile - A PEM-encoded DER cert or a PFX file
-* keyFile - Not used for PFX
-* keyPass - The key pass, or blank if not used
+* `certFile` - A PEM-encoded DER cert or a PFX file
+* `keyFile` - THe Private key (not used for PFX)
+* `keyPass` - The key pass or PFX pass. Blank if not used
 
 {% code title="server.json" %}
 ```javascript
