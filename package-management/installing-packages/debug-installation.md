@@ -24,4 +24,4 @@ In order to filter the output to only show versions which matched your semantic 
 forgebox version-debug coldbox@6.x --showMatchesOnly
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>

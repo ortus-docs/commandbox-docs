@@ -26,6 +26,10 @@ Or in the `server.json` as:
 ```
 {% endcode %}
 
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), HTTPS redirection settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+
 If you want to customize how this redirect happens, you can skip this setting and manually add the following [Server Rule](server-rules/), which is basically what the setting above does automatically:
 
 ```javascript
@@ -65,6 +69,10 @@ Or in the `server.json` as:
 }
 ```
 {% endcode %}
+
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), HSTS settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
 
 The HSTS header is added via a [Server Rule](server-rules/). Here is what the rule looks like in case you want to manually add the rule to customize it.
 

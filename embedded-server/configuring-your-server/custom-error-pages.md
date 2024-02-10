@@ -24,6 +24,10 @@ You can set error pages via the `server set` command like this:
 server set web.errorPages.404=/missing.htm
 ```
 
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), custom error page settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+
 ## Accessing error variables
 
 If your error page points to a CFM file, you can get access to the original path being accessed for 404s and the error that was thrown for 500s. To see all the request headers that are available, use the following snippet of code:

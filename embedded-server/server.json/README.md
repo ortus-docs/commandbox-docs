@@ -18,10 +18,12 @@ Every time you start a server, the settings used to start it are saved in a `ser
     "dockEnable": true,
     "trayEnable": true,
     "trayicon": "/path/to/trayicon.png",
+    // Used for host-updater module, but not for bindings
+    "hostAlias" : "site.com",
     "env" : {
       "ANYTHING_HERE" : "you want",
       "THESE_ARE_ADDED" : "As environment variables to the server"
-    }
+    },
     "trayOptions": [
         {
             "label": "Foo",
@@ -58,6 +60,8 @@ Every time you start a server, the settings used to start it are saved in a `ser
     },
     "web": {
         "host": "127.0.0.1",
+        // Used for default bindings
+        "hostAlias" : "site.com",
         "webroot": "src/cfml",
         "directoryBrowsing": true,
         "accessLogEnable": true,
@@ -74,10 +78,12 @@ Every time you start a server, the settings used to start it are saved in a `ser
             "default": "/path/to/default.html"
         },
         "welcomeFiles": "index.cfm,main.cfm,go.cfm",
+        // DEPRECATED: Use new bindings object
         "HTTP": {
             "enable": true,
             "port": 8080
         },
+        // DEPRECATED: Use new bindings object
         "SSL": {
             "enable": false,
             "port": 443,
@@ -85,10 +91,13 @@ Every time you start a server, the settings used to start it are saved in a `ser
             "keyFile": "",
             "keyPass": ""
         },
+        // DEPRECATED: Use new bindings object
         "AJP": {
             "enable": false,
             "port": 8009
         },
+        "bindings" : {
+        }
         "rewrites": {
             "enable": true,
             "logEnable": true,
@@ -126,6 +135,14 @@ Every time you start a server, the settings used to start it are saved in a `ser
                 "blockSensitivePaths":  true,
                 "blockFlashRemoting":  true
     },
+    "sites" : {
+        "site-name-here" : {
+            // Any valid option from "web" plus "profile"
+        },
+        "another-site-name-here" : {
+            // Any valid option from "web" plus "profile"
+        }        
+    }
     "app": {
         "logDir": "",
         "libDirs": "",

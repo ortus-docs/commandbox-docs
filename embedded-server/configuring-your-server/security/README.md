@@ -35,3 +35,8 @@ server set web.security.authPredicate="path-prefix(/lucee/admin/)"
 ```
 
 The most common auth predicates match a subfolder, but you are not limited to this.  Anything valid in a server rule predicate can be used here, including HTTP method, headers, remote IP, etc.
+
+{% hint style="info" %}
+For [Multi-Site](../../multi-site-support/), any auth settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

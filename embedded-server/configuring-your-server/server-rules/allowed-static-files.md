@@ -20,3 +20,8 @@ If you have a common static file you need to serve, you can add your own custom 
 ```bash
 server set web.allowedExt=jar,exe,dll
 ```
+
+{% hint style="info" %}
+For [Multi-Site](../../multi-site-support/), allowed static files settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

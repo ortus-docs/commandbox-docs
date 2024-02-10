@@ -19,3 +19,8 @@ Since ANY valid Undertow predicate language can be used here you can combined pr
 ```bash
 server set web.gzipPredicate="not path-prefix( admin ) and regex( '(.*).css' ) and request-larger-than(500)"
 ```
+
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), GZIP settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

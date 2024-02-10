@@ -24,12 +24,14 @@ Unlike custom Tuckey-based rewrites that must be placed in a single XML file, se
 
 For maximum configuration options, the following mechanisms are supported for specifying the rules for a given server. Rules are processed in the order listed. i.e., a rule defined in your `server.json` is processed prior to a rule in your `server.default` config setting.
 
-1. Ad-hoc rule array in `server.json`
-2. External rules files in `server.json` in the order defined
-3. Ad-hoc rule array in config setting `server.defaults`
-4. External rules files in config setting `server.defaults` in the order defined
-5. CommandBox built-in rules (`web.blockCFAdmin`, `web.blockSensitivePaths`)
-6. Any module listening to server interceptions can inject their rules _wherever they please in the array_.
+1. Ad-hoc rule array in  `sites` object or `.site.json` for Multi-site server
+2. Ad-hoc rule array in `server.json`
+3. External rules files in the `sites` object of the `server.json` or `.site.json` for Multi-site server
+4. External rules files in `server.json` in the order defined
+5. Ad-hoc rule array in config setting `server.defaults`
+6. External rules files in config setting `server.defaults` in the order defined
+7. CommandBox built-in rules (`web.blockCFAdmin`, `web.blockSensitivePaths`)
+8. Any module listening to server interceptions can inject their rules _wherever they please in the array_.
 
 ### `server.json` Rules
 
@@ -83,6 +85,12 @@ Like all other config server defaults, they follow the same pattern as the `serv
 ```bash
 config set server.defaults.web.ruleFile=/path/to/rules.json
 ```
+
+{% hint style="info" %}
+For [Multi-Site](../../multi-site-support/), server rule settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+
+
 
 ## Commenting Out Rules
 

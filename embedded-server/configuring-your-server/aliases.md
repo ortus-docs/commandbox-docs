@@ -29,3 +29,8 @@ server set web.aliases./js = C:\static\shared\javascript
 ```
 
 > **info** On Adobe ColdFusion servers, .cfm files will be run automatically from inside an aliases directory. On Railo and Lucee servers, you'll need to create a CF mapping that maps the alias name and path for .cfm files to work.
+
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), web alias settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

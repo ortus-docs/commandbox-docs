@@ -6,6 +6,10 @@ You may be used to configuring URL rewrites in Apache or IIS, but rewrites are a
 
 Commandbox also exposes a way to do url rewrites with the Undertow predicate language. If you missed the [Server Rules](server-rules/) section, go there to learn how to do url rewrites, security, and http header modification in a nice text based language (non-xml).
 
+{% hint style="warning" %}
+Note: Tuckey-based URL rewrites are not recommended going forward.  They are limited and do not play with with [Multi-Site](../multi-site-support/) servers.  It is recommended you move to the more-powerful [Server Rules](server-rules/).
+{% endhint %}
+
 ## Default Rules
 
 We've already added the required jars and created a default rewrite [XML file](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#filterparams) that will work out-of-the-box with the ColdBox MVC Platform. To enable rewrites, start your server with the `--rewritesEnable` flag.

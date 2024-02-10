@@ -41,3 +41,8 @@ server set web.caseSensitivePaths=false
 }
 ```
 {% endcode %}
+
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), web server case sensitivity can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

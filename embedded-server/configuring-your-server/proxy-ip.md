@@ -13,3 +13,8 @@ Enable for all servers like so:
 ```
 config set server.defaults.web.useProxyForwardedIP=true
 ```
+
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), Proxy IP settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

@@ -22,3 +22,7 @@ And you can enable it for all servers by default with
 config set server.defaults.web.directoryBrowsing=true
 ```
 
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), Welcome File settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+

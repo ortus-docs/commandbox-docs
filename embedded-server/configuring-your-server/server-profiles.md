@@ -30,6 +30,12 @@ Or you can specify it when starting the server like so:
 server start profile=production
 ```
 
+{% hint style="info" %}
+For [Multi-Site](../multi-site-support/), server profile can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+
+
+
 ### Default Profile
 
 If a profile is not set, these rules are used to choose the default value:

@@ -6,7 +6,7 @@ It is a requirement that the user hit your site via SSL in order for their brows
 
 ### Accepting Client Certs
 
-Configuring your SSL connection to accept or require client certs is covered in the [SSL Client Cert](../ssl-certs/ssl-client-certs.md) portion of the docs.  It's important to note configuring your server to accept SSL client certs and using these certs to authenticate a user two different things.  It's possible to accept (or even require) your client (browser) to send a client cert in your `web.ssl.clientCert` settings but not use the authentication mechanism to protect parts of your site automatically.  Any time a browser has sent a client cert, you will be able to access those details from the `CGI` and `request` scopes to do your own custom authentication.  It is also possible to use Client Cert authentication but not have. &#x20;
+Configuring your SSL connection to accept or require client certs is covered in the [SSL Client Cert](../bindings/ssl-client-certs.md) portion of the docs.  It's important to note configuring your server to accept SSL client certs and using these certs to authenticate a user two different things.  It's possible to accept (or even require) your client (browser) to send a client cert in your `web.ssl.clientCert` settings but not use the authentication mechanism to protect parts of your site automatically.  Any time a browser has sent a client cert, you will be able to access those details from the `CGI` and `request` scopes to do your own custom authentication.  It is also possible to use Client Cert authentication but not have. &#x20;
 
 ### Client Cert Renegotiation
 
@@ -37,6 +37,12 @@ server set web.security.clientCert.enable=true
 ```
 
 Once enabled, all pages on your site will be secured if you have no `authPredicate` configured.  Otherwise, only pages that match the predicate will be secured.
+
+{% hint style="info" %}
+For [Multi-Site](../../multi-site-support/), any client cert auth settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.  Just note, client cert auth settings will be shared by all sites using the same SSL binding.
+{% endhint %}
+
+
 
 ### Validate Incoming Certs
 
@@ -88,7 +94,7 @@ If you require more specific parsing of the cert pieces, then you’ll need to d
 
 ### `server.json` Configuration
 
-Here is a look at  what your full config could look like in your `server.json`.  Note this doesn't show the `web.ssl.clientCert` settings which are [covered here](../ssl-certs/ssl-client-certs.md).
+Here is a look at  what your full config could look like in your `server.json`.  Note this doesn't show the `web.ssl.clientCert` settings which are [covered here](../bindings/ssl-client-certs.md).
 
 ```javascript
 {

@@ -15,7 +15,7 @@ There are several easy ways to call the table printer. Here are the arguments to
 
 Below are some basic examples that all produce the same CLI output:
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 ### Array of arrays plus column headers
 
@@ -94,7 +94,7 @@ print.table(
 );
 ```
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (4).png>)
 
 ### Include only certain columns
 
@@ -108,7 +108,7 @@ print.table(
 );
 ```
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 ### Auto-resizing columns
 

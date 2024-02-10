@@ -1,6 +1,16 @@
-# Server Port and Host
+# Legacy Port & Host syntax
+
+{% hint style="danger" %}
+The syntax on this page is deprecated.  It will still work for the foreseeable future, but we recommend using the [new `bindings` object](./) instead which is much more powerful and allows multiple bindings.
+{% endhint %}
 
 The `start` command will scan your system and find a random port that is not currently in use to start the server on. This ensures that multiple embedded servers can run at the same time on the same host without collisions. Ensure any redirects in your applications take the port into account.
+
+{% hint style="info" %}
+For [Multi-Site](../../multi-site-support/), any port and host settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+
+
 
 ## Any Port in the Storm
 
@@ -75,15 +85,15 @@ server show web.AJP.port
 
 #### AJP Secret
 
-CommandBox's AJP listener (provided by Undertow) is already protected against the [Ghostcat vulnerability](https://www.synopsys.com/blogs/software-security/ghostcat-vulnerability-cve-2020-1938/).  However, if you would like to set up an AJP secret as well to ensure all requests coming into the AJP listener are from a trusted source, you can do by setting the `web.ajp.secret` property.
+CommandBox's AJP listener (provided by Undertow) is already protected against the [Ghostcat vulnerability](https://www.synopsys.com/blogs/software-security/ghostcat-vulnerability-cve-2020-1938/).  However, if you would like to set utp an AJP secret as well to ensure all requests coming into the AJP listener are from a trusted source, you can do by setting the `web.ajp.secret` property.
 
 ```bash
 server set web.AJP.secret=mySecret
 ```
 
-For this to work, you must also configure your AJP proxy in your web server to send the same secret!  For requests received to the AJP listener which do not contain the secret, a `403` status code will be returned.  You can customize the output of the 403 page via the [Error Pages](custom-error-pages.md) settings.&#x20;
+For this to work, you must also configure your AJP proxy in your web server to send the same secret!  For requests received to the AJP listener which do not contain the secret, a `403` status code will be returned.  You can customize the output of the 403 page via the [Error Pages](../custom-error-pages.md) settings.&#x20;
 
-The AJP secret is implemented via a [Server Rule](server-rules/).  Feel free to add your own server rule instead of this setting if you want to customize how it works.
+The AJP secret is implemented via a [Server Rule](../server-rules/).  Feel free to add your own server rule instead of this setting if you want to customize how it works.
 
 ```javascript
 equals(%p, 8009) and not equals(%{r,secret}, 'mySecret') -> set-error(403)
@@ -122,16 +132,3 @@ Most modern browsers allow you to make up any subdomain you want before localhos
 server set web.host=mySite.localhost
 ```
 
-## Customize URL that opens for server
-
-By default, CommandBox will open your browser with the host and port of the server. You can customize the exact URL that opens. This setting will be appended to the current host and port.
-
-```
-server set openBrowserURL=/bar.cfm
-```
-
-Or you can completely override the URL if your setting starts with `http://`.
-
-```
-server set openBrowserURL=http://127.0.0.1:59715/test.cfm
-```

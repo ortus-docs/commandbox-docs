@@ -1,4 +1,8 @@
-# SSL Server Certs
+# Legacy SSL Server Cert syntax
+
+{% hint style="danger" %}
+The syntax on this page is deprecated.  It will still work for the foreseeable future, but we recommend using the [new `bindings` object](./) instead which is much more powerful and allows multiple bindings.
+{% endhint %}
 
 Turning on SSL in your web server will will enable SSL without an approved SSL certificate. If you need an official certificate so you don't have to confirm your SSL connection you can add these entries
 
@@ -11,6 +15,12 @@ server set web.SSL.keyPass=myPass
 The cert file and private key can be a PEM encoded file, or a DER-format binary file.
 
 You can also use a PFX file (PKCS #8) by specifying it in the `web.ssl.certFile` setting and then put the password for the PFX file in the `web.ssl.keyPass` setting. You won't use the `web.ssl.keyFile` setting for a PFX since the private key is contained in the main file.
+
+{% hint style="info" %}
+For [Multi-Site](../../multi-site-support/), SSL Server Cert settings can be configured on a per-site basis in the `sites` object of the `server.json` or in a `.site.json` file.
+{% endhint %}
+
+
 
 ## Generating a Server Cert
 
