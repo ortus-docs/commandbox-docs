@@ -60,7 +60,8 @@ The ONLY required settings for each site are
 * &#x20;`webroot`
 * or `siteConfigFile`  which points to a JSON file on disk where a web root would be required to be defined
 
-```
+{% code title="server.json" %}
+```json
 {
     "sites":{
         "client-1":{
@@ -72,6 +73,7 @@ The ONLY required settings for each site are
     }
 }
 ```
+{% endcode %}
 
 If you want to access each site individually, you'll either want to specify a separate HTTP/SSL/AJP binding OR a custom hostname for each site.  Otherwise, you'll have no way to access them!
 
