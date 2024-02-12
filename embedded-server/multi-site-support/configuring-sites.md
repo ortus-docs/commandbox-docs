@@ -1,10 +1,12 @@
 ---
-description: Learn how (and where) to configure multiple sites from a single CommandBox server 
+description: >-
+  Learn how (and where) to configure multiple sites from a single CommandBox
+  server
 ---
 
 # Configuring Sites
 
-As soon as CommandBox flips over to multi-site mode, the settings in the `web` object will become defaults that apply to all sites.  This allows you to group global settings into the top-level `web` object and then override what you need for each site.  Here is the full order of precedence for what settings will be applied:
+As soon as CommandBox flips over to Multi-Site mode, the settings in the `web` object will become defaults that apply to all sites. This allows you to group global settings into the top-level `web` object and then override what you need for each site. Here is the full order of precedence for what settings will be applied:
 
 * settings in a `.site.json` file inside a web root of a site
 * settings in an external site JSON file pointed to by the `siteConfigFiles` setting in `server.json`
@@ -14,7 +16,7 @@ As soon as CommandBox flips over to multi-site mode, the settings in the `web` o
 
 ### Settings global to a server
 
-Since all sites for a given server do run inside the same JVM, there are some settings which cannot be customized on a per-site basis.  They are as follows:
+Since all sites for a given server do run inside the same JVM, there are some settings which cannot be customized on a per-site basis. They are as follows:
 
 * JRE/JDK the server runs on
 * JVM args, heap size
@@ -26,7 +28,7 @@ Since all sites for a given server do run inside the same JVM, there are some se
 
 ### Per-site settings
 
-Everything normally set in the `web` block of your `server.json` can be configured separately for each site.  These settings include:
+Everything normally set in the `web` block of your `server.json` can be configured separately for each site. These settings include:
 
 * GZIp enabled and GZip predicate
 * Access log
@@ -55,7 +57,7 @@ And remember, all of the settings in the section above can be defaulted for all 
 
 ### Debugging settings
 
-There is much-improved console output now coming from Runwar when the server starts up.  Add `--verbose` or `--debug` to your `server start` command and you'll see site debug output at the top of the server start in the interactive job output:
+There is much-improved console output now coming from Runwar when the server starts up. Add `--verbose` or `--debug` to your `server start` command and you'll see site debug output at the top of the server start in the interactive job output:
 
 ```
    |   |--------------------------------------------------------------
