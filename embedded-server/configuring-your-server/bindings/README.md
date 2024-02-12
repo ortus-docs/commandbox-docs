@@ -26,7 +26,7 @@ Each type of binding is represented by an object of that name inside the `bindin
             // A single binding
             "HTTP" : {},
             // or an array of objects for multiple bindings
-            "HTTP" : []
+            "HTTP" : [],
             
             // A single binding
             "SSL" : {},
