@@ -1,3 +1,7 @@
+---
+description: Use a servlet pass predicate to define which requests should be forwarded to the servlet
+---
+
 # Servlet Pass Predicate
 
 In a traditional server setup, you are used to two separate pieces of software
@@ -7,7 +11,7 @@ In a traditional server setup, you are used to two separate pieces of software
 
 In CommandBox, now we have the ability to combine both of those bullets together into a single piece of software.  No reverse proxy is needed, nor is a second port to proxy to.
 
-In all cases with the legacy setup, there is always a check of some kind that decides which requests will get sent to the servlet.  This is usually checking for URLs ending in `.cfm` or `.cfc`.  Common implementations of this are
+In all cases with the legacy setup, there is always a check of some kind that decides which requests will get sent to the servlet.  This is usually checking for URLs ending in `.cfm` or `.cfc`.  Common implementations of this are:
 
 * Adobe's CF connector
 * The mod\_cfml module for Apache
@@ -33,4 +37,4 @@ server set web.servletPassPredicate=regex( '^/cgi/(.+?\\.cf[cm])(/.*)?$' )
 server set web.servletPassPredicate=regex( '^/(.+?\\.cf[cm])(/.*)?$' ) or path-prefix-nocase( /REST/ )
 ```
 
-Note, be careful as your servlet pass setting may send .cfm files to the static file handler.  CommandBox has a [failsafe in place](../configuring-your-server/server-rules/allowed-static-files.md) to prevent the source code from being returned, but you should still use caution when configuring this.
+Note, be careful as your servlet pass setting may send `.cfm` files to the static file handler.  CommandBox has a [failsafe in place](../configuring-your-server/server-rules/allowed-static-files.md) to prevent the source code from being returned, but you should still use caution when configuring this.
