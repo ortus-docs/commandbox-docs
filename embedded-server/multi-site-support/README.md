@@ -14,7 +14,7 @@ There is a repo on Github that contains working examples of all the features of 
 [https://github.com/Ortus-Solutions/commandbox-tests](https://github.com/Ortus-Solutions/commandbox-tests)
 
 {% hint style="info" %}
-You are free to use CommandBox as you with for development purposes, but if you are using more than 2 sites in production, we ask you consider supporting us with a [CommandBox Pro](https://www.ortussolutions.com/products/commandbox-pro) license which bundles support and commercial modules and extensions.
+You are free to use CommandBox as you wish for development purposes, but if you are using more than 2 sites in production, we ask you consider supporting us with a [CommandBox Pro](https://www.ortussolutions.com/products/commandbox-pro) license which bundles support and commercial modules and extensions.
 {% endhint %}
 
 ### Tuckey Rewrites
