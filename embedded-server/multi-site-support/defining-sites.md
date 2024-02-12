@@ -1,11 +1,15 @@
+---
+description: Defining sites in CommandBox Multi-Site
+---
+
 # Defining Sites
 
-There's no flag or setting for enabling multiple sites in a single server.  All you have to do is&#x20;
+There's no flag or setting for enabling multiple sites in a single server.  All you have to do is
 
 * define a `sites` object in `server.json`
 * or a `siteConfigFiles` setting in `server.json`
 
-inside your `server.json` and if 1 or more sites are found, CommandBox will automatically switch over to "multi-site" mode.   It's easy to tell if a server has more than one site.  When you start it, the console output will have a dedicated section in the output for each site.  There is also additional information in the `server info` command about each site.
+inside your `server.json` and if one or more sites are found, CommandBox will automatically switch over to "multi-site" mode.   It's easy to tell if a server has more than one site.  When you start it, the console output will have a dedicated section in the output for each site.  There is also additional information in the `server info` command about each site.
 
 ```
 ❯ start --dryRun
@@ -22,7 +26,7 @@ Let's explore the two methods of defining more sites.
 
 ### Define a "sites" object in server.json
 
-The `sites` object will have a key for each site you want to define where the name of the key is the name of each site and the value is another object containing the configuration of that site.  Think of all of the setting which can be set in the `web` object of `server.json`.  Each site object in the `sites` object can have all the same settings as the top-level `web` object so it will be very familiar. &#x20;
+The `sites` object will have a key for each site you want to define where the name of the key is the name of each site and the value is another object containing the configuration of that site.  Think of all of the setting which can be set in the `web` object of `server.json`.  Each site object in the `sites` object can have all the same settings as the top-level `web` object so it will be very familiar.
 
 {% code title="server.json" %}
 ```javascript
@@ -57,8 +61,8 @@ The simple example `server.json` above, some defaults that apply to all sites ar
 
 The ONLY required settings for each site are
 
-* &#x20;`webroot`
-* or `siteConfigFile`  which points to a JSON file on disk where a web root would be required to be defined
+* `webroot`
+* or `siteConfigFile`  which points to a JSON file on disk where a web root must be defined
 
 {% code title="server.json" %}
 ```json
@@ -77,7 +81,7 @@ The ONLY required settings for each site are
 
 If you want to access each site individually, you'll either want to specify a separate HTTP/SSL/AJP binding OR a custom hostname for each site.  Otherwise, you'll have no way to access them!
 
-You can also place a `.site.json` file inside of the web root, which will be found by convention and its contents will be added to the site object for that site.  This is akin to configuring your sites in Apache, but having an `.htaccess` file in each web root to override settings. &#x20;
+You can also place a `.site.json` file inside of the web root, which will be found by convention and its contents will be added to the site object for that site.  This is akin to configuring your sites in Apache, but having an `.htaccess` file in each web root to override settings.
 
 System setting expansions will be processed in any `.site.json` files, and if a `.env` file exists in the web root as well, thoses env vars will be loaded, but JUST for that `.site.json` file's expansions.
 
@@ -120,4 +124,4 @@ Valid examples could be:
 ```
 {% endcode %}
 
-System setting expansions will be processed in any of the site JSON files located via your file globbing patterns.  If the `server.json` has a `sites` object AND a `siteConfigFiles` setting, all sites will be combined together.  You choose the approach that fits your needs.  An example of a single site JSON&#x20;
+System setting expansions will be processed in any of the site JSON files located via your file globbing patterns.  If the `server.json` has a `sites` object AND a `siteConfigFiles` setting, all sites will be combined together.  Feel free to choose the approach that fits your needs!
