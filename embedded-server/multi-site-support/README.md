@@ -19,12 +19,12 @@ You are free to use CommandBox as you wish for development purposes, but if you 
 
 ### Tuckey Rewrites
 
-Please note that the [legacy form of rewrites](./#tuckey-rewrites) using Tuckey will NOT work by default in Multi-Site mode.  There are two main issues
+Please note that the [legacy form of rewrites](../configuring-your-server/url-rewrites) using Tuckey will NOT work by default in Multi-Site mode.  There are two main reasons for this limitation:
 
 * Tuckey is tied to the servlet and static files are now no longer served by the Default Servlet, but are returned to the browser without even touching the servlet.
-* There is only one servlet servicing all sites, so you can't have different rewrites per site
+* There is only one servlet servicing all sites, so you can't have different rewrites per site.
 
-As a workaround if you're not ready to leave Tuckey, you can force the new Undertow web server to not serve static files by forcing the `servletPassPredicate` to send ALL files to the servlet:
+Not ready to leave Tuckey? You can force the new Undertow web server to not serve static files by setting `servletPassPredicate=true`, which will send ALL files to the servlet:
 
 ```bash
 server set web.servletPassPredicate=true
