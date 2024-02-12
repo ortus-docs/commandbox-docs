@@ -1,10 +1,14 @@
+---
+description: All the Multi-Site examples you need to get started with Multi-Site
+---
+
 # Multi-Site Examples
 
 This Github repository has several Multi-Site examples in the folders starting with the words `multi-site-`.  Here is an overview of a few of them.
 
 ### Basic Multi-Site configured in server.json
 
-Here is a basic `server.json` configuring several sites.  Here we have some defaults configured in the `web` object for all sites, including a single HTTP binding to all IPs on port 80.  There is a custom host alias configured on each site.  There is a site called "default" which is set t the default site with `default=true` in the site object.
+Here is a basic `server.json` configuring several sites.  Here we have some defaults configured in the `web` object for all sites, including a single HTTP binding to all IPs on port 80.  There is a custom host alias configured on each site.  There is a site called "default" which is set to the default site with `default=true` in the site object.
 
 {% code title="server.json" %}
 ```json
@@ -89,7 +93,7 @@ Full example here: [https://github.com/Ortus-Solutions/commandbox-tests/tree/mas
 
 ### Custom Bindings
 
-This example server contains custom HTTP and SSL bindings for each server.  You'll probably never need anything this complex, but we support it all!  The HTTP port 81 binding on all IPs, SSL binding on port 444, and AJP binding on port 8010 are shared by all sites.  Each site then adds additional bindings that apply only them.  Needless to say, there are multiple URLs that lead to each site.&#x20;
+This example server contains custom HTTP and SSL bindings for each server.  You'll probably never need anything this complex, but we support it all!  The HTTP port 81 binding on all IPs, SSL binding on port 444, and AJP binding on port 8010 are shared by all sites.  Each site then adds additional bindings specific to the site.  Needless to say, there are multiple URLs that lead to each site.
 
 {% code title="server.json" %}
 ```javascript
@@ -177,7 +181,7 @@ Full example here: [https://github.com/Ortus-Solutions/commandbox-tests/tree/mas
 
 ### Web root convention
 
-This example server configures some defaults in the `web` object and then simply points to the web root of several sites where a `.site.json` file is waiting to further configure each site.
+This example server configures some defaults in the `web` object and then simply points to the web root of several sites where a `.site.json` file is waiting to further configure each site:
 
 {% code title="server.json" %}
 ```javascript
@@ -215,7 +219,7 @@ This example server configures some defaults in the `web` object and then simply
 ```
 {% endcode %}
 
-And here are the `.site.json` files from each of the web roots.
+And here are the `.site.json` files from each of the web roots:
 
 {% code title="site1/.site.json" %}
 ```javascript
@@ -270,7 +274,7 @@ Full example here: [https://github.com/Ortus-Solutions/commandbox-tests/tree/mas
 
 ### Per-site siteConfigFile
 
-This example is similar to above, but instead of pointing to the web root of each site, it points to the site config file for each site, which are stored outside of the web roots.&#x20;
+This example is similar to above, but instead of pointing to the web root of each site, it points to the site config file for each site, which are stored outside of the web roots:
 
 {% code title="server.json" %}
 ```javascript
@@ -334,7 +338,7 @@ In this example, we have a single file globbing pattern that points to a directo
 ```
 {% endcode %}
 
-In this example, we have a folder called `sites-enabled` in the same directory as the `server.json` with one or more JSON files.  Here is an example of one.  Note the relative paths are always relative to this file.
+In this example, we have a folder called `sites-enabled` in the same directory as the `server.json` with one or more JSON files.  Here is an example:
 
 {% code title="sites-enabled/site1.json" %}
 ```javascript
@@ -344,5 +348,7 @@ In this example, we have a folder called `sites-enabled` in the same directory a
 }
 ```
 {% endcode %}
+
+Note the relative paths are always relative to this JSON file.
 
 Full example here: [https://github.com/Ortus-Solutions/commandbox-tests/tree/master/multi-site-siteConfigFiles-globbing](https://github.com/Ortus-Solutions/commandbox-tests/tree/master/multi-site-siteConfigFiles-globbing)
