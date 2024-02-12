@@ -1,3 +1,7 @@
+---
+description: Learn how to serve multiple sites with different web roots, rewrites, and more from a single CommandBox server 
+---
+
 # Multi-Site Support
 
 The default behavior when you run `server start` is to start a server that points only to a single web root.  There are two methods you can use to host more than one web root at a time in a single CommandBox server:
