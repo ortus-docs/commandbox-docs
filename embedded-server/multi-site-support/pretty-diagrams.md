@@ -1,3 +1,7 @@
+---
+description: A visual overview of CommandBox server deployments for both singular and Multi-Site configurations
+---
+
 # Pretty Diagrams
 
 This is what a typical ColdFusion deployment looks like.  A separate web server sites in front, bound to ports 80 and 443 and proxies back to a Tomcat-based servlet:
