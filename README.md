@@ -22,7 +22,7 @@ And constructed with the following guidelines:
 
 ## License
 
-CommandBox is open source and bound to the [LGPL v3 GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl.html)
+CommandBox is open source and bound to the [APACHE LICENSE, VERSION 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 * Copyright by Ortus Solutions, Corp
 * CommandBox is a registered trademark by Ortus Solutions, Corp
