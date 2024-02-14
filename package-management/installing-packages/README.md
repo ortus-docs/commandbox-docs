@@ -15,7 +15,7 @@ If you find a package on the internet that doesn't have a `box.json`, please con
 ForgeBox supports semantic version ranges for installing packages. Here are some examples:
 
 ```bash
-# Latest stable version
+# Latest stable version (unless a version is specified in the box.json)
 CommandBox> install foo
 
 # Same as above
@@ -45,6 +45,34 @@ CommandBox> install foo@~2.1
 # Any greater version that does not modify the left-most non-zero digit.  4.2, 4.3, 4.9, etc
 CommandBox> install foo@^4.1.4
 ```
+
+## box.json version constraint
+
+When installing a ForgeBox package, which is not currently installed, but IS defined already in the `box.json` with a semantic version range, you will not get the very latest version of that package, but whatever version satisfies the version range in the `box.json`.
+
+So if you were to seed your `box.json` with the following:
+
+```json
+{
+    "dependencies" : {
+        "coldbox" : "^4.1.0"
+    }
+}
+```
+
+and then run either
+
+```bash
+install
+```
+
+or
+
+```bash
+install coldbox
+```
+
+You would get the latest version of ColdBox that satisfies the range `^4.1.0`.
 
 ## Install Process
 

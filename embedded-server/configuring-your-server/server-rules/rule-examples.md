@@ -144,8 +144,14 @@ Reject requests using an unknown host header.
 not equals-nocase( %{LOCAL_SERVER_NAME}, 'www.myDomain.com' ) -> set-error( 403 )
 ```
 
-Create reverse proxy
+Create reverse proxy to multiple hosts
 
 ```json
 path-prefix('/reports') -> load-balanced-proxy({'http://reports1.mydomain.com','http://reports2.mydomain.com'})
+```
+
+Create reverse proxy to a single host
+
+```json
+proxy( 'http://localhost:8085' )
 ```

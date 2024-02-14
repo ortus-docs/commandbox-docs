@@ -36,6 +36,7 @@ disallowed-methods(trace)
 * **done** - Skips remaining rules
 * **request-limit()** - Limits concurrent requests
 * **restart** - Restarts process back at start of predicate rule chain (combine with rewrite, etc)
+* **proxy()** - Creates a proxy to a single host
 * **load-balanced-proxy()** - Creates a round robin reverse proxy to a list of hosts
 * **allowed-methods()** / **disallowed-methods()** - Enforces whitelist/blacklist of HTTP methods on current request
 * Full list here: [https://undertow.io/undertow-docs/undertow-docs-2.0.0/#built-in-handlers-2](https://undertow.io/undertow-docs/undertow-docs-2.0.0/#built-in-handlers-2)
@@ -118,6 +119,8 @@ Exchange attributes are an abstraction Undertow provides to reference any part o
 * **%{q,query\_param\_name}** - Any query parameter
 * **%{i,request\_header\_name}** - Any request header
 * **%{o,response\_header\_name}** - Any response header
+* **%{REQUEST\_URL}** - The requested URL
+* **%{RELATIVE\_PATH}** - The portion after the domain
 * **${anything-here}** - Any value from the predicate context (such as regex capture groups or path-template placeholders)
 * Full list here: [https://undertow.io/undertow-docs/undertow-docs-2.0.0/#exchange-attributes-2](https://undertow.io/undertow-docs/undertow-docs-2.0.0/#exchange-attributes-2)
 

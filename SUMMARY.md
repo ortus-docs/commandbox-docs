@@ -135,6 +135,7 @@
       * [Baked in Rules](embedded-server/configuring-your-server/server-rules/baked-in-rules.md)
       * [Allowed Static Files](embedded-server/configuring-your-server/server-rules/allowed-static-files.md)
       * [Rule Language](embedded-server/configuring-your-server/server-rules/rule-language.md)
+      * [Rewrites Map](embedded-server/configuring-your-server/server-rules/rewrites-map.md)
       * [Custom Predicates/Handlers](embedded-server/configuring-your-server/server-rules/custom-predicates-handlers.md)
       * [Rule Examples](embedded-server/configuring-your-server/server-rules/rule-examples.md)
       * [Debugging Server Rules](embedded-server/configuring-your-server/server-rules/debugging-server-rules.md)
