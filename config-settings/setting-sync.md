@@ -52,3 +52,45 @@ This command will not change anything, but gives you a full report of all settin
 config sync diff
 ```
 
+### Automatic Sync of settings
+
+If you are logged into ForgeBox and have a ForgeBox Pro account, your settings will automatically sync for you.  If&#x20;
+
+* the user is logged into forgebox
+* the user has a ForgeBox Pro account
+* the CLI is not in Offline mode
+* The autosync feature is not disabled
+
+then CommandBox will auto-sync ForgeBox settings based on these rules
+
+**Pull** new settings from ForgeBox when …
+
+* CLI Starts (interactive)
+* logging into forgebox
+* switching forgebox users
+
+**Push** config to ForgeBox when…
+
+* config settings get updated
+* a system module is installed
+* a system module is uninstalled
+
+The forgebox endpoint used will be
+
+* The endpoint configured in config settings for autosync
+* the configured default forgebox endpoint
+* “forgebox”
+
+The following autosync settings can be used to control this.
+
+#### `configAutoSync.enable`
+
+Enable or disable autosync entirely.
+
+#### `configAutoSync.endpoint`
+
+Name of the ForgeBox endpoint to sync to.  Only use this if you have a ForgeBox Enterprise account with your own custom ForgeBox URL.
+
+#### `configAutoSync.overwrite`
+
+Enable to disable whether syncing overwrites changes.  See the docs for the `overwrite` parameter to the config push and pull commands for more details.  This setting basically just defaults that parameter.

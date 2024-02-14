@@ -31,3 +31,11 @@ foo has a value of blue.
 bar has a value of seven.
 baz has a value of turkey.
 ```
+
+To escape a literal colon (`:`) in a parameter name, put a backslash in front of it:
+
+```bash
+server set foo\:bar=baz
+```
+
+which will create a literal key of `foo:bar.`\
