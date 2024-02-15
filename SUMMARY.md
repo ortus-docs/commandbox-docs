@@ -5,6 +5,8 @@
 * [Authors](authors.md)
 * [Overview](overview.md)
 * [Release History](release-history/README.md)
+  * [6.x Versions](release-history/6.x-versions/README.md)
+    * [What's New in 6.0.0](release-history/6.x-versions/whats-new-in-6.0.0.md)
   * [5.x Versions](release-history/5.x-versions/README.md)
     * [What's New in 5.9.1](release-history/5.x-versions/whats-new-in-5.9.1.md)
     * [What's New in 5.9.0](release-history/5.x-versions/whats-new-in-5.9.0.md)

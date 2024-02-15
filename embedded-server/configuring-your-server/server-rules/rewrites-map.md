@@ -67,7 +67,7 @@ There is a new `%{map:name-name:mapKey|defaultValue}` exchange attribute which m
   "web" : {
     "rules":[
       "rewrite-map( name=myMap, file='/path/to/myMap.txt' case-sensitive=false )",
-      "regex-nocase( '^/foo/(.*)$' ) -> rewrite( 'index.cfm?page=%{map:myMap:$[1]|99}' )",
+      "regex-nocase( '^/foo/(.*)$' ) -> rewrite( 'index.cfm?page=%{map:myMap:$[1]|99}' )"
     ]
   }
 }
