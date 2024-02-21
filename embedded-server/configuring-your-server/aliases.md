@@ -3,7 +3,7 @@
 CommandBox allows you to create web aliases for the web server that are similar to virtual directories. The alias path is relative to the folder the `server.json` lives in, but can point to any folder on the hard drive. Aliases can be used for static or CFM files.
 
 {% hint style="info" %}
-For compatibility reasons as of version `5.3.0`, relative alias paths can also be relative to the web root, if that is not where the `server.json` lives.  CommandBox will check if the folder exists relative to the web root FIRST, and if not, it will then check relative to the folder the `server.json` lives in.
+Remember, relative paths configured in a JSON file (whether `server.json`, or `.site.json`, etc) will be resolved relative to the folder that the JSON file lives in!
 {% endhint %}
 
 To configure aliases for your server, create an object under `web` called `aliases`. The keys are the web-accessible virtual paths and the corresponding values are the relative or absolute path to the folder the alias points to.
