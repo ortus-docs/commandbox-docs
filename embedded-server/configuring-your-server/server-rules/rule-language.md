@@ -77,6 +77,7 @@ A predicate is a condition that must be matched for the handler to kick in. If u
 * **path()/path-nocase()** - match the incoming request path
 * **path-suffix()/path-suffix-nocase()** - match full file/folder names at the end of the path like file.cfm
 * **path-prefix()/path-prefix-nocase()** - match full file/folder names at the start of the path like /lucee/admin
+* **is-file** / **is-directory** - check if the `%{RELATIVE_PATH}` is an existing file or directory on disk.  While relative path is the default, you can pass another exchange attribute to check as `is-file( %{q,myQueryParam} )`
 * **method()** - Match the HTTP method
 * **regex()/regex-nocase()** - Match a regular expression against any exchange attribute
 * **equals()/equals-nocase()** and **contains()**/**contains-nocase()** - Do a text compare on any exchange attribute
