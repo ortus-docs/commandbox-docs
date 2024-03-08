@@ -4,7 +4,7 @@ description: All the Multi-Site examples you need to get started with Multi-Site
 
 # Multi-Site Examples
 
-This Github repository has several Multi-Site examples in the folders starting with the words `multi-site-`.  Here is an overview of a few of them.
+This [Github repository](https://github.com/Ortus-Solutions/commandbox-tests) has several Multi-Site examples in the folders starting with the words `multi-site-`.  Here is an overview of a few of them.
 
 ### Basic Multi-Site configured in server.json
 
@@ -274,7 +274,7 @@ Full example here: [https://github.com/Ortus-Solutions/commandbox-tests/tree/mas
 
 ### Per-site siteConfigFile
 
-This example is similar to above, but instead of pointing to the web root of each site, it points to the site config file for each site, which are stored outside of the web roots:
+This example is similar to above, but instead of pointing to the web root of each site, it points to the site config file for each site, which is stored outside of the web roots:
 
 {% code title="server.json" %}
 ```javascript
