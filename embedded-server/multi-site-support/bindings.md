@@ -7,10 +7,10 @@ description: Adjust HTTP, SSL or AJP bindings per site using CommandBox Multi-Si
 HTTP bindings are much more robust in Multi-Site mode. In single-site mode, there is basically no such thing as host name bindings. All traffic coming into that CommandBox server is simply routed to the one and only server regardless of its host name or IP address.
 
 {% hint style="info" %}
-This page covers bindings from a Multi-Site perspectice, but the general docs on all Binding options [is here](../configuring-your-server/bindings/).
+This page covers bindings from a Multi-Site perspective, but the general docs on all Binding options [is here](../configuring-your-server/bindings/).
 {% endhint %}
 
-As of version 6.0, a command server can now have
+As of version 6.0, a CommandBox server can now have
 
 * Any number of HTTP bindings on any IP/port combination
 * Any number of SSL bindings on any IP/port combination
@@ -18,7 +18,7 @@ As of version 6.0, a command server can now have
 
 And furthermore, a binding can be shared for all sites on the server, or could serve traffic to ONLY a single site depending on how you configure it. Think how IIS, Nginx or Apache work. You now have the same level of flexibility in CommandBox!
 
-CommandBox 6 has introduced a new syntax for bindings (and is still backwards compat with the old JSON syntax too) that allows you to specify hostnames alongside the bindings:
+CommandBox 6 has introduced a new syntax for bindings (and is still backwards compatible with the old JSON syntax too) that allows you to specify hostnames alongside the bindings:
 
 {% code title="server.json" %}
 ```json
