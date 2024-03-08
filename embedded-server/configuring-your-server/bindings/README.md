@@ -121,7 +121,7 @@ server set web.bindings.HTTP.port=8080
 ```
 {% endcode %}
 
-This syntax is mutually exclusive wiht the `listen` key.
+This syntax is mutually exclusive with the `listen` key.
 
 #### Host names
 
