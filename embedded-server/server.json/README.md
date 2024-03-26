@@ -129,7 +129,6 @@ Every time you start a server, the settings used to start it are saved in a `ser
         ],
         // Or...
         "rulesFile": "../rules/*.json",
-        "directoryListing": true,
         "blockCFAdmin": false,
         "blockSensitivePaths": true,
         "blockFlashRemoting": true

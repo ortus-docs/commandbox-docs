@@ -48,7 +48,7 @@ If a profile is not set, these rules are used to choose the default value:
 
 When profile is set to "**production**", the following defaults are provided:
 
-* `web.directoryListing` = false
+* `web.directoryBrowsing` = false
 * `web.blockCFAdmin` = external
 * `web.blockSensitivePaths` = true
 * `web.blockFlashRemoting` = true
@@ -57,7 +57,7 @@ When profile is set to "**production**", the following defaults are provided:
 
 When profile is set to "**development**", the following defaults are provided:
 
-* `web.directoryListing` = true
+* `web.directoryBrowsing`= true
 * `web.blockCFAdmin` = false
 * `web.blockSensitivePaths` = true
 * `web.blockFlashRemoting` = true
@@ -66,7 +66,7 @@ When profile is set to "**development**", the following defaults are provided:
 
 When profile is set to "**none**", the following defaults are provided:
 
-* `web.directoryListing` = false
+* `web.directoryBrowsing`= false
 * `web.blockCFAdmin` = false
 * `web.blockSensitivePaths` = false
 * `web.blockFlashRemoting` = false
