@@ -86,3 +86,7 @@ server start
 ```
 
 The CFML code running that server process will be able to "see" the `foo` environment variable.
+
+## Working Dir of Server process
+
+The working directory of the Java server process will be the directory where the `server.json` file lives, if it exists.  Otherwise, it will be the webroot of the server (or the default site if multi-site).  This doesn't generally have much affect on CF servers, but it does affect how Java resolves relative paths and you can utilize it if you have relative paths in your config files, or want to use the `user.dir` Java system property as a config file placeholder.
