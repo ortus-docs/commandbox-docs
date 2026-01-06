@@ -221,6 +221,7 @@
     * [Embedded Server](package-management/box.json/embedded-server.md)
     * [Dependencies](package-management/box.json/dependencies.md)
     * [TestBox](package-management/box.json/testbox.md)
+  * [Package Lock File](package-management/package-lock-file.md)
   * [Managing Version](package-management/managing-version.md)
 * [Task Runners](task-runners/README.md)
   * [Task Anatomy](task-runners/task-anatomy.md)
