@@ -42,7 +42,21 @@ server set web.rewrites.enable=true
 server show web.rewrites.enable
 ```
 
+## Rewrite File
 
+If your web server is running BoxLang, and the web root has an existing `index.bxm` file in it, the default rewrite rule will rewrite to
+
+```
+http://localhost/index.bxm/main
+```
+
+All other scenarios will rewreite to `index.cfm`. &#x20;
+
+If you want a total custom rewrite file, then turn off the `web.rewritesEnable` setting and add a custom  server rule like so:
+
+```
+framework-rewrite( 'myFrontController.bxm' )
+```
 
 ## SES URLs
 
