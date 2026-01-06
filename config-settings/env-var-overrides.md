@@ -40,3 +40,19 @@ box_config_foo.bar[baz].bum[1]=test
 When you provide JSON, the `append` flag will be set to true when adding the configuration to what's already in CommandBox.
 
 Overridden env vars will not be written to the `CommandBox.json` file and will be lost when box stops. They will also take precedence and override any explicit settings already set.
+
+## Module Setting Overrides
+
+Env vars can also be used to override module settings like so:
+
+```
+box_config_modules_moduleName_settingName=value
+```
+
+If the module name has a hyphen, your OS may require you to set the entire module struct as JSON to work around this
+
+```
+box_config_modules={ "module-name" : { "settingName" : "value" } }
+```
+
+Note, for the actual module to pick up your setting, the modue authors will need to be injecting the entire setting struct into their CFCs, which are passed by reference.  If a module injects a single setting at startup, you'll have chicken/egg issues where the override is loaded too late.

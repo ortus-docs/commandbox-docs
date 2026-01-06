@@ -1,56 +1,20 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/embedded-server/configuring-your-server/url-rewrites
----
-
-# URL Rewrites
-
-Once you start using the embedded server for your development projects, you may wish to enable URL rewriting. Rewrites are used by most popular frameworks to do things like add the `index.cfm` back into SES URLs.
-
-You may be used to configuring URL rewrites in Apache or IIS, but rewrites are also possible in CommandBox's embedded server via a [Tuckey servlet filter](http://tuckey.org/urlrewrite/) which uses an xml configuration.
-
-Commandbox also exposes a way to do url rewrites with the Undertow predicate language. If you missed the [Server Rules](server-rules/) section, go there to learn how to do url rewrites, security, and http header modification in a nice text based language (non-xml).
+# Tuckey Rewrites
 
 {% hint style="warning" %}
-Note: Tuckey-based URL rewrites are not recommended going forward.  They are limited and do not play with with [Multi-Site](../multi-site-support/) servers.  It is recommended you move to the more-powerful [Server Rules](server-rules/).
+Note: Tuckey-based URL rewrites are not recommended going forward.  They are limited and do not play with with [Multi-Site](../../multi-site-support/) servers.  It is recommended you move to the more-powerful [Server Rules](../server-rules/).
 {% endhint %}
 
-## Default Rules
+In addition to the recommended [Server Rules](../server-rules/), CommandBox still supported the deprecated [Tuckey servlet filter](http://tuckey.org/urlrewrite/) library.  It's not recommended to use going forward, but these docs are a reference for those still using it.
 
-We've already added the required jars and created a default rewrite [XML file](http://cdn.rawgit.com/paultuckey/urlrewritefilter/master/src/doc/manual/4.0/index.html#filterparams) that will work out-of-the-box with the ColdBox MVC Platform. To enable rewrites, start your server with the `--rewritesEnable` flag.
-
-[http://tuckey.org/urlrewrite/manual/4.0/index.html](http://tuckey.org/urlrewrite/manual/4.0/index.html)
-
-```bash
-start --rewritesEnable
-```
-
-Now URLs like
-
-```
-http://localhost/index.cfm/main
-```
-
-can now simply be
-
-```
-http://localhost/main
-```
-
-In `server.json`
-
-```bash
-server set web.rewrites.enable=true
-server show web.rewrites.enable
-```
-
-> **info** The default rewrite file can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
+Tuckey rewrites can't be used with Multi-site due to limitations of how the are loaded as a servlet filter, which may be shared across multiple sites.
 
 ## Custom Rules
 
-If you want to customize your rewrite rules, just create your own XML file and specify it when starting the server with the `rewritesConfig` parameter. Here we have a simple rewrite rule that redirects `/foo` to `/index.cfm`
+If you want to customize your rewrite rules, just create your own XML file and specify it when starting the server with the `rewritesConfig` parameter. Here we have a simple rewrite rule that redirects `/foo` to `/index.cfm`&#x20;
+
+{% hint style="info" %}
+The basic framework rewrite rule can be found in `~\.CommandBox\cfml\system\config\urlrewrite.xml`
+{% endhint %}
 
 **customRewrites.xml**
 
