@@ -224,6 +224,7 @@
     * [TestBox](package-management/box.json/testbox.md)
   * [Package Lock File](package-management/package-lock-file.md)
   * [Managing Version](package-management/managing-version.md)
+  * [Lock Files](package-management/lock-files.md)
 * [Task Runners](task-runners/README.md)
   * [Task Anatomy](task-runners/task-anatomy.md)
   * [BaseTask Super Class](task-runners/basetask-super-class.md)
