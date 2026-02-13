@@ -6,7 +6,7 @@ metaLinks:
 
 # Introduction
 
-## CommandBox Manual - Version 6.3.1
+## CommandBox Manual - Version 6.3.2
 
 ![CommandBox](.gitbook/assets/CommandBoxLogo.png)
 
