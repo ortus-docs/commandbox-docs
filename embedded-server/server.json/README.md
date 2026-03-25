@@ -1,7 +1,7 @@
 ---
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/embedded-server/server.json
+    - https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/embedded-server/server-json
 ---
 
 # Server.json

@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/package-management/box.json/extended-package-data
+      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/package-management/box-json/extended-package-data
 ---
 
 # Extended Package Data

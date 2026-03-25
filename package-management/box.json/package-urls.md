@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/package-management/box.json/package-urls
+      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/package-management/box-json/package-urls
 ---
 
 # Package URLs

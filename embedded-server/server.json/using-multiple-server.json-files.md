@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/embedded-server/server.json/using-multiple-server.json-files
+      https://app.gitbook.com/s/Bw6M3PI3e5HgLVcKZz0G/embedded-server/server-json/using-multiple-server.json-files
 ---
 
 # Using Multiple server.json Files
