@@ -30,7 +30,7 @@ for( var row in qry ) {
 
 So, the first block simply declares a struct that represents a datasource connection. Then I use that struct as my datasource. You might be thinking, "where the heck did he get that struct??". Glad you asked. Start up a Lucee 4 server, edit a datasource that has the connection properties you want and then at the bottom of the edit page you'll see a code sample you can just copy and paste from. This is the code for an \`Application.cfc\`, but you can re-use the same struct here.
 
-![Get DS definition from the Lucee administrator](https://www.ortussolutions.com/__media/datasource-lucee-definition.png)
+<figure><img src="https://www.ortussolutions.com/__media/datasource-lucee-definition.png" alt="Application.cfc File Content Example"><figcaption><p>Get DS definition from the Lucee administrator</p></figcaption></figure>
 
 ## Another method
 

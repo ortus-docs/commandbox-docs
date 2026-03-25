@@ -38,21 +38,21 @@ This is dependant on your terminal, but the CLI now can look a lot prettier. For
 system-colors
 ```
 
-![](https://lh6.googleusercontent.com/FdxSovIc7TYpRMbNsOryEFKfE0y_ArEUXZD__ISZvLwXy8LRb0Ws6KFPEljDYcTrLHPvunvb2LSH40bTlSMjeYOXY0bU4-7U77uSagBrU9rLWH5CbXGvoQNB6qbe9QjCBgEC94a9VaQ)
+<figure><img src="https://lh6.googleusercontent.com/FdxSovIc7TYpRMbNsOryEFKfE0y_ArEUXZD__ISZvLwXy8LRb0Ws6KFPEljDYcTrLHPvunvb2LSH40bTlSMjeYOXY0bU4-7U77uSagBrU9rLWH5CbXGvoQNB6qbe9QjCBgEC94a9VaQ" alt="system-colors image"><figcaption></figcaption></figure>
 
 ### CLI Improvements
 
 Along with the newest version of JLine, there's a ton of nice little things now available in CommandBox 4. The first is a totally revamped tab completion interface. Pressing Tab is now prettier, colored, and more organized. Help is integrated right into the interface, and pressing tab repeatedly will cycle through the available options instead of redrawing the screen over and over.
 
-![](https://lh4.googleusercontent.com/CAV4bjlL2QXRkCdtA0i7EcobPmxjzUxJVuc8_yVLBVwnWNspmRXinj50krU6235KqqbQvvhcARP-4dkDUBCyUvsvWfMaXp_Hu-sThVUvQaaOGkd_FfabyfDatEL1uM1p0iA7hGeZZmY)
+<figure><img src="https://lh4.googleusercontent.com/CAV4bjlL2QXRkCdtA0i7EcobPmxjzUxJVuc8_yVLBVwnWNspmRXinj50krU6235KqqbQvvhcARP-4dkDUBCyUvsvWfMaXp_Hu-sThVUvQaaOGkd_FfabyfDatEL1uM1p0iA7hGeZZmY" alt="CLI Improvements"><figcaption></figcaption></figure>
 
 Next is color coding when you type commands in the shell. This make it much easier to tell when you've typed the name of a command correct and makes the difference between the command and parameters easier on your eyes.
 
-![](https://lh5.googleusercontent.com/AdTOYUgp4AHjIl_z8T74gcHUPnE_xltEcMQSHFQoy4J4amyN8pIOOofaPsgF4SRKsjXzK6dEXjJtYd2IPSB2qS3qv5aW-RJ74tQU8cvtrQ83tVDPQ-lRa1k8wqRMWMl3O0CUIxlDK1w)
+<figure><img src="https://lh5.googleusercontent.com/AdTOYUgp4AHjIl_z8T74gcHUPnE_xltEcMQSHFQoy4J4amyN8pIOOofaPsgF4SRKsjXzK6dEXjJtYd2IPSB2qS3qv5aW-RJ74tQU8cvtrQ83tVDPQ-lRa1k8wqRMWMl3O0CUIxlDK1w" alt="color coding when you type commands in the shell"><figcaption></figcaption></figure>
 
 Finally is tab complete and syntax highlighting in the REPL. You can tab complete any CFML function as well as previous variable names you've typed. Common CFML keywords are highlighted, as well as CFML functions and there's even color coded matching of braces, parens, and quotes as you type.
 
-![](https://lh5.googleusercontent.com/CZMwrczMtdIO28zfybjTIdNA1RlBokYfEt8vOHq28-D3EKBbGhBRul-d4apkMwOMOZXghBwcGKwQx4oIUKWb_qE8WBHdKCbyZY5B1kOqvGwnClzc5VdRgtgI07bejO0KjsPh1DvZkDY)
+<figure><img src="https://lh5.googleusercontent.com/CZMwrczMtdIO28zfybjTIdNA1RlBokYfEt8vOHq28-D3EKBbGhBRul-d4apkMwOMOZXghBwcGKwQx4oIUKWb_qE8WBHdKCbyZY5B1kOqvGwnClzc5VdRgtgI07bejO0KjsPh1DvZkDY" alt="syntax highlighting in the REPL"><figcaption></figcaption></figure>
 
 ### Shell History
 
@@ -72,7 +72,7 @@ You'll want to install a powerline-patched font as well. Check out the instructi
 
 [https://www.forgebox.io/view/commandbox-bullet-train](https://www.forgebox.io/view/commandbox-bullet-train)
 
-![](https://lh4.googleusercontent.com/ioB2v4uoj1OUxRnTB9iNSlENo1zaYbPjGMQq8MxJet1z0yfUMJ7J3pdZI6lVMYcu-He3Vx8gEmYEmguHHy2K9PRN3l2j1uucU24gqOKuqH46fc-zKzl_zNiXa1gfe3R_o0Ljy2dvtPM)
+<figure><img src="https://lh4.googleusercontent.com/ioB2v4uoj1OUxRnTB9iNSlENo1zaYbPjGMQq8MxJet1z0yfUMJ7J3pdZI6lVMYcu-He3Vx8gEmYEmguHHy2K9PRN3l2j1uucU24gqOKuqH46fc-zKzl_zNiXa1gfe3R_o0Ljy2dvtPM" alt="CommandBox CLI"><figcaption></figcaption></figure>
 
 And is that some sweet new ASCII art taking advantage of 256 colors as well as a randomized quote/tip on every shell start? Why yes, yes it is!
 
@@ -80,7 +80,7 @@ And is that some sweet new ASCII art taking advantage of 256 colors as well as a
 
 CommandBox has a new way to interact with users and give them a list of pre-defined options that doesn't require typing a free text response. You'll see it if you try to start the same server twice in a row. This is [fully documented](https://commandbox.ortusbooks.com/task-runners/task-interactivity#multiselect-input) and available for you to use in Task Runners and custom commands as well.
 
-![](https://lh4.googleusercontent.com/leFNygdwIitqvz7eKLxP5N-t7_ogAuU57YDLhjSAHmoLYjnemjA17IcKIXqzQRu6i5adiO3Wr8bDKJA1gK3xk9shwRKejsqQP2EBprsStyFGGsODN6Vdai8nqM4z4k0b8bLFC6uIGjk)
+<figure><img src="https://lh4.googleusercontent.com/leFNygdwIitqvz7eKLxP5N-t7_ogAuU57YDLhjSAHmoLYjnemjA17IcKIXqzQRu6i5adiO3Wr8bDKJA1gK3xk9shwRKejsqQP2EBprsStyFGGsODN6Vdai8nqM4z4k0b8bLFC6uIGjk" alt="CommandBox Interactive Inputs"><figcaption></figcaption></figure>
 
 ### Interactive Jobs
 
@@ -129,13 +129,13 @@ job.error( 'Didn''t see that coming' );
 
 Which looks like this when it's done:
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LA-UVvV3_TgzQyCXMWK%2F-LCA6XEmeMpt5bi4OZnM%2F-LCA8qTM95eKrCM9YLWS%2Fimage.png?alt=media\&token=bb2f09b3-d28e-4cb8-8bb4-5b5bb8abe650)
+<figure><img src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LA-UVvV3_TgzQyCXMWK%2F-LCA6XEmeMpt5bi4OZnM%2F-LCA8qTM95eKrCM9YLWS%2Fimage.png?alt=media&#x26;token=bb2f09b3-d28e-4cb8-8bb4-5b5bb8abe650" alt="How the installation process looks when it&#x27;s done"><figcaption></figcaption></figure>
 
 ### Server Logs
 
 We did a lot of work to make dealing with servers easier-- especially when it comes to your log files. Console starts and tailing server logs are now color coded so it's easier to find errors and warnings.
 
-![](https://lh4.googleusercontent.com/QffRjYN3ScVyNCZiysE9ocYIs7XHFuUXCBa940lObSKfnaq_Dyx0PpCVmXBrlLVxvSdzH9koVhzO5zg96KJlWy3VLa-DfolsnmwcOEjUMgzQj67RnL4uk96mSV7FaYLSeQVylq-X_9w)
+<figure><img src="https://lh4.googleusercontent.com/QffRjYN3ScVyNCZiysE9ocYIs7XHFuUXCBa940lObSKfnaq_Dyx0PpCVmXBrlLVxvSdzH9koVhzO5zg96KJlWy3VLa-DfolsnmwcOEjUMgzQj67RnL4uk96mSV7FaYLSeQVylq-X_9w" alt="Server Logs"><figcaption></figcaption></figure>
 
 We've also fine tuned what information shows up when you do **--console** starts as well as **--debug** starts to reduce the noise and enhance the useful information. For instance, when you do:
 
@@ -258,7 +258,7 @@ You just created a new task and ran it. Go on, look around!
 
 Directory listings have gotten a makeover. The columns actually align, the file sizes are human-readable, and the file types are color coded. Be careful, you might actually be able to find stuff now!
 
-![](https://lh3.googleusercontent.com/CeAwNtJkNjrGFk1EnGp9r6iSRedBJih2B_YpLN-VHy_HOaxmJfDKWXkz9TwkYHsEIDkRHpvU29E7Q9xPhOu1DeuA3-wwMyCNOwmj8DzLBZHuTGOb3yeaJGaAj8iU-W0HZhjYifDGLPc)
+<figure><img src="https://lh3.googleusercontent.com/CeAwNtJkNjrGFk1EnGp9r6iSRedBJih2B_YpLN-VHy_HOaxmJfDKWXkz9TwkYHsEIDkRHpvU29E7Q9xPhOu1DeuA3-wwMyCNOwmj8DzLBZHuTGOb3yeaJGaAj8iU-W0HZhjYifDGLPc" alt="Updated Directory Listing"><figcaption></figcaption></figure>
 
 ### ASCII Art Stereograms
 

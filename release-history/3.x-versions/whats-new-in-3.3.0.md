@@ -93,7 +93,7 @@ You can customize these tray menus and add your own option for your convenience.
 
 We've updated to a new library that creates the tray icon for your running servers and the menu that appears when you right click.  In addition to better support for some Linux distros, we've added some nice new icons to the menus.
 
-![](https://www.ortussolutions.com/__media/tray.icon.3.3.0.png)
+<figure><img src="https://www.ortussolutions.com/__media/tray.icon.3.3.0.png" alt="Tray menu makeover"><figcaption></figcaption></figure>
 
 ### Pre/Post package scripts
 

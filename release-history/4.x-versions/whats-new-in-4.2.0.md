@@ -173,9 +173,9 @@ The full docs are here:
 
 We've added 17 pieces of flair to our server tray menus to show you more information such as PID, webroot, and port as well as a new option to open up the web root in your file system explorer.
 
-![](https://www.ortussolutions.com/__media/blog/commandbox-4.2.0-tray-icon-1.png)
+<figure><img src="https://www.ortussolutions.com/__media/blog/commandbox-4.2.0-tray-icon-1.png" alt="Updated Server Tray Menus"><figcaption></figcaption></figure>
 
-![](https://www.ortussolutions.com/__media/blog/commandbox-4.2.0-tray-icon-2.png)
+<figure><img src="https://www.ortussolutions.com/__media/blog/commandbox-4.2.0-tray-icon-2.png" alt="Update Server Tray Menus"><figcaption></figcaption></figure>
 
 ## Release Notes
 

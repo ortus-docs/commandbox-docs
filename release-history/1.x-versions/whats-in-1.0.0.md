@@ -7,7 +7,7 @@ metaLinks:
 
 # What's in 1.0.0
 
-![](https://www.ortussolutions.com/__media/commandbox-185-logo.png)
+<figure><img src="https://www.ortussolutions.com/__media/commandbox-185-logo.png" alt="CommandBox Logo"><figcaption></figcaption></figure>
 
 After almost a year in development, we are so excited to finally announce the release of [CommandBox 1.0.0 Final](https://www.ortussolutions.com/products/commandbox).  This has been definitely one of the most challenging and fun projects we have overtaken here at Ortus.  We had a vision of how we could accelerate not only development, tools and ultimately the ColdFusion (CFML) landscape by building a tool that could put us up to par with many other technologies.  I am glad to say we have now a great foundation to move forward.  CommandBox brings CFML to any Operating System and even embedded systems like the Raspberry and Banana Pi.  It also gives ColdFusion (CFML) developers a much better workflow to work with their projects and a sense of community we lovingly call [ForgeBox](http://www.coldbox.org/forgebox). &#x20;
 

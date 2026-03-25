@@ -124,7 +124,7 @@ dir | grep .*\.md --count
 
 The tray icon for your servers now has a new option under the "Open" menu that will open up the file system folder where the server home lives.  This is nice for finding your CF Engine's log files.
 
-![](https://www.ortussolutions.com/__media/blog/new-menu-commandbox-5-0-0.png)
+<figure><img src="https://www.ortussolutions.com/__media/blog/new-menu-commandbox-5-0-0.png" alt="CF Engine&#x27;s log files"><figcaption></figcaption></figure>
 
 ## Release Notes
 

@@ -12,7 +12,7 @@ If you already have a Java JRE installed level 1.8 or higher (and set in your en
 
 Below you can see an image of the available downloads from the Ortus Solutions [download](http://www.ortussolutions.com/products/commandbox#download) page:
 
-![](../.gitbook/assets/versions.png)
+<figure><img src="../.gitbook/assets/versions.png" alt="Kind of CommandBox Downloads"><figcaption></figcaption></figure>
 
 ## Stable Release
 
