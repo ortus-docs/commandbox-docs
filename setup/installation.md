@@ -86,13 +86,13 @@ Unzip the binary **box** and just double click on it to open the shell terminal.
 
 > **Please note** that if you are running Ubuntu 18.04 or greater, or Debian 8 (Jessie) or greater, it's necessary to have the `libappindicator` package in order to have the tray icon working correctly.
 
-For older versions of Ubuntu/Debian use `libappindicator-dev`&#x20;
+For older versions of Ubuntu/Debian use `libappindicator-dev`
 
 ```bash
 sudo apt install libappindicator-dev
 ```
 
-For newer versions of Ubuntu/Debian use `libappindicator3-dev`&#x20;
+For newer versions of Ubuntu/Debian use `libappindicator3-dev`
 
 ```
 sudo apt install libappindicator3-dev
@@ -120,27 +120,36 @@ sudo apt install openjdk-11-jdk
 
 Then run the `box` binary to begin the one-time unpacking process.
 
+To install snapshots, use this repo URL: `https://downloads.ortussolutions.com/debs-be/noarch`
+
 ## Linux yum
 
 ### Stable
 
-Add the following to: `/etc/yum.repos.d/commandbox.repo`
+Run the following to create a  `/etc/yum.repos.d/commandbox.repo`  file
 
 ```
+sudo tee /etc/yum.repos.d/commandbox.repo >/dev/null <<'EOF'
 [CommandBox]
 name=CommandBox $releasever - $basearch
 baseurl=https://downloads.ortussolutions.com/RPMS/noarch
 enabled=1
 metadata_expire=7d
-gpgcheck=0
+gpgcheck=1
+gpgkey=https://downloads.ortussolutions.com/debs/gpg
+repo_gpgcheck=0
+EOF
 ```
 
-Then run:
+Then run this to install:
 
 ```bash
-sudo yum update
-sudo yum install commandbox
+sudo yum install -y commandbox
 ```
+
+Then run the `box` binary to begin the one-time unpacking process.
+
+To install snapshots, use this repo URL: `https://downloads.ortussolutions.com/RPMS-be/noarch`
 
 ## Debian Linux manual install
 
