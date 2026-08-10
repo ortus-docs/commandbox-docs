@@ -13,6 +13,7 @@
     * [What's New in 6.3.1](release-history/6.x-versions/whats-new-in-6.3.1.md)
     * [What's New in 6.3.2](release-history/6.x-versions/whats-new-in-6.3.2.md)
     * [What's New in 6.3.3](release-history/6.x-versions/whats-new-in-6.3.3.md)
+    * [What's New in 6.3.4](release-history/6.x-versions/whats-new-in-6.3.4.md)
   * [5.x Versions](release-history/5.x-versions/README.md)
     * [What's New in 5.9.1](release-history/5.x-versions/whats-new-in-5.9.1.md)
     * [What's New in 5.9.0](release-history/5.x-versions/whats-new-in-5.9.0.md)
