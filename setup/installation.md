@@ -122,34 +122,33 @@ Then run the `box` binary to begin the one-time unpacking process.
 
 To install snapshots, use this repo URL: `https://downloads.ortussolutions.com/debs-be/noarch`
 
-## Linux yum
+## Linux DNF (YUM)
 
 ### Stable
 
-Run the following to create a  `/etc/yum.repos.d/commandbox.repo`  file
-
-```
-sudo tee /etc/yum.repos.d/commandbox.repo >/dev/null <<'EOF'
-[CommandBox]
-name=CommandBox $releasever - $basearch
-baseurl=https://downloads.ortussolutions.com/RPMS/noarch
-enabled=1
-metadata_expire=7d
-gpgcheck=1
-gpgkey=https://downloads.ortussolutions.com/debs/gpg
-repo_gpgcheck=0
-EOF
-```
-
-Then run this to install:
+Red Hat-based distributions use **DNF**, the modern replacement for YUM. On older distributions, `yum` may still be available as a compatibility command. Download the hosted CommandBox repository file and install the package:
 
 ```bash
-sudo yum install -y commandbox
+sudo curl -fsSL https://downloads.ortussolutions.com/RPMS/noarch/commandbox.repo \
+  -o /etc/yum.repos.d/commandbox.repo
+
+sudo dnf install -y commandbox
 ```
 
 Then run the `box` binary to begin the one-time unpacking process.
 
-To install snapshots, use this repo URL: `https://downloads.ortussolutions.com/RPMS-be/noarch`
+### Bleeding edge
+
+To install bleeding-edge snapshots, download the BE repository file instead:
+
+```bash
+sudo curl -fsSL https://downloads.ortussolutions.com/RPMS-be/noarch/commandbox.repo \
+  -o /etc/yum.repos.d/commandbox.repo
+
+sudo dnf install -y commandbox
+```
+
+Then run the `box` binary to begin the one-time unpacking process.
 
 ## Debian Linux manual install
 
