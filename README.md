@@ -4,7 +4,7 @@ metaLinks: {}
 
 # Introduction
 
-## CommandBox Manual - Version 6.3.4
+## CommandBox Manual - Version 6.3.5
 
 <figure><picture><source srcset=".gitbook/assets/commandbox-logo-full-light-M.svg" media="(prefers-color-scheme: dark)"><img src=".gitbook/assets/commandbox-logo-full-dark-M.svg" alt="CommandBox Logo"></picture><figcaption><p>CommandBox</p></figcaption></figure>
 
