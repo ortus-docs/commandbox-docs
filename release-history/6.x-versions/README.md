@@ -17,5 +17,5 @@ In this section you will find the release notes for the 6.x version of CommandBo
 * [Version 6.3.2](whats-new-in-6.3.2.md) - February 2026
 * [Version 6.3.3](whats-new-in-6.3.3.md) - May 2026
 * [Version 6.3.4](whats-new-in-6.3.4.md) - August 2026
-* Version 6.3.5 - September 2026
+* [Version 6.3.5](whats-new-in-6.3.5.md) - September 2026
 
