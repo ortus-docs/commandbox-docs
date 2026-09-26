@@ -80,7 +80,7 @@ When profile is set to "**none**", the following defaults are provided:
 
 ## Customizing your profile
 
-The defaults above only apply if you do not have am explicit `server.json` or `server.defaults` config setting. If you have an explicit setting, it will override the profile's default. Therefore, if you set the `profile` to`production` but set `web.blockCFAdmin` to `false`, your CF administrator will be public, but the remaining production defaults will still be applied. This allows even the default profiles to be customizable.
+The defaults above only apply if you do not have an explicit `server.json` or `server.defaults` config setting. If you have an explicit setting, it will override the profile's default. Therefore, if you set the `profile` to`production` but set `web.blockCFAdmin` to `false`, your CF administrator will be public, but the remaining production defaults will still be applied. This allows even the default profiles to be customizable.
 
 ```javascript
 {
